@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import BrandHeroCopy from './BrandHeroCopy.astro';
+import BrandPurchaseGuide from './BrandPurchaseGuide.astro';
+import BrandInquiry from './BrandInquiry.astro';
+import {brandHref} from '../data/catalog';
+import '../styles/catalog-refined.css';
+import '../styles/nest-catalog.css';
+
+interface Props {brand: string; slug: string;}
+const {brand, slug} = Astro.props;
+const quotation = '/quote/?' + new URLSearchParams({kind: 'new', brand, source: brandHref('new', slug)});
+---
+<Base title={`New ${brand} cars from China`} description={`Request a quote for your preferred ${brand} model, specification, quantity and destination.`}>
+  <div class="catalog-refined">
+    <Breadcrumbs items={[{label: 'New Cars', href: '/new-cars/'}, {label: brand}]}/>
+    <header class="shell catalog-heading catalog-heading--brand catalog-heading--brand-request" data-core-module="scope">
+      <BrandHeroCopy brand={brand} slug={slug} kind="new" quotation={quotation}/>
+    </header>
+    <BrandPurchaseGuide brand={brand} kind="new" quotation={quotation}/>
+    <BrandInquiry brand={brand} kind="new" quotation={quotation}/>
+  </div>
+</Base>

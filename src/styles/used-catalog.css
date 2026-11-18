@@ -1,0 +1,47 @@
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind=used] .vehicle-media{aspect-ratio:4/3;position:relative}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind=used] .vehicle-media img{object-fit:contain;object-position:center;transform:none}
+.ah-model-grid>.ah-used-card{aspect-ratio:auto}
+.ah-model-grid .ah-used-card .ah-photo-card-inner{height:auto;background:#fff}
+.ah-model-grid .ah-used-card .ah-photo-card-inner>img{display:block;height:auto;aspect-ratio:4/3;object-fit:contain;object-position:center}
+.ah-model-grid .ah-used-card .ah-photo-card-inner:after{display:none}
+.ah-model-grid .ah-used-card .ah-photo-caption{position:static;min-height:96px;justify-content:center;padding:14px 18px;color:#20221e}
+.ah-model-grid .ah-used-card .ah-photo-caption p{color:#62625f}
+.ah-model-grid .ah-used-card:hover .ah-photo-card-inner>img{transform:none}
+/* Compact used-car attributes, with registration and mileage up front. */
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card-record {
+ display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);
+ gap:8px 0;
+ margin:auto 0 20px;
+ padding:0;
+}
+.vehicle-card-record > div {min-width:0}
+.vehicle-card-record > div:nth-child(even) {
+ padding-inline-start:12px;
+ border-inline-start:1px solid #e8e7e2;
+}
+.vehicle-card-record dt {
+ position:absolute;
+ width:1px;
+ height:1px;
+ overflow:hidden;
+ clip-path:inset(50%);
+ white-space:nowrap;
+}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card-record dd {
+ display:flex;
+ align-items:flex-start;
+ gap:8px;
+ margin:0;
+ font:400 14px/20px var(--body);
+ color:#62625f;
+ overflow-wrap:anywhere;
+}
+.vehicle-card-record dd svg {
+ flex:none;
+ width:18px;
+ height:18px;
+ margin-top:1px;
+ color:#292927;
+ stroke-width:1.7;
+}

@@ -1,0 +1,15 @@
+<section class="ah-order-inquiry" id="requirement" data-ah-section="Inquiry" aria-labelledby="ah-inquiry-title">
+ <div class="ah-ending-shell">
+  <div class="ah-order-heading">
+   <h2 id="ah-inquiry-title">Request a vehicle quote</h2>
+  </div>
+  <form action="/quote/" method="get" class="ah-order-form" aria-label="Prepare your vehicle inquiry">
+   <div class="ah-order-fields">
+    <label class="ah-order-model" for="home-order-model">Model or version <span aria-hidden="true">*</span><input id="home-order-model" name="model" required maxlength="200" placeholder="Brand and model"/></label>
+    <label for="home-order-quantity">Quantity <span aria-hidden="true">*</span><input id="home-order-quantity" name="quantity" type="number" min="1" max="999999999" step="1" value="1" required/></label>
+    <label for="home-order-country">Destination country <span aria-hidden="true">*</span><input id="home-order-country" name="country" required maxlength="100" autocomplete="country-name" placeholder="Country"/></label>
+   </div>
+   <div class="ah-order-submit"><button type="submit">Start an inquiry</button></div>
+  </form>
+ </div>
+</section>

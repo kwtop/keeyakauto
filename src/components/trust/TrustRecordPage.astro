@@ -1,0 +1,40 @@
+---
+import TrustLayout from '../../layouts/TrustLayout.astro';
+import TrustFigure from './TrustFigure.astro';
+import {companyEvents,eventHref,type CompanyEvent} from '../../data/companyNews';
+import {storyMedia,trustMedia} from '../../data/trustMedia';
+import '../../styles/news-record.css';
+interface Props { event:CompanyEvent; }
+const {event}=Astro.props;
+const key=storyMedia[event.slug];
+const cover=trustMedia(key);
+const photographs=event.images.filter(photo=>photo.src!==cover.src);
+const related=companyEvents.filter(item=>item.slug!==event.slug&&item.type===event.type).slice(0,2);
+const sections=event.sections||[{title:event.stage,body:event.body}];
+---
+<TrustLayout title={event.title} label={event.title} group="about" pageType="Article" modified="2026-10-28" article={{eventMonth:event.date,section:event.type,images:[trustMedia(key).src,...event.images.map(photo=>photo.src)]}} parents={[{name:'News & Events',url:'/about/news/'}]} description={event.summary} image={trustMedia(key).src}>
+ <article class="news-record">
+  <div class:list={['tc-wrap','tc-event-lead',{'tc-event-lead--portrait':cover.height>cover.width}]}>
+   <header class="tc-event-heading" data-core-module data-module="record-opening">
+    <p class="tc-story-meta"><time datetime={event.date}>{event.dateLabel}</time><span>{event.location}</span><span>{event.type}</span></p>
+    <h1>{event.title}</h1>
+    <p class="news-record-summary">{event.summary}</p>
+   </header>
+   <div class="tc-event-image"><TrustFigure media={key} href={event.images.find(photo=>photo.src===cover.src)?.src} natural priority sitemapImage/></div>
+  </div>
+  <section class:list={['tc-wrap','tc-story-body',{'tc-story-body--paired':photographs.length===1,'tc-story-body--text':photographs.length===0}]} data-core-module data-module="record-report">
+   <div class="tc-story-copy">
+    {sections.map(section=><section class="tc-story-section"><h2>{section.title}</h2>{section.body.map(paragraph=><p>{paragraph}</p>)}</section>)}
+    {event.slug==='indonesia-exhibition-2024'&&<div class="tc-links"><a class="tc-text-link" href="/images/company/records/inapa-2024-original.jpg" target="_blank" rel="noopener noreferrer">Original INAPA participation record</a></div>}
+   </div>
+   {photographs.length>0&&<div class="tc-story-source-gallery" data-count={photographs.length}>{photographs.map(photo=><figure><a href={photo.src} target="_blank" rel="noopener noreferrer"><img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" decoding="async" data-sitemap-image=""/></a></figure>)}</div>}
+  </section>
+  <section class="tc-block tc-related-records" data-core-module data-module="related-records">
+   <div class="tc-wrap">
+    <header class="news-record-related-heading"><h2>More from KEEYAK</h2><a class="tc-text-link" href="/about/news/">All News &amp; Events</a></header>
+    <div class="tc-story-grid tc-story-grid--related" data-count={related.length}>{related.map(item=><article class="tc-story-card"><TrustFigure media={storyMedia[item.slug]} href={eventHref(item)} compact/><div class="tc-story-card-copy"><p class="tc-story-meta"><time datetime={item.date}>{item.dateLabel}</time></p><h3><a href={eventHref(item)}>{item.title}</a></h3></div></article>)}</div>
+    <a id="record-next" class="tc-text-link news-record-contact" href="/contact/">Contact the KEEYAK team</a>
+   </div>
+  </section>
+ </article>
+</TrustLayout>

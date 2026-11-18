@@ -1,0 +1,22 @@
+---
+import Action from './Action.astro';
+import {storyPhotos} from '../../data/autohausHome';
+---
+<section class="ah-story" id="nest-company-title" data-ah-section="Story" aria-labelledby="ah-story-title">
+ <div class="ah-story-sticky"><div class="ah-story-copy"><h2 id="ah-story-title">A car that fits your market.<br/>A plan that fits your business.</h2><Action href="/about/" label="Meet KEEYAK"/></div></div>
+<div class="ah-container ah-story-gallery" id="ah-story-gallery" role="region" aria-label="From selection to handover" tabindex="0">{storyPhotos.map((p,i)=><a class="ah-story-photo" href={p.href} aria-label={p.alt} data-story-slide={i}><img src={p.src} width="680" height="720" alt={p.alt} loading="lazy"/></a>)}</div>
+ <div class="ah-story-dots" aria-label="Story photos">{storyPhotos.map((_,i)=><button type="button" aria-label={`Show photo ${i+1}`} aria-controls="ah-story-gallery" aria-pressed={i===0?'true':'false'} data-story-dot={i}></button>)}</div>
+</section>
+<script>
+ const gallery=document.querySelector<HTMLElement>('.ah-story-gallery');
+ if(gallery){
+  const slides=Array.from(gallery.querySelectorAll<HTMLElement>('[data-story-slide]'));const dots=Array.from(document.querySelectorAll<HTMLButtonElement>('[data-story-dot]'));const mobile=matchMedia('(max-width:809px)');
+  const reduced=matchMedia('(prefers-reduced-motion:reduce)');
+  const current=()=>Math.max(0,Math.min(slides.length-1,Math.round(gallery.scrollLeft/(gallery.clientWidth+20))));
+  const go=(i:number)=>{gallery.scrollTo({left:Math.max(0,Math.min(slides.length-1,i))*(gallery.clientWidth+20),behavior:reduced.matches?'instant':'smooth'});};
+  dots.forEach((b,i)=>b.addEventListener('click',()=>go(i)));
+  gallery.addEventListener('scroll',()=>{if(mobile.matches)dots.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===current())));},{passive:true});
+  gallery.addEventListener('keydown',e=>{if(mobile.matches&&(e.key==='ArrowRight'||e.key==='ArrowLeft')){e.preventDefault();go(current()+(e.key==='ArrowRight'?1:-1));}});
+  mobile.addEventListener('change',()=>{gallery.scrollLeft=0;dots.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===0)));});
+ }
+</script>

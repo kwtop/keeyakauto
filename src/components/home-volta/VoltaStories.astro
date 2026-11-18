@@ -1,0 +1,32 @@
+---
+import {ArrowRight,CalendarDays,MapPin} from '@lucide/astro';
+import {company} from '../../data/company';
+import {vehicles} from '../../data/catalog';
+import {editorialMedia,editorialSrcset} from '../../data/voltaHome';
+import {siteImage} from '../../data/siteImagery';
+const records=[
+ {title:'A visit to the KEEYAK office',date:'',place:'Hangzhou, China',image:'/images/keeyak-home-source-20261019/office-visitor-group.webp',alt:'Original office visitor group photograph at the KEEYAK brand wall',href:'/about/',label:'Company profile',scope:'Company office & visitors'},
+ {title:'Conversations in Vietnam',date:'May 2026',place:'Vietnam',image:'/images/keeyak-home-source-20261019/vietnam-category-discussion-2026.webp',alt:'Three people reviewing special-vehicle catalogues at the Vietnam exhibition in May 2026',href:'/about/news/vietnam-exhibition-2026/',label:'Read the record',scope:'Special-vehicle exhibition'},
+ {title:'The people behind KEEYAK',date:'January 2026',place:'Company gathering',image:'/images/company/records/annual-gathering-2026.webp',alt:'Original photograph of KEEYAK colleagues at the January 2026 annual gathering',href:'/about/news/annual-gathering-2026/',label:'Meet the team',scope:'Company team activity'}
+];
+const stories=[
+ {title:'What should your quotation include?',text:'Match the vehicle, currency, named place and included services before comparing offers.',href:'/export-services/buying-guide/compare-car-export-quotes/',image:siteImage('guide-quotation').src,alt:'AI-edited editorial illustration of quotation papers, a key and Toyota RAV4, not transaction evidence',label:'Quotation checklist'},
+ {title:'What to confirm before departure',text:'Keep vehicle details, inspection findings and handover records with the order.',href:'/export-services/shipping-support/#pre-departure',image:editorialMedia+'guide-departure.webp',alt:'AI-generated illustration of a vehicle carrier leaving a harbour, not a KEEYAK shipment',label:'Shipping preparation'},
+ {title:'Agree support before you order',text:'Clarify the territory, exclusions, contact and repair approvals for the exact vehicle.',href:'/export-services/after-sales/#coverage',image:siteImage('guide-support').src,alt:'AI-edited Toyota Camry support-planning illustration, not a real workshop or service record',label:'After-sales arrangements'}
+];
+const facts=[{label:'New models',value:String(vehicles.filter(v=>v.kind==='new').length),text:'New-car model references to help build a shortlist.'},{label:'Used models',value:String(vehicles.filter(v=>v.kind==='used').length),text:'Historical third-party references for a vehicle-specific search.'},{label:'Our office',value:'Hangzhou',text:'Company contact details and original records are available.'},{label:'Our buyers',value:'B2B',text:'For dealers, importers and fleets discussing their requirements.'}];
+---
+<section class="v-section v-records" data-v-section="records" aria-labelledby="v-records-title" id="nest-company-title"><div class="v-container">
+ <div class="v-section-head"><div><p class="v-eyebrow">Company records</p><h2 id="v-records-title">People, visits &amp; conversations</h2></div><a class="v-quiet-link" href="/about/news/">All company records <ArrowRight size={14}/></a></div>
+ <div class="v-record-grid" role="region" tabindex="0" aria-label="Company records; scroll horizontally on small screens">{records.map(r=><article class="v-record-card"><a class="v-record-image" href={r.image} target="_blank" rel="noopener" aria-label={`Open original photograph: ${r.title}`}><img src={r.image} alt={r.alt} width="640" height="360" loading="lazy"/><span>{r.scope}</span></a><div class="v-record-copy"><h3><a href={r.href}>{r.title}</a></h3>{r.date&&<p><CalendarDays size={14}/>{r.date}</p>}<p><MapPin size={14}/>{r.place}</p><a class="v-record-link" href={r.href}>{r.label}<ArrowRight size={14}/></a></div></article>)}</div>
+</div></section>
+<section class="v-stories" data-v-section="guides" aria-labelledby="v-stories-title"><div class="v-container">
+ <div class="v-section-head"><div><p class="v-eyebrow">Buying &amp; export guides</p><h2 id="v-stories-title">Clearer decisions,<br/>from shortlist to handover</h2></div><a class="v-outline-link" href="/export-services/buying-guide/">Read the buying guide</a></div>
+ <div class="v-story-rail" role="region" tabindex="0" aria-label="Buying guides; scroll for more articles">{stories.map(s=><article class="v-story-card"><a class="v-story-image" href={s.href}><img src={s.image} srcset={editorialSrcset(s.image,1280)} sizes="(min-width:1280px) 395px, (min-width:1024px) calc((100vw - 96px) / 3), (min-width:768px) calc((100vw - 72px) / 2), calc(100vw - 50px)" alt={s.alt} loading="lazy" width="1280" height="720"/></a><div class="v-story-copy"><p class="v-eyebrow">{s.label}</p><h3><a href={s.href}>{s.title}</a></h3><p>{s.text}</p></div></article>)}</div>
+ 
+</div></section>
+<section class="v-section v-identity" data-v-section="identity" aria-labelledby="v-identity-title"><div class="v-container">
+ <div class="v-identity-statement"><p>A useful shortlist begins with the right questions: the model, the version and the market it is meant for.</p><a class="v-quiet-link" href="/about/">About {company.brand} <ArrowRight size={14}/></a></div>
+ <div class="v-identity-heading"><p class="v-eyebrow">Your next purchase, clearly defined</p><h2 id="v-identity-title">Cars from China.<br/>A clearer next step.</h2></div>
+ <div class="v-facts">{facts.map(f=><div><p class="v-eyebrow">{f.label}</p><h3>{f.value}</h3><p>{f.text}</p></div>)}</div>
+</div></section>

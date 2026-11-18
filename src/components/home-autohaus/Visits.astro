@@ -1,0 +1,11 @@
+---
+import VisitCarousel from './VisitCarousel.jsx';
+import {visits} from '../../data/homeRelationships.json';
+---
+<section class="ah-visits" id="home-visits" data-ah-section="Visits" aria-labelledby="ah-visits-title" data-visit-gallery>
+ <div class="ah-container ah-visits-heading">
+  <h2 id="ah-visits-title">Snapshots from KEEYAK</h2>
+ </div>
+ <VisitCarousel items={visits} client:visible={{rootMargin:'300px'}}/>
+ <noscript><div class="ah-visits-fallback">{visits.map(photo=><img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy"/>)}</div></noscript>
+</section>

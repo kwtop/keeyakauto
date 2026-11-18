@@ -1,0 +1,97 @@
+---
+import {X, ChevronDown, ClipboardList, ArrowRight, ArrowLeft, BookOpen, ScanSearch, Ship, Headset, CircleQuestionMark} from '@lucide/astro';
+import CarSearch from '../CarSearch.astro';
+import CatalogMenu from '../CatalogMenu.astro';
+import {aboutLinks, company} from '../../data/company';
+import {exportLinks} from '../../data/exportServices';
+import {trustMedia} from '../../data/trustMedia';
+import '../../styles/site-font.css';
+import '../../styles/home-navigation.css';
+interface Props {solid?: boolean;}
+const {solid: alwaysSolid = true} = Astro.props;
+const currentPath = Astro.url.pathname;
+const menus = [
+  {label: 'New Cars', href: '/new-cars/', items: []},
+  {label: 'Used Cars', href: '/used-cars/', items: []},
+  {label: 'Export Services', href: '/export-services/', items: exportLinks},
+  {label: 'About Us', href: '/about/', items: aboutLinks}
+];
+const menuIcons: Record<string, typeof BookOpen> = {
+  '/export-services/buying-guide/': BookOpen,
+  '/export-services/sourcing-inspection/': ScanSearch,
+  '/export-services/shipping-support/': Ship,
+  '/export-services/after-sales/': Headset,
+  '/export-services/faq/': CircleQuestionMark
+};
+const aboutPhotos: Record<string, ReturnType<typeof trustMedia>> = {
+  '/about/company-profile/': trustMedia('office-original'),
+  '/about/news/': trustMedia('vietnam-original')
+};
+---
+<header class="ah-header" data-solid={String(alwaysSolid)} data-compact="false" data-panel-open="false" data-always-solid={alwaysSolid ? 'true' : undefined}>
+  <svg class="brand-color-filter" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="autohaus-wordmark-light" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1 -1 1 0 0 1 -1 0 1 0 1 0 0 -1 0 1"/><feComposite in2="SourceAlpha" operator="in"/></filter><filter id="autohaus-wordmark-dark" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 -1 0 1"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs></svg>
+  <div class="ah-nav-backdrop" aria-hidden="true"></div>
+  <div class="ah-container ah-header-row">
+    <a class="ah-wordmark" href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark-360.webp" width="1200" height="219" alt=""/></a>
+    <nav class="ah-navigation" id="autohaus-navigation" aria-label="Main navigation" data-level="main">
+      <ul class="ah-nav-list">
+        <li class="ah-nav-home"><a href="/" data-current={currentPath === '/' ? 'true' : undefined} aria-current={currentPath === '/' ? 'page' : undefined}>Home<ArrowRight size={20}/></a></li>
+        {menus.map((menu, index) => <li class="ah-nav-group">
+          {index >= 2 ? <div class="ah-nav-split" data-ah-trigger-group data-current={currentPath.startsWith(menu.href) ? 'true' : undefined}>
+            <a class="ah-nav-trigger ah-nav-direct" href={menu.href} id={`autohaus-label-${index}`} aria-current={currentPath === menu.href ? 'page' : undefined}>{menu.label}</a>
+            <button class="ah-nav-trigger ah-nav-expand" type="button" id={`autohaus-trigger-${index}`} data-ah-disclosure data-current={currentPath.startsWith(menu.href) ? 'true' : undefined} aria-label={`Browse ${menu.label} menu`} aria-expanded="false" aria-controls={`autohaus-menu-${index}`}><ChevronDown size={16} aria-hidden="true"/></button>
+          </div> :
+          <a class="ah-nav-trigger" href={menu.href} id={`autohaus-trigger-${index}`} data-ah-trigger-group data-ah-disclosure data-current={currentPath.startsWith(menu.href) ? 'true' : undefined} aria-current={currentPath.startsWith(menu.href) ? 'true' : undefined} aria-expanded="false" aria-controls={`autohaus-menu-${index}`}>{menu.label}</a>}
+          <div class="ah-panel" id={`autohaus-menu-${index}`} aria-labelledby={`autohaus-${index >= 2 ? 'label' : 'trigger'}-${index}`} hidden inert>
+            <div class="ah-panel-topbar">
+              <button class="ah-panel-back" type="button"><ArrowLeft size={18}/>Back</button>
+              <span class="ah-panel-label">{menu.label}</span>
+              <button class="ah-panel-dismiss" type="button" aria-label={`Close ${menu.label} menu`}><X size={18}/></button>
+            </div>
+            <div class="ah-panel-body">
+              {index < 2 ? <>
+                <div class="ah-catalog-intro"><h2>{index === 0 ? 'Explore new cars' : 'Explore used cars'}</h2><a class="ah-panel-overview" href={menu.href}>View all {index === 0 ? 'new' : 'used'} cars<ArrowRight size={17}/></a></div>
+                <CatalogMenu kind={index === 0 ? 'new' : 'used'} alphabetical concise/>
+              </> : index === 3 ? <div class="ah-nav-cards ah-about-cards">
+                {menu.items.map(item => {
+                  const photo = aboutPhotos[item.href];
+                  return <a class="ah-nav-card ah-about-card" href={item.href} aria-current={currentPath === item.href ? 'page' : undefined}>
+                    <img src={photo.src} width={photo.width} height={photo.height} alt="" loading="lazy" decoding="async"/>
+                    <span class="ah-nav-card-copy"><strong>{item.label}</strong></span>
+                    <ArrowRight class="ah-nav-card-arrow" size={18} aria-hidden="true"/>
+                  </a>;
+                })}
+              </div> : <div class="ah-panel-editorial">
+                {index === 2 && <a class="ah-panel-feature" href={menu.href} aria-label="Service overview" aria-current={currentPath === menu.href ? 'page' : undefined}>
+                  <span class="ah-panel-feature-image"><img src="/images/menu-polish-20261028/export-dispatch-handover-480.webp" width="480" height="320" alt="AI-generated illustration of vehicle dispatch coordination and a road transporter" loading="lazy" decoding="async" data-ai-generated="true"/></span>
+                  <span class="ah-panel-overview">Service overview<ArrowRight size={17}/></span>
+                </a>}
+                <div class="ah-nav-cards">{menu.items.map(item => {
+                  const Icon = menuIcons[item.href];
+                  return <a class="ah-nav-card" href={item.href} aria-current={currentPath === item.href ? 'page' : undefined}>
+                    <span class="ah-nav-card-icon"><Icon size={22} stroke-width={1.5}/></span>
+                    <span class="ah-nav-card-copy"><strong>{item.label}</strong></span>
+                    <ArrowRight class="ah-nav-card-arrow" size={18}/>
+                  </a>;
+                })}</div>
+              </div>}
+            </div>
+          </div>
+        </li>)}
+        <li class="ah-nav-contact"><a href="/contact/" data-current={currentPath === '/contact/' ? 'true' : undefined} aria-current={currentPath === '/contact/' ? 'page' : undefined}>Contact Us<ArrowRight size={20}/></a></li>
+      </ul>
+      <span class="ah-nav-indicator" aria-hidden="true"></span>
+      <div class="ah-mobile-contact"><a href="/quote/">Start an inquiry<span><ArrowRight size={20}/></span></a></div>
+    </nav>
+    <div class="ah-header-actions">
+      <CarSearch/>
+      <a class="ah-header-whatsapp" href={company.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Contact KEEYAK on WhatsApp" title="WhatsApp"><img src="/images/brand/whatsapp.svg" width="28" height="28" alt=""/></a>
+      <a class="ah-header-quote" href="/quote/" aria-current={currentPath === '/quote/' ? 'page' : undefined}><span>Start an inquiry</span><ArrowRight class="ah-quote-arrow" size={17}/><ClipboardList class="ah-quote-compact" size={20}/></a>
+      <button class="ah-menu-toggle" type="button" aria-label="Open navigation" aria-controls="autohaus-navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+    <div class="ah-menu-surface" aria-hidden="true"></div>
+  </div>
+</header>
+<script>
+  import '../../scripts/header-navigation';
+</script>

@@ -1,0 +1,8 @@
+---
+import TrustRecordPage from '../../../components/trust/TrustRecordPage.astro';
+import {companyEvents,type CompanyEvent} from '../../../data/companyNews';
+export function getStaticPaths(){return companyEvents.map(event=>({params:{slug:event.slug},props:{event}}));}
+interface Props {event:CompanyEvent;}
+const {event}=Astro.props;
+---
+<TrustRecordPage {event}/>

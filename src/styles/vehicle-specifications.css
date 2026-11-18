@@ -1,0 +1,57 @@
+/* Vehicle detail only: the technical comparison is independent of catalog data. */
+.site-nest.site-volta .vehicle-detail .detail-specifications{background:#f6f8fa;scroll-margin-top:104px}
+.site-nest.site-volta .vehicle-detail .detail-specifications .detail-section-head{align-items:baseline;gap:24px;margin-bottom:32px}
+.site-nest.site-volta .vehicle-detail .detail-spec-version{max-width:50ch;margin:0;text-align:right;color:#465565;overflow-wrap:anywhere}
+.site-nest.site-volta .vehicle-detail .detail-spec-gap{max-width:80ch;margin:0 0 28px;color:#465565;font-size:15px;line-height:1.65}
+.site-nest.site-volta .vehicle-detail .detail-spec-gap a{text-decoration:underline;text-underline-offset:4px}
+.site-nest.site-volta .vehicle-detail .detail-key-specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px;margin:0 0 32px}
+.site-nest.site-volta .vehicle-detail .detail-key-spec{min-width:0;padding:24px 0 28px;border-top:1px solid #d5dde5}
+.site-nest.site-volta .vehicle-detail .detail-key-spec dt{margin-bottom:10px;color:#536171;font-size:14px;line-height:1.5}
+.site-nest.site-volta .vehicle-detail .detail-key-spec dd{margin:0;color:#142b43;font:550 clamp(20px,1.7vw,26px)/1.4 var(--body);letter-spacing:-.025em;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.site-nest.site-volta .vehicle-detail .detail-technical-disclosure{border-top:1px solid #cbd6e0;border-bottom:1px solid #cbd6e0}
+.site-nest.site-volta .vehicle-detail .detail-technical-disclosure summary{display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:66px;padding:18px 0;list-style:none;cursor:pointer;color:#143e6f;font-size:16px;font-weight:600;line-height:1.5}
+.site-nest.site-volta .vehicle-detail .detail-technical-disclosure summary::-webkit-details-marker{display:none}
+.site-nest.site-volta .vehicle-detail .detail-technical-disclosure summary::after{content:'+';font-size:26px;font-weight:400;line-height:1;flex-shrink:0}
+.site-nest.site-volta .vehicle-detail .detail-technical-disclosure[open] summary::after{content:'−'}
+.site-nest.site-volta .vehicle-detail .detail-technical-disclosure summary:focus-visible{outline:2px solid #1564ba;outline-offset:6px}
+.site-nest.site-volta .vehicle-detail .detail-spec-table{width:100%;border-collapse:collapse;table-layout:fixed;margin:0 0 24px;background:transparent;font-size:15px;line-height:1.6}
+.site-nest.site-volta .vehicle-detail .detail-spec-table caption{padding:12px 0 20px;text-align:left;font-size:18px;font-weight:600;color:#142b43}
+.site-nest.site-volta .vehicle-detail .detail-spec-table th,.site-nest.site-volta .vehicle-detail .detail-spec-table td{padding:15px 20px 15px 0;border:0;border-bottom:1px solid #dee5eb;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.site-nest.site-volta .vehicle-detail .detail-spec-table th{width:42%;font-weight:400;color:#536171}
+.site-nest.site-volta .vehicle-detail .detail-spec-table thead th{font-size:12px;color:#536171;font-weight:600}
+.site-nest.site-volta .vehicle-detail .detail-spec-table td{color:#142b43;font-variant-numeric:tabular-nums}
+.site-nest.site-volta .vehicle-detail .detail-spec-table small{display:block;max-width:62ch;margin-top:6px;font-size:12px;line-height:1.6;color:#5e6c79}
+.site-nest.site-volta .vehicle-detail .detail-spec-source{max-width:90ch;font-size:12px;line-height:1.7;color:#5e6c79;margin:0 0 24px}
+.site-nest.site-volta .vehicle-detail .detail-official-specifications{padding-top:24px;margin-top:24px;border-top:1px solid #cbd6e0}
+.site-nest.site-volta .vehicle-detail .detail-official-specifications h3{margin-bottom:12px;font:600 22px/1.3 var(--body)}
+.site-nest.site-volta .vehicle-detail .detail-official-specifications>p{max-width:80ch;font-size:15px;line-height:1.7}
+.site-nest.site-volta .vehicle-detail .detail-official-specifications>a{font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.site-nest.site-volta .vehicle-detail .detail-spec-request{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-top:28px}
+.site-nest.site-volta .vehicle-detail .detail-spec-request a{flex-shrink:0}
+.site-nest.site-volta .vehicle-detail .detail-spec-request p{max-width:55ch;margin:0;color:#536171;font-size:14px;line-height:1.6}
+@media(max-width:767px){
+ .site-nest.site-volta .vehicle-detail .detail-specifications{scroll-margin-top:96px}
+ .site-nest.site-volta .vehicle-detail .detail-specifications .detail-section-head{margin-bottom:24px}
+ .site-nest.site-volta .vehicle-detail .detail-spec-version{text-align:left;font-size:14px;line-height:1.6}
+ .site-nest.site-volta .vehicle-detail .detail-spec-gap{font-size:14px;margin-bottom:24px}
+ .site-nest.site-volta .vehicle-detail .detail-key-specs{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row dense;gap:0 24px;margin-bottom:16px}
+ .site-nest.site-volta .vehicle-detail .detail-key-spec{padding:20px 0 24px}
+ .site-nest.site-volta .vehicle-detail .detail-key-spec--wide{grid-column:1/-1}
+ .site-nest.site-volta .vehicle-detail .detail-key-spec dt{font-size:12px;line-height:1.5;margin-bottom:8px}
+ .site-nest.site-volta .vehicle-detail .detail-key-spec dd{font-size:21px;line-height:1.4}
+ .site-nest.site-volta .vehicle-detail .detail-technical-disclosure summary{font-size:15px;gap:16px;min-height:64px}
+ .site-nest.site-volta .vehicle-detail .detail-spec-table{font-size:13px}
+ .site-nest.site-volta .vehicle-detail .detail-spec-table caption{font-size:16px;line-height:1.5}
+ .site-nest.site-volta .vehicle-detail .detail-spec-table th,.site-nest.site-volta .vehicle-detail .detail-spec-table td{padding:13px 12px 13px 0}
+ .site-nest.site-volta .vehicle-detail .detail-spec-table th{width:44%}
+ .site-nest.site-volta .vehicle-detail .detail-spec-table td:last-child{padding-right:0}
+ .site-nest.site-volta .vehicle-detail .detail-spec-request{display:block;margin-top:24px}
+ .site-nest.site-volta .vehicle-detail .detail-spec-request p{margin-top:12px;font-size:13px}
+ .site-nest.site-volta .vehicle-detail .variant-field select{width:100%;max-width:100%;text-overflow:ellipsis;scroll-margin-top:112px}
+ .site-nest.site-volta .vehicle-detail--new .detail-info{display:contents}
+ .site-nest.site-volta .vehicle-detail--new .variant-field{order:1;margin:16px 0 0}
+ .site-nest.site-volta .vehicle-detail--new .detail-caution{order:2}
+ .site-nest.site-volta .vehicle-detail--new .detail-main-actions{order:3;margin-top:16px}
+ .site-nest.site-volta .vehicle-detail--new .detail-facts{order:4;margin:24px 0 0}
+ .site-nest.site-volta .vehicle-detail--new .detail-availability{order:5}
+}

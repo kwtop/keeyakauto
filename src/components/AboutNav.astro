@@ -1,0 +1,18 @@
+---
+import { aboutLinks } from '../data/company';
+const path = Astro.url.pathname;
+interface Props { selected?: boolean; }
+const { selected = false } = Astro.props;
+const shortLabels:Record<string,string> = {'/about/company-profile/':'Profile','/about/news/':'News & Events'};
+---
+<nav class:list={['shell', 'about-nav', {'about-nav--selected':selected}]} aria-label="About KEEYAK">
+  {aboutLinks.map(item => <a href={item.href} aria-label={item.label} aria-current={path === item.href ? 'page' : item.href==='/about/news/' && path.startsWith(item.href) ? 'location' : undefined}><span class="about-label-full">{item.label}</span><span class="about-label-short" aria-hidden="true">{shortLabels[item.href]||item.label}</span></a>)}
+</nav>
+<style>
+  .about-nav{display:flex;flex-wrap:wrap;gap:12px 32px;border-bottom:1px solid var(--line);padding-block:8px 22px}
+  .about-nav a{font-size:15px;line-height:1.5;min-height:44px;display:flex;align-items:center;padding-block:8px;color:var(--muted)}
+  .about-nav a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-underline-offset:7px}
+  .about-nav a:hover{color:var(--ink)}
+  .about-label-short{display:none}
+  @media(max-width:700px){.about-nav{flex-wrap:nowrap;overflow-x:auto;gap:24px;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent}.about-nav a{font-size:15px;flex-shrink:0;white-space:nowrap}.about-label-full{display:none}.about-label-short{display:inline}}
+</style>

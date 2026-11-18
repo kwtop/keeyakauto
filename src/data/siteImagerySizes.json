@@ -1,0 +1,325 @@
+{
+  "aion-ut": {
+    "src": "/images/scene-diversity-20261020/aion-ut-neighbourhood.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/aion-ut-neighbourhood-480.webp 480w, /images/scene-diversity-20261020/aion-ut-neighbourhood-800.webp 800w, /images/scene-diversity-20261020/aion-ut-neighbourhood-1200.webp 1200w, /images/scene-diversity-20261020/aion-ut-neighbourhood.webp 1448w",
+    "small": "/images/scene-diversity-20261020/aion-ut-neighbourhood-800.webp"
+  },
+  "changan-qiyuan-a06": {
+    "src": "/images/catalog-left-scenes-20261021/changan-qiyuan-a06-left.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcSet": "/images/catalog-left-scenes-20261021/changan-qiyuan-a06-left-480.webp 480w, /images/catalog-left-scenes-20261021/changan-qiyuan-a06-left-800.webp 800w, /images/catalog-left-scenes-20261021/changan-qiyuan-a06-left-1200.webp 1200w, /images/catalog-left-scenes-20261021/changan-qiyuan-a06-left.webp 1448w",
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "small": "/images/catalog-left-scenes-20261021/changan-qiyuan-a06-left-800.webp"
+  },
+  "changan-uni-v": {
+    "src": "/images/catalog-left-scenes-20261021/changan-uni-v-left.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcSet": "/images/catalog-left-scenes-20261021/changan-uni-v-left-480.webp 480w, /images/catalog-left-scenes-20261021/changan-uni-v-left-800.webp 800w, /images/catalog-left-scenes-20261021/changan-uni-v-left-1200.webp 1200w, /images/catalog-left-scenes-20261021/changan-uni-v-left.webp 1448w",
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "small": "/images/catalog-left-scenes-20261021/changan-uni-v-left-800.webp"
+  },
+  "charging-detail": {
+    "src": "/images/site-imagery-20261019/charging-detail.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/site-imagery-20261019/charging-detail-480.webp 480w, /images/site-imagery-20261019/charging-detail-800.webp 800w, /images/site-imagery-20261019/charging-detail-1200.webp 1200w, /images/site-imagery-20261019/charging-detail.webp 1448w",
+    "small": "/images/site-imagery-20261019/charging-detail-800.webp"
+  },
+  "deepal-g318": {
+    "src": "/images/catalog-left-scenes-20261021/deepal-g318-left.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcSet": "/images/catalog-left-scenes-20261021/deepal-g318-left-480.webp 480w, /images/catalog-left-scenes-20261021/deepal-g318-left-800.webp 800w, /images/catalog-left-scenes-20261021/deepal-g318-left-1200.webp 1200w, /images/catalog-left-scenes-20261021/deepal-g318-left.webp 1448w",
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "small": "/images/catalog-left-scenes-20261021/deepal-g318-left-800.webp"
+  },
+  "fangchengbao-bao-5": {
+    "src": "/images/catalog-left-scenes-20261021/fangchengbao-bao-5-left.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcSet": "/images/catalog-left-scenes-20261021/fangchengbao-bao-5-left-480.webp 480w, /images/catalog-left-scenes-20261021/fangchengbao-bao-5-left-800.webp 800w, /images/catalog-left-scenes-20261021/fangchengbao-bao-5-left-1200.webp 1200w, /images/catalog-left-scenes-20261021/fangchengbao-bao-5-left.webp 1448w",
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "small": "/images/catalog-left-scenes-20261021/fangchengbao-bao-5-left-800.webp"
+  },
+  "gac-trumpchi-gs3": {
+    "src": "/images/scene-diversity-20261020/gac-trumpchi-gs3-retail-courtyard.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/gac-trumpchi-gs3-retail-courtyard-480.webp 480w, /images/scene-diversity-20261020/gac-trumpchi-gs3-retail-courtyard-800.webp 800w, /images/scene-diversity-20261020/gac-trumpchi-gs3-retail-courtyard-1200.webp 1200w, /images/scene-diversity-20261020/gac-trumpchi-gs3-retail-courtyard.webp 1448w",
+    "small": "/images/scene-diversity-20261020/gac-trumpchi-gs3-retail-courtyard-800.webp"
+  },
+  "geely-boyue": {
+    "src": "/images/scene-diversity-20261020/geely-boyue-apartment-courtyard.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/geely-boyue-apartment-courtyard-480.webp 480w, /images/scene-diversity-20261020/geely-boyue-apartment-courtyard-800.webp 800w, /images/scene-diversity-20261020/geely-boyue-apartment-courtyard-1200.webp 1200w, /images/scene-diversity-20261020/geely-boyue-apartment-courtyard.webp 1448w",
+    "small": "/images/scene-diversity-20261020/geely-boyue-apartment-courtyard-800.webp"
+  },
+  "inspection-detail": {
+    "src": "/images/site-imagery-20261019/inspection-detail.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/site-imagery-20261019/inspection-detail-480.webp 480w, /images/site-imagery-20261019/inspection-detail-800.webp 800w, /images/site-imagery-20261019/inspection-detail-1200.webp 1200w, /images/site-imagery-20261019/inspection-detail.webp 1448w",
+    "small": "/images/site-imagery-20261019/inspection-detail-800.webp"
+  },
+  "livan-lanqiqiu": {
+    "src": "/images/catalog-left-scenes-20261021/livan-lanqiqiu-left.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcSet": "/images/catalog-left-scenes-20261021/livan-lanqiqiu-left-480.webp 480w, /images/catalog-left-scenes-20261021/livan-lanqiqiu-left-800.webp 800w, /images/catalog-left-scenes-20261021/livan-lanqiqiu-left-1200.webp 1200w, /images/catalog-left-scenes-20261021/livan-lanqiqiu-left.webp 1448w",
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "small": "/images/catalog-left-scenes-20261021/livan-lanqiqiu-left-800.webp"
+  },
+  "loading-path": {
+    "src": "/images/site-imagery-20261019/loading-path.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/site-imagery-20261019/loading-path-480.webp 480w, /images/site-imagery-20261019/loading-path-800.webp 800w, /images/site-imagery-20261019/loading-path.webp 1122w",
+    "small": "/images/site-imagery-20261019/loading-path-800.webp"
+  },
+  "mg-mg4": {
+    "src": "/images/catalog-left-scenes-20261021/mg-mg4-left.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcSet": "/images/catalog-left-scenes-20261021/mg-mg4-left-480.webp 480w, /images/catalog-left-scenes-20261021/mg-mg4-left-800.webp 800w, /images/catalog-left-scenes-20261021/mg-mg4-left-1200.webp 1200w, /images/catalog-left-scenes-20261021/mg-mg4-left.webp 1448w",
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "small": "/images/catalog-left-scenes-20261021/mg-mg4-left-800.webp"
+  },
+  "port-overview": {
+    "src": "/images/site-imagery-20261019/port-overview.webp",
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      480,
+      800,
+      1200,
+      1672
+    ],
+    "srcSet": "/images/site-imagery-20261019/port-overview-480.webp 480w, /images/site-imagery-20261019/port-overview-800.webp 800w, /images/site-imagery-20261019/port-overview-1200.webp 1200w, /images/site-imagery-20261019/port-overview.webp 1672w",
+    "small": "/images/site-imagery-20261019/port-overview-800.webp"
+  },
+  "quotation-desk": {
+    "src": "/images/site-imagery-20261019/quotation-desk.webp",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "srcSet": "/images/site-imagery-20261019/quotation-desk-480.webp 480w, /images/site-imagery-20261019/quotation-desk-800.webp 800w, /images/site-imagery-20261019/quotation-desk-1200.webp 1200w, /images/site-imagery-20261019/quotation-desk.webp 1536w",
+    "small": "/images/site-imagery-20261019/quotation-desk-800.webp"
+  },
+  "shipping-portrait": {
+    "src": "/images/site-imagery-20261019/shipping-portrait.webp",
+    "width": 1199,
+    "height": 1312,
+    "widths": [
+      480,
+      800,
+      1199
+    ],
+    "srcSet": "/images/site-imagery-20261019/shipping-portrait-480.webp 480w, /images/site-imagery-20261019/shipping-portrait-800.webp 800w, /images/site-imagery-20261019/shipping-portrait.webp 1199w",
+    "small": "/images/site-imagery-20261019/shipping-portrait-800.webp"
+  },
+  "support-diagnosis": {
+    "src": "/images/site-imagery-20261019/support-diagnosis.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/site-imagery-20261019/support-diagnosis-480.webp 480w, /images/site-imagery-20261019/support-diagnosis-800.webp 800w, /images/site-imagery-20261019/support-diagnosis-1200.webp 1200w, /images/site-imagery-20261019/support-diagnosis.webp 1448w",
+    "small": "/images/site-imagery-20261019/support-diagnosis-800.webp"
+  },
+  "toyota-corolla": {
+    "src": "/images/scene-diversity-20261020/toyota-corolla-neighbourhood-street.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/toyota-corolla-neighbourhood-street-480.webp 480w, /images/scene-diversity-20261020/toyota-corolla-neighbourhood-street-800.webp 800w, /images/scene-diversity-20261020/toyota-corolla-neighbourhood-street-1200.webp 1200w, /images/scene-diversity-20261020/toyota-corolla-neighbourhood-street.webp 1448w",
+    "small": "/images/scene-diversity-20261020/toyota-corolla-neighbourhood-street-800.webp"
+  },
+  "used-audi-q5l": {
+    "src": "/images/scene-diversity-20261020/used-audi-q5l-hotel-entrance.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/used-audi-q5l-hotel-entrance-480.webp 480w, /images/scene-diversity-20261020/used-audi-q5l-hotel-entrance-800.webp 800w, /images/scene-diversity-20261020/used-audi-q5l-hotel-entrance-1200.webp 1200w, /images/scene-diversity-20261020/used-audi-q5l-hotel-entrance.webp 1448w",
+    "small": "/images/scene-diversity-20261020/used-audi-q5l-hotel-entrance-800.webp"
+  },
+  "used-audi-sq5": {
+    "src": "/images/scene-diversity-20261020/used-audi-sq5-paddock.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/used-audi-sq5-paddock-480.webp 480w, /images/scene-diversity-20261020/used-audi-sq5-paddock-800.webp 800w, /images/scene-diversity-20261020/used-audi-sq5-paddock-1200.webp 1200w, /images/scene-diversity-20261020/used-audi-sq5-paddock.webp 1448w",
+    "small": "/images/scene-diversity-20261020/used-audi-sq5-paddock-800.webp"
+  },
+  "used-bmw-x4-m": {
+    "src": "/images/scene-diversity-20261020/used-bmw-x4m-city-tunnel.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/used-bmw-x4m-city-tunnel-480.webp 480w, /images/scene-diversity-20261020/used-bmw-x4m-city-tunnel-800.webp 800w, /images/scene-diversity-20261020/used-bmw-x4m-city-tunnel-1200.webp 1200w, /images/scene-diversity-20261020/used-bmw-x4m-city-tunnel.webp 1448w",
+    "small": "/images/scene-diversity-20261020/used-bmw-x4m-city-tunnel-800.webp"
+  },
+  "used-bmw-x5-xdrive-30li": {
+    "src": "/images/scene-diversity-20261020/used-bmw-x5-vineyard-lane.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/used-bmw-x5-vineyard-lane-480.webp 480w, /images/scene-diversity-20261020/used-bmw-x5-vineyard-lane-800.webp 800w, /images/scene-diversity-20261020/used-bmw-x5-vineyard-lane-1200.webp 1200w, /images/scene-diversity-20261020/used-bmw-x5-vineyard-lane.webp 1448w",
+    "small": "/images/scene-diversity-20261020/used-bmw-x5-vineyard-lane-800.webp"
+  },
+  "used-lexus-rz": {
+    "src": "/images/scene-diversity-20261020/used-lexus-rz-cultural-plaza.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/used-lexus-rz-cultural-plaza-480.webp 480w, /images/scene-diversity-20261020/used-lexus-rz-cultural-plaza-800.webp 800w, /images/scene-diversity-20261020/used-lexus-rz-cultural-plaza-1200.webp 1200w, /images/scene-diversity-20261020/used-lexus-rz-cultural-plaza.webp 1448w",
+    "small": "/images/scene-diversity-20261020/used-lexus-rz-cultural-plaza-800.webp"
+  },
+  "used-mercedes-benz-s-450l": {
+    "src": "/images/scene-diversity-20261020/used-mercedes-s450l-city-hotel.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/used-mercedes-s450l-city-hotel-480.webp 480w, /images/scene-diversity-20261020/used-mercedes-s450l-city-hotel-800.webp 800w, /images/scene-diversity-20261020/used-mercedes-s450l-city-hotel-1200.webp 1200w, /images/scene-diversity-20261020/used-mercedes-s450l-city-hotel.webp 1448w",
+    "small": "/images/scene-diversity-20261020/used-mercedes-s450l-city-hotel-800.webp"
+  },
+  "used-toyota-crown-vellfire-hybrid": {
+    "src": "/images/scene-diversity-20261020/used-toyota-vellfire-airport.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/used-toyota-vellfire-airport-480.webp 480w, /images/scene-diversity-20261020/used-toyota-vellfire-airport-800.webp 800w, /images/scene-diversity-20261020/used-toyota-vellfire-airport-1200.webp 1200w, /images/scene-diversity-20261020/used-toyota-vellfire-airport.webp 1448w",
+    "small": "/images/scene-diversity-20261020/used-toyota-vellfire-airport-800.webp"
+  },
+  "wuling-bingo": {
+    "src": "/images/scene-diversity-20261020/wuling-bingo-colourful-quarter.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/scene-diversity-20261020/wuling-bingo-colourful-quarter-480.webp 480w, /images/scene-diversity-20261020/wuling-bingo-colourful-quarter-800.webp 800w, /images/scene-diversity-20261020/wuling-bingo-colourful-quarter-1200.webp 1200w, /images/scene-diversity-20261020/wuling-bingo-colourful-quarter.webp 1448w",
+    "small": "/images/scene-diversity-20261020/wuling-bingo-colourful-quarter-800.webp"
+  }
+}

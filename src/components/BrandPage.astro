@@ -1,0 +1,36 @@
+---
+import BrandHeroCopy from './BrandHeroCopy.astro';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import VehicleExplorer from './VehicleExplorer';
+import ProcurementFigure from './ProcurementFigure.astro';
+import BrandPurchaseGuide from './BrandPurchaseGuide.astro';
+import BrandInquiry from './BrandInquiry.astro';
+import {type Vehicle} from '../data/catalog';
+import {catalogCardData} from '../data/catalogCardData';
+import '../styles/catalog-refined.css';
+import '../styles/nest-catalog.css';
+interface Props{brand:string;items:Vehicle[];kind:Vehicle['kind'];}
+const {brand,items,kind}=Astro.props;const isNew=kind==='new';
+const powers=[...new Set(items.map(v=>v.powertrain))];
+const hasCharging=powers.some(p=>['Pure Electric','PHEV','EREV'].includes(p));
+const quotation='/quote/?'+new URLSearchParams({kind,brand}).toString();
+
+---
+<Base title={isNew?'New '+brand+' cars from China':'Used '+brand+' cars from China'} description={isNew?'Explore '+brand+' models and compare specifications. Request a quote for your preferred version and destination.':'Review '+brand+' used-car records, including supplied photos and details. Ask about current availability and condition.'}>
+ <div class:list={['catalog-refined',{'catalog-refined--used':!isNew,'catalog-refined--single':items.length===1}]}>
+ <Breadcrumbs items={[{label:isNew?'New Cars':'Used Cars',href:isNew?'/new-cars/':'/used-cars/'},{label:brand}]}/>
+ <header class="shell catalog-heading catalog-heading--brand catalog-heading--brand-compact" data-module="brand-range" data-core-module="scope"><BrandHeroCopy brand={brand} slug={items[0].brandSlug} kind={kind} compact/></header>
+ <section id="brand-models" class="shell catalog-results brand-model-results" data-module="brand-models" data-core-module="models"><VehicleExplorer client:load items={items.map(catalogCardData)} fixedBrand={items[0]?.brandSlug}/></section>
+ <BrandPurchaseGuide brand={brand} items={items} kind={kind} quotation={quotation}/>
+ {!isNew &&
+ <section class="shell brand-purchase-story brand-purchase-story--reverse" data-module="purchase-evidence" data-core-module="evidence" id="purchase-evidence">
+  <ProcurementFigure scene="shipping" caption="Confirm the car, destination documents and transport terms before agreeing an order."/>
+  <div class="brand-purchase-copy"><h2>Review the car and purchase terms</h2>
+  <p>Ask for a current offer and dated photos of the individual car. Check its vehicle identification, registration records, mileage and condition history. The inspection report should identify known repairs, damage and areas that were not checked.</p><p>{hasCharging?'For electric or plug-in hybrid cars, request battery records and charging-interface details. ':''}Agree the payment, inspection and transport terms for the individual vehicle.</p>
+  <div class="catalog-text-links"><a href="/export-services/buying-guide/compare-car-export-quotes/">Quotation checklist</a></div></div>
+ </section>
+ }
+ <BrandInquiry brand={brand} kind={kind} quotation={quotation}/>
+ </div>
+</Base>

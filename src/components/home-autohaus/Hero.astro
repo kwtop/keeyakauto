@@ -1,0 +1,15 @@
+---
+import Action from './Action.astro';
+import {homeHero} from '../../data/homeHero';
+const desktop=homeHero('hero-desktop'),mobile=homeHero('hero-mobile');
+---
+<section class="ah-hero" data-ah-section="Hero" aria-labelledby="nest-home-title">
+ <picture class="ah-hero-picture">
+  <source media="(max-width:599px)" srcset={mobile.srcset} sizes="max(100vw, 62svh)" width={mobile.width} height={mobile.height}/>
+  <img {...desktop} sizes="(max-width:1199px) max(100vw, 157svh), 100vw" alt="White crossover in side profile beside minimalist architecture; AI-generated concept" fetchpriority="high" decoding="async"/>
+ </picture>
+ <div class="ah-hero-shade" aria-hidden="true"></div>
+ <div class="ah-hero-fade" aria-hidden="true"></div>
+ <div class="ah-hero-copy"><h1 id="nest-home-title">Source new and used cars from China</h1><Action href="#models" label="Browse cars"/></div>
+ 
+</section>

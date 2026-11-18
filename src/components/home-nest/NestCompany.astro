@@ -1,0 +1,11 @@
+---
+import { company } from '../../data/company';
+const media='/images/keeyak-home-source-20261019/';
+---
+<section class="nest-company nest-container" data-core-module="company-records" aria-labelledby="nest-company-title">
+  <div class="nest-company-intro"><h2 id="nest-company-title">Visits &amp; conversations.</h2><div><p>{company.legalName}<br/>Hangzhou, China. Real photographs from our office and wider vehicle business.</p><a class="nest-inline-link" href="/about/">Meet KEEYAK</a></div></div>
+  <div class="nest-company-grid">
+    <figure><a href="/about/"><img src={media+'office-visitor-group.webp'} srcset={`${media}office-visitor-group-640.webp 640w, ${media}office-visitor-group-960.webp 960w, ${media}office-visitor-group.webp 1600w`} sizes="(max-width:767px) calc(100vw - 32px), (max-width:1023px) calc((100vw - 72px)/2), calc((100vw - 108px)/2)" alt="Original photograph of KEEYAK colleagues and visitors in front of the company office brand wall" width="1600" height="1200" loading="lazy"/></a><figcaption><span>Visitors at the KEEYAK office</span></figcaption></figure>
+    <figure class="nest-company-discussion"><a href="/about/news/vietnam-exhibition-2026/"><img src={media+'vietnam-category-discussion-2026.webp'} srcset={`${media}vietnam-category-discussion-2026-640.webp 640w, ${media}vietnam-category-discussion-2026-960.webp 960w, ${media}vietnam-category-discussion-2026.webp 1125w`} sizes="(max-width:767px) calc(100vw - 32px), (max-width:1023px) calc((100vw - 72px)/2), calc((100vw - 108px)/2)" alt="Original photograph of three people reviewing special-vehicle catalogues at the Vietnam exhibition in May 2026" width="1125" height="1500" loading="lazy"/></a><figcaption><span>Vietnam exhibition · Special-vehicle discussion</span><span>May 2026</span></figcaption></figure>
+  </div>
+</section>

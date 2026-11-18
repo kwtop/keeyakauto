@@ -1,0 +1,137 @@
+---
+import TrustLayout from '../../layouts/TrustLayout.astro';
+import {exportLinks} from '../../data/exportServices';
+import {trustPages} from '../../data/trustContent';
+import {trustMedia} from '../../data/trustMedia';
+import '../../styles/export-illustrated.css';
+
+const {title, description, label, group, opening} = trustPages.overview;
+const cards = [
+  {image: 'buying-guide-multibrand', summary: 'Compare offers and see what to check before placing an order.'},
+  {image: 'vehicle-inspection-evidence', summary: 'See how we find cars and arrange inspections before release.'},
+  {image: 'shipping', summary: 'Plan the route, shipping documents and vehicle handover.'},
+  {image: 'support-branded', summary: 'Get help with a vehicle issue or parts request after delivery.', compact: true},
+  {image: 'records', summary: 'Get answers about stock, payment, inspections and shipping.', compact: true},
+];
+---
+<TrustLayout {title} {description} {label} {group} image={trustMedia(opening.image).src}
+  pageType="CollectionPage" collection={exportLinks.map(link => ({name: link.label, url: link.href}))}>
+  <section class="tc-wrap tc-opening overview-opening" aria-labelledby="tc-page-title">
+    <h1 id="tc-page-title">{opening.title}</h1>
+    <a class="tc-button" href="/quote/?service=export-services">Start a vehicle inquiry</a>
+  </section>
+
+  <ul id="services" class="tc-wrap overview-services" aria-label="Export services and buying resources">
+    {exportLinks.map((link, index) => {
+      const {image, summary, compact} = cards[index];
+      const asset = trustMedia(image);
+      return <li class:list={{'overview-service--compact': compact}}>
+        <a class:list={['overview-card', {'overview-card--compact': compact}]} href={link.href} aria-labelledby={`service-title-${index}`} aria-describedby={`service-summary-${index}`}>
+          <img src={asset.src} srcset={asset.srcset}
+            sizes={compact ? '(max-width: 760px) 76px, (max-width: 1200px) 10vw, 120px' : '(max-width: 679px) calc(100vw - 50px), (max-width: 1416px) 31vw, 420px'}
+            width={asset.width} height={asset.height} alt={asset.alt}
+            loading={compact ? 'lazy' : 'eager'} decoding="async" data-asset-kind={asset.kind}/>
+          <div class="overview-card-copy">
+            <h2 id={`service-title-${index}`}>{link.label}</h2>
+            <p id={`service-summary-${index}`}>{summary}</p>
+          </div>
+        </a>
+      </li>;
+    })}
+  </ul>
+</TrustLayout>
+
+<style>
+  .overview-opening {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  :global(body.inner-autohaus #main) .overview-opening h1 { margin-inline: 0; text-wrap: balance; }
+  :global(body.inner-autohaus #main) .overview-services {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: var(--space-grid);
+    margin: 0 auto clamp(48px, 7vw, 88px);
+    padding: 0;
+    list-style: none;
+  }
+  .overview-services > li {
+    grid-column: span 2;
+    min-width: 0;
+  }
+  .overview-services > .overview-service--compact { grid-column: span 3; }
+  .overview-card {
+    display: block;
+    height: 100%;
+    padding: var(--tc-photo-frame);
+    border-radius: calc(var(--tc-photo-radius) + var(--tc-photo-frame));
+    background: #fff;
+    box-shadow: var(--tc-photo-shadow);
+    color: inherit;
+    text-decoration: none;
+    transition: box-shadow 180ms ease;
+  }
+  .overview-card:hover { box-shadow: var(--tc-control-shadow); }
+  .overview-card:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+  .overview-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: var(--tc-photo-radius);
+  }
+  :global(body.inner-autohaus #main) .overview-card-copy h2 {
+    margin: 0;
+    font-size: var(--heading-list-card);
+    line-height: 1.2;
+  }
+  :global(body.inner-autohaus #main) .overview-card-copy p {
+    margin: 0;
+    color: var(--tc-muted);
+    font-size: 15px;
+  }
+  .overview-card--compact {
+    --thumbnail-width: clamp(76px, 10vw, 120px);
+    display: grid;
+    grid-template-columns: var(--thumbnail-width) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(12px, 1.6vw, 20px);
+    padding: 10px;
+    background: var(--tc-paper);
+    box-shadow: none;
+  }
+  .overview-card--compact img {
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  :global(body.inner-autohaus #main) .overview-card--compact .overview-card-copy {
+    gap: 4px;
+    padding: 6px 8px 6px 0;
+  }
+  :global(body.inner-autohaus #main) .overview-card--compact h2 { font-size: clamp(17px, 1.6vw, 21px); }
+  :global(body.inner-autohaus #main) .overview-card--compact p { font-size: 14px; }
+  #services { scroll-margin-top: 100px; }
+  @media (max-width: 679px) {
+    :global(body.inner-autohaus #main) .overview-services { grid-template-columns: minmax(0, 1fr); }
+    .overview-services > li,
+    .overview-services > .overview-service--compact { grid-column: 1; }
+  }
+  @media (max-width: 599px) {
+    :global(body.inner-autohaus #main) .tc-opening.overview-opening {
+      gap: 18px;
+      padding-block: 24px 32px;
+    }
+    .overview-card:not(.overview-card--compact) img {
+      aspect-ratio: auto;
+      object-fit: contain;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .overview-card { transition: none; }
+  }
+</style>

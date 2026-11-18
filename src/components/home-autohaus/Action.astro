@@ -1,0 +1,5 @@
+---
+interface Props {href?:string;label:string;light?:boolean;class?:string;}
+const {href,label,light=false,class:extra=''}=Astro.props;
+---
+<a href={href} class:list={['ah-action',{'ah-action-light':light},extra]}><span class="ah-action-window"><span>{label}</span><span aria-hidden="true">{label}</span></span></a>

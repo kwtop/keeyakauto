@@ -1,0 +1,22 @@
+/* Photographic cards fill their frames. Source documents and configuration
+   references keep their proportions and let the visible frame follow the image. */
+body #main .vehicle-design .vd-related-photo img{object-fit:cover}
+body #main .vehicle-design .vd-compare-config img{height:auto;aspect-ratio:auto}
+body #main .vehicle-design--new .vd-gallery>.vd-main-photo{aspect-ratio:auto}
+body #main .vehicle-design--new .vd-gallery>.vd-main-photo img{width:100%;height:auto;max-height:none}
+body #main .vehicle-design .vd-thumbnails img{object-fit:cover}
+/* Keep photo captions centered, including captions rendered as linked text or flex rows. */
+:is(body.autohaus-home,body.inner-editorial) #main figure>figcaption{text-align:center;justify-content:center}
+body.inner-autohaus #main .tc-site .tc-news-cover-pair img:first-child{border-radius:var(--tc-photo-radius,20px) 0 0 var(--tc-photo-radius,20px)}
+body.inner-autohaus #main .tc-site .tc-news-cover-pair img:last-child{border-radius:0 var(--tc-photo-radius,20px) var(--tc-photo-radius,20px) 0}
+body.inner-autohaus #main .cp-intro-photographs>.tc-figure img,
+body.inner-autohaus #main .cp-photo-caption .tc-figure img{object-fit:cover;object-position:50% 35%}
+body.inner-autohaus #main .tc-site .cp-document-well{width:fit-content;max-width:100%;height:auto;margin-inline:auto;padding:0;background:transparent}
+body.inner-autohaus #main .tc-site .cp-document-well img{width:auto;height:auto;max-width:100%;max-height:230px;border-radius:10px;box-shadow:0 1px 3px #2121210b,0 5px 14px #2121210b}
+body.inner-autohaus #main .procurement-reading .reading-archive-photo>a>img,
+body.inner-autohaus #main .procurement-reading .ex-vehicle-reference img,
+body.inner-autohaus #main .reading-resource-hub .reading-resource-index>article:last-child .ex-photo img,
+body.inner-autohaus #main .reading-destination-guide .reading-destination-pair>article:last-child .ex-photo img{height:auto;aspect-ratio:auto}
+@media(max-width:599px){
+ body.inner-autohaus #main .tc-site .cp-document-well img{max-height:185px}
+}

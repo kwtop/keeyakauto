@@ -1,0 +1,9 @@
+---
+import {aboutStudy as content} from '../../data/aboutLandingStudy';
+import StudyIcon from './StudyIcon.astro';
+---
+<section class="study-process study-section" id="working-together" aria-labelledby="study-process-title"><div class="study-wrap">
+ <div class="section-heading" data-study-reveal><div><p class="eyebrow caption-1"><span class="study-dot"></span>Working together</p><h2 class="heading-2" id="study-process-title">Start with the details.</h2></div><a class="study-text-link title-4" href="/export-services/buying-guide/">Read the buying guide</a></div>
+ <ol class="process-list">{content.steps.map(step=><li data-study-reveal><span class="process-number heading-3">{step.number}</span><div><h3 class="heading-6">{step.title}</h3><p class="body-3">{step.body}</p></div></li>)}</ol>
+ <p class="process-note body-6"><StudyIcon name="file"/>Review the written offer for the exact version, included services and responsibilities.</p>
+</div></section>

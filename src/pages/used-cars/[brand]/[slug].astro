@@ -1,0 +1,17 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import VehicleDetail from '../../../components/VehicleDetail';
+import {detailRecommendations} from '../../../data/detailRecommendations';
+import {vehicles,brandHref,vehicleHref,type Vehicle} from '../../../data/catalog';
+import {vehicleDescription,vehicleStructuredData,vehicleTitle} from '../../../data/vehicleSeo';
+import {productModelFocus} from '../../../data/productModelFocus';
+export function getStaticPaths(){return vehicles.filter(v=>v.kind==='used').map(vehicle=>({params:{brand:vehicle.brandSlug,slug:vehicle.slug},props:{vehicle}}));}
+interface Props{vehicle:Vehicle;}
+const {vehicle}=Astro.props;
+---
+<Base title={vehicleTitle(vehicle)} description={vehicleDescription(vehicle)} image={vehicle.image}>
+ <Breadcrumbs items={[{label:'Used Cars',href:'/used-cars/'},{label:vehicle.brand,href:brandHref('used',vehicle.brandSlug)},{label:vehicle.name}]}/>
+ <VehicleDetail client:load vehicle={vehicle} editorialFocus={productModelFocus(vehicle)} sourcePath={vehicleHref(vehicle)} related={detailRecommendations(vehicle)}/>
+ <script type="application/ld+json" set:html={JSON.stringify(vehicleStructuredData(vehicle,Astro.site?.origin))}/>
+</Base>

@@ -1,0 +1,10 @@
+{
+  "gwm/poer": {
+    "src": "/images/home-featured-scale-20261102/gwm-poer.webp",
+    "srcSet": "/images/home-featured-scale-20261102/gwm-poer-480.webp 480w, /images/home-featured-scale-20261102/gwm-poer-800.webp 800w, /images/home-featured-scale-20261102/gwm-poer-1200.webp 1200w, /images/home-featured-scale-20261102/gwm-poer.webp 1448w"
+  },
+  "wuling/yangguang": {
+    "src": "/images/home-featured-scale-20261102/wuling-yangguang.webp",
+    "srcSet": "/images/home-featured-scale-20261102/wuling-yangguang-480.webp 480w, /images/home-featured-scale-20261102/wuling-yangguang-800.webp 800w, /images/home-featured-scale-20261102/wuling-yangguang-1200.webp 1200w, /images/home-featured-scale-20261102/wuling-yangguang.webp 1448w"
+  }
+}

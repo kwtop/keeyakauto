@@ -1,0 +1,34 @@
+---
+import {siteEntities} from '../data/siteStructuredData';
+import Header from '../components/home-autohaus/Header.astro';
+import Footer from '../components/home-autohaus/Footer.astro';
+import Measurement from '../components/Measurement.astro';
+import {homeHero} from '../data/homeHero';
+import '../styles/global.css';
+import '../styles/home-autohaus.css';
+import '../styles/home-compact.css';
+import '../styles/home-relationships.css';
+import '../styles/home-ending.css';
+import '../styles/contextual-links.css';
+import '../styles/headings.css';
+import '../styles/site-spacing.css';
+interface Props {title:string;description:string;}
+const {title,description}=Astro.props;
+const canonical=new URL(Astro.url.pathname,Astro.site).href;
+const socialImage=new URL(homeHero('hero-desktop').src,Astro.site).href;
+---
+<!doctype html>
+<html lang="en"><head>
+ <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <meta name="theme-color" content="#ffffff"/><meta name="robots" content="index,follow,max-image-preview:large"/>
+ <meta name="description" content={description}/>
+ <link rel="canonical" href={canonical}/>
+ <meta property="og:url" content={canonical}/><meta property="og:type" content="website"/><meta property="og:title" content={`${title} | KEEYAK Auto`}/><meta property="og:description" content={description}/><meta property="og:image" content={socialImage}/>
+ <link rel="icon" href="/favicon.png" type="image/png" sizes="256x256"/>
+ <link rel="preload" href="/fonts/InterDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin/>
+ <title>{title} | KEEYAK Auto</title>
+<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':siteEntities(Astro.site||Astro.url.origin)})}/>
+</head><body class="autohaus-home">
+ <a class="skip-link" href="#main">Skip to content</a>
+ <Header solid={false}/><main id="main"><slot/></main><Footer/><Measurement/>
+</body></html>

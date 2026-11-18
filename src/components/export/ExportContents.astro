@@ -1,0 +1,5 @@
+---
+interface Props {items:{label:string;id:string}[];}
+const {items}=Astro.props;
+---
+<nav class="ex-contents ex-wrap" aria-label="On this page">{items.map(item=><a href={`#${item.id}`}>{item.label}</a>)}</nav>

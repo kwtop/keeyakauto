@@ -1,0 +1,361 @@
+{
+  "sourcing-branded": {
+    "src": "/images/export-variety-20261030/sourcing-branded-1440.webp",
+    "srcset": "/images/export-variety-20261030/sourcing-branded-480.webp 480w, /images/export-variety-20261030/sourcing-branded-960.webp 960w, /images/export-variety-20261030/sourcing-branded-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "shipping": {
+    "src": "/images/export-variety-20261030/shipping-1440.webp",
+    "srcset": "/images/export-variety-20261030/shipping-480.webp 480w, /images/export-variety-20261030/shipping-960.webp 960w, /images/export-variety-20261030/shipping-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "handover": {
+    "src": "/images/trust-20261021/handover-1440.webp",
+    "srcset": "/images/trust-20261021/handover-480.webp 480w, /images/trust-20261021/handover-960.webp 960w, /images/trust-20261021/handover-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "inspection": {
+    "src": "/images/trust-20261021/inspection-1440.webp",
+    "srcset": "/images/trust-20261021/inspection-480.webp 480w, /images/trust-20261021/inspection-960.webp 960w, /images/trust-20261021/inspection-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "records": {
+    "src": "/images/trust-20261021/records-1440.webp",
+    "srcset": "/images/trust-20261021/records-480.webp 480w, /images/trust-20261021/records-960.webp 960w, /images/trust-20261021/records-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "planning": {
+    "src": "/images/trust-20261021/planning-1440.webp",
+    "srcset": "/images/trust-20261021/planning-480.webp 480w, /images/trust-20261021/planning-960.webp 960w, /images/trust-20261021/planning-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "support": {
+    "src": "/images/trust-20261021/support-1440.webp",
+    "srcset": "/images/trust-20261021/support-480.webp 480w, /images/trust-20261021/support-960.webp 960w, /images/trust-20261021/support-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "parts": {
+    "src": "/images/trust-20261021/parts-1440.webp",
+    "srcset": "/images/trust-20261021/parts-480.webp 480w, /images/trust-20261021/parts-960.webp 960w, /images/trust-20261021/parts-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "office": {
+    "src": "/images/trust-20261021/office-1440.webp",
+    "srcset": "/images/trust-20261021/office-480.webp 480w, /images/trust-20261021/office-960.webp 960w, /images/trust-20261021/office-1440.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "kind": "refined",
+    "original": "/images/keeyak-home-source-20261019/office-visitor-group.webp"
+  },
+  "vietnam": {
+    "src": "/images/trust-20261021/vietnam-1440.webp",
+    "srcset": "/images/trust-20261021/vietnam-480.webp 480w, /images/trust-20261021/vietnam-960.webp 960w, /images/trust-20261021/vietnam-1440.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "kind": "refined",
+    "original": "/images/company/about-selected/vietnam-booth-2026-wide.webp"
+  },
+  "algeria": {
+    "src": "/images/trust-20261021/algeria-1086.webp",
+    "srcset": "/images/trust-20261021/algeria-480.webp 480w, /images/trust-20261021/algeria-960.webp 960w, /images/trust-20261021/algeria-1086.webp 1086w",
+    "width": 1086,
+    "height": 1448,
+    "kind": "refined",
+    "original": "/images/company/records/algeria-2026-01.webp"
+  },
+  "team": {
+    "src": "/images/trust-20261021/team-1440.webp",
+    "srcset": "/images/trust-20261021/team-480.webp 480w, /images/trust-20261021/team-960.webp 960w, /images/trust-20261021/team-1440.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "kind": "refined",
+    "original": "/images/company/records/annual-gathering-2026.webp"
+  },
+  "indonesia": {
+    "src": "/images/trust-20261021/indonesia-1440.webp",
+    "srcset": "/images/trust-20261021/indonesia-480.webp 480w, /images/trust-20261021/indonesia-960.webp 960w, /images/trust-20261021/indonesia-1440.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "kind": "refined",
+    "original": "/images/company/records/indonesia-2024-03.webp"
+  },
+  "mexico": {
+    "src": "/images/trust-20261021/mexico-1440.webp",
+    "srcset": "/images/trust-20261021/mexico-480.webp 480w, /images/trust-20261021/mexico-960.webp 960w, /images/trust-20261021/mexico-1440.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "kind": "refined",
+    "original": "/images/company/about-selected/mexico-exhibition-01.webp"
+  },
+  "chongqing": {
+    "src": "/images/trust-20261021/chongqing-1440.webp",
+    "srcset": "/images/trust-20261021/chongqing-480.webp 480w, /images/trust-20261021/chongqing-960.webp 960w, /images/trust-20261021/chongqing-1440.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "kind": "refined",
+    "original": "/images/company/team-chongqing-2025.webp"
+  },
+  "spring2025": {
+    "src": "/images/trust-20261021/spring2025-1440.webp",
+    "srcset": "/images/trust-20261021/spring2025-480.webp 480w, /images/trust-20261021/spring2025-960.webp 960w, /images/trust-20261021/spring2025-1440.webp 1440w",
+    "width": 1440,
+    "height": 1038,
+    "kind": "refined",
+    "original": "/images/company/about-selected/spring-festival-2025.webp"
+  },
+  "spring2023": {
+    "src": "/images/trust-20261021/spring2023-1440.webp",
+    "srcset": "/images/trust-20261021/spring2023-480.webp 480w, /images/trust-20261021/spring2023-960.webp 960w, /images/trust-20261021/spring2023-1440.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "kind": "refined",
+    "original": "/images/company/about-selected/spring-festival-2023.webp"
+  },
+  "lake-overview": {
+    "src": "/images/trust-20261021/lake-overview-1440.webp",
+    "srcset": "/images/trust-20261021/lake-overview-480.webp 480w, /images/trust-20261021/lake-overview-960.webp 960w, /images/trust-20261021/lake-overview-1440.webp 1440w",
+    "width": 1440,
+    "height": 617,
+    "kind": "concept"
+  },
+  "mountain-guide": {
+    "src": "/images/trust-20261021/mountain-guide-1440.webp",
+    "srcset": "/images/trust-20261021/mountain-guide-480.webp 480w, /images/trust-20261021/mountain-guide-960.webp 960w, /images/trust-20261021/mountain-guide-1440.webp 1440w",
+    "width": 1440,
+    "height": 617,
+    "kind": "concept"
+  },
+  "support-branded": {
+    "src": "/images/export-variety-20261030/support-branded-1440.webp",
+    "srcset": "/images/export-variety-20261030/support-branded-480.webp 480w, /images/export-variety-20261030/support-branded-960.webp 960w, /images/export-variety-20261030/support-branded-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "loading-check": {
+    "src": "/images/trust-20261021/loading-check-1440.webp",
+    "srcset": "/images/trust-20261021/loading-check-480.webp 480w, /images/trust-20261021/loading-check-960.webp 960w, /images/trust-20261021/loading-check-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "transport-roro": {
+    "src": "/images/export-variety-20261030/transport-roro-1440.webp",
+    "srcset": "/images/export-variety-20261030/transport-roro-480.webp 480w, /images/export-variety-20261030/transport-roro-960.webp 960w, /images/export-variety-20261030/transport-roro-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "transport-container": {
+    "src": "/images/export-variety-20261030/transport-container-1440.webp",
+    "srcset": "/images/export-variety-20261030/transport-container-480.webp 480w, /images/export-variety-20261030/transport-container-960.webp 960w, /images/export-variety-20261030/transport-container-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "transport-overland": {
+    "src": "/images/vehicle-badges-20261030/transport-overland-1440.webp",
+    "srcset": "/images/vehicle-badges-20261030/transport-overland-480.webp 480w, /images/vehicle-badges-20261030/transport-overland-960.webp 960w, /images/vehicle-badges-20261030/transport-overland-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "market-compatibility": {
+    "src": "/images/trust-20261027/market-compatibility-1440.webp",
+    "srcset": "/images/trust-20261027/market-compatibility-480.webp 480w, /images/trust-20261027/market-compatibility-960.webp 960w, /images/trust-20261027/market-compatibility-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "parts-review": {
+    "src": "/images/trust-20261027/parts-review-1440.webp",
+    "srcset": "/images/trust-20261027/parts-review-480.webp 480w, /images/trust-20261027/parts-review-960.webp 960w, /images/trust-20261027/parts-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-offer-review": {
+    "src": "/images/export-variety-20261030/vehicle-offer-review-1440.webp",
+    "srcset": "/images/export-variety-20261030/vehicle-offer-review-480.webp 480w, /images/export-variety-20261030/vehicle-offer-review-960.webp 960w, /images/export-variety-20261030/vehicle-offer-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-inspection-evidence": {
+    "src": "/images/service-content-20261028/vehicle-inspection-evidence-1440.webp",
+    "srcset": "/images/service-content-20261028/vehicle-inspection-evidence-480.webp 480w, /images/service-content-20261028/vehicle-inspection-evidence-960.webp 960w, /images/service-content-20261028/vehicle-inspection-evidence-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-handover-record": {
+    "src": "/images/service-content-20261028/vehicle-handover-record-1440.webp",
+    "srcset": "/images/service-content-20261028/vehicle-handover-record-480.webp 480w, /images/service-content-20261028/vehicle-handover-record-960.webp 960w, /images/service-content-20261028/vehicle-handover-record-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-parts-identification": {
+    "src": "/images/service-content-20261028/vehicle-parts-identification-1440.webp",
+    "srcset": "/images/service-content-20261028/vehicle-parts-identification-480.webp 480w, /images/service-content-20261028/vehicle-parts-identification-960.webp 960w, /images/service-content-20261028/vehicle-parts-identification-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "support-issue-report": {
+    "src": "/images/inner-editorial-20261029/support-issue-report-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/support-issue-report-480.webp 480w, /images/inner-editorial-20261029/support-issue-report-960.webp 960w, /images/inner-editorial-20261029/support-issue-report-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "shipping-document-review": {
+    "src": "/images/inner-editorial-20261029/shipping-document-review-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/shipping-document-review-480.webp 480w, /images/inner-editorial-20261029/shipping-document-review-960.webp 960w, /images/inner-editorial-20261029/shipping-document-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-search-brief": {
+    "src": "/images/export-variety-20261030/vehicle-search-brief-1440.webp",
+    "srcset": "/images/export-variety-20261030/vehicle-search-brief-480.webp 480w, /images/export-variety-20261030/vehicle-search-brief-960.webp 960w, /images/export-variety-20261030/vehicle-search-brief-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "destination-compatibility-check": {
+    "src": "/images/inner-editorial-20261029/destination-compatibility-check-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/destination-compatibility-check-480.webp 480w, /images/inner-editorial-20261029/destination-compatibility-check-960.webp 960w, /images/inner-editorial-20261029/destination-compatibility-check-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-records-review": {
+    "src": "/images/inner-editorial-20261029/vehicle-records-review-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/vehicle-records-review-480.webp 480w, /images/inner-editorial-20261029/vehicle-records-review-960.webp 960w, /images/inner-editorial-20261029/vehicle-records-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "inspection-scope-check": {
+    "src": "/images/inner-editorial-20261029/inspection-scope-check-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/inspection-scope-check-480.webp 480w, /images/inner-editorial-20261029/inspection-scope-check-960.webp 960w, /images/inner-editorial-20261029/inspection-scope-check-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-quotation-review": {
+    "src": "/images/inner-editorial-20261029/vehicle-quotation-review-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/vehicle-quotation-review-480.webp 480w, /images/inner-editorial-20261029/vehicle-quotation-review-960.webp 960w, /images/inner-editorial-20261029/vehicle-quotation-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "inspection-report-review": {
+    "src": "/images/inner-editorial-20261029/inspection-report-review-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/inspection-report-review-480.webp 480w, /images/inner-editorial-20261029/inspection-report-review-960.webp 960w, /images/inner-editorial-20261029/inspection-report-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "acceptance-check": {
+    "src": "/images/inner-editorial-20261029/acceptance-check-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/acceptance-check-480.webp 480w, /images/inner-editorial-20261029/acceptance-check-960.webp 960w, /images/inner-editorial-20261029/acceptance-check-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "shipping-route-coordination": {
+    "src": "/images/inner-editorial-20261029/shipping-route-coordination-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/shipping-route-coordination-480.webp 480w, /images/inner-editorial-20261029/shipping-route-coordination-960.webp 960w, /images/inner-editorial-20261029/shipping-route-coordination-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "departure-condition-record": {
+    "src": "/images/inner-editorial-20261029/departure-condition-record-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/departure-condition-record-480.webp 480w, /images/inner-editorial-20261029/departure-condition-record-960.webp 960w, /images/inner-editorial-20261029/departure-condition-record-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "support-order-review": {
+    "src": "/images/inner-editorial-20261029/support-order-review-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/support-order-review-480.webp 480w, /images/inner-editorial-20261029/support-order-review-960.webp 960w, /images/inner-editorial-20261029/support-order-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "arrival-item-check": {
+    "src": "/images/inner-editorial-20261029/arrival-item-check-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/arrival-item-check-480.webp 480w, /images/inner-editorial-20261029/arrival-item-check-960.webp 960w, /images/inner-editorial-20261029/arrival-item-check-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "parts-reference-match": {
+    "src": "/images/inner-editorial-20261029/parts-reference-match-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/parts-reference-match-480.webp 480w, /images/inner-editorial-20261029/parts-reference-match-960.webp 960w, /images/inner-editorial-20261029/parts-reference-match-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "new-car-configuration": {
+    "src": "/images/inner-editorial-20261029/new-car-configuration-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/new-car-configuration-480.webp 480w, /images/inner-editorial-20261029/new-car-configuration-960.webp 960w, /images/inner-editorial-20261029/new-car-configuration-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "used-car-record-check": {
+    "src": "/images/inner-editorial-20261029/used-car-record-check-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/used-car-record-check-480.webp 480w, /images/inner-editorial-20261029/used-car-record-check-960.webp 960w, /images/inner-editorial-20261029/used-car-record-check-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "export-dispatch-handover": {
+    "src": "/images/inner-editorial-20261029/export-dispatch-handover-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/export-dispatch-handover-480.webp 480w, /images/inner-editorial-20261029/export-dispatch-handover-960.webp 960w, /images/inner-editorial-20261029/export-dispatch-handover-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "vehicle-request-planning": {
+    "src": "/images/export-variety-20261030/vehicle-request-planning-1440.webp",
+    "srcset": "/images/export-variety-20261030/vehicle-request-planning-480.webp 480w, /images/export-variety-20261030/vehicle-request-planning-960.webp 960w, /images/export-variety-20261030/vehicle-request-planning-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "support-coverage-review": {
+    "src": "/images/inner-editorial-20261029/support-coverage-review-1440.webp",
+    "srcset": "/images/inner-editorial-20261029/support-coverage-review-480.webp 480w, /images/inner-editorial-20261029/support-coverage-review-960.webp 960w, /images/inner-editorial-20261029/support-coverage-review-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  },
+  "buying-guide-multibrand": {
+    "src": "/images/export-variety-20261030/buying-guide-multibrand-1440.webp",
+    "srcset": "/images/export-variety-20261030/buying-guide-multibrand-480.webp 480w, /images/export-variety-20261030/buying-guide-multibrand-960.webp 960w, /images/export-variety-20261030/buying-guide-multibrand-1440.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "kind": "concept"
+  }
+}

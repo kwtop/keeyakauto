@@ -1,0 +1,6 @@
+.keeyak-visits-carousel{width:100%;position:relative;isolation:isolate}
+.keeyak-visits-scene{height:430px;width:100%;max-width:1600px;margin:auto;position:relative;overflow:hidden}
+.ah-visits-fallback{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;max-width:1320px;margin:24px auto;padding-inline:20px}
+.ah-visits-fallback img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px}
+@media(max-width:809px){.keeyak-visits-scene{height:340px}.ah-visits-fallback{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:359px){.keeyak-visits-scene{height:310px}}

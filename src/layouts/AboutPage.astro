@@ -1,0 +1,12 @@
+---
+import Base from './Base.astro';
+import '../styles/about-redesign.css';
+interface Props { title:string; description:string; image?:string; page:'company'|'news'|'event'; }
+const {title,description,image,page}=Astro.props;
+---
+<Base title={title} description={description} image={image}>
+  <div class:list={['about-site',`about-site--${page}`]}>
+    <div class="au-wrap au-navigation"><nav class="au-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span>{page==='company'?<span aria-current="page">Company Profile</span>:<a href="/about/">Company Profile</a>}{page!=='company'&&<><span aria-hidden="true">/</span>{page==='event'?<a href="/about/news/">News & Events</a>:<span aria-current="page">News & Events</span>}</>}</nav></div>
+    <slot/>
+  </div>
+</Base>

@@ -1,0 +1,7 @@
+---
+interface Props {columns:string[];rows:string[][];caption:string;class?:string;}
+const {columns,rows,caption,class:className=''}=Astro.props;
+---
+<div class:list={['ex-table-wrap',className]}>
+  <table class="ex-table" role="table"><caption>{caption}</caption><thead role="rowgroup"><tr role="row">{columns.map(column=><th scope="col" role="columnheader">{column}</th>)}</tr></thead><tbody role="rowgroup">{rows.map(row=><tr role="row">{row.map((cell,i)=>i===0?<th scope="row" role="rowheader">{cell}</th>:<td role="cell" data-label={columns[i]}>{cell}</td>)}</tr>)}</tbody></table>
+</div>

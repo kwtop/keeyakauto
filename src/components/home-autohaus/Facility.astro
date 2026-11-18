@@ -1,0 +1,33 @@
+---
+import {Globe, RotateCcwClock, Warehouse} from '@lucide/astro';
+import {photo, facts} from '../../data/homeFacility.json';
+
+const icons = {globe: Globe, history: RotateCcwClock, warehouse: Warehouse};
+---
+<section class="ah-facility" id="nest-company-title" data-ah-section="Facility" aria-labelledby="ah-facility-title">
+ <div class="ah-container">
+  <div class="ah-facility-heading">
+   <h2 id="ah-facility-title">KEEYAK at a glance</h2>
+  </div>
+  <div class="ah-facility-layout">
+   <ul class="ah-facility-facts" aria-label="KEEYAK company facts">
+    {facts.map(fact => {
+     const Icon = icons[fact.icon as keyof typeof icons];
+     return <li class="ah-facility-fact">
+      <span class="ah-facility-fact-icon" aria-hidden="true"><Icon size={32} stroke-width={1.8}/></span>
+      <div class="ah-facility-fact-copy">
+       <strong class="ah-facility-fact-value">{fact.value}</strong>
+       <span class="ah-facility-fact-label">{fact.label}</span>
+      </div>
+     </li>;
+    })}
+   </ul>
+   <figure class="ah-facility-photo">
+    <div class="ah-facility-photo-frame">
+     <img {...photo} sizes="(min-width:1400px) 855px, (min-width:960px) 61vw, (min-width:810px) calc(100vw - 96px), calc(100vw - 56px)" alt="AI-generated architectural concept of a vehicle preparation hall with a KEEYAK sign, a silver sedan and a white SUV" data-asset-kind="illustration" loading="lazy" decoding="async"/>
+    </div>
+    
+   </figure>
+  </div>
+ </div>
+</section>

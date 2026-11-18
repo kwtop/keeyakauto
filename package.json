@@ -1,0 +1,53 @@
+{
+  "name": "keeyak-auto",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node --experimental-strip-types scripts/prepare-public-vehicles.mjs && node scripts/prepare-gallery-images.mjs",
+    "dev": "astro dev --host 0.0.0.0",
+    "prebuild": "node --experimental-strip-types scripts/prepare-public-vehicles.mjs && node scripts/prepare-gallery-images.mjs",
+    "build": "astro build",
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/generate-agent-markdown.mjs",
+    "build:markdown": "node scripts/generate-agent-markdown.mjs",
+    "test:markdown": "node --experimental-strip-types --test tests/markdown-negotiation.test.mjs",
+    "test:markdown:integration": "node scripts/test-markdown-integration.mjs",
+    "preview": "astro preview --host 0.0.0.0",
+    "precheck": "node --experimental-strip-types scripts/prepare-public-vehicles.mjs",
+    "check": "astro check",
+    "test:catalog": "node scripts/test-catalog-discovery.mjs",
+    "test:measurement": "node --test tests/measurement-client.test.mjs",
+    "test:seo": "node scripts/test-seo-geo.mjs",
+    "admin:setup": "node scripts/setup-local-admin.mjs",
+    "admin:migrate": "wrangler d1 migrations apply DB --local",
+    "admin:dev": "node scripts/start-admin-dev.mjs",
+    "admin:preview": "node scripts/start-admin-dev.mjs --no-build",
+    "test:admin": "node scripts/test-admin.mjs",
+    "test:admin:integration": "node scripts/test-admin-integration.mjs",
+    "admin:prune": "node scripts/prune-admin.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "^7.0.0",
+    "@lucide/astro": "^1.56.0",
+    "astro": "^7.3.4",
+    "gsap": "3.13.0",
+    "jose": "^6.2.13",
+    "lucide-react": "^1.59.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@cloudflare/workers-types": "^5.20261022.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "esbuild": "^0.28.2",
+    "gpt-tokenizer": "4.1.0",
+    "linkedom": "0.18.15",
+    "turndown": "7.2.5",
+    "turndown-plugin-gfm": "1.0.2",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.151.3"
+  }
+}

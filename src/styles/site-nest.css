@@ -1,0 +1,66 @@
+/* Nest application to formal KEEYAK routes. Source facts remain in DESIGN.md.
+   Dedicated page styles define their own grid and image hierarchy. */
+html:has(>body.site-nest) {scroll-padding-top:0;}
+.site-nest {
+  --ink:#2b2b2b;--paper:#fff;--surface:#fff;--text:#545454;--line:#e2e2e2;
+  --accent:#2b2b2b;--accent-dark:#545454;--orange:#2b2b2b;
+  --navigation-yellow:#2b2b2b;
+  --display:Georgia,'Times New Roman',serif;
+  --body:'KEEYAK Inter',Arial,sans-serif;
+  --font-display:Georgia,'Times New Roman',serif;
+  --font-body:'KEEYAK Inter',Arial,sans-serif;
+  background:#fff;color:#2b2b2b;font:400 16px/1.5 var(--body);
+  -webkit-font-smoothing:antialiased;
+}
+.site-nest main {background:#fff;}
+.site-nest .shell {width:calc(100% - 84px);max-width:none;margin-inline:auto;}
+.site-nest h1,.site-nest h2 {font-family:var(--display);font-weight:700;}
+.site-nest h1 {font-size:64px;line-height:1.08;letter-spacing:-1.6px;}
+.site-nest h2 {font-size:48px;line-height:1.12;letter-spacing:-1.2px;}
+.site-nest h3 {font-family:var(--body);font-weight:600;letter-spacing:-.5px;}
+.site-nest p {color:inherit;}
+.site-nest :is(button,input,select,textarea) {font-family:var(--body);}
+.site-nest :is(a,button,input,select,textarea,summary):focus-visible {outline:2px solid #6b6b6b;outline-offset:4px;}
+.site-nest :is(.button,.ex-button) {min-height:56px;padding:15px 24px;border-radius:8px;font:600 16px/24px var(--body);letter-spacing:-.2px;box-shadow:none;}
+.site-nest .button {background:#2b2b2b;color:#fff;border:1px solid #2b2b2b;}
+.site-nest .button:hover {background:#545454;color:#fff;border-color:#545454;}
+.site-nest :is(.button-dark,.ex-button) {background:#2b2b2b;color:#fff;border-color:#2b2b2b;}
+.site-nest :is(.button-dark,.ex-button):hover {background:#545454;border-color:#545454;}
+.site-nest .button-light {background:#fff;color:#2b2b2b;border-color:#2b2b2b;}
+.site-nest .button-light:hover {background:#eee;color:#2b2b2b;border-color:#2b2b2b;}
+.site-nest .button-outline {border:1px solid #2b2b2b;background:transparent;color:#2b2b2b;}
+.site-nest .button-outline:hover {background:#eee;}
+.site-nest :is(.text-link,.detail-secondary) {min-height:44px;display:inline-flex;align-items:center;color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px;}
+.site-nest .breadcrumbs {width:calc(100% - 84px);max-width:none;margin-inline:auto;padding-block:22px;font:400 14px/20px var(--body);letter-spacing:0;color:#545454;}
+.site-nest .page-hero {padding-block:24px 48px;background:#fff;color:#2b2b2b;}
+.site-nest .page-hero h1 {max-width:1000px;margin:0 0 24px;}
+.site-nest .page-hero p {max-width:62ch;font-size:18px;line-height:27px;}
+.site-nest :is(.content-photo,.procurement-figure) {border-radius:0;box-shadow:none;}
+.site-nest :is(.content-photo,.procurement-figure) img {border-radius:0;}
+.site-nest .procurement-figure figcaption {font-size:13px;line-height:20px;color:#545454;margin-top:10px;}
+.site-nest .primary-header .car-search {border:1px solid #e2e2e2;border-radius:0;box-shadow:none;color:#2b2b2b;}
+.site-nest .primary-header .car-search::backdrop {background:#0006;}
+.site-nest .primary-header .car-search h2 {font:700 32px/1.15 var(--display);letter-spacing:-.8px;}
+.site-nest .primary-header .car-search input {min-height:56px;background:#eee;border:1px solid #b7b7b7;border-radius:8px;color:#2b2b2b;}
+.site-nest .primary-header .car-search-results a {font-size:16px;line-height:24px;border-color:#e2e2e2;}
+.site-nest .primary-header .car-search-directories a {display:inline-flex;align-items:center;min-height:44px;}
+.site-nest :is(.content-cta,.catalog-closing) .button {flex:none;}
+.site-nest [id] {scroll-margin-top:171px;}
+@media(min-width:1024px) and (max-width:1060px){
+ .site-nest .primary-header .navigation-link[aria-current=page] {text-decoration:none;}
+}
+@media(max-width:1023px){
+ .site-nest .shell,.site-nest .breadcrumbs {width:calc(100% - 48px);}
+ .site-nest h1 {font-size:48px;line-height:1.1;letter-spacing:-1.2px;}
+ .site-nest h2 {font-size:40px;line-height:1.12;letter-spacing:-1px;}
+ .site-nest [id] {scroll-margin-top:133px;}
+}
+@media(max-width:767px){
+ .site-nest .shell,.site-nest .breadcrumbs {width:calc(100% - 32px);}
+ .site-nest h1 {font-size:40px;line-height:1.1;letter-spacing:-1px;}
+ .site-nest h2 {font-size:32px;line-height:1.15;letter-spacing:-.8px;}
+ .site-nest .breadcrumbs {padding-block:18px;font-size:13px;}
+ .site-nest .page-hero {padding-block:18px 36px;}
+ .site-nest .page-hero p {font-size:16px;line-height:24px;}
+ .site-nest [id] {scroll-margin-top:113px;}
+}

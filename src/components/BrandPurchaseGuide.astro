@@ -1,0 +1,88 @@
+---
+import {ArrowRight,CarFront,SlidersHorizontal,Globe,Gauge,ClipboardCheck,Wallet} from '@lucide/astro';
+import type {Vehicle} from '../data/catalog';
+
+interface Props {brand:string;items?:Vehicle[];kind?:Vehicle['kind'];quotation:string;}
+const {brand,items=[],kind='new',quotation}=Astro.props;
+const isUsed=kind==='used';
+const powers=[...new Set(items.map(vehicle=>vehicle.powertrain))];
+const powerLabels:Record<string,string>={
+ 'Pure Electric':'electric',PHEV:'plug-in hybrid',EREV:'range-extended electric',
+ Hybrid:'hybrid',Gasoline:'gasoline',Diesel:'diesel'
+};
+const labels=powers.map(power=>powerLabels[power]||power.toLowerCase());
+const powerDescription=labels.length>1?labels.slice(0,-1).join(', ')+' or '+labels.at(-1):labels[0];
+const hasCharging=powers.some(power=>['Pure Electric','PHEV','EREV'].includes(power));
+const imageRoot=isUsed?'/images/brand-used-guide-20261030':'/images/brand-version-visual-20261030';
+const replacementImages:Record<string,string>={
+ 'new:model-powertrain':'/images/brand-detail-crops-20261030/new-door-detail',
+ 'new:version-equipment':'/images/brand-detail-crops-20261030/new-seat-controls',
+ 'used:year-mileage':'/images/brand-detail-crops-20261030/used-seat-materials'
+};
+const topics=(isUsed?[
+ {id:'year-mileage',title:'Model, year & mileage',icon:Gauge,description:'Name the model, acceptable year range and maximum mileage, in km or miles.',alt:'AI-generated illustration of passenger-seat upholstery, a seat belt and an adjustment lever'},
+ {id:'condition-records',title:'Condition & equipment',icon:ClipboardCheck,description:'State condition limits and essential equipment. Request dated photos and vehicle-specific records'+(hasCharging?', including battery records for electrified cars.':'.'),alt:'AI-generated illustration of a paint inspection tool on a generic car panel'},
+ {id:'budget-destination',title:'Budget & destination',icon:Wallet,description:'Include budget and currency, quantity, destination and any acceptable alternatives.',alt:'AI-generated illustration of a calculator, car key and route map'}
+]:[
+ {id:'model-powertrain',title:'Model & powertrain',icon:CarFront,description:items.length?'Specify the exact model and powertrain: '+powerDescription+'.':'Tell us your preferred model and powertrain, including any alternatives you would consider.',alt:'AI-generated illustration of a silver passenger door handle and side-mirror detail'},
+ {id:'version-equipment',title:'Version & equipment',icon:SlidersHorizontal,description:'Confirm the model year, trim and essential equipment.'+(hasCharging||!items.length?' For electrified versions, include battery and range requirements.':''),alt:'AI-generated illustration of passenger-seat upholstery and electric adjustment controls'},
+ {id:'destination-fit',title:'Use in your market',icon:Globe,description:items.length?'Check steering side'+(hasCharging?', charging connector':'')+', software functions and support at your destination.':'Check steering side, software functions and support at your destination. Include charging compatibility where relevant.',alt:'AI-generated illustration of a car key, compass and route map'}
+]).map(topic=>({...topic,imageBase:replacementImages[`${kind}:${topic.id}`]??`${imageRoot}/${topic.id}`}));
+---
+
+<section class="shell brand-version" id="version-and-market" data-module="version-and-market" data-core-module="version" data-guide-kind={kind} aria-labelledby="brand-version-title">
+ <header class="brand-version-heading">
+  <h2 id="brand-version-title">{isUsed?'What to look for in a used car':`Confirm your ${brand} version`}</h2>
+ </header>
+  <div class="brand-version-checks">
+   {topics.map(({imageBase,title,icon:Icon,description,alt})=><article class="brand-version-topic">
+    <figure class="brand-topic-media"><img src={`${imageBase}-960.webp`} srcset={`${imageBase}-480.webp 480w, ${imageBase}-960.webp 960w`} sizes="(max-width:809px) calc(100vw - 40px), 32vw" width="960" height="640" loading="lazy" alt={alt}/></figure>
+    <h3><Icon size={22} stroke-width={1.7} aria-hidden="true"/><span>{title}</span></h3>
+    <p>{description}</p>
+   </article>)}
+  </div>
+  <div class="brand-version-actions">
+   <a class="brand-action" href={quotation}><span>{isUsed?'Get help finding a used car':'Get help choosing a version'}</span><ArrowRight size={18} aria-hidden="true"/></a>
+   <a class="brand-reading-link" href={isUsed?'/export-services/sourcing-inspection/#scope':'/export-services/buying-guide/#country-guides'}>{isUsed?'Inspection checklist':'Destination checklist'}</a>
+  </div>
+</section>
+
+<style>
+ .brand-version{margin-block:88px;scroll-margin-top:112px}
+ .brand-version-heading{max-width:760px;margin:0 auto 40px;text-align:center}
+ .brand-version h2{font:500 40px/1.15 var(--body);letter-spacing:-.03em;text-wrap:balance;margin:0 0 20px;color:var(--ed-ink,#212121)}
+ .brand-version-intro{font-size:17px;line-height:1.7;color:var(--ed-muted,#606060);margin:0;max-width:48ch}
+ .brand-version-heading .brand-version-intro{max-width:60ch;margin-inline:auto}
+ .brand-version-checks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:0}
+ .brand-version-topic{min-width:0}
+ .brand-topic-media{height:clamp(170px,17vw,220px);margin:0 0 24px;overflow:hidden;border-radius:16px;background:var(--ed-paper,#f5f5f1)}
+ .brand-topic-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 65%}
+ .brand-version-topic h3{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-size:18px;font-weight:500;line-height:1.5;letter-spacing:-.01em;color:var(--ed-ink,#212121)}
+ .brand-version-topic h3>svg{flex:0 0 22px;color:#75651f}
+ .brand-version-topic p{max-width:38ch;margin:0;font-size:16px;line-height:1.75;color:var(--ed-muted,#606060)}
+ .brand-version-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 24px;margin-top:36px}
+ .brand-action{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:52px;padding:14px 22px;border:0;border-radius:999px;background:var(--ed-ink,#212121);color:#fff;font-size:14px;font-weight:500;line-height:1.5;text-decoration:none;transition:background-color 160ms ease}
+ .brand-action:hover{background:#414640;color:#fff}
+ .brand-version .brand-action{color:#fff}
+ .brand-action>svg{flex-shrink:0}
+ .brand-action:focus-visible{outline:2px solid var(--action-accent,#efc51b);outline-offset:5px}
+ @media(max-width:1199px){
+  .brand-version h2{font-size:36px}
+ }
+ @media(max-width:809px){
+  .brand-version{margin-block:64px}
+  .brand-version-heading{margin-bottom:28px;text-align:left}
+  .brand-version h2{font-size:32px;line-height:1.18;margin-bottom:16px}
+  .brand-version-intro{font-size:16px}
+  .brand-version-checks{grid-template-columns:1fr;gap:32px}
+  .brand-topic-media{height:174px;margin-bottom:20px}
+  .brand-version-topic h3{font-size:17px;gap:10px;margin-bottom:8px}
+  .brand-version-topic p{max-width:none;line-height:1.65}
+  .brand-version-actions{justify-content:flex-start;gap:8px 20px;margin-top:28px}
+ }
+ @media(max-width:359px){
+  .brand-version h2{font-size:29px}
+  .brand-action{padding-inline:18px;gap:16px}
+ }
+ @media(prefers-reduced-motion:reduce){.brand-action{transition:none}}
+</style>

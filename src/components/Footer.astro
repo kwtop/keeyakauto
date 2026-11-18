@@ -1,0 +1,73 @@
+---
+import { aboutLinks, company } from '../data/company';
+import { exportLinks } from '../data/exportServices';
+import { socialLinks } from '../data/social.ts';
+import '../styles/footer-directory.css';
+
+const navigation = [
+  { title: 'New Cars', href: '/new-cars/', links: [
+    { label: 'Browse models', href: '/new-cars/' },
+    { label: 'All brands', href: '/new-cars/brands/' }
+  ] },
+  { title: 'Used Cars', href: '/used-cars/', links: [
+    { label: 'Browse models', href: '/used-cars/' },
+    { label: 'All brands', href: '/used-cars/brands/' }
+  ] },
+  { title: 'Export Services', href: '/export-services/', links: [
+    { label: 'Service Overview', href: '/export-services/' },
+    ...exportLinks,
+    { label: 'Vehicle comparisons', href: '/guides/comparisons/' },
+    { label: 'Country guides', href: '/export-services/buying-guide/#country-guides' }
+  ] },
+  { title: 'About Us', href: '/about/', links: aboutLinks }
+];
+---
+<footer class="site-footer footer-directory" id="site-footer" aria-labelledby="footer-contact-title">
+  <div class="shell footer-directory__lead">
+    <div class="footer-directory__invitation">
+      <h2 id="footer-contact-title">Let’s talk cars.</h2>
+      <a class="footer-directory__email" href={`mailto:${company.email}`}>{company.email}</a>
+    </div>
+    <div class="footer-directory__actions">
+      <a class="footer-directory__inquiry" href="/quote/">Prepare inquiry</a>
+      <a class="footer-directory__whatsapp" href={company.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp {company.phone}</a>
+    </div>
+  </div>
+  <div class="shell footer-directory__main">
+    <div class="footer-directory__brand">
+      <a class="footer-directory__wordmark" href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" alt="" width="1200" height="219" loading="lazy"/></a>
+      <p class="footer-directory__identity">{company.legalName}</p>
+      <p>New and used cars from China.<br />For dealers, importers and fleets.</p>
+      <nav class="footer-directory__social" aria-label="KEEYAK social media">
+        {socialLinks.map(link => (
+          <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`KEEYAK on ${link.label} (opens in a new tab)`} title={link.label}>
+            <img src={link.icon} alt="" width="24" height="24" loading="lazy" />
+          </a>
+        ))}
+      </nav>
+    </div>
+    <nav class="footer-directory__navigation" aria-label="Footer navigation">
+      {navigation.map((group, index) => (
+        <div class="footer-directory__group">
+          <h3 id={`footer-nav-${index}`}><a href={group.href}>{group.title}</a></h3>
+          <ul aria-labelledby={`footer-nav-${index}`}>
+            {group.links.map(link => <li><a href={link.href}>{link.label}</a></li>)}
+          </ul>
+        </div>
+      ))}
+    </nav>
+    <div class="footer-directory__contact">
+      <h3><a href="/contact/">Contact Us</a></h3>
+      <address>
+        <a class="footer-directory__repeat-contact" href={`mailto:${company.email}`}>{company.email}</a>
+        <a class="footer-directory__repeat-contact" href={company.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp {company.phone}</a>
+        <a class="footer-directory__address" href="/contact/">{company.officeAddress}</a>
+      </address>
+    </div>
+  </div>
+  <div class="shell footer-directory__bottom">
+    <span>© {new Date().getFullYear()} {company.legalName}</span>
+    <nav aria-label="Legal"><a href="/privacy/">Privacy</a><a href="/terms/">Website Terms</a></nav>
+  </div>
+</footer>
+

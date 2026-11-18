@@ -1,0 +1,18 @@
+---
+import ProcurementReading from '../../components/export/ProcurementReading.astro';
+import ExportFigure from '../../components/export/ExportFigure.astro';
+import ExportVehicleFigure from '../../components/export/ExportVehicleFigure.astro';
+import { recordsScene, shippingLandscape } from '../../components/export/exportStoryMedia';
+const readings = [
+  {title:'Plan your car purchase',body:'Choose a car, check the offer and plan the handover.',href:'/export-services/buying-guide/'},
+  {title:'Compare models and specifications',body:'Compare versions and specifications, including the test conditions used to measure the figures.',href:'/guides/comparisons/'},
+  {title:'Check destination requirements',body:'Check import and registration requirements with your supplier and a local advisor.',href:'/export-services/buying-guide/#country-guides'}
+];
+---
+<ProcurementReading title="Car buying guides for importers" description="Guides to choosing a car, comparing quotes and checking import requirements." intro="What to check before choosing a car, accepting a quote or arranging an import." breadcrumb="Buyer Resources" pageClass="reading-resource-hub">
+  <div class="reading-resource-index">{readings.map((reading,index)=><article data-core-module={['buying','comparing','destination'][index]} data-module={['buying','comparing','destination'][index]}>
+    {index===0?<ExportFigure {...recordsScene}/>:index===1?<ExportVehicleFigure slug="camry" caption="Catalog model reference."/>:<ExportFigure {...shippingLandscape}/>}
+    <div><h2><a href={reading.href}>{reading.title}</a></h2><p>{reading.body}</p><a class="ex-link" href={reading.href}>{index===0?'Follow the buying process':index===1?'Compare the exact versions':'Check destination requirements'}</a></div>
+  </article>)}</div>
+  <section class="reading-next" data-core-module="next-step" data-module="next-step"><div><h2>Request a vehicle quote</h2><p>Include your models, quantities and destination, with any questions about versions, inspection or delivery.</p></div><a class="ex-button" href="/quote/">Start an inquiry</a></section>
+</ProcurementReading>

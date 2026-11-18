@@ -1,0 +1,17 @@
+---
+import AboutFigure from './AboutFigure.astro';
+import { company } from '../../data/company';
+interface Props { dateLabel:string; }
+const {dateLabel}=Astro.props;
+---
+<section class="au-section au-record-context au-soft" aria-labelledby="record-company-title" data-core-module data-module="record-company-background">
+ <div class="au-wrap">
+  <div class="au-section-heading"><h2 id="record-company-title">Get to know the company behind the story</h2><p>KEEYAK is operated by {company.legalName} in Hangzhou. These materials identify the company, separate from the {dateLabel} event.</p></div>
+  <div class="au-record-background-grid">
+   <AboutFigure src="/images/company/team-office-2024.webp" alt="KEEYAK colleagues at the Hangzhou office during the Dragon Boat Festival gathering in 2024" caption="Hangzhou office · 2024" original="/images/company/team-office-2024.webp" class="au-record-office" sizes="(max-width:700px) 45vw, 420px"/>
+   <AboutFigure src="/images/company/jingyan-sgs-assessment-2026.webp" alt="Displayed supplier assessment naming Zhejiang Jingyan Technology Co., Ltd., record 489102251_T" caption="Company assessment · 25 June 2026" original="/images/company/jingyan-sgs-assessment-2026-original.jpg" class="au-record-certificate au-document-image" sizes="(max-width:700px) 45vw, 360px"/>
+  </div>
+  <p class="au-record-document-scope">Printed assessment 489102251_T names {company.legalName} and states an onsite SGS assessment. It does not verify this event or certify a vehicle.</p>
+  <a class="au-link" href="/about/company-profile/#company-documents">Company details &amp; original documents</a>
+ </div>
+</section>

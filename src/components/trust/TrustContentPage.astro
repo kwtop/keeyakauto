@@ -1,0 +1,46 @@
+---
+import {Mail,MessageCircle,Phone} from '@lucide/astro';
+import TrustLayout from '../../layouts/TrustLayout.astro';
+import TrustFigure from './TrustFigure.astro';
+import TrustBlock from './TrustBlock.astro';
+import TrustIcon from './TrustIcon.astro';
+import AboutCompanyIntro from '../about/AboutCompanyIntro.astro';
+import AboutCredentials from '../about/AboutCredentials.astro';
+import {trustPages} from '../../data/trustContent';
+import {trustMedia} from '../../data/trustMedia';
+import {exportIllustrations} from '../../data/exportIllustrations';
+import '../../styles/export-illustrated.css';
+interface Props { page:string; }
+const {page}=Astro.props;
+const content=trustPages[page];
+if(!content)throw new Error(`Missing trust page: ${page}`);
+const opening=content.opening;
+const pageTitle=Astro.url.pathname==='/export/'?'Car export services overview':content.title;
+const splitOpening=true;
+const revised=content.group!=='contact';
+const modified=page==='company'?'2026-11-02':revised?'2026-10-28':undefined;
+const contactIcons=[Mail,MessageCircle,Phone];
+const contactNames=['Email','WhatsApp','Phone'];
+const orderedBlocks=page==='company'?[...content.blocks].sort((a,b)=>(a.id==='company-documents'?-1:b.id==='company-documents'?1:0)):content.blocks;
+---
+<TrustLayout title={pageTitle} description={content.description} group={content.group} label={content.label} image={trustMedia(opening.image).src} {modified}>
+ {page==='company'?<AboutCompanyIntro {opening}/>:<section class:list={['tc-opening','tc-wrap',{'tc-opening--split':splitOpening}]} data-core-module data-module={opening.id} aria-labelledby="tc-page-title">
+  <div class="tc-opening-layout">
+   <div class="tc-opening-copy">
+    <div><h1 id="tc-page-title">{opening.title.replace(/\n/g,' ')}</h1>{content.group==='contact'&&<><div class="tc-opening-intro">{opening.body.split('\n').map(line=><p>{line}</p>)}</div><a class="tc-button" href="/quote/">Start a vehicle inquiry</a></>}</div>
+    <div>
+
+     <div class:list={['tc-links',{'tc-contact-channels':content.group==='contact'}]}>
+      {(content.group==='contact'?opening.links?.slice(0,2):opening.links)?.map((link,index)=>{
+       const Icon=contactIcons[index];
+       return content.group==='contact'?<a class="tc-contact-channel" href={link.href}><Icon size={20}/><span><span class="tc-channel-name">{contactNames[index]}</span><strong>{link.label}</strong></span></a>:<a class={index===0?'tc-button':'tc-text-link'} href={link.href}>{link.label}</a>;
+      })}
+     </div>
+     {content.group==='contact'&&opening.links?.[2]&&<a class="tc-contact-phone" href={opening.links[2].href}><Phone size={18}/><span>Phone · {opening.links[2].label}</span></a>}
+    </div>
+   </div>
+  {content.group!=='contact'&&<TrustFigure media={opening.image} priority wide natural={content.group!=='export'}/>}</div>
+  {opening.items&&<dl class="tc-opening-tasks">{opening.items.map(item=><div><dt><TrustIcon name={item.icon} size={19}/>{item.title}</dt><dd>{item.body}</dd></div>)}</dl>}
+ </section>}
+ {orderedBlocks.map((block,index)=>page==='company'&&block.credentials?<AboutCredentials {block}/>:<TrustBlock {block} {index} service={content.slug} imageOverride={page==='contact'&&block.id==='office'?'office-original':undefined} illustration={content.group==='export'?exportIllustrations[page]?.[block.id]:page==='company'&&block.id==='company-services'?{items:['refined-configuration','refined-inspection','refined-handover']}:undefined}/>)}
+</TrustLayout>

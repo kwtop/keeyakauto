@@ -1,0 +1,20 @@
+---
+import {vehicles} from '../data/catalog';
+import {vehicleDisplayImage} from '../data/imageDelivery';
+import {siteImage} from '../data/siteImagery';
+const {compact=false}=Astro.props;
+const choices=[
+ {title:'SUV space and seating',link:'Explore SUV models',query:'category=SUV',slug:'x70-plus',body:'Check the seating, cargo space and dimensions for the version you need.'},
+ {title:'Electric cars for your market',link:'Explore electric models',query:'power=Pure+Electric',slug:'bz3x',body:'Confirm the battery, charging connector and software functions available in your country.'},
+ {title:'Plug-in hybrid options',link:'Explore plug-in hybrids',query:'power=PHEV',slug:'song-pro-dm-i',body:'Compare the powertrains and equipment for each version. When comparing range, check that the test cycles match.'}
+].map((choice,index)=>{const art=index===0?undefined:siteImage(index===1?'charging-detail':'quotation-desk');return {...choice,vehicle:vehicles.find(vehicle=>vehicle.kind==='new'&&vehicle.slug===choice.slug)!,art,editorialImage:art?.src||'/images/nest-home-20261018/cabin-detail.webp'};});
+---
+<section class="shell catalog-needs" data-module="choose-by-requirement" data-core-module="selection">
+ <div class="catalog-needs-heading"><h2>{compact?'Compare models across brands':'Choose a car for your market'}</h2></div>
+ <div class="catalog-needs-grid">{choices.map(choice=><article>
+  <a class:list={['catalog-need-image',{'catalog-need-image--editorial':Boolean(choice.editorialImage)}]} href={'/new-cars/?'+choice.query} tabindex="-1" aria-hidden="true"><img src={choice.editorialImage||vehicleDisplayImage(choice.vehicle.image)} srcset={choice.art?.srcSet} sizes="(max-width:767px) 45vw, 32vw" alt="" width={choice.art?.width||1448} height={choice.art?.height||1086} loading="lazy"/></a>
+  <div class="catalog-need-copy"><h3>{choice.title}</h3><p>{choice.body}</p><a class="catalog-need-link" href={'/new-cars/?'+choice.query}>{choice.link}</a></div>
+ </article>)}</div>
+ <p class="catalog-image-note">Confirm the exact vehicle configuration in your offer.</p>
+ {!compact&&<div class="catalog-text-links"><a href="/export-services/buying-guide/#country-guides">Destination checklist</a></div>}
+</section>

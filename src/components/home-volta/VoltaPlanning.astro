@@ -1,0 +1,19 @@
+---
+import {BookOpen,ArrowLeftRight,Globe,ClipboardCheck,Ship,FileText,ArrowRight} from '@lucide/astro';
+import {planning,journey,editorialSrcset} from '../../data/voltaHome';
+import {homeBrandAssets} from '../../data/homeBrandAssets';
+const icons={book:BookOpen,compare:ArrowLeftRight,globe:Globe,check:ClipboardCheck,ship:Ship,file:FileText};
+const logos=['toyota','byd','volkswagen','geely','jetour','wuling'].map(slug=>homeBrandAssets.find(b=>b.slug===slug)!);
+---
+<section class="v-tools" data-v-section="tools" aria-labelledby="v-tools-title"><div class="v-container v-tools-inner">
+ <div class="v-tools-heading"><p class="v-eyebrow">Before you order</p><h2 id="v-tools-title">Plan with clearer information</h2><p>Compare your options, check the requirements and keep the details of your next purchase together.</p></div>
+ <div class="v-tools-grid">{planning.map(item=>{const Icon=icons[item.icon as keyof typeof icons];return <a class="v-tool" href={item.href}><span class="v-tool-icon"><Icon size={24} stroke-width={1.6}/></span><div><h3>{item.title}</h3><p>{item.text}</p></div><ArrowRight class="v-tool-arrow" size={16}/></a>;})}</div>
+</div></section>
+<section class="v-section v-journey v-divider-green" data-v-section="journey" aria-label="From choosing a car to discussing an order"><div class="v-container">
+ <div class="v-journey-rail" tabindex="0" role="region" aria-label="Four steps to plan a purchase">{journey.map((item,i)=><article class="v-journey-card" style={`--journey-color:${item.color}`}><a href={item.href} class="v-journey-photo"><img src={item.image} srcset={editorialSrcset(item.image,960)} sizes="280px" width="640" height="608" loading="lazy" alt={item.alt} style={`object-position:${item.position}`}/><span class="v-journey-number">0{i+1}</span><h2>{item.title}</h2></a><p>{item.text}</p><a class="v-journey-link" href={item.href}>{item.label}<ArrowRight size={12}/></a></article>)}</div>
+ 
+</div></section>
+<section class="v-section v-brands" data-v-section="brands" aria-labelledby="v-brand-title"><div class="v-container">
+ <div class="v-section-head"><div><p class="v-eyebrow">Browse by brand</p><h2 id="v-brand-title">A familiar place to start</h2><p class="v-section-intro">Explore the brands in our new-car reference catalog.<br/>Brand marks identify models, not an authorised dealer relationship.</p></div><a class="v-quiet-link" href="/new-cars/brands/">View all brands <ArrowRight size={14}/></a></div>
+ <div class="v-brand-grid">{logos.map(brand=><a class="v-brand-tile" href={brand.href} aria-label={`Browse ${brand.name} new cars`} data-brand={brand.slug}><img src={brand.slug==='toyota'?'/images/volta-home-20261019/toyota-on-dark.svg':brand.src} alt={brand.alt} width={brand.width} height={brand.height} loading="lazy" style={`--brand-width:${brand.displayWidth}px`}/></a>)}</div>
+</div></section>

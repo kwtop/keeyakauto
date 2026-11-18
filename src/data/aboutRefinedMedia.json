@@ -1,0 +1,56 @@
+{
+  "office": {
+    "src": "/images/company/about-a-refined-20261102/office-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/office-480.webp 480w, /images/company/about-a-refined-20261102/office-768.webp 768w, /images/company/about-a-refined-20261102/office-1100.webp 1100w, /images/company/about-a-refined-20261102/office-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  },
+  "mexico": {
+    "src": "/images/company/about-a-refined-20261102/mexico-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/mexico-480.webp 480w, /images/company/about-a-refined-20261102/mexico-768.webp 768w, /images/company/about-a-refined-20261102/mexico-1100.webp 1100w, /images/company/about-a-refined-20261102/mexico-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  },
+  "spring": {
+    "src": "/images/company/about-a-refined-20261102/spring-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/spring-480.webp 480w, /images/company/about-a-refined-20261102/spring-768.webp 768w, /images/company/about-a-refined-20261102/spring-1100.webp 1100w, /images/company/about-a-refined-20261102/spring-1440.webp 1440w",
+    "width": 1100,
+    "height": 793
+  },
+  "vietnam": {
+    "src": "/images/company/about-a-refined-20261102/vietnam-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/vietnam-480.webp 480w, /images/company/about-a-refined-20261102/vietnam-768.webp 768w, /images/company/about-a-refined-20261102/vietnam-1100.webp 1100w, /images/company/about-a-refined-20261102/vietnam-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  },
+  "indonesia": {
+    "src": "/images/company/about-a-refined-20261102/indonesia-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/indonesia-480.webp 480w, /images/company/about-a-refined-20261102/indonesia-768.webp 768w, /images/company/about-a-refined-20261102/indonesia-1100.webp 1100w, /images/company/about-a-refined-20261102/indonesia-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  },
+  "annual": {
+    "src": "/images/company/about-a-refined-20261102/annual-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/annual-480.webp 480w, /images/company/about-a-refined-20261102/annual-768.webp 768w, /images/company/about-a-refined-20261102/annual-1100.webp 1100w, /images/company/about-a-refined-20261102/annual-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  },
+  "chongqing": {
+    "src": "/images/company/about-a-refined-20261102/chongqing-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/chongqing-480.webp 480w, /images/company/about-a-refined-20261102/chongqing-768.webp 768w, /images/company/about-a-refined-20261102/chongqing-1100.webp 1100w, /images/company/about-a-refined-20261102/chongqing-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  },
+  "meeting": {
+    "src": "/images/company/about-a-refined-20261102/meeting-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/meeting-480.webp 480w, /images/company/about-a-refined-20261102/meeting-768.webp 768w, /images/company/about-a-refined-20261102/meeting-1100.webp 1100w, /images/company/about-a-refined-20261102/meeting-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  },
+  "discussion": {
+    "src": "/images/company/about-a-refined-20261102/discussion-1100.webp",
+    "srcset": "/images/company/about-a-refined-20261102/discussion-480.webp 480w, /images/company/about-a-refined-20261102/discussion-768.webp 768w, /images/company/about-a-refined-20261102/discussion-1100.webp 1100w, /images/company/about-a-refined-20261102/discussion-1440.webp 1440w",
+    "width": 1100,
+    "height": 825
+  }
+}

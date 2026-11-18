@@ -1,0 +1,117 @@
+---
+import { ArrowRight, Menu, X } from '@lucide/astro';
+import CarSearch from '../../components/CarSearch.astro';
+import { vehicles, vehicleHref } from '../../data/catalog';
+import { company } from '../../data/company';
+import '../../styles/design-preview/home-coral.css';
+
+// Isolated candidate: formal homepage, shared styles and business routes stay intact.
+if (!import.meta.env.DEV) return Astro.redirect('/');
+const newModels = vehicles.filter(v => v.kind === 'new');
+const selections = ['toyota/camry','byd/yuan-plus','jetour/traveler'].map(key => {
+ const vehicle = newModels.find(v => `${v.brandSlug}/${v.slug}` === key);
+ if (!vehicle) throw new Error(`Missing homepage reference: ${key}`);
+ return vehicle;
+});
+const rav4 = newModels.find(v => v.brandSlug === 'toyota' && v.slug === 'rav4')!;
+const media = '/images/home-coral-preview-20261016/';
+const navigation = [{label:'New Cars',href:'/new-cars/'},{label:'Used Cars',href:'/used-cars/'},{label:'Export Services',href:'/export-services/'},{label:'About Us',href:'/about/'},{label:'Contact Us',href:'/contact/'}];
+const steps = [
+ {title:'The exact car, down to the version.',text:'Compare the recorded model information, then confirm the trim, specification and available quantity.'},
+ {title:'The checks that matter to you.',text:'For a used vehicle, agree the VIN, mileage, condition evidence and inspection scope before deciding.'},
+ {title:'A plan for your destination.',text:'Confirm the documents, route, costs and handover responsibilities in the written quotation.'}
+];
+---
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex,nofollow"/><meta name="theme-color" content="#faf9f6"/>
+  <meta name="description" content="New model references and used-car sourcing from China. Compare vehicles, understand the checks and prepare your requirements with KEEYAK."/>
+  <title>Cars from China · Homepage style preview | KEEYAK Auto</title>
+  <link rel="icon" href="/favicon.png"/><link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin/>
+ </head>
+ <body class="coral-home">
+  <svg width="0" height="0" class="coral-filter" aria-hidden="true"><defs><filter id="coral-wordmark-light" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1 -1 1 0 0 1 -1 0 1 0 1 0 0 -1 0 1"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs></svg>
+  <a class="coral-skip" href="#main">Skip to content</a>
+  <div class="coral-stage">
+   <header class="coral-header">
+    <a href="/" class="coral-logo" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" alt="KEEYAK" width="1200" height="219"/></a>
+    <nav id="coral-navigation" class="coral-nav" aria-label="Main navigation">
+     <a class="coral-mobile-home" href="/">Home</a>
+     {navigation.map(link => <a href={link.href}>{link.label}</a>)}
+     <a class="coral-mobile-quote" href="/quote/">Prepare inquiry</a>
+    </nav>
+    <div class="coral-header-actions"><CarSearch/><a class="coral-button coral-header-quote" href="#requirement">Prepare inquiry</a><button class="coral-menu" aria-controls="coral-navigation" aria-expanded="false" aria-label="Open navigation" type="button"><Menu class="coral-open-icon" size={25}/><X class="coral-close-icon" size={25}/></button></div>
+   </header>
+   <main id="main">
+    <section class="coral-intro" data-core-module="introduction" aria-labelledby="coral-title">
+     <div class="coral-hero">
+      <figure class="coral-hero-photo"><img src={media+'coastal-hero.webp'} srcset={`${media}coastal-hero-960.webp 960w, ${media}coastal-hero.webp 1672w`} sizes="100vw" alt="Illustrative silver SUV beside a coastal road" width="1672" height="941" fetchpriority="high"/></figure>
+      <div class="coral-hero-shade" aria-hidden="true"></div>
+      <div class="coral-hero-copy"><h1 id="coral-title">Cars from China.<br/>Your next move.</h1><p>New model references and used-car sourcing.<br class="coral-desktop-break"/> For importers, dealers and fleet buyers.</p><a class="coral-hero-link" href="#models">Explore the models</a></div>
+     </div>
+     <div class="coral-requirement coral-wrap" id="requirement">
+      <div class="coral-requirement-title"><h2>What are you looking for?</h2></div>
+      <form action="/quote/" method="get" class="coral-brief-form" aria-label="Start your vehicle inquiry">
+       <label class="coral-model-field"><span>Model / requirement *</span><input name="model" placeholder="Brand, model and version" maxlength="200" required/></label>
+       <label class="coral-quantity-field"><span>Quantity *</span><input name="quantity" type="number" min="1" step="1" value="1" required/></label>
+       <label class="coral-country-field"><span>Destination country *</span><input name="country" placeholder="Country" autocomplete="country-name" maxlength="100" required/></label>
+       <button class="coral-button" type="submit">Prepare inquiry <ArrowRight size={19} aria-hidden="true"/></button>
+      </form>
+      <p class="coral-form-note">Next, review your brief and choose how to send it.</p>
+     </div>
+    </section>
+    <section data-core-module="starting-points" class="coral-start coral-wrap" aria-label="Choose your starting point">
+     <a href="/new-cars/" class="coral-start-card coral-new-card">
+      <div class="coral-start-car"><img src={rav4.image} alt="Toyota RAV4 model reference" width="1448" height="1086" loading="lazy"/></div>
+      <div class="coral-start-copy"><h2>Find your new car.</h2><p>{newModels.length} recorded models to compare.</p><span class="coral-card-link">Browse models</span></div>
+     </a>
+     <a href="/used-cars/" class="coral-start-card coral-used-card"><div class="coral-used-top"><span>Used-car sourcing</span></div><div><h2>A used car.<br/>Matched to your brief.</h2><p>Start with the model, year, mileage and condition you need. Confirm the individual car before purchase.</p></div><span class="coral-card-link">Explore sourcing references <ArrowRight size={20} aria-hidden="true"/></span></a>
+     <a href="/export-services/" class="coral-start-card coral-export-card"><img src={media+'harbor-portrait.webp'} alt="Illustrative passenger car and roll-on roll-off vessel at a port" width="1122" height="1402" loading="lazy"/><div class="coral-export-shade" aria-hidden="true"></div><div class="coral-start-copy"><h2>Plan what<br/>comes next.</h2><p>Sourcing, checks and a shipping plan.</p><span class="coral-card-link">Export services</span></div></a>
+    </section>
+    <section data-core-module="model-shortlist" class="coral-models coral-wrap" id="models" aria-labelledby="coral-models-title">
+     <div class="coral-section-head"><h2 id="coral-models-title">Start with a model.<br/>Build your shortlist.</h2><div><a class="coral-text-link" href="/new-cars/">View all new models</a></div></div>
+     <div class="coral-model-grid">{selections.map(v => <a href={vehicleHref(v)} class="coral-model-card"><div class="coral-model-photo"><img src={v.image} alt={`${v.name} original model reference photograph`} width="1448" height="1086" loading="lazy"/></div><div class="coral-model-info"><div><h3>{v.name}</h3><p>{v.powertrain==='Pure Electric'?'Electric':v.powertrain}</p></div></div></a>)}</div>
+     <p class="coral-model-note">Model references, not live stock. Confirm the exact version and availability.</p>
+    </section>
+    <section data-core-module="purchase-details" class="coral-process coral-wrap" aria-labelledby="coral-process-title">
+     <figure class="coral-inspection-photo"><div class="coral-inspection-frame"><img src={media+'inspection-portrait.webp'} alt="AI illustration of a generic vehicle tyre inspection; not an actual KEEYAK inspection record" width="1122" height="1402" loading="lazy"/></div></figure>
+     <div class="coral-process-copy"><h2 id="coral-process-title">Know the details.<br/>Before you decide.</h2><ol class="coral-steps">{steps.map((step,i) => <li><span class="coral-step-number" aria-hidden="true">{i+1}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ol><a class="coral-text-link" href="/export-services/sourcing-inspection/">How sourcing and checks work</a></div>
+    </section>
+    <section data-core-module="company-records" class="coral-company" aria-labelledby="coral-company-title"><div class="coral-wrap">
+     <div class="coral-section-head"><h2 id="coral-company-title">Real people.<br/>A company you can check.</h2><div><p>{company.legalName} Based in Hangzhou, China, with records from our wider vehicle business.</p><a class="coral-text-link" href="/about/">Meet KEEYAK</a></div></div>
+     <div class="coral-company-photos"><figure class="coral-office-photo"><a href="/about/"><img src="/images/company/team-office-2024.webp" alt="Original photograph of the KEEYAK team at the Hangzhou office in 2024" width="1800" height="1350" loading="lazy"/></a><figcaption>Hangzhou office · 2024</figcaption></figure><figure class="coral-event-photo"><a href="/about/news/vietnam-exhibition-2026/"><img src="/images/company/about-selected/vietnam-discussion-2026-wide.webp" alt="Original photograph of a special-vehicle buyer discussion at the Vietnam exhibition in May 2026" width="2400" height="1800" loading="lazy"/></a><figcaption>Vietnam exhibition · May 2026<br/>Special-vehicle discussion</figcaption></figure></div>
+     <div class="coral-company-links"><a class="coral-text-link" href="/about/news/">Browse company records</a></div>
+    </div></section>
+    <section data-core-module="inquiry-next-step" class="coral-inquiry" aria-labelledby="coral-inquiry-title"><div class="coral-wrap coral-inquiry-inner"><div><h2 id="coral-inquiry-title">Your next move.<br/>Let’s talk cars.</h2><a class="coral-button coral-button-white" href="#requirement">Start your requirement</a></div><div class="coral-inquiry-aside"><p>Tell us the model, quantity and destination. Review your brief, then choose email or WhatsApp to send it.</p><a href={`mailto:${company.email}`}>{company.email}</a><a href={company.whatsapp} target="_blank" rel="noopener noreferrer">{company.phone}</a></div></div></section>
+   </main>
+   <footer class="coral-footer coral-wrap"><div class="coral-footer-top"><div><p>{company.legalName}</p><p>{company.officeAddress}</p></div><nav aria-label="Footer navigation">{navigation.map(link=><a href={link.href}>{link.label}</a>)}</nav></div><a href="/" class="coral-footer-logo" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" alt="KEEYAK" width="1200" height="219" loading="lazy"/></a><div class="coral-footer-bottom"><p>© {new Date().getFullYear()} KEEYAK. All rights reserved.</p><div><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/contact/">Contact</a></div></div></footer>
+  </div>
+ </body>
+</html>
+<script>
+ import gsap from 'gsap';
+ import {ScrollTrigger} from 'gsap/ScrollTrigger';
+ gsap.registerPlugin(ScrollTrigger);
+ const menu=document.querySelector<HTMLButtonElement>('.coral-menu');
+ const navigation=document.querySelector<HTMLElement>('.coral-nav');
+ const header=document.querySelector<HTMLElement>('.coral-header');
+ function closeMenu(restore=false){menu?.setAttribute('aria-expanded','false');menu?.setAttribute('aria-label','Open navigation');header?.classList.remove('coral-menu-open');if(restore)menu?.focus();}
+ menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');header?.classList.toggle('coral-menu-open',open)});
+ navigation?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>closeMenu()));
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu?.getAttribute('aria-expanded')==='true')closeMenu(true)});
+ document.addEventListener('click',event=>{if(event.target instanceof Node&&!header?.contains(event.target))closeMenu()});
+ window.matchMedia('(min-width:1101px)').addEventListener('change',()=>closeMenu());
+ const media=gsap.matchMedia();
+ media.add('(prefers-reduced-motion: no-preference)',()=>{
+  gsap.from('.coral-hero-copy',{y:22,autoAlpha:0,duration:.85,ease:'power3.out',clearProps:'all'});
+  gsap.from('.coral-requirement',{y:22,duration:.7,delay:.15,ease:'power3.out',clearProps:'transform'});
+  gsap.from('.coral-start-card',{y:28,stagger:.08,duration:.7,ease:'power3.out',clearProps:'transform',scrollTrigger:{trigger:'.coral-start',start:'top 92%',once:true}});
+  gsap.utils.toArray<HTMLElement>('.coral-section-head').forEach(el=>gsap.from(el,{y:20,duration:.65,ease:'power3.out',clearProps:'transform',scrollTrigger:{trigger:el,start:'top 88%',once:true}}));
+  gsap.from('.coral-company-photos figure',{y:24,stagger:.08,duration:.7,ease:'power3.out',clearProps:'transform',scrollTrigger:{trigger:'.coral-company-photos',start:'top 90%',once:true}});
+  // From the whole vehicle to the hands-on detail: a short reversible image-led chapter.
+  gsap.fromTo('.coral-inspection-frame img',{scale:1.01,yPercent:0},{scale:1.17,yPercent:-5,ease:'none',scrollTrigger:{trigger:'.coral-process',start:'top 85%',end:'bottom 55%',scrub:.6}});
+  gsap.fromTo('.coral-step-number',{backgroundColor:'#f5eee8',color:'#171a18'},{backgroundColor:'#f96a3c',color:'#171a18',stagger:.2,ease:'none',scrollTrigger:{trigger:'.coral-process',start:'top 55%',end:'bottom 75%',scrub:.4}});
+ });
+</script>

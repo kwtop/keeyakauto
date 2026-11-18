@@ -1,0 +1,37 @@
+{
+  "toyota/camry": {
+    "src": "/images/scene-diversity-20261020/toyota-camry-business-district.webp",
+    "srcSet": "/images/scene-diversity-20261020/toyota-camry-business-district-480.webp 480w, /images/scene-diversity-20261020/toyota-camry-business-district-800.webp 800w, /images/scene-diversity-20261020/toyota-camry-business-district-1200.webp 1200w, /images/scene-diversity-20261020/toyota-camry-business-district.webp 1448w",
+    "original": "/images/catalog/toyota/camry/toyota-camry-front-three-quarter-left.webp",
+    "alt": "Toyota Camry on a city avenue; AI-edited setting",
+    "note": "AI-edited setting based on a supplied model photograph. Not stock or configuration evidence."
+  },
+  "toyota/rav4": {
+    "src": "/images/scene-diversity-20261020/toyota-rav4-residential-street.webp",
+    "srcSet": "/images/scene-diversity-20261020/toyota-rav4-residential-street-480.webp 480w, /images/scene-diversity-20261020/toyota-rav4-residential-street-800.webp 800w, /images/scene-diversity-20261020/toyota-rav4-residential-street-1200.webp 1200w, /images/scene-diversity-20261020/toyota-rav4-residential-street.webp 1448w",
+    "original": "/images/catalog/toyota/rav4/toyota-rav4-front-three-quarter-01.webp",
+    "alt": "Toyota RAV4 on a tree-lined residential street; AI-edited setting",
+    "note": "AI-edited setting based on a supplied model photograph. Not stock or configuration evidence."
+  },
+  "byd/yuan-plus": {
+    "src": "/images/scene-diversity-20261020/byd-yuan-plus-charging-forecourt.webp",
+    "srcSet": "/images/scene-diversity-20261020/byd-yuan-plus-charging-forecourt-480.webp 480w, /images/scene-diversity-20261020/byd-yuan-plus-charging-forecourt-800.webp 800w, /images/scene-diversity-20261020/byd-yuan-plus-charging-forecourt-1200.webp 1200w, /images/scene-diversity-20261020/byd-yuan-plus-charging-forecourt.webp 1448w",
+    "original": "/images/catalog/byd/yuan-plus/byd-yuan-plus-front-three-quarter-01.webp",
+    "alt": "BYD Yuan PLUS at a charging station; AI-edited setting",
+    "note": "AI-edited setting based on a supplied model photograph. Not stock or configuration evidence."
+  },
+  "volkswagen/id-3": {
+    "src": "/images/catalog-left-scenes-20261021/volkswagen-id-3-left.webp",
+    "srcSet": "/images/catalog-left-scenes-20261021/volkswagen-id-3-left-480.webp 480w, /images/catalog-left-scenes-20261021/volkswagen-id-3-left-800.webp 800w, /images/catalog-left-scenes-20261021/volkswagen-id-3-left-1200.webp 1200w, /images/catalog-left-scenes-20261021/volkswagen-id-3-left.webp 1448w",
+    "original": "/images/catalog/volkswagen/id-3/saic-volkswagen-id3-front-three-quarter-left.webp",
+    "alt": "Volkswagen ID.3 outside an art museum; AI-edited setting",
+    "note": "AI-edited setting based on a supplied model photograph. Not stock or configuration evidence."
+  },
+  "jetour/traveler": {
+    "src": "/images/scene-diversity-20261020/jetour-traveler-grassland-track.webp",
+    "srcSet": "/images/scene-diversity-20261020/jetour-traveler-grassland-track-480.webp 480w, /images/scene-diversity-20261020/jetour-traveler-grassland-track-800.webp 800w, /images/scene-diversity-20261020/jetour-traveler-grassland-track-1200.webp 1200w, /images/scene-diversity-20261020/jetour-traveler-grassland-track.webp 1448w",
+    "original": "/images/catalog/jetour/traveler/jetour-traveler-front-three-quarter-01.webp",
+    "alt": "Jetour Traveler on a gravel track; AI-edited setting",
+    "note": "AI-edited setting based on a supplied model photograph. Not stock or configuration evidence."
+  }
+}

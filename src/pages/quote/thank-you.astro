@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import InquiryConfirmation from '../../components/InquiryConfirmation';
+import '../../styles/nest-contact.css';
+---
+<Base title="Inquiry confirmation" description="Check the confirmed submission status of your vehicle inquiry.">
+ <Breadcrumbs items={[{label:'Request a Vehicle Quote',href:'/quote/'},{label:'Inquiry confirmation'}]}/>
+ <div id="inquiry-confirmation-client" class="nest-inquiry-content shell"><InquiryConfirmation client:load/></div>
+ <noscript><style>#inquiry-confirmation-client{display:none}</style><section class="section shell"><h1>Check your inquiry status</h1><p>Enable JavaScript to check the submission receipt saved in this tab, or contact KEEYAK for help.</p><a href="/quote/">Return to the inquiry form</a></section></noscript>
+</Base>

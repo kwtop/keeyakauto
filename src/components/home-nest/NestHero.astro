@@ -1,0 +1,18 @@
+---
+const media = '/images/home-revision-20261019/';
+const original = '/images/nest-home-20261018/';
+---
+<section class="nest-hero" data-core-module="introduction" aria-labelledby="nest-home-title">
+  <div class="nest-hero-copy">
+    <h1 id="nest-home-title"><span>Cars from</span><span>China.</span></h1>
+    <p class="nest-hero-intro">New and used passenger cars<br/>for dealers, importers and fleets.</p>
+    <a class="nest-hero-link" href="#models">Explore cars</a>
+  </div>
+  <figure class="nest-hero-image">
+    <picture>
+      <source media="(max-width:767px)" srcset={`${original}camry-courtyard-960.webp 960w, ${original}camry-courtyard.webp 1536w`} sizes="100vw" width="1536" height="1024"/>
+      <img src={media+'camry-hero-wide-1983.webp'} srcset={`${media}camry-hero-wide-960.webp 960w, ${media}camry-hero-wide-1440.webp 1440w, ${media}camry-hero-wide-1983.webp 1983w`} sizes="100vw" width="1983" height="793" alt="Grey Toyota Camry model reference in an illustrative limestone courtyard" fetchpriority="high"/>
+    </picture>
+    
+  </figure>
+</section>

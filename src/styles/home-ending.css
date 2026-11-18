@@ -1,0 +1,51 @@
+/* Homepage inquiry panel. */
+.autohaus-home .ah-order-inquiry{--ending-base:#212121;--ending-text:#c6c6c2;--ending-line:#484846;width:100%;max-width:none;margin:0;background:var(--ending-base);color:#fff}
+.autohaus-home .ah-order-inquiry>.ah-ending-shell{width:calc(100% - 84px);max-width:1760px;margin-inline:auto}
+.autohaus-home .ah-order-inquiry{width:calc(100% - 80px);max-width:1400px;margin:0 auto 100px;padding:72px 0;border-radius:25px}
+.autohaus-home .ah-order-inquiry>.ah-ending-shell{display:grid;grid-template-columns:minmax(280px,.65fr) minmax(0,1.4fr);align-items:center;gap:64px}
+.autohaus-home .ah-order-heading{max-width:440px}
+.autohaus-home .ah-order-heading h2{font-size:42px;line-height:1.2;letter-spacing:-.04em;color:#fff;text-wrap:balance}
+.autohaus-home .ah-order-form{width:100%;min-width:0;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px;margin:0}
+.autohaus-home .ah-order-fields{display:grid;grid-template-columns:minmax(0,1.6fr) 92px minmax(0,1.1fr);gap:14px}
+.autohaus-home .ah-order-fields label{display:block;min-width:0;font-size:15px;line-height:1.5;color:#eee}
+.autohaus-home .ah-order-fields input{display:block;width:100%;min-width:0;height:52px;margin-top:8px;padding:0 14px;border:1px solid #555551;border-radius:10px;background:#2b2b2b;color:#fff;font:500 16px/1.4 var(--body);box-shadow:none}
+.autohaus-home .ah-order-fields input::placeholder{color:#bcbcb6;opacity:1}
+.autohaus-home .ah-order-fields input:hover{border-color:#82827c}
+.autohaus-home .ah-order-fields input:focus-visible{border-color:#fff;outline:2px solid #fff;outline-offset:3px}
+.autohaus-home .ah-order-submit button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border:0;border-radius:999px;background:#fff;color:#212121;font:500 14px/1.6 var(--body);letter-spacing:-.01em;white-space:nowrap;cursor:pointer;transition:background-color .18s ease}
+.autohaus-home .ah-order-submit button:hover{background:#e8e8e3}
+.autohaus-home .ah-order-inquiry :is(a,button,summary):focus-visible{outline:3px solid #91c5ef;outline-offset:4px}
+@media(max-width:1399px){
+ .autohaus-home .ah-order-inquiry>.ah-ending-shell{grid-template-columns:minmax(260px,.65fr) minmax(0,1.4fr);gap:40px}
+ .autohaus-home .ah-order-form{display:block}
+ .autohaus-home .ah-order-submit{margin-top:18px}
+}
+@media(max-width:1199px){
+ .autohaus-home .ah-order-inquiry>.ah-ending-shell{width:calc(100% - 64px)}
+ .autohaus-home .ah-order-inquiry{width:calc(100% - 64px);margin-bottom:80px;padding:56px 0}
+ .autohaus-home .ah-order-inquiry>.ah-ending-shell{display:block}
+ .autohaus-home .ah-order-heading{max-width:none}
+ .autohaus-home .ah-order-heading h2{font-size:38px}
+ .autohaus-home .ah-order-form{display:grid;margin-top:24px}
+ .autohaus-home .ah-order-submit{margin-top:0}
+}
+@media(max-width:809px){
+ .autohaus-home .ah-order-inquiry>.ah-ending-shell{width:calc(100% - 40px)}
+ .autohaus-home .ah-order-inquiry{width:calc(100% - 40px);margin-bottom:64px;padding:44px 0;border-radius:20px}
+ .autohaus-home .ah-order-heading{max-width:640px;margin-inline:auto}
+ .autohaus-home .ah-order-heading h2{font-size:34px;line-height:1.25}
+ .autohaus-home .ah-order-form{display:block;max-width:640px;margin:22px auto 0}
+ .autohaus-home .ah-order-submit{margin-top:18px}
+ .autohaus-home .ah-order-submit button{width:100%;font-size:15px}
+}
+@media(max-width:599px){
+ .autohaus-home .ah-order-fields{grid-template-columns:88px minmax(0,1fr);gap:18px 14px}
+ .autohaus-home .ah-order-model{grid-column:1/-1}
+}
+@media(max-width:359px){
+ .autohaus-home .ah-order-heading h2{font-size:30px}
+ .autohaus-home .ah-order-fields{grid-template-columns:76px minmax(0,1fr);gap:18px 12px}
+ .autohaus-home .ah-order-fields label{font-size:14px}
+ .autohaus-home .ah-order-fields input{padding-inline:12px}
+}
+@media(prefers-reduced-motion:reduce){.autohaus-home .ah-order-submit button{transition:none}}

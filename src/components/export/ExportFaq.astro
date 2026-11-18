@@ -1,0 +1,78 @@
+---
+import ExportPage from '../../layouts/ExportPage.astro';
+import ExportFigure from './ExportFigure.astro';
+import ExportVehicleFigure from './ExportVehicleFigure.astro';
+import { exportFaqGroups } from '../../data/exportServices';
+import { exportMedia } from '../../data/exportServiceMedia';
+import { shippingLandscape } from './exportStoryMedia';
+const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:exportFaqGroups.flatMap(group=>group.questions.map(faq=>({'@type':'Question',name:faq.question,acceptedAnswer:{'@type':'Answer',text:faq.answer}})))};
+---
+<ExportPage title="Vehicle export FAQ — buying, inspection, shipping and support" description="Answers to common questions about car availability, quotations, payment, inspection records, shipping, warranty and after-sales support." page="faq" image={exportMedia.documents.src}>
+  <section class="ex-faq-intro" data-core-module="search" aria-labelledby="export-title"><div class="ex-wrap">
+    <div class="ex-faq-intro-copy"><h1 id="export-title">Car sourcing and export FAQs</h1><p>Answers before an order. Help with the records and the next step after delivery.</p>
+      <form class="ex-faq-search" role="search" aria-label="Search export questions" hidden><label for="export-question-search">Search questions and answers</label><div><input id="export-question-search" type="search" name="q" autocomplete="off" maxlength="120" placeholder="Search questions"/><button type="button" class="ex-search-clear" hidden>Clear</button></div><p class="ex-search-status" role="status" aria-live="polite" hidden></p></form>
+    </div>
+  </div></section>
+  <div class="ex-wrap ex-faq-body">
+    <div class="ex-faq-topic-navigation"><p class="ex-faq-topics-hint">Browse topics</p><nav class="ex-faq-topics" aria-label="FAQ topics">{exportFaqGroups.map(group=><a href={`#${group.id}`}>{group.title}</a>)}</nav></div>
+    <div class="ex-faq-results">
+      <div class="ex-no-results" hidden><h2>No questions match your search</h2><p>Try a shorter term, or return to the full list.</p><button type="button" class="ex-button ex-show-all">Show all questions</button></div>
+      {exportFaqGroups.map(group=><section id={group.id} class:list={['ex-faq-group',{'ex-faq-group--visual':['choosing','inspection','shipping','support'].includes(group.id)}]} data-core-module={group.id} data-module={group.id} aria-labelledby={`${group.id}-title`}>
+        <header class="ex-faq-group-heading"><h2 id={`${group.id}-title`}>{group.title}</h2><p>{group.intro}</p></header>
+        <div class="ex-faq-items">{group.questions.map((faq,index)=><details id={`faq-${group.id}-${index+1}`}><summary>{faq.question}</summary><div class="ex-faq-answer"><p>{faq.answer}</p></div></details>)}</div>
+        {group.id==='choosing'?<ExportVehicleFigure slug="camry" caption="Model reference." class="ex-faq-topic-photo"/>:group.id==='inspection'?<ExportFigure {...exportMedia.inspectionDetail} class="ex-faq-topic-photo"/>:group.id==='shipping'?<ExportFigure {...shippingLandscape} class="ex-faq-topic-photo"/>:group.id==='support'?<ExportFigure {...exportMedia.diagnosis} class="ex-faq-topic-photo"/>:null}
+        <a class="ex-link ex-faq-deeper" href={group.href}>{group.linkLabel}</a>
+      </section>)}
+    </div>
+  </div>
+  <section class="ex-section ex-faq-contact" data-core-module="next-step" data-module="next-step"><div class="ex-wrap">
+    <div><h2>Get help with your order</h2><p>Include the order reference, vehicle details and relevant records so the team can review your question.</p></div>
+    <div class="ex-faq-contact-actions"><a class="ex-button" href="/contact/#existing-order">Contact the team</a><a class="ex-link" href="/export-services/buying-guide/">Planning a purchase? Read the buying guide</a></div>
+  </div></section>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+</ExportPage>
+<script>
+  const root=document.querySelector<HTMLElement>('.export-design--faq');
+  const form=root?.querySelector<HTMLFormElement>('.ex-faq-search');
+  const input=root?.querySelector<HTMLInputElement>('#export-question-search');
+  const clear=root?.querySelector<HTMLButtonElement>('.ex-search-clear');
+  const status=root?.querySelector<HTMLElement>('.ex-search-status');
+  const empty=root?.querySelector<HTMLElement>('.ex-no-results');
+  const groups=Array.from(root?.querySelectorAll<HTMLElement>('.ex-faq-group')||[]);
+  const questions=Array.from(root?.querySelectorAll<HTMLDetailsElement>('.ex-faq-items details')||[]);
+  const beforeSearch=new Map<HTMLDetailsElement,boolean>();
+  let searching=false;
+  if(root&&form&&input&&clear&&status&&empty){
+    form.hidden=false;
+    const update=()=>{
+      const term=input.value.trim().toLocaleLowerCase('en');
+      root.dataset.searching=String(Boolean(term));
+      if(term&&!searching){questions.forEach(item=>beforeSearch.set(item,item.open));searching=true;}
+      let count=0;
+      questions.forEach(item=>{
+        const match=!term||(item.textContent||'').toLocaleLowerCase('en').includes(term);
+        item.hidden=!match;
+        if(match)count++;
+        if(term)item.open=match;
+        else if(searching)item.open=beforeSearch.get(item)||false;
+      });
+      if(!term)searching=false;
+      groups.forEach(group=>{group.hidden=!Array.from(group.querySelectorAll<HTMLDetailsElement>('details')).some(item=>!item.hidden);});
+      clear.hidden=!term;status.hidden=!term;empty.hidden=count>0;
+      status.textContent=count===1?'1 question matches your search.':`${count} questions match your search.`;
+    };
+    const reset=()=>{input.value='';update();};
+    input.addEventListener('input',update);
+    form.addEventListener('submit',event=>event.preventDefault());
+    clear.addEventListener('click',()=>{reset();input.focus();});
+    root.querySelector('.ex-show-all')?.addEventListener('click',()=>{reset();input.focus();});
+    root.querySelectorAll('.ex-faq-topics a').forEach(link=>link.addEventListener('click',reset));
+    const openHash=()=>{
+      const id=window.location.hash.slice(1);
+      const match=questions.find(item=>item.id===id);
+      if(match){reset();match.open=true;}
+    };
+    window.addEventListener('hashchange',openHash);
+    openHash();
+  }
+</script>

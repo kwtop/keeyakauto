@@ -1,0 +1,22 @@
+---
+import { brands, brandHref } from '../../data/catalog';
+const selected = ['toyota','byd','volkswagen','geely','jetour','wuling'];
+const featuredBrands = selected.map(slug => brands('new').find(brand => brand.slug === slug)).filter(Boolean);
+const media = '/images/nest-home-20261018/';
+const categories = [
+ {href:'/new-cars/',title:'New cars',text:'Find a model. Compare the versions.',image:media+'rav4-courtyard.webp',alt:'Toyota RAV4 model reference in an illustrative courtyard',width:1086,height:1448},
+ {href:'/used-cars/',title:'Used-car sourcing',text:'Start with the car and condition you need.',image:'/images/home-a1-preview-20261018/inspection.webp',alt:'Illustrative tyre inspection scene, not a KEEYAK inspection record',width:1536,height:1024},
+ {href:'/export-services/',title:'Export services',text:'Plan the checks, documents and journey.',image:media+'purchasing-desk.webp',alt:'Illustrative vehicle-purchasing planning still life with blank documents',width:1086,height:1448}
+];
+---
+<section class="nest-discovery" data-core-module="starting-points" aria-label="Find your starting point">
+  <nav class="nest-brand-row nest-container" aria-label="Browse new-car brands">
+    {featuredBrands.map(brand => brand && <a href={brandHref('new',brand.slug)}>{brand.name}</a>)}
+  </nav>
+  <div class="nest-category-grid nest-container">
+    {categories.map(category => <a class="nest-category" href={category.href}>
+      <div class="nest-category-image"><img src={category.image} width={category.width} height={category.height} alt={category.alt} loading="lazy"/></div>
+      <h2>{category.title}</h2><p>{category.text}</p>
+    </a>)}
+  </div>
+</section>

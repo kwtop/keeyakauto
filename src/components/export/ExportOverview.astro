@@ -1,0 +1,33 @@
+---
+import ExportPage from '../../layouts/ExportPage.astro';
+import ExportHero from './ExportHero.astro';
+import ExportFigure from './ExportFigure.astro';
+import ExportInquiry from './ExportInquiry.astro';
+import ExportServiceResponsibilities from './ExportServiceResponsibilities.astro';
+import { exportMedia } from '../../data/exportServiceMedia';
+import { buyingFaqs } from '../../data/editorial';
+const hero=exportMedia.overview;
+const services=[
+  {id:'sourcing',title:'Vehicle sourcing and inspection',href:'/export-services/sourcing-inspection/',photo:exportMedia.inspection,body:'Define the version you need, confirm the proposed vehicle and agree the checks before acceptance.',action:'Explore sourcing & inspection'},
+  {id:'shipping',title:'Shipping and after-sales support',href:'/export-services/shipping-support/',photo:exportMedia.shippingDetail,body:'Plan the route and handover. Keep arrival records and your agreed support arrangements together.',action:'Plan shipping & support'}
+];
+
+---
+<ExportPage title="Vehicle sourcing and export services from China" description="Plan your car purchase from China: vehicle sourcing, inspection, transport, order documents and support arrangements with KEEYAK." page="overview" image={hero.src}>
+  <ExportHero title={'Car sourcing\nand export services'} intro="Bring your vehicle requirement to KEEYAK. We coordinate sourcing, inspection requirements and export planning around the scope agreed for your order." image={hero.src} alt={hero.alt} width={hero.width} height={hero.height} small={hero.small}>
+    <div class="ex-task-links"><a class="ex-link" href="#responsibilities">Our role & your records</a><a class="ex-link" href="/export-services/buying-guide/">Plan your purchase</a></div>
+  </ExportHero>
+  <ExportServiceResponsibilities/>
+  <section class="ex-section ex-overview-services" id="services" data-core-module="services" data-module="services" aria-labelledby="ex-services-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-services-title">Services for each stage of your purchase</h2><p>Two connected stages, with the scope and records agreed for your purchase.</p></header>
+    <div class="ex-service-grid">{services.map(service=><article id={service.id}>
+      <a href={service.href} class="ex-service-image"><ExportFigure {...service.photo}/><h3>{service.title}</h3></a>
+      <p>{service.body}</p>
+    </article>)}</div>
+  </div></section>
+  <section class="ex-section" id="buying-help" data-core-module="buying-help" data-module="buying-help" aria-labelledby="ex-questions-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-questions-title">Key questions before you order</h2><p>A catalog reference, an inquiry and an agreed order describe different stages.</p></header>
+    <div class="ex-overview-questions"><ExportFigure {...exportMedia.diagnosis} class="ex-question-photo"/><div><div class="ex-short-faq">{[buyingFaqs[0],buyingFaqs[5],buyingFaqs[4]].map(faq=><details><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div><a class="ex-link" href="/export-services/faq/">Browse all questions</a></div></div>
+  </div></section>
+  <ExportInquiry service="export-services" showFaq={false}/>
+</ExportPage>

@@ -1,0 +1,7 @@
+---
+interface Props {src:string;alt:string;caption?:string;width?:number;height?:number;class?:string;priority?:boolean;contain?:boolean;}
+const {src,alt,width=1800,height=1350,class:className='',priority=false,contain=false}=Astro.props;
+---
+<figure class:list={['content-photo',className,{'content-photo-contain':contain}]}>
+  <img src={src} alt={alt} width={width} height={height} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} />
+</figure>

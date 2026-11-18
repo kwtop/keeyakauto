@@ -1,0 +1,139 @@
+---
+import { vehicles, vehicleHref, brandHref, type Vehicle } from '../../data/catalog';
+import { vehicleDisplayImage } from '../../data/imageDelivery';
+import { homeBrandAssets } from '../../data/homeBrandAssets';
+
+const selectModels = (kind: Vehicle['kind'], keys: string[]) => keys.map(key => {
+  const model = vehicles.find(vehicle => vehicle.kind === kind && `${vehicle.brandSlug}/${vehicle.slug}` === key);
+  if (!model) throw new Error(`Missing ${kind} homepage model: ${key}`);
+  return model;
+});
+const selectBrands = (slugs: string[]) => slugs.map(slug => {
+  const brand = homeBrandAssets.find(asset => asset.slug === slug);
+  if (!brand) throw new Error(`Missing homepage brand asset: ${slug}`);
+  return brand;
+});
+const groups = [
+  {
+    kind: 'new' as const,
+    label: 'New Cars',
+    href: '/new-cars/',
+    viewAll: 'View all new cars',
+    brands: selectBrands(['toyota', 'byd', 'volkswagen', 'geely', 'jetour', 'wuling']),
+    models: selectModels('new', ['toyota/camry', 'byd/yuan-plus', 'jetour/traveler', 'toyota/rav4', 'volkswagen/id-3', 'geely/boyue', 'toyota/corolla', 'wuling/bingo']),
+    note: 'Model references, not live stock. Confirm the exact version and availability.',
+  },
+  {
+    kind: 'used' as const,
+    label: 'Used Cars',
+    href: '/used-cars/',
+    viewAll: 'View all used cars',
+    brands: selectBrands(['toyota', 'byd', 'wuling', 'jetour', 'volkswagen']),
+    models: selectModels('used', ['aion/s', 'byd/seagull', 'toyota/bz3x', 'wuling/starlight-730-ev', 'toyota/crown-vellfire-hybrid', 'jetour/traveler-c-dm', 'volkswagen/t-cross']),
+    note: 'Supplied vehicle records and past listings. Request dated photos, VIN, mileage and condition records for the vehicle offered.',
+  },
+];
+---
+<section class="nest-models nest-container" data-core-module="model-references" aria-labelledby="nest-model-title" id="models" data-model-rail>
+  <div class="nest-rail-heading">
+    <h2 id="nest-model-title">Models to explore</h2>
+    <div class="nest-model-tabs" role="tablist" aria-label="New or used vehicle references" aria-orientation="horizontal">
+      {groups.map(group => <button
+        class="nest-model-tab"
+        type="button"
+        role="tab"
+        id={`nest-model-tab-${group.kind}`}
+        aria-controls={`nest-model-panel-${group.kind}`}
+        aria-selected={group.kind === 'new'}
+        tabindex={group.kind === 'new' ? 0 : -1}
+        data-model-tab={group.kind}
+        data-view-all-href={group.href}
+        data-view-all-label={group.viewAll}
+      >{group.label}</button>)}
+    </div>
+    <a class="nest-inline-link" href="/new-cars/" data-model-view-all>View all new cars</a>
+  </div>
+  <div class="nest-model-panels">
+    {groups.map(group => <div
+      class="nest-model-panel"
+      id={`nest-model-panel-${group.kind}`}
+      role="tabpanel"
+      aria-labelledby={`nest-model-tab-${group.kind}`}
+      aria-hidden={group.kind === 'used' ? 'true' : undefined}
+      hidden={group.kind === 'used'}
+      inert={group.kind === 'used'}
+      data-model-panel={group.kind}
+    >
+      <nav class="nest-model-brands" aria-label={`Browse ${group.kind}-car brands`}>
+        {group.brands.map(brand => <a
+          class="nest-model-brand-link"
+          href={brandHref(group.kind, brand.slug)}
+          aria-label={`Browse ${brand.name} ${group.kind} cars`}
+        ><img
+          class="nest-model-brand-mark"
+          src={brand.src}
+          alt={brand.alt}
+          width={brand.displayWidth}
+          height={Math.max(1, Math.round(brand.displayWidth * brand.height / brand.width))}
+          loading="lazy"
+          decoding="async"
+        /></a>)}
+      </nav>
+      <div class="nest-model-track" id={`nest-model-track-${group.kind}`} role="group" aria-label={`${group.label} model references`} data-model-track>
+        {group.models.map(model => <a href={vehicleHref(model)} class="nest-model-card">
+          <div class="nest-model-image"><img
+            src={vehicleDisplayImage(model.image)}
+            alt={group.kind === 'used' ? `${model.name} historical third-party reference photograph` : `${model.name} supplied model reference photograph`}
+            width="1448"
+            height="1086"
+            loading="lazy"
+            decoding="async"
+          /></div>
+          <p class="nest-model-brand">{model.brand}</p>
+          <h3>{model.modelName || model.name.replace(model.brand + ' ', '')}</h3>
+          <p class="nest-model-powertrain nest-model-meta"><span class="nest-model-year">{model.year}</span><span aria-hidden="true"> · </span><span>{model.powertrain === 'Pure Electric' ? 'Electric' : model.powertrain}</span></p>
+        </a>)}
+      </div>
+      <div class="nest-rail-bottom"><p>{group.note}</p></div>
+    </div>)}
+  </div>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-model-rail]').forEach(section => {
+    const tabs = Array.from(section.querySelectorAll<HTMLButtonElement>('[data-model-tab]'));
+    const panels = Array.from(section.querySelectorAll<HTMLElement>('[data-model-panel]'));
+    const viewAll = section.querySelector<HTMLAnchorElement>('[data-model-view-all]');
+    const selectTab = (selected: HTMLButtonElement, focus = false) => {
+      tabs.forEach(tab => {
+        const active = tab === selected;
+        tab.setAttribute('aria-selected', String(active));
+        tab.tabIndex = active ? 0 : -1;
+      });
+      panels.forEach(panel => {
+        const active = panel.dataset.modelPanel === selected.dataset.modelTab;
+        panel.hidden = !active;
+        panel.inert = !active;
+        panel.setAttribute('aria-hidden', String(!active));
+      });
+      if (viewAll) {
+        viewAll.href = selected.dataset.viewAllHref || '/new-cars/';
+        viewAll.textContent = selected.dataset.viewAllLabel || 'View all new cars';
+      }
+      if (focus) selected.focus();
+    };
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectTab(tab));
+      tab.addEventListener('keydown', event => {
+        let target = index;
+        if (event.key === 'ArrowRight') target = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') target = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === 'Home') target = 0;
+        else if (event.key === 'End') target = tabs.length - 1;
+        else return;
+        event.preventDefault();
+        selectTab(tabs[target], true);
+      });
+    });
+  });
+</script>

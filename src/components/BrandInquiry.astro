@@ -1,0 +1,119 @@
+---
+import {ArrowRight,CarFront,SlidersHorizontal,Copy,Globe,Clock,ReceiptText,ClipboardCheck} from '@lucide/astro';
+import type {Vehicle} from '../data/catalog';
+
+interface Props {brand:string;kind:Vehicle['kind'];quotation:string;}
+const {brand,kind,quotation}=Astro.props;
+const isUsed=kind==='used';
+const article=['AION','Audi','MG'].includes(brand)?'an':'a';
+const details=[
+ {label:'Model',description:'Name or shortlist',icon:CarFront},
+ {label:isUsed?'Year & condition':'Version',description:isUsed?'Year range, mileage and condition':'Trim or essential equipment',icon:SlidersHorizontal},
+ {label:'Quantity',description:'How many of each model',icon:Copy},
+ {label:'Destination',description:'Country and port',icon:Globe}
+];
+const offerChecks=[
+ {label:'Availability & timing',description:isUsed?'Individual car, quantity and preparation time.':'Version, quantity and preparation time.',icon:Clock},
+ {label:'Itemised costs',description:'What the price includes and how long it’s valid.',icon:ReceiptText},
+ {label:'Inspection & delivery',description:isUsed?'Vehicle records, agreed checks and handover terms.':'Checks, documents and handover terms.',icon:ClipboardCheck}
+];
+---
+
+<section class="shell brand-inquiry" id="brand-inquiry" data-module="inquiry" data-core-module="inquiry" aria-labelledby="brand-quote-title">
+ <header class="brand-inquiry-header">
+  <div class="brand-inquiry-heading">
+   <h2 id="brand-quote-title">Request {article} {brand} quote</h2>
+  </div>
+  <a class="brand-inquiry-action" href={quotation}><span>Start {article} {brand} inquiry</span><ArrowRight size={22} stroke-width={1.7} aria-hidden="true"/></a>
+ </header>
+
+ <dl class="brand-inquiry-details" aria-label="Details to include in your inquiry">
+  {details.map(({label,description,icon:Icon},index)=><div class="brand-inquiry-detail">
+   <dt><span class="brand-inquiry-step" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><Icon class="brand-inquiry-detail-icon" size={40} stroke-width={1.6} aria-hidden="true"/><span class="brand-inquiry-label">{label}</span></dt>
+   <dd>{description}</dd>
+  </div>)}
+ </dl>
+
+ <div class="brand-inquiry-review" id={isUsed?'brand-offer-review':'purchase-evidence'} data-module={isUsed?'offer-review':'purchase-evidence'} data-core-module={isUsed?undefined:'evidence'}>
+  <h3>Check the written offer</h3>
+  <div class="brand-inquiry-review-body">
+   <dl class="brand-inquiry-offer-checks">
+    {offerChecks.map(({label,description,icon:Icon})=><div class="brand-inquiry-offer-check">
+     <dt><Icon size={26} stroke-width={1.6} aria-hidden="true"/><span>{label}</span></dt>
+     <dd>{description}</dd>
+    </div>)}
+   </dl>
+   <nav class="brand-inquiry-resources" aria-label="Company and purchase information">
+    <a href="/about/company-profile/#company-documents"><span>Company documents</span><ArrowRight size={16} aria-hidden="true"/></a>
+    <a href="/export-services/buying-guide/compare-car-export-quotes/"><span>Buying guide</span><ArrowRight size={16} aria-hidden="true"/></a>
+    {isUsed&&<a href="/used-cars/" aria-label="Browse all used-car references"><span>All used cars</span><ArrowRight size={16} aria-hidden="true"/></a>}
+   </nav>
+  </div>
+ </div>
+</section>
+
+<style>
+ #brand-inquiry{margin-block:0 88px;padding:0;background:transparent;color:var(--ed-ink,#212121);scroll-margin-top:116px}
+ #brand-inquiry::before{content:'';display:block;width:52px;height:6px;margin-bottom:28px;border-radius:999px;background:var(--ed-yellow,#ffcc00)}
+ #brand-inquiry .brand-inquiry-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:32px}
+ #brand-inquiry .brand-inquiry-heading{min-width:0}
+ #brand-inquiry .brand-inquiry-heading h2{margin:0;font:500 clamp(34px,3.5vw,54px)/1.12 var(--body);letter-spacing:-.045em;text-wrap:balance;overflow-wrap:break-word}
+ #brand-inquiry .brand-inquiry-action{display:inline-flex;align-items:center;justify-content:space-between;gap:40px;min-width:304px;min-height:60px;max-width:390px;padding:16px 28px;border:0;border-radius:999px;background:var(--ed-ink,#212121);color:#fff;font:500 16px/1.5 var(--body);text-decoration:none;box-shadow:0 2px 3px #21212108,0 8px 20px #21212105;transition:background-color 160ms ease}
+ #brand-inquiry .brand-inquiry-action:hover{background:#41403b;color:#fff}
+ #brand-inquiry a:focus-visible{outline:2px solid #9b7800;outline-offset:5px}
+ #brand-inquiry a>svg{flex-shrink:0}
+ #brand-inquiry .brand-inquiry-details{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:32px 0 0;padding:36px 32px;border-radius:24px;background:var(--ed-paper,#f5f4f0)}
+ #brand-inquiry .brand-inquiry-detail{min-width:0;padding:0 24px}
+ #brand-inquiry .brand-inquiry-detail+.brand-inquiry-detail{border-inline-start:1px solid var(--ed-line,#dedbd4)}
+ #brand-inquiry .brand-inquiry-detail dt{display:flex;flex-direction:column;align-items:flex-start;margin:0;font-weight:500}
+ #brand-inquiry .brand-inquiry-step{margin-bottom:20px;color:var(--ed-muted,#65635e);font-size:16px;line-height:1.5;font-variant-numeric:tabular-nums}
+ #brand-inquiry .brand-inquiry-detail-icon{flex-shrink:0;margin-bottom:20px}
+ #brand-inquiry .brand-inquiry-label{font-size:20px;line-height:1.4;letter-spacing:-.02em;text-wrap:balance}
+ #brand-inquiry .brand-inquiry-detail dd{margin:8px 0 0;color:var(--ed-muted,#65635e);font-size:16px;line-height:1.6}
+ #brand-inquiry .brand-inquiry-review{margin-top:36px;padding-top:28px;border-top:1px solid var(--ed-line,#dedbd4);scroll-margin-top:116px}
+ #brand-inquiry .brand-inquiry-review h3{margin:0 0 24px;font:500 28px/1.25 var(--body);letter-spacing:-.035em;text-wrap:balance}
+ #brand-inquiry .brand-inquiry-review-body{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:28px;align-items:start}
+ #brand-inquiry .brand-inquiry-offer-checks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0}
+ #brand-inquiry .brand-inquiry-offer-check{position:relative;min-width:0;padding:0 20px 0 42px}
+ #brand-inquiry .brand-inquiry-offer-check+.brand-inquiry-offer-check{padding-inline-start:66px;border-inline-start:1px solid var(--ed-line,#dedbd4)}
+ #brand-inquiry .brand-inquiry-offer-check dt{margin:0;font-size:15px;font-weight:500;line-height:1.5}
+ #brand-inquiry .brand-inquiry-offer-check dt>svg{position:absolute;inset-inline-start:0;top:1px}
+ #brand-inquiry .brand-inquiry-offer-check+.brand-inquiry-offer-check dt>svg{inset-inline-start:24px}
+ #brand-inquiry .brand-inquiry-offer-check dd{margin:6px 0 0;color:var(--ed-muted,#65635e);font-size:14px;line-height:1.6}
+ #brand-inquiry .brand-inquiry-resources{display:flex;flex-direction:column;gap:8px;padding-inline-start:24px;border-inline-start:1px solid var(--ed-line,#dedbd4)}
+ @media(max-width:1099px){
+  #brand-inquiry .brand-inquiry-heading h2{font-size:42px}
+  #brand-inquiry .brand-inquiry-action{min-width:272px;font-size:15px;gap:24px;padding-inline:24px}
+  #brand-inquiry .brand-inquiry-details{padding:32px 20px}
+  #brand-inquiry .brand-inquiry-detail{padding-inline:20px}
+  #brand-inquiry .brand-inquiry-review-body{grid-template-columns:1fr;gap:20px}
+  #brand-inquiry .brand-inquiry-resources{flex-direction:row;flex-wrap:wrap;gap:8px 12px;padding:0;border:0}
+ }
+ @media(max-width:809px){
+  #brand-inquiry{margin-bottom:64px}
+  #brand-inquiry::before{width:44px;height:5px;margin-bottom:24px}
+  #brand-inquiry .brand-inquiry-header{grid-template-columns:1fr;gap:24px}
+  #brand-inquiry .brand-inquiry-heading h2{font-size:36px;line-height:1.15;letter-spacing:-.04em}
+  #brand-inquiry .brand-inquiry-action{width:100%;min-width:0;max-width:none;min-height:56px;padding:16px 24px}
+  #brand-inquiry .brand-inquiry-details{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px;margin-top:28px;padding:28px 16px;border-radius:20px}
+  #brand-inquiry .brand-inquiry-detail{padding-inline:16px}
+  #brand-inquiry .brand-inquiry-detail:nth-child(3){border-inline-start:0}
+  #brand-inquiry .brand-inquiry-step{font-size:14px;margin-bottom:16px}
+  #brand-inquiry .brand-inquiry-detail-icon{width:32px;height:32px;margin-bottom:16px}
+  #brand-inquiry .brand-inquiry-label{font-size:18px}
+  #brand-inquiry .brand-inquiry-detail dd{font-size:14px;margin-top:6px}
+  #brand-inquiry .brand-inquiry-review{margin-top:28px;padding-top:24px}
+  #brand-inquiry .brand-inquiry-review h3{font-size:25px;margin-bottom:24px}
+  #brand-inquiry .brand-inquiry-offer-checks{grid-template-columns:1fr;gap:20px}
+  #brand-inquiry .brand-inquiry-offer-check,#brand-inquiry .brand-inquiry-offer-check+.brand-inquiry-offer-check{padding:0 0 0 42px;border:0}
+  #brand-inquiry .brand-inquiry-offer-check+.brand-inquiry-offer-check dt>svg{inset-inline-start:0}
+  #brand-inquiry .brand-inquiry-offer-check dt{font-size:16px}
+  #brand-inquiry .brand-inquiry-offer-check dd{font-size:14px;margin-top:4px}
+ }
+ @media(max-width:359px){
+  #brand-inquiry .brand-inquiry-heading h2{font-size:32px}
+  #brand-inquiry .brand-inquiry-details{padding-inline:12px}
+  #brand-inquiry .brand-inquiry-detail{padding-inline:12px}
+ }
+ @media(prefers-reduced-motion:reduce){#brand-inquiry .brand-inquiry-action{transition:none}}
+</style>

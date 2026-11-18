@@ -1,0 +1,145 @@
+---
+import TrustLayout from '../layouts/TrustLayout.astro';
+import ContactForm from '../components/ContactForm';
+import { Mail, MapPin, Phone } from '@lucide/astro';
+import { company } from '../data/company';
+import { trustMedia } from '../data/trustMedia';
+---
+<TrustLayout title="Contact us" description="Send KEEYAK a message about vehicle sourcing, an existing order or a visit to our Hangzhou office." label="Contact Us" group="contact" image={trustMedia('office-original').src}>
+  <section class="contact-section" id="existing-order" aria-labelledby="contact-title">
+    <header class="tc-wrap contact-heading"><h1 id="contact-title">Contact KEEYAK</h1></header>
+    <div class="tc-wrap contact-message-layout">
+      <div class="contact-form-column"><ContactForm client:load/></div>
+      <aside class="contact-info" aria-label="Contact details">
+        <dl class="contact-directory">
+          <div class="contact-channel">
+            <dt><span class="contact-icon"><Phone size={18} aria-hidden="true"/></span>Phone</dt>
+            <dd><a href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a></dd>
+          </div>
+          <div class="contact-channel">
+            <dt><span class="contact-icon"><img src="/images/brand/whatsapp.svg" width="19" height="19" alt=""/></span>WhatsApp</dt>
+            <dd><a href={company.whatsapp} target="_blank" rel="noopener noreferrer">{company.phone}</a></dd>
+          </div>
+          <div class="contact-channel">
+            <dt><span class="contact-icon"><Mail size={18} aria-hidden="true"/></span>Email</dt>
+            <dd><a href={`mailto:${company.email}`}>{company.email}</a></dd>
+          </div>
+          <div class="contact-channel" id="office">
+            <dt><span class="contact-icon"><MapPin size={18} aria-hidden="true"/></span>Hangzhou office</dt>
+            <dd><address>{company.officeAddress}</address></dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</TrustLayout>
+
+<style>
+  .contact-section {
+    padding-block: clamp(24px, 3vw, 40px) clamp(44px, 6vw, 88px);
+    scroll-margin-top: 108px;
+  }
+  .contact-heading { margin-bottom: 28px; }
+  .contact-section :is(.contact-heading,.contact-message-layout) { max-width: 1200px; }
+  .contact-message-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, .85fr);
+    align-items: start;
+    gap: clamp(22px, 3.5vw, 48px);
+  }
+  :is(.contact-info,.contact-form-column) {
+    min-width: 0;
+    padding: clamp(20px, 2.8vw, 32px);
+    border-radius: var(--ed-panel-radius);
+  }
+  .contact-info {
+    background: var(--surface);
+  }
+  :global(body.inner-autohaus #main) .contact-heading h1,
+  :global(body.inner-autohaus #main) .contact-form-column :global(h2) {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: -.04em;
+    text-align: left;
+    line-height: 1.12;
+  }
+  :global(body.inner-autohaus #main) .contact-heading h1 {
+    font-size: var(--heading-task);
+  }
+  :global(body.inner-autohaus #main) .contact-form-column :global(h2) {
+    font-size: clamp(23px, 2vw, 28px);
+    margin-bottom: 4px;
+  }
+  :global(body.inner-autohaus #main) .contact-directory {
+    display: grid;
+    margin: 0;
+  }
+  .contact-channel {
+    position: relative;
+    min-height: 72px;
+    padding: 14px 0 14px 52px;
+  }
+  .contact-channel + .contact-channel { border-top: 1px solid var(--tc-line); }
+  :global(body.inner-autohaus #main .tc-site--refined.tc-site--contact) .contact-directory #office {
+    background: transparent;
+    scroll-margin-top: 108px;
+  }
+  .contact-icon {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    display: grid;
+    width: 37px;
+    height: 37px;
+    place-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--tc-line);
+    background: white;
+    color: var(--tc-ink);
+  }
+  .contact-directory dt { color: var(--tc-muted); font-size: 13px; margin-bottom: 3px; }
+  .contact-directory dd { margin: 0; overflow-wrap: anywhere; font-size: 16px; line-height: 1.45; }
+  .contact-directory address { font-style: normal; }
+  .contact-directory a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .contact-form-column {
+    border: 1px solid var(--line);
+    background: #fdfdfb;
+    box-shadow: var(--ed-panel-shadow);
+  }
+  .contact-form-column :global(.contact-form-card) {
+    display: grid;
+    gap: 16px;
+    max-width: none;
+  }
+  .contact-form-column :global(.form-row) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+  }
+  .contact-form-column :global(.quote-form label) { gap: 6px; font-size: 15px; }
+  .contact-form-column :global(.quote-form :is(input, select, textarea)) {
+    border-radius: var(--ed-control-radius);
+    min-height: 48px;
+    padding: 10px 12px;
+  }
+  .contact-form-column :global(.quote-form :is(input,select,textarea):not([aria-invalid=true])) { border-color: var(--line); }
+  .contact-form-column :global(.quote-form textarea) { min-height: 108px; }
+  .contact-form-column :global(.contact-form-card > button) { justify-self: start; }
+  .contact-form-column :global(.contact-form-card > .contact-reply-note) { margin: -8px 0 0; font-size: 13px; }
+  .contact-form-column :global(.form-error) { font-size: 14px; line-height: 1.45; }
+  .contact-form-column :global(.contact-review) { display: grid; gap: 12px; margin: 0; }
+  .contact-form-column :global(.contact-review dt) { font-weight: 600; }
+  .contact-form-column :global(.contact-review dd) {
+    margin: 4px 0 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  @media (width < 900px) {
+    .contact-message-layout { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 479px) {
+    .contact-heading { margin-bottom: 20px; }
+    .contact-form-column :global(.form-row) { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  }
+</style>

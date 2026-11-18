@@ -1,0 +1,7 @@
+---
+import {aboutStudy as content} from '../../data/aboutLandingStudy';
+---
+<section class="study-questions study-section study-wrap" id="questions" aria-labelledby="study-questions-title">
+ <div class="questions-intro" data-study-reveal><p class="eyebrow caption-1"><span class="study-dot"></span>A few useful answers</p><h2 class="heading-2" id="study-questions-title">Before we talk.</h2><p class="body-3">Company details, records and what to expect from a vehicle inquiry.</p></div>
+ <div class="questions-list">{content.questions.map(item=><article data-study-reveal><h3 class="title-1">{item.question}</h3><p class="body-3">{item.answer}</p></article>)}</div>
+</section>

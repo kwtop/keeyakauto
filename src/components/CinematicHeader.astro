@@ -1,0 +1,71 @@
+---
+import {ArrowRight, Search, Menu, X, ChevronDown} from '@lucide/astro';
+import {brands, brandHref, vehicles, vehicleHref} from '../data/catalog';
+import {aboutLinks} from '../data/company';
+import {exportLinks} from '../data/exportServices';
+const menus=[
+  {label:'New Cars',href:'/new-cars/',items:brands('new').map(b=>({label:b.name,href:brandHref('new',b.slug)}))},
+  {label:'Used Cars',href:'/used-cars/',items:brands('used').map(b=>({label:b.name,href:brandHref('used',b.slug)}))},
+  {label:'About Us',href:'/about/',items:aboutLinks},
+  {label:'Export Services',href:'/export-services/',items:exportLinks}
+];
+---
+<header class="cinematic-header">
+  <div class="cinematic-header-inner cinematic-wrap">
+    <a class="cinematic-brand" href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" alt="" width="1200" height="219"/></a>
+    <nav class="cinematic-navigation" id="cinematic-navigation" aria-label="Main navigation">
+      {menus.map(menu=><details class="cinematic-menu"><summary>{menu.label}<ChevronDown size={12} stroke-width={1.5}/></summary><div class="cinematic-menu-panel"><a class="cinematic-menu-all" href={menu.href}>Explore {menu.label}<ArrowRight size={15}/></a>{menu.items.map(item=><a href={item.href}>{item.label}</a>)}</div></details>)}
+      <a class="cinematic-support" href="/export-services/faq/">Support</a>
+      <a class="cinematic-support cinematic-contact" href="/contact/">Contact Us</a>
+    </nav>
+    <div class="cinematic-header-actions">
+      <button class="cinematic-search-trigger cinematic-icon-button" type="button" aria-label="Search cars"><Search size={22} stroke-width={1.4}/></button>
+      <a class="cinematic-header-quote" href="#home-inquiry">Get a Quote<ArrowRight size={17}/></a>
+      <button class="cinematic-mobile-toggle cinematic-icon-button" type="button" aria-expanded="false" aria-controls="cinematic-navigation" aria-label="Open navigation"><Menu class="cinematic-menu-open" size={23}/><X class="cinematic-menu-close" size={23}/></button>
+    </div>
+  </div>
+</header>
+<dialog class="cinematic-search-dialog" aria-labelledby="cinematic-search-heading">
+  <div class="cinematic-search-top"><h2 id="cinematic-search-heading">Find a car</h2><button class="cinematic-search-close cinematic-icon-button" type="button" aria-label="Close car search"><X size={24}/></button></div>
+  <label for="cinematic-car-search">Model or brand</label><input id="cinematic-car-search" type="search" placeholder="Try Toyota, Camry or BYD" autocomplete="off"/>
+  <p class="cinematic-search-count" role="status">Enter a model or brand to search.</p>
+  <div class="cinematic-search-results">{vehicles.map(vehicle=><a href={vehicleHref(vehicle)} data-search={`${vehicle.name} ${vehicle.brand} ${vehicle.body} ${vehicle.kind}`.toLowerCase()} hidden><span>{vehicle.name}</span><small>{vehicle.kind==='new'?'New model':'Used car sourcing'}</small><ArrowRight size={16}/></a>)}</div>
+  <div class="cinematic-search-directories"><a href="/new-cars/">All new cars</a><a href="/used-cars/">All used cars</a></div>
+</dialog>
+<script>
+  const header=document.querySelector<HTMLElement>('.cinematic-header');
+  const toggle=header?.querySelector<HTMLButtonElement>('.cinematic-mobile-toggle');
+  const navigation=header?.querySelector<HTMLElement>('.cinematic-navigation');
+  const menus=Array.from(header?.querySelectorAll<HTMLDetailsElement>('.cinematic-menu')||[]);
+  const closeMenus=()=>menus.forEach(menu=>menu.open=false);
+  const setMobile=(open:boolean)=>{
+    header?.classList.toggle('cinematic-navigation-open',open);
+    toggle?.setAttribute('aria-expanded',String(open));
+    toggle?.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+    if(!open)closeMenus();
+  };
+  toggle?.addEventListener('click',()=>setMobile(toggle.getAttribute('aria-expanded')!=='true'));
+  menus.forEach(menu=>menu.addEventListener('toggle',()=>{
+    if(menu.open)menus.forEach(other=>{if(other!==menu)other.open=false;});
+  }));
+  navigation?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMobile(false)));
+  document.addEventListener('click',event=>{if(event.target instanceof Node&&!header?.contains(event.target))setMobile(false);});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){
+    const activeMenu=menus.find(menu=>menu.open);
+    if(activeMenu){closeMenus();activeMenu.querySelector('summary')?.focus();}
+    else if(toggle?.getAttribute('aria-expanded')==='true'){setMobile(false);toggle.focus();}
+  }});
+  window.matchMedia('(min-width:1061px)').addEventListener('change',()=>setMobile(false));
+  const dialog=document.querySelector<HTMLDialogElement>('.cinematic-search-dialog');
+  const input=dialog?.querySelector<HTMLInputElement>('input');
+  const count=dialog?.querySelector<HTMLElement>('[role="status"]');
+  const results=Array.from(dialog?.querySelectorAll<HTMLAnchorElement>('[data-search]')||[]);
+  header?.querySelector('.cinematic-search-trigger')?.addEventListener('click',()=>{setMobile(false);dialog?.showModal();input?.focus();});
+  dialog?.querySelector('.cinematic-search-close')?.addEventListener('click',()=>dialog.close());
+  dialog?.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}});
+  input?.addEventListener('input',()=>{
+    const term=input.value.trim().toLowerCase();let visible=0;
+    results.forEach(link=>{const match=!!term&&!!link.dataset.search?.includes(term);link.hidden=!match;if(match)visible++;});
+    if(count)count.textContent=term?(visible?`${visible} matching model${visible===1?'':'s'}`:'No matching models. Browse the car directories or tell us what you need.'):'Enter a model or brand to search.';
+  });
+</script>

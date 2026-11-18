@@ -1,0 +1,104 @@
+---
+import Header from '../home-autohaus/Header.astro';
+import StudyIcon from './StudyIcon.astro';
+import StudyBenefits from './StudyBenefits.astro';
+import StudyPeople from './StudyPeople.astro';
+import StudyProcess from './StudyProcess.astro';
+import StudyCredentials from './StudyCredentials.astro';
+import StudyQuestions from './StudyQuestions.astro';
+import {aboutStudy as content} from '../../data/aboutLandingStudy';
+import '../../styles/home-autohaus.css';
+import '../../styles/about-landing-study.css';
+interface Props {direction:'a'|'b';}
+const {direction}=Astro.props;
+const {company,office,primaryAction,primaryHref}=content;
+const title='About KEEYAK | Company records and vehicle sourcing';
+const canonical='https://keeyakauto.com/about/';
+const schema={'@context':'https://schema.org','@type':'AboutPage',url:canonical,name:title,description:content.description,about:{'@type':'Organization',name:company.legalName,brand:{'@type':'Brand',name:company.brand},email:company.email,telephone:company.phone,address:{'@type':'PostalAddress',streetAddress:company.officeAddress,addressLocality:'Hangzhou',addressCountry:'CN'}}};
+---
+<!doctype html>
+<html lang="en"><head>
+ <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <title>{title}</title><meta name="description" content={content.description}/>
+ <meta name="robots" content="index,follow,max-image-preview:large"/><link rel="canonical" href={canonical}/>
+ <meta name="theme-color" content={direction==='a'?'#fafaf7':'#181818'}/>
+ <meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={content.description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={`https://keeyakauto.com${office.src}`}/>
+ <link rel="icon" href="/favicon.png"/><link rel="preload" href="/fonts/about-landing/manrope-variable.ttf" as="font" type="font/ttf" crossorigin/>
+</head><body class:list={['autohaus-home','landing-study',`study-${direction}`]}>
+ <a class="study-skip title-3" href="#main">Skip to content</a>
+ <Header/>
+ <main id="main">
+  {direction==='a'?<section class="study-hero study-wrap" aria-labelledby="study-title">
+   <div class="hero-a-grid">
+    <div class="hero-copy">
+     <p class="eyebrow caption-1"><span class="study-dot"></span>About KEEYAK · Hangzhou, China</p>
+     <h1 class="heading-1 hero-heading" id="study-title">Your vehicle search<br/>starts with the<br/>right people.</h1>
+     <p class="hero-description body-3">New and used passenger cars from China, with a Hangzhou team to help dealers, importers and fleets find the details they need.</p>
+     <a class="study-button button-md" href={primaryHref}>{primaryAction}</a>
+     <div class="hero-company"><span class="company-mark caption-3">Since<br/><strong class="heading-5">2009</strong></span><p class="caption-2">Operated by<br/><strong>{company.legalName}</strong></p></div>
+    </div>
+    <div class="hero-a-visual">
+     <figure class="hero-office"><img src={office.src} width={office.width} height={office.height} alt={office.alt} fetchpriority="high"/><figcaption class="caption-2"><StudyIcon name="pin"/>Our Hangzhou office · Colleagues and visitors</figcaption></figure>
+     <div class="hero-a-note"><span class="caption-3">Company records</span><span class="title-2">Original documents.<br/>Available to review.</span><StudyIcon name="file"/></div>
+    </div>
+   </div>
+   <dl class="study-facts"><div><dt class="caption-2">Company established</dt><dd class="heading-4">2009</dd></div><div><dt class="caption-2">Across the vehicle business</dt><dd class="heading-4">76 <span class="title-3">countries</span></dd></div><div><dt class="caption-2">Our office</dt><dd class="heading-4">Hangzhou</dd></div><div><dt class="caption-2">Passenger car services</dt><dd class="title-1">New &amp; used cars</dd></div></dl>
+  </section>:<section class="study-hero study-wrap" aria-labelledby="study-title">
+   <div class="hero-b-top"><p class="eyebrow caption-1"><span class="study-dot"></span>The company behind KEEYAK</p><p class="caption-2 hero-location">Hangzhou, China <StudyIcon name="pin"/></p></div>
+   <div class="hero-b-heading"><h1 class="heading-1 hero-heading" id="study-title">People behind<br/>your vehicle search.</h1><div class="hero-b-intro"><p class="body-3">We work with dealers, importers and fleets sourcing new and used passenger cars from China.</p><a class="study-button button-md" href={primaryHref}>{primaryAction}</a><p class="caption-2">{company.legalName}</p></div></div>
+   <div class="hero-b-media"><figure><img src={office.src} width={office.width} height={office.height} alt={office.alt} fetchpriority="high"/><figcaption class="caption-1">Colleagues and visitors, Hangzhou office</figcaption></figure><aside class="hero-b-stamp"><span class="caption-2">Company established</span><strong class="heading-1">2009</strong><span class="caption-2">A team you can get to know.</span></aside></div>
+  </section>}
+
+  {direction==='a'?<><StudyCredentials/><StudyBenefits/></>:<><StudyPeople direction={direction}/><StudyBenefits/></>}
+
+  <section class="study-tagline study-wrap" aria-labelledby="tagline-title">
+   <div class="tagline-label caption-1"><span class="study-dot"></span>Before the order</div>
+   <h2 class="heading-2" id="tagline-title" data-word-reveal><span class="tagline-line">Know the people.</span><span class="tagline-line">Understand the offer.</span></h2>
+   <p class="body-3">Start with a conversation. Review the vehicle, the evidence and the responsibilities in the written offer.</p>
+  </section>
+
+  {direction==='a'?<StudyPeople direction={direction}/>:<StudyCredentials/>}
+  <StudyProcess/>
+  <StudyQuestions/>
+
+  <section class="study-cta" id="contact"><div class="study-wrap cta-layout">
+   <div><p class="eyebrow caption-1"><span class="study-dot"></span>Talk to our Hangzhou team</p><h2 class="heading-2">Tell us what<br/>you are looking for.</h2><p class="body-3">The model, quantity and destination are a good place to start.</p><a class="study-button button-md" href={primaryHref}>{primaryAction}</a></div>
+   <div class="cta-address"><StudyIcon name="pin"/><p class="title-2">Hangzhou, Zhejiang, China</p><address class="body-6">{company.officeAddress}</address><a class="title-3" href={`mailto:${company.email}`}>{company.email}</a><a class="body-6" href={company.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp {company.phone}</a><p class="caption-2">Planning a visit? Email your preferred date so we can arrange a meeting.</p></div>
+  </div></section>
+ </main>
+ <footer class="study-footer study-wrap"><div class="footer-top"><a href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" width="1200" height="219" alt="KEEYAK" loading="lazy"/></a><p class="caption-2">{company.legalName}</p><nav aria-label="Footer"><a class="title-4" href="/new-cars/">New cars</a><a class="title-4" href="/used-cars/">Used cars</a><a class="title-4" href="/export-services/">Export services</a><a class="title-4" href="/about/news/">News &amp; events</a></nav></div><div class="footer-bottom caption-2"><span>© 2026 KEEYAK</span><nav aria-label="Legal"><a href="/privacy/">Privacy</a><a href="/terms/">Website terms</a></nav><a href="#main">Back to top</a></div></footer>
+ <aside class="study-switcher caption-1" aria-label="About design versions"><span>About</span><a href="/design-preview/about-20261102/a/" aria-current={direction==='a'?'page':undefined}>A</a><a href="/design-preview/about-20261102/b/" aria-current={direction==='b'?'page':undefined}>B</a><a href="/about/" aria-label="View current About page">About Us</a></aside>
+ <script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+</body></html>
+<script>
+ const aboutNavigation=document.querySelector<HTMLElement>('#autohaus-trigger-3');
+ if(aboutNavigation){aboutNavigation.setAttribute('aria-current','page');aboutNavigation.dataset.current='true';}
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const tagline=document.querySelector<HTMLElement>('[data-word-reveal]');
+ if(tagline){
+  tagline.querySelectorAll<HTMLElement>('.tagline-line').forEach(line=>{
+   const words=(line.textContent||'').trim().split(/\s+/);
+   line.replaceChildren(...words.flatMap((word,index)=>{const span=document.createElement('span');span.className='tagline-word';span.textContent=word;return index?[document.createTextNode(' '),span]:[span];}));
+  });
+  const words=[...tagline.querySelectorAll<HTMLElement>('.tagline-word')];
+  let request=0;
+  const paint=()=>{
+   request=0;
+   if(reduced.matches){words.forEach(word=>word.classList.add('word-active'));return;}
+   const box=tagline.getBoundingClientRect();
+   const progress=Math.min(1,Math.max(0,(innerHeight*.85-box.top)/(Math.min(innerHeight*.38,box.height+96))));
+   words.forEach((word,index)=>word.classList.toggle('word-active',progress>(index+.2)/words.length));
+  };
+  const schedule=()=>{if(!request)request=requestAnimationFrame(paint);};
+  const watch=new IntersectionObserver(entries=>entries.forEach(entry=>{
+   if(entry.isIntersecting){paint();window.addEventListener('scroll',schedule,{passive:true});}
+   else window.removeEventListener('scroll',schedule);
+  }));watch.observe(tagline);reduced.addEventListener('change',paint);paint();
+ }
+ if(!reduced.matches){
+  const sections=[...document.querySelectorAll<HTMLElement>('[data-study-reveal]')];
+  sections.forEach(section=>section.classList.add('reveal-ready'));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('reveal-visible');observer.unobserve(entry.target);}}),{threshold:.08});
+  sections.forEach(section=>observer.observe(section));
+ }
+</script>

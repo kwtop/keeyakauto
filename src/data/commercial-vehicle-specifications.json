@@ -1,0 +1,1183 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30",
+  "models": [
+    {
+      "index": 1,
+      "key": "isuzu/d-max",
+      "brand": "ISUZU",
+      "modelName": "D-MAX",
+      "row": 3,
+      "default": 0,
+      "conflicts": [
+        "Excel D3 says Petrol; all four supplied comparison columns explicitly identify Diesel. The catalog follows the Diesel comparison, with the workbook conflict retained."
+      ],
+      "names": [
+        "2026 1.9T 2WD Manual Smart",
+        "2026 1.9T 4WD Manual Smart",
+        "2026 1.9T 2WD Automatic Premium",
+        "2026 1.9T 4WD Automatic Premium"
+      ],
+      "powertrain": "Diesel",
+      "engine": "1.9T · 177 PS · inline 4",
+      "power": 130,
+      "torque": 410,
+      "transmission": [
+        "6-speed manual",
+        "6-speed manual",
+        "8-speed automatic",
+        "8-speed automatic"
+      ],
+      "dimensions": [
+        "5265 × 1870 × 1850",
+        "5265 × 1870 × 1850",
+        "5280 × 1900 × 1850",
+        "5280 × 1900 × 1850"
+      ],
+      "drive": [
+        "RWD",
+        "4WD",
+        "RWD",
+        "4WD"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/ISUZU/D-MAX",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/ISUZU/D-MAX",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/ISUZU/D-MAX/四款车型详细参数/微信图片_20261029112211_145_77.png",
+      "leadFile": "isuzu-d-max-front-three-quarter-left.webp",
+      "publicCaution": "Reference materials disagree on fuel type. These specifications follow the diesel comparison; confirm the powertrain in your offer."
+    },
+    {
+      "index": 2,
+      "key": "isuzu/re-max",
+      "brand": "ISUZU",
+      "modelName": "RE-MAX",
+      "row": 4,
+      "default": 0,
+      "names": [
+        "2026 2.5T 2WD Automatic Standard Bed Diesel",
+        "2026 2.5T 2WD Automatic Long Bed Diesel",
+        "2026 2.5T 2WD Automatic Flat-floor Cargo Bed Diesel",
+        "2026 2.5T 4WD Automatic Standard Bed Diesel"
+      ],
+      "powertrain": "Diesel",
+      "engine": "2.5T · 143 PS · inline 4",
+      "power": 105,
+      "torque": 360,
+      "transmission": "8-speed automatic",
+      "dimensions": [
+        "5330 × 1860 × 1785",
+        "5615 × 1860 × 1785",
+        "5615 × 1860 × 1785",
+        "5330 × 1860 × 1785"
+      ],
+      "drive": [
+        "RWD",
+        "RWD",
+        "RWD",
+        "4WD"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/ISUZU/RE-MAX 瑞迈",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/ISUZU/RE-MAX 瑞迈",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/ISUZU/RE-MAX 瑞迈/四款车参数/微信图片_20261029112843_146_77.png",
+      "leadFile": "isuzu-remax-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 3,
+      "key": "jac/t8",
+      "brand": "JAC",
+      "modelName": "T8",
+      "row": 5,
+      "default": 0,
+      "names": [
+        "2026 Jinqing 2.0T Diesel Manual 2WD Elite Standard Double Cab",
+        "2026 Jinqing 2.0T Diesel Manual 2WD Elite Long Double Cab",
+        "2026 2.0T PRO CNG 2WD Manual Executive",
+        "2026 Jinqing 2.0T Diesel Manual 2WD Luxury Long Double Cab"
+      ],
+      "powertrain": [
+        "Diesel",
+        "Diesel",
+        "Gasoline + CNG",
+        "Diesel"
+      ],
+      "engine": "2.0T · 150 PS · inline 4",
+      "power": 110,
+      "torque": [
+        400,
+        400,
+        280,
+        400
+      ],
+      "transmission": "6-speed manual",
+      "dimensions": [
+        "5325 × 1880 × 1860",
+        "5615 × 1880 × 1860",
+        "5645 × 1880 × 1830",
+        "5615 × 1880 × 1860"
+      ],
+      "maxSpeed": 150,
+      "drive": "RWD",
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/JAC/T8",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/JAC/T8",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/JAC/T8/四款配置参数/微信图片_20261029115247_147_77.png",
+      "leadFile": "jac-t8-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 4,
+      "key": "jac/hantu",
+      "brand": "JAC",
+      "modelName": "Hantu",
+      "row": 6,
+      "default": 0,
+      "names": [
+        "2026 Commercial 2.0T Diesel Manual 2WD Elite Standard Double Cab",
+        "2026 Commercial 2.0T Diesel Manual 2WD Elite Long Double Cab",
+        "2026 Commercial 2.0T Diesel Manual 4WD Elite Standard Double Cab",
+        "2026 Commercial 2.0T Diesel Automatic 2WD Elite Standard Double Cab"
+      ],
+      "powertrain": "Diesel",
+      "engine": "2.0T · 170 PS · inline 4",
+      "power": 125,
+      "torque": 420,
+      "transmission": [
+        "6-speed manual",
+        "6-speed manual",
+        "6-speed manual",
+        "8-speed automatic"
+      ],
+      "dimensions": [
+        "5330 × 1965 × 1920",
+        "5620 × 1965 × 1920",
+        "5330 × 1965 × 1920",
+        "5330 × 1965 × 1920"
+      ],
+      "maxSpeed": 150,
+      "drive": [
+        "RWD",
+        "RWD",
+        "4WD",
+        "RWD"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/JAC/悍途",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/JAC/悍途",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/JAC/悍途/四款配置参数/微信图片_20261029134026_149_77.png",
+      "leadFile": "jac-hantu-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 5,
+      "key": "jmc/dadao",
+      "brand": "JMC",
+      "modelName": "Dadao",
+      "row": 7,
+      "default": 0,
+      "names": [
+        "2026 Quannengzhe 2.5T Diesel Manual 2WD Standard Wheelbase Comfort",
+        "2026 Quannengzhe 2.5T Diesel Manual 2WD Long Wheelbase Comfort",
+        "2026 Quannengzhe 2.5T Diesel Manual 2WD Flat-floor Cargo Bed Comfort",
+        "2026 Quannengzhe 2.5T Diesel Manual 2WD Flat-floor Cargo Bed Comfort Wide"
+      ],
+      "powertrain": "Diesel",
+      "engine": "2.5T · 211 PS · inline 4",
+      "power": 155,
+      "torque": 500,
+      "transmission": "6-speed manual",
+      "dimensions": [
+        "5435 × 1935 × 1872",
+        "5675 × 1935 × 1872",
+        "5695 × 1935 × 1872",
+        "5695 × 1935 × 1872"
+      ],
+      "drive": "RWD",
+      "columnNotes": {
+        "4": "The fourth source title ends with a wider cargo-bed designation; verify the bed specification in the offered configuration."
+      },
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/JMC/大道",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/JMC/大道",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/JMC/大道/四款配置参数/微信图片_20261029135729_150_77.png",
+      "leadFile": "jmc-dadao-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 6,
+      "key": "jmc/baodian",
+      "brand": "JMC",
+      "modelName": "Baodian",
+      "row": 8,
+      "default": 0,
+      "names": [
+        "2025 2.5T Diesel Manual 2WD Short Wheelbase",
+        "2025 2.5T Diesel Manual 2WD Long Wheelbase",
+        "2025 2.5T Diesel Manual 2WD Long Wheelbase Flat-floor Cargo Bed",
+        "2025 2.5T Diesel Manual 2WD Short Wheelbase Premium"
+      ],
+      "powertrain": "Diesel",
+      "engine": "2.5T · 160 PS · inline 4",
+      "power": 118,
+      "torque": 360,
+      "transmission": "5-speed manual",
+      "dimensions": [
+        "5335 × 1882 × 1792",
+        "5625 × 1882 × 1792",
+        "5625 × 1882 × 1818",
+        "5335 × 1882 × 1792"
+      ],
+      "drive": "RWD",
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/JMC/宝典",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/JMC/宝典",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/JMC/宝典/四款配置参数/微信图片_20261029140530_151_77.png",
+      "leadFile": "jmc-baodian-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 7,
+      "key": "wuling/zhiguang-mini-truck",
+      "brand": "Wuling",
+      "modelName": "Zhiguang Mini Truck",
+      "row": 16,
+      "default": 0,
+      "body": "Mini truck",
+      "names": [
+        "2023 1.5L Single Cab LAR",
+        "2023 1.5L Single Cab Non-load-bearing LAR",
+        "2023 1.5L Double Cab LAR",
+        "2020 1.2L Single Cab"
+      ],
+      "powertrain": "Gasoline",
+      "engine": [
+        "1.5L · 102 PS · inline 4",
+        "1.5L · 102 PS · inline 4",
+        "1.5L · 102 PS · inline 4",
+        "1.2L · 76 PS · inline 4"
+      ],
+      "power": [
+        75,
+        75,
+        75,
+        56
+      ],
+      "torque": [
+        136,
+        136,
+        136,
+        112
+      ],
+      "transmission": "5-speed manual",
+      "dimensions": [
+        "4358 × 1503 × 1811",
+        "4358 × 1503 × 1811",
+        "4606 × 1503 × 1849",
+        "4358 × 1503 × 1811"
+      ],
+      "maxSpeed": [
+        115,
+        115,
+        115,
+        100
+      ],
+      "nedcFuel": [
+        6.1,
+        6.1,
+        6.1,
+        6
+      ],
+      "conflicts": [
+        "Workbook requests a single-cab version while the lead photograph shows a double cab. Vehicle images are model-family references; cabin and cargo bed must match the selected version."
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/五菱/五菱之光小卡",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/五菱/五菱之光小卡",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/五菱/五菱之光小卡/四款配置参数/微信图片_20261029164722_47_2.png",
+      "leadFile": "wuling-zhiguang-mini-truck-front-three-quarter-01.webp",
+      "publicCaution": "Photo references show a double cab. Match the cab and cargo bed to the selected version."
+    },
+    {
+      "index": 8,
+      "key": "wuling/rongguang-mini-truck",
+      "brand": "Wuling",
+      "modelName": "Rongguang Mini Truck",
+      "row": 17,
+      "default": 0,
+      "body": "Mini truck",
+      "names": [
+        "2024 1.5L Single Cab Extra Long LAR",
+        "2024 1.5L Double Cab Extra Long LAR",
+        "2023 1.5L Single Cab LAR",
+        "2023 1.5L Single Cab Extended LAR"
+      ],
+      "powertrain": "Gasoline",
+      "engine": "1.5L · 102 PS · inline 4",
+      "power": 75,
+      "torque": 136,
+      "transmission": "5-speed manual",
+      "dimensions": [
+        "5055 × 1630 × 1870",
+        "5055 × 1630 × 1875",
+        "4535 × 1595 × 1870",
+        "4785 × 1595 × 1870"
+      ],
+      "maxSpeed": 115,
+      "nedcFuel": [
+        6.6,
+        6.9,
+        6.6,
+        6.6
+      ],
+      "conflicts": [
+        "Workbook requests a single-cab version while the lead photograph shows a double cab. Vehicle images are model-family references; cabin and cargo bed must match the selected version."
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/五菱/荣光小卡",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/五菱/荣光小卡",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/五菱/荣光小卡/四款配置参数/微信图片_20261029165145_48_2.png",
+      "leadFile": "wuling-rongguang-mini-truck-front-three-quarter.webp",
+      "publicCaution": "Photo references show a double cab. Match the cab and cargo bed to the selected version."
+    },
+    {
+      "index": 9,
+      "key": "wuling/rongguang-new-mini-truck",
+      "brand": "Wuling",
+      "modelName": "Rongguang New Mini Truck",
+      "row": 15,
+      "default": 0,
+      "body": "Mini truck",
+      "names": [
+        "2024 2.0L Single Cab Extra Long Twin Rear Wheels CNG Basic",
+        "2024 2.0L Double Cab Extra Long Twin Rear Wheels CNG Basic",
+        "2024 2.0L Single Cab Extra Long Twin Rear Wheels CNG Comfort",
+        "2024 2.0L Double Cab Extra Long Twin Rear Wheels CNG Comfort"
+      ],
+      "powertrain": "Gasoline + CNG",
+      "engine": "2.0L",
+      "power": 86,
+      "torque": 170,
+      "transmission": "5-speed manual",
+      "dimensions": [
+        "5905 × 1910 × 1978",
+        "5905 × 1910 × 1996",
+        "5905 × 1910 × 1978",
+        "5905 × 1910 × 1996"
+      ],
+      "maxSpeed": 105,
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/五菱/荣光新卡",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/五菱/荣光新卡",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/五菱/荣光新卡/四款配置详细参数/微信图片_20261029164135_46_2.png",
+      "leadFile": "wuling-rongguang-new-mini-truck-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 10,
+      "key": "maxus/t60",
+      "brand": "MAXUS",
+      "modelName": "T60",
+      "row": 10,
+      "default": 0,
+      "names": [
+        "2026 2.4L 2WD Standard Bed Wheel-arch Comfort",
+        "2026 2.4L Manual 4WD Standard Bed Wheel-arch Comfort",
+        "2026 2.4L Manual 2WD Standard Bed Wheel-arch Chuangling",
+        "2026 2.4L Manual 4WD Standard Bed Wheel-arch Chuangling"
+      ],
+      "powertrain": "Gasoline",
+      "engine": "2.4L",
+      "power": 118,
+      "torque": 230,
+      "transmission": "5-speed manual",
+      "dimensions": "5365 × 1900 × 1809",
+      "maxSpeed": 150,
+      "drive": [
+        "RWD",
+        "4WD",
+        "RWD",
+        "4WD"
+      ],
+      "conflicts": [
+        "Comparison column 1 title says automatic while its transmission row says 5-speed manual. The workbook also says manual. Catalog specification records the row value with the conflict disclosed."
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/大通/T60",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/大通/T60",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/大通/T60/四款配置参数/微信图片_20261029142156_153_77.png",
+      "leadFile": "maxus-t60-front-three-quarter-01.webp",
+      "publicCaution": "Reference materials disagree on the transmission. Confirm the gearbox of the offered vehicle."
+    },
+    {
+      "index": 11,
+      "key": "maxus/xingji",
+      "brand": "MAXUS",
+      "modelName": "Xingji",
+      "row": 9,
+      "default": 0,
+      "names": [
+        "2027 Xingji L 2.5T Diesel Manual 2WD Comfort Standard Bed",
+        "2027 Xingji L 2.5T Diesel Manual 2WD Comfort Long Bed",
+        "2027 Xingji L 2.5T Diesel Manual 2WD Elite Standard Bed",
+        "2027 Xingji L 2.5T Diesel Manual 4WD Comfort Standard Bed"
+      ],
+      "powertrain": "Diesel",
+      "engine": "2.5T · 224 PS · inline 4",
+      "power": 165,
+      "torque": 520,
+      "transmission": "6-speed manual",
+      "dimensions": [
+        "5378 × 1905 × 1820",
+        "5693 × 1905 × 1820",
+        "5378 × 1905 × 1835",
+        "5378 × 1905 × 1820"
+      ],
+      "acceleration": [
+        10,
+        10,
+        10,
+        10.5
+      ],
+      "maxSpeed": 180,
+      "drive": [
+        "RWD",
+        "RWD",
+        "RWD",
+        "4WD"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/大通/星际",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/大通/星际",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/大通/星际/四款图片参数/微信图片_20261029141420_152_77.png",
+      "leadFile": "maxus-xingji-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 12,
+      "key": "gwm/poer",
+      "brand": "GWM",
+      "modelName": "Poer",
+      "row": 14,
+      "default": 0,
+      "names": [
+        "2026 2.0T Commercial Diesel Automatic 4WD Mountain",
+        "2026 2.0T Commercial Diesel Manual 4WD Mountain",
+        "2026 2.0T Commercial Automatic Diesel 4WD Sport",
+        "2026 2.0T Commercial Manual Diesel 2WD Elite Standard Bed"
+      ],
+      "powertrain": "Diesel",
+      "engine": [
+        "2.0T",
+        "2.0T",
+        "2.0T · 163 PS · inline 4",
+        "2.0T · 166 PS · inline 4"
+      ],
+      "power": [
+        120,
+        120,
+        120,
+        122
+      ],
+      "torque": 400,
+      "transmission": [
+        "8-speed automatic",
+        "6-speed manual",
+        "8-speed automatic",
+        "6-speed manual"
+      ],
+      "dimensions": [
+        "5653 × 1883 × 1882",
+        "5653 × 1883 × 1882",
+        "5653 × 1883 × 1882",
+        "5413 × 1883 × 1882"
+      ],
+      "drive": [
+        "4WD",
+        "4WD",
+        "4WD",
+        "RWD"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/长城/炮2026款2.0T商用炮柴油自动四驱山地版",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/长城/炮2026款2.0T商用炮柴油自动四驱山地版",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/长城/炮2026款2.0T商用炮柴油自动四驱山地版/四种配置对比图/ScreenShot_2026-10-29_142242_615.png",
+      "leadFile": "gwm-poer-2026-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 13,
+      "key": "gwm/fengjun-5",
+      "brand": "GWM",
+      "modelName": "Fengjun 5",
+      "row": 13,
+      "default": 0,
+      "conflicts": [
+        "Photo folder names a 1.5T gasoline version; Excel row 13 and all four comparison columns name 2.0T diesel versions. Photos remain model-family references; match the offered powertrain separately."
+      ],
+      "names": [
+        "2026 2.0T Diesel Large Double Cab 2WD Entry",
+        "2026 2.0T Diesel Long Bed 2WD Entry",
+        "2026 2.0T Diesel Flat Bed 2WD Entry",
+        "2026 2.0T Diesel Large Double Cab 4WD Entry"
+      ],
+      "powertrain": "Diesel",
+      "engine": "2.0T · 138 PS · inline 4",
+      "power": 102,
+      "torque": 330,
+      "transmission": "6-speed manual",
+      "dimensions": [
+        "5403 × 1800 × 1730",
+        "5520 × 1800 × 1730",
+        "5520 × 1800 × 1800",
+        "5403 × 1800 × 1730"
+      ],
+      "drive": [
+        "RWD",
+        "RWD",
+        "RWD",
+        "4WD"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/长城/风骏52026款干饭版1.5T汽油两驱进取型大双",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/长城/风骏52026款干饭版1.5T汽油两驱进取型大双",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/长城/风骏52026款干饭版1.5T汽油两驱进取型大双/四种配置对比图/ScreenShot_2026-10-29_141559_883.png",
+      "leadFile": "gwm-fengjun-5-2026-front-three-quarter-01.webp",
+      "publicCaution": "Photos may show the gasoline version; these specifications describe the listed diesel versions. Confirm the offered powertrain and exterior."
+    },
+    {
+      "index": 14,
+      "key": "changan/lieshou",
+      "brand": "Changan",
+      "modelName": "Lieshou",
+      "row": 11,
+      "default": 0,
+      "names": [
+        "2026 Smart Dual-motor 4WD Standard Bed",
+        "2026 Smart Single-motor Standard Bed",
+        "2026 Smart Dual-motor 4WD Long Bed Work Vehicle",
+        "2026 Engineering Standard Bed 4WD Smart"
+      ],
+      "powertrain": "EREV",
+      "engine": "2.0T · 190 PS · inline 4",
+      "power": [
+        200,
+        130,
+        200,
+        200
+      ],
+      "torque": [
+        470,
+        320,
+        470,
+        470
+      ],
+      "transmission": "Single-speed electric",
+      "dimensions": [
+        "5380 × 1930 × 1875",
+        "5380 × 1930 × 1885",
+        "5650 × 1950 × 1890",
+        "5380 × 1980 × 2005"
+      ],
+      "motorOutput": [
+        272,
+        177,
+        272,
+        272
+      ],
+      "nedcRange": 131,
+      "fastCharging": 30,
+      "chargeRange": [
+        null,
+        null,
+        "30–88%",
+        null
+      ],
+      "maxSpeed": [
+        null,
+        null,
+        160,
+        null
+      ],
+      "depletedFuel": [
+        null,
+        null,
+        8.5,
+        null
+      ],
+      "equivalentFuel": [
+        null,
+        null,
+        2.7,
+        null
+      ],
+      "drive": [
+        "4WD",
+        null,
+        "4WD",
+        "4WD"
+      ],
+      "outputNote": "The source comparison does not identify the maximum power and torque rows as engine, motor or combined system output.",
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/长安/长安猎手 2026款 智享型双电机四驱标箱",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/长安/长安猎手 2026款 智享型双电机四驱标箱",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/长安/长安猎手 2026款 智享型双电机四驱标箱/四种配置对比图/ScreenShot_2026-10-29_143733_433.png",
+      "leadFile": "changan-lieshou-2026-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 15,
+      "key": "changan/lantuozhe",
+      "brand": "Changan",
+      "modelName": "Lantuozhe",
+      "row": 12,
+      "default": 0,
+      "names": [
+        "2026 Smart 2.0T Automatic 4WD Gasoline Long Bed",
+        "2026 Smart 2.0T Automatic 4WD Gasoline Standard Bed",
+        "2026 Explorer 2.0T Manual 4WD Diesel Extended",
+        "2023 2.0T Manual 2WD Diesel Fashion Long Bed"
+      ],
+      "powertrain": [
+        "Gasoline",
+        "Gasoline",
+        "Diesel",
+        "Diesel"
+      ],
+      "engine": [
+        "2.0T · 233 PS · inline 4",
+        "2.0T · 233 PS · inline 4",
+        "2.0T · 163 PS · inline 4",
+        "2.0T · 163 PS · inline 4"
+      ],
+      "power": [
+        171,
+        171,
+        120,
+        120
+      ],
+      "torque": [
+        390,
+        390,
+        400,
+        400
+      ],
+      "transmission": [
+        "8-speed automatic",
+        "8-speed automatic",
+        "6-speed manual",
+        "6-speed manual"
+      ],
+      "dimensions": [
+        "5600 × 1930 × 1865",
+        "5350 × 1980 × 1875",
+        "5640 × 1945 × 1875",
+        "5600 × 1930 × 1865"
+      ],
+      "nedcFuel": [
+        9.9,
+        9.6,
+        9,
+        8.5
+      ],
+      "maxSpeed": [
+        190,
+        180,
+        165,
+        165
+      ],
+      "drive": [
+        "4WD",
+        "4WD",
+        "4WD",
+        "RWD"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Pickup/长安/长安览拓者 2026款智享型2.0T自动四驱汽油长箱",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Pickup/长安/长安览拓者 2026款智享型2.0T自动四驱汽油长箱",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Pickup/长安/长安览拓者 2026款智享型2.0T自动四驱汽油长箱/四种配置对比图/ScreenShot_2026-10-29_144210_783.png",
+      "leadFile": "changan-lantuozhe-2026-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 16,
+      "key": "dfsk/c36",
+      "brand": "DFSK",
+      "modelName": "C36",
+      "row": 9,
+      "default": 0,
+      "names": [
+        "2025 1.5L Comfort",
+        "2025 1.5L Luxury",
+        "2025 1.5L Comfort CNG",
+        "2025 1.5L Ultra Luxury CNG"
+      ],
+      "powertrain": [
+        "Gasoline",
+        "Gasoline",
+        "To confirm",
+        "Gasoline + CNG"
+      ],
+      "engine": [
+        "1.5L · 112 PS · inline 4",
+        "1.5L · 112 PS · inline 4",
+        "1.5L · 98 PS · inline 4",
+        "1.5L · 98 PS · inline 4"
+      ],
+      "power": [
+        82,
+        82,
+        72,
+        72
+      ],
+      "torque": [
+        145,
+        145,
+        null,
+        null
+      ],
+      "transmission": "5-speed manual",
+      "dimensions": "4500 × 1680 × 2000",
+      "maxSpeed": 100,
+      "nedcFuel": [
+        7.5,
+        7.5,
+        null,
+        null
+      ],
+      "conflicts": [
+        "Comparison column 3 is titled CNG but its fuel row says gasoline. That column's powertrain is left to confirm; other columns retain their own fuel values."
+      ],
+      "columnNotes": {
+        "3": "Fuel designation conflicts within this source column: the title says CNG, while the energy row says gasoline. Confirm the offered powertrain."
+      },
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/DFSK/东风小康C36 2025款1.5L舒适型",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/DFSK/东风小康C36 2025款1.5L舒适型",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/DFSK/东风小康C36 2025款1.5L舒适型/四种配置对比图/ScreenShot_2026-10-29_173754_802.png",
+      "leadFile": "dfsk-c36-2025-front-three-quarter-01.webp",
+      "publicCaution": "One CNG-titled version has an inconsistent fuel entry. Confirm its powertrain before comparing it."
+    },
+    {
+      "index": 17,
+      "key": "dfsk/k07s",
+      "brand": "DFSK",
+      "modelName": "K07S",
+      "row": 8,
+      "default": 0,
+      "names": [
+        "2022 1.3L High-output Basic",
+        "2022 1.3L High-output Classic",
+        "2019 1.2L Practical China VI DK12"
+      ],
+      "powertrain": "Gasoline",
+      "engine": [
+        "1.3L · 92 PS · inline 4",
+        "1.3L · 92 PS · inline 4",
+        "1.2L · 91 PS · inline 4"
+      ],
+      "power": [
+        68,
+        68,
+        67
+      ],
+      "torque": [
+        125,
+        125,
+        119
+      ],
+      "transmission": "5-speed manual",
+      "dimensions": "4070 × 1560 × 1910",
+      "maxSpeed": [
+        null,
+        null,
+        100
+      ],
+      "nedcFuel": 6.2,
+      "bodyDescription": "Passenger van",
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/DFSK/东风小康K07S2022款1.3L高功版基本型",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/DFSK/东风小康K07S2022款1.3L高功版基本型",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/DFSK/东风小康K07S2022款1.3L高功版基本型/三种配置对比图/ScreenShot_2026-10-29_172902_837.png",
+      "leadFile": "dfsk-k07s-2022-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 18,
+      "key": "wuling/zhiguang-van",
+      "brand": "Wuling",
+      "modelName": "Zhiguang",
+      "row": 3,
+      "default": 0,
+      "names": [
+        "2023 1.5L Practical 5/7-seat",
+        "2023 1.5L Practical Panel Cargo 2-seat",
+        "2020 1.2L Practical China VI LSI",
+        "2020 1.2L Box Transport Practical China VI 2-seat LSI"
+      ],
+      "powertrain": "Gasoline",
+      "engine": [
+        "1.5L · 102 PS · inline 4",
+        "1.5L · 102 PS · inline 4",
+        "1.2L · 76 PS · inline 4",
+        "1.2L · 76 PS · inline 4"
+      ],
+      "power": [
+        75,
+        75,
+        56,
+        56
+      ],
+      "torque": [
+        136,
+        136,
+        108,
+        108
+      ],
+      "transmission": "5-speed manual",
+      "dimensions": [
+        "3797 × 1510 × 1820",
+        "3797 × 1510 × 1820",
+        "3797 × 1510 × 1820",
+        "3797 × 1510 × 1835"
+      ],
+      "maxSpeed": [
+        115,
+        115,
+        100,
+        100
+      ],
+      "nedcFuel": [
+        6.8,
+        6,
+        6.3,
+        6
+      ],
+      "seats": [
+        null,
+        2,
+        null,
+        2
+      ],
+      "bodyDescription": [
+        "Passenger van",
+        "Cargo van",
+        "Passenger van",
+        "Cargo van"
+      ],
+      "conflicts": [
+        "Excel specifies 7 seats for the selected version, but comparison column 1 lists 5/7 seats. Exact seating remains configurable rather than a fixed 7-seat assertion."
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/五菱/五菱之光",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/五菱/五菱之光",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/五菱/五菱之光/四款配置参数/微信图片_20261029172341_155_77.png",
+      "leadFile": "wuling-zhiguang-van-front-three-quarter-01.webp",
+      "publicCaution": "The selected reference lists 5/7 seats. Confirm the exact seating layout in the offered version."
+    },
+    {
+      "index": 19,
+      "key": "wuling/hongguang",
+      "brand": "Wuling",
+      "modelName": "Hongguang",
+      "row": 4,
+      "default": 0,
+      "names": [
+        "2021 Revised 1.5L S Basic Hydraulic Steering LAR",
+        "2021 Revised 1.5L S Basic Electric Steering LAR",
+        "2021 Revised 1.5L S Basic Panel Cargo Hydraulic Steering LAR",
+        "2021 Revised 1.5L S Basic Panel Cargo Electric Steering LAR"
+      ],
+      "powertrain": "Gasoline",
+      "engine": "1.5L · 99 PS · inline 4",
+      "power": 73,
+      "torque": 140,
+      "transmission": "6-speed manual",
+      "dimensions": "4420 × 1685 × 1755",
+      "maxSpeed": 155,
+      "nedcFuel": [
+        6.5,
+        6.5,
+        6.7,
+        6.7
+      ],
+      "bodyDescription": [
+        "Passenger van",
+        "Passenger van",
+        "Cargo van",
+        "Cargo van"
+      ],
+      "conflicts": [
+        "Supplied photos show a different Hongguang exterior generation from the 2021 gasoline comparison. They are model-family illustrations, not a confirmed visual match to the listed gasoline version."
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/五菱/五菱宏光",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/五菱/五菱宏光",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/五菱/五菱宏光/四款配置参数/微信图片_20261029173610_156_77.png",
+      "leadFile": "wuling-hongguang-van-front-three-quarter-01.webp",
+      "publicCaution": "Supplied photos show a different exterior generation from these 2021 gasoline specifications. Request photographs of the exact version."
+    },
+    {
+      "index": 20,
+      "key": "wuling/yangguang",
+      "brand": "Wuling",
+      "modelName": "Yangguang",
+      "row": 5,
+      "default": 0,
+      "names": [
+        "2026 300 km Panel Cargo Practical",
+        "2026 300 km Panel Cargo Comfort",
+        "2026 310 km Panel Cargo CATL Custom",
+        "2026 330 km Passenger Comfort"
+      ],
+      "powertrain": "Pure Electric",
+      "power": [
+        75,
+        75,
+        75,
+        100
+      ],
+      "torque": [
+        180,
+        180,
+        180,
+        200
+      ],
+      "motorOutput": [
+        102,
+        102,
+        102,
+        136
+      ],
+      "transmission": "Single-speed electric",
+      "dimensions": [
+        "4985 × 1800 × 1975",
+        "4985 × 1800 × 1975",
+        "5010 × 1800 × 1975",
+        "5010 × 1800 × 1975"
+      ],
+      "maxSpeed": [
+        90,
+        90,
+        90,
+        100
+      ],
+      "cltcRange": [
+        300,
+        300,
+        310,
+        330
+      ],
+      "fastCharging": 15,
+      "chargeRange": "30–80%",
+      "seats": [
+        2,
+        2,
+        2,
+        null
+      ],
+      "bodyDescription": [
+        "Cargo van",
+        "Cargo van",
+        "Cargo van",
+        "Passenger van"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/五菱/扬光",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/五菱/扬光",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/五菱/扬光/四款配置参数/微信图片_20261029170451_49_2.png",
+      "leadFile": "wuling-yangguang-van-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 21,
+      "key": "ruichi/r5",
+      "brand": "Ruichi",
+      "modelName": "R5",
+      "row": 11,
+      "default": 0,
+      "names": [
+        "2027 Cargo Pro Supercharge Pioneer II",
+        "2027 Cargo Pro Supercharge Pioneer I",
+        "2027 Passenger Pro Supercharge Pioneer II 6-seat",
+        "2027 Cargo Pro Smart Supercharge Pioneer II"
+      ],
+      "powertrain": "Pure Electric",
+      "power": 130,
+      "torque": 240,
+      "motorOutput": 177,
+      "dimensions": "5170 × 1860 × 2020",
+      "maxSpeed": 100,
+      "cltcRange": [
+        340,
+        420,
+        353,
+        340
+      ],
+      "seats": [
+        2,
+        2,
+        6,
+        2
+      ],
+      "bodyDescription": [
+        "Cargo van",
+        "Cargo van",
+        "Passenger van",
+        "Cargo van"
+      ],
+      "conflicts": [
+        "Photo folder includes Pioneer I, while the workbook lists 340 km and comparison Pioneer II column 1 lists 340 km. Default follows that column; the 420 km Pioneer I remains a separate variant."
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/瑞驰/瑞驰R52027款货运Pro超充版先锋型I",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/瑞驰/瑞驰R52027款货运Pro超充版先锋型I",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/瑞驰/瑞驰R52027款货运Pro超充版先锋型I/四种配置对比图/ScreenShot_2026-10-29_175819_296.png",
+      "leadFile": "ruichi-r5-2027-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 22,
+      "key": "ruichi/ec75",
+      "brand": "Ruichi",
+      "modelName": "EC75",
+      "row": 10,
+      "default": 0,
+      "names": [
+        "2027 Cargo Pro Supercharge Pioneer II",
+        "2027 Cargo Pro Supercharge Pioneer I",
+        "2027 Passenger Pro Supercharge Pioneer II 6-seat",
+        "2027 Cargo Pro Smart Supercharge Pioneer II"
+      ],
+      "powertrain": "Pure Electric",
+      "power": 130,
+      "torque": 240,
+      "motorOutput": 177,
+      "dimensions": "5130 × 1860 × 2020",
+      "maxSpeed": 100,
+      "cltcRange": [
+        340,
+        420,
+        353,
+        340
+      ],
+      "fastCharging": 18,
+      "chargeRange": "20–80%",
+      "slowCharging": 8,
+      "slowChargeRange": "20–100%",
+      "seats": [
+        2,
+        2,
+        6,
+        2
+      ],
+      "bodyDescription": [
+        "Cargo van",
+        "Cargo van",
+        "Passenger van",
+        "Cargo van"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/瑞驰/瑞驰新能源EC75 2027款货运Pro超充版先锋型",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/瑞驰/瑞驰新能源EC75 2027款货运Pro超充版先锋型",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/瑞驰/瑞驰新能源EC75 2027款货运Pro超充版先锋型/四种配置对比图/ScreenShot_2026-10-29_175548_722.png",
+      "leadFile": "ruichi-ec75-2027-front-three-quarter-01.webp",
+      "publicCaution": null
+    },
+    {
+      "index": 23,
+      "key": "foton/fengjing-g7",
+      "brand": "Foton",
+      "modelName": "Fengjing G7",
+      "row": 6,
+      "default": 1,
+      "names": [
+        "2024 Commercial 2.0T Diesel Manual Long Wheelbase High Roof Cargo 2-seat",
+        "2024 Commercial 2.0T Diesel Manual Long Wheelbase High Roof Passenger 6-seat",
+        "2024 Commercial 2.0T Diesel Manual Long Wheelbase High Roof Cargo 5-seat",
+        "2024 Commercial 2.4L Gasoline Manual Short Wheelbase Low Roof Cargo 2-seat"
+      ],
+      "powertrain": [
+        "Diesel",
+        "Diesel",
+        "Diesel",
+        "Gasoline"
+      ],
+      "engine": [
+        "2.0T · 126 PS · inline 4",
+        "2.0T · 126 PS · inline 4",
+        "2.0T · 126 PS · inline 4",
+        "2.4L · 160 PS · inline 4"
+      ],
+      "power": [
+        93,
+        93,
+        93,
+        118
+      ],
+      "torque": [
+        340,
+        340,
+        340,
+        230
+      ],
+      "transmission": "5-speed manual",
+      "dimensions": [
+        "5340 × 1695 × 2240",
+        "5340 × 1695 × 2240",
+        "5340 × 1695 × 2240",
+        "4860 × 1695 × 1980"
+      ],
+      "maxSpeed": [
+        125,
+        125,
+        125,
+        150
+      ],
+      "nedcFuel": [
+        7.9,
+        7.8,
+        7.9,
+        8.4
+      ],
+      "seats": [
+        2,
+        6,
+        5,
+        2
+      ],
+      "bodyDescription": [
+        "Cargo van",
+        "Passenger van",
+        "Cargo van",
+        "Cargo van"
+      ],
+      "conflicts": [
+        "Workbook selects the 6-seat windowed passenger version, while the supplied lead photo is a panel cargo van. Default follows comparison column 2; photos remain model-family layout references."
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/福田/风景G7",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/福田/风景G7",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/福田/风景G7/四款配置参数/微信图片_20261029174814_157_77.png",
+      "leadFile": "foton-fengjing-g7-front-three-quarter-01.webp",
+      "publicCaution": "Photo references show a panel cargo van. The default specification is a 6-seat windowed version; confirm the body layout."
+    },
+    {
+      "index": 24,
+      "key": "foton/fengjing-g9",
+      "brand": "Foton",
+      "modelName": "Fengjing G9",
+      "row": 7,
+      "default": 2,
+      "names": [
+        "2024 2.4L Gasoline Commercial Long Wheelbase High Roof Cargo 2-seat 4K22D4M",
+        "2024 2.4L Gasoline Commercial Long Wheelbase High Roof Cargo 5-seat 4K22D4M",
+        "2024 2.4L Gasoline Commercial Long Wheelbase High Roof Windowed 6-seat 4K22D4M",
+        "2024 2.4L Gasoline Business Long Wheelbase High Roof Passenger 9-seat 4K22D4M"
+      ],
+      "powertrain": "Gasoline",
+      "engine": "2.4L · 160 PS · inline 4",
+      "power": 118,
+      "torque": 230,
+      "transmission": "5-speed manual",
+      "dimensions": "5400 × 1920 × 2320",
+      "maxSpeed": 150,
+      "nedcFuel": 9.6,
+      "seats": [
+        2,
+        5,
+        6,
+        9
+      ],
+      "bodyDescription": [
+        "Cargo van",
+        "Cargo van",
+        "Passenger van",
+        "Passenger van"
+      ],
+      "sourceFolder": "参考资料/乘用车图片/乘用车图片/Van/福田/风景G9",
+      "processedFolder": "参考资料/独立站新车图片素材-已处理/Van/福田/风景G9",
+      "parameterImage": "参考资料/乘用车图片/乘用车图片/Van/福田/风景G9/四款配置参数/微信图片_20261029175314_158_77.png",
+      "leadFile": "foton-fengjing-g9-front-three-quarter-01.webp",
+      "publicCaution": null
+    }
+  ]
+}

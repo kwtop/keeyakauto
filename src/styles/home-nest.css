@@ -1,0 +1,330 @@
+/* Homepage only. Source measurements and implementation choices: docs/REFERENCE-VISUAL-SPEC.md. */
+html:has(>body.site-nest) {scroll-padding-top:171px;}
+.site-nest {
+  --nest-ink: #2b2b2b;
+  --nest-paper: #fff;
+  --nest-line: #e2e2e2;
+  --nest-sand: #e4d4b8;
+  --nest-gutter: 42px;
+  --nest-serif: Georgia, 'Times New Roman', serif;
+  --ink: var(--nest-ink);
+  --body: 'KEEYAK Inter', Arial, sans-serif;
+  --text: #545454;
+  --paper: #fff;
+  --accent: #2b2b2b;
+  --accent-dark: #545454;
+  --site-header-height: 151px;
+  color: var(--nest-ink);
+  background: var(--nest-paper);
+  font: 400 16px/1.45 var(--body);
+  letter-spacing: -.025em;
+}
+.site-nest :is(h1,h2,h3,p) { text-wrap:initial; }
+.site-nest :is(a,button,input):focus-visible { outline:2px solid #6b6b6b;outline-offset:4px; }
+.site-nest .skip-link {z-index:1100;}
+.site-nest .nest-container {width:calc(100% - var(--nest-gutter)*2);margin-inline:auto;}
+.site-nest .nest-home :is(h1,h2) {font-family:var(--nest-serif);color:inherit;}
+.site-nest .nest-home h3 {color:inherit;}
+.site-nest .nest-inline-link {display:inline-flex;align-items:center;min-height:44px;font:600 16px/24px var(--body);letter-spacing:-.35px;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px;}
+.site-nest .nest-inline-link:hover {color:#545454;}
+.site-nest .nest-primary-button {display:inline-flex;justify-content:center;align-items:center;min-height:56px;padding:16px 28px;border:0;border-radius:8px;background:#2b2b2b;color:#fff;font:600 16px/24px var(--body);transition:background 125ms linear;}
+.site-nest .nest-primary-button:hover {background:#545454;}
+
+/* The existing navigation and its behavior, arranged into Nest's three-tier hierarchy. */
+.site-nest .site-header.primary-header {position:fixed;inset:0 0 auto;z-index:999;height:151px;color:#2b2b2b;background:#fff;border-bottom:1px solid #e2e2e2;transition:transform 333ms ease-in-out 10ms;}
+.site-nest .site-header.primary-header[data-scroll-hidden=true] {transform:translateY(-100%);}
+.site-nest .nest-information-bar {display:flex;align-items:center;justify-content:center;height:32px;background:#2b2b2b;color:#fff;font-size:12px;line-height:16px;letter-spacing:0;}
+.site-nest .primary-header .header-inner {position:static;width:calc(100% - 80px);height:80px;display:grid;grid-template-columns:1fr auto 1fr;gap:24px;}
+.site-nest .header-brand {justify-self:start;}
+.site-nest .header-brand img {width:186px;filter:none;}
+.site-nest .nest-header-context {justify-self:center;font-size:14px;line-height:20px;letter-spacing:0;margin:0;}
+.site-nest .primary-header .header-actions {justify-self:end;gap:18px;}
+.site-nest .primary-header .header-menu-control {display:none;}
+.site-nest .primary-header .header-quote-link {min-height:44px;padding:10px 16px;background:transparent;color:#2b2b2b;border:1px solid #2b2b2b;border-radius:8px;font-size:14px;line-height:22px;}
+.site-nest .primary-header .header-quote-link:hover {background:#2b2b2b;color:#fff;}
+.site-nest .primary-header .header-navigation {position:absolute;inset:112px 0 auto;height:38px;justify-self:stretch;display:block;}
+.site-nest .primary-header .navigation-list {display:flex;align-items:stretch;justify-content:center;gap:36px;height:100%;}
+.site-nest .primary-header .navigation-link {font-size:16px;line-height:20px;letter-spacing:.03em;text-transform:uppercase;font-weight:500;min-height:38px;}
+.site-nest .primary-header .navigation-row {gap:2px;}
+.site-nest .primary-header .navigation-item {display:flex;height:100%;border:0;}
+.site-nest .primary-header .navigation-row {height:100%;}
+.site-nest .primary-header .header-disclosure {width:24px;height:36px;}
+.site-nest .primary-header .navigation-row::after {bottom:0;height:1px;background:#2b2b2b;}
+.site-nest .primary-header .navigation-home {display:none;}
+.site-nest .primary-header .navigation-panel {position:absolute;top:38px;width:340px;max-width:calc(100vw - 48px);border:1px solid #d4d6c8;border-top:2px solid #d4d6c8;border-radius:0;box-shadow:none;}
+.site-nest .primary-header .navigation-panel-brands {width:490px;}
+.site-nest .primary-header .navigation-panel-many {width:680px;}
+.site-nest .primary-header .navigation-panel-links {grid-template-columns:1fr;max-height:min(352px,calc(100dvh - 207px));overflow-y:auto;}
+.site-nest .primary-header .navigation-panel-brands .navigation-panel-links {grid-template-columns:repeat(2,minmax(0,1fr));}
+.site-nest .primary-header .navigation-panel-many .navigation-panel-links {grid-template-columns:repeat(3,minmax(0,1fr));}
+.site-nest .primary-header .navigation-panel-inner {padding:24px;}
+.site-nest .primary-header .navigation-panel-links a {font-size:16px;line-height:24px;letter-spacing:-.25px;}
+.site-nest .primary-header .navigation-panel-links a:hover {background:#eee;}
+.site-nest .primary-header .navigation-panel-links a[aria-current=page] {background:#eee;}
+.site-nest .primary-header .navigation-actions {display:none;}
+.site-nest .navigation-placeholder {display:block;height:151px;}
+
+/* Campaign: a large editorial title on white, complete model in an architectural scene. */
+.site-nest .nest-hero {display:grid;grid-template-columns:40% 60%;min-height:clamp(460px,calc(38.46153846vw + 66.15384615px),620px);}
+.site-nest .nest-hero-copy {display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:48px 42px;}
+.site-nest .nest-hero h1 {margin:0 0 30px;font-size:clamp(68px,calc(8.03vw - 15.632px),100px);line-height:1;font-weight:700;letter-spacing:-4px;}
+.site-nest .nest-hero h1 span {display:block;white-space:nowrap;}
+.site-nest .nest-hero-intro {font:400 50px/1.08 var(--nest-serif);letter-spacing:-.77px;margin:0 0 30px;}
+.site-nest .nest-hero-link {min-height:44px;display:inline-flex;align-items:center;font:600 24px/28px var(--body);letter-spacing:-.6px;text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:1px;}
+.site-nest .nest-hero-link:hover {color:#545454;}
+.site-nest .nest-hero-image {position:relative;min-width:0;overflow:hidden;background:#e7dfd3;}
+.site-nest .nest-hero-image img {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;}
+.site-nest .nest-hero-image figcaption {position:absolute;right:16px;bottom:12px;padding:3px 6px;background:#ffffffed;color:#2b2b2b;font:400 11px/16px var(--body);letter-spacing:0;}
+
+/* Brand discovery and three photographic routes, with open captions. */
+.site-nest .nest-brand-row {min-height:132px;display:flex;align-items:center;justify-content:space-between;gap:32px;}
+.site-nest .nest-brand-row a {display:flex;align-items:center;min-height:44px;font-size:20px;font-weight:600;line-height:24px;letter-spacing:-.7px;}
+.site-nest .nest-brand-row a:hover {text-decoration:underline;text-underline-offset:6px;}
+.site-nest .nest-category-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+.site-nest .nest-category {display:block;min-width:0;}
+.site-nest .nest-category-image {aspect-ratio:3/4;overflow:hidden;background:#eee;}
+.site-nest .nest-category-image img {width:100%;height:100%;object-fit:cover;}
+.site-nest .nest-category:nth-child(2) img {object-position:44% 50%;}
+.site-nest .nest-category h2 {font-size:32px;font-weight:700;line-height:36.8px;letter-spacing:-.8px;margin:20px 0 8px;}
+.site-nest .nest-category p {font-size:16px;line-height:23.2px;margin:0;}
+.site-nest .nest-category:hover h2 {text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;}
+
+/* Product identities are compact; each photograph is an unchanged catalog reference. */
+.site-nest .nest-models {padding-block:76px 96px;}
+.site-nest .nest-rail-heading {display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:28px;}
+.site-nest .nest-rail-heading h2 {font:600 32px/46.4px var(--body);letter-spacing:-.8px;margin:0;}
+.site-nest .nest-model-track {display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 60px)/4);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;}
+.site-nest .nest-model-track::-webkit-scrollbar {display:none;}
+.site-nest .nest-model-card {scroll-snap-align:start;display:block;min-width:0;}
+.site-nest .nest-model-image {aspect-ratio:4/3;background:#fff;}
+.site-nest .nest-model-image img {width:100%;height:100%;object-fit:contain;}
+.site-nest .nest-model-brand {font-size:12px;line-height:12px;letter-spacing:.12px;font-weight:600;text-transform:uppercase;margin:11px 0 0;}
+.site-nest .nest-model-card h3 {font:600 16px/20px var(--body);letter-spacing:0;margin:8px 0 0;}
+.site-nest .nest-model-powertrain {font-size:14px;line-height:20px;letter-spacing:.28px;font-weight:500;margin:8px 0 0;}
+.site-nest .nest-model-card:hover h3 {text-decoration:underline;text-underline-offset:4px;}
+.site-nest .nest-rail-bottom {display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:24px;}
+.site-nest .nest-rail-bottom p {font-size:14px;line-height:20px;margin:0;}
+.site-nest .nest-rail-controls {display:flex;gap:4px;flex:none;}
+.site-nest .nest-rail-controls button {display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:transparent;border:0;color:#2b2b2b;padding:0;}
+.site-nest .nest-rail-controls button:disabled {color:#b3b4a7;opacity:1;}
+
+/* Services change the rhythm from product browsing to a centered explanation and full-width image. */
+.site-nest .nest-service-intro {max-width:840px;margin:0 auto;padding:0 24px 64px;text-align:center;}
+.site-nest .nest-service-intro h2 {font-size:48px;line-height:48px;letter-spacing:-1.2px;font-weight:700;margin:0 0 24px;}
+.site-nest .nest-service-intro p {max-width:550px;margin:0 auto 16px;font-size:16px;line-height:23.2px;}
+.site-nest .nest-transport-image {position:relative;aspect-ratio:16/9;overflow:hidden;background:#e5e4df;}
+.site-nest .nest-transport-image img {width:100%;height:100%;object-fit:cover;object-position:50% 56%;}
+.site-nest .nest-transport-image picture {display:block;width:100%;height:100%;}
+.site-nest .nest-transport-image figcaption {position:absolute;right:16px;bottom:12px;background:#ffffffed;padding:3px 6px;font:400 11px/16px var(--body);letter-spacing:0;}
+.site-nest .nest-buying-intro {display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-block:96px 54px;}
+.site-nest .nest-buying-intro h2 {font-size:64px;line-height:73.6px;letter-spacing:-1.6px;font-weight:700;margin:0;}
+.site-nest .nest-buying-intro p {font-size:18px;line-height:27px;max-width:46ch;margin:0;}
+.site-nest .nest-guide-grid {display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.site-nest .nest-guide-image {display:block;aspect-ratio:4/3;overflow:hidden;background:#f4f4f1;}
+.site-nest .nest-guide-image img {width:100%;height:100%;object-fit:cover;}
+.site-nest .nest-guide figure figcaption {font-size:12px;line-height:18px;margin-top:8px;letter-spacing:0;}
+.site-nest .nest-guide h3 {font:600 24px/32px var(--body);letter-spacing:-.6px;margin:24px 0 12px;}
+.site-nest .nest-guide>p {max-width:54ch;font-size:16px;line-height:24px;margin:0 0 12px;}
+
+/* Documentary photographs retain their original content and business scope. */
+.site-nest .nest-company {padding-block:96px;}
+.site-nest .nest-company-intro {max-width:840px;margin:0 auto 48px;text-align:center;}
+.site-nest .nest-company-intro h2 {font-size:48px;line-height:1.08;font-weight:700;letter-spacing:-1.2px;margin:0 0 24px;}
+.site-nest .nest-company-intro p {font-size:16px;line-height:24px;max-width:58ch;margin:0 auto 16px;}
+.site-nest .nest-company-grid {display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.site-nest .nest-company-grid figure {min-width:0;}
+.site-nest .nest-company-grid img {width:100%;aspect-ratio:4/3;object-fit:cover;}
+.site-nest .nest-company-discussion img {object-position:50% 45%;}
+.site-nest .nest-company-grid figcaption {display:flex;justify-content:space-between;gap:24px;font-size:14px;line-height:20px;margin-top:12px;}
+.site-nest .nest-company-grid figcaption span:last-child {white-space:nowrap;}
+.site-nest .nest-company-more {margin-top:24px;}
+
+/* The source's subscription role becomes the existing, truthful requirement-preparation flow. */
+.site-nest .nest-requirement {background:var(--nest-sand);}
+.site-nest .nest-requirement-inner {display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-block:72px;}
+.site-nest .nest-requirement h2 {font-size:48px;line-height:52px;font-weight:700;letter-spacing:-1.2px;margin:0 0 24px;}
+.site-nest .nest-requirement-copy p {font-size:16px;line-height:24px;margin:0;}
+.site-nest .nest-brief-form {display:grid;gap:20px;}
+.site-nest .nest-brief-form label {display:grid;gap:8px;min-width:0;font-size:14px;line-height:20px;}
+.site-nest .nest-brief-row {display:grid;grid-template-columns:110px minmax(0,1fr);gap:20px;}
+.site-nest .nest-brief-form input {width:100%;min-width:0;height:56px;padding:14px 16px;border:1px solid #9d927e;border-radius:0;background:#fff;color:#2b2b2b;font-size:16px;line-height:24px;letter-spacing:0;}
+.site-nest .nest-brief-form .nest-primary-button {justify-self:start;min-width:200px;margin-top:4px;}
+
+/* White editorial directory; the shared dark footer is retained on all other routes. */
+.site-nest .nest-footer {background:#fff;color:#2b2b2b;padding:60px 0 28px;}
+.site-nest .nest-footer-help {display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--nest-line);}
+.site-nest .nest-footer-help h2 {font:700 32px/36.8px var(--nest-serif);letter-spacing:-.8px;margin:0 0 16px;}
+.site-nest .nest-footer-help p {font-size:16px;line-height:24px;margin:0 0 12px;}
+.site-nest .nest-footer-help>div>a {display:block;width:fit-content;min-height:32px;font-size:16px;line-height:24px;}
+.site-nest .nest-footer-help a:hover {text-decoration:underline;text-underline-offset:4px;}
+.site-nest .nest-footer-social {display:flex;align-items:start;justify-content:end;gap:16px;}
+.site-nest .nest-footer-social a {display:flex;align-items:center;justify-content:center;width:44px;height:44px;}
+.site-nest .nest-footer-social img {width:24px;height:24px;filter:brightness(0);}
+.site-nest .nest-footer-directory {display:grid;grid-template-columns:minmax(0,3fr) minmax(220px,1fr);gap:64px;padding-block:48px;}
+.site-nest .nest-footer-navigation {display:grid;grid-template-columns:1fr 1fr 1.4fr 1fr;gap:24px;}
+.site-nest .nest-footer-group {min-width:0;}
+.site-nest .nest-footer-group h3 {font:600 18px/26.1px var(--body);letter-spacing:-.45px;margin:0 0 14px;}
+.site-nest .nest-footer-toggle {display:none;}
+.site-nest .nest-footer-group ul {list-style:none;margin:0;padding:0;}
+.site-nest .nest-footer-group a {display:flex;align-items:center;min-height:36px;font-size:14px;line-height:20px;letter-spacing:-.2px;padding:6px 0;}
+.site-nest .nest-footer-group a:hover {text-decoration:underline;text-underline-offset:4px;}
+.site-nest .nest-footer-wordmark {display:block;width:180px;max-width:100%;margin-bottom:24px;}
+.site-nest .nest-footer-company p,.site-nest .nest-footer-company address {font:400 14px/22px var(--body);letter-spacing:-.2px;margin:0 0 16px;}
+.site-nest .nest-footer-company p {font-weight:600;}
+.site-nest .nest-footer-company .nest-inline-link {font-size:14px;}
+.site-nest .nest-footer-bottom {display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:24px;border-top:1px solid var(--nest-line);font-size:12px;line-height:20px;letter-spacing:0;}
+.site-nest .nest-footer-bottom nav {display:flex;gap:24px;}
+.site-nest .nest-footer-bottom nav a {display:flex;align-items:center;min-width:44px;min-height:44px;}
+
+@media (min-width:1024px) and (max-width:1199px) {
+  .site-nest .nest-hero-copy {padding-block:36px;}
+  .site-nest .nest-hero h1 {letter-spacing:-2.8px;}
+  .site-nest .nest-hero-intro {font-size:36px;line-height:40px;}
+  .site-nest .nest-hero-link {font-size:20px;}
+  .site-nest .primary-header .navigation-list {gap:24px;}
+  .site-nest .nest-buying-intro {gap:48px;}
+  .site-nest .nest-buying-intro h2 {font-size:48px;line-height:55.2px;}
+  .site-nest .nest-footer-directory {gap:36px;grid-template-columns:1fr 220px;}
+  .site-nest .nest-footer-navigation {gap:16px;}
+  .site-nest .nest-footer-group h3 {font-size:16px;line-height:24px;}
+}
+@media (max-width:1023px) {
+  html:has(>body.site-nest) {scroll-padding-top:133px;}
+  .site-nest {--nest-gutter:24px;--site-header-height:113px;}
+  .site-nest .site-header.primary-header {height:113px;}
+  .site-nest .primary-header .header-inner {width:calc(100% - 48px);height:80px;display:grid;grid-template-columns:1fr auto 1fr;gap:12px;}
+  .site-nest .header-brand {grid-column:2;grid-row:1;justify-self:center;}
+  .site-nest .header-brand img {width:164px;}
+  .site-nest .nest-header-context {display:none;}
+  .site-nest .primary-header .header-actions {display:contents;}
+  .site-nest .primary-header .car-search-trigger {grid-column:3;grid-row:1;justify-self:end;}
+  .site-nest .primary-header .header-menu-control {display:flex;grid-column:1;grid-row:1;justify-self:start;}
+  .site-nest .primary-header .header-quote-link {display:none;}
+  .site-nest .primary-header .header-navigation {display:none;}
+  .site-nest .primary-header.menu-open .header-navigation {display:flex;inset:100% 0 auto;width:100%;height:calc(100dvh - 113px);padding:10px 24px 28px;color:#2b2b2b;}
+  .site-nest .primary-header .navigation-list {display:block;height:auto;}
+  .site-nest .primary-header .navigation-item {display:block;height:auto;border-bottom:1px solid #e2e2e2;}
+  .site-nest .primary-header .navigation-home {display:block;}
+  .site-nest .primary-header .navigation-link {font-size:18px;line-height:26px;letter-spacing:0;text-transform:none;min-height:62px;}
+  .site-nest .primary-header .header-disclosure {width:48px;height:62px;}
+  .site-nest .primary-header .navigation-row::after {display:none;}
+  .site-nest .primary-header .navigation-panel {position:static;width:100%;max-width:none;top:auto;border:0;}
+  .site-nest .primary-header .navigation-panel-inner {padding:0 0 12px;}
+  .site-nest .primary-header .navigation-panel-links,.site-nest .primary-header .navigation-panel-many .navigation-panel-links {grid-template-columns:repeat(2,minmax(0,1fr));max-height:none;}
+  .site-nest .primary-header .navigation-panel-links a {font-size:16px;line-height:24px;}
+  .site-nest .primary-header .navigation-actions {display:block;}
+  .site-nest .primary-header .navigation-actions .navigation-quote {border-radius:8px;background:#2b2b2b;color:#fff;min-height:56px;}
+  .site-nest .navigation-placeholder {height:113px;}
+  .site-nest .nest-hero {min-height:0;grid-template-columns:1fr;}
+  .site-nest .nest-hero-copy {display:grid;grid-template-columns:1fr 1fr;align-items:start;padding:40px 24px 36px;gap:0 32px;}
+  .site-nest .nest-hero h1 {grid-row:1/3;margin:0;font-size:48px;line-height:48px;letter-spacing:-1.2px;}
+  .site-nest .nest-hero-intro {margin:0 0 18px;font-size:32px;line-height:34.56px;letter-spacing:-.8px;}
+  .site-nest .nest-hero-link {grid-column:2;font-size:16px;line-height:24px;letter-spacing:-.35px;min-height:44px;}
+  .site-nest .nest-hero-image {aspect-ratio:3/2;}
+  .site-nest .nest-brand-row {min-height:110px;gap:16px;}
+  .site-nest .nest-brand-row a {font-size:16px;letter-spacing:-.4px;}
+  .site-nest .nest-category-grid {gap:20px;}
+  .site-nest .nest-category h2 {font-size:26px;line-height:30px;margin-top:16px;}
+  .site-nest .nest-category p {font-size:15px;line-height:22px;}
+  .site-nest .nest-models {padding-block:54px 72px;}
+  .site-nest .nest-rail-heading h2 {font-size:18px;line-height:26.1px;}
+  .site-nest .nest-model-track {grid-auto-columns:calc((100% - 40px)/3);}
+  .site-nest .nest-service-intro {padding-bottom:48px;}
+  .site-nest .nest-service-intro h2 {font-size:32px;line-height:36.8px;letter-spacing:-.8px;}
+  .site-nest .nest-buying-intro {grid-template-columns:1fr;padding-block:72px 40px;gap:24px;}
+  .site-nest .nest-buying-intro h2 {font-size:48px;line-height:55.2px;letter-spacing:-1.2px;}
+  .site-nest .nest-buying-intro p {font-size:16px;line-height:24px;}
+  .site-nest .nest-guide-grid {gap:20px;}
+  .site-nest .nest-guide h3 {font-size:20px;line-height:28px;}
+  .site-nest .nest-company {padding-block:72px;}
+  .site-nest .nest-company-intro h2 {font-size:32px;line-height:36.8px;letter-spacing:-.8px;}
+  .site-nest .nest-company-grid {gap:20px;}
+  .site-nest .nest-company-grid figcaption {display:block;}
+  .site-nest .nest-company-grid figcaption span {display:block;}
+  .site-nest .nest-requirement-inner {gap:40px;padding-block:54px;}
+  .site-nest .nest-requirement h2 {font-size:32px;line-height:36.8px;letter-spacing:-.8px;}
+  .site-nest .nest-brief-row {grid-template-columns:90px minmax(0,1fr);gap:16px;}
+  .site-nest .nest-footer-directory {grid-template-columns:1fr;gap:40px;}
+  .site-nest .nest-footer-group h3 {font-size:16px;line-height:23.2px;}
+  .site-nest .nest-footer-company {display:grid;grid-template-columns:1fr 1fr;gap:0 40px;}
+  .site-nest .nest-footer-wordmark {grid-row:1/3;align-self:center;}
+  .site-nest .nest-footer-company p {grid-column:2;}
+  .site-nest .nest-footer-company address {grid-column:2;}
+  .site-nest .nest-footer-company .nest-inline-link {grid-column:2;}
+}
+@media (max-width:767px) {
+  html:has(>body.site-nest) {scroll-padding-top:113px;}
+  .site-nest {--nest-gutter:16px;--site-header-height:93px;}
+  .site-nest .site-header.primary-header {height:93px;}
+  .site-nest .primary-header .header-inner {height:60px;}
+  .site-nest .header-brand img {width:148px;}
+  .site-nest .navigation-placeholder {height:93px;}
+  .site-nest .primary-header.menu-open .header-navigation {height:calc(100dvh - 93px);}
+  .site-nest .nest-hero-copy {display:flex;padding:32px 16px 28px;gap:0;}
+  .site-nest .nest-hero h1 {margin:0 0 18px;}
+  .site-nest .nest-hero-intro {margin-bottom:14px;}
+  .site-nest .nest-hero-image {aspect-ratio:3/2;}
+  .site-nest .nest-hero-image figcaption {right:8px;bottom:8px;font-size:10px;line-height:14px;}
+  .site-nest .nest-brand-row {display:grid;grid-template-columns:repeat(3,1fr);padding-block:20px;gap:4px 20px;min-height:0;}
+  .site-nest .nest-brand-row a {justify-content:center;font-size:16px;}
+  .site-nest .nest-category-grid {grid-template-columns:1fr;gap:32px;}
+  .site-nest .nest-category-image {aspect-ratio:4/3;}
+  .site-nest .nest-category:first-child img {object-position:50% 66%;}
+  .site-nest .nest-category:nth-child(3) img {object-position:50% 62%;}
+  .site-nest .nest-category h2 {font-size:32px;line-height:36.8px;letter-spacing:-.8px;margin:16px 0 6px;}
+  .site-nest .nest-category p {font-size:16px;line-height:23.2px;}
+  .site-nest .nest-models {padding-block:48px;}
+  .site-nest .nest-rail-heading {gap:16px;margin-bottom:20px;}
+  .site-nest .nest-rail-heading h2 {font-size:14px;line-height:20.3px;letter-spacing:-.35px;}
+  .site-nest .nest-rail-heading .nest-inline-link {font-size:14px;}
+  .site-nest .nest-model-track {grid-auto-columns:calc(100% - 42px);gap:20px;}
+  .site-nest .nest-rail-bottom {align-items:start;gap:16px;margin-top:20px;}
+  .site-nest .nest-rail-bottom p {font-size:14px;line-height:20px;max-width:26ch;}
+  .site-nest .nest-service-intro {padding:0 16px 32px;}
+  .site-nest .nest-service-intro h2 {font-size:32px;line-height:36.8px;margin-bottom:18px;}
+  .site-nest .nest-service-intro p {max-width:38ch;margin-bottom:12px;}
+  .site-nest .nest-transport-image {aspect-ratio:9/16;}
+  .site-nest .nest-transport-image img {object-position:50% 50%;}
+  .site-nest .nest-transport-image figcaption {right:8px;bottom:8px;font-size:10px;line-height:14px;}
+  .site-nest .nest-buying-intro {grid-template-columns:1fr;gap:24px;padding-block:48px 32px;}
+  .site-nest .nest-buying-intro h2 {font-size:32px;line-height:36.8px;letter-spacing:-.8px;}
+  .site-nest .nest-buying-intro p {max-width:42ch;}
+  .site-nest .nest-guide-grid {grid-template-columns:1fr;gap:40px;}
+  .site-nest .nest-guide h3 {font-size:22px;line-height:28px;margin-top:20px;}
+  .site-nest .nest-company {padding-block:54px 48px;}
+  .site-nest .nest-company-intro {margin-bottom:32px;text-align:left;}
+  .site-nest .nest-company-intro h2 {margin-bottom:18px;}
+  .site-nest .nest-company-intro p {margin-inline:0;}
+  .site-nest .nest-company-grid {grid-template-columns:1fr;gap:28px;}
+  .site-nest .nest-company-grid figcaption {display:flex;gap:16px;}
+  .site-nest .nest-company-grid figcaption span:first-child {max-width:27ch;}
+  .site-nest .nest-company-more {margin-top:20px;}
+  .site-nest .nest-requirement-inner {grid-template-columns:1fr;gap:32px;padding-block:40px;}
+  .site-nest .nest-requirement h2 {margin-bottom:18px;}
+  .site-nest .nest-brief-row {grid-template-columns:90px minmax(0,1fr);gap:16px;}
+  .site-nest .nest-brief-form .nest-primary-button {width:100%;}
+  .site-nest .nest-footer {padding-block:40px 20px;}
+  .site-nest .nest-footer-help {grid-template-columns:1fr;gap:24px;padding-bottom:28px;}
+  .site-nest .nest-footer-help h2 {font-size:20px;line-height:23px;letter-spacing:-.5px;}
+  .site-nest .nest-footer-help>div>a {min-height:44px;}
+  .site-nest .nest-footer-social {justify-content:start;gap:16px;margin-left:-8px;}
+  .site-nest .nest-footer-directory {padding-block:24px;gap:32px;}
+  .site-nest .nest-footer-navigation {grid-template-columns:1fr;gap:0;}
+  .site-nest .nest-footer-group {border-bottom:1px solid var(--nest-line);}
+  .site-nest .nest-footer-group h3 {margin:0;}
+  .site-nest .nest-footer-group-title {display:none;}
+  .site-nest .nest-footer-toggle {display:flex;justify-content:space-between;align-items:center;width:100%;min-height:48px;padding:0;border:0;background:transparent;color:inherit;text-align:left;font:600 14px/20px var(--body);letter-spacing:-.35px;cursor:pointer;}
+  .site-nest .nest-footer-toggle span {font-size:20px;font-weight:400;}
+  .site-nest .nest-footer-group ul {padding-bottom:12px;}
+  .site-nest .nest-footer-group a {min-height:44px;font-size:16px;line-height:24px;}
+  .site-nest .nest-footer-company {display:block;}
+  .site-nest .nest-footer-wordmark {width:160px;margin-bottom:20px;}
+  .site-nest .nest-footer-company p,.site-nest .nest-footer-company address {max-width:38ch;}
+  .site-nest .nest-footer-bottom {align-items:start;flex-direction:column;gap:8px;padding-top:20px;}
+}
+@media (max-width:359px) {
+  .site-nest .header-brand img {width:130px;}
+  .site-nest .nest-hero h1 {font-size:46px;line-height:46px;}
+  .site-nest .nest-hero-intro {font-size:30px;}
+  .site-nest .nest-brief-row {grid-template-columns:78px minmax(0,1fr);gap:12px;}
+}

@@ -1,0 +1,5 @@
+---
+interface Props {title?:string;body?:string;href?:string;label?:string;secondaryHref?:string;secondaryLabel?:string;}
+const {title='Tell us about the cars you need',body='Include the model, quantity and destination, plus any preferences or questions.',href='/quote/',label='Request a Quote',secondaryHref='/contact/',secondaryLabel='Contact the team'}=Astro.props;
+---
+<section class="section content-close" data-module="next-step"><div class="shell cta-panel"><div><h2>{title}</h2><p>{body}</p></div><div class="content-actions"><a class="button button-dark" href={href}>{label}</a>{secondaryHref&&<a class="button button-outline" href={secondaryHref}>{secondaryLabel}</a>}</div></div></section>

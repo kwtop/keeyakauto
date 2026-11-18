@@ -1,0 +1,9 @@
+---
+import {CarFront,Search,ClipboardCheck,Ship,Headset,FileText,Wallet,Globe,PlugZap,Settings,MapPin,CalendarDays,Camera,KeyRound,Truck,Package,ShieldCheck,Check,BuildingComplex,Users,Mail,Phone,MessageCircle,Clock,Wrench,Monitor,FingerprintPattern,ListChecks} from '@lucide/astro';
+import type {TrustIconName} from '../../data/trustContent';
+interface Props {name?:TrustIconName;size?:number;}
+const {name='document',size=26}=Astro.props;
+const icons={car:CarFront,search:Search,inspection:ClipboardCheck,ship:Ship,support:Headset,document:FileText,wallet:Wallet,globe:Globe,battery:PlugZap,settings:Settings,pin:MapPin,calendar:CalendarDays,camera:Camera,key:KeyRound,truck:Truck,package:Package,shield:ShieldCheck,check:Check,building:BuildingComplex,users:Users,mail:Mail,phone:Phone,message:MessageCircle,clock:Clock,wrench:Wrench,software:Monitor,fingerprint:FingerprintPattern,list:ListChecks};
+const Icon=icons[name];
+---
+<Icon {size} aria-hidden="true"/>

@@ -1,0 +1,12 @@
+APP_ENV=local
+AUTH_MODE=local
+ADMIN_USERNAME=local-admin
+# Run npm run admin:setup to generate the following locally, never use these strings.
+ADMIN_PASSWORD_HASH=GENERATE_LOCALLY
+PRIVACY_SALT=GENERATE_LOCALLY
+SITE_ORIGINS=http://127.0.0.1:8789
+# Production only. Keep secrets in Pages secrets, not public build variables.
+# TURNSTILE_SECRET_KEY=
+# CF_ACCESS_TEAM_DOMAIN=your-team.cloudflareaccess.com
+# CF_ACCESS_AUD=
+# ADMIN_EMAILS=you@example.com

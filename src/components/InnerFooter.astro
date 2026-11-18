@@ -1,0 +1,41 @@
+---
+import {Mail, MapPin} from '@lucide/astro';
+import {company,aboutLinks} from '../data/company';
+import {exportLinks} from '../data/exportServices';
+import {socialLinks} from '../data/social';
+const groups=[
+ {title:'New Cars',links:[{label:'Browse models',href:'/new-cars/'},{label:'All brands',href:'/new-cars/brands/'}]},
+ {title:'Used Cars',links:[{label:'Browse models',href:'/used-cars/'},{label:'All brands',href:'/used-cars/brands/'}]},
+ {title:'Export Services',links:[{label:'Service Overview',href:'/export-services/'},...exportLinks]},
+ {title:'Explore',links:[{label:'Vehicle comparisons',href:'/guides/comparisons/'},{label:'Country guides',href:'/export-services/buying-guide/#country-guides'},{label:'Start an inquiry',href:'/quote/'}]},
+ {title:'Company',links:[...aboutLinks,{label:'Contact Us',href:'/contact/'}]}
+];
+---
+<footer class="inner-footer" id="site-footer">
+ <div class="inner-footer-shell">
+  <div class="inner-footer-directory">
+   <div class="inner-footer-brand">
+    <a class="inner-footer-logo" href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark-360.webp" srcset="/images/brand/keeyak-wordmark-360.webp 360w, /images/brand/keeyak-wordmark-720.webp 720w" sizes="240px" width="1200" height="219" alt="" loading="lazy"/></a>
+    <p>{company.legalName}</p>
+    <address><MapPin size={16} aria-hidden="true"/><span>{company.officeAddress}</span></address>
+    <div class="inner-footer-contact">
+     <a href={`mailto:${company.email}`}><Mail size={16} aria-hidden="true"/><span>{company.email}</span></a>
+     <a href={company.whatsapp} target="_blank" rel="noopener noreferrer" aria-label={`WhatsApp ${company.phone}`}><img src="/images/brand/whatsapp.svg" width="16" height="16" alt=""/><span>{company.phone}</span></a>
+    </div>
+   </div>
+   <div class="inner-footer-navigation">{groups.map(group=><details data-inner-footer-directory open><summary>{group.title}<span aria-hidden="true">+</span></summary><nav aria-label={`Footer ${group.title}`}>{group.links.map(link=><a href={link.href}>{link.label}</a>)}</nav></details>)}</div>
+  </div>
+  <div class="inner-footer-bottom">
+   <p>© {new Date().getFullYear()} {company.legalName}</p>
+   <nav class="inner-footer-social" aria-label="KEEYAK social media">{socialLinks.map(link=><a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`KEEYAK on ${link.label}`}><img src={link.icon} width="18" height="18" alt="" loading="lazy"/></a>)}</nav>
+   <nav class="inner-footer-legal" aria-label="Legal"><a href="/privacy/">Privacy</a><a href="/terms/">Website Terms</a></nav>
+  </div>
+ </div>
+</footer>
+<script>
+ const innerFooterGroups=[...document.querySelectorAll<HTMLDetailsElement>('[data-inner-footer-directory]')];
+ const innerFooterMobile=matchMedia('(max-width:809px)');
+ const updateInnerFooter=()=>innerFooterGroups.forEach(group=>group.open=!innerFooterMobile.matches);
+ updateInnerFooter();innerFooterMobile.addEventListener('change',updateInnerFooter);
+ innerFooterGroups.forEach(group=>group.querySelector('summary')?.addEventListener('click',event=>{if(!innerFooterMobile.matches)event.preventDefault();}));
+</script>

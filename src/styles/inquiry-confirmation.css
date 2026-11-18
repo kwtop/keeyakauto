@@ -1,0 +1,11 @@
+.inquiry-confirmation{max-width:880px;margin:40px auto 80px;padding:56px 40px;text-align:center;border-radius:24px;background:#fff;box-shadow:0 2px 6px #20221e04,0 16px 44px #20221e06}
+.inquiry-confirmation-mark{display:grid;place-items:center;width:76px;height:76px;margin:0 auto 28px;border-radius:50%;background:#edf4ed;color:#48734c}
+body.inner-autohaus #main .inquiry-confirmation h1{max-width:18ch;margin:0 auto 22px;font:500 clamp(32px,4vw,48px)/1.12 var(--body);letter-spacing:-.04em;text-wrap:balance}
+body.inner-autohaus #main .inquiry-confirmation p{margin:0 0 20px;font-size:18px;line-height:1.65;color:#64655f}
+body.inner-autohaus #main .inquiry-confirmation .inquiry-confirmation-response{display:flex;justify-content:center;align-items:center;gap:10px;color:#20221e;font-weight:500}
+.inquiry-confirmation-response svg{flex:none;color:#75623c}
+body.inner-autohaus #main .inquiry-confirmation .inquiry-confirmation-reference{padding:18px 12px;margin:28px auto;max-width:550px;background:#f5f4f0;border-radius:12px;font-size:13px}
+.inquiry-confirmation-reference strong{display:block;margin-top:5px;color:#30332e;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.inquiry-confirmation-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.quote-page .inquiry-confirmation{grid-column:1/-1;width:100%}
+@media(max-width:599px){.inquiry-confirmation{margin-block:20px 48px;padding:36px 20px}.inquiry-confirmation-mark{margin-bottom:22px}body.inner-autohaus #main .inquiry-confirmation p{font-size:16px}.inquiry-confirmation-actions{display:grid;grid-template-columns:1fr}.inquiry-confirmation-response{align-items:flex-start!important;text-align:left}}

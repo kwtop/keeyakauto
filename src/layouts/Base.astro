@@ -1,0 +1,68 @@
+---
+import {siteEntities} from '../data/siteStructuredData';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SharedHeader from '../components/home-autohaus/Header.astro';
+import SharedFooter from '../components/home-autohaus/Footer.astro';
+import Measurement from '../components/Measurement.astro';
+
+
+
+import '../styles/global.css';
+import '../styles/navigation.css';
+import '../styles/content.css';
+import '../styles/typography.css';
+import '../styles/home-nest.css';
+import '../styles/site-nest.css';
+import '../styles/home-volta.css';
+import '../styles/site-volta.css';
+import '../styles/site-imagery.css';
+import '../styles/inner-editorial.css';
+import '../styles/inner-pages.css';
+import '../styles/contextual-links.css';
+import '../styles/headings.css';
+import '../styles/inner-autohaus.css';
+import '../styles/site-spacing.css';
+import '../styles/image-frame-fit.css';
+interface Props { title: string; description?: string; image?: string; aboutPage?: boolean; cinematicHome?: boolean; homeCoral?:boolean; nestHome?:boolean; socialType?:'website'|'article'; }
+const {title,description='Explore passenger-car models, review the details and prepare your vehicle requirements with KEEYAK Auto.',image='/images/scene-diversity-20261020/toyota-camry-business-district.webp',cinematicHome=false,homeCoral=false,nestHome=false,socialType='website'}=Astro.props;
+const path=Astro.url.pathname;
+const canonical=new URL(path==='/404/'?'/404.html':path,Astro.site).href;
+const socialImage=new URL(image,Astro.site).href;
+const isHome=path==='/';
+const isCatalog=['/new-cars/','/used-cars/','/new-cars/brands/','/used-cars/brands/'].includes(path)||/\/(new-cars|used-cars)\/page\//.test(path);
+const isQuote=path==='/quote/';
+const isContact=path==='/contact/';
+const isCompanyProfile=path==='/about/company-profile/';
+const nestSite=!/^\/design(?:-preview)?\//.test(path)&&!cinematicHome&&!homeCoral;
+const innerEditorial=nestSite&&!isHome;
+const redesignedInner=innerEditorial&&!/^\/(?:new-cars|used-cars|admin)(?:\/|$)/.test(path);
+---
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#ffffff" /><meta name="robots" content={path==='/quote/thank-you/'?'noindex,follow':'index,follow,max-image-preview:large'} /><meta name="description" content={description} />
+<link rel="canonical" href={canonical}/>
+{path.startsWith('/about/news/')&&<link rel="alternate" type="application/rss+xml" title="KEEYAK News &amp; Events" href="/rss.xml"/>}
+<meta property="og:url" content={canonical}/><meta property="og:type" content={socialType} /><meta property="og:title" content={`${title} | KEEYAK Auto`} /><meta property="og:description" content={description} /><meta property="og:image" content={socialImage} />
+<link rel="icon" href="/favicon.png" type="image/png" sizes="256x256" /><link rel="preload" href={innerEditorial?'/fonts/InterDisplay-Medium.woff2':'/fonts/InterVariable.woff2'} as="font" type="font/woff2" crossorigin />
+<title>{title} | KEEYAK Auto</title>
+<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':siteEntities(Astro.site||Astro.url.origin)})}/>
+</head><body class:list={{'is-home':isHome,'is-catalog':isCatalog,'is-quote':isQuote,'is-contact':isContact,'about-profile':isCompanyProfile,'home-cinematic':cinematicHome,'home-coral':homeCoral,'home-nest':nestHome,'site-nest':nestSite,'site-volta':nestSite,'volta-site':nestSite,'inner-editorial':innerEditorial,'inner-autohaus':redesignedInner}}>
+<svg class="brand-color-filter" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="wordmark-light" color-interpolation-filters="sRGB"><!-- White lettering, original yellow, transparent white background. --><feColorMatrix type="matrix" values="0 0 0 0 1 -1 1 0 0 1 -1 0 1 0 1 0 0 -1 0 1" /><feComposite in2="SourceAlpha" operator="in" /></filter></defs></svg>
+<a class="skip-link" href="#main">Skip to content</a>{nestSite?<SharedHeader solid/>:<Header/>}<main id="main"><slot/></main>{nestSite?<SharedFooter/>:<Footer/>}<Measurement/></body></html>
+<script>
+ const editorialHeader=document.querySelector<HTMLElement>('.site-nest .primary-header');
+ if(editorialHeader){
+  let lastScroll=window.scrollY;
+  const reveal=()=>editorialHeader.removeAttribute('data-scroll-hidden');
+  editorialHeader.addEventListener('focusin',reveal);
+  window.addEventListener('scroll',()=>{
+   const position=window.scrollY;
+   const protectedState=editorialHeader.classList.contains('menu-open')||editorialHeader.classList.contains('panel-open')||editorialHeader.contains(document.activeElement)||document.querySelector('dialog[open]');
+   if(position<editorialHeader.offsetHeight||protectedState||position<lastScroll-4)reveal();
+   else if(position>lastScroll+4)editorialHeader.dataset.scrollHidden='true';
+   lastScroll=position;
+  },{passive:true});
+ }
+</script>

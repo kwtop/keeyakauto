@@ -1,0 +1,5 @@
+Country flag SVGs from flag-icons v7.3.2
+https://github.com/lipis/flag-icons/tree/v7.3.2/flags/4x3
+Copyright (c) 2013 Panayiotis Lipiridis
+MIT license: LICENSE.txt
+Downloaded 2026-11-06. Original SVG artwork retained.

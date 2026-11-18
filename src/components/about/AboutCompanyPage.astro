@@ -1,0 +1,52 @@
+---
+import {Plus} from '@lucide/astro';
+import TrustLayout from '../../layouts/TrustLayout.astro';
+import AboutCompanyIntro from './AboutCompanyIntro.astro';
+import AboutCredentials from './AboutCredentials.astro';
+import AboutPhotograph from './AboutPhotograph.astro';
+import {trustPages} from '../../data/trustContent';
+import {companyProfile} from '../../data/company';
+import {aboutStudy} from '../../data/aboutLandingStudy';
+import {aboutPhoto} from '../../data/aboutPhotographs';
+import '../../styles/company-profile.css';
+const content=trustPages.company;
+const credentials=content.blocks.find(block=>block.credentials)!;
+const questions=aboutStudy.questions;
+---
+<TrustLayout title={content.title} description={content.description} group="about" label={content.label} image={aboutPhoto('office').src} modified={companyProfile.modified} {questions}>
+ <div class="about-page">
+  <AboutCompanyIntro opening={content.opening}/>
+  <span id="company-services" class="ap-anchor" aria-hidden="true"></span>
+  <span id="background" class="ap-anchor" aria-hidden="true"></span>
+  <AboutCredentials block={credentials}/>
+  <section class="ap-people ap-section ap-wrap" id="team" aria-labelledby="ap-people-title">
+   <span id="company-background" class="ap-anchor" aria-hidden="true"></span>
+   <header class="ap-heading" data-ap-reveal><h2 id="ap-people-title">Our team in Hangzhou</h2></header>
+   <div class="ap-people-photos">
+    <div data-ap-reveal><AboutPhotograph photo="spring" caption sizes="(max-width: 639px) calc(100vw - 48px), 30vw"/></div>
+    <div data-ap-reveal><AboutPhotograph photo="chongqing" caption sizes="(max-width: 639px) calc(100vw - 48px), 30vw"/></div>
+    <div data-ap-reveal><AboutPhotograph photo="indonesia" caption sizes="(max-width: 639px) calc(100vw - 48px), 30vw"/></div>
+   </div>
+   <a class="ap-text-link ap-news-link" href="/about/news/" data-ap-reveal>More company stories</a>
+  </section>
+  <section class="ap-faq ap-section ap-wrap" aria-label="Questions about KEEYAK">
+   {questions.map(item=><details data-ap-reveal><summary>{item.question}<Plus size={20}/></summary><div class="ap-faq-answer"><p>{item.answer}</p></div></details>)}
+  </section>
+  <span id="hangzhou-office" class="ap-anchor" aria-hidden="true"></span>
+  <span id="company-inquiry" class="ap-anchor" aria-hidden="true"></span>
+ </div>
+</TrustLayout>
+<script>
+ const elements=[...document.querySelectorAll<HTMLElement>('.about-page [data-ap-reveal]')];
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ if(!reduced.matches&&'IntersectionObserver' in window){
+  const observer=new IntersectionObserver(entries=>{
+   entries.filter(entry=>entry.isIntersecting).sort((a,b)=>elements.indexOf(a.target as HTMLElement)-elements.indexOf(b.target as HTMLElement)).forEach((entry,index)=>{
+    const element=entry.target as HTMLElement;
+    element.animate([{opacity:.35,transform:'translateY(16px)'},{opacity:1,transform:'translateY(0)'}],{duration:560,delay:Math.min(index,3)*70,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'});
+    observer.unobserve(element);
+   });
+  },{threshold:.12});
+  elements.forEach(element=>observer.observe(element));
+ }
+</script>

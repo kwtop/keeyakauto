@@ -1,0 +1,27 @@
+---
+import Header from '../components/home-autohaus/Header.astro';
+import Footer from '../components/design-endings/Footer.astro';
+import {homeHero} from '../data/homeHero';
+import '../styles/global.css';
+import '../styles/home-autohaus.css';
+import '../styles/home-compact.css';
+import '../styles/home-navigation.css';
+import '../styles/home-relationships.css';
+import '../styles/ending-options.css';
+interface Props {title:string;description:string;variant:'a'|'b';}
+const {title,description,variant}=Astro.props;
+---
+<!doctype html>
+<html lang="en"><head>
+ <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <meta name="theme-color" content="#ffffff"/><meta name="robots" content="noindex,nofollow"/>
+ <meta name="description" content={description}/>
+ <meta property="og:type" content="website"/><meta property="og:title" content={`${title} | KEEYAK Auto`}/><meta property="og:description" content={description}/><meta property="og:image" content={homeHero('hero-desktop').src}/>
+ <link rel="icon" href="/favicon.png" type="image/png" sizes="256x256"/>
+ <link rel="preload" href="/fonts/InterDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin/>
+ <title>{title} | KEEYAK Auto</title>
+</head><body class={`autohaus-home ending-preview ending-preview--${variant}`}>
+ <svg class="brand-color-filter" width="0" height="0" aria-hidden="true"><defs><filter id="autohaus-wordmark-light" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1 -1 1 0 0 1 -1 0 1 0 1 0 0 -1 0 1"/><feComposite in2="SourceAlpha" operator="in"/></filter><filter id="autohaus-wordmark-dark" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 -1 0 1"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs></svg>
+ <a class="skip-link" href="#main">Skip to content</a>
+ <Header/><main id="main"><slot/></main><Footer variant={variant}/>
+</body></html>

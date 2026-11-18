@@ -1,0 +1,110 @@
+---
+import TrustLayout from '../../../layouts/TrustLayout.astro';
+import TrustIcon from '../../../components/trust/TrustIcon.astro';
+import {trustMedia} from '../../../data/trustMedia';
+import {buyingGuideCategories, buyingGuideInquiry, buyingGuideUpdated, guideEntryHref} from '../../../data/buyingGuideLibrary';
+import {destinationGuides, destinationRegions, countryGuidePath} from '../../../data/destinationGuides';
+import {guideImageRoot, guideImageAlt, type GuideImage} from '../../../data/guideEditorial';
+import '../../../styles/buying-guide-library.css';
+import '../../../styles/buying-guide-hub.css';
+
+const title = 'Buying Guide for Cars from China';
+const description = 'Guides to buying and importing cars from China: costs, inspection, shipping, documents and country requirements for Latin America and North Africa.';
+const cover = trustMedia('buying-guide-multibrand');
+const countryFlags: Record<string, string> = {
+  bolivia:'bo', peru:'pe', chile:'cl', colombia:'co', ecuador:'ec', mexico:'mx',
+  algeria:'dz', morocco:'ma', tunisia:'tn', egypt:'eg',
+};
+const collection = [
+  ...buyingGuideCategories.flatMap(category => category.entries.map(entry => ({name: entry.title, url: guideEntryHref(entry)}))),
+  ...destinationGuides.map(guide => ({name: guide.title, url: countryGuidePath(guide.slug)})),
+];
+const featured: {slug: string; title: string; image: GuideImage}[] = [
+  {slug: 'exw-fob-cif-car-shipping', title: 'Compare FOB & CIF', image: 'ports'},
+  {slug: 'calculate-car-landed-cost', title: 'Calculate landed cost', image: 'quote'},
+  {slug: 'inspect-a-used-car-from-china', title: 'Inspect a used car', image: 'inspection'},
+];
+const entries = buyingGuideCategories.flatMap(category => category.entries);
+const featuredGuides = featured.map(item => {
+  const entry = entries.find(entry => entry.slug === item.slug);
+  if (!entry) throw new Error('Missing featured buying guide: ' + item.slug);
+  return {...item, href: guideEntryHref(entry)};
+});
+---
+<TrustLayout {title} {description} label="Buying Guide" group="export" pageType="CollectionPage" modified={buyingGuideUpdated} image={cover.src} {collection}>
+  <div class="tc-wrap guide-library guide-library--editorial">
+    <header class="guide-library-heading">
+      <div class="guide-library-intro">
+        <h1>{title}</h1>
+        <div class="guide-library-browse">
+          <a class="tc-button" href="#guide-topics">Browse the guides</a>
+          <a class="guide-market-link" href="#country-guides">Browse by country</a>
+        </div>
+      </div>
+      <div class="guide-library-cover">
+        <img src={cover.src} srcset={cover.srcset} sizes="(max-width: 699px) calc(100vw - 40px), (max-width: 1440px) 52vw, 720px"
+          width={cover.width} height={cover.height} alt={cover.alt} fetchpriority="high" decoding="async" data-asset-kind={cover.kind}/>
+      </div>
+    </header>
+    <ul class="guide-featured" aria-label="Featured buying guides" role="list">
+      {featuredGuides.map(guide => {
+        const image = guideImageRoot + guide.image;
+        return <li>
+          <a class="guide-featured-card" href={guide.href}>
+            <div class="guide-featured-photo">
+              <img src={image + '-640.webp'} srcset={`${image}-640.webp 640w, ${image}-960.webp 960w, ${image}-1440.webp 1440w`}
+                sizes="(max-width: 699px) calc(100vw - 50px), (max-width: 1440px) 30vw, 420px"
+                width="1440" height="960" alt={'AI-generated illustration: ' + guideImageAlt[guide.image]}
+                loading="lazy" decoding="async" data-asset-kind="illustration" data-sitemap-image={image + '-1440.webp'}/>
+            </div>
+            <span class="guide-featured-title">{guide.title}</span>
+          </a>
+        </li>;
+      })}
+    </ul>
+    <section class="guide-topics" id="guide-topics" aria-labelledby="guide-topics-title">
+      <h2 id="guide-topics-title">Browse by topic</h2>
+      <div class="guide-category-index">
+        {buyingGuideCategories.map(category => (
+          <section id={category.id} class="guide-category" aria-labelledby={category.id + '-title'}>
+            <h3 id={category.id + '-title'}><TrustIcon name={category.icon} size={26}/>{category.name}</h3>
+            <ul>
+              {category.entries.map(entry => (
+                <li id={entry.anchors?.[0]}>
+                  {entry.anchors?.slice(1).map(anchor => <span class="guide-legacy-anchor" id={anchor} aria-hidden="true"></span>)}
+                  <a href={guideEntryHref(entry)}>{entry.title}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </section>
+    <section class="guide-country-section" id="country-guides" aria-labelledby="country-guides-title">
+      <h2 id="country-guides-title">Country guides</h2>
+      <div class="guide-country-regions">
+        {destinationRegions.map((region, index) => (
+          <section class="guide-country-region" aria-labelledby={'country-region-' + index}>
+            <h3 id={'country-region-' + index}>{region}</h3>
+            <ul class:list={['guide-country-links', {'guide-country-links--three':region === 'Latin America'}]} role="list">
+              {destinationGuides.filter(guide => guide.region === region).map(guide => (
+                <li>
+                  <a href={countryGuidePath(guide.slug)}>
+                    {countryFlags[guide.slug] && <img class="guide-country-flag" src={'/images/country-flags/' + countryFlags[guide.slug] + '.svg'} width="36" height="27" alt="" loading="lazy" decoding="async"/>}
+                    <span>{guide.name}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </section>
+    <section class="guide-library-footer" id="buying-inquiry" aria-labelledby="guide-market-title">
+      <h2 id="guide-market-title">Discuss your vehicle order</h2>
+      <div class="guide-library-actions">
+        <a class="tc-button" href={buyingGuideInquiry}>Discuss a purchase</a>
+      </div>
+    </section>
+  </div>
+</TrustLayout>

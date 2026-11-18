@@ -1,0 +1,28 @@
+---
+import {homePopularModels} from '../../data/homePopularModels';
+import '../../styles/home-popular-models.css';
+const origin=Astro.site||Astro.url.origin;
+const cardSizes='(min-width:1400px) 320px, (min-width:1024px) 23vw, (min-width:600px) 46vw, calc(100vw - 60px - clamp(54px, 13vw, 72px))';
+const modelList={
+  '@context':'https://schema.org',
+  '@type':'ItemList',
+  name:'Best-selling car models at KEEYAK',
+  itemListOrder:'https://schema.org/ItemListUnordered',
+  numberOfItems:homePopularModels.length,
+  itemListElement:homePopularModels.map((model,index)=>({
+    '@type':'ListItem',position:index+1,name:model.name,url:new URL(model.href,origin).href
+  }))
+};
+---
+<section class="ah-popular" id="popular-models" data-ah-section="Best-selling models" aria-labelledby="ah-popular-title">
+ <div class="ah-container">
+  <header class="ah-intro ah-popular-heading"><h2 id="ah-popular-title">Best-selling models</h2></header>
+  <div class="ah-popular-grid ah-model-carousel" tabindex="0" role="group" aria-label="Browse best-selling models">
+   {homePopularModels.map(model=><a class="ah-popular-card" href={model.href} aria-label={model.linkLabel} data-popular-model={model.key}>
+    <div class="ah-popular-photo"><img src={model.image.src} srcset={model.image.srcSet} alt={model.image.alt} width="1448" height="1086" sizes={cardSizes} loading="lazy" decoding="async"/></div>
+    <div class="ah-popular-copy"><h3 class="ah-popular-name">{model.name}</h3></div>
+   </a>)}
+  </div>
+ </div>
+ <script type="application/ld+json" set:html={JSON.stringify(modelList)}/>
+</section>

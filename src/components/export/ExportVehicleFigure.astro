@@ -1,0 +1,13 @@
+---
+import { vehicles, vehicleHref } from '../../data/catalog';
+import {modelCoverPhoto} from '../../data/modelVisuals';
+interface Props { slug:string; kind?:'new'|'used'; caption?:string; class?:string; }
+const {slug,kind='new',caption,class:className=''}=Astro.props;
+const vehicle=vehicles.find(item=>item.slug===slug&&item.kind===kind)!;
+const cover=modelCoverPhoto(vehicle);
+const note=caption || (kind==='used'?'Example from a past listing. Request the identity, condition and current status of the proposed vehicle.':'Catalog model reference. Confirm the exact version and current offer separately.');
+---
+<figure class:list={['ex-photo','ex-vehicle-reference',className]}>
+  <a href={vehicleHref(vehicle)} aria-label={`View ${vehicle.name} model information`}><img {...cover} sizes="(max-width:767px) calc(100vw - 32px), 48vw" alt={`${vehicle.name} ${cover['data-ai-showroom']?'showroom illustration':kind==='used'?'past listing reference':'catalog model reference'}`} width="1448" height="1086" loading="lazy"/></a>
+  <figcaption><a href={vehicleHref(vehicle)}>{vehicle.name}</a>. {note}</figcaption>
+</figure>

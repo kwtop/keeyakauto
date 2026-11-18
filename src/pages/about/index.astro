@@ -1,0 +1,71 @@
+---
+import TrustLayout from '../../layouts/TrustLayout.astro';
+import {aboutLinks} from '../../data/company';
+import {trustMedia} from '../../data/trustMedia';
+
+const photos = [trustMedia('office-original'), trustMedia('vietnam-original')];
+const summaries = [
+  'Meet the Hangzhou team and view our company credentials and records.',
+  'See reports and photographs from exhibitions, office gatherings and team trips.'
+];
+---
+<TrustLayout title="About KEEYAK Auto" description="Meet the team behind KEEYAK Auto, view company records and explore news and events." group="about" label="About Us" image={photos[0].src} pageType="CollectionPage" collection={aboutLinks.map(link => ({name: link.label, url: link.href}))}>
+  <header class="tc-wrap tc-opening about-overview-heading">
+    <h1>About KEEYAK</h1>
+
+  </header>
+  <section class="tc-wrap about-overview-grid" aria-label="Explore KEEYAK">
+    {aboutLinks.map((link, index) => {
+      const photo = photos[index];
+      return <a class="about-overview-card" href={link.href} aria-labelledby={`about-entry-${index}`}>
+        <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} decoding="async"/>
+        <div class="about-overview-copy">
+          <h2 id={`about-entry-${index}`}>{link.label}</h2>
+          <p>{summaries[index]}</p>
+        </div>
+      </a>;
+    })}
+  </section>
+</TrustLayout>
+
+<script>
+  const profileSections = ['team', 'company-documents', 'company-services', 'background', 'company-background', 'company-inquiry', 'hangzhou-office'];
+  if (profileSections.includes(location.hash.slice(1))) {
+    location.replace('/about/company-profile/' + location.search + location.hash);
+  }
+</script>
+
+<style>
+  .about-overview-heading p { max-width: 58ch; }
+  .about-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-grid);
+    padding-bottom: clamp(48px, 7vw, 88px);
+  }
+  .about-overview-card {
+    display: block;
+    padding: var(--tc-photo-frame);
+    border-radius: calc(var(--tc-photo-radius) + var(--tc-photo-frame));
+    background: white;
+    box-shadow: var(--tc-photo-shadow);
+    text-decoration: none;
+    color: inherit;
+  }
+  .about-overview-card:hover { box-shadow: var(--tc-control-shadow); }
+  .about-overview-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--tc-photo-radius);
+  }
+  :global(body.inner-autohaus #main) .about-overview-copy h2 {
+    font-size: var(--heading-list-card);
+    line-height: 1.2;
+    margin: 0;
+  }
+  :global(body.inner-autohaus #main) .about-overview-heading h1 { margin-inline: 0; }
+  @media (max-width: 599px) {
+    .about-overview-grid { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>

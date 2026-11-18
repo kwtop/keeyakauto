@@ -1,0 +1,12 @@
+---
+import {company} from '../data/company';
+import {Mail, MessageCircle} from '@lucide/astro';
+---
+<footer class="cinematic-footer">
+  <div class="cinematic-wrap cinematic-footer-inner">
+    <div class="cinematic-footer-brand"><a class="cinematic-brand" href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" alt="" width="1200" height="219"/></a></div>
+    <nav aria-label="Footer navigation"><a href="/about/">About Us</a><a href="/new-cars/">New Cars</a><a href="/used-cars/">Used Cars</a><a href="/export-services/">Export Services</a><a href="/export-services/faq/">Support</a></nav>
+    <div class="cinematic-footer-contact"><a href={`mailto:${company.email}`} aria-label={`Email ${company.email}`}><Mail size={19} stroke-width={1.5}/></a><a href={company.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Contact KEEYAK on WhatsApp"><MessageCircle size={19} stroke-width={1.5}/></a><a href="/contact/" aria-label="Contact details">Contact</a></div>
+    <div class="cinematic-footer-legal"><span>© {new Date().getFullYear()} {company.legalName}</span><div><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div></div>
+  </div>
+</footer>

@@ -1,0 +1,30 @@
+{
+  "cabin-detail": {
+    "src": "/images/inner-editorial-20261029/guide-cabin-detail-1440.webp",
+    "small": "/images/inner-editorial-20261029/guide-cabin-detail-960.webp",
+    "width": 1440,
+    "height": 960,
+    "srcSet": "/images/inner-editorial-20261029/guide-cabin-detail-480.webp 480w, /images/inner-editorial-20261029/guide-cabin-detail-960.webp 960w, /images/inner-editorial-20261029/guide-cabin-detail-1440.webp 1440w"
+  },
+  "charging-detail": {
+    "src": "/images/inner-editorial-20261029/guide-charging-detail-1440.webp",
+    "small": "/images/inner-editorial-20261029/guide-charging-detail-960.webp",
+    "width": 1440,
+    "height": 960,
+    "srcSet": "/images/inner-editorial-20261029/guide-charging-detail-480.webp 480w, /images/inner-editorial-20261029/guide-charging-detail-960.webp 960w, /images/inner-editorial-20261029/guide-charging-detail-1440.webp 1440w"
+  },
+  "port-overview": {
+    "src": "/images/inner-editorial-20261029/guide-port-overview-1440.webp",
+    "small": "/images/inner-editorial-20261029/guide-port-overview-960.webp",
+    "width": 1440,
+    "height": 960,
+    "srcSet": "/images/inner-editorial-20261029/guide-port-overview-480.webp 480w, /images/inner-editorial-20261029/guide-port-overview-960.webp 960w, /images/inner-editorial-20261029/guide-port-overview-1440.webp 1440w"
+  },
+  "quotation-desk": {
+    "src": "/images/inner-editorial-20261029/guide-quotation-desk-1440.webp",
+    "small": "/images/inner-editorial-20261029/guide-quotation-desk-960.webp",
+    "width": 1440,
+    "height": 960,
+    "srcSet": "/images/inner-editorial-20261029/guide-quotation-desk-480.webp 480w, /images/inner-editorial-20261029/guide-quotation-desk-960.webp 960w, /images/inner-editorial-20261029/guide-quotation-desk-1440.webp 1440w"
+  }
+}

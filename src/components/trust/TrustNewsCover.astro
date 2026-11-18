@@ -1,0 +1,11 @@
+---
+import TrustFigure from './TrustFigure.astro';
+import {storyMedia,trustMedia} from '../../data/trustMedia';
+import {eventHref,type CompanyEvent} from '../../data/companyNews';
+interface Props {event:CompanyEvent;priority?:boolean;}
+const {event,priority=false}=Astro.props;
+const media=storyMedia[event.slug];
+const cover=trustMedia(media);
+const paired=cover.height>cover.width&&event.images.length>1?event.images.slice(0,2):[];
+---
+{paired.length===2?<figure class="tc-figure tc-news-cover-pair"><a class="tc-image-link" href={eventHref(event)} aria-label={event.title}>{paired.map(photo=><img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async"/>)}</a></figure>:<TrustFigure {media} href={eventHref(event)} {priority}/>}

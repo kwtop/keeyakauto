@@ -1,0 +1,51 @@
+body.inner-autohaus #main .tc-site--refined .news-record .tc-event-lead {
+ display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);
+ align-items:center;
+ gap:clamp(32px,6vw,96px);
+ padding-block:32px 48px;
+}
+body.inner-autohaus #main .tc-site--refined .news-record .tc-event-lead--portrait {
+ grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+}
+body.inner-autohaus #main .tc-site--refined .news-record .tc-event-heading {text-align:left}
+body.inner-autohaus #main .tc-site--refined .news-record .tc-event-heading h1 {
+ margin-inline:0;
+ font-size:var(--heading-article);
+ line-height:1.12;
+ text-wrap:balance;
+}
+body.inner-autohaus #main .news-record .tc-event-heading .tc-story-meta {
+ justify-content:flex-start;
+ flex-wrap:wrap;
+ gap:6px 16px;
+}
+body.inner-autohaus #main .news-record .news-record-summary {
+ max-width:44ch;
+ margin-top:20px;
+ font-size:clamp(16px,1.3vw,18px);
+ line-height:var(--reading-leading);
+}
+body.inner-autohaus #main .news-record .tc-event-image {justify-content:center}
+body.inner-autohaus #main .news-record .tc-event-image img {max-height:560px}
+body.inner-autohaus #main .news-record .tc-story-body {
+ border-top:1px solid var(--tc-line);
+}
+body.inner-autohaus #main .news-record .tc-story-copy {max-width:var(--reading-measure);margin-inline:auto}
+body.inner-autohaus #main .news-record .tc-story-copy p {font-size:17px;line-height:var(--reading-leading)}
+body.inner-autohaus #main .news-record .news-record-related-heading {
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:space-between;
+ align-items:baseline;
+ gap:12px 24px;
+}
+body.inner-autohaus #main .news-record .news-record-contact {margin-top:28px}
+@media(max-width:809px) {
+ body.inner-autohaus #main .tc-site--refined .news-record .tc-event-lead {
+  grid-template-columns:minmax(0,1fr);
+  gap:24px;
+  padding-block:24px 32px;
+ }
+ body.inner-autohaus #main .news-record .tc-event-image img {max-height:480px}
+}

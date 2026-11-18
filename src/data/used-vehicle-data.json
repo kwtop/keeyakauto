@@ -1,0 +1,4163 @@
+{
+  "importedAt": "2026-10-26",
+  "records": [
+    {
+      "kind": "used",
+      "brand": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "slug": "t-cross",
+      "name": "Volkswagen T-Cross",
+      "modelName": "T-Cross",
+      "year": "2023",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/volkswagen/t-cross/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/volkswagen/t-cross/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 Revised 1.5L Automatic Style",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/01.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/02.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/03.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/04.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/05.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/06.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/07.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/08.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/09.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/t-cross/10.jpg",
+          "alt": "Volkswagen T-Cross supplied vehicle photograph 10",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 3",
+          "cell": "E3"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2025-01",
+          "source": "Supplied used-car workbook / 二手车 / row 3",
+          "cell": "J3"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "43877",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 3",
+          "cell": "I3"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 3",
+          "cell": "F3"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5L",
+          "source": "Supplied used-car workbook / 二手车 / row 3",
+          "cell": "G3"
+        }
+      ],
+      "presentationImage": {
+        "src": "/images/used-catalog/volkswagen/t-cross/presentation.png",
+        "original": "/images/used-catalog/volkswagen/t-cross/01.jpg",
+        "note": "Catalog cover background and framing edited with AI. Original vehicle photographs are shown in this gallery."
+      },
+      "usedRecord": {
+        "reference": "UC-20261026-003",
+        "trim": "2023 Revised 1.5L Automatic Style",
+        "registrationMonth": "2025-01",
+        "mileageKm": 43877,
+        "productionMonth": "2024-04",
+        "conditionNote": "The supplied condition note records repainting of the right rear door.",
+        "keys": 1,
+        "needsReview": false,
+        "sourceRow": 3
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Volkswagen",
+      "brandSlug": "volkswagen",
+      "slug": "lavida",
+      "name": "Volkswagen Lavida",
+      "modelName": "Lavida",
+      "year": "2023",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/volkswagen/lavida/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/volkswagen/lavida/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 Revised 1.5L Automatic Enjoy",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/01.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/02.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/03.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/04.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/05.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/06.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/07.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/08.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/volkswagen/lavida/09.jpg",
+          "alt": "Volkswagen Lavida supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 4",
+          "cell": "E4"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2023-12",
+          "source": "Supplied used-car workbook / 二手车 / row 4",
+          "cell": "J4"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "64176",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 4",
+          "cell": "I4"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 4",
+          "cell": "F4"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5L",
+          "source": "Supplied used-car workbook / 二手车 / row 4",
+          "cell": "G4"
+        }
+      ],
+      "presentationImage": {
+        "src": "/images/used-catalog/volkswagen/lavida/presentation.png",
+        "original": "/images/used-catalog/volkswagen/lavida/01.jpg",
+        "note": "Catalog cover background and framing edited with AI. Original vehicle photographs are shown in this gallery."
+      },
+      "usedRecord": {
+        "reference": "UC-20261026-004",
+        "trim": "2023 Revised 1.5L Automatic Enjoy",
+        "registrationMonth": "2023-12",
+        "mileageKm": 64176,
+        "productionMonth": "2023-12",
+        "conditionNote": "The supplied condition note records repainting; the affected panels are not specified.",
+        "keys": 1,
+        "needsReview": false,
+        "sourceRow": 4
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "AION",
+      "brandSlug": "aion",
+      "slug": "s",
+      "name": "AION S",
+      "modelName": "S",
+      "year": "2023",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/aion/s/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/aion/s/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 Mei 580 LFP",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/aion/s/01.jpg",
+          "alt": "AION S supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/02.jpg",
+          "alt": "AION S supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/03.jpg",
+          "alt": "AION S supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/04.jpg",
+          "alt": "AION S supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/05.jpg",
+          "alt": "AION S supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/06.jpg",
+          "alt": "AION S supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/07.jpg",
+          "alt": "AION S supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/08.jpg",
+          "alt": "AION S supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/s/09.jpg",
+          "alt": "AION S supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 5",
+          "cell": "E5"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2024-11",
+          "source": "Supplied used-car workbook / 二手车 / row 5",
+          "cell": "J5"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "33000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 5",
+          "cell": "I5"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 5",
+          "cell": "F5"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "480",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 5",
+          "cell": "G5",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-005",
+        "trim": "2023 Mei 580 LFP",
+        "registrationMonth": "2024-11",
+        "mileageKm": 33000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 5
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "slug": "seagull",
+      "name": "BYD Seagull",
+      "modelName": "Seagull",
+      "year": "2025",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/byd/seagull/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/byd/seagull/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2025 Smart Driving 305km Freedom",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/byd/seagull/01.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/02.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/03.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/04.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/05.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/06.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/07.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/08.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seagull/09.jpg",
+          "alt": "BYD Seagull supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2025",
+          "source": "Supplied used-car workbook / 二手车 / row 6",
+          "cell": "E6"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2026-04",
+          "source": "Supplied used-car workbook / 二手车 / row 6",
+          "cell": "J6"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "8000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 6",
+          "cell": "I6"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 6",
+          "cell": "F6"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "305",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 6",
+          "cell": "G6",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-006",
+        "trim": "2025 Smart Driving 305km Freedom",
+        "registrationMonth": "2026-04",
+        "mileageKm": 8000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 6
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "slug": "seal-07-dm-i",
+      "name": "BYD Seal 07 DM-i",
+      "modelName": "Seal 07 DM-i",
+      "year": "2026",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/byd/seal-07-dm-i/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/byd/seal-07-dm-i/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2026 DM-i 1.5T 230km Flagship",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/01.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/02.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/03.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/04.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/05.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/06.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/07.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/seal-07-dm-i/08.jpg",
+          "alt": "BYD Seal 07 DM-i supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2026",
+          "source": "Supplied used-car workbook / 二手车 / row 7",
+          "cell": "E7"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2025-09",
+          "source": "Supplied used-car workbook / 二手车 / row 7",
+          "cell": "J7"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "18000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 7",
+          "cell": "I7"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 7",
+          "cell": "F7"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "230",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 7",
+          "cell": "G7",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-007",
+        "trim": "2026 DM-i 1.5T 230km Flagship",
+        "registrationMonth": "2025-09",
+        "mileageKm": 18000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 7
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "slug": "qin-plus-dm-i",
+      "name": "BYD Qin PLUS DM-i",
+      "modelName": "Qin PLUS DM-i",
+      "year": "2023",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/byd/qin-plus-dm-i/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/byd/qin-plus-dm-i/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 Champion DM-i 120km Beyond",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/01.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/02.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/03.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/04.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/05.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/06.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/07.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/08.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/qin-plus-dm-i/09.jpg",
+          "alt": "BYD Qin PLUS DM-i supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 8",
+          "cell": "E8"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2023-03",
+          "source": "Supplied used-car workbook / 二手车 / row 8",
+          "cell": "J8"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "56000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 8",
+          "cell": "I8"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 8",
+          "cell": "F8"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "120",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 8",
+          "cell": "G8",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-008",
+        "trim": "2023 Champion DM-i 120km Beyond",
+        "registrationMonth": "2023-03",
+        "mileageKm": 56000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 8
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Leapmotor",
+      "brandSlug": "leapmotor",
+      "slug": "b01",
+      "name": "Leapmotor B01",
+      "modelName": "B01",
+      "year": "2025",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/leapmotor/b01/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/leapmotor/b01/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2025 550 LiDAR",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/leapmotor/b01/01.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/02.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/03.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/04.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/05.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/06.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/07.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/08.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/b01/09.jpg",
+          "alt": "Leapmotor B01 supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2025",
+          "source": "Supplied used-car workbook / 二手车 / row 9",
+          "cell": "E9"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2026-04",
+          "source": "Supplied used-car workbook / 二手车 / row 9",
+          "cell": "J9"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "2000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 9",
+          "cell": "I9"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 9",
+          "cell": "F9"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "550",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 9",
+          "cell": "G9",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-009",
+        "trim": "2025 550 LiDAR",
+        "registrationMonth": "2026-04",
+        "mileageKm": 2000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 9
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Changan",
+      "brandSlug": "changan",
+      "slug": "eado-plus",
+      "name": "Changan Eado PLUS",
+      "modelName": "Eado PLUS",
+      "year": "2020",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/changan/eado-plus/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/changan/eado-plus/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2020 Blue Core NE 1.4T GDI DCT Flagship",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/changan/eado-plus/01.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/eado-plus/02.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/eado-plus/03.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/eado-plus/04.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/eado-plus/05.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/eado-plus/06.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/eado-plus/07.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/eado-plus/08.jpg",
+          "alt": "Changan Eado PLUS supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2020",
+          "source": "Supplied used-car workbook / 二手车 / row 10",
+          "cell": "E10"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2020-11",
+          "source": "Supplied used-car workbook / 二手车 / row 10",
+          "cell": "J10"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "80000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 10",
+          "cell": "I10"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 10",
+          "cell": "F10"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.4T",
+          "source": "Supplied used-car workbook / 二手车 / row 10",
+          "cell": "G10"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-010",
+        "trim": "2020 Blue Core NE 1.4T GDI DCT Flagship",
+        "registrationMonth": "2020-11",
+        "mileageKm": 80000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 10
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Deepal",
+      "brandSlug": "deepal",
+      "slug": "l07",
+      "name": "Deepal L07",
+      "modelName": "L07",
+      "year": "2024",
+      "body": "Sedan",
+      "category": "Sedan",
+      "powertrain": "EREV",
+      "seats": null,
+      "image": "/images/used-catalog/deepal/l07/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/deepal/l07/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2024 230Max Qianzhi",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/deepal/l07/01.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/02.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/03.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/04.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/05.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/06.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/07.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/08.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/l07/09.jpg",
+          "alt": "Deepal L07 supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2024",
+          "source": "Supplied used-car workbook / 二手车 / row 11",
+          "cell": "E11"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2024-10",
+          "source": "Supplied used-car workbook / 二手车 / row 11",
+          "cell": "J11"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "10000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 11",
+          "cell": "I11"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "EREV",
+          "source": "Supplied used-car workbook / 二手车 / row 11",
+          "cell": "F11"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "1330",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 11",
+          "cell": "G11",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-011",
+        "trim": "2024 230Max Qianzhi",
+        "registrationMonth": "2024-10",
+        "mileageKm": 10000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 11
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "AION",
+      "brandSlug": "aion",
+      "slug": "y-plus",
+      "name": "AION Y Plus",
+      "modelName": "Y Plus",
+      "year": "2023",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/aion/y-plus/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/aion/y-plus/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 Plus 610 Smart Leader, ternary lithium",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/aion/y-plus/01.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/02.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/03.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/04.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/05.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/06.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/07.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/08.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/aion/y-plus/09.jpg",
+          "alt": "AION Y Plus supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 23",
+          "cell": "E23"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2024-02",
+          "source": "Supplied used-car workbook / 二手车 / row 23",
+          "cell": "J23"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "28000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 23",
+          "cell": "I23"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 23",
+          "cell": "F23"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "610",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 23",
+          "cell": "G23",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-023",
+        "trim": "2023 Plus 610 Smart Leader, ternary lithium",
+        "registrationMonth": "2024-02",
+        "mileageKm": 28000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 23
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "BYD",
+      "brandSlug": "byd",
+      "slug": "song-plus-dm-i",
+      "name": "BYD Song PLUS DM-i",
+      "modelName": "Song PLUS DM-i",
+      "year": "2021",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/byd/song-plus-dm-i/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/byd/song-plus-dm-i/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2021 DM-i 110km Flagship Plus 5G",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/01.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/02.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/03.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/04.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/05.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/06.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/07.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/08.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/byd/song-plus-dm-i/09.jpg",
+          "alt": "BYD Song PLUS DM-i supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2021",
+          "source": "Supplied used-car workbook / 二手车 / row 24",
+          "cell": "E24"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2022-10",
+          "source": "Supplied used-car workbook / 二手车 / row 24",
+          "cell": "J24"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "20000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 24",
+          "cell": "I24"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 24",
+          "cell": "F24"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "110",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 24",
+          "cell": "G24",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-024",
+        "trim": "2021 DM-i 110km Flagship Plus 5G",
+        "registrationMonth": "2022-10",
+        "mileageKm": 20000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 24
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Haval",
+      "brandSlug": "haval",
+      "slug": "menglong",
+      "name": "Haval Menglong",
+      "modelName": "Menglong",
+      "year": "2024",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/haval/menglong/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/haval/menglong/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2024 Hi4 145 Pro",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/haval/menglong/01.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/02.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/03.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/04.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/05.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/06.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/07.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/08.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/menglong/09.jpg",
+          "alt": "Haval Menglong supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2024",
+          "source": "Supplied used-car workbook / 二手车 / row 25",
+          "cell": "E25"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2024-09",
+          "source": "Supplied used-car workbook / 二手车 / row 25",
+          "cell": "J25"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "27000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 25",
+          "cell": "I25"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 25",
+          "cell": "F25"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "145",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 25",
+          "cell": "G25",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-025",
+        "trim": "2024 Hi4 145 Pro",
+        "registrationMonth": "2024-09",
+        "mileageKm": 27000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 25
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Haval",
+      "brandSlug": "haval",
+      "slug": "h6-pro",
+      "name": "Haval H6 1.5T Pro",
+      "modelName": "H6 1.5T Pro",
+      "year": "2024",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/haval/h6-pro/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/haval/h6-pro/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2024 1.5T 2WD Pro",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/haval/h6-pro/01.jpg",
+          "alt": "Haval H6 1.5T Pro supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-pro/02.jpg",
+          "alt": "Haval H6 1.5T Pro supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-pro/03.jpg",
+          "alt": "Haval H6 1.5T Pro supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-pro/05.jpg",
+          "alt": "Haval H6 1.5T Pro supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-pro/07.jpg",
+          "alt": "Haval H6 1.5T Pro supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-pro/08.jpg",
+          "alt": "Haval H6 1.5T Pro supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-pro/09.jpg",
+          "alt": "Haval H6 1.5T Pro supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2024",
+          "source": "Supplied used-car workbook / 二手车 / row 26",
+          "cell": "E26"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2025-04",
+          "source": "Supplied used-car workbook / 二手车 / row 26",
+          "cell": "J26"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "5000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 26",
+          "cell": "I26"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 26",
+          "cell": "F26"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5T",
+          "source": "Supplied used-car workbook / 二手车 / row 26",
+          "cell": "G26"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-026",
+        "trim": "2024 1.5T 2WD Pro",
+        "registrationMonth": "2025-04",
+        "mileageKm": 5000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 26
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Haval",
+      "brandSlug": "haval",
+      "slug": "h6-guochao",
+      "name": "Haval H6 Guochao",
+      "modelName": "H6 Guochao",
+      "year": "2023",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/haval/h6-guochao/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/haval/h6-guochao/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 Guochao 1.5T Automatic Urban",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/01.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/02.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/03.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/04.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/05.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/06.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/07.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/08.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/haval/h6-guochao/09.jpg",
+          "alt": "Haval H6 Guochao supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 27",
+          "cell": "E27"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2024-07",
+          "source": "Supplied used-car workbook / 二手车 / row 27",
+          "cell": "J27"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "20000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 27",
+          "cell": "I27"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 27",
+          "cell": "F27"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5T",
+          "source": "Supplied used-car workbook / 二手车 / row 27",
+          "cell": "G27"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-027",
+        "trim": "2023 Guochao 1.5T Automatic Urban",
+        "registrationMonth": "2024-07",
+        "mileageKm": 20000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 27
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Roewe",
+      "brandSlug": "roewe",
+      "slug": "rx5-plus",
+      "name": "Roewe RX5 PLUS",
+      "modelName": "RX5 PLUS",
+      "year": "2021",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/roewe/rx5-plus/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/roewe/rx5-plus/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2021 PLUS 330TGI Automatic Smart Premium",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/01.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/02.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/03.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/04.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/05.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/06.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/07.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/08.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/09.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/rx5-plus/10.jpg",
+          "alt": "Roewe RX5 PLUS supplied vehicle photograph 10",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2021",
+          "source": "Supplied used-car workbook / 二手车 / row 28",
+          "cell": "E28"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2022-03",
+          "source": "Supplied used-car workbook / 二手车 / row 28",
+          "cell": "J28"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "33000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 28",
+          "cell": "I28"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 28",
+          "cell": "F28"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5T",
+          "source": "Supplied used-car workbook / 二手车 / row 28",
+          "cell": "G28"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-028",
+        "trim": "2021 PLUS 330TGI Automatic Smart Premium",
+        "registrationMonth": "2022-03",
+        "mileageKm": 33000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 28
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Changan",
+      "brandSlug": "changan",
+      "slug": "cs55-plus",
+      "name": "Changan CS55 PLUS",
+      "modelName": "CS55 PLUS",
+      "year": "2021",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/changan/cs55-plus/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/changan/cs55-plus/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2021 Blue Core 1.5T DCT Luxury",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/01.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/02.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/03.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/04.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/05.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/06.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/07.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/08.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs55-plus/09.jpg",
+          "alt": "Changan CS55 PLUS supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2021",
+          "source": "Supplied used-car workbook / 二手车 / row 29",
+          "cell": "E29"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2021-01",
+          "source": "Supplied used-car workbook / 二手车 / row 29",
+          "cell": "J29"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "70000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 29",
+          "cell": "I29"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 29",
+          "cell": "F29"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5T",
+          "source": "Supplied used-car workbook / 二手车 / row 29",
+          "cell": "G29"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-029",
+        "trim": "2021 Blue Core 1.5T DCT Luxury",
+        "registrationMonth": "2021-01",
+        "mileageKm": 70000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 29
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Changan",
+      "brandSlug": "changan",
+      "slug": "cs75-plus",
+      "name": "Changan CS75 PLUS",
+      "modelName": "CS75 PLUS",
+      "year": "2022",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/changan/cs75-plus/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/changan/cs75-plus/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2022 1.5T Automatic Premium",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/01.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/02.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/03.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/04.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/05.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/06.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/07.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/08.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/changan/cs75-plus/09.jpg",
+          "alt": "Changan CS75 PLUS supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2022",
+          "source": "Supplied used-car workbook / 二手车 / row 30",
+          "cell": "E30"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2022-01",
+          "source": "Supplied used-car workbook / 二手车 / row 30",
+          "cell": "J30"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "48000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 30",
+          "cell": "I30"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 30",
+          "cell": "F30"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5T",
+          "source": "Supplied used-car workbook / 二手车 / row 30",
+          "cell": "G30"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-030",
+        "trim": "2022 1.5T Automatic Premium",
+        "registrationMonth": "2022-01",
+        "mileageKm": 48000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 30
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Leapmotor",
+      "brandSlug": "leapmotor",
+      "slug": "c16",
+      "name": "Leapmotor C16",
+      "modelName": "C16",
+      "year": "2024",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "EREV",
+      "seats": null,
+      "image": "/images/used-catalog/leapmotor/c16/01.png",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/leapmotor/c16/01.png",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2024 EREV 200 Premium",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/leapmotor/c16/01.png",
+          "alt": "Leapmotor C16 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c16/02.jpg",
+          "alt": "Leapmotor C16 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c16/03.jpg",
+          "alt": "Leapmotor C16 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c16/04.jpg",
+          "alt": "Leapmotor C16 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c16/05.png",
+          "alt": "Leapmotor C16 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c16/06.png",
+          "alt": "Leapmotor C16 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c16/07.png",
+          "alt": "Leapmotor C16 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2024",
+          "source": "Supplied used-car workbook / 二手车 / row 31",
+          "cell": "E31"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2025-04",
+          "source": "Supplied used-car workbook / 二手车 / row 31",
+          "cell": "J31"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "27200",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 31",
+          "cell": "I31"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "EREV",
+          "source": "Supplied used-car workbook / 二手车 / row 31",
+          "cell": "F31"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "1.5L",
+          "source": "Supplied used-car workbook / 二手车 / row 31",
+          "cell": "G31"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-031",
+        "trim": "2024 EREV 200 Premium",
+        "registrationMonth": "2025-04",
+        "mileageKm": 27200,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 31
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Leapmotor",
+      "brandSlug": "leapmotor",
+      "slug": "c11",
+      "name": "Leapmotor C11",
+      "modelName": "C11",
+      "year": "2026",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/leapmotor/c11/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/leapmotor/c11/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2026 EV 640 LiDAR",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/leapmotor/c11/01.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/02.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/03.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/04.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/05.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/06.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/07.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/08.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/leapmotor/c11/09.jpg",
+          "alt": "Leapmotor C11 supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2026",
+          "source": "Supplied used-car workbook / 二手车 / row 32",
+          "cell": "E32"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2025-10",
+          "source": "Supplied used-car workbook / 二手车 / row 32",
+          "cell": "J32"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "28000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 32",
+          "cell": "I32"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 32",
+          "cell": "F32"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "640",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 32",
+          "cell": "G32",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-032",
+        "trim": "2026 EV 640 LiDAR",
+        "registrationMonth": "2025-10",
+        "mileageKm": 28000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 32
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Li Auto",
+      "brandSlug": "li-auto",
+      "slug": "l7",
+      "name": "Li Auto L7",
+      "modelName": "L7",
+      "year": "2023",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "EREV",
+      "seats": null,
+      "image": "/images/used-catalog/li-auto/l7/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/li-auto/l7/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 Air",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/li-auto/l7/01.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/02.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/03.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/04.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/05.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/06.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/07.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/08.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/li-auto/l7/09.jpg",
+          "alt": "Li Auto L7 supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 33",
+          "cell": "E33"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2023-04",
+          "source": "Supplied used-car workbook / 二手车 / row 33",
+          "cell": "J33"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "73000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 33",
+          "cell": "I33"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "EREV",
+          "source": "Supplied used-car workbook / 二手车 / row 33",
+          "cell": "F33"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "1315",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 33",
+          "cell": "G33",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-033",
+        "trim": "2023 Air",
+        "registrationMonth": "2023-04",
+        "mileageKm": 73000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 33
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Wuling",
+      "brandSlug": "wuling",
+      "slug": "bingo-plus",
+      "name": "Wuling Bingo PLUS",
+      "modelName": "Bingo PLUS",
+      "year": "2024",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Pure Electric",
+      "seats": 5,
+      "image": "/images/used-catalog/wuling/bingo-plus/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/wuling/bingo-plus/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2024 330km 5-seat",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/01.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/02.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/03.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/04.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/05.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/06.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/07.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/08.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/bingo-plus/09.jpg",
+          "alt": "Wuling Bingo PLUS supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2024",
+          "source": "Supplied used-car workbook / 二手车 / row 34",
+          "cell": "E34"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2025-03",
+          "source": "Supplied used-car workbook / 二手车 / row 34",
+          "cell": "J34"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "20000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 34",
+          "cell": "I34"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 34",
+          "cell": "F34"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "330",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 34",
+          "cell": "G34",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-034",
+        "trim": "2024 330km 5-seat",
+        "registrationMonth": "2025-03",
+        "mileageKm": 20000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 34
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Fangchengbao",
+      "brandSlug": "fangchengbao",
+      "slug": "bao-5",
+      "name": "Fangchengbao Bao 5",
+      "modelName": "Bao 5",
+      "year": "2023",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/fangchengbao/bao-5/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/fangchengbao/bao-5/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 DiSus Flagship",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/01.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/02.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/03.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/04.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/05.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/06.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/07.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/08.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/bao-5/09.jpg",
+          "alt": "Fangchengbao Bao 5 supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 35",
+          "cell": "E35"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2024-08",
+          "source": "Supplied used-car workbook / 二手车 / row 35",
+          "cell": "J35"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "77000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 35",
+          "cell": "I35"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 35",
+          "cell": "F35"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "1200",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 35",
+          "cell": "G35",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-035",
+        "trim": "2023 DiSus Flagship",
+        "registrationMonth": "2024-08",
+        "mileageKm": 77000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 35
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Fangchengbao",
+      "brandSlug": "fangchengbao",
+      "slug": "tai-7-awd-ultra",
+      "name": "Fangchengbao Tai 7 AWD Ultra",
+      "modelName": "Tai 7 AWD Ultra",
+      "year": "2025",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2025 190KM AWD Ultra",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/01.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/02.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/03.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/04.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/05.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/06.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/07.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/08.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-awd-ultra/09.jpg",
+          "alt": "Fangchengbao Tai 7 AWD Ultra supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2025",
+          "source": "Supplied used-car workbook / 二手车 / row 36",
+          "cell": "E36"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2026-03",
+          "source": "Supplied used-car workbook / 二手车 / row 36",
+          "cell": "J36"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "16000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 36",
+          "cell": "I36"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 36",
+          "cell": "F36"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "190",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 36",
+          "cell": "G36",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-036",
+        "trim": "2025 190KM AWD Ultra",
+        "registrationMonth": "2026-03",
+        "mileageKm": 16000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 36
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Fangchengbao",
+      "brandSlug": "fangchengbao",
+      "slug": "tai-7-2wd-max",
+      "name": "Fangchengbao Tai 7 2WD Max",
+      "modelName": "Tai 7 2WD Max",
+      "year": "2025",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/fangchengbao/tai-7-2wd-max/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/fangchengbao/tai-7-2wd-max/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2025 200KM 2WD Max",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/01.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/02.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/03.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/04.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/05.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/06.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/07.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/08.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/fangchengbao/tai-7-2wd-max/09.jpg",
+          "alt": "Fangchengbao Tai 7 2WD Max supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2025",
+          "source": "Supplied used-car workbook / 二手车 / row 37",
+          "cell": "E37"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2026-06",
+          "source": "Supplied used-car workbook / 二手车 / row 37",
+          "cell": "J37"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "200",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 37",
+          "cell": "I37"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 37",
+          "cell": "F37"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "200",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 37",
+          "cell": "G37",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-037",
+        "trim": "2025 200KM 2WD Max",
+        "registrationMonth": "2026-06",
+        "mileageKm": 200,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 37
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Deepal",
+      "brandSlug": "deepal",
+      "slug": "s07",
+      "name": "Deepal S07",
+      "modelName": "S07",
+      "year": "2026",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/deepal/s07/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/deepal/s07/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2026 630Ultra Huawei Qiankun LiDAR",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/deepal/s07/01.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/02.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/03.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/04.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/05.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/06.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/07.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/08.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/deepal/s07/09.jpg",
+          "alt": "Deepal S07 supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2026",
+          "source": "Supplied used-car workbook / 二手车 / row 38",
+          "cell": "E38"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2026-04",
+          "source": "Supplied used-car workbook / 二手车 / row 38",
+          "cell": "J38"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "4000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 38",
+          "cell": "I38"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 38",
+          "cell": "F38"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "630",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 38",
+          "cell": "G38",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-038",
+        "trim": "2026 630Ultra Huawei Qiankun LiDAR",
+        "registrationMonth": "2026-04",
+        "mileageKm": 4000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 38
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Jetour",
+      "brandSlug": "jetour",
+      "slug": "traveler-c-dm",
+      "name": "Jetour Traveler C-DM",
+      "modelName": "Traveler C-DM",
+      "year": "2024",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "PHEV",
+      "seats": null,
+      "image": "/images/used-catalog/jetour/traveler-c-dm/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/jetour/traveler-c-dm/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2024 C-DM 129KM Linye",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/01.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/02.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/03.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/04.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/05.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/06.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/07.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/08.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/jetour/traveler-c-dm/09.jpg",
+          "alt": "Jetour Traveler C-DM supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2024",
+          "source": "Supplied used-car workbook / 二手车 / row 39",
+          "cell": "E39"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2024-05",
+          "source": "Supplied used-car workbook / 二手车 / row 39",
+          "cell": "J39"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "42000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 39",
+          "cell": "I39"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "PHEV",
+          "source": "Supplied used-car workbook / 二手车 / row 39",
+          "cell": "F39"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "129",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 39",
+          "cell": "G39",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-039",
+        "trim": "2024 C-DM 129KM Linye",
+        "registrationMonth": "2024-05",
+        "mileageKm": 42000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 39
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Toyota",
+      "brandSlug": "toyota",
+      "slug": "bz3x",
+      "name": "Toyota bZ3X",
+      "modelName": "bZ3X",
+      "year": "2025",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/toyota/bz3x/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/toyota/bz3x/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2025 520Pro LiDAR",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/toyota/bz3x/01.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/toyota/bz3x/02.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/toyota/bz3x/03.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/toyota/bz3x/04.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/toyota/bz3x/05.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/toyota/bz3x/06.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/toyota/bz3x/07.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/toyota/bz3x/08.jpg",
+          "alt": "Toyota bZ3X supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2025",
+          "source": "Supplied used-car workbook / 二手车 / row 40",
+          "cell": "E40"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2026-08",
+          "source": "Supplied used-car workbook / 二手车 / row 40",
+          "cell": "J40"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "200",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 40",
+          "cell": "I40"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 40",
+          "cell": "F40"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "520",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 40",
+          "cell": "G40",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-040",
+        "trim": "2025 520Pro LiDAR",
+        "registrationMonth": "2026-08",
+        "mileageKm": 200,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 40
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Roewe",
+      "brandSlug": "roewe",
+      "slug": "imax8",
+      "name": "Roewe iMAX8",
+      "modelName": "iMAX8",
+      "year": "2023",
+      "body": "MPV",
+      "category": "MPV",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/roewe/imax8/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/roewe/imax8/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2023 400TGI Premium",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/roewe/imax8/01.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/02.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/03.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/04.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/05.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/06.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/07.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/08.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/roewe/imax8/09.jpg",
+          "alt": "Roewe iMAX8 supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2023",
+          "source": "Supplied used-car workbook / 二手车 / row 71",
+          "cell": "E71"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2023-07",
+          "source": "Supplied used-car workbook / 二手车 / row 71",
+          "cell": "J71"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "46000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 71",
+          "cell": "I71"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 71",
+          "cell": "F71"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "2.0T",
+          "source": "Supplied used-car workbook / 二手车 / row 71",
+          "cell": "G71"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-071",
+        "trim": "2023 400TGI Premium",
+        "registrationMonth": "2023-07",
+        "mileageKm": 46000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 71
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "Wuling",
+      "brandSlug": "wuling",
+      "slug": "starlight-730-ev",
+      "name": "Wuling Starlight 730 EV",
+      "modelName": "Starlight 730 EV",
+      "year": "2025",
+      "body": "MPV",
+      "category": "MPV",
+      "powertrain": "Pure Electric",
+      "seats": null,
+      "image": "/images/used-catalog/wuling/starlight-730-ev/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/wuling/starlight-730-ev/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2025 EV",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/01.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/02.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/03.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/04.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/05.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/06.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/07.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/08.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/wuling/starlight-730-ev/09.jpg",
+          "alt": "Wuling Starlight 730 EV supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2025",
+          "source": "Supplied used-car workbook / 二手车 / row 72",
+          "cell": "E72"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2026-06",
+          "source": "Supplied used-car workbook / 二手车 / row 72",
+          "cell": "J72"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "20000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 72",
+          "cell": "I72"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Pure Electric",
+          "source": "Supplied used-car workbook / 二手车 / row 72",
+          "cell": "F72"
+        },
+        {
+          "field": "sourceRange",
+          "label": "Range entry in supplied sheet",
+          "value": "500",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 72",
+          "cell": "G72",
+          "note": "Test cycle and electric-only versus combined range are not specified in the sheet. Not a verified driving-range specification."
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-072",
+        "trim": "2025 EV",
+        "registrationMonth": "2026-06",
+        "mileageKm": 20000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 72
+      }
+    },
+    {
+      "kind": "used",
+      "brand": "GWM",
+      "brandSlug": "gwm",
+      "slug": "pao",
+      "name": "GWM Pao",
+      "modelName": "Pao",
+      "year": "2019",
+      "body": "Pickup",
+      "category": "Pickup",
+      "powertrain": "Gasoline",
+      "seats": null,
+      "image": "/images/used-catalog/gwm/pao/01.jpg",
+      "imagePosition": "50% 60%",
+      "source": "/images/used-catalog/gwm/pao/01.jpg",
+      "sourceLabel": "User-supplied used-car record",
+      "sourceNote": "Supplied vehicle details and original photographs. Current availability, mileage and condition require confirmation for the individual car.",
+      "sourceImportedAt": "2026-10-26",
+      "verifiedAt": null,
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "defaultVariantName": "2019 2.0T Automatic Gasoline 4WD Sport",
+      "gallery": [
+        {
+          "src": "/images/used-catalog/gwm/pao/01.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 1",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/02.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 2",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/03.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 3",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/04.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 4",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/05.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 5",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/06.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 6",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/07.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 7",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/08.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 8",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/09.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 9",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        },
+        {
+          "src": "/images/used-catalog/gwm/pao/10.jpg",
+          "alt": "GWM Pao supplied vehicle photograph 10",
+          "treatment": "original",
+          "evidenceType": "model-reference",
+          "note": "Original photograph supplied for this vehicle record. Request current photographs and condition records before purchase."
+        }
+      ],
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2019",
+          "source": "Supplied used-car workbook / 二手车 / row 87",
+          "cell": "E87"
+        },
+        {
+          "field": "registrationMonth",
+          "label": "First registration (as supplied)",
+          "value": "2020-06",
+          "source": "Supplied used-car workbook / 二手车 / row 87",
+          "cell": "J87"
+        },
+        {
+          "field": "mileage",
+          "label": "Recorded mileage",
+          "value": "40000",
+          "unit": "km",
+          "source": "Supplied used-car workbook / 二手车 / row 87",
+          "cell": "I87"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "Supplied used-car workbook / 二手车 / row 87",
+          "cell": "F87"
+        },
+        {
+          "field": "engine",
+          "label": "Engine designation",
+          "value": "2.0T",
+          "source": "Supplied used-car workbook / 二手车 / row 87",
+          "cell": "G87"
+        }
+      ],
+      "usedRecord": {
+        "reference": "UC-20261026-087",
+        "trim": "2019 2.0T Automatic Gasoline 4WD Sport",
+        "registrationMonth": "2020-06",
+        "mileageKm": 40000,
+        "productionMonth": null,
+        "conditionNote": null,
+        "keys": null,
+        "needsReview": false,
+        "sourceRow": 87
+      }
+    }
+  ],
+  "summary": {
+    "records": 30,
+    "brands": 14,
+    "photos": 266,
+    "categories": {
+      "Sedan": 8,
+      "SUV": 19,
+      "MPV": 2,
+      "Pickup": 1
+    },
+    "reviewRows": [
+      3,
+      7,
+      24,
+      34,
+      87
+    ],
+    "unmatchedPhotoFolders": [
+      "大众/23款大众朗逸改款1.5L自动得逸版/2023-1",
+      "大众/大众途铠2023款改款1.5L自动风尚版/2023-1",
+      "大众/大众途铠2023款改款1.5L自动风尚版/2023-2",
+      "大众/大众途铠2023款改款1.5L自动风尚版/2023-3",
+      "大众/大众途铠2023款改款1.5L自动风尚版/2023-4",
+      "大众/大众途铠2023款改款1.5L自动风尚版/2024-1",
+      "大众/大众途铠2023款改款1.5L自动风尚版/2025-2",
+      "大众/大众途铠2023款改款1.5L自动风尚版/2025-3"
+    ]
+  }
+}

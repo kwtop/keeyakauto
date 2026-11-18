@@ -1,0 +1,159 @@
+body.inner-editorial.site-nest.site-volta.is-quote #main {background:var(--paper)}
+body.inner-autohaus.is-quote #main :is(.quote-page-heading,.quote-page,.breadcrumbs) {max-width:1200px}
+body.inner-autohaus #main .nest-inquiry-heading.quote-page-heading {
+ display:block;
+ padding-block:28px;
+ text-align:left;
+}
+body.inner-autohaus #main .nest-inquiry-heading.quote-page-heading h1 {margin:0;max-width:none;font-size:var(--heading-task)}
+.quote-page {--quote-field-space:18px;--quote-section-space:24px}
+body.inner-autohaus #main .quote-page .quote-grid {
+ gap:clamp(22px,3.5vw,48px);
+ grid-template-columns:minmax(0,1.55fr) minmax(280px,.85fr);
+ align-items:start;
+}
+body.inner-autohaus #main .quote-page .quote-form {
+ max-width:none;
+ gap:var(--quote-section-space);
+ padding:clamp(20px,2.8vw,32px);
+ border:1px solid var(--line);
+ border-radius:var(--ed-panel-radius);
+ background:#fdfdfb;
+ box-shadow:var(--ed-panel-shadow);
+}
+body.inner-autohaus #main .quote-page .quote-form .quote-fields {gap:var(--quote-section-space)}
+.quote-page .quote-section {display:grid;min-width:0;gap:var(--quote-field-space)}
+.quote-page .quote-section+.quote-section {padding-top:var(--quote-section-space);border-top:1px solid var(--line)}
+body.inner-autohaus #main .quote-page .quote-form :is(select,textarea,input:not([type=radio],[type=checkbox],[type=hidden])) {
+ min-height:48px;
+ border-radius:var(--ed-control-radius);
+}
+body.inner-autohaus #main .quote-page .quote-form :is(select,textarea,input):not([aria-invalid=true]){border-color:var(--line)}
+body.inner-autohaus #main .quote-page .quote-section-title {display:flex;align-items:center;gap:10px;margin:0;font-size:22px;line-height:1.35;letter-spacing:-.025em}
+.quote-page .quote-section-title svg {flex:none;stroke-width:1.6;color:var(--muted)}
+.quote-page .quote-sr-only {
+ position:absolute;
+ width:1px;
+ height:1px;
+ overflow:hidden;
+ clip-path:inset(50%);
+ white-space:nowrap;
+}
+body.inner-autohaus #main .quote-page .quote-form .quote-stage {
+ margin-top:0;
+ gap:var(--quote-field-space);
+}
+.quote-page .quote-contact-fields {gap:16px}
+.quote-page :is(.quote-contact-input,.quote-message) {display:grid;gap:8px}
+body.inner-autohaus #main .quote-page .quote-message textarea {min-height:112px}
+body.inner-autohaus #main .quote-page .quote-form .vehicle-entry {
+ padding:16px;
+ border:0;
+ border-radius:16px;
+ background:var(--surface);
+ gap:12px;
+}
+body.inner-autohaus #main .quote-page .vehicle-entry-title {float:left}
+.quote-page .quote-vehicle-actions {display:flex;flex-wrap:wrap;justify-content:space-between;gap:0 12px}
+.quote-page .quote-vehicle-actions .quote-remove-model {border:0;color:var(--muted);font-size:14px}
+body.inner-autohaus #main .quote-page .quote-form .quote-add-model {
+ min-height:44px;
+ padding:0 2px;
+ border:0;
+ background:transparent;
+ text-decoration:underline;
+ text-underline-offset:4px;
+}
+body.inner-autohaus #main .quote-page .quote-form .vehicle-entry>.quote-vehicle-basics {
+ grid-template-columns:minmax(0,1.55fr) minmax(130px,1fr) minmax(74px,.5fr);
+ gap:12px;
+}
+body.inner-autohaus #main .quote-page .quote-options {padding-block:0}
+body.inner-autohaus #main .quote-page .quote-options>summary {
+ min-height:44px;
+ line-height:1.45;
+ padding-block:10px;
+}
+.quote-page .quote-options summary span {color:var(--muted);font-size:.875em}
+.quote-page .quote-optional-details>summary {
+ display:grid;
+ grid-template-columns:minmax(0,1fr) 16px;
+ align-items:center;
+ gap:10px;
+}
+.quote-page .quote-optional-details>summary::-webkit-details-marker {display:none}
+.quote-page .quote-optional-details>summary::marker {content:""}
+.quote-page .quote-optional-details>summary>span:first-child {min-width:0;color:inherit;font-size:inherit}
+.quote-page .quote-optional-details>summary small {color:var(--muted);font-size:.8em}
+.quote-page .quote-optional-details>summary svg {grid-column:-2;grid-row:1}
+.quote-page .quote-optional-details[open]>summary {margin-bottom:16px}
+.quote-page .quote-optional-details[open]>summary svg {transform:rotate(180deg)}
+.quote-page .quote-vehicle-selection {overflow:hidden;text-align:right;text-overflow:ellipsis;white-space:nowrap}
+.quote-page .quote-optional-body {display:grid;gap:24px}
+.quote-page :is(.quote-vehicle-fields,.quote-extra) {display:grid;min-width:0;gap:12px}
+.quote-page .quote-optional-body h3 {margin:0;font-size:17px;line-height:1.4}
+.quote-page .quote-optional-body .quote-extra {padding-top:20px;border-top:1px solid var(--line)}
+.quote-page .quote-optional-body .quote-extra :is(label,.form-row) {margin:0}
+.quote-page .quote-vehicle-fields .quote-vehicle-basics {margin-bottom:0}
+.quote-page .quote-review-footer {display:grid;gap:14px}
+.inquiry-submission-fields{display:grid;gap:12px;min-width:0}
+.quote-page .inquiry-submission-fields {gap:0}
+.quote-page .inquiry-submission-fields>div:not(:empty) {margin-top:12px}
+.quote-page .inquiry-submission-fields .inquiry-privacy{display:flex;flex-direction:row;align-items:flex-start;gap:10px;margin:0;font-size:14px;line-height:1.6}
+.quote-page .quote-form .inquiry-submission-fields .inquiry-privacy>input[type=checkbox]{flex:0 0 18px;width:18px;min-width:18px;height:18px;min-height:18px;padding:0;margin:3px 0 0;accent-color:#202321}
+.quote-page .inquiry-privacy>span{min-width:0}
+.quote-page .form-submit:disabled{opacity:.55;cursor:not-allowed}
+body.inner-autohaus #main .quote-page .quote-submit-group {display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px}
+body.inner-autohaus #main .quote-page .quote-submit-group>.form-note {max-width:30ch;margin:0}
+body.inner-autohaus #main .quote-page .quote-clear-draft {display:inline-flex;align-items:center;justify-self:start;gap:6px;min-height:44px;padding:0;margin:0;border:0;background:transparent;color:var(--muted);font-size:13px}
+.quote-page .quote-clear-draft:hover {text-decoration:underline;text-underline-offset:3px}
+body.inner-autohaus #main .quote-page .quote-aside h2 {margin-bottom:12px;font-size:21px;line-height:1.3;letter-spacing:-.025em}
+.quote-page .quote-summary-vehicle,.quote-page .quote-summary dl>div {padding-block:12px}
+.quote-page .quote-summary-vehicle p {overflow-wrap:anywhere}
+body.inner-autohaus #main .quote-page .quote-aside {
+ padding:clamp(24px,2.6vw,32px);
+ border:0;
+ border-radius:var(--ed-panel-radius);
+ background:var(--surface);
+ max-height:calc(100dvh - 132px);
+ overflow-y:auto;
+}
+.quote-page .quote-summary+.quote-contact-card {margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.quote-page .quote-contact-card .quote-direct-contacts {
+ gap:0;
+ margin:0;
+}
+.quote-page .quote-contact-card .quote-direct-contacts li+li {
+ border-top:1px solid var(--line);
+}
+.quote-page .quote-contact-card .quote-direct-contacts a {
+ width:100%;
+ min-height:58px;
+ padding-block:14px;
+ gap:12px;
+ line-height:1.5;
+}
+@media(min-width:600px) {
+ .quote-page .quote-optional-details>summary:has(.quote-vehicle-selection) {
+  grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) 16px;
+ }
+}
+@media(width < 900px) {
+ body.inner-autohaus #main .quote-page .quote-grid {grid-template-columns:minmax(0,1fr)}
+ body.inner-autohaus #main .quote-page .quote-aside {position:static;max-width:none;max-height:none;overflow:visible}
+}
+@media(max-width:599px) {
+ .quote-page {--quote-field-space:16px}
+ body.inner-autohaus #main .nest-inquiry-heading.quote-page-heading {padding-block:22px}
+ body.inner-autohaus #main .quote-page .quote-form .vehicle-entry {padding:12px}
+ body.inner-autohaus #main .quote-page .quote-form .form-row {grid-template-columns:minmax(0,1fr)}
+ body.inner-autohaus #main .quote-page .quote-form .vehicle-entry>.quote-vehicle-basics {grid-template-columns:minmax(0,1fr) minmax(76px,.5fr)}
+ .quote-page .quote-model-field {grid-column:1/-1}
+ body.inner-autohaus #main .quote-page .quote-section-title {font-size:20px}
+ body.inner-autohaus #main .quote-page .quote-aside {padding:24px}
+ body.inner-autohaus #main .quote-page .quote-submit-group {display:grid;gap:12px;justify-items:stretch}
+ body.inner-autohaus #main .quote-page .quote-submit-group .form-submit {width:100%}
+ body.inner-autohaus #main .quote-page .quote-submit-group>.form-note {max-width:none;text-align:center}
+ .quote-page .quote-optional-details>summary {row-gap:4px}
+ .quote-page .quote-vehicle-selection {grid-column:1;text-align:left;white-space:normal;overflow-wrap:anywhere;text-wrap:pretty}
+}

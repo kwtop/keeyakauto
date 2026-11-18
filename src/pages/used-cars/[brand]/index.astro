@@ -1,0 +1,8 @@
+---
+import BrandPage from '../../../components/BrandPage.astro';
+import {vehicles,brands,type Vehicle} from '../../../data/catalog';
+export function getStaticPaths(){return brands('used').map(b=>({params:{brand:b.slug},props:{brand:b.name,items:vehicles.filter(v=>v.kind==='used'&&v.brandSlug===b.slug)}}));}
+interface Props{brand:string;items:Vehicle[];}
+const {brand,items}=Astro.props;
+---
+<BrandPage kind="used" brand={brand} items={items}/>

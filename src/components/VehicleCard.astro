@@ -1,0 +1,16 @@
+---
+import BrandLogo from './BrandLogo';
+import {vehicleCardPhoto} from '../data/modelVisuals';
+import {vehicleSceneFraming} from '../data/catalogSceneFraming';
+import '../styles/catalog-scene-framing.css';
+import {bodyGroupLabel} from '../data/catalogLabels';
+import { vehicleHref, type Vehicle } from '../data/catalog';
+interface Props { vehicle: Vehicle; index?: number; }
+const {vehicle,index=0}=Astro.props;
+const photo=vehicleCardPhoto(vehicle);
+const sceneFraming=vehicle.kind==='new'?vehicleSceneFraming(photo.src):undefined;
+---
+<article class="vehicle-card" data-kind={vehicle.kind}>
+  <a class:list={['vehicle-media',{'vehicle-media--editorial':Boolean(photo.srcSet),'vehicle-media--scene-framed':Boolean(sceneFraming)}]} href={vehicleHref(vehicle)} tabindex="-1" aria-hidden="true"><img src={photo.src} srcset={photo.srcSet} style={sceneFraming} sizes="(min-width:1280px) 400px, (min-width:768px) 32vw, 50vw" alt="" loading={index<2?'eager':'lazy'} width="1400" height="1050" /></a>
+  <div class="vehicle-copy"><h3 class="brand-title"><BrandLogo slug={vehicle.brandSlug} name={vehicle.brand}/><a href={vehicleHref(vehicle)} aria-label={vehicle.name+' details'}>{vehicle.modelName||vehicle.name.replace(vehicle.brand+' ','')}</a></h3><p class="vehicle-meta">{vehicle.year!=='To confirm'&&<span>{vehicle.year}</span>}<span>{bodyGroupLabel(vehicle.body,vehicle.kind)}</span><span>{vehicle.powertrain}</span></p></div>
+</article>

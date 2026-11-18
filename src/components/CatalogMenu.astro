@@ -1,0 +1,41 @@
+---
+import {Search} from '@lucide/astro';
+import {brands, brandHref} from '../data/catalog';
+import {catalogBrandAsset,compactCatalogBrandMarkStyle} from '../data/catalogBrandAssets';
+import BrandPopularityBadge from './BrandPopularityBadge';
+import {brandPopularityRank,brandPopularityDescription} from '../data/brandPopularity';
+import {categoryHref, vehicleCategories, vehicleCategoryLabel} from '../data/vehicleCategories';
+import {vehicleCategoryPaths, vehicleCategoryViewBox, vehicleCategoryWheels} from '../data/vehicleCategoryIcons';
+import '../styles/catalog-discovery.css';
+interface Props {kind: 'new' | 'used'; alphabetical?:boolean; concise?:boolean;}
+const {kind,alphabetical=false,concise=false} = Astro.props;
+const collection = brands(kind);
+if(alphabetical)collection.sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'}));
+---
+<div class:list={['catalog-menu', concise && 'catalog-menu--concise']} data-catalog-menu>
+  <section class="catalog-menu-brands" aria-label={`${kind === 'new' ? 'New' : 'Used'} car brands`}>
+    <div class="catalog-menu-heading">{!concise && <h2>Browse by brand</h2>}<label><Search size={16}/><input type="search" aria-label={`Search ${kind} car brands`} placeholder="Search brands" data-catalog-brand-search/></label></div>
+    <div class="catalog-menu-brand-grid">{collection.map(brand => {
+      const asset = catalogBrandAsset(brand.slug);
+      const rank=brandPopularityRank(brand.slug);
+      return <a href={brandHref(kind, brand.slug)} data-catalog-brand={brand.name.toLowerCase()} data-popular-rank={rank} aria-label={brand.name} aria-description={brandPopularityDescription(brand.slug)} title={brand.name}>
+        <span class:list={['catalog-menu-mark', !asset && 'catalog-menu-wordmark']}>{asset ? <img src={asset.src} style={compactCatalogBrandMarkStyle(brand.slug)} alt="" width="100" height="32" loading="lazy"/> : brand.name}</span>
+        <BrandPopularityBadge slug={brand.slug}/>
+      </a>;
+    })}</div>
+    <p data-catalog-no-brands hidden>No matching brands.</p>
+  </section>
+  <section class="catalog-menu-categories" aria-label="Vehicle categories">{!concise && <h2>Browse by category</h2>}{vehicleCategories.map(category => <a href={categoryHref(kind, category)}><span class="catalog-category-label"><svg class="catalog-category-icon" data-vehicle-category={category} width="32" height="24" viewBox={vehicleCategoryViewBox} fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{vehicleCategoryPaths[category].map(path => <path d={path}/>)}{vehicleCategoryWheels.map(wheel => <circle {...wheel}/>)}</svg><span>{vehicleCategoryLabel(category)}</span></span></a>)}</section>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-catalog-menu]').forEach(menu => {
+    const input = menu.querySelector<HTMLInputElement>('[data-catalog-brand-search]');
+    const links = Array.from(menu.querySelectorAll<HTMLAnchorElement>('[data-catalog-brand]'));
+    input?.addEventListener('input', () => {
+      const term = input.value.trim().toLowerCase();
+      links.forEach(link => link.hidden = !link.dataset.catalogBrand?.includes(term));
+      const empty = menu.querySelector<HTMLElement>('[data-catalog-no-brands]');
+      if (empty) empty.hidden = links.some(link => !link.hidden);
+    });
+  });
+</script>

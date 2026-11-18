@@ -1,0 +1,54 @@
+---
+import ExportPage from '../../layouts/ExportPage.astro';
+import ExportHero from './ExportHero.astro';
+import ExportContents from './ExportContents.astro';
+import ExportInquiry from './ExportInquiry.astro';
+import ExportFigure from './ExportFigure.astro';
+import ExportVehicleFigure from './ExportVehicleFigure.astro';
+import { recordsScene } from './exportStoryMedia';
+import { sourcingInspection as page } from '../../data/exportServices';
+import { exportMedia } from '../../data/exportServiceMedia';
+const find=(id:string)=>page.sections.find(section=>section.id===id)!;
+const requirement=find('requirement'),supply=find('supply'),scope=find('scope'),comparison=find('new-used'),evidence=find('evidence'),exceptions=find('exceptions');
+const hero=exportMedia.inspection;
+const briefTitles=['The vehicle','The quantity','The destination','Used-car preferences'];
+const supplyKinds=['New car','Batch request','Used car'];
+const contents=[{id:'requirement',label:'Requirements'},{id:'scope',label:'Inspection scope'},{id:'evidence',label:'Report & acceptance'}];
+---
+<ExportPage title="Vehicle sourcing and inspection from China" description="Define a car sourcing brief, confirm availability, agree new or used vehicle inspections and review the records before accepting a vehicle." page="sourcing-inspection" image={hero.src}>
+  <ExportHero title={'Vehicle sourcing\nand inspection'} intro="Describe the cars you need. Confirm the offer and agree the inspection before deciding whether the vehicle meets your requirements." image={hero.src} alt={hero.alt} width={hero.width} height={hero.height} small={hero.small}>
+    <div class="ex-related-links"><a class="ex-link" href="#requirement">Prepare the vehicle brief</a><a class="ex-link" href="#service-scope">Who handles each step</a></div>
+  </ExportHero>
+  <ExportContents items={contents}/>
+  <section class="ex-service-brief ex-wrap" id="service-scope" aria-labelledby="ex-sourcing-role-title">
+    <div><h2 id="ex-sourcing-role-title">Sourcing and inspection responsibilities</h2><p>KEEYAK coordinates the vehicle requirement, supplier questions and requested inspection scope. The seller confirms the proposed car; the agreed inspector carries out and records the commissioned checks.</p><a class="ex-link" href="/export-services/#responsibilities">Review the service responsibilities</a></div>
+    <dl><div><dt>Before the check</dt><dd>Agree the vehicle, provider, location, scope, timing, fee and required evidence.</dd></div><div><dt>Before acceptance</dt><dd>Review the dated findings, missing records and exceptions against the order. Record any further action or accepted difference.</dd></div></dl>
+  </section>
+  <section class="ex-section ex-source-brief" id="requirement" data-core-module="requirement" data-module="requirement" aria-labelledby="ex-requirement-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-requirement-title">Define the vehicle your business needs</h2><p>{requirement.body}</p></header>
+    <dl class="ex-brief-list">{requirement.rows!.map(([essential,preference],index)=><div><dt>{briefTitles[index]}</dt><dd><p>{essential}</p><p class="ex-preference">Also useful: {preference}</p></dd></div>)}</dl>
+    <div class="ex-related-links"><a class="ex-link" href="/new-cars/">Explore new-car models</a><a class="ex-link" href="/used-cars/">Explore used-car sourcing</a></div>
+    <div class="ex-availability-inner ex-source-followup" id="supply"><span id="review" class="ex-anchor" aria-hidden="true"></span>
+    <div><h2 id="ex-availability-title">Confirm the exact vehicle and availability</h2><p>{supply.body}</p><a class="ex-link" href="/export-services/buying-guide/compare-car-export-quotes/">Compare the written quotation</a><ExportVehicleFigure slug="camry" class="ex-supply-photo" caption="New-car model reference; confirm the exact version and supply basis."/></div>
+    <div><dl class="ex-supply-list">{supply.points!.map((point,index)=><div><dt>{supplyKinds[index]}</dt><dd>{point.replace(/^(New car|Batch request|Used car):\s*/,'')}</dd></div>)}</dl>
+      <p class="ex-note">{supply.paragraphs![0]}</p><p class="ex-note">{supply.paragraphs![1]}</p>
+    </div>
+    </div>
+  </div></section>
+  <section class="ex-section" id="scope" data-core-module="scope" data-module="scope" aria-labelledby="ex-scope-title"><div class="ex-wrap ex-inspection-scope">
+    <div><h2 id="ex-scope-title">Set the scope of your vehicle inspection</h2><ExportFigure {...exportMedia.inspectionDetail} class="ex-scope-picture"/></div><div><p>{scope.body}</p><ul class="ex-check-list">{scope.points!.map(point=><li>{point}</li>)}</ul><p class="ex-note">Confirm the inspection timing and any charge before arranging the check.</p></div>
+  </div></section>
+  <section class="ex-section ex-soft" id="new-used" data-core-module="new-used" data-module="new-used" aria-labelledby="ex-new-used-title"><div class="ex-wrap">
+    <header class="ex-record-intro"><div><h2 id="ex-new-used-title">What to check on new and used cars</h2><p>{comparison.body}</p></div><ExportVehicleFigure slug="crown-vellfire-hybrid" kind="used" caption="Historical used-model reference; request records for the individual vehicle."/></header>
+    <div class="ex-new-used-comparison" aria-label="Checks to discuss for new and used cars"><article><h3>New-car checks</h3><ul class="ex-check-list">{comparison.rows!.map(([newCheck])=><li>{newCheck}</li>)}</ul></article><article><h3>Used-car checks</h3><ul class="ex-check-list">{comparison.rows!.map(([,usedCheck])=><li>{usedCheck}</li>)}</ul></article></div>
+    <p class="ex-model-disclosure">Model photos are catalog references, not records of an inspected vehicle.</p>
+  </div></section>
+  <section class="ex-section ex-findings" id="evidence" data-core-module="evidence-acceptance" data-module="evidence-acceptance" aria-labelledby="ex-findings-title"><div class="ex-wrap">
+    <header class="ex-findings-heading"><h2 id="ex-findings-title">Review the findings before acceptance</h2><p>{evidence.body}</p></header>
+    <div class="ex-report-primer"><h3>Essential inspection records</h3><p>Vehicle identifier, provider, date and location; the scope commissioned; findings linked to photographs or readings; and the action agreed for exceptions.</p><dl class="ex-report-status"><div><dt>Checked</dt><dd>A finding supported by the agreed photographs, readings or records.</dd></div><div><dt>Not checked</dt><dd>An item outside, or not completed within, the agreed scope.</dd></div><div><dt>Record unavailable</dt><dd>A missing history or document, rather than a confirmed clear result.</dd></div></dl><a class="ex-link" href="/downloads/inspection-record-template.txt" download>Download the blank report structure</a><p class="ex-note">A planning template, not a completed inspection or a vehicle condition record.</p></div>
+    <div class="ex-findings-grid"><article>{evidence.paragraphs!.map(text=><p class="ex-note">{text}</p>)}<ExportFigure {...recordsScene} class="ex-findings-reference"/></article>
+      <article id="exceptions"><h3>Agree how outstanding issues will be resolved</h3><p>{exceptions.body}</p>{exceptions.paragraphs!.map(text=><p>{text}</p>)}<div class="ex-related-links">{exceptions.links!.map(link=><a class="ex-link" href={link.href}>{link.label}</a>)}</div></article>
+    </div>
+  </div></section>
+  <ExportInquiry service="sourcing-inspection" title="Discuss your sourcing requirements" body="Include the version, quantity and destination. Add any used-car condition requirements or inspection requests in your brief."/>
+</ExportPage>

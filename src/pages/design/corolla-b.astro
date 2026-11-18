@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/CorollaStudy.astro';
+import Study from '../../components/corolla-study/CorollaStudy';
+import {corolla,scene,alternatives} from '../../components/corolla-study/data';
+---
+<Layout direction="b"><Study client:load direction="b" vehicle={corolla} scene={scene} alternatives={alternatives}/></Layout>

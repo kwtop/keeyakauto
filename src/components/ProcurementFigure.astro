@@ -1,0 +1,11 @@
+---
+import {exportMedia} from '../data/exportServiceMedia';
+interface Props {scene:'inspection'|'shipping';caption?:string;wide?:boolean;}
+const {scene,caption,wide=false}=Astro.props;
+const shipping=scene==='shipping';
+const image=shipping?exportMedia.shipping:exportMedia.inspection;
+---
+<figure class="procurement-figure">
+ <picture><img src={image.src} srcset={image.srcSet} sizes={wide?'(max-width: 767px) calc(100vw - 32px), 55vw':'(max-width: 767px) calc(100vw - 32px), 50vw'} alt={image.alt} width={image.width} height={image.height} loading="lazy"/></picture>
+ <figcaption>{caption||(shipping?'Agree the route, documents and transport responsibilities for your order.':'Agree the inspection scope and request dated records for the individual car.')}</figcaption>
+</figure>

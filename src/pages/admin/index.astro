@@ -1,0 +1,9 @@
+---
+import AdminApp from '../../components/admin/AdminApp';
+import {vehicles,vehicleHref} from '../../data/catalog';
+import '../../styles/admin.css';
+import '../../styles/admin-redesign.css';
+const productLabels=Object.fromEntries(vehicles.map(vehicle=>[vehicleHref(vehicle),vehicle.name]));
+---
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="referrer" content="same-origin"/><link rel="icon" href="/favicon.png"/><title>网站后台 | KEEYAK</title></head><body><script id="admin-product-labels" type="application/json" set:html={JSON.stringify(productLabels).replaceAll('<','\\u003c')}/><AdminApp client:only="react"/><noscript>请启用 JavaScript 后登录后台。</noscript></body></html>

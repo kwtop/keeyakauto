@@ -1,0 +1,41 @@
+KEEYAK | Inspection record requirements
+Blank report structure for agreeing an inspection. NOT a completed inspection,
+vehicle condition statement, certification or evidence of a KEEYAK delivery.
+
+ORDER & VEHICLE
+Order / request reference:
+VIN or agreed vehicle identifier for each unit:
+Model, version, production / registration information:
+Inspection provider, inspector and contact:
+Inspection date and location:
+
+SCOPE AGREED BEFORE INSPECTION
+Checks commissioned:
+Items excluded or inaccessible:
+Method / equipment for measurements:
+Report, photographs, video and document requirements:
+Fee, timing and approval:
+
+FINDINGS (REPEAT FOR EACH CHECK)
+Item checked:
+Status: Checked / Not checked / Record unavailable
+Observation or reading, with units:
+Photograph / document reference:
+Method and conditions where relevant:
+Finding, limitation and action required:
+
+EV / PHEV / EREV, WHEN INCLUDED
+Battery identifier and diagnostic method:
+Date, conditions, mileage and readings with units:
+Diagnostic warnings and limitations:
+Charging connector / operation checks commissioned:
+
+REVIEW & ACCEPTANCE
+Significant findings and missing evidence:
+Further checks or rectification requested:
+Accepted exceptions and who accepted them:
+Release / payment approval under the order terms:
+Inspector / provider identification:
+
+Use records for the actual vehicle. Missing history does not establish an
+accident-free vehicle. A blank or unchecked item is not a passed check.

@@ -1,0 +1,20 @@
+---
+import ProcurementReading from '../../components/export/ProcurementReading.astro';
+import ExportFigure from '../../components/export/ExportFigure.astro';
+import ExportVehicleFigure from '../../components/export/ExportVehicleFigure.astro';
+import { recordsScene, cabinScene } from '../../components/export/exportStoryMedia';
+const offerChecks = [
+  ['Identity','The exact model, model year, trim and market version'],
+  ['Specification','Powertrain, drive, seating and equipment for that version'],
+  ['Supply','Proposed supplier, quantity, current availability and preparation time'],
+  ['Evidence','Photos and technical records for the offered vehicle, plus the agreed inspection checks'],
+  ['Commercial scope','The same currency, quantity, handover basis and included charges'],
+  ['Destination fit','Vehicle documents, local approval and practical-use requirements']
+];
+---
+<ProcurementReading title="Compare car models and specifications" description="Compare offers for the same vehicle version and delivery point, with matching specifications and included services." intro="Compare offers for the same version and agreed delivery point. Use catalog details to build your shortlist, then check the proposed vehicles and written offers." breadcrumb="Vehicle Comparison" pageClass="reading-comparison-guide">
+  <section class="reading-module" data-core-module="model-vehicle" data-module="model-vehicle"><div class="reading-section-heading"><h2>Identify the exact model and version</h2></div><div class="reading-reference-pair"><article><h3>New-car specifications</h3><ExportVehicleFigure slug="camry" caption="Confirm the model year, market version and specification in the offer."/></article><article><h3>Past used-car listings</h3><ExportVehicleFigure slug="crown-vellfire-hybrid" kind="used" caption="Request the identity, mileage, condition evidence and current status of the proposed car."/></article></div></section>
+  <section class="reading-module" data-core-module="offer-checks" data-module="offer-checks"><header class="reading-section-heading"><h2>What to compare in each quote</h2></header><div class="reading-comparison-method"><dl class="reading-offer-checks" aria-label="Six checks for a like-for-like vehicle offer">{offerChecks.map(([label,body])=><div><dt>{label}</dt><dd>{body}</dd></div>)}</dl><ExportFigure {...recordsScene}/></div></section>
+  <section class="reading-module reading-units-evidence" data-core-module="units-evidence" data-module="units-evidence"><div><h2>Understand units and test standards</h2><p>Battery capacity, range, consumption and equipment can differ by version and market. Ask for the applicable technical record, <strong>units and test standard</strong>. Range figures from different test cycles are not directly comparable.</p><p>For used cars, compare each vehicle’s identity, mileage, condition records and current status.</p><div class="ex-related-links"><a class="ex-link" href="/export-services/sourcing-inspection/#scope">Review inspection questions</a><a class="ex-link" href="/new-cars/">Find model information</a></div></div><ExportFigure {...cabinScene}/></section>
+  <section class="reading-next" data-core-module="comparison-request" data-module="comparison-request"><div><h2>Ask about the cars on your shortlist</h2><p>List each model and quantity in your brief, with the details you want to compare.</p></div><a class="ex-button" href="/quote/?service=comparison">Ask about these models</a></section>
+</ProcurementReading>

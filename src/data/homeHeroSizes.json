@@ -1,0 +1,21 @@
+{
+  "hero-desktop": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      480,
+      800,
+      1200,
+      1672
+    ]
+  },
+  "hero-mobile": {
+    "width": 1024,
+    "height": 1536,
+    "widths": [
+      480,
+      800,
+      1024
+    ]
+  }
+}

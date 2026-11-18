@@ -1,0 +1,14 @@
+---
+import assets from '../../data/siteImagerySizes.json';
+interface Props {src:string;alt:string;width:number;height:number;small?:string;mobileImage?:{src:string;small?:string;width:number;height:number};priority?:boolean;class?:string;sizes?:string;caption?:string;}
+const {src,alt,width,height,small,mobileImage,priority=false,class:className='',sizes='(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) calc(50vw - 36px), calc(50vw - 66px)',caption=''}=Astro.props;
+const delivered=Object.values(assets).find(image=>image.src===src);
+const deliveredMobile=mobileImage&&Object.values(assets).find(image=>image.src===mobileImage.src);
+---
+<figure class:list={['ex-photo',className]}>
+  <picture>
+    {mobileImage&&<source media="(max-width: 767px)" srcset={deliveredMobile?.srcSet||(mobileImage.small?`${mobileImage.small} 960w, ${mobileImage.src} ${mobileImage.width}w`:mobileImage.src)} sizes="calc(100vw - 32px)" width={mobileImage.width} height={mobileImage.height}/>}
+    <img {src} {alt} {width} {height} srcset={delivered?.srcSet||(small?`${small} 960w, ${src} ${width}w`:undefined)} sizes={small?sizes:undefined} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'}/>
+  </picture>
+  {caption&&<figcaption>{caption}</figcaption>}
+</figure>

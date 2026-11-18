@@ -1,0 +1,30 @@
+/* Approved B identity treatment shared by homepage, catalogue and model details. */
+.brand-title {display:flex;align-items:center;gap:12px;min-width:0}
+.brand-title > :is(a,span) {min-width:0;overflow-wrap:anywhere}
+img.brand-emblem {display:block;flex:0 0 46px;width:46px;height:32px;max-width:46px;object-fit:contain;filter:grayscale(1)}
+img.brand-emblem:is([src*="/catalog-brands/"],[src$="/roewe-official.png"],[src$="/jac-official.png"],[src$="/foton-official.png"]) {filter:brightness(0)}
+img.brand-emblem[data-light=true] {filter:brightness(0) invert(1)}
+.brand-title--compact {gap:8px}
+.brand-title--compact > img.brand-emblem {width:32px;height:26px;max-width:32px;flex-basis:32px}
+.brand-title--page > img.brand-emblem {width:56px;height:42px;max-width:56px;flex-basis:56px}
+.ah-model-brands .ah-brand-set {gap:48px;padding-right:48px}
+.ah-model-brands .ah-brand-set a {width:112px}
+.ah-brand-track {animation-duration:200s}
+img.brand-emblem[src$="/roewe-official.png"] {width:78px;max-width:78px;flex-basis:78px}
+/* Keep the FOTON crop square in model cards and page headings. */
+img.brand-emblem[src$="/foton-official.png"],
+.catalog-showroom-explorer .vehicle-card[data-kind] img.vehicle-card-brand-logo[src$="/foton-official.png"] {
+ width:36px;height:36px;max-width:36px;flex-basis:36px;object-fit:cover;object-position:1.5% center;
+}
+.brand-title--compact > img.brand-emblem[src$="/foton-official.png"] {
+ width:28px;height:28px;max-width:28px;flex-basis:28px;
+}
+@media(max-width:767px){
+ .ah-model-brands .ah-brand-set {gap:24px;padding-right:24px}
+ .brand-title {gap:10px}
+ img.brand-emblem {width:40px;height:30px;max-width:40px;flex-basis:40px}
+ .brand-title--compact {gap:7px}
+ .brand-title--compact > img.brand-emblem {width:26px;height:22px;max-width:26px;flex-basis:26px}
+ .brand-title--page > img.brand-emblem {width:42px;height:34px;max-width:42px;flex-basis:42px}
+ img.brand-emblem[src$="/roewe-official.png"] {width:68px;max-width:68px;flex-basis:68px}
+}

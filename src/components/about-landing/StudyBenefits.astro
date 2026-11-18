@@ -1,0 +1,8 @@
+---
+import {aboutStudy as content} from '../../data/aboutLandingStudy';
+import StudyIcon from './StudyIcon.astro';
+---
+<section class="study-services study-wrap study-section" id="services" aria-labelledby="study-services-title">
+ <div class="services-intro" data-study-reveal><p class="eyebrow caption-1"><span class="study-dot"></span>What we help with</p><h2 class="heading-2" id="study-services-title">From a model<br/>to a clear brief.</h2><p class="body-3">Tell us the cars you need and where they will go. We work through the vehicle and service details with you.</p></div>
+ <div class="service-list">{content.benefits.map(item=><article class="service-row" data-study-reveal><span class="service-number caption-1">{item.number}</span><div><h3 class="heading-5">{item.title}</h3><p class="body-3">{item.body}</p><a class="study-text-link title-4" href={item.href}>{item.label}</a></div></article>)}</div>
+</section>

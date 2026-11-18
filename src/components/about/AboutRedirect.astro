@@ -1,0 +1,12 @@
+---
+interface Props { to:string; }
+const {to}=Astro.props;
+const canonical=new URL(to,Astro.site);
+canonical.search='';canonical.hash='';
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="canonical" href={canonical.href}/><meta http-equiv="refresh" content={`0;url=${to}`}/><title>Company information moved | KEEYAK Auto</title></head><body><p>This information is now part of our Company Profile or News & Events. <a href={to}>Continue to the updated section</a>.</p><script is:inline define:vars={{to}}>
+const destination = new URL(to,window.location.origin);
+destination.search = window.location.search;
+window.location.replace(destination.href);
+</script></body></html>

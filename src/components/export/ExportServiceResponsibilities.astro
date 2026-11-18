@@ -1,0 +1,17 @@
+---
+import {serviceResponsibilities} from '../../data/serviceResponsibilities';
+---
+<section class="ex-section ex-service-responsibilities" id="responsibilities" aria-labelledby="ex-responsibilities-title" data-core-module="service-responsibilities">
+  <div class="ex-wrap">
+    <span id="purchase-records" class="ex-anchor" aria-hidden="true"></span>
+    <header class="ex-section-heading">
+      <h2 id="ex-responsibilities-title">Who handles each stage of your order</h2>
+      <div><p>Use KEEYAK as your contact for the vehicle sourcing and export brief. The written offer names the seller, payment recipient and providers responsible for your order.</p><p class="ex-note">The scope, fees and records are agreed before a service is commissioned.</p></div>
+    </header>
+    <div class="ex-responsibility-ledger">
+      <div class="ex-responsibility-head" aria-hidden="true"><span>Stage</span><span>KEEYAK coordination</span><span>Execution & approval</span><span>Record to agree</span></div>
+      {serviceResponsibilities.map(item=><article class="ex-responsibility-row"><h3>{item.stage}</h3><div><span class="ex-mobile-label">KEEYAK coordination</span><p>{item.coordination}</p></div><div><span class="ex-mobile-label">Execution & approval</span><p>{item.execution}</p></div><div><span class="ex-mobile-label">Record to agree</span><p>{item.record}</p></div></article>)}
+    </div>
+    <div class="ex-related-links"><a class="ex-link" href="/downloads/vehicle-purchase-checklist.txt" download>Download the purchase checklist</a><a class="ex-link" href="/about/company-profile/#company-documents">Company documents</a></div>
+  </div>
+</section>

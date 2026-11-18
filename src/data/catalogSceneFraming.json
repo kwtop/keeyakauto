@@ -1,0 +1,821 @@
+{
+  "/images/scene-diversity-20261020/toyota-corolla-neighbourhood-street.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      190,
+      385,
+      1274,
+      859
+    ],
+    "model": "toyota/corolla",
+    "source": "/images/catalog/toyota/corolla/toyota-corolla-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/toyota-camry-business-district.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      134,
+      304,
+      1328,
+      827
+    ],
+    "model": "toyota/camry",
+    "source": "/images/catalog/toyota/camry/toyota-camry-front-three-quarter-left.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-left-scenes-20261021/volkswagen-id-3-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      105,
+      248,
+      1344,
+      845
+    ],
+    "model": "volkswagen/id-3",
+    "source": "/images/catalog/volkswagen/id-3/saic-volkswagen-id3-front-three-quarter-left.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/wuling-xingguang-riverside-brick.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      91,
+      332,
+      1353,
+      886
+    ],
+    "model": "wuling/xingguang",
+    "source": "/images/catalog/wuling/xingguang/wuling-xingguang-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/wuling-bingo-colourful-quarter.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      151,
+      244,
+      1306,
+      848
+    ],
+    "model": "wuling/bingo",
+    "source": "/images/catalog/wuling/bingo/wuling-bingo-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-left-scenes-20261021/mg-mg4-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      131,
+      265,
+      1337,
+      863
+    ],
+    "model": "mg/mg4",
+    "source": "/images/catalog/mg/mg4/mg-mg4-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/mg-mg5-blue-cultural-centre.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      159,
+      338,
+      1306,
+      866
+    ],
+    "model": "mg/mg5",
+    "source": "/images/catalog/mg/mg5/mg-mg5-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/mg-mg7-copper-gallery.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      106,
+      306,
+      1351,
+      838
+    ],
+    "model": "mg/mg7",
+    "source": "/images/catalog/mg/mg7/mg-mg7-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/aion-ut-neighbourhood.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      236,
+      374,
+      1232,
+      857
+    ],
+    "model": "aion/ut",
+    "source": "/images/catalog/aion/ut/aion-ut-front-three-quarter-left.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-seal-05-dm-i-olive-courtyard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      137,
+      289,
+      1331,
+      861
+    ],
+    "model": "byd/seal-05-dm-i",
+    "source": "/images/catalog/byd/seal-05-dm-i/byd-seal-05-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-seal-06-dm-i-redbrick-design-district.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      119,
+      333,
+      1330,
+      857
+    ],
+    "model": "byd/seal-06-dm-i",
+    "source": "/images/catalog/byd/seal-06-dm-i/byd-seal-06-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-seal-07-dm-i-botanical-pavilion.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      132,
+      305,
+      1335,
+      826
+    ],
+    "model": "byd/seal-07-dm-i",
+    "source": "/images/catalog/byd/seal-07-dm-i/byd-seal-07-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-seagull-coral-neighbourhood.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      129,
+      235,
+      1322,
+      871
+    ],
+    "model": "byd/seagull",
+    "source": "/images/catalog/byd/seagull/byd-seagull-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-destroyer-05-marina-boardwalk.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      112,
+      310,
+      1352,
+      861
+    ],
+    "model": "byd/destroyer-05",
+    "source": "/images/catalog/byd/destroyer-05/byd-destroyer-05-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-han-l-burgundy-hotel.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      145,
+      346,
+      1315,
+      861
+    ],
+    "model": "byd/han-l",
+    "source": "/images/catalog/byd/han-l/byd-han-l-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-qin-l-dm-i-ginkgo-boulevard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      89,
+      261,
+      1374,
+      849
+    ],
+    "model": "byd/qin-l-dm-i",
+    "source": "/images/catalog/byd/qin-l-dm-i/byd-qin-l-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-qin-plus-library-forecourt.webp": {
+    "width": 1248,
+    "height": 936,
+    "bounds": [
+      110,
+      239,
+      1138,
+      709
+    ],
+    "model": "byd/qin-plus",
+    "source": "/images/redesign-20261015/catalog/byd-qin-plus-lead.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-left-scenes-20261021/livan-lanqiqiu-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      234,
+      268,
+      1235,
+      863
+    ],
+    "model": "livan/lanqiqiu",
+    "source": "/images/catalog/livan/lanqiqiu/livan-blue-balloon-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-left-scenes-20261021/changan-uni-v-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      95,
+      284,
+      1355,
+      832
+    ],
+    "model": "changan/uni-v",
+    "source": "/images/catalog/changan/uni-v/changan-uni-v-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-left-scenes-20261021/changan-qiyuan-a06-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      239,
+      425,
+      1232,
+      859
+    ],
+    "model": "changan-qiyuan/a06",
+    "source": "/images/catalog/changan-qiyuan/a06/changan-qiyuan-a06-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/toyota-rav4-residential-street.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      149,
+      298,
+      1298,
+      875
+    ],
+    "model": "toyota/rav4",
+    "source": "/images/catalog/toyota/rav4/toyota-rav4-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/toyota-corolla-cross-garden-house.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      117,
+      234,
+      1331,
+      860
+    ],
+    "model": "toyota/corolla-cross",
+    "source": "/images/catalog/toyota/corolla-cross/toyota-corolla-cross-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/toyota-bz3x-teal-science-campus.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      142,
+      266,
+      1308,
+      852
+    ],
+    "model": "toyota/bz3x",
+    "source": "/images/catalog/toyota/bz3x/toyota-bz3x-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/volkswagen-tayron-red-sandstone-campus.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      90,
+      231,
+      1361,
+      887
+    ],
+    "model": "volkswagen/tayron",
+    "source": "/images/catalog/volkswagen/tayron/volkswagen-tayron-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/volkswagen-t-roc-ochre-cafe-street.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      134,
+      265,
+      1308,
+      864
+    ],
+    "model": "volkswagen/t-roc",
+    "source": "/images/catalog/volkswagen/t-roc/volkswagen-t-roc-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/volkswagen-tharu-timber-sports-pavilion.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      240,
+      339,
+      1233,
+      846
+    ],
+    "model": "volkswagen/tharu",
+    "source": "/images/catalog/volkswagen/tharu/volkswagen-tharu-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/volkswagen-teramont-ochre-canyon-road.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      207,
+      349,
+      1256,
+      870
+    ],
+    "model": "volkswagen/teramont",
+    "source": "/images/catalog/volkswagen/teramont/volkswagen-teramont-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/gac-trumpchi-gs3-retail-courtyard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      181,
+      316,
+      1281,
+      859
+    ],
+    "model": "gac-trumpchi/gs3",
+    "source": "/images/catalog/gac-trumpchi/gs3/gac-trumpchi-gs3-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/geely-boyue-apartment-courtyard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      90,
+      246,
+      1374,
+      881
+    ],
+    "model": "geely/boyue",
+    "source": "/images/catalog/geely/boyue/geely-boyue-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/geely-xingyue-l-stone-estate.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      197,
+      347,
+      1262,
+      865
+    ],
+    "model": "geely/xingyue-l",
+    "source": "/images/catalog/geely/xingyue-l/geely-xingyue-l-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/geely-binyue-turquoise-urban-square.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      205,
+      256,
+      1259,
+      805
+    ],
+    "model": "geely/binyue",
+    "source": "/images/catalog/geely/binyue/geely-binyue-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/jetour-x70l-vineyard-winery.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      231,
+      353,
+      1225,
+      855
+    ],
+    "model": "jetour/x70l",
+    "source": "/images/catalog/jetour/x70l/jetour-x70l-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/jetour-x70-plus-terracotta-holiday-home.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      136,
+      278,
+      1323,
+      880
+    ],
+    "model": "jetour/x70-plus",
+    "source": "/images/catalog/jetour/x70-plus/jetour-x70-plus-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/jetour-x90-plus-equestrian-courtyard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      232,
+      350,
+      1227,
+      858
+    ],
+    "model": "jetour/x90-plus",
+    "source": "/images/catalog/jetour/x90-plus/jetour-x90-plus-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/jetour-dashing-yellow-modernist-building.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      238,
+      366,
+      1233,
+      861
+    ],
+    "model": "jetour/dashing",
+    "source": "/images/catalog/jetour/dashing/jetour-dasheng-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/jetour-traveler-grassland-track.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      160,
+      279,
+      1298,
+      877
+    ],
+    "model": "jetour/traveler",
+    "source": "/images/catalog/jetour/traveler/jetour-traveler-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/jetour-ziyouzhe-sage-desert-lodge.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      109,
+      226,
+      1350,
+      861
+    ],
+    "model": "jetour/ziyouzhe",
+    "source": "/images/catalog/jetour/ziyouzhe/jetour-ziyouzhe-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-left-scenes-20261021/fangchengbao-bao-5-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      112,
+      201,
+      1355,
+      882
+    ],
+    "model": "fangchengbao/bao-5",
+    "source": "/images/catalog/fangchengbao/bao-5/fangchengbao-bao-5-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/fangchengbao-bao-8-rugged-pine-lodge.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      201,
+      293,
+      1273,
+      853
+    ],
+    "model": "fangchengbao/bao-8",
+    "source": "/images/catalog/fangchengbao/bao-8/fangchengbao-bao-8-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/fangchengbao-tai-3-creative-industrial-yard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      135,
+      248,
+      1326,
+      869
+    ],
+    "model": "fangchengbao/tai-3",
+    "source": "/images/catalog/fangchengbao/tai-3/fangchengbao-tai-3-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/fangchengbao-tai-7-clay-visitor-centre.webp": {
+    "width": 1248,
+    "height": 936,
+    "bounds": [
+      125,
+      206,
+      1123,
+      728
+    ],
+    "model": "fangchengbao/tai-7",
+    "source": "/images/redesign-20261015/catalog/fangchengbao-tai-7-lead.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-sea-lion-05-dm-i-bougainvillea-villa.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      99,
+      202,
+      1339,
+      931
+    ],
+    "model": "byd/sea-lion-05-dm-i",
+    "source": "/images/catalog/byd/sea-lion-05-dm-i/byd-sealion-05-dm-i-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-sea-lion-06-dm-i-brick-riverside-warehouse.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      131,
+      315,
+      1322,
+      859
+    ],
+    "model": "byd/sea-lion-06-dm-i",
+    "source": "/images/nest-site-20261019/sea-lion-06-dm-i-studio.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/scene-diversity-20261020/byd-yuan-plus-charging-forecourt.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      139,
+      218,
+      1297,
+      848
+    ],
+    "model": "byd/yuan-plus",
+    "source": "/images/catalog/byd/yuan-plus/byd-yuan-plus-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-yuan-up-mint-community-centre.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      127,
+      258,
+      1323,
+      862
+    ],
+    "model": "byd/yuan-up",
+    "source": "/images/catalog/byd/yuan-up/byd-yuan-up-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-tang-dm-i-cedar-wellness-retreat.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      113,
+      286,
+      1346,
+      899
+    ],
+    "model": "byd/tang-dm-i",
+    "source": "/images/catalog/byd/tang-dm-i/byd-tang-dm-i-side-view-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-tang-l-stone-opera-plaza.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      175,
+      342,
+      1288,
+      885
+    ],
+    "model": "byd/tang-l",
+    "source": "/images/catalog/byd/tang-l/byd-tang-l-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-song-l-violet-contemporary-gallery.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      113,
+      298,
+      1343,
+      863
+    ],
+    "model": "byd/song-l",
+    "source": "/images/catalog/byd/song-l/byd-song-l-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/byd-song-pro-dm-i-orchard-courtyard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      212,
+      336,
+      1269,
+      862
+    ],
+    "model": "byd/song-pro-dm-i",
+    "source": "/images/catalog/byd/song-pro-dm-i/byd-song-pro-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-left-scenes-20261021/deepal-g318-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      146,
+      263,
+      1308,
+      862
+    ],
+    "model": "deepal/g318",
+    "source": "/images/catalog/deepal/g318/deepal-g318-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/deepal-s05-cobalt-tram-depot.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      126,
+      315,
+      1319,
+      891
+    ],
+    "model": "deepal/s05",
+    "source": "/images/catalog/deepal/s05/deepal-s05-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/deepal-s07-bronze-office-campus.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      235,
+      386,
+      1236,
+      857
+    ],
+    "model": "deepal/s07",
+    "source": "/images/catalog/deepal/s07/deepal-s07-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/livan-x3-pro-ochre-market-square.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      149,
+      276,
+      1318,
+      836
+    ],
+    "model": "livan/x3-pro",
+    "source": "/images/catalog/livan/x3-pro/livan-x3-pro-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/livan-7-brick-loft-courtyard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      83,
+      251,
+      1358,
+      867
+    ],
+    "model": "livan/7",
+    "source": "/images/catalog/livan/7/livan-livan-7-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/livan-9-cedar-residential-lane.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      113,
+      270,
+      1338,
+      867
+    ],
+    "model": "livan/9",
+    "source": "/images/catalog/livan/9/livan-livan-9-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-x5-plus-crimson-design-studio.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      189,
+      350,
+      1275,
+      888
+    ],
+    "model": "changan/x5-plus",
+    "source": "/images/catalog/changan/x5-plus/changan-x5-plus-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-uni-k-olive-art-museum.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      132,
+      273,
+      1342,
+      868
+    ],
+    "model": "changan/uni-k",
+    "source": "/images/catalog/changan/uni-k/changan-uni-k-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-uni-z-sunset-business-court.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      114,
+      267,
+      1339,
+      870
+    ],
+    "model": "changan/uni-z",
+    "source": "/images/catalog/changan/uni-z/changan-uni-z-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-cs55-plus-rose-stone-neighbourhood.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      178,
+      307,
+      1290,
+      876
+    ],
+    "model": "changan/cs55-plus",
+    "source": "/images/catalog/changan/cs55-plus/changan-cs55-plus-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-cs75-plus-timber-campus-courtyard.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      155,
+      289,
+      1309,
+      872
+    ],
+    "model": "changan/cs75-plus",
+    "source": "/images/catalog/changan/cs75-plus/changan-cs75-plus-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-cs75-terracotta-botanical-gate.webp": {
+    "width": 1248,
+    "height": 936,
+    "bounds": [
+      126,
+      215,
+      1123,
+      716
+    ],
+    "model": "changan/cs75",
+    "source": "/images/redesign-20261015/catalog/changan-cs75-lead.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-qiyuan-q05-blue-grey-resort.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      126,
+      288,
+      1329,
+      872
+    ],
+    "model": "changan-qiyuan/q05",
+    "source": "/images/catalog/changan-qiyuan/q05/changan-qiyuan-q05-front-three-quarter-02.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  },
+  "/images/catalog-colour-scenes-20261021/changan-qiyuan-q07-sandstone-urban-garden.webp": {
+    "width": 1448,
+    "height": 1086,
+    "bounds": [
+      79,
+      261,
+      1384,
+      903
+    ],
+    "model": "changan-qiyuan/q07",
+    "source": "/images/catalog/changan-qiyuan/q07/changan-qiyuan-q07-front-three-quarter-01.webp",
+    "calibration": "source footprint; visually verified against generated scene"
+  }
+}

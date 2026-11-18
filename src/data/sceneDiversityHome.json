@@ -1,0 +1,74 @@
+{
+  "camry-card-balanced": {
+    "src": "/images/scene-diversity-20261020/home-camry-business-district.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/scene-diversity-20261020/home-camry-business-district-480.webp 480w, /images/scene-diversity-20261020/home-camry-business-district-800.webp 800w, /images/scene-diversity-20261020/home-camry-business-district.webp 1122w",
+    "small": "/images/scene-diversity-20261020/home-camry-business-district-800.webp"
+  },
+  "rav4-card-balanced": {
+    "src": "/images/scene-diversity-20261020/home-rav4-residential-street.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/scene-diversity-20261020/home-rav4-residential-street-480.webp 480w, /images/scene-diversity-20261020/home-rav4-residential-street-800.webp 800w, /images/scene-diversity-20261020/home-rav4-residential-street.webp 1122w",
+    "small": "/images/scene-diversity-20261020/home-rav4-residential-street-800.webp"
+  },
+  "yuan-card-balanced": {
+    "src": "/images/scene-diversity-20261020/home-yuan-plus-charging-forecourt.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/scene-diversity-20261020/home-yuan-plus-charging-forecourt-480.webp 480w, /images/scene-diversity-20261020/home-yuan-plus-charging-forecourt-800.webp 800w, /images/scene-diversity-20261020/home-yuan-plus-charging-forecourt.webp 1122w",
+    "small": "/images/scene-diversity-20261020/home-yuan-plus-charging-forecourt-800.webp"
+  },
+  "used-q5l-card": {
+    "src": "/images/scene-diversity-20261020/home-audi-q5l-hotel.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/scene-diversity-20261020/home-audi-q5l-hotel-480.webp 480w, /images/scene-diversity-20261020/home-audi-q5l-hotel-800.webp 800w, /images/scene-diversity-20261020/home-audi-q5l-hotel.webp 1122w",
+    "small": "/images/scene-diversity-20261020/home-audi-q5l-hotel-800.webp"
+  },
+  "used-x5-card": {
+    "src": "/images/scene-diversity-20261020/home-bmw-x5-vineyard.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/scene-diversity-20261020/home-bmw-x5-vineyard-480.webp 480w, /images/scene-diversity-20261020/home-bmw-x5-vineyard-800.webp 800w, /images/scene-diversity-20261020/home-bmw-x5-vineyard.webp 1122w",
+    "small": "/images/scene-diversity-20261020/home-bmw-x5-vineyard-800.webp"
+  },
+  "used-vellfire-card": {
+    "src": "/images/scene-diversity-20261020/home-vellfire-airport.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/scene-diversity-20261020/home-vellfire-airport-480.webp 480w, /images/scene-diversity-20261020/home-vellfire-airport-800.webp 800w, /images/scene-diversity-20261020/home-vellfire-airport.webp 1122w",
+    "small": "/images/scene-diversity-20261020/home-vellfire-airport-800.webp"
+  }
+}

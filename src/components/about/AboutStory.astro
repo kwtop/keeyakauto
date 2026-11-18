@@ -1,0 +1,12 @@
+---
+import AboutFigure from './AboutFigure.astro';
+import { eventHref,type CompanyEvent } from '../../data/companyNews';
+interface Props { event:CompanyEvent; compact?:boolean; }
+const {event,compact=false}=Astro.props;
+const image=event.slug==='vietnam-exhibition-2026'?{src:'/images/company/about-selected/vietnam-booth-2026-wide.webp',alt:'The KEEYAK exhibition booth in Vietnam in May 2026'}:event.slug==='indonesia-exhibition-2024'?event.images[2]:event.images[0];
+const portrait=event.slug==='algeria-exhibition-2026';
+---
+<article class:list={['au-story',{'au-story--compact':compact,'au-story--portrait':portrait}]} data-news-item={event.type==='Exhibition'?'exhibitions':'team'}>
+  <AboutFigure src={image.src} alt={image.alt} href={eventHref(event)} class={`au-story-photo au-story-photo--${event.slug}`} sizes={compact?'(max-width: 700px) 110px, 160px':'(max-width: 700px) calc(100vw - 40px), 600px'}/>
+  <div class="au-story-copy"><p class="au-meta"><time datetime={event.date}>{event.dateLabel}</time><span>{event.type}</span></p><h3><a href={eventHref(event)}>{event.title}</a></h3>{!compact&&<p>{event.summary}</p>}</div>
+</article>

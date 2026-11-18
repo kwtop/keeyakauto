@@ -1,0 +1,21 @@
+---
+import BuyerModelStrip from '../components/BuyerModelStrip.astro';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+---
+<Base title="Page not found" description="The requested page is unavailable. Browse new cars, used-car references or return to the KEEYAK Auto homepage.">
+ <div class="recovery-page">
+  <PageHero title="Page not found" subtitle="We could not find a page at this address" />
+  <section class="recovery-paths" data-core-module="recovery">
+    <div class="shell editorial-grid">
+      <h2>Find the cars you need</h2>
+      <div class="prose"><p>Browse the new-car catalog and used-car references, or tell us what you are looking for.</p><div class="recovery-actions"><a class="button button-dark" href="/new-cars/">Browse new cars</a><a class="button button-outline" href="/used-cars/">Browse used models</a></div><p class="recovery-secondary"><a href="/">Return home</a><a href="/quote/">Start an inquiry</a></p></div>
+    </div>
+  </section>
+ <BuyerModelStrip title="Explore car models" showCatalogLink={false}/>
+ </div>
+</Base>
+<style>
+.recovery-page :global(.page-hero){padding-block:48px 40px}.recovery-page :global(.page-hero h1){font:700 64px/1.08 Georgia,'Times New Roman',serif;letter-spacing:-.035em}.recovery-paths{padding-block:16px 64px}.recovery-paths h2{font:700 36px/1.15 Georgia,'Times New Roman',serif;letter-spacing:-.025em}.recovery-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:24px}.recovery-secondary{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:20px}.recovery-secondary a{display:inline-flex;align-items:center;min-height:44px;font-size:16px;text-decoration:underline;text-underline-offset:5px}.recovery-paths .prose>p{margin-bottom:0;font-size:16px;line-height:1.55;max-width:55ch}
+@media(max-width:767px){.recovery-page :global(.page-hero){padding-block:28px 32px}.recovery-page :global(.page-hero h1){font-size:42px}.recovery-paths{padding-block:0 48px}.recovery-paths h2{font-size:30px}.recovery-paths .editorial-grid{gap:16px}.recovery-actions{display:grid;grid-template-columns:1fr;gap:12px}.recovery-actions .button{width:100%}.recovery-secondary{gap:4px 24px}}
+</style>

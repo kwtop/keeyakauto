@@ -1,0 +1,49 @@
+---
+const fields = [
+  {name:'quantity',label:'Number of cars',value:4,step:'1',min:1,max:1_000_000},
+  {name:'unitPrice',label:'Vehicle price per car',value:11000},
+  {name:'origin',label:'Extra origin charges per car',value:0},
+  {name:'freight',label:'Freight for the whole batch',value:4400},
+  {name:'insurance',label:'Insurance for the whole batch',value:360},
+  {name:'tax',label:'Broker’s duties and tax estimate per car',value:1540},
+  {name:'handling',label:'Destination handling per car',value:320},
+  {name:'delivery',label:'Delivery and registration per car',value:450},
+];
+---
+<form class="procurement-cost" data-landed-cost aria-label="Landed cost calculator">
+  <div class="procurement-cost-fields">
+    {fields.map(field => <label>
+      {field.label}
+      <input type="number" name={field.name} value={field.value} inputmode={field.step === '1' ? 'numeric' : 'decimal'}
+        step={field.step ?? '0.01'} min={field.min ?? 0} max={field.max ?? 100_000_000} required/>
+    </label>)}
+  </div>
+  <output class="procurement-cost-result" aria-live="polite">
+    <span>Per car <strong data-unit-cost>14,500.00</strong></span>
+    <span>Batch total <strong data-batch-cost>58,000.00</strong></span>
+  </output>
+</form>
+<script>
+  const calculator = document.querySelector<HTMLFormElement>('[data-landed-cost]');
+  const unit = calculator?.querySelector<HTMLElement>('[data-unit-cost]');
+  const batch = calculator?.querySelector<HTMLElement>('[data-batch-cost]');
+  const format = new Intl.NumberFormat('en', {minimumFractionDigits:2, maximumFractionDigits:2});
+  if (calculator && unit && batch) {
+    const update = () => {
+      if (!calculator.checkValidity()) {
+        unit.textContent = batch.textContent = '—';
+        return;
+      }
+      const fields = new FormData(calculator);
+      const amount = (name: string) => Number(fields.get(name));
+      const quantity = amount('quantity');
+      const perCar = amount('unitPrice') + amount('origin') + amount('tax') + amount('handling') + amount('delivery');
+      const total = perCar * quantity + amount('freight') + amount('insurance');
+      unit.textContent = format.format(total / quantity);
+      batch.textContent = format.format(total);
+    };
+    calculator.addEventListener('input', update);
+    calculator.addEventListener('submit', event => event.preventDefault());
+    update();
+  }
+</script>

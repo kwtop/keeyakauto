@@ -1,0 +1,22 @@
+---
+import TrustLayout from '../../../../layouts/TrustLayout.astro';
+import GuideEditorial from '../../../../components/trust/GuideEditorial.astro';
+import {destinationGuides, type DestinationGuide} from '../../../../data/destinationGuides';
+import {destinationPath, guideImageRoot} from '../../../../data/guideEditorial';
+import {buyingGuidePath} from '../../../../data/buyingGuideLibrary';
+
+export function getStaticPaths() {
+  return destinationGuides.map(guide => ({params:{country:guide.slug},props:{guide}}));
+}
+interface Props {guide:DestinationGuide;}
+const {guide} = Astro.props;
+const {name,title,description,reviewed,region} = guide;
+const image = guideImageRoot + guide.image + '-1440.webp';
+const article = {section:region,collectionUrl:buyingGuidePath,subject:{'@type':'Country' as const,name},citations:guide.sources?.map(source=>source.href)};
+const inquiry = '/quote/?' + new URLSearchParams({service:'destination',country:name}).toString();
+const back = {label:'All country guides',href:destinationPath};
+---
+<TrustLayout {title} {description} label={name} group="export" pageType="Article" modified={reviewed} {image}
+  parents={[{name:'Buying Guide',url:buyingGuidePath},{name:'Country guides',url:destinationPath}]} {article}>
+  <GuideEditorial {guide} {back} {inquiry} country={name}/>
+</TrustLayout>

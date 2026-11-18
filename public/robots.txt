@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keeyakauto.com/sitemap.xml
+Sitemap: https://keeyakauto.com/sitemap-images.xml

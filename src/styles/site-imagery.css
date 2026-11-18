@@ -1,0 +1,49 @@
+/* Image adaptation only: no change to route hierarchy, type scale or form behaviour. */
+body.site-nest.site-volta .catalog-heading-visual img{
+ height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center;
+}
+body.site-nest.site-volta .catalog-refined .brand-image-link img{
+ aspect-ratio:4/3;object-fit:cover;mix-blend-mode:normal;padding:0;
+}
+body.site-nest.site-volta .vehicle-media--editorial,
+body.site-nest.site-volta .vehicle-media--editorial img{
+ aspect-ratio:4/3;object-fit:cover;padding:0;mix-blend-mode:normal;
+}
+body.site-nest.site-volta .vehicle-detail .detail-main-image--editorial .detail-photo-expand img{
+ aspect-ratio:4/3;transform:none;padding:0;
+}
+body.site-nest.site-volta .vehicle-detail .detail-main-image--editorial .detail-photo-expand--scene img{
+ object-fit:cover;
+}
+body.site-nest.site-volta .detail-model-image img[src*="editorial"],
+body.site-nest.site-volta .detail-model-image img[src*="site-imagery"],
+body.site-nest.site-volta .buyer-model-photo img{
+ padding:0;object-fit:cover;mix-blend-mode:normal;
+}
+body.site-nest.site-volta .contact-purchase-grid article:first-child img{
+ object-fit:cover;
+}
+body.site-nest.site-volta .au-scope-photo img{
+ aspect-ratio:4/5;object-fit:cover;object-position:center;
+}
+body.site-nest.site-volta .catalog-need-image--editorial img{
+ object-fit:cover;padding:0;mix-blend-mode:normal;
+}
+body.site-nest.site-volta .purchase-context-image img{
+ aspect-ratio:3/2;object-fit:cover;object-position:center;
+}
+body.site-nest.site-volta .ex-overview-services .ex-service-image .ex-photo img{
+ aspect-ratio:6/7;object-fit:cover;object-position:center;
+}
+@media(max-width:767px){
+ body.site-nest.site-volta .catalog-heading--visual{gap:24px}
+ body.site-nest.site-volta .catalog-heading-visual img{height:auto;aspect-ratio:4/3}
+}
+/* Keep the referenced car and its badge inside portrait editorial frames. */
+body.site-nest.site-volta img[src*="vehicle-brand-corrected-20261019/guide-quotation"]{
+ object-position:100% 50%;
+}
+body.site-nest.site-volta .au-scope-photo img[src*="vehicle-brand-corrected-20261019/shipping-portrait"],
+body.site-nest.site-volta .ex-overview-services .ex-service-image .ex-photo img[src*="vehicle-brand-corrected-20261019/shipping-portrait"]{
+ aspect-ratio:1199/1312;object-position:center;
+}

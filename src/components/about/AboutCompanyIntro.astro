@@ -1,0 +1,23 @@
+---
+import AboutPhotograph from './AboutPhotograph.astro';
+import type {TrustBlock} from '../../data/trustContent';
+interface Props {opening:TrustBlock & {image:string};}
+const {opening}=Astro.props;
+---
+<section class="ap-hero ap-wrap" data-core-module data-module={opening.id} aria-labelledby="tc-page-title">
+ <div class="ap-hero-layout">
+  <h1 id="tc-page-title">Company Profile</h1>
+  <AboutPhotograph photo="office" priority caption sizes="(max-width: 809px) calc(100vw - 40px), 50vw"/>
+  <div class="ap-hero-copy">
+   <div class="ap-company-introduction">
+    {(opening.paragraphs ?? [opening.body]).map(paragraph => <p>{paragraph}</p>)}
+   </div>
+   <a class="ap-button" href="#company-documents">View company credentials</a>
+  </div>
+ </div>
+ <dl class="ap-facts" data-ap-reveal>
+  <div><dt>Company established</dt><dd>2009</dd></div>
+  <div><dt>Countries across the wider vehicle business</dt><dd>80+</dd></div>
+  <div><dt>Our office</dt><dd>Hangzhou</dd></div>
+ </dl>
+</section>

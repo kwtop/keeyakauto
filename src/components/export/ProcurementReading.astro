@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import '../../styles/export-redesign.css';
+import '../../styles/procurement-reading.css';
+interface Props {title:string;description:string;intro:string;breadcrumb:string;parentLabel?:string;parentHref?:string;pageClass?:string;}
+const {title,description,intro,breadcrumb,parentLabel='Buying Guide',parentHref='/export-services/buying-guide/',pageClass=''}=Astro.props;
+---
+<Base {title} {description}>
+  <div class:list={['export-design','procurement-reading',pageClass]}>
+    <Breadcrumbs items={[{label:parentLabel,href:parentHref},{label:breadcrumb}]}/>
+    <header class="ex-wrap reading-intro" data-core-module="opening"><h1>{title}</h1></header>
+    <div class="ex-wrap reading-body">{pageClass === 'reading-archive-guide' && <p>{intro}</p>}<slot/></div>
+  </div>
+</Base>

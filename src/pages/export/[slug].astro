@@ -1,0 +1,28 @@
+---
+import ProcurementReading from '../../components/export/ProcurementReading.astro';
+import LegacyRedirect from '../../components/LegacyRedirect.astro';
+import ExportVehicleFigure from '../../components/export/ExportVehicleFigure.astro';
+import { exportPages, type EditorialPage } from '../../data/editorial';
+export function getStaticPaths() { return exportPages.map(page => ({params:{slug:page.slug},props:{page}})); }
+interface Props { page: EditorialPage; }
+const {page} = Astro.props;
+const redirects: Record<string,string> = {
+  'how-to-buy': '/export-services/buying-guide/',
+  inspection: '/export-services/sourcing-inspection/#scope',
+  shipping: '/export-services/shipping-support/'
+};
+---
+{redirects[page.slug] ? <LegacyRedirect to={redirects[page.slug]} /> : <ProcurementReading title={page.title} description={page.subtitle} intro={page.intro} breadcrumb={page.label} parentLabel="Export Services" parentHref="/export-services/" pageClass="reading-archive-guide">
+  <section class="reading-module reading-media-row" id="records" data-core-module="historical-scope" data-module="historical-scope">
+    <div><h2>{page.sections[0].title}</h2><p>{page.sections[0].body}</p></div>
+    <figure class="ex-photo reading-archive-photo"><a href="/images/company/factory-yard-original.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/company/factory-yard.webp" alt="Historical special-vehicle factory-yard photograph with the Hubei Runli sign visible" width="1920" height="1080" loading="lazy"/></a><figcaption>Special-vehicle archive material; the Hubei Runli sign remains visible. <a href="/images/company/factory-yard-original.jpg" target="_blank" rel="noopener noreferrer">Open source image</a>.</figcaption></figure>
+  </section>
+  <section class="reading-module reading-media-row reading-media-row--reverse" data-core-module="archive-source" data-module="archive-source">
+    <div><h2>Understand the scope of each project record</h2><p>{page.sections[0].paragraphs?.[0]}</p><ul class="reading-source-links"><li><a class="ex-link" href="/about/news/">Company exhibitions and team news</a></li></ul></div>
+    <figure class="ex-photo reading-archive-photo"><a href="/images/company/export-loading-original.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/company/export-loading.webp" alt="Historical special vehicles secured on a road transporter in the company archive" width="1920" height="1080" loading="lazy"/></a><figcaption>Special-vehicle archive material. Check the individual project record for date, destination and stage. <a href="/images/company/export-loading-original.jpg" target="_blank" rel="noopener noreferrer">Open source image</a>.</figcaption></figure>
+  </section>
+  <section class="reading-module reading-current-records" id="passenger-cars" data-core-module="current-vehicle" data-module="current-vehicle">
+    <div><h2>{page.sections[1].title}</h2><p>{page.sections[1].body}</p><div class="ex-related-links"><a class="ex-link" href="/export-services/sourcing-inspection/#scope">Inspection records for your vehicle</a><a class="ex-link" href="/export-services/buying-guide/car-import-documents-checklist/">Purchase documents</a></div></div><ExportVehicleFigure slug="camry" caption="Catalog model reference; request the actual vehicle and order records separately."/>
+  </section>
+  <section class="reading-next" data-core-module="passenger-request" data-module="passenger-request"><div><h2>Tell us about the cars you need</h2><p>Share the model, version, quantity and destination, together with your questions.</p><a class="ex-link" href="/export-services/faq/">Browse purchase questions</a></div><a class="ex-button" href={`/quote/?service=${encodeURIComponent(page.service)}`}>{page.cta}</a></section>
+</ProcurementReading>}

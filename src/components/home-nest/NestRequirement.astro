@@ -1,0 +1,10 @@
+<section class="nest-requirement" data-core-module="requirement" aria-labelledby="nest-requirement-title" id="requirement">
+  <div class="nest-container nest-requirement-inner">
+    <div class="nest-requirement-copy"><h2 id="nest-requirement-title">Tell us what<br/>you need.</h2><p>Share your model, quantity and destination.<br/>Review your brief, then choose email or WhatsApp.</p></div>
+    <form action="/quote/" method="get" class="nest-brief-form" aria-label="Start your vehicle inquiry">
+      <label class="nest-model-field"><span>Model / requirement *</span><input name="model" placeholder="Brand, model and version" maxlength="200" required/></label>
+      <div class="nest-brief-row"><label><span>Quantity *</span><input name="quantity" type="number" min="1" step="1" value="1" required/></label><label><span>Destination country *</span><input name="country" placeholder="Country" autocomplete="country-name" maxlength="100" required/></label></div>
+      <button class="nest-primary-button" type="submit">Prepare inquiry</button>
+    </form>
+  </div>
+</section>

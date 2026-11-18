@@ -1,0 +1,50 @@
+---
+import TrustLayout from '../../layouts/TrustLayout.astro';
+import TrustNewsCover from './TrustNewsCover.astro';
+import TrustBlock from './TrustBlock.astro';
+import {companyEvents,eventHref} from '../../data/companyNews';
+import {storyMedia,trustMedia} from '../../data/trustMedia';
+import '../../styles/news-index.css';
+const sorted=[...companyEvents].sort((a,b)=>b.date.localeCompare(a.date));
+const featured=sorted[0];
+const years=[...new Set(sorted.map(event=>event.date.slice(0,4)))];
+---
+<TrustLayout title="KEEYAK news and events" label="News & Events" group="about" pageType="CollectionPage" modified="2026-10-28" collection={sorted.map(event=>({name:event.title,url:eventHref(event)}))} description="News from KEEYAK's overseas special-vehicle exhibitions, office gatherings and team trips, with original photographs." image={trustMedia(storyMedia[featured.slug]).src}>
+ <div class="tc-news-app tc-news-index" data-filtered="false">
+  <header class="tc-wrap tc-news-heading" data-core-module data-module="A2-01">
+   <div class="tc-news-introduction"><h1>News &amp; events</h1></div>
+   <div class="tc-news-controls">
+    <div class="tc-news-filters" role="group" aria-label="Filter stories by type"><button type="button" data-type="all" aria-pressed="true">All stories</button><button type="button" data-type="exhibitions" aria-pressed="false">Exhibitions</button><button type="button" data-type="team" aria-pressed="false">Team &amp; Office</button></div>
+    <div class="tc-news-filter-options"><p data-story-count role="status" aria-live="polite">{sorted.length} stories</p><label>Year <select data-news-year aria-label="Filter stories by year"><option value="all">All years</option>{years.map(year=><option value={year}>{year}</option>)}</select></label></div>
+   </div>
+  </header>
+  <section class="tc-wrap tc-news-stories" data-core-module data-module="A2-02" aria-label="Company stories">
+   <div class="tc-empty" data-news-empty hidden><h2>No stories found</h2><p>Try a different year or category.</p><button type="button" class="tc-button" data-news-reset>Show all stories</button></div>
+   <div class="tc-story-grid">{sorted.map((event,index)=><article class="tc-story-card" data-story-item data-lead={index===0?true:undefined} data-type={event.type==='Exhibition'?'exhibitions':'team'} data-year={event.date.slice(0,4)}>
+    <TrustNewsCover {event} priority={index<2}/>
+    <div class="tc-story-card-copy"><p class="tc-story-meta"><span>{event.type==='Exhibition'?'Exhibition':'Team & Office'}</span><time datetime={event.date}>{event.dateLabel}</time></p><h2><a href={eventHref(event)}>{event.title}</a></h2><p>{event.summary}</p></div>
+   </article>)}</div>
+  </section>
+  <TrustBlock block={{id:'A2-04',title:'More about KEEYAK',body:'Find out who operates KEEYAK, meet the team or get in touch with our Hangzhou office.',kind:'contact',links:[{label:'Company Profile',href:'/about/company-profile/'},{label:'Contact Us',href:'/contact/'}]}}/>
+ </div>
+</TrustLayout>
+<script>
+ const root=document.querySelector<HTMLElement>('.tc-news-app');
+ if(root){
+  const controls=[...root.querySelectorAll<HTMLButtonElement>('button[data-type]')];
+  const items=[...root.querySelectorAll<HTMLElement>('[data-story-item]')];
+  const year=root.querySelector<HTMLSelectElement>('[data-news-year]');
+  let type=new URLSearchParams(location.search).get('type')==='team'?'team':'all';
+  const update=()=>{
+   controls.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.type===type)));
+   root.dataset.filtered=String(type!=='all'||Boolean(year&&year.value!=='all'));
+   let visible=0;
+   items.forEach(item=>{const match=(type==='all'||item.dataset.type===type)&&(!year||year.value==='all'||item.dataset.year===year.value);item.hidden=!match;if(match)visible++;});
+   const count=root.querySelector<HTMLElement>('[data-story-count]');if(count)count.textContent=`${visible} ${visible===1?'story':'stories'}`;
+   const empty=root.querySelector<HTMLElement>('[data-news-empty]');if(empty)empty.hidden=visible>0;
+  };
+  controls.forEach(button=>button.addEventListener('click',()=>{type=button.dataset.type||'all';update();}));
+  root.querySelector<HTMLButtonElement>('[data-news-reset]')?.addEventListener('click',()=>{type='all';if(year)year.value='all';update();controls[0]?.focus();});
+  year?.addEventListener('change',update);update();
+ }
+</script>

@@ -1,0 +1,14 @@
+---
+import arrowUpRight from '../../assets/about-landing-icons/arrow-up-right.svg?raw';
+import arrowRight from '../../assets/about-landing-icons/arrow-right.svg?raw';
+import arrowDown from '../../assets/about-landing-icons/arrow-down.svg?raw';
+import plus from '../../assets/about-landing-icons/plus.svg?raw';
+import close from '../../assets/about-landing-icons/x.svg?raw';
+import pin from '../../assets/about-landing-icons/map-pin.svg?raw';
+import file from '../../assets/about-landing-icons/file-text.svg?raw';
+import verified from '../../assets/about-landing-icons/seal-check.svg?raw';
+interface Props {name?:'arrow-up-right'|'arrow-right'|'arrow-down'|'plus'|'close'|'pin'|'file'|'verified';}
+const {name='arrow-up-right'}=Astro.props;
+const icons={'arrow-up-right':arrowUpRight,'arrow-right':arrowRight,'arrow-down':arrowDown,plus,close,pin,file,verified};
+---
+<span class="study-icon" aria-hidden="true" set:html={icons[name]}/>

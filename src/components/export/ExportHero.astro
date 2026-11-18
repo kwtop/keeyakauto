@@ -1,0 +1,12 @@
+---
+import ExportFigure from './ExportFigure.astro';
+interface Props { title:string;intro:string;image?:string;alt?:string;width?:number;height?:number;small?:string;mobileImage?:{src:string;small?:string;width:number;height:number};variant?:'split'|'guide'|'wide'; }
+const {title,intro,image,alt,width,height,small,mobileImage,variant='split'}=Astro.props;
+const titleLines=title.split('\n');
+---
+<section class:list={['ex-hero',`ex-hero--${variant}`]} data-core-module="opening" aria-labelledby="export-title">
+  <div class="ex-wrap ex-hero-inner">
+    <div class="ex-hero-copy"><h1 id="export-title">{titleLines.map((line,index)=><span>{line}{index<titleLines.length-1?' ':''}</span>)}</h1><p>{intro}</p><slot/></div>
+    {image && <ExportFigure src={image} alt={alt || ''} width={width || 1600} height={height || 1000} {small} {mobileImage} priority class="ex-hero-photo" sizes={variant==='wide'?'(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) calc(100vw - 48px), calc(100vw - 84px)':'(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) calc(100vw - 48px), 55vw'}/>}
+  </div>
+</section>

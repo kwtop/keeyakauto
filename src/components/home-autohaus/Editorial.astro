@@ -1,0 +1,20 @@
+---
+import Intro from './Intro.astro';
+import {people} from '../../data/company';
+import {buyingFaqs} from '../../data/editorial';
+import {art} from '../../data/autohausHome';
+import {siteImageProps} from '../../data/siteImagery';
+const team=[{person:people[0],image:art('team-isa')},{person:people[2],image:art('team-frank')},{person:people[1],image:art('team-alicia')},{person:people[3],image:art('team-mia')}];
+const faqColumns=[[buyingFaqs[0]],[buyingFaqs[1],buyingFaqs[2]],[buyingFaqs[3],buyingFaqs[4]]];
+const journal=[{title:'Before you agree an order',sub:'Buying guide',href:'/export-services/buying-guide/',image:siteImageProps('quotation-desk'),mobile:undefined,alt:'Vehicle quotation planning — editorial illustration'},{title:'Prepare for the journey ahead',sub:'Shipping & support',href:'/export-services/shipping-support/',image:siteImageProps('port-overview'),mobile:siteImageProps('shipping-portrait'),alt:'Vehicle transport by sea — editorial illustration'}];
+---
+<section class="ah-team" data-ah-section="Team" aria-labelledby="ah-team-title"><div class="ah-container"><Intro id="ah-team-title" title="Meet the people<br/>behind KEEYAK" description="Start a conversation with our team about your vehicle requirements."/>
+ <div class="ah-vehicle-grid">{team.map(({person,image})=><a class="ah-vehicle-card ah-team-card" href="/about/company-profile/#team"><div class="ah-photo-card-inner"><img {...image} sizes="(min-width:1400px) 315px, (min-width:1200px) calc((100vw - 140px) / 4), (min-width:810px) calc((100vw - 100px) / 2), calc(100vw - 40px)" alt={`AI-edited portrait of ${person.name}, KEEYAK team`} loading="lazy"/><div class="ah-photo-caption"><h3>{person.name}</h3><p>KEEYAK team</p></div></div></a>)}</div>
+</div></section>
+<section class="ah-questions" data-ah-section="Questions" aria-labelledby="ah-question-title"><div class="ah-container"><Intro id="ah-question-title" title="A few things<br/>worth knowing" description="Clear answers before you take the next step."/>
+ <div class="ah-question-grid">{faqColumns.map((column,i)=><div class="ah-question-column">{i===0&&<img class="ah-question-photo" src="/images/catalog-editorial-20261019/id3-waterfront.webp" width="1448" height="1086" alt="Volkswagen ID.3 on a waterfront road — editorial illustration" loading="lazy"/>}{column.map(f=><article class="ah-question-card"><h3>{f.question}</h3><p>{f.answer}</p></article>)}</div>)}</div>
+ <a class="ah-underlined" href="/export-services/faq/">More purchasing questions</a>
+</div></section>
+<section class="ah-journal" data-ah-section="Journal" aria-labelledby="ah-journal-title"><div class="ah-container"><Intro id="ah-journal-title" title="For the road ahead" description="Practical reading for the decisions behind your purchase." href="/export-services/" label="Explore the guides"/>
+ <div class="ah-journal-grid">{journal.map(j=><a class="ah-vehicle-card ah-journal-card" href={j.href}><div class="ah-photo-card-inner"><picture>{j.mobile&&<source media="(max-width:1199px)" srcset={j.mobile.srcset} sizes="(max-width:809px) calc(100vw - 40px), 48vw" width={j.mobile.width} height={j.mobile.height}/>}<img {...j.image} sizes="(max-width:809px) calc(100vw - 40px), 48vw" alt={j.alt} loading="lazy"/></picture><div class="ah-photo-caption"><h3>{j.title}</h3><p>{j.sub}</p></div></div></a>)}</div>
+</div></section>

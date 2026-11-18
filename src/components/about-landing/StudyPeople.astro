@@ -1,0 +1,22 @@
+---
+import {aboutStudy as content} from '../../data/aboutLandingStudy';
+import StudyIcon from './StudyIcon.astro';
+interface Props {direction:'a'|'b';}
+const {direction}=Astro.props;
+const [vietnam,mexico,indonesia]=content.stories;
+---
+<section class="study-people study-section study-wrap" id="people" aria-labelledby="study-people-title">
+ <div class="section-heading" data-study-reveal><div><p class="eyebrow caption-1"><span class="study-dot"></span>People &amp; company life</p><h2 class="heading-2" id="study-people-title">{direction==='a'?<>A company you<br/>can get to know.</>:<>Built through<br/>real conversations.</>}</h2></div><p class="body-3 section-aside">Our exhibition records cover the wider KEEYAK special vehicle business. The photographs and dated reports are available to read.</p></div>
+ {direction==='a'?<>
+  <div class="people-editorial-grid">
+   <a class="people-feature" href={vietnam.href} data-study-reveal><figure><img src={vietnam.image.src} width={vietnam.image.width} height={vietnam.image.height} alt={vietnam.image.alt} loading="lazy"/><figcaption><span class="caption-2">{vietnam.place} · {vietnam.date}</span><span class="heading-5">{vietnam.title}</span></figcaption></figure></a>
+   <div class="people-side-records">{[mexico,indonesia].map(story=><a class="people-side-record" href={story.href} data-study-reveal><img src={story.image.src} width={story.image.width} height={story.image.height} alt={story.image.alt} loading="lazy"/><div><p class="caption-2">{story.place} · {story.date}</p><h3 class="title-1">{story.title}</h3></div></a>)}</div>
+  </div>
+  <div class="team-strip" data-study-reveal><img src={content.team.src} width={content.team.width} height={content.team.height} alt={content.team.alt} loading="lazy"/><div><p class="eyebrow caption-1">Beyond the day to day</p><h3 class="heading-5">Time together,<br/>away from the brief.</h3><p class="body-6">Colleagues at the January 2026 company gathering.</p><a class="study-text-link title-4" href="/about/news/annual-gathering-2026/">See the company update</a></div></div>
+ </>:<>
+  <div class="company-story" data-study-reveal><div class="story-fact"><strong class="heading-1">76</strong><span class="title-3">countries</span><p class="caption-2">Across the wider vehicle business</p></div><div><p class="body-3">KEEYAK is operated by {content.company.legalName} The company was established in 2009. Today, our Hangzhou team works on passenger car sourcing alongside the wider special vehicle business.</p><a class="study-text-link title-4" href="/contact/">Our Hangzhou office</a></div></div>
+  <div class="people-journal">{content.stories.map(story=><article class="journal-record" data-study-reveal><p class="journal-date caption-2"><strong class="title-3">{story.place}</strong>{story.date}</p><a class="journal-image" href={story.href} aria-label={`Read ${story.place} company report`}><img src={story.image.src} width={story.image.width} height={story.image.height} alt={story.image.alt} loading="lazy"/></a><div class="journal-copy"><h3 class="heading-5">{story.title}</h3><p class="body-6">{story.body}</p><a class="study-text-link title-4" href={story.href}>Read the report</a></div></article>)}</div>
+  <div class="team-b-record" data-study-reveal><figure><img src={content.team.src} width={content.team.width} height={content.team.height} alt={content.team.alt} loading="lazy"/><figcaption class="caption-2">January 2026 · Company gathering</figcaption></figure><div><p class="eyebrow caption-1">The people behind the work</p><h3 class="heading-3">A familiar face.<br/>A conversation<br/>that continues.</h3><p class="body-3">Our company updates include photographs and dates from team gatherings and trips.</p><a class="study-text-link title-4" href="/about/news/?type=team">Meet the team through our stories</a></div></div>
+ </>}
+ <a class="study-text-link people-more title-3" href="/about/news/">All company news and events</a>
+</section>

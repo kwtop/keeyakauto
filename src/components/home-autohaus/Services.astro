@@ -1,0 +1,24 @@
+---
+import {buyingFaqs} from '../../data/editorial';
+const steps=[
+ {title:'Tell us what you need',body:'Send the model and version, how many cars you need and where they’re going.',href:'/export-services/buying-guide/how-to-buy-cars-from-china/'},
+ {title:'Review the offer',body:'Confirm the seller, availability, itemised costs and service responsibilities.',href:'/export-services/buying-guide/compare-car-export-quotes/'},
+ {title:'Agree the checks',body:'Set the inspection scope, required records and acceptance terms.',href:'/export-services/sourcing-inspection/#scope'},
+ {title:'Arrange delivery',body:'Find out who handles export and transport, which documents you’ll receive and who will take delivery.',href:'/export-services/shipping-support/'}
+];
+const questions=[
+ {...buyingFaqs[0],href:'/export-services/faq/',link:'More purchasing answers'},
+ {question:'What should the quotation include?',answer:'The exact vehicle and version, quantity, currency, offer validity and agreed handover point. Ask for itemised costs, clear exclusions and the responsibilities of each party.',href:'/export-services/buying-guide/compare-car-export-quotes/',link:'Review the quotation checklist'},
+ {question:'Will this version suit my destination?',answer:'Check the exact version, steering side and available vehicle documents. For electric cars, review charging compatibility. Confirm any warranty and local support arrangements in writing.',href:'/export-services/buying-guide/#country-guides',link:'Check your destination'}
+];
+---
+<section class="ah-buying" id="buying-process" data-ah-section="Services" aria-labelledby="ah-service-title">
+ <div class="ah-container">
+  <div class="ah-buying-heading"><h2 id="ah-service-title">How buying from China works</h2><a class="ah-text-link" href="/export-services/buying-guide/">The buying guide</a></div>
+  <ol class="ah-buying-steps">{steps.map((step,index)=><li><span class="ah-step-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><div><h3><a href={step.href}>{step.title}</a></h3><p>{step.body}</p></div></li>)}</ol>
+  <div class="ah-buying-questions">
+   <div><h3 id="ah-question-title">Questions before you buy</h3><a class="ah-text-link" href="/export-services/faq/">See all buying FAQs</a></div>
+   <div class="ah-buying-answers" aria-labelledby="ah-question-title">{questions.map(q=><details class="ah-buying-question"><summary>{q.question}<span aria-hidden="true">+</span></summary><div><p>{q.answer}</p><a class="ah-text-link" href={q.href}>{q.link}</a></div></details>)}</div>
+  </div>
+ </div>
+</section>

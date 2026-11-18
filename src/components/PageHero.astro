@@ -1,0 +1,10 @@
+---
+interface Props {title:string;subtitle:string;label?:string;image?:string;imageAlt?:string;imageWidth?:number;imageHeight?:number;imageCaption?:string;}
+const {title,subtitle,image,imageAlt='Concept automotive photography',imageWidth=1536,imageHeight=1024}=Astro.props;
+---
+<section class:list={['page-hero',{'page-hero-editorial':!!image}]}>
+  <div class="shell page-hero-inner">
+    <div class="page-hero-copy"><h1>{title}</h1><p>{subtitle}</p></div>
+    {image&&<figure class="page-hero-visual"><img src={image} alt={imageAlt} width={imageWidth} height={imageHeight} fetchpriority="high"/></figure>}
+  </div>
+</section>

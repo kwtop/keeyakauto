@@ -1,0 +1,26 @@
+---
+interface Props {service?:string;title?:string;body?:string;existingOrder?:boolean;showFaq?:boolean;}
+const {service='',title='Tell us about your next car purchase',body='Share the model, quantity and destination. Add your version and inspection requirements in the next step.',existingOrder=false,showFaq=true}=Astro.props;
+---
+<section class="ex-inquiry ex-section" data-core-module="inquiry" data-module="inquiry" aria-labelledby="ex-inquiry-title">
+  <div class="ex-wrap ex-inquiry-inner">
+    <header class="ex-inquiry-heading"><h2 id="ex-inquiry-title">{title}</h2><div><p>{body}</p>{existingOrder?<a class="ex-link ex-order-contact" href="/contact/#existing-order">Contact the team about an existing order</a>:showFaq&&<a class="ex-link" href="/export-services/faq/">Questions before you start? Read the FAQ</a>}</div></header>
+    <form action="/quote/" method="get" class="ex-request-form" aria-label="Prepare a vehicle request">
+      {service&&<input type="hidden" name="service" value={service}/>}
+      <label class="ex-request-model">Model or vehicle requirement<input name="model" placeholder="Brand, model and preferred version" maxlength="200" required/></label>
+      <label>Vehicle type<select name="kind" required><option value="">Select a type</option><option value="new">New cars</option><option value="used-sourcing">Used cars</option></select></label>
+      <label>Quantity<input name="quantity" type="number" min="1" max="999999999" step="1" inputmode="numeric" placeholder="Number of cars" required/></label>
+      <label class="ex-request-country">Destination country<input name="country" autocomplete="country-name" maxlength="100" placeholder="Country / region" required/></label>
+      <button type="submit" class="ex-button">Start an inquiry</button>
+      <p class="ex-form-note">Review your brief before sending. An inquiry does not reserve a vehicle.</p>
+    </form>
+  </div>
+</section>
+<script>
+  document.querySelectorAll<HTMLFormElement>('.ex-request-form').forEach(form=>{
+    form.addEventListener('submit',()=>{
+      const quantity=form.querySelector<HTMLInputElement>('[name="quantity"]');
+      if(quantity&&quantity.validity.valid)quantity.value=String(quantity.valueAsNumber);
+    });
+  });
+</script>

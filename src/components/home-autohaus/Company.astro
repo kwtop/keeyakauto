@@ -1,0 +1,33 @@
+---
+import {company,people} from '../../data/company';
+import {art} from '../../data/autohausHome';
+const team=[
+ {person:people[0],image:art('team-isa')},
+ {person:people[2],image:art('team-frank')},
+ {person:people[1],image:art('team-alicia')},
+ {person:people[3],image:art('team-mia')}
+];
+---
+<section class="ah-company" id="nest-company-title" data-ah-section="Company" aria-labelledby="ah-story-title">
+ <div class="ah-container">
+  <div class="ah-company-grid">
+   <figure class="ah-company-photo">
+    <img src="/images/keeyak-home-source-20261019/office-visitor-group.webp" srcset="/images/keeyak-home-source-20261019/office-visitor-group-640.webp 640w, /images/keeyak-home-source-20261019/office-visitor-group-960.webp 960w, /images/keeyak-home-source-20261019/office-visitor-group.webp 1600w" sizes="(min-width:1400px) 678px, (min-width:960px) 48vw, calc(100vw - 40px)" width="1600" height="1200" alt="Colleagues and visitors at the KEEYAK office" loading="lazy"/>
+    <figcaption>Colleagues &amp; visitors at the KEEYAK office.</figcaption>
+   </figure>
+   <div class="ah-company-copy">
+    <h2 id="ah-story-title">Our team in Hangzhou</h2>
+    <p>KEEYAK is operated by {company.legalName}. Our Hangzhou team helps dealers, importers and fleets find passenger cars and arrange export.</p>
+    <p>You can meet the team and review our company records before discussing your order.</p>
+    <a class="ah-company-record" href="/about/company-profile/#company-documents">
+     <img src="/images/about-redesign/jingyan-sgs-assessment-2026-640.webp" width="640" height="428" alt="Original SGS company assessment for Zhejiang Jingyan Technology Co., Ltd." loading="lazy"/>
+     <span><strong>SGS company assessment</strong><span><time datetime="2026-06-25">25 June 2026</time> · 489102251_T</span><span class="ah-record-link">Review the original &amp; company details</span></span>
+    </a>
+   </div>
+  </div>
+  <div class="ah-company-team">
+   <h3 id="ah-team-title"><a href="/about/company-profile/#team">Meet the team</a></h3>
+   <div class="ah-team-list">{team.map(({person,image})=><a class="ah-team-member" href="/about/company-profile/#team"><img {...image} sizes="(max-width:809px) 56px, 84px" alt={`${person.name}, KEEYAK team — AI-edited portrait`} loading="lazy"/><span>{person.name}</span></a>)}</div>
+  </div>
+ </div>
+</section>

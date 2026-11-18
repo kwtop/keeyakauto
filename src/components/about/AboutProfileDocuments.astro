@@ -1,0 +1,20 @@
+---
+import AboutFigure from './AboutFigure.astro';
+import { company,companyDocuments } from '../../data/company';
+const supporting=companyDocuments.filter(doc=>doc.image!=='supplier-certificate-2026');
+---
+<section class="au-section au-soft" aria-labelledby="company-documents" data-core-module data-module="company-documents">
+  <div class="au-wrap">
+    <div class="au-section-heading"><h2 id="company-documents">Company credentials and records</h2><p>Review the company assessment and original records as part of your supplier checks.</p></div>
+    <div class="au-assessment-grid">
+      <div><AboutFigure src="/images/company/jingyan-sgs-assessment-2026.webp" alt="Gold Plus Supplier Assessment Certificate for Zhejiang Jingyan Technology Co., Ltd., record 489102251_T" original="/images/company/jingyan-sgs-assessment-2026-original.jpg" caption="Gold Plus Supplier Assessment Certificate · Original available" class="au-document-image" sizes="(max-width: 900px) 90vw, 720px"/><div class="au-document-originals"><a class="button button-outline" href="/images/company/jingyan-sgs-assessment-2026-original.jpg" target="_blank" rel="noopener noreferrer">Open original certificate</a><a class="au-link" href="/images/company/records/supplier-certificate-2026-original.jpg" target="_blank" rel="noopener noreferrer">Alternative original layout</a></div></div>
+      <div><h3>Independent supplier assessment</h3><p>The certificate records an onsite SGS assessment for the named company.</p><dl class="au-facts"><div><dt>Holder</dt><dd>{company.legalName}</dd></div><div><dt>Record number</dt><dd>489102251_T</dd></div><div><dt>Assessment date</dt><dd>25 June 2026</dd></div><div><dt>Printed validity</dt><dd>26 June 2026–25 June 2027</dd></div></dl><p class="au-note">Both original layouts refer to the same assessment. This company assessment does not certify a particular vehicle.</p></div>
+    </div>
+    <div class="au-supporting-records"><h3>Exhibition and platform documents</h3><div class="au-document-library">{supporting.map(doc=><article><AboutFigure src={`/images/company/records/${doc.image}.webp`} alt={`${doc.name}; printed holder ${doc.holder}`} original={`/images/company/records/${doc.image}-original.jpg`} class="au-document-thumb" sizes="(max-width: 700px) 44vw, (max-width: 1100px) 42vw, 380px"/><div><h4><a href={`/images/company/records/${doc.image}-original.jpg`} target="_blank" rel="noopener noreferrer">{doc.name}</a></h4><p class="au-printed-holder">Printed holder: {doc.holder}</p><details class="au-document-holder"><summary>Record details</summary><p>{doc.description}</p></details></div></article>)}</div></div>
+    <div class="au-document-guidance"><p class="au-note">Match the document holder with your contract, and check its scope and dates. For your purchase, request the actual vehicle, inspection, export and handover records, and confirm destination requirements separately.</p><a class="au-link" href="/export-services/buying-guide/car-import-documents-checklist/">Vehicle document checklist</a></div>
+  </div>
+</section>
+
+<style>
+  .au-document-library h4 a { overflow-wrap: anywhere; }
+</style>

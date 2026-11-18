@@ -1,0 +1,46 @@
+/* Company records keep their original photographs; service images are illustrative. */
+body.inner-editorial.site-nest.site-volta main .tc-site--about{
+ --tc-section-space:80px;
+ --tc-column-gap:72px;
+}
+body #main .tc-site--about .tc-opening-tasks{margin-top:40px}
+body #main .tc-site--about .tc-module-item-copy>.tc-module-meta{margin-top:8px}
+body #main .tc-site--about .tc-module-item-copy>p:not(.tc-module-meta){margin-top:12px}
+body #main .tc-site--about .tc-takeaway p{margin-top:12px}
+body #main .tc-site--about .tc-office-record dl{margin-top:32px}
+.tc-site--about #company-services .tc-module-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+
+/* A steady image rhythm makes the dated news easier to scan across each row. */
+.tc-site--about .tc-news-app .tc-story-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 32px}
+.tc-site--about .tc-news-app .tc-story-card{display:flex;flex-direction:column;margin-bottom:0}
+.tc-site--about .tc-news-app .tc-story-card .tc-figure img,
+.tc-site--about .tc-story-grid--related .tc-figure img{aspect-ratio:4/3;object-fit:cover;object-position:50% 38%}
+.tc-site--about .tc-news-app .tc-story-card-copy{padding-top:24px}
+.tc-site--about .tc-story-grid--related{gap:40px 48px}
+.tc-site--about .tc-event-lead--portrait .tc-event-image img{max-height:560px}
+
+@media(min-width:810px) and (max-width:1199px){
+ body.inner-editorial.site-nest.site-volta main .tc-site--about{--tc-section-space:72px;--tc-column-gap:40px}
+ .tc-site--about .tc-news-app .tc-story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 32px}
+ .tc-site--about #company-services .tc-module-grid{gap:32px}
+}
+@media(max-width:1099px){
+ .tc-site--about .tc-block--closing .tc-block-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"heading" "content";gap:32px}
+}
+@media(min-width:600px) and (max-width:999px){
+ .tc-site--about #company-services .tc-module-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 32px}
+ .tc-site--about #company-services .tc-module-item:last-child{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:center}
+ .tc-site--about #company-services .tc-module-item:last-child .tc-module-item-copy{padding-top:0}
+}
+@media(max-width:809px){
+ body.inner-editorial.site-nest.site-volta main .tc-site--about{--tc-section-space:56px;--tc-column-gap:28px}
+ .tc-site--about .tc-news-app .tc-story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 24px}
+ .tc-site--about .tc-story-grid--related{gap:32px}
+ .tc-site--about .tc-event-lead--portrait .tc-event-image img{max-height:480px}
+}
+@media(max-width:599px){
+ .tc-site--about #company-services .tc-module-grid{grid-template-columns:minmax(0,1fr);gap:48px}
+ .tc-site--about .tc-news-app .tc-story-grid{grid-template-columns:minmax(0,1fr);gap:44px}
+ .tc-site--about .tc-news-app .tc-story-card .tc-figure img{aspect-ratio:auto;object-fit:contain}
+ body #main .tc-site--about .tc-opening-tasks{margin-top:32px}
+}

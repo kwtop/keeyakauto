@@ -1,0 +1,77 @@
+---
+import {categoryHref} from '../../data/vehicleCategories';
+import {homeVehicleCategories} from '../../data/homeVehicleCategories';
+import BrandLogo from '../BrandLogo';
+import {powertrainLabel} from '../../data/catalogLabels';
+import {vehicleHref} from '../../data/catalog';
+import {usedSelection} from '../../data/autohausHome';
+import {vehicleCardPhoto} from '../../data/modelVisuals';
+import '../../styles/used-catalog.css';
+---
+<section class="ah-featured" id="models" data-ah-section="Cars" aria-labelledby="ah-models-title" data-model-collection>
+ <div class="ah-container">
+  <span id="used-models" class="ah-model-anchor" aria-hidden="true"></span>
+  <div class="ah-intro ah-model-heading">
+   <h2 id="ah-models-title">Browse new and used cars</h2>
+   <nav class="ah-model-tabs" aria-label="Browse car catalogs">
+    <a id="ah-new-tab" href="/new-cars/" data-model-kind="new" data-active="true" aria-current="true" aria-controls="ah-new-panel">New Cars</a>
+    <a id="ah-used-tab" href="/used-cars/" data-model-kind="used" aria-controls="ah-used-panel">Used Cars</a>
+   </nav>
+  </div>
+  <div id="ah-new-panel" class="ah-model-panel" role="region" aria-labelledby="ah-new-tab" data-model-panel="new">
+   <div class="ah-vehicle-grid ah-model-grid ah-category-grid">
+    {homeVehicleCategories.map(category=><a href={categoryHref('new',category.category)} class="ah-vehicle-card ah-category-card" aria-label={`Browse new ${category.label}`} data-category={category.category}>
+      <div class="ah-photo-card-inner">
+       <img src={category.src} srcset={category.srcSet} width="960" height="720" sizes="(min-width:1400px) 320px, (min-width:1024px) 23vw, (min-width:900px) 46vw, calc((100vw - 56px) / 2)" alt={category.alt} loading="lazy" decoding="async" data-asset-kind="ai-edited-photograph"/>
+       <div class="ah-photo-caption"><h3>{category.label}</h3></div>
+      </div>
+     </a>)}
+   </div>
+  </div>
+  <div id="ah-used-panel" class="ah-model-panel" role="region" aria-labelledby="ah-used-tab" data-model-panel="used" hidden>
+   <div class="ah-vehicle-grid ah-model-grid ah-model-carousel" role="region" aria-label="Featured used cars" tabindex="0">
+    {usedSelection.map(item=>{
+     const photo=vehicleCardPhoto(item.vehicle);
+     return <a href={vehicleHref(item.vehicle)} class="ah-vehicle-card ah-used-card" aria-label={item.vehicle.name}>
+      <div class="ah-photo-card-inner">
+       <img {...photo} width="960" height="720" sizes="(min-width:1400px) 320px, (min-width:1024px) 23vw, (min-width:600px) 46vw, calc(100vw - 60px - clamp(54px, 13vw, 72px))" alt={`${item.vehicle.name}, ${photo['data-ai-showroom']?'AI-generated showroom presentation':item.vehicle.presentationImage?'AI-edited presentation':'original supplied vehicle photograph'}`} loading="lazy" decoding="async"/>
+       <div class="ah-photo-caption">
+        <h3 class="brand-title"><BrandLogo slug={item.vehicle.brandSlug} name={item.vehicle.brand}/><span>{item.vehicle.modelName || item.vehicle.name}</span></h3>
+        <p>{item.vehicle.usedRecord?.mileageKm.toLocaleString('en-US')} km · {powertrainLabel(item.vehicle.powertrain)}</p>
+       </div>
+      </div>
+     </a>;
+    })}
+   </div>
+  </div>
+  <noscript><a class="ah-underlined" href="/used-cars/">Explore used cars</a></noscript>
+ </div>
+</section>
+
+<script>
+ // Select a preview first; activating the selected link opens its catalog.
+ const collection=document.querySelector<HTMLElement>('[data-model-collection]');
+ if(collection){
+  const links=Array.from(collection.querySelectorAll<HTMLAnchorElement>('[data-model-kind]'));
+  const panels=Array.from(collection.querySelectorAll<HTMLElement>('[data-model-panel]'));
+  const select=(kind:string)=>{
+   links.forEach(link=>{
+    const selected=link.dataset.modelKind===kind;
+    link.dataset.active=String(selected);
+    if(selected) link.setAttribute('aria-current','true');
+    else link.removeAttribute('aria-current');
+   });
+   panels.forEach(panel=>panel.hidden=panel.dataset.modelPanel!==kind);
+  };
+  links.forEach(link=>link.addEventListener('click',event=>{
+   if(event.button!==0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+   if(link.dataset.active==='true') return;
+   event.preventDefault();
+   select(link.dataset.modelKind!);
+  }));
+  const restore=()=>select(window.location.hash==='#used-models'?'used':'new');
+  restore();
+  window.addEventListener('hashchange',restore);
+  window.addEventListener('popstate',restore);
+ }
+</script>

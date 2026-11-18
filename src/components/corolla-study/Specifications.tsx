@@ -1,0 +1,15 @@
+import type {VehicleVariant} from '../../data/catalog';
+import {specificationText} from '../../data/keySpecifications';
+export function SpecTable({variant,compact=false}:{variant?:VehicleVariant;compact?:boolean}){
+ if(!variant)return <p className="cs-data-gap">Select a listed version to see its recorded specifications.</p>;
+ const metadata=new Set(['modelYear','powertrain','body','seats']);
+ const primary=compact?variant.specs.filter(s=>!metadata.has(s.field||'')&&!['Model year','Powertrain','Source body category'].includes(s.label)):variant.specs;
+ const secondary=compact?variant.specs.filter(s=>!primary.includes(s)):[];
+ const table=(specs:VehicleVariant['specs'],caption:string)=><table className="cs-spec-table"><caption>{caption}</caption><tbody>{specs.map((s,i)=><tr key={`${s.field||s.label}-${i}`}><th scope="row">{s.label==='Source body category'?'Catalog body group':s.label}</th><td>{specificationText(s)}{s.note&&<span className="cs-spec-note">{s.note}</span>}</td></tr>)}</tbody></table>;
+ return <>{table(primary,variant.name)}{secondary.length>0&&<details className="cs-model-reference"><summary>Model year & body details<span aria-hidden="true">+</span></summary>{table(secondary,variant.name+' · model reference')}</details>}<p className="cs-source">{variant.technicalReference?.status==='documented'?'Supplied specification comparison':'Catalog reference'}{variant.technicalReference?.column?` · column ${variant.technicalReference.column}`:''}. Confirm the offered vehicle, equipment and destination documents.</p></>;
+}
+export function CompareTable({selected,other,onChange,options}:{selected?:VehicleVariant;other?:VehicleVariant;onChange:(id:string)=>void;options:VehicleVariant[]}){
+ const fields=[['engine','Engine'],['transmission','Transmission'],['power','Maximum power (as listed)'],['fuelConsumption','Fuel consumption (WLTC)'],['dimensions','Dimensions'],['seats','Seats']];
+ const text=(variant:VehicleVariant|undefined,field:string)=>{const s=variant?.specs.find(s=>s.field===field||(field==='engine'&&s.label==='Engine designation'));return s?specificationText(s):'To confirm';};
+ return <div className="cs-comparison"><div className="cs-compare-heading"><div><span>Selected version</span><strong>{selected?.name||'Version to confirm'}</strong></div><label htmlFor="cs-compare-version">Compare with<select id="cs-compare-version" value={other?.id||''} onChange={e=>onChange(e.target.value)}>{options.map(v=><option value={v.id} key={v.id}>{v.name}</option>)}</select></label></div><table><caption className="cs-sr-only">Comparison of recorded Corolla versions</caption><thead><tr><th scope="col">Specification</th><th scope="col">Selected</th><th scope="col">Comparison</th></tr></thead><tbody>{fields.map(([field,label])=><tr key={field}><th scope="row">{label}</th><td>{text(selected,field)}</td><td>{text(other,field)}</td></tr>)}</tbody></table><p className="cs-source">Figures belong to each recorded version. Hybrid maximum-power references do not specify engine, motor or combined system output.</p></div>;
+}

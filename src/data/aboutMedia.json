@@ -1,0 +1,218 @@
+{
+  "/images/company/export-loading.webp": {
+    "width": 1920,
+    "height": 1080,
+    "src": "/images/about-redesign/export-loading-1440.webp",
+    "srcset": "/images/about-redesign/export-loading-640.webp 640w, /images/about-redesign/export-loading-1440.webp 1440w"
+  },
+  "/images/company/factory-yard.webp": {
+    "width": 1920,
+    "height": 1080,
+    "src": "/images/about-redesign/factory-yard-1440.webp",
+    "srcset": "/images/about-redesign/factory-yard-640.webp 640w, /images/about-redesign/factory-yard-1440.webp 1440w"
+  },
+  "/images/company/jingyan-sgs-assessment-2026.webp": {
+    "width": 2000,
+    "height": 1337,
+    "src": "/images/about-redesign/jingyan-sgs-assessment-2026-1440.webp",
+    "srcset": "/images/about-redesign/jingyan-sgs-assessment-2026-640.webp 640w, /images/about-redesign/jingyan-sgs-assessment-2026-1440.webp 1440w"
+  },
+  "/images/company/panel-welding.webp": {
+    "width": 1920,
+    "height": 1440,
+    "src": "/images/about-redesign/panel-welding-1440.webp",
+    "srcset": "/images/about-redesign/panel-welding-640.webp 640w, /images/about-redesign/panel-welding-1440.webp 1440w"
+  },
+  "/images/company/team-chongqing-2025.webp": {
+    "width": 2400,
+    "height": 1800,
+    "src": "/images/about-redesign/team-chongqing-2025-1440.webp",
+    "srcset": "/images/about-redesign/team-chongqing-2025-640.webp 640w, /images/about-redesign/team-chongqing-2025-1440.webp 1440w"
+  },
+  "/images/company/team-office-2024.webp": {
+    "width": 2400,
+    "height": 1800,
+    "src": "/images/about-redesign/team-office-2024-1440.webp",
+    "srcset": "/images/about-redesign/team-office-2024-640.webp 640w, /images/about-redesign/team-office-2024-1440.webp 1440w"
+  },
+  "/images/company/workshop-welding.webp": {
+    "width": 1920,
+    "height": 1440,
+    "src": "/images/about-redesign/workshop-welding-1440.webp",
+    "srcset": "/images/about-redesign/workshop-welding-640.webp 640w, /images/about-redesign/workshop-welding-1440.webp 1440w"
+  },
+  "/images/company/records/algeria-2026-01.webp": {
+    "width": 1800,
+    "height": 2400,
+    "src": "/images/about-redesign/algeria-2026-01-1440.webp",
+    "srcset": "/images/about-redesign/algeria-2026-01-640.webp 640w, /images/about-redesign/algeria-2026-01-1440.webp 1440w"
+  },
+  "/images/company/records/algeria-2026-02.webp": {
+    "width": 1800,
+    "height": 2400,
+    "src": "/images/about-redesign/algeria-2026-02-1440.webp",
+    "srcset": "/images/about-redesign/algeria-2026-02-640.webp 640w, /images/about-redesign/algeria-2026-02-1440.webp 1440w"
+  },
+  "/images/company/records/alibaba-fy26-recognition.webp": {
+    "width": 1100,
+    "height": 1567,
+    "src": "/images/about-redesign/alibaba-fy26-recognition-1100.webp",
+    "srcset": "/images/about-redesign/alibaba-fy26-recognition-640.webp 640w, /images/about-redesign/alibaba-fy26-recognition-1100.webp 1100w"
+  },
+  "/images/company/records/alicia-june.webp": {
+    "width": 591,
+    "height": 827,
+    "src": "/images/about-redesign/alicia-june-591.webp",
+    "srcset": "/images/about-redesign/alicia-june-591.webp 591w"
+  },
+  "/images/company/records/annual-gathering-2026.webp": {
+    "width": 1800,
+    "height": 1350,
+    "src": "/images/about-redesign/annual-gathering-2026-1440.webp",
+    "srcset": "/images/about-redesign/annual-gathering-2026-640.webp 640w, /images/about-redesign/annual-gathering-2026-1440.webp 1440w"
+  },
+  "/images/company/records/ashgabat-2024.webp": {
+    "width": 1100,
+    "height": 1758,
+    "src": "/images/about-redesign/ashgabat-2024-1100.webp",
+    "srcset": "/images/about-redesign/ashgabat-2024-640.webp 640w, /images/about-redesign/ashgabat-2024-1100.webp 1100w"
+  },
+  "/images/company/records/astana-2023.webp": {
+    "width": 1100,
+    "height": 1556,
+    "src": "/images/about-redesign/astana-2023-1100.webp",
+    "srcset": "/images/about-redesign/astana-2023-640.webp 640w, /images/about-redesign/astana-2023-1100.webp 1100w"
+  },
+  "/images/company/records/frank-pan.webp": {
+    "width": 1800,
+    "height": 1800,
+    "src": "/images/about-redesign/frank-pan-1440.webp",
+    "srcset": "/images/about-redesign/frank-pan-640.webp 640w, /images/about-redesign/frank-pan-1440.webp 1440w"
+  },
+  "/images/company/records/inapa-2024.webp": {
+    "width": 1100,
+    "height": 769,
+    "src": "/images/about-redesign/inapa-2024-1100.webp",
+    "srcset": "/images/about-redesign/inapa-2024-640.webp 640w, /images/about-redesign/inapa-2024-1100.webp 1100w"
+  },
+  "/images/company/records/indonesia-2024-01.webp": {
+    "width": 1800,
+    "height": 2400,
+    "src": "/images/about-redesign/indonesia-2024-01-1440.webp",
+    "srcset": "/images/about-redesign/indonesia-2024-01-640.webp 640w, /images/about-redesign/indonesia-2024-01-1440.webp 1440w"
+  },
+  "/images/company/records/indonesia-2024-02.webp": {
+    "width": 1800,
+    "height": 2400,
+    "src": "/images/about-redesign/indonesia-2024-02-1440.webp",
+    "srcset": "/images/about-redesign/indonesia-2024-02-640.webp 640w, /images/about-redesign/indonesia-2024-02-1440.webp 1440w"
+  },
+  "/images/company/records/indonesia-2024-03.webp": {
+    "width": 1800,
+    "height": 1350,
+    "src": "/images/about-redesign/indonesia-2024-03-1440.webp",
+    "srcset": "/images/about-redesign/indonesia-2024-03-640.webp 640w, /images/about-redesign/indonesia-2024-03-1440.webp 1440w"
+  },
+  "/images/company/records/isa.webp": {
+    "width": 1800,
+    "height": 2699,
+    "src": "/images/about-redesign/isa-1440.webp",
+    "srcset": "/images/about-redesign/isa-640.webp 640w, /images/about-redesign/isa-1440.webp 1440w"
+  },
+  "/images/company/records/mia-fu.webp": {
+    "width": 770,
+    "height": 770,
+    "src": "/images/about-redesign/mia-fu-770.webp",
+    "srcset": "/images/about-redesign/mia-fu-640.webp 640w, /images/about-redesign/mia-fu-770.webp 770w"
+  },
+  "/images/company/records/peru-exhibition-2024.webp": {
+    "width": 1100,
+    "height": 764,
+    "src": "/images/about-redesign/peru-exhibition-2024-1100.webp",
+    "srcset": "/images/about-redesign/peru-exhibition-2024-640.webp 640w, /images/about-redesign/peru-exhibition-2024-1100.webp 1100w"
+  },
+  "/images/company/records/supplier-certificate-2026.webp": {
+    "width": 1100,
+    "height": 1527,
+    "src": "/images/about-redesign/supplier-certificate-2026-1100.webp",
+    "srcset": "/images/about-redesign/supplier-certificate-2026-640.webp 640w, /images/about-redesign/supplier-certificate-2026-1100.webp 1100w"
+  },
+  "/images/company/records/uztech-2023.webp": {
+    "width": 1100,
+    "height": 1550,
+    "src": "/images/about-redesign/uztech-2023-1100.webp",
+    "srcset": "/images/about-redesign/uztech-2023-640.webp 640w, /images/about-redesign/uztech-2023-1100.webp 1100w"
+  },
+  "/images/company/records/vietnam-2026-01.webp": {
+    "width": 1280,
+    "height": 1706,
+    "src": "/images/about-redesign/vietnam-2026-01-1280.webp",
+    "srcset": "/images/about-redesign/vietnam-2026-01-640.webp 640w, /images/about-redesign/vietnam-2026-01-1280.webp 1280w"
+  },
+  "/images/company/records/vietnam-2026-02.webp": {
+    "width": 1280,
+    "height": 1706,
+    "src": "/images/about-redesign/vietnam-2026-02-1280.webp",
+    "srcset": "/images/about-redesign/vietnam-2026-02-640.webp 640w, /images/about-redesign/vietnam-2026-02-1280.webp 1280w"
+  },
+  "/images/company/records/vietnam-2026-03.webp": {
+    "width": 1280,
+    "height": 1706,
+    "src": "/images/about-redesign/vietnam-2026-03-1280.webp",
+    "srcset": "/images/about-redesign/vietnam-2026-03-640.webp 640w, /images/about-redesign/vietnam-2026-03-1280.webp 1280w"
+  },
+  "/images/company/about-selected/mexico-exhibition-01.webp": {
+    "width": 1706,
+    "height": 1279,
+    "src": "/images/about-redesign/mexico-exhibition-01-1440.webp",
+    "srcset": "/images/about-redesign/mexico-exhibition-01-640.webp 640w, /images/about-redesign/mexico-exhibition-01-1440.webp 1440w"
+  },
+  "/images/company/about-selected/mexico-exhibition-02.webp": {
+    "width": 1279,
+    "height": 1706,
+    "src": "/images/about-redesign/mexico-exhibition-02-1279.webp",
+    "srcset": "/images/about-redesign/mexico-exhibition-02-640.webp 640w, /images/about-redesign/mexico-exhibition-02-1279.webp 1279w"
+  },
+  "/images/company/about-selected/spring-festival-2023.webp": {
+    "width": 1800,
+    "height": 1350,
+    "src": "/images/about-redesign/spring-festival-2023-1440.webp",
+    "srcset": "/images/about-redesign/spring-festival-2023-640.webp 640w, /images/about-redesign/spring-festival-2023-1440.webp 1440w"
+  },
+  "/images/company/about-selected/spring-festival-2025.webp": {
+    "width": 2400,
+    "height": 1730,
+    "src": "/images/about-redesign/spring-festival-2025-1440.webp",
+    "srcset": "/images/about-redesign/spring-festival-2025-640.webp 640w, /images/about-redesign/spring-festival-2025-1440.webp 1440w"
+  },
+  "/images/company/about-selected/vietnam-booth-2026-wide.webp": {
+    "width": 1707,
+    "height": 1280,
+    "src": "/images/about-redesign/vietnam-booth-2026-wide-1440.webp",
+    "srcset": "/images/about-redesign/vietnam-booth-2026-wide-640.webp 640w, /images/about-redesign/vietnam-booth-2026-wide-1440.webp 1440w"
+  },
+  "/images/company/about-selected/vietnam-discussion-2026-wide.webp": {
+    "width": 2400,
+    "height": 1800,
+    "src": "/images/about-redesign/vietnam-discussion-2026-wide-1440.webp",
+    "srcset": "/images/about-redesign/vietnam-discussion-2026-wide-640.webp 640w, /images/about-redesign/vietnam-discussion-2026-wide-1440.webp 1440w"
+  },
+  "/images/about-redesign/passenger-car-port-concept.webp": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/images/about-redesign/passenger-car-port-concept-1440.webp",
+    "srcset": "/images/about-redesign/passenger-car-port-concept-640.webp 640w, /images/about-redesign/passenger-car-port-concept-1440.webp 1440w"
+  },
+  "/images/catalog/toyota/camry/toyota-camry-front-three-quarter-left.webp": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/images/about-redesign/toyota-camry-front-three-quarter-left-1440.webp",
+    "srcset": "/images/about-redesign/toyota-camry-front-three-quarter-left-640.webp 640w, /images/about-redesign/toyota-camry-front-three-quarter-left-1440.webp 1440w"
+  },
+  "/images/trust-rebuild-20261016/transport-planning.webp": {
+    "srcset": "/images/trust-rebuild-20261016/transport-planning-960.webp 960w, /images/trust-rebuild-20261016/transport-planning.webp 1536w",
+    "width": 1536,
+    "src": "/images/trust-rebuild-20261016/transport-planning.webp",
+    "height": 1024
+  }
+}

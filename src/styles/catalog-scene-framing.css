@@ -1,0 +1,7 @@
+/* New-car card photography only. Keep galleries and other catalog layouts intact. */
+body.inner-editorial.site-nest.site-volta .vehicle-card[data-kind="new"] .vehicle-media.vehicle-media--scene-framed {
+ position:relative;aspect-ratio:3/2;overflow:hidden;
+}
+body.inner-editorial.site-nest.site-volta .vehicle-card[data-kind="new"] .vehicle-media.vehicle-media--scene-framed img {
+ position:static;width:100%;height:100%;max-width:100%;padding:0;object-fit:cover;aspect-ratio:auto;transform:none;transition:none;
+}

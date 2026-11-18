@@ -1,0 +1,20 @@
+---
+import media from '../../data/aboutMedia.json';
+import siteAssets from '../../data/siteImagerySizes.json';
+interface Props { src:string; alt:string; caption?:string; class?:string; priority?:boolean; href?:string; original?:string; sizes?:string; width?:number;height?:number; }
+const {src,alt,caption,class:className='',priority=false,href,original,sizes='(max-width: 700px) calc(100vw - 40px), (max-width: 1440px) 90vw, 1248px',width,height}=Astro.props;
+const corporateSources:Record<string,{width:number;height:number;src:string;srcset:string}>={
+ '/images/keeyak-home-source-20261019/office-visitor-group.webp':{width:1600,height:1200,src:'/images/keeyak-home-source-20261019/office-visitor-group.webp',srcset:'/images/keeyak-home-source-20261019/office-visitor-group-640.webp 640w, /images/keeyak-home-source-20261019/office-visitor-group-960.webp 960w, /images/keeyak-home-source-20261019/office-visitor-group.webp 1600w'},
+ '/images/keeyak-home-source-20261019/vietnam-category-discussion-2026.webp':{width:1125,height:1500,src:'/images/keeyak-home-source-20261019/vietnam-category-discussion-2026.webp',srcset:'/images/keeyak-home-source-20261019/vietnam-category-discussion-2026-640.webp 640w, /images/keeyak-home-source-20261019/vietnam-category-discussion-2026-960.webp 960w, /images/keeyak-home-source-20261019/vietnam-category-discussion-2026.webp 1125w'}
+};
+const upgraded=Object.values(siteAssets).find(image=>image.src===src);
+const asset=(upgraded?{...upgraded,srcset:upgraded.srcSet}:undefined)||(media as Record<string,{width:number;height:number;src:string;srcset:string}>)[src]||corporateSources[src];
+const imageProps={src:asset?.src||src,srcset:asset?.srcset,sizes,width:asset?.width||width,height:asset?.height||height,alt,loading:priority?'eager' as const:'lazy' as const,fetchpriority:priority?'high' as const:'auto' as const,decoding:'async' as const};
+const link=href||original;
+const isOriginal=!!original&&!href;
+const originalLabel=className.includes('document')?'Open original document: ':'Open original photograph: ';
+---
+<figure class:list={['au-figure',className]}>
+  {link?<a class="au-figure-link" href={link} target={isOriginal?'_blank':undefined} rel={isOriginal?'noopener noreferrer':undefined} aria-label={isOriginal?originalLabel+alt:undefined}><img {...imageProps}/></a>:<img {...imageProps}/>}
+  {caption&&<figcaption>{caption}</figcaption>}
+</figure>

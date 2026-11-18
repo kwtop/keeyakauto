@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/HomeEndingPreview.astro';
+import Hero from '../home-autohaus/Hero.astro';
+import Vehicles from '../home-autohaus/VehicleCollection.astro';
+import Facility from '../home-autohaus/Facility.astro';
+import Visits from '../home-autohaus/Visits.astro';
+import Contact from './Contact.astro';
+interface Props {variant:'a'|'b'}
+const {variant}=Astro.props;
+---
+<Layout variant={variant} title={`Ending ${variant.toUpperCase()} preview`} description="Local design preview of the KEEYAK inquiry section and footer."><div class="ah-home"><Hero/><Vehicles/><Facility/><Visits/><Contact variant={variant}/></div></Layout>

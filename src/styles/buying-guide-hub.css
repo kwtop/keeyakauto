@@ -1,0 +1,213 @@
+/* Buying Guide hub, including the country directory. */
+.guide-library--editorial {
+  --guide-gap: clamp(18px, 2.4vw, 32px);
+  --guide-radius: 20px;
+  --guide-frame: 5px;
+  padding-top: clamp(20px, 3vw, 40px);
+}
+.guide-library--editorial .guide-library-heading {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.15fr);
+  gap: clamp(28px, 4vw, 60px);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.guide-library--editorial .guide-library-intro { padding: 0; }
+body.inner-autohaus #main .guide-library--editorial .guide-library-heading h1 {
+  max-width: 16ch;
+  font-size: var(--heading-page);
+  line-height: 1.12;
+  font-weight: 500;
+}
+.guide-library--editorial .guide-library-intro .tc-button { margin-top: 32px; }
+.guide-library-browse {display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:32px}
+.guide-library--editorial .guide-library-browse .tc-button {margin-top:0}
+.guide-library--editorial .guide-library-cover {
+  aspect-ratio: 3 / 2;
+  border-radius: calc(var(--guide-radius) + var(--guide-frame));
+}
+.guide-library--editorial .guide-library-cover img { object-position: center; }
+body #main .guide-featured {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--guide-gap);
+  margin: clamp(44px, 5vw, 72px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.guide-featured > li { min-width: 0; }
+.guide-featured-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--guide-frame);
+  border-radius: calc(var(--guide-radius) + var(--guide-frame));
+  background: #fff;
+  box-shadow: var(--tc-photo-shadow);
+  color: var(--tc-ink);
+  text-decoration: none;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.guide-featured-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--tc-control-shadow);
+}
+.guide-featured-photo {
+  overflow: hidden;
+  border-radius: var(--guide-radius);
+  background: var(--tc-paper);
+}
+.guide-featured-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+.guide-featured-title {
+  display: block;
+  padding: clamp(16px,1.6vw,22px) clamp(16px,1.7vw,24px) clamp(20px,2vw,28px);
+  font-size: var(--heading-list-card);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.guide-topics {
+  margin-top: clamp(56px, 6.3vw, 88px);
+  scroll-margin-top: 120px;
+}
+body.inner-autohaus #main .guide-topics > h2 {
+  max-width: none;
+  margin: 0;
+  font-size: clamp(30px, 3.2vw, 42px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+.guide-library--editorial .guide-category-index {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+  border: 0;
+}
+.guide-library--editorial .guide-category {
+  display: block;
+  min-width: 0;
+  padding: clamp(24px, 2.5vw, 36px);
+  border: 0;
+  border-radius: var(--guide-radius);
+  background: #f5f5f2;
+}
+body.inner-autohaus #main .guide-library--editorial .guide-category h3 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: none;
+  margin: 0 0 18px;
+  font-size: clamp(22px, 2vw, 27px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+.guide-library--editorial .guide-category h3 svg {
+  flex: none;
+  color: #6b644c;
+  stroke-width: 1.6;
+}
+.guide-library--editorial .guide-category li + li { border-color: #e5e5df; }
+body #main .guide-library--editorial .guide-category li > a {
+  min-height: 54px;
+  margin-inline: -10px;
+  padding: 13px 10px;
+  color: var(--tc-ink);
+  font-size: clamp(16px, 1.3vw, 18px);
+  line-height: 1.5;
+  transition: background-color 160ms ease;
+}
+body #main .guide-library--editorial .guide-category li > a:hover,
+body #main .guide-library--editorial .guide-category li:target > a,
+body #main .guide-library--editorial .guide-category li:has(.guide-legacy-anchor:target) > a {
+  background: #eaeae3;
+}
+.guide-library--editorial .guide-library-footer {
+  justify-content: space-between;
+  gap: 24px 32px;
+  margin-top: clamp(44px, 5vw, 72px);
+  padding: clamp(24px, 2.5vw, 36px);
+  border-radius: var(--guide-radius);
+  background: #f5f5f2;
+}
+body.inner-autohaus #main .guide-library--editorial .guide-library-footer h2 {
+  max-width: none;
+  margin: 0;
+  font-size: clamp(23px, 2vw, 28px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.guide-library-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 32px;
+}
+.guide-country-section {margin-top:clamp(56px,6.3vw,88px);scroll-margin-top:120px}
+body.inner-autohaus #main .guide-country-section > h2 {max-width:none;margin:0;font-size:clamp(30px,3.2vw,42px);font-weight:500;line-height:1.15}
+.guide-country-regions {display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:32px;margin-top:30px}
+.guide-country-region {min-width:0}
+body.inner-autohaus #main .guide-country-region h3 {max-width:none;margin:0 0 20px;font-size:clamp(22px,2vw,27px);font-weight:500;line-height:1.25}
+body #main .guide-country-links {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
+body #main .guide-country-links--three {grid-template-columns:repeat(3,minmax(0,1fr))}
+.guide-country-links li {min-width:0}
+body #main .guide-country-links a {display:flex;gap:14px;align-items:center;min-height:86px;padding:18px 20px;border-radius:14px;background:#f5f5f2;color:var(--tc-ink);font-size:16px;line-height:1.4;text-decoration:none;box-shadow:0 1px 2px rgb(0 0 0 / 2%);transition:background-color 160ms ease,box-shadow 160ms ease}
+body #main .guide-country-links a:hover {background:#fff;box-shadow:0 2px 4px rgb(0 0 0 / 4%),0 8px 22px rgb(0 0 0 / 7%)}
+.guide-country-links a:focus-visible {outline:2px solid var(--tc-ink);outline-offset:4px}
+.guide-country-flag {display:block;flex:none;width:36px;height:27px;object-fit:contain;border-radius:3px;box-shadow:0 1px 3px rgb(0 0 0 / 12%)}
+@media (max-width: 999px) {
+  .guide-library--editorial .guide-library-heading {
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  }
+  .guide-library--editorial .guide-category-index { gap: 18px; }
+  .guide-country-regions {grid-template-columns:minmax(0,1fr);gap:32px}
+  body #main .guide-country-links {grid-template-columns:repeat(3,minmax(0,1fr))}
+  body #main .guide-country-links:not(.guide-country-links--three) {grid-template-columns:repeat(4,minmax(0,1fr))}
+  body #main .guide-country-links a {gap:12px;padding:16px}
+}
+@media (max-width: 699px) {
+  .guide-library--editorial .guide-library-heading {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+  .guide-library--editorial .guide-library-intro .tc-button { margin-top: 24px; }
+  .guide-library-browse {margin-top:24px;gap:12px 22px}
+  .guide-library--editorial .guide-library-browse .tc-button {margin-top:0}
+  body #main .guide-featured,
+  .guide-library--editorial .guide-category-index { grid-template-columns: minmax(0, 1fr); }
+  .guide-library--editorial .guide-category { padding: clamp(18px,5vw,24px); }
+  body.inner-autohaus #main .guide-library--editorial .guide-category h3 {
+    gap: 12px;
+    font-size: clamp(20px,5vw,23px);
+    margin-bottom: 12px;
+  }
+  body #main .guide-library--editorial .guide-category li > a {
+    min-height: 48px;
+    padding-block: 12px;
+  }
+  .guide-library--editorial .guide-library-footer { display: grid; gap: 20px; }
+  .guide-library-actions { display: grid; justify-items: start; gap: 12px; }
+  .guide-country-regions {gap:30px;margin-top:26px}
+  body.inner-autohaus #main .guide-country-region h3 {margin-bottom:16px}
+  body #main .guide-country-links,
+  body #main .guide-country-links:not(.guide-country-links--three) {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  body #main .guide-country-links a {min-height:76px;padding:16px 14px}
+}
+@media (max-width: 359px) {
+  .guide-library--editorial .guide-category { padding: 22px 20px; }
+  body #main .guide-country-links a {gap:10px;padding:14px 12px;font-size:15px}
+  .guide-country-flag {width:28px;height:21px}
+}
+@media (prefers-reduced-motion: reduce) {
+  .guide-featured-card,
+  body #main .guide-country-links a,
+  body #main .guide-library--editorial .guide-category li > a { transition: none; }
+  .guide-featured-card:hover { transform: none; }
+}

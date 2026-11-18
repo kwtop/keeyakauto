@@ -1,0 +1,6 @@
+---
+import Action from './Action.astro';
+interface Props {title:string;description?:string;href?:string;label?:string;id?:string;}
+const {title,description,href,label,id}=Astro.props;
+---
+<div class="ah-intro"><h2 id={id} set:html={title}/>{description&&<p set:html={description}></p>}{href&&label&&<Action href={href} label={label}/>}</div>

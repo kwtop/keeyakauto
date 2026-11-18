@@ -1,0 +1,21 @@
+---
+import {company} from '../../data/company';
+interface Props {variant:'a'|'b'}
+const {variant}=Astro.props;
+const titleId=`ending-${variant}-title`;
+---
+<section id="requirement" class={`ep-contact ep-contact--${variant}`} data-ah-section="Inquiry" aria-labelledby={titleId}>
+ <div class="ep-shell ep-contact-grid">
+  <div class="ep-copy">
+   <h2 class="ep-title" id={titleId}>{variant==='a'?<>Your next order.<br/>Let’s make it happen.</>:<>Let’s talk about<br/>your next order.</>}</h2>
+   <p>Share the model, quantity and destination.</p>
+  </div>
+  <form class="ep-form" action="/quote/" method="get" aria-label="Prepare your vehicle inquiry">
+   <label for={`ep-${variant}-model`}>Model / requirement <span aria-hidden="true">*</span><input id={`ep-${variant}-model`} name="model" required maxlength="200" placeholder="Brand, model and version"/></label>
+   <div class="ep-field-row"><label for={`ep-${variant}-quantity`}>Quantity <span aria-hidden="true">*</span><input id={`ep-${variant}-quantity`} name="quantity" type="number" min="1" max="999999999" step="1" value="1" required/></label><label for={`ep-${variant}-country`}>Destination country <span aria-hidden="true">*</span><input id={`ep-${variant}-country`} name="country" required maxlength="100" autocomplete="country-name" placeholder="Country"/></label></div>
+   <div class="ep-submit"><button class="ep-action" type="submit">Prepare inquiry</button><p>Review before sending.</p></div>
+  </form>
+  <div class="ep-direct"><a href={`mailto:${company.email}`}>{company.email}</a><a href={company.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp {company.phone}</a></div>
+  {variant==='a'&&<figure class="ep-photo"><img src="/images/vehicle-brand-corrected-20261019/quotation-desk.webp" srcset="/images/vehicle-brand-corrected-20261019/quotation-desk-480.webp 480w, /images/vehicle-brand-corrected-20261019/quotation-desk-800.webp 800w, /images/vehicle-brand-corrected-20261019/quotation-desk-1200.webp 1200w, /images/vehicle-brand-corrected-20261019/quotation-desk.webp 1536w" sizes="(max-width:809px) calc(100vw - 40px), (max-width:1440px) 48vw, 680px" width="1536" height="1024" alt="Illustrative vehicle quotation setting with a document folder, keys and a Toyota Camry" loading="lazy" decoding="async"/></figure>}
+ </div>
+</section>

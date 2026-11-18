@@ -1,0 +1,92 @@
+/* Public heading roles shared by the homepage and inner-page templates. */
+body.autohaus-home,
+body.inner-editorial{
+ --heading-font:var(--site-font);
+ --heading-page:clamp(33px,calc(26px + 2.35vw),60px);
+ --heading-article:clamp(31px,calc(26px + 2vw),55px);
+ --heading-task:clamp(31px,calc(26px + 1.65vw),50px);
+ --heading-section:clamp(28px,calc(22px + 1.8vw),48px);
+ --heading-panel:clamp(26px,2.3vw,34px);
+ --heading-card:20px;
+ --heading-list-card:clamp(19px,2vw,24px);
+ --reading-measure:68ch;
+ --reading-leading:1.7;
+}
+body.autohaus-home{--heading-page:clamp(46px,5.2vw,70px)}
+
+/* #main gives this foundation precedence over older page-specific skins. */
+:is(body.autohaus-home,body.inner-editorial) #main :is(h1,h2,h3,h4,h5,h6){
+ font-family:var(--heading-font)!important;
+ font-weight:var(--site-type-weight)!important;
+ font-feature-settings:var(--site-font-features)!important;
+ text-wrap:balance;
+ overflow-wrap:break-word;
+ word-break:normal;
+ hyphens:manual;
+}
+:is(body.autohaus-home,body.inner-editorial) #main h1{
+ font-size:var(--heading-page);
+ line-height:1.14;
+ letter-spacing:var(--site-heading-tracking)!important;
+}
+:is(body.autohaus-home,body.inner-editorial) #main h2{
+ font-size:var(--heading-section);
+ line-height:1.22;
+ letter-spacing:var(--site-heading-tracking)!important;
+}
+:is(body.autohaus-home,body.inner-editorial) #main h3{
+ font-size:var(--heading-card);
+ line-height:1.32;
+ letter-spacing:var(--site-card-tracking)!important;
+}
+:is(body.autohaus-home,body.inner-editorial) #main :is(h4,h5,h6){
+ font-size:18px;
+ line-height:1.4;
+ letter-spacing:-.01em;
+}
+
+/* Titles inside cards or narrow columns have their own readable scale. */
+body.inner-editorial #main .vehicle-design h1{
+ font-size:clamp(28px,2.9vw,42px);
+ line-height:1.16;
+}
+body.inner-editorial #main :is(.catalog-closing,.reading-next,.vd-inquiry-heading,.quote-aside,.prepared-heading,.quote-empty,.tc-story-feature) h2{
+ font-size:var(--heading-panel);
+ line-height:1.24;
+}
+body.inner-editorial #main .catalog-brand-index h2{
+ font-size:24px;
+ line-height:1.3;
+ letter-spacing:-.015em;
+}
+body.inner-editorial #main :is(.tc-register,.tc-report-sheet,.tc-takeaway,.vd-full-specifications,.vd-manufacturer-reference) h3{
+ font-size:18px;
+ line-height:1.4;
+ letter-spacing:-.01em;
+}
+body.autohaus-home #main .ah-hero h1{
+ font-size:var(--heading-page);
+ line-height:1.1;
+}
+
+/* Native controls follow the public reading face across route layouts. */
+:is(body.autohaus-home,body.inner-editorial) :is(button,input,select,textarea) {
+ font-family:var(--site-font);
+ font-feature-settings:var(--site-font-features);
+}
+
+@media(max-width:809px){
+ body.autohaus-home,body.inner-editorial{
+  --heading-panel:28px;
+ }
+ body.autohaus-home{--heading-page:46px}
+ body.inner-editorial #main .catalog-brand-index h2{font-size:21px}
+ body.autohaus-home #main .ah-hero h1{line-height:1.2}
+}
+@media(max-width:359px){
+ body.autohaus-home,body.inner-editorial{
+  --heading-panel:26px;
+ }
+ body.autohaus-home{--heading-page:36px}
+ body.inner-editorial #main .vehicle-design h1{font-size:27px}
+}

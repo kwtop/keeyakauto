@@ -1,0 +1,19 @@
+---
+import {ArrowRight} from '@lucide/astro';
+import {model,media,imageFor} from '../../data/voltaHome';
+import {vehicleHref} from '../../data/catalog';
+const rav4=model('new','toyota/rav4');
+const choices=[
+ {title:'Cabin & seating',text:'Confirm space and seating for the exact version.',label:'Compare requirements',href:'/export-services/sourcing-inspection/#requirement',image:'/images/nest-home-20261018/cabin-detail.webp',alt:'Illustrative cabin detail, not evidence of a specific model configuration',tag:''},
+ {title:'Powertrain & charging',text:'Check the test cycle, connector and local charging options.',label:'Explore electric cars',href:'/new-cars/?power=Pure+Electric',image:imageFor(model('new','byd/yuan-plus')),alt:'BYD Yuan PLUS supplied model reference',tag:'Electric models'},
+ {title:'The right version',text:'Match equipment, dimensions and market specification.',label:'View Camry details',href:'/new-cars/toyota/camry/',image:'/images/catalog/toyota/camry/toyota-camry-left-side-view.webp',alt:'Original supplied Toyota Camry side-view model reference',tag:'Model details'},
+ {title:'The individual car',text:'Ask for dated records of identity, mileage and condition.',label:'Used-car sourcing',href:'/used-cars/',image:'/images/used-bmw-x5.webp',alt:'Historical third-party BMW X5 model photograph, not verified stock',tag:'Historical reference'}
+];
+---
+<section class="v-section v-feature v-divider-green" data-v-section="featured" aria-label="Featured model reference"><div class="v-container">
+ <div class="v-feature-frame"><picture><source media="(max-width:639px)" srcset={`${media}rav4-lake-mobile-640.webp 640w, ${media}rav4-lake-mobile.webp 1122w`} sizes="calc(100vw - 48px)"/><img src={media+'rav4-lake-wide-v3.webp'} srcset={`${media}rav4-lake-wide-v3-960.webp 960w, ${media}rav4-lake-wide-v3-1440.webp 1440w, ${media}rav4-lake-wide-v3.webp 1672w`} sizes="(min-width:1280px) 1232px, calc(100vw - 48px)" alt="Toyota RAV4 model reference in an AI-edited lakeside setting" width="1672" height="941" loading="lazy"/></picture><div class="v-feature-shade" aria-hidden="true"></div><div class="v-feature-copy"><p class="v-eyebrow">A model to explore</p><h2>{rav4.name}</h2><p>{rav4.year} · {rav4.powertrain}<br/>Review the recorded model details, then confirm the version for your destination.</p><a class="v-button v-button-white v-feature-button" href={vehicleHref(rav4)}>Explore this model <ArrowRight size={16}/></a></div></div>
+</div></section>
+<section class="v-section v-choices v-divider-amber" data-v-section="selection" aria-labelledby="v-choices-title"><div class="v-container">
+ <div class="v-section-head"><div><p class="v-eyebrow">Choose with confidence</p><h2 id="v-choices-title">Look closer before you choose</h2><p class="v-section-intro">The right car starts with the details that matter in your market.</p></div><a class="v-quiet-link" href="/export-services/sourcing-inspection/">All sourcing checks <ArrowRight size={14}/></a></div>
+ <div class="v-choice-grid" role="region" tabindex="0" aria-label="Selection details; scroll horizontally on small screens">{choices.map(item=><article class="v-choice-card"><a class="v-choice-image" href={item.href}><img src={item.image} alt={item.alt} loading="lazy" width="640" height="480"/>{item.tag&&<span>{item.tag}</span>}</a><div class="v-choice-copy"><h3><a href={item.href}>{item.title}</a></h3><p>{item.text}</p><a class="v-choice-link" href={item.href}>{item.label}<ArrowRight size={13}/></a></div></article>)}</div>
+</div></section>

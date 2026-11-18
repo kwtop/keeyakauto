@@ -1,0 +1,6 @@
+---
+import {eventHref,type CompanyEvent} from '../data/companyNews';
+interface Props {event:CompanyEvent;}
+const {event}=Astro.props;
+---
+<article class="news-card"><a class="news-card-media" href={eventHref(event)} tabindex="-1" aria-hidden="true"><img src={event.images[0].src} alt="" width="1800" height="1350" loading="lazy"/></a><time datetime={event.date}>{event.dateLabel} · {event.type}</time><h3><a href={eventHref(event)}>{event.title}</a></h3><p>{event.summary}</p><a class="button button-outline" href={eventHref(event)}>Read more</a></article>

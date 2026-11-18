@@ -1,0 +1,106 @@
+---
+import '../../../styles/design-preview/home-20261012.css';
+import PreviewShell from '../../../components/design-preview/PreviewShell.astro';
+import { vehicles, vehicleHref, brands } from '../../../data/catalog';
+import { vehicleDisplayImage } from '../../../data/imageDelivery';
+import {bodyGroupLabel} from '../../../data/catalogLabels';
+export function getStaticPaths() { return import.meta.env.DEV ? ['a','b','c','d'].map(direction => ({params:{direction}})) : []; }
+const {direction} = Astro.params;
+const toyota = vehicles.find(v => v.kind === 'new' && v.slug === 'rav4')!;
+const byd = vehicles.find(v => v.kind === 'new' && v.slug === 'sea-lion-06-dm-i')!;
+const usedExample = vehicles.find(v => v.kind === 'used' && v.slug === 'crown-vellfire-hybrid')!;
+const photo = (v: typeof toyota) => vehicleDisplayImage(v.image);
+const services = [
+  {title:'Vehicle sourcing',description:'Confirm the model, version and quantity before requesting a written offer.',href:'/export-services/vehicle-sourcing/'},
+  {title:'Vehicle inspection',description:'Review configuration and condition evidence for the proposed vehicle.',href:'/export-services/inspection-quality/'},
+  {title:'Shipping & delivery',description:'Confirm the route, documents and handover responsibilities for your destination.',href:'/export-services/shipping-delivery/'}
+];
+const names = {a:'Quiet product',b:'The vehicle journal',c:'Find your model',d:'The vehicle stage'};
+const title = names[direction as keyof typeof names];
+---
+<PreviewShell title={title} direction={direction}>
+  {direction === 'a' && <>
+    <section class="hero a-hero wrap">
+      <h1 data-enter>New and used cars<br/>from China</h1>
+      <p class="hero-subtitle muted" data-enter>For dealers, importers and fleet buyers.</p>
+      <figure class="a-stage" data-enter><img class="model-photo" data-scrub src={photo(toyota)} alt={`${toyota.name} source model photograph`} width="1400" height="1050" fetchpriority="high"/></figure>
+      <div class="a-model" data-enter><div><h2>{toyota.name}</h2><p class="muted">{toyota.year} model · {bodyGroupLabel(toyota.body,'used')} · {toyota.powertrain}</p></div><div class="actions"><a class="action" href={vehicleHref(toyota)}>View model</a><a class="action secondary" href="/new-cars/">All new cars</a></div></div>
+      <p class="source-note">Model reference. Exact version and availability require confirmation.</p>
+    </section>
+    <section class="section a-discover wrap">
+      <div class="a-section-title" data-reveal="type"><h2>Choose your starting point</h2><p class="muted">Browse new models or explore used-car sourcing.</p></div>
+      <div class="a-collections">
+        <article data-reveal="photo"><a href="/new-cars/"><img class="model-photo" src={photo(byd)} alt={`${byd.name} source model photograph`} width="1400" height="1050" loading="lazy"/><div class="collection-heading"><h3>New cars</h3></div></a><p class="muted">{byd.name} · {byd.powertrain}</p></article>
+        <article data-reveal="photo"><a href="/used-cars/"><img class="model-photo" src={photo(usedExample)} alt="Toyota Crown Vellfire Hybrid historical used-model reference photograph" width="994" height="540" loading="lazy"/><div class="collection-heading"><h3>Used-car references</h3></div></a><p class="muted">{usedExample.name} · {usedExample.powertrain}</p></article>
+      </div>
+      <p class="source-note collection-note">Used models are historical references; individual stock, mileage and condition are unverified.</p>
+    </section>
+    <section class="section a-services wrap">
+      <div class="a-section-title" data-reveal="type"><h2>From model to export plan</h2><p class="muted">KEEYAK is operated by Zhejiang Jingyan Technology Co., Ltd. Get to know the company and the buying process.</p></div>
+      <div data-reveal="type">{services.map(service => <article class="service-row"><h3>{service.title}</h3><p>{service.description}</p><a href={service.href} aria-label={`Explore ${service.title}`}>Explore</a></article>)}</div>
+      <div class="brief"><a class="line-link" href="/about/">About KEEYAK</a><a class="action" href="/quote/">Prepare a vehicle brief</a></div>
+    </section>
+  </>}
+  {direction === 'b' && <>
+    <section class="hero b-hero wrap">
+      <div class="b-hero-copy"><h1 data-enter>A considered<br/>choice of cars</h1><p data-enter>New and used cars from China.<br/>For dealers, importers and fleet buyers.</p><div class="actions" data-enter><a class="action" href="/new-cars/">Explore new cars</a><a class="line-link" href="/used-cars/">Used cars</a></div></div>
+      <figure class="b-hero-image" data-enter><div class="b-photo-frame"><img class="model-photo" data-scrub src={photo(byd)} alt={`${byd.name} source model photograph`} width="1400" height="1050" fetchpriority="high"/></div><figcaption><a href={vehicleHref(byd)}>{byd.name}</a><span>{byd.year} · {bodyGroupLabel(byd.body,'used')} · {byd.powertrain}</span></figcaption></figure>
+      <p class="source-note b-source">Model reference. Exact version and availability require confirmation.</p>
+    </section>
+    <section class="section b-begin wrap">
+      <h2 data-reveal="type">Two ways to begin</h2>
+      <div class="b-begin-grid">
+        <article data-reveal="type"><h3>New-car models</h3><p>Explore the model and configuration, then tell us the version, quantity and destination.</p><a class="line-link" href="/new-cars/">Browse the directory</a></article>
+        <article data-reveal="type"><h3>Used-car sourcing</h3><p>Start with a model reference. Ask for vehicle-specific condition and sourcing evidence.</p><a class="line-link" href="/used-cars/">Explore used cars</a><p class="source-note">Historical references. No verified individual stock is shown.</p></article>
+      </div>
+    </section>
+    <section class="section b-company wrap">
+      <div class="b-company-head" data-reveal="type"><h2>The people<br/>behind the process</h2><div><p>KEEYAK is operated by Zhejiang Jingyan Technology Co., Ltd. Its special-vehicle work connects manufacturing coordination, inspection records and export preparation.</p><a class="line-link" href="/about/">Get to know KEEYAK</a></div></div>
+      <div class="b-evidence-layout">
+        <figure class="b-archive" data-reveal="photo"><img src="/images/company/workshop-welding.webp" alt="Historical special-vehicle workshop with welding equipment and overhead cranes" width="1920" height="1440" loading="lazy"/><figcaption>Special-vehicle manufacturing archive. Passenger-car supply is confirmed for each inquiry.</figcaption></figure>
+        <aside class="b-service-notes" aria-label="Export service notes" data-reveal="type">{services.map(service => <article><h3><a href={service.href}>{service.title}</a></h3><p>{service.description}</p></article>)}</aside>
+      </div>
+      <div class="brief"><p class="muted">Share the model, version, quantity and destination.</p><a class="action" href="/quote/">Prepare a vehicle brief</a></div>
+    </section>
+  </>}
+  {direction === 'c' && <>
+    <section class="hero c-hero wrap">
+      <div class="c-heading"><h1 data-enter>Find your next model</h1><p data-enter>New and used cars from China<br/><span class="muted">For dealers, importers and fleet buyers.</span></p></div>
+      <form class="c-finder" action="/new-cars/" method="get" data-enter><label>Brand<select name="brand" aria-label="Brand"><option value="">All brands</option>{brands('new').map(brand => <option value={brand.slug}>{brand.name}</option>)}</select></label><label>Body type<select name="body" aria-label="Body type"><option value="">All body types</option>{[...new Set(vehicles.filter(v=>v.kind==='new').map(v=>v.body))].map(body=><option value={body}>{bodyGroupLabel(body,'used')}</option>)}</select></label><label>Powertrain<select name="power" aria-label="Powertrain"><option value="">All powertrains</option><option value="Pure Electric">Pure electric</option><option value="PHEV">Plug-in hybrid</option><option value="Hybrid">Hybrid</option><option value="Gasoline">Gasoline</option></select></label><button class="action" type="submit">Find models</button></form>
+      <div class="c-results" data-scrub data-enter>{[toyota,byd].map(vehicle => <article><a class="c-result-photo" href={vehicleHref(vehicle)}><img class="model-photo" src={photo(vehicle)} alt={`${vehicle.name} source model photograph`} width="1400" height="1050" fetchpriority="high"/></a><div class="c-result-body"><div><h2><a href={vehicleHref(vehicle)}>{vehicle.name}</a></h2><p class="muted">{vehicle.year} · {bodyGroupLabel(vehicle.body,'used')} · {vehicle.powertrain}</p></div><a class="c-result-link" href={vehicleHref(vehicle)} aria-label={`View ${vehicle.name}`}></a></div></article>)}</div>
+      <div class="c-directory-bottom"><p class="source-note">Model references. Exact versions and availability require confirmation.</p><a class="line-link" href="/new-cars/">All new cars</a></div>
+    </section>
+    <section class="section c-used wrap" data-reveal="photo">
+      <img src={photo(usedExample)} alt="Toyota Crown Vellfire Hybrid historical used-model reference photograph" width="994" height="540" loading="lazy"/>
+      <div><h2>Looking for a used car?</h2><p>Explore historical model references and ask about vehicle-specific sourcing.</p><p class="source-note">No verified individual stock, mileage or condition is shown.</p></div><a class="action secondary" href="/used-cars/">View used references</a>
+    </section>
+    <section class="section c-services wrap">
+      <div class="c-service-head" data-reveal="type"><h2>Prepare your vehicle brief</h2><p>Model. Version. Quantity. Destination.<br/>Confirm the scope of each step.</p></div>
+      <div class="c-planner" data-reveal="type">{services.map((service,i) => <details open={i===0}><summary>{service.title}<span aria-hidden="true">+</span></summary><div class="answer"><p>{service.description}</p><a class="line-link" href={service.href}>Explore the service</a></div></details>)}</div>
+      <div class="c-plan-actions"><a class="action" href="/quote/">Prepare a vehicle brief</a><a class="line-link" href="/export-services/buying-guide/">Read the buying guide</a></div>
+      <p class="c-company-note source-note">KEEYAK is operated by Zhejiang Jingyan Technology Co., Ltd. Supply and transaction responsibilities are confirmed for each inquiry. <a href="/about/">About the company</a></p>
+    </section>
+  </>}
+  {direction === 'd' && <>
+    <section class="hero d-hero wrap">
+      <div class="d-photo-heading" data-enter><h2>{byd.name}</h2><p>{byd.year} · {bodyGroupLabel(byd.body,'used')} · {byd.powertrain}</p></div>
+      <figure class="d-stage" data-enter><img class="model-photo" data-scrub src={photo(byd)} alt={`${byd.name} source model photograph`} width="1400" height="1050" fetchpriority="high"/></figure>
+      <div class="d-hero-bottom"><h1 data-enter>NEW &amp; USED CARS<br/>FROM CHINA</h1><div data-enter><p>For dealers, importers<br/>and fleet buyers.</p><a class="action" href={vehicleHref(byd)}>Explore the model</a></div></div>
+      <p class="source-note">Model reference. Exact version and availability require confirmation.</p>
+    </section>
+    <section class="section d-directory wrap">
+      <h2 data-reveal="type">The car comes first</h2>
+      <div class="d-paths" data-reveal="type"><a href="/new-cars/"><div><h3>New cars</h3><p>Explore model configurations and sourcing requirements.</p></div></a><a href="/used-cars/"><div><h3>Used-car references</h3><p>Historical models. Ask for vehicle-specific evidence.</p></div></a></div>
+      <p class="source-note">Used models do not represent verified individual stock, mileage or condition.</p>
+    </section>
+    <section class="section d-services wrap">
+      <h2 data-reveal="type">From brief to export</h2>
+      <div class="d-flow" data-reveal="type">
+        <article class="d-flow-start"><h3><a href={services[0].href}>Start with the model.</a></h3><p>{services[0].description}</p></article>
+        <article><h3><a href={services[1].href}>Review the vehicle.</a></h3><p>{services[1].description}</p></article>
+        <article><h3><a href={services[2].href}>Confirm the export plan.</a></h3><p>{services[2].description}</p></article>
+      </div>
+      <div class="d-inquiry"><a class="action" href="/quote/">Prepare a vehicle brief</a><p class="source-note">KEEYAK is operated by Zhejiang Jingyan Technology Co., Ltd. <a href="/about/">Get to know the company</a></p></div>
+    </section>
+  </>}
+</PreviewShell>

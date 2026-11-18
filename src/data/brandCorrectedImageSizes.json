@@ -1,0 +1,116 @@
+{
+  "port-overview": {
+    "src": "/images/scene-diversity-20261020/export-port-staging-apron.webp",
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      480,
+      800,
+      1200,
+      1672
+    ],
+    "srcSet": "/images/scene-diversity-20261020/export-port-staging-apron-480.webp 480w, /images/scene-diversity-20261020/export-port-staging-apron-800.webp 800w, /images/scene-diversity-20261020/export-port-staging-apron-1200.webp 1200w, /images/scene-diversity-20261020/export-port-staging-apron.webp 1672w",
+    "small": "/images/scene-diversity-20261020/export-port-staging-apron-800.webp"
+  },
+  "loading-path": {
+    "src": "/images/vehicle-brand-corrected-20261019/loading-path.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/vehicle-brand-corrected-20261019/loading-path-480.webp 480w, /images/vehicle-brand-corrected-20261019/loading-path-800.webp 800w, /images/vehicle-brand-corrected-20261019/loading-path.webp 1122w",
+    "small": "/images/vehicle-brand-corrected-20261019/loading-path-800.webp"
+  },
+  "shipping-portrait": {
+    "src": "/images/scene-diversity-20261020/export-carrier-ramp.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/scene-diversity-20261020/export-carrier-ramp-480.webp 480w, /images/scene-diversity-20261020/export-carrier-ramp-800.webp 800w, /images/scene-diversity-20261020/export-carrier-ramp.webp 1122w",
+    "small": "/images/scene-diversity-20261020/export-carrier-ramp-800.webp"
+  },
+  "support-diagnosis": {
+    "src": "/images/vehicle-brand-corrected-20261019/support-diagnosis.webp",
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "srcSet": "/images/vehicle-brand-corrected-20261019/support-diagnosis-480.webp 480w, /images/vehicle-brand-corrected-20261019/support-diagnosis-800.webp 800w, /images/vehicle-brand-corrected-20261019/support-diagnosis-1200.webp 1200w, /images/vehicle-brand-corrected-20261019/support-diagnosis.webp 1448w",
+    "small": "/images/vehicle-brand-corrected-20261019/support-diagnosis-800.webp"
+  },
+  "guide-support": {
+    "src": "/images/vehicle-brand-corrected-20261019/guide-support.webp",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "srcSet": "/images/vehicle-brand-corrected-20261019/guide-support-480.webp 480w, /images/vehicle-brand-corrected-20261019/guide-support-800.webp 800w, /images/vehicle-brand-corrected-20261019/guide-support.webp 1122w",
+    "small": "/images/vehicle-brand-corrected-20261019/guide-support-800.webp"
+  },
+  "ship-harbor": {
+    "src": "/images/vehicle-brand-corrected-20261019/ship-harbor.webp",
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      480,
+      800,
+      1200,
+      1254
+    ],
+    "srcSet": "/images/vehicle-brand-corrected-20261019/ship-harbor-480.webp 480w, /images/vehicle-brand-corrected-20261019/ship-harbor-800.webp 800w, /images/vehicle-brand-corrected-20261019/ship-harbor-1200.webp 1200w, /images/vehicle-brand-corrected-20261019/ship-harbor.webp 1254w",
+    "small": "/images/vehicle-brand-corrected-20261019/ship-harbor-800.webp"
+  },
+  "quotation-desk": {
+    "src": "/images/scene-diversity-20261020/purchasing-meeting-room.webp",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "srcSet": "/images/scene-diversity-20261020/purchasing-meeting-room-480.webp 480w, /images/scene-diversity-20261020/purchasing-meeting-room-800.webp 800w, /images/scene-diversity-20261020/purchasing-meeting-room-1200.webp 1200w, /images/scene-diversity-20261020/purchasing-meeting-room.webp 1536w",
+    "small": "/images/scene-diversity-20261020/purchasing-meeting-room-800.webp"
+  },
+  "guide-quotation": {
+    "src": "/images/scene-diversity-20261020/quotation-urban-workspace.webp",
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "srcSet": "/images/scene-diversity-20261020/quotation-urban-workspace-480.webp 480w, /images/scene-diversity-20261020/quotation-urban-workspace-800.webp 800w, /images/scene-diversity-20261020/quotation-urban-workspace-1200.webp 1200w, /images/scene-diversity-20261020/quotation-urban-workspace.webp 1536w",
+    "small": "/images/scene-diversity-20261020/quotation-urban-workspace-800.webp"
+  },
+  "choose-coastal": {
+    "src": "/images/vehicle-brand-corrected-20261019/choose-coastal.webp",
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      480,
+      800,
+      1200,
+      1254
+    ],
+    "srcSet": "/images/vehicle-brand-corrected-20261019/choose-coastal-480.webp 480w, /images/vehicle-brand-corrected-20261019/choose-coastal-800.webp 800w, /images/vehicle-brand-corrected-20261019/choose-coastal-1200.webp 1200w, /images/vehicle-brand-corrected-20261019/choose-coastal.webp 1254w",
+    "small": "/images/vehicle-brand-corrected-20261019/choose-coastal-800.webp"
+  }
+}

@@ -1,0 +1,24 @@
+---
+import {brands} from '../../data/catalog';
+import BrandLogo from '../BrandLogo';
+const homeBrands=brands('new');
+---
+<div class="ah-home-brands" data-ah-section="Brands">
+ <div class="ah-container">
+  <nav class="ah-model-brands ah-brand-viewport" aria-label="Browse new-car brands" style={{'--ah-brand-count':homeBrands.length}}><div class="ah-brand-track"><div class="ah-brand-set">{homeBrands.map((brand,index)=><a href={`/new-cars/${brand.slug}/`} style={{'--ah-brand-index':index}} aria-label={`Browse ${brand.name} new cars`}><BrandLogo slug={brand.slug} name={brand.name} catalogSize/></a>)}</div></div></nav>
+ </div>
+</div>
+<style>
+ .ah-home-brands .ah-brand-viewport{--ah-brand-pitch:160px;--ah-brand-period:200s}
+ .ah-home-brands .ah-brand-track{width:100%;animation:none}
+ .ah-home-brands .ah-brand-set,.ah-home-brands .ah-brand-set a{height:80px}
+ .ah-home-brands .ah-brand-set{position:relative;display:block;width:100%;padding:0}
+ .ah-home-brands .ah-brand-set a{position:absolute;left:0;top:0;animation:brand-item-roll var(--ah-brand-period) linear infinite;animation-delay:calc(-1 * var(--ah-brand-period) * (1 - (var(--ah-brand-index) + 1) / var(--ah-brand-count)))}
+ .ah-home-brands .ah-brand-viewport:hover a{animation-play-state:paused}
+ .ah-home-brands .ah-brand-viewport:focus-within{overflow-x:auto;mask-image:none}
+ .ah-home-brands .ah-brand-viewport:focus-within .ah-brand-set{display:flex;width:max-content;gap:calc(var(--ah-brand-pitch) - 112px)}
+ .ah-home-brands .ah-brand-viewport:focus-within a{position:static;animation:none;flex:none}
+ @keyframes brand-item-roll{from{transform:translateX(calc((var(--ah-brand-count) - 1) * var(--ah-brand-pitch)))}to{transform:translateX(calc(-1 * var(--ah-brand-pitch)))}}
+ @media(max-width:767px){.ah-home-brands .ah-brand-viewport{--ah-brand-pitch:156px}}
+ @media(prefers-reduced-motion:reduce){.ah-home-brands .ah-brand-viewport{overflow-x:auto;mask-image:none}.ah-home-brands .ah-brand-set{display:flex;width:max-content;gap:calc(var(--ah-brand-pitch) - 112px)}.ah-home-brands .ah-brand-set a{position:static;animation:none;flex:none}}
+</style>

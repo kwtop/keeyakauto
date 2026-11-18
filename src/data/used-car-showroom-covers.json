@@ -1,0 +1,126 @@
+{
+  "volkswagen/t-cross": {
+    "src": "/images/used-showroom-20261103/volkswagen-t-cross-960.webp",
+    "srcSet": "/images/used-showroom-20261103/volkswagen-t-cross-480.webp 480w, /images/used-showroom-20261103/volkswagen-t-cross-960.webp 960w"
+  },
+  "volkswagen/lavida": {
+    "src": "/images/used-showroom-20261103/volkswagen-lavida-960.webp",
+    "srcSet": "/images/used-showroom-20261103/volkswagen-lavida-480.webp 480w, /images/used-showroom-20261103/volkswagen-lavida-960.webp 960w"
+  },
+  "aion/s": {
+    "src": "/images/used-showroom-20261103/aion-s-960.webp",
+    "srcSet": "/images/used-showroom-20261103/aion-s-480.webp 480w, /images/used-showroom-20261103/aion-s-960.webp 960w"
+  },
+  "byd/seagull": {
+    "src": "/images/used-showroom-20261103/byd-seagull-960.webp",
+    "srcSet": "/images/used-showroom-20261103/byd-seagull-480.webp 480w, /images/used-showroom-20261103/byd-seagull-960.webp 960w"
+  },
+  "byd/seal-07-dm-i": {
+    "src": "/images/used-showroom-20261103/byd-seal-07-dm-i-960.webp",
+    "srcSet": "/images/used-showroom-20261103/byd-seal-07-dm-i-480.webp 480w, /images/used-showroom-20261103/byd-seal-07-dm-i-960.webp 960w"
+  },
+  "byd/qin-plus-dm-i": {
+    "src": "/images/used-showroom-20261103/byd-qin-plus-dm-i-960.webp",
+    "srcSet": "/images/used-showroom-20261103/byd-qin-plus-dm-i-480.webp 480w, /images/used-showroom-20261103/byd-qin-plus-dm-i-960.webp 960w"
+  },
+  "leapmotor/b01": {
+    "src": "/images/used-showroom-20261103/leapmotor-b01-960.webp",
+    "srcSet": "/images/used-showroom-20261103/leapmotor-b01-480.webp 480w, /images/used-showroom-20261103/leapmotor-b01-960.webp 960w"
+  },
+  "changan/eado-plus": {
+    "src": "/images/used-showroom-20261103/changan-eado-plus-960.webp",
+    "srcSet": "/images/used-showroom-20261103/changan-eado-plus-480.webp 480w, /images/used-showroom-20261103/changan-eado-plus-960.webp 960w"
+  },
+  "deepal/l07": {
+    "src": "/images/used-showroom-20261103/deepal-l07-960.webp",
+    "srcSet": "/images/used-showroom-20261103/deepal-l07-480.webp 480w, /images/used-showroom-20261103/deepal-l07-960.webp 960w"
+  },
+  "aion/y-plus": {
+    "src": "/images/used-showroom-20261103/aion-y-plus-960.webp",
+    "srcSet": "/images/used-showroom-20261103/aion-y-plus-480.webp 480w, /images/used-showroom-20261103/aion-y-plus-960.webp 960w"
+  },
+  "byd/song-plus-dm-i": {
+    "src": "/images/used-showroom-20261103/byd-song-plus-dm-i-960.webp",
+    "srcSet": "/images/used-showroom-20261103/byd-song-plus-dm-i-480.webp 480w, /images/used-showroom-20261103/byd-song-plus-dm-i-960.webp 960w"
+  },
+  "haval/menglong": {
+    "src": "/images/used-showroom-20261103/haval-menglong-960.webp",
+    "srcSet": "/images/used-showroom-20261103/haval-menglong-480.webp 480w, /images/used-showroom-20261103/haval-menglong-960.webp 960w"
+  },
+  "haval/h6-pro": {
+    "src": "/images/used-showroom-20261103/haval-h6-pro-960.webp",
+    "srcSet": "/images/used-showroom-20261103/haval-h6-pro-480.webp 480w, /images/used-showroom-20261103/haval-h6-pro-960.webp 960w"
+  },
+  "haval/h6-guochao": {
+    "src": "/images/used-showroom-20261103/haval-h6-guochao-960.webp",
+    "srcSet": "/images/used-showroom-20261103/haval-h6-guochao-480.webp 480w, /images/used-showroom-20261103/haval-h6-guochao-960.webp 960w"
+  },
+  "roewe/rx5-plus": {
+    "src": "/images/used-showroom-20261103/roewe-rx5-plus-960.webp",
+    "srcSet": "/images/used-showroom-20261103/roewe-rx5-plus-480.webp 480w, /images/used-showroom-20261103/roewe-rx5-plus-960.webp 960w"
+  },
+  "changan/cs55-plus": {
+    "src": "/images/used-showroom-20261103/changan-cs55-plus-960.webp",
+    "srcSet": "/images/used-showroom-20261103/changan-cs55-plus-480.webp 480w, /images/used-showroom-20261103/changan-cs55-plus-960.webp 960w"
+  },
+  "changan/cs75-plus": {
+    "src": "/images/used-showroom-20261103/changan-cs75-plus-960.webp",
+    "srcSet": "/images/used-showroom-20261103/changan-cs75-plus-480.webp 480w, /images/used-showroom-20261103/changan-cs75-plus-960.webp 960w"
+  },
+  "leapmotor/c16": {
+    "src": "/images/used-showroom-20261103/leapmotor-c16-960.webp",
+    "srcSet": "/images/used-showroom-20261103/leapmotor-c16-480.webp 480w, /images/used-showroom-20261103/leapmotor-c16-960.webp 960w"
+  },
+  "leapmotor/c11": {
+    "src": "/images/used-showroom-20261103/leapmotor-c11-960.webp",
+    "srcSet": "/images/used-showroom-20261103/leapmotor-c11-480.webp 480w, /images/used-showroom-20261103/leapmotor-c11-960.webp 960w"
+  },
+  "li-auto/l7": {
+    "src": "/images/used-showroom-20261103/li-auto-l7-960.webp",
+    "srcSet": "/images/used-showroom-20261103/li-auto-l7-480.webp 480w, /images/used-showroom-20261103/li-auto-l7-960.webp 960w"
+  },
+  "wuling/bingo-plus": {
+    "src": "/images/used-showroom-20261103/wuling-bingo-plus-960.webp",
+    "srcSet": "/images/used-showroom-20261103/wuling-bingo-plus-480.webp 480w, /images/used-showroom-20261103/wuling-bingo-plus-960.webp 960w"
+  },
+  "fangchengbao/bao-5": {
+    "src": "/images/used-showroom-20261103/fangchengbao-bao-5-960.webp",
+    "srcSet": "/images/used-showroom-20261103/fangchengbao-bao-5-480.webp 480w, /images/used-showroom-20261103/fangchengbao-bao-5-960.webp 960w"
+  },
+  "fangchengbao/tai-7-awd-ultra": {
+    "src": "/images/used-showroom-20261103/fangchengbao-tai-7-awd-ultra-960.webp",
+    "srcSet": "/images/used-showroom-20261103/fangchengbao-tai-7-awd-ultra-480.webp 480w, /images/used-showroom-20261103/fangchengbao-tai-7-awd-ultra-960.webp 960w"
+  },
+  "fangchengbao/tai-7-2wd-max": {
+    "src": "/images/used-showroom-20261103/fangchengbao-tai-7-2wd-max-960.webp",
+    "srcSet": "/images/used-showroom-20261103/fangchengbao-tai-7-2wd-max-480.webp 480w, /images/used-showroom-20261103/fangchengbao-tai-7-2wd-max-960.webp 960w"
+  },
+  "deepal/s07": {
+    "src": "/images/used-showroom-20261103/deepal-s07-960.webp",
+    "srcSet": "/images/used-showroom-20261103/deepal-s07-480.webp 480w, /images/used-showroom-20261103/deepal-s07-960.webp 960w"
+  },
+  "jetour/traveler-c-dm": {
+    "src": "/images/used-showroom-20261103/jetour-traveler-c-dm-960.webp",
+    "srcSet": "/images/used-showroom-20261103/jetour-traveler-c-dm-480.webp 480w, /images/used-showroom-20261103/jetour-traveler-c-dm-960.webp 960w"
+  },
+  "toyota/bz3x": {
+    "src": "/images/used-showroom-20261103/toyota-bz3x-960.webp",
+    "srcSet": "/images/used-showroom-20261103/toyota-bz3x-480.webp 480w, /images/used-showroom-20261103/toyota-bz3x-960.webp 960w"
+  },
+  "roewe/imax8": {
+    "src": "/images/used-showroom-20261103/roewe-imax8-960.webp",
+    "srcSet": "/images/used-showroom-20261103/roewe-imax8-480.webp 480w, /images/used-showroom-20261103/roewe-imax8-960.webp 960w"
+  },
+  "wuling/starlight-730-ev": {
+    "src": "/images/used-showroom-20261103/wuling-starlight-730-ev-960.webp",
+    "srcSet": "/images/used-showroom-20261103/wuling-starlight-730-ev-480.webp 480w, /images/used-showroom-20261103/wuling-starlight-730-ev-960.webp 960w"
+  },
+  "gwm/pao": {
+    "src": "/images/used-showroom-20261103/gwm-pao-960.webp",
+    "srcSet": "/images/used-showroom-20261103/gwm-pao-480.webp 480w, /images/used-showroom-20261103/gwm-pao-960.webp 960w"
+  },
+  "toyota/crown-vellfire-hybrid": {
+    "src": "/images/used-showroom-20261103/toyota-crown-vellfire-hybrid-960.webp",
+    "srcSet": "/images/used-showroom-20261103/toyota-crown-vellfire-hybrid-480.webp 480w, /images/used-showroom-20261103/toyota-crown-vellfire-hybrid-960.webp 960w"
+  }
+}

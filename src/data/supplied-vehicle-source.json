@@ -1,0 +1,921 @@
+{
+  "schemaVersion": 1,
+  "summary": {
+    "models": 1,
+    "variants": 4,
+    "photos": 6
+  },
+  "records": [
+    {
+      "publishable": true,
+      "importBatch": "supplied-tiggo8-20261116",
+      "kind": "new",
+      "brand": "Chery",
+      "brandSlug": "chery",
+      "slug": "tiggo-8",
+      "name": "Chery Tiggo 8",
+      "modelName": "Tiggo 8",
+      "year": "2026",
+      "body": "SUV",
+      "category": "SUV",
+      "powertrain": "Gasoline",
+      "seats": 5,
+      "image": "/images/catalog/chery/tiggo-8/chery-tiggo-8-front-left.webp",
+      "gallery": [
+        {
+          "src": "/images/catalog/chery/tiggo-8/chery-tiggo-8-front-left.webp",
+          "alt": "Chery Tiggo 8 supplied exterior reference, front left, AI-edited background and blank plate",
+          "treatment": "corrected",
+          "evidenceType": "model-reference",
+          "note": "AI-edited supplied model photograph with blank license plate and cleaned studio background. Exterior and equipment can differ by version; not evidence of an individual stock vehicle."
+        },
+        {
+          "src": "/images/catalog/chery/tiggo-8/chery-tiggo-8-front-right.webp",
+          "alt": "Chery Tiggo 8 supplied exterior reference, front right, AI-edited background and blank plate",
+          "treatment": "corrected",
+          "evidenceType": "model-reference",
+          "note": "AI-edited supplied model photograph with blank license plate and cleaned studio background. Exterior and equipment can differ by version; not evidence of an individual stock vehicle."
+        },
+        {
+          "src": "/images/catalog/chery/tiggo-8/chery-tiggo-8-front.webp",
+          "alt": "Chery Tiggo 8 supplied exterior reference, front, AI-edited background and blank plate",
+          "treatment": "corrected",
+          "evidenceType": "model-reference",
+          "note": "AI-edited supplied model photograph with blank license plate and cleaned studio background. Exterior and equipment can differ by version; not evidence of an individual stock vehicle."
+        },
+        {
+          "src": "/images/catalog/chery/tiggo-8/chery-tiggo-8-left-side.webp",
+          "alt": "Chery Tiggo 8 supplied exterior reference, left side, AI-edited background and blank plate",
+          "treatment": "corrected",
+          "evidenceType": "model-reference",
+          "note": "AI-edited supplied model photograph with blank license plate and cleaned studio background. Exterior and equipment can differ by version; not evidence of an individual stock vehicle."
+        },
+        {
+          "src": "/images/catalog/chery/tiggo-8/chery-tiggo-8-right-side.webp",
+          "alt": "Chery Tiggo 8 supplied exterior reference, right side, AI-edited background and blank plate",
+          "treatment": "corrected",
+          "evidenceType": "model-reference",
+          "note": "AI-edited supplied model photograph with blank license plate and cleaned studio background. Exterior and equipment can differ by version; not evidence of an individual stock vehicle."
+        },
+        {
+          "src": "/images/catalog/chery/tiggo-8/chery-tiggo-8-rear.webp",
+          "alt": "Chery Tiggo 8 supplied exterior reference, rear, AI-edited background and blank plate",
+          "treatment": "corrected",
+          "evidenceType": "model-reference",
+          "note": "AI-edited supplied model photograph with blank license plate and cleaned studio background. Exterior and equipment can differ by version; not evidence of an individual stock vehicle."
+        }
+      ],
+      "photoOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source": "https://www.chery.cn/vehicles/tiggo8leopard/carconfig/",
+      "sourceLabel": "Supplied model specification comparison",
+      "sourceNote": "Four readable columns from the supplied comparison. Photos show one exterior reference; match the exact version in the written offer.",
+      "sourceImportedAt": "2026-11-16",
+      "verifiedAt": null,
+      "supplyMethod": "Confirm on request",
+      "availability": "Unverified",
+      "referenceOnly": true,
+      "specs": [
+        {
+          "field": "modelYear",
+          "label": "Model year",
+          "value": "2026",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Model year"
+        },
+        {
+          "field": "powertrain",
+          "label": "Powertrain",
+          "value": "Gasoline",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Powertrain"
+        },
+        {
+          "field": "body",
+          "label": "Body structure",
+          "value": "5-door, 5-seat SUV",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Body structure"
+        },
+        {
+          "field": "seats",
+          "label": "Seats",
+          "value": "5",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Seats"
+        },
+        {
+          "field": "exteriorStyle",
+          "label": "Exterior style",
+          "value": "Leopard",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Exterior style"
+        },
+        {
+          "field": "engine",
+          "label": "Engine",
+          "value": "1.6T · 200 PS · inline 4",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Engine"
+        },
+        {
+          "field": "transmission",
+          "label": "Transmission",
+          "value": "7-speed wet DCT",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Transmission"
+        },
+        {
+          "field": "power",
+          "label": "Maximum engine power",
+          "value": "147",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Maximum engine power",
+          "unit": "kW"
+        },
+        {
+          "field": "torque",
+          "label": "Maximum engine torque",
+          "value": "310",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Maximum engine torque",
+          "unit": "N·m"
+        },
+        {
+          "field": "dimensions",
+          "label": "Dimensions (L × W × H)",
+          "value": "4725 × 1880 × 1705",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Dimensions (L × W × H)",
+          "unit": "mm"
+        },
+        {
+          "field": "maxSpeed",
+          "label": "Maximum speed",
+          "value": "190",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Maximum speed",
+          "unit": "km/h"
+        },
+        {
+          "field": "fuelConsumption",
+          "label": "Fuel consumption",
+          "value": "7.20",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Fuel consumption",
+          "unit": "L/100 km",
+          "testCycle": "WLTC"
+        },
+        {
+          "field": "emissions",
+          "label": "Listed emissions standard",
+          "value": "China VI",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Listed emissions standard",
+          "note": "China-market designation; confirm destination-specific approval documents."
+        },
+        {
+          "field": "kerbMass",
+          "label": "Kerb mass",
+          "value": "1540",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Kerb mass",
+          "unit": "kg"
+        },
+        {
+          "field": "grossMass",
+          "label": "Maximum laden mass",
+          "value": "1965",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: Maximum laden mass",
+          "unit": "kg"
+        },
+        {
+          "field": "chinaLaunchDate",
+          "label": "China-market launch date",
+          "value": "2025-11-10",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: China-market launch date"
+        },
+        {
+          "field": "domesticWarranty",
+          "label": "China-market warranty reference",
+          "value": "3 years / 100,000 km (domestic policy; export cover to confirm)",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: China-market warranty reference",
+          "note": "Terms in the supplied domestic comparison, not a KEEYAK export warranty. Confirm cover, exclusions and service territory in the written offer."
+        },
+        {
+          "field": "firstOwnerPolicy",
+          "label": "China-market first-owner policy",
+          "value": "Lifetime for non-commercial use, subject to manufacturer exclusions (domestic policy; export cover to confirm)",
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "cell": "Column 2: China-market first-owner policy",
+          "note": "Domestic source reference only. Eligibility, transferability and service territory require written confirmation; no overseas cover is asserted."
+        }
+      ],
+      "variants": [
+        {
+          "id": "supplied-2026-tiggo8-tiger-comfort",
+          "name": "2026 Tiger 1.6T DCT Comfort",
+          "year": "2026",
+          "powertrain": "Gasoline",
+          "specs": [
+            {
+              "field": "modelYear",
+              "label": "Model year",
+              "value": "2026",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Model year"
+            },
+            {
+              "field": "powertrain",
+              "label": "Powertrain",
+              "value": "Gasoline",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Powertrain"
+            },
+            {
+              "field": "body",
+              "label": "Body structure",
+              "value": "5-door, 5-seat SUV",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Body structure"
+            },
+            {
+              "field": "seats",
+              "label": "Seats",
+              "value": "5",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Seats"
+            },
+            {
+              "field": "exteriorStyle",
+              "label": "Exterior style",
+              "value": "Tiger",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Exterior style"
+            },
+            {
+              "field": "engine",
+              "label": "Engine",
+              "value": "1.6T · 200 PS · inline 4",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Engine"
+            },
+            {
+              "field": "transmission",
+              "label": "Transmission",
+              "value": "7-speed wet DCT",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Transmission"
+            },
+            {
+              "field": "power",
+              "label": "Maximum engine power",
+              "value": "147",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Maximum engine power",
+              "unit": "kW"
+            },
+            {
+              "field": "torque",
+              "label": "Maximum engine torque",
+              "value": "310",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Maximum engine torque",
+              "unit": "N·m"
+            },
+            {
+              "field": "dimensions",
+              "label": "Dimensions (L × W × H)",
+              "value": "4749 × 1880 × 1710",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Dimensions (L × W × H)",
+              "unit": "mm"
+            },
+            {
+              "field": "maxSpeed",
+              "label": "Maximum speed",
+              "value": "190",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Maximum speed",
+              "unit": "km/h"
+            },
+            {
+              "field": "fuelConsumption",
+              "label": "Fuel consumption",
+              "value": "7.20",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Fuel consumption",
+              "unit": "L/100 km",
+              "testCycle": "WLTC"
+            },
+            {
+              "field": "emissions",
+              "label": "Listed emissions standard",
+              "value": "China VI",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Listed emissions standard",
+              "note": "China-market designation; confirm destination-specific approval documents."
+            },
+            {
+              "field": "kerbMass",
+              "label": "Kerb mass",
+              "value": "1540",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Kerb mass",
+              "unit": "kg"
+            },
+            {
+              "field": "grossMass",
+              "label": "Maximum laden mass",
+              "value": "1965",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: Maximum laden mass",
+              "unit": "kg"
+            },
+            {
+              "field": "chinaLaunchDate",
+              "label": "China-market launch date",
+              "value": "2025-11-10",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: China-market launch date"
+            },
+            {
+              "field": "domesticWarranty",
+              "label": "China-market warranty reference",
+              "value": "3 years / 100,000 km (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: China-market warranty reference",
+              "note": "Terms in the supplied domestic comparison, not a KEEYAK export warranty. Confirm cover, exclusions and service territory in the written offer."
+            },
+            {
+              "field": "firstOwnerPolicy",
+              "label": "China-market first-owner policy",
+              "value": "Lifetime for non-commercial use, subject to manufacturer exclusions (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 1",
+              "cell": "Column 1: China-market first-owner policy",
+              "note": "Domestic source reference only. Eligibility, transferability and service territory require written confirmation; no overseas cover is asserted."
+            }
+          ],
+          "source": "User-supplied Tiggo 8 comparison, column 1",
+          "marketVersion": "China-market specification reference; confirm the offered vehicle",
+          "steering": "To confirm",
+          "seats": 5,
+          "note": "The supplied photos show one exterior reference. Tiger and Leopard exterior details differ; match the exact offered version.",
+          "technicalReference": {
+            "status": "documented",
+            "label": "User-supplied Tiggo 8 specification comparison",
+            "column": 1,
+            "reviewedAt": "2026-11-16",
+            "referenceId": "tiggo8-20261116-column-1"
+          }
+        },
+        {
+          "id": "supplied-2026-tiggo8-leopard-comfort",
+          "name": "2026 Leopard 1.6T DCT Comfort",
+          "year": "2026",
+          "powertrain": "Gasoline",
+          "specs": [
+            {
+              "field": "modelYear",
+              "label": "Model year",
+              "value": "2026",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Model year"
+            },
+            {
+              "field": "powertrain",
+              "label": "Powertrain",
+              "value": "Gasoline",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Powertrain"
+            },
+            {
+              "field": "body",
+              "label": "Body structure",
+              "value": "5-door, 5-seat SUV",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Body structure"
+            },
+            {
+              "field": "seats",
+              "label": "Seats",
+              "value": "5",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Seats"
+            },
+            {
+              "field": "exteriorStyle",
+              "label": "Exterior style",
+              "value": "Leopard",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Exterior style"
+            },
+            {
+              "field": "engine",
+              "label": "Engine",
+              "value": "1.6T · 200 PS · inline 4",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Engine"
+            },
+            {
+              "field": "transmission",
+              "label": "Transmission",
+              "value": "7-speed wet DCT",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Transmission"
+            },
+            {
+              "field": "power",
+              "label": "Maximum engine power",
+              "value": "147",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Maximum engine power",
+              "unit": "kW"
+            },
+            {
+              "field": "torque",
+              "label": "Maximum engine torque",
+              "value": "310",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Maximum engine torque",
+              "unit": "N·m"
+            },
+            {
+              "field": "dimensions",
+              "label": "Dimensions (L × W × H)",
+              "value": "4725 × 1880 × 1705",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Dimensions (L × W × H)",
+              "unit": "mm"
+            },
+            {
+              "field": "maxSpeed",
+              "label": "Maximum speed",
+              "value": "190",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Maximum speed",
+              "unit": "km/h"
+            },
+            {
+              "field": "fuelConsumption",
+              "label": "Fuel consumption",
+              "value": "7.20",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Fuel consumption",
+              "unit": "L/100 km",
+              "testCycle": "WLTC"
+            },
+            {
+              "field": "emissions",
+              "label": "Listed emissions standard",
+              "value": "China VI",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Listed emissions standard",
+              "note": "China-market designation; confirm destination-specific approval documents."
+            },
+            {
+              "field": "kerbMass",
+              "label": "Kerb mass",
+              "value": "1540",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Kerb mass",
+              "unit": "kg"
+            },
+            {
+              "field": "grossMass",
+              "label": "Maximum laden mass",
+              "value": "1965",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: Maximum laden mass",
+              "unit": "kg"
+            },
+            {
+              "field": "chinaLaunchDate",
+              "label": "China-market launch date",
+              "value": "2025-11-10",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: China-market launch date"
+            },
+            {
+              "field": "domesticWarranty",
+              "label": "China-market warranty reference",
+              "value": "3 years / 100,000 km (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: China-market warranty reference",
+              "note": "Terms in the supplied domestic comparison, not a KEEYAK export warranty. Confirm cover, exclusions and service territory in the written offer."
+            },
+            {
+              "field": "firstOwnerPolicy",
+              "label": "China-market first-owner policy",
+              "value": "Lifetime for non-commercial use, subject to manufacturer exclusions (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 2",
+              "cell": "Column 2: China-market first-owner policy",
+              "note": "Domestic source reference only. Eligibility, transferability and service territory require written confirmation; no overseas cover is asserted."
+            }
+          ],
+          "source": "User-supplied Tiggo 8 comparison, column 2",
+          "marketVersion": "China-market specification reference; confirm the offered vehicle",
+          "steering": "To confirm",
+          "seats": 5,
+          "note": "The supplied photos show one exterior reference. Tiger and Leopard exterior details differ; match the exact offered version.",
+          "technicalReference": {
+            "status": "documented",
+            "label": "User-supplied Tiggo 8 specification comparison",
+            "column": 2,
+            "reviewedAt": "2026-11-16",
+            "referenceId": "tiggo8-20261116-column-2"
+          }
+        },
+        {
+          "id": "supplied-2026-tiggo8-tiger-luxury",
+          "name": "2026 Tiger 1.6T DCT Luxury",
+          "year": "2026",
+          "powertrain": "Gasoline",
+          "specs": [
+            {
+              "field": "modelYear",
+              "label": "Model year",
+              "value": "2026",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Model year"
+            },
+            {
+              "field": "powertrain",
+              "label": "Powertrain",
+              "value": "Gasoline",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Powertrain"
+            },
+            {
+              "field": "body",
+              "label": "Body structure",
+              "value": "5-door, 5-seat SUV",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Body structure"
+            },
+            {
+              "field": "seats",
+              "label": "Seats",
+              "value": "5",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Seats"
+            },
+            {
+              "field": "exteriorStyle",
+              "label": "Exterior style",
+              "value": "Tiger",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Exterior style"
+            },
+            {
+              "field": "engine",
+              "label": "Engine",
+              "value": "1.6T · 200 PS · inline 4",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Engine"
+            },
+            {
+              "field": "transmission",
+              "label": "Transmission",
+              "value": "7-speed wet DCT",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Transmission"
+            },
+            {
+              "field": "power",
+              "label": "Maximum engine power",
+              "value": "147",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Maximum engine power",
+              "unit": "kW"
+            },
+            {
+              "field": "torque",
+              "label": "Maximum engine torque",
+              "value": "310",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Maximum engine torque",
+              "unit": "N·m"
+            },
+            {
+              "field": "dimensions",
+              "label": "Dimensions (L × W × H)",
+              "value": "4749 × 1880 × 1710",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Dimensions (L × W × H)",
+              "unit": "mm"
+            },
+            {
+              "field": "maxSpeed",
+              "label": "Maximum speed",
+              "value": "190",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Maximum speed",
+              "unit": "km/h"
+            },
+            {
+              "field": "fuelConsumption",
+              "label": "Fuel consumption",
+              "value": "7.20",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Fuel consumption",
+              "unit": "L/100 km",
+              "testCycle": "WLTC"
+            },
+            {
+              "field": "emissions",
+              "label": "Listed emissions standard",
+              "value": "China VI",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Listed emissions standard",
+              "note": "China-market designation; confirm destination-specific approval documents."
+            },
+            {
+              "field": "kerbMass",
+              "label": "Kerb mass",
+              "value": "1540",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Kerb mass",
+              "unit": "kg"
+            },
+            {
+              "field": "grossMass",
+              "label": "Maximum laden mass",
+              "value": "1965",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: Maximum laden mass",
+              "unit": "kg"
+            },
+            {
+              "field": "chinaLaunchDate",
+              "label": "China-market launch date",
+              "value": "2025-11-10",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: China-market launch date"
+            },
+            {
+              "field": "domesticWarranty",
+              "label": "China-market warranty reference",
+              "value": "3 years / 100,000 km (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: China-market warranty reference",
+              "note": "Terms in the supplied domestic comparison, not a KEEYAK export warranty. Confirm cover, exclusions and service territory in the written offer."
+            },
+            {
+              "field": "firstOwnerPolicy",
+              "label": "China-market first-owner policy",
+              "value": "Lifetime for non-commercial use, subject to manufacturer exclusions (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 3",
+              "cell": "Column 3: China-market first-owner policy",
+              "note": "Domestic source reference only. Eligibility, transferability and service territory require written confirmation; no overseas cover is asserted."
+            }
+          ],
+          "source": "User-supplied Tiggo 8 comparison, column 3",
+          "marketVersion": "China-market specification reference; confirm the offered vehicle",
+          "steering": "To confirm",
+          "seats": 5,
+          "note": "The supplied photos show one exterior reference. Tiger and Leopard exterior details differ; match the exact offered version.",
+          "technicalReference": {
+            "status": "documented",
+            "label": "User-supplied Tiggo 8 specification comparison",
+            "column": 3,
+            "reviewedAt": "2026-11-16",
+            "referenceId": "tiggo8-20261116-column-3"
+          }
+        },
+        {
+          "id": "supplied-2026-tiggo8-leopard-luxury",
+          "name": "2026 Leopard 1.6T DCT Luxury",
+          "year": "2026",
+          "powertrain": "Gasoline",
+          "specs": [
+            {
+              "field": "modelYear",
+              "label": "Model year",
+              "value": "2026",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Model year"
+            },
+            {
+              "field": "powertrain",
+              "label": "Powertrain",
+              "value": "Gasoline",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Powertrain"
+            },
+            {
+              "field": "body",
+              "label": "Body structure",
+              "value": "5-door, 5-seat SUV",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Body structure"
+            },
+            {
+              "field": "seats",
+              "label": "Seats",
+              "value": "5",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Seats"
+            },
+            {
+              "field": "exteriorStyle",
+              "label": "Exterior style",
+              "value": "Leopard",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Exterior style"
+            },
+            {
+              "field": "engine",
+              "label": "Engine",
+              "value": "1.6T · 200 PS · inline 4",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Engine"
+            },
+            {
+              "field": "transmission",
+              "label": "Transmission",
+              "value": "7-speed wet DCT",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Transmission"
+            },
+            {
+              "field": "power",
+              "label": "Maximum engine power",
+              "value": "147",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Maximum engine power",
+              "unit": "kW"
+            },
+            {
+              "field": "torque",
+              "label": "Maximum engine torque",
+              "value": "310",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Maximum engine torque",
+              "unit": "N·m"
+            },
+            {
+              "field": "dimensions",
+              "label": "Dimensions (L × W × H)",
+              "value": "4725 × 1880 × 1705",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Dimensions (L × W × H)",
+              "unit": "mm"
+            },
+            {
+              "field": "maxSpeed",
+              "label": "Maximum speed",
+              "value": "190",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Maximum speed",
+              "unit": "km/h"
+            },
+            {
+              "field": "fuelConsumption",
+              "label": "Fuel consumption",
+              "value": "7.20",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Fuel consumption",
+              "unit": "L/100 km",
+              "testCycle": "WLTC"
+            },
+            {
+              "field": "emissions",
+              "label": "Listed emissions standard",
+              "value": "China VI",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Listed emissions standard",
+              "note": "China-market designation; confirm destination-specific approval documents."
+            },
+            {
+              "field": "kerbMass",
+              "label": "Kerb mass",
+              "value": "1540",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Kerb mass",
+              "unit": "kg"
+            },
+            {
+              "field": "grossMass",
+              "label": "Maximum laden mass",
+              "value": "1965",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: Maximum laden mass",
+              "unit": "kg"
+            },
+            {
+              "field": "chinaLaunchDate",
+              "label": "China-market launch date",
+              "value": "2025-11-10",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: China-market launch date"
+            },
+            {
+              "field": "domesticWarranty",
+              "label": "China-market warranty reference",
+              "value": "3 years / 100,000 km (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: China-market warranty reference",
+              "note": "Terms in the supplied domestic comparison, not a KEEYAK export warranty. Confirm cover, exclusions and service territory in the written offer."
+            },
+            {
+              "field": "firstOwnerPolicy",
+              "label": "China-market first-owner policy",
+              "value": "Lifetime for non-commercial use, subject to manufacturer exclusions (domestic policy; export cover to confirm)",
+              "source": "User-supplied Tiggo 8 comparison, column 4",
+              "cell": "Column 4: China-market first-owner policy",
+              "note": "Domestic source reference only. Eligibility, transferability and service territory require written confirmation; no overseas cover is asserted."
+            }
+          ],
+          "source": "User-supplied Tiggo 8 comparison, column 4",
+          "marketVersion": "China-market specification reference; confirm the offered vehicle",
+          "steering": "To confirm",
+          "seats": 5,
+          "note": "The supplied photos show one exterior reference. Tiger and Leopard exterior details differ; match the exact offered version.",
+          "technicalReference": {
+            "status": "documented",
+            "label": "User-supplied Tiggo 8 specification comparison",
+            "column": 4,
+            "reviewedAt": "2026-11-16",
+            "referenceId": "tiggo8-20261116-column-4"
+          }
+        }
+      ],
+      "defaultVariantId": "supplied-2026-tiggo8-leopard-comfort",
+      "defaultVariantName": "2026 Leopard 1.6T DCT Comfort",
+      "publicCaution": null,
+      "rawSource": {
+        "comparison": "D:\\keeyak\\keeyakauto\\参考资料\\新增车型\\chery-tiggo-8-20261116\\specification-original.png",
+        "columns": [
+          {
+            "column": 1,
+            "style": "Tiger",
+            "trim": "Comfort",
+            "dimensions": "4749 × 1880 × 1710",
+            "originalTitle": "2026款 第五代 虎款 鲲鹏1.6T 自动舒适型"
+          },
+          {
+            "column": 2,
+            "style": "Leopard",
+            "trim": "Comfort",
+            "dimensions": "4725 × 1880 × 1705",
+            "originalTitle": "2026款 第五代 豹款 鲲鹏1.6T 自动舒适型"
+          },
+          {
+            "column": 3,
+            "style": "Tiger",
+            "trim": "Luxury",
+            "dimensions": "4749 × 1880 × 1710",
+            "originalTitle": "2026款 第五代 虎款 鲲鹏1.6T 自动豪华型"
+          },
+          {
+            "column": 4,
+            "style": "Leopard",
+            "trim": "Luxury",
+            "dimensions": "4725 × 1880 × 1705",
+            "originalTitle": "2026款 第五代 豹款 鲲鹏1.6T 自动豪华型"
+          }
+        ],
+        "domesticPriceReferenceCny": [
+          99900,
+          99900,
+          109900,
+          109900
+        ],
+        "dealerPriceReferenceCny": [
+          92900,
+          92900,
+          99900,
+          99900
+        ],
+        "originals": [
+          "D:\\keeyak\\keeyakauto\\参考资料\\新增车型\\chery-tiggo-8-20261116\\front-left-original.png",
+          "D:\\keeyak\\keeyakauto\\参考资料\\新增车型\\chery-tiggo-8-20261116\\front-right-original.png",
+          "D:\\keeyak\\keeyakauto\\参考资料\\新增车型\\chery-tiggo-8-20261116\\front-original.png",
+          "D:\\keeyak\\keeyakauto\\参考资料\\新增车型\\chery-tiggo-8-20261116\\left-side-original.png",
+          "D:\\keeyak\\keeyakauto\\参考资料\\新增车型\\chery-tiggo-8-20261116\\right-side-original.png",
+          "D:\\keeyak\\keeyakauto\\参考资料\\新增车型\\chery-tiggo-8-20261116\\rear-original.png"
+        ],
+        "officialContext": [
+          "https://www.chery.cn/vehicles/tiggo8tiger/carconfig/",
+          "https://www.chery.cn/vehicles/tiggo8leopard/carconfig/"
+        ],
+        "scope": "Only the four visible columns were transcribed. The screenshot mentions 12 versions, but no unseen columns are imported."
+      },
+      "internalIssues": [
+        "The supplied photo set has one repeated rear image, omitted from the gallery.",
+        "Domestic reference prices are retained here only; they are not export quotations.",
+        "No drive type, wheelbase, equipment differences, VIN, current availability or export warranty has been inferred."
+      ]
+    }
+  ]
+}

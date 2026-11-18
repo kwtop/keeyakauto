@@ -1,0 +1,82 @@
+---
+import ExportPage from '../../layouts/ExportPage.astro';
+import ExportHero from './ExportHero.astro';
+import ExportContents from './ExportContents.astro';
+import ExportFigure from './ExportFigure.astro';
+import ExportInquiry from './ExportInquiry.astro';
+import { recordsScene, reviewScene } from './exportStoryMedia';
+import { shippingSupport as page } from '../../data/exportServices';
+import { exportMedia } from '../../data/exportServiceMedia';
+const find=(id:string)=>page.sections.find(section=>section.id===id)!;
+const route=find('route'),cost=find('cost'),departure=find('pre-departure'),handover=find('handover'),coverage=find('coverage'),report=find('report'),parts=find('parts');
+const hero=exportMedia.shipping;
+const modes=[
+  {id:'roro',label:'Roll-on / roll-off',title:'Roll-on/roll-off service requirements',body:'Roll-on/roll-off shipping depends on an operating service that accepts the vehicles on your proposed route.'},
+  {id:'container',label:'Container',title:'Container loading and securing',body:'Container transport needs a suitable loading and securing plan for the vehicles being shipped.'},
+  {id:'overland',label:'Overland',title:'Overland routes and border arrangements',body:'For an overland route, check the border arrangements and onward transport before confirming the option for your order.'}
+];
+const costLabels=['Export side','Main transport','Destination','Importer arrangements'];
+const contents=[{id:'route',label:'Route'},{id:'cost',label:'Costs'},{id:'pre-departure',label:'Departure'},{id:'handover',label:'Arrival'},{id:'coverage',label:'Warranty'},{id:'report',label:'Issue report'},{id:'parts',label:'Parts'}];
+---
+<ExportPage title="Vehicle shipping, handover and after-sales support" description="Review car shipping routes, costs, departure and arrival records, warranty arrangements, vehicle issue reports and parts or software inquiries." page="shipping-support" image={hero.src}>
+  <ExportHero title="Vehicle shipping and after-sales support" intro="Plan transport and handover for a new shipment, or find the records and contact you need for an existing order." image={hero.src} alt={hero.alt} width={hero.width} height={hero.height} small={hero.small} variant="wide">
+    <div class="ex-related-links"><a class="ex-button" href="#route">Plan a shipment</a><a class="ex-link" href="#report">Existing-order issue</a></div>
+  </ExportHero>
+  <ExportContents items={contents}/>
+  <section class="ex-service-brief ex-wrap" id="service-scope" aria-labelledby="ex-shipping-role-title">
+    <div><h2 id="ex-shipping-role-title">Know who handles your shipment</h2><p>KEEYAK coordinates your shipment brief and handover questions. Your offer identifies the exporter, transport provider, receiving party and support contact for the services included.</p><a class="ex-link" href="/export-services/#responsibilities">Review the service responsibilities</a></div>
+    <dl><div><dt>Shipment planning</dt><dd>A route proposal, named providers, timing basis and included, excluded or estimated costs.</dd></div><div><dt>Handover & support</dt><dd>Release records and transport reference; an arrival check; the agreed contact and issue process. Documents and support depend on the order scope.</dd></div></dl>
+  </section>
+  <section class="ex-section ex-transport" id="route" data-core-module="route" data-module="route" aria-labelledby="ex-route-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-route-title">Choose a transport route for your vehicles</h2><p>{route.body}</p></header>
+    <div class="ex-route-layout"><div class="ex-route-content"><div class="ex-route-tabs" role="tablist" aria-label="Transport method" hidden>{modes.map((mode,index)=><button type="button" role="tab" id={`route-tab-${mode.id}`} aria-controls={`route-panel-${mode.id}`} aria-selected={index===0?'true':'false'} tabindex={index===0?0:-1}>{mode.label}</button>)}</div>
+    <div class="ex-route-panels">{modes.map(mode=><article id={`route-panel-${mode.id}`} class="ex-route-panel"><h3>{mode.title}</h3><p>{mode.body}</p></article>)}</div>
+    </div><dl class="ex-route-facts">{route.rows!.map(([label,body])=><div><dt>{label}</dt><dd>{body}</dd></div>)}</dl></div>
+    <div class="ex-route-cost" id="cost"><header><h3 id="ex-cost-title">Compare shipping costs and timing</h3><p>{cost.body}</p></header><dl class="ex-cost-items">{cost.points!.map((point,index)=><div><dt>{costLabels[index]}</dt><dd>{point}</dd></div>)}</dl><p class="ex-note">{cost.paragraphs![0]}</p></div>
+  </div></section>
+  <section class="ex-section ex-handover" data-core-module="departure-handover" data-module="departure-handover" aria-labelledby="ex-handover-title"><div class="ex-wrap">
+    <header class="ex-handover-heading"><h2 id="ex-handover-title">From departure checks to arrival inspection</h2><ExportFigure {...recordsScene} class="ex-handover-photo"/></header>
+    <div class="ex-handover-grid"><article id="pre-departure"><h3>Pre-departure records and checks</h3><p>{departure.body}</p><ul class="ex-check-list">{departure.points!.map(point=><li>{point}</li>)}</ul><div class="ex-related-links"><a class="ex-link" href="/export-services/sourcing-inspection/#scope">Inspection scope</a><a class="ex-link" href="/export-services/buying-guide/car-import-documents-checklist/">Document checklist</a></div></article>
+      <article id="handover"><h3>Vehicle checks on arrival</h3><p>{handover.body}</p>{handover.paragraphs!.map(text=><p>{text}</p>)}</article>
+    </div>
+  </div></section>
+  <section class="ex-section ex-soft" id="coverage" data-core-module="coverage" data-module="coverage" aria-labelledby="ex-coverage-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-coverage-title">Understand your warranty and support options</h2><p>{coverage.body}</p></header>
+    <dl class="ex-support-boundaries" aria-label="Warranty, seller support and local repair arrangements to confirm">{coverage.rows!.map(([area,detail])=><div><dt>{area}</dt><dd>{detail}</dd></div>)}</dl>
+    <div class="ex-support-agreement"><ExportFigure {...exportMedia.diagnosis}/><div>{coverage.paragraphs!.map(text=><p>{text}</p>)}</div></div>
+  </div></section>
+  <section class="ex-section ex-order-support" data-core-module="report-parts" data-module="report-parts" aria-labelledby="ex-order-support-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-order-support-title">Get support after delivery</h2><p>Identify the vehicle and keep its inspection, transport and handover records available.</p></header>
+    <div class="ex-order-workspace"><article id="report"><span id="diagnosis" class="ex-anchor" aria-hidden="true"></span><span id="follow-up" class="ex-anchor" aria-hidden="true"></span><header class="ex-report-heading"><h3>Information to include in an issue report</h3><p>{report.body}</p></header><div class="ex-report-records"><ul class="ex-check-list">{report.points!.map(point=><li>{point}</li>)}</ul><ExportFigure {...reviewScene} class="ex-report-photo"/></div>
+      <div class="ex-report-followup">
+      <ol class="ex-support-steps"><li><strong>Identify the order.</strong> Send the order reference, vehicle identifier and receiving details to the agreed contact.</li><li><strong>Attach the evidence.</strong> Include dated photos, symptoms and the relevant inspection or handover record.</li><li><strong>Agree the next step.</strong> Record the provider, approval, cost responsibility and expected update before paid work begins.</li></ol>
+      <p>Describe checks or repairs already carried out. Keep original photographs, readings and reports for comparison with the inspection and handover file.</p>
+      <p>Before diagnosis or repair begins, agree the workshop, evidence, approval and responsibility for costs. A local diagnosis does not by itself establish warranty coverage or reimbursement.</p>
+      <p>Keep the agreed next step, expected update and any repair or replacement record under the order reference. Confirm unresolved issues with the same contact.</p></div>
+      <a class="ex-link" href="/contact/#existing-order">Contact the team about this order</a>
+    </article>
+    <article id="parts"><header class="ex-report-heading"><h3>Parts and software inquiries</h3><p>{parts.body}</p></header><dl class="ex-parts-list">{parts.rows!.map(([label,body])=><div><dt>{label}</dt><dd>{body}</dd></div>)}</dl>{parts.paragraphs!.map(text=><p class="ex-note">{text}</p>)}</article></div>
+  </div></section>
+  <ExportInquiry service="shipping-support" title="Discuss your vehicle shipment" body="Share the vehicle requirement, quantity and destination. For an existing order, use the contact and records agreed for that purchase." existingOrder/>
+</ExportPage>
+<script>
+  const transport=document.querySelector<HTMLElement>('.ex-transport');
+  const tabs=transport?.querySelector<HTMLElement>('.ex-route-tabs');
+  const buttons=Array.from(transport?.querySelectorAll<HTMLButtonElement>('[role="tab"]')||[]);
+  const panels=Array.from(transport?.querySelectorAll<HTMLElement>('.ex-route-panel')||[]);
+  if(tabs&&buttons.length&&panels.length){
+    tabs.hidden=false;
+    const select=(index:number)=>{
+      buttons.forEach((button,i)=>{button.setAttribute('aria-selected',String(i===index));button.tabIndex=i===index?0:-1;});
+      panels.forEach((panel,i)=>{panel.hidden=i!==index;panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',buttons[i].id);});
+    };
+    buttons.forEach((button,index)=>{
+      button.addEventListener('click',()=>select(index));
+      button.addEventListener('keydown',event=>{
+        const next=event.key==='ArrowRight'?(index+1)%buttons.length:event.key==='ArrowLeft'?(index+buttons.length-1)%buttons.length:event.key==='Home'?0:event.key==='End'?buttons.length-1:null;
+        if(next!==null){event.preventDefault();select(next);buttons[next].focus();}
+      });
+    });
+    select(0);
+  }
+</script>

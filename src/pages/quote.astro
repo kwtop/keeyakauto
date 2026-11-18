@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import QuoteForm from '../components/QuoteForm';
+import '../styles/nest-contact.css';
+import '../styles/quote-page.css';
+---
+<Base title="Request a vehicle quote" description="Send your vehicle requirements, quantity, destination and contact details to KEEYAK Auto.">
+ <Breadcrumbs items={[{label:'Request a Vehicle Quote'}]}/>
+ <header class="nest-inquiry-heading shell quote-page-heading"><h1>Request a vehicle quote</h1></header>
+ <div class="nest-inquiry-content shell quote-page"><QuoteForm client:load/></div>
+</Base>

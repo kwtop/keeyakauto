@@ -1,0 +1,76 @@
+---
+import {ChevronDown,Search,X} from '@lucide/astro';
+import TrustLayout from '../../layouts/TrustLayout.astro';
+import TrustBlock from './TrustBlock.astro';
+import {exportFaqGroups} from '../../data/exportServices';
+import {trustMedia} from '../../data/trustMedia';
+import TrustFigure from './TrustFigure.astro';
+import {exportFaqIllustrations} from '../../data/exportIllustrations';
+import '../../styles/export-illustrated.css';
+const before=exportFaqGroups.filter(group=>['choosing','ordering','inspection'].includes(group.id));
+const after=exportFaqGroups.filter(group=>['shipping','support'].includes(group.id));
+---
+<TrustLayout title="Car sourcing and export FAQs" label="FAQ" group="export" pageType="FAQPage" modified="2026-10-28" questions={exportFaqGroups.flatMap(group=>group.questions)} description="Answers to 26 car sourcing and export questions: stock, quotations, payment, inspection reports, EVs, shipping documents and support after delivery." image={trustMedia('records').src}>
+ <div class="tc-faq-app">
+  <section class="tc-wrap tc-opening" data-core-module data-module="E6-01" aria-labelledby="tc-page-title">
+   <div class="tc-opening-copy"><div><h1 id="tc-page-title">Car sourcing and export FAQs</h1></div><div><form class="tc-search" role="search" aria-label="Search export questions"><label for="trust-faq-search">Search all 26 questions and answers</label><div><Search size={19}/><input id="trust-faq-search" type="search" placeholder="Models, payment, shipping..." autocomplete="off" maxlength="120"/><button type="button" data-clear-search aria-label="Clear search" hidden><X size={18}/></button></div><p data-search-status role="status" aria-live="polite" hidden></p></form></div></div>
+
+  </section>
+  <div class="tc-wrap tc-empty" data-search-empty hidden><h2>No matching questions</h2><p>Try another word or return to all questions.</p><button class="tc-button" type="button" data-clear-search>Show all questions</button></div>
+  {[{id:'E6-02',title:'Questions before you order',groups:before},{id:'E6-03',title:'Shipping and after-sales questions',groups:after}].map((section,index)=>
+   <section class:list={['tc-block',{'tc-block--soft':index===1}]} data-core-module data-module={section.id} data-faq-section aria-labelledby={`${section.id}-title`}>
+    <div class="tc-wrap tc-faq-grid"><header><h2 id={`${section.id}-title`}>{section.title}</h2></header><div>{section.groups.map(group=>
+     <div id={group.id} class="tc-faq-group" data-faq-group><h3>{group.title}</h3><TrustFigure media={exportFaqIllustrations[group.id]} compact/><div class="tc-questions">{group.questions.map((faq,index)=><details id={`faq-${group.id}-${index+1}`} data-faq-question><summary>{faq.question}<ChevronDown size={19}/></summary><p>{faq.answer}</p></details>)}</div><a class="tc-text-link" href={group.href}>{group.linkLabel}</a></div>
+    )}</div></div>
+   </section>
+  )}
+  <TrustBlock block={{id:'E6-04',title:'Ask the KEEYAK team',body:'Tell us what you would like to buy, or get help with an existing order.',kind:'contact',links:[{label:'Start an inquiry',href:'/quote/'},{label:'Existing order support',href:'/export-services/after-sales/'}]}}/>
+ </div>
+</TrustLayout>
+<style>
+ :global(body.inner-autohaus #main) .tc-faq-app :is(.tc-opening,.tc-faq-grid){max-width:1120px}
+ :global(body.inner-autohaus #main) .tc-faq-app .tc-opening-copy{align-items:end;gap:24px}
+ :global(body.inner-autohaus #main) .tc-faq-app .tc-opening h1{font-size:var(--heading-task)}
+ :global(body.inner-autohaus #main) .tc-faq-app .tc-search{
+  grid-template-columns:minmax(0,1fr);
+  padding:16px;
+  border-radius:var(--ed-panel-radius);
+  background:var(--surface);
+ }
+ :global(body.inner-autohaus #main) .tc-faq-app .tc-faq-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+ .tc-faq-grid>header{position:static}
+ :global(body.inner-autohaus #main) .tc-faq-grid>header h2{font-size:clamp(26px,2.8vw,36px)}
+ :global(body.inner-autohaus #main) .tc-faq-app .tc-faq-group+.tc-faq-group{margin-top:36px}
+ @media(max-width:480px){
+  :global(body.inner-autohaus #main) .tc-faq-app .tc-search{padding:12px}
+  :global(body.inner-autohaus #main) .tc-faq-app .tc-search>div{gap:8px;padding-inline:12px}
+ }
+</style>
+<script>
+ const root=document.querySelector<HTMLElement>('.tc-faq-app');
+ const input=root?.querySelector<HTMLInputElement>('#trust-faq-search');
+ if(root&&input){
+  const questions=[...root.querySelectorAll<HTMLDetailsElement>('[data-faq-question]')];
+  const originalState=new Map<HTMLDetailsElement,boolean>();
+  let searching=false;
+  const update=()=>{
+   const term=input.value.trim().toLocaleLowerCase('en');
+   if(term&&!searching){questions.forEach(item=>originalState.set(item,item.open));searching=true;}
+   let matches=0;
+   questions.forEach(item=>{const match=!term||(item.textContent||'').toLocaleLowerCase('en').includes(term);item.hidden=!match;if(match)matches++;if(term)item.open=match;else if(searching)item.open=originalState.get(item)||false;});
+   if(!term)searching=false;
+   root.querySelectorAll<HTMLElement>('[data-faq-group]').forEach(group=>group.hidden=![...group.querySelectorAll<HTMLDetailsElement>('[data-faq-question]')].some(item=>!item.hidden));
+   root.querySelectorAll<HTMLElement>('[data-faq-section]').forEach(section=>section.hidden=![...section.querySelectorAll<HTMLElement>('[data-faq-group]')].some(group=>!group.hidden));
+   const status=root.querySelector<HTMLElement>('[data-search-status]');if(status){status.hidden=!term;status.textContent=`${matches} ${matches===1?'question':'questions'} found`;}
+   const empty=root.querySelector<HTMLElement>('[data-search-empty]');if(empty)empty.hidden=matches>0;
+   const clear=root.querySelector<HTMLButtonElement>('.tc-search [data-clear-search]');if(clear)clear.hidden=!term;
+  };
+  input.addEventListener('input',update);
+  root.querySelector('form')?.addEventListener('submit',event=>event.preventDefault());
+  root.querySelectorAll<HTMLButtonElement>('[data-clear-search]').forEach(button=>button.addEventListener('click',()=>{input.value='';update();input.focus();}));
+  const openHash=()=>{const match=questions.find(item=>item.id===location.hash.slice(1));if(match){input.value='';update();match.open=true;requestAnimationFrame(()=>match.scrollIntoView({block:'start',behavior:'instant'}));}};
+  window.addEventListener('hashchange',openHash);
+  window.addEventListener('load',openHash,{once:true});
+  openHash();
+ }
+</script>

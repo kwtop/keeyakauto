@@ -1,0 +1,11 @@
+---
+import {trustMedia} from '../../data/trustMedia';
+interface Props { media: string; priority?: boolean; wide?: boolean; natural?: boolean; information?: boolean; href?: string; compact?: boolean; sitemapImage?: boolean; }
+const {media,priority=false,wide=false,natural=false,href,compact=false,sitemapImage=false}=Astro.props;
+const asset=trustMedia(media);
+const ImageTag=href?'a':'div';
+---
+<figure class:list={['tc-figure',`tc-figure--${media}`,{'tc-figure--wide':wide,'tc-figure--natural':natural||asset.kind!=='concept','tc-figure--portrait':asset.height>asset.width}]} data-media={media}>
+ <ImageTag href={href} class="tc-image-link"><img src={asset.src} srcset={asset.srcset} sizes={wide?'(max-width: 809px) calc(100vw - 40px), (max-width: 1440px) calc(100vw - 96px), 1280px':'(max-width: 809px) calc(100vw - 40px), 48vw'} width={asset.width} height={asset.height} alt={asset.alt} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async" data-asset-kind={asset.kind} data-sitemap-image={sitemapImage&&asset.kind!=='concept'?'':undefined}/></ImageTag>
+ {asset.kind!=='concept'&&!compact&&asset.caption&&<figcaption class="tc-image-caption">{asset.caption}</figcaption>}
+</figure>

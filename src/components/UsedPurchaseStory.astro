@@ -1,0 +1,28 @@
+---
+import VehicleCard from './VehicleCard.astro';
+import {bodyGroupLabel} from '../data/catalogLabels';
+import ProcurementFigure from './ProcurementFigure.astro';
+import {brandHref,vehicleHref,relatedVehicles,type Vehicle} from '../data/catalog';
+interface Props{vehicle:Vehicle;}
+const {vehicle}=Astro.props;
+const related=relatedVehicles(vehicle);
+const charging=['Pure Electric','Hybrid'].includes(vehicle.powertrain);
+const quoteHref='/quote/?'+new URLSearchParams({model:vehicle.name,kind:'used',brand:vehicle.brand,year:vehicle.year,powertrain:vehicle.powertrain,source:vehicleHref(vehicle)}).toString();
+---
+<section class="used-detail-section section-anchor" data-module="sourcing-requirements" data-core-module="requirements" id="used-requirements">
+ <div class="shell used-requirement-story">
+  <div><h2>Tell us what you’re looking for</h2><p>The historical record lists {vehicle.year}, {bodyGroupLabel(vehicle.body,vehicle.kind)} and {vehicle.powertrain}. Use those as a starting point; the proposed vehicle needs its own dates and specification.</p><dl class="model-summary"><div><dt>Year range</dt><dd>State acceptable model / registration years</dd></div><div><dt>Mileage limit</dt><dd>Give the maximum with km or miles</dd></div><div><dt>Version and condition</dt><dd>List equipment, repair and wear priorities</dd></div><div><dt>Budget and quantity</dt><dd>Amount or range, currency and requested units</dd></div></dl><p>Include the destination and any alternatives you would consider. If you need several similar cars, each one will need to be sourced and checked individually.</p></div>
+  <ProcurementFigure scene="inspection" caption="Agree the required checks."/>
+ </div>
+</section>
+<section class="used-detail-section" data-module="unit-evidence" data-core-module="evidence">
+ <div class="shell"><div class="used-evidence-heading"><h2>Vehicle history and condition records</h2><p>Request records linked to the proposed car before assessing its condition or agreeing a purchase.</p></div>
+ <div class="used-evidence-layout"><div class="table-wrap"><table class="data-table used-evidence-table"><caption>Evidence to request for a particular {vehicle.name}</caption><thead><tr><th scope="col">Subject</th><th scope="col">What to establish</th></tr></thead><tbody><tr><th scope="row">Identity and dates</th><td>VIN-linked vehicle, holding party, exact trim, production and first-registration records</td></tr><tr><th scope="row">Mileage</th><td>Dated odometer evidence, units and supporting service / registration records</td></tr><tr><th scope="row">Condition and history</th><td>Exterior, cabin, underbody and mechanical findings; repair history, defects and unchecked areas</td></tr>{charging&&<tr><th scope="row">Battery and electrical system</th><td>Applicable battery records with test date, method and conditions{vehicle.powertrain==='Pure Electric'?'; actual charging-interface details':''}</td></tr>}<tr><th scope="row">Documents and equipment</th><td>Available vehicle / export documents, keys, accessories and installed equipment</td></tr></tbody></table></div>
+ <aside class="used-report-note" id="review-findings"><h3>Understand the inspection findings</h3><p>The report should identify the car, inspection date and inspector, describe known damage or repairs, and state which records or checks are missing.</p><p>“Not checked” does not mean “checked with no issue found”. Missing records do not establish an accident-free history.</p><a href="/export-services/sourcing-inspection/#scope">Inspection scope and questions</a></aside></div>
+ </div>
+</section>
+<section class="used-detail-section" data-module="purchase-conditions" data-core-module="conditions">
+ <div class="shell used-conditions-story"><ProcurementFigure scene="shipping" wide caption="Agree transport for the individual car."/>
+ <div><h2>Confirm the terms before you buy</h2><p>Ask for a current written offer that identifies the seller and individual car. Check its price and currency, validity date and preparation time. Agree the payment and inspection terms, including what happens if the car is sold or fails a check.</p><p>Check the steering side and local software functions for the actual car. Confirm its destination eligibility and documents, then agree transport and any warranty coverage.</p><div class="catalog-text-links"><a href="/export-services/buying-guide/compare-car-export-quotes/">Quotation & costs</a><a href="/export-services/buying-guide/car-order-payment-and-changes/">Payment & changes</a><a href="/export-services/buying-guide/check-car-import-eligibility/">Destination checks</a><a href="/about/company-profile/#company-documents">Company Documents</a></div></div></div>
+</section>
+<section class="used-detail-section" data-module="inquiry-and-alternatives" data-core-module="inquiry"><div class="shell"><div class="cta-panel"><div><h2>Ask us to find a used car</h2><p>Tell us your preferred year range and mileage limit, plus the quantity and destination.</p></div><div class="content-actions"><a class="button button-dark" href={quoteHref}>Ask us to find this model</a><a class="detail-secondary" href={brandHref('used',vehicle.brandSlug)}>Browse {vehicle.brand}</a></div></div>{related.length>0&&<div class="detail-related"><h3>More used-car listings</h3><div class="vehicle-grid vehicle-grid-two">{related.slice(0,2).map(item=><VehicleCard vehicle={item}/>)}</div></div>}</div></section>

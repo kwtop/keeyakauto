@@ -1,0 +1,18 @@
+---
+import { Mail } from '@lucide/astro';
+import { company } from '../data/company';
+---
+<section class="about-section about-inquiry about-soft" aria-labelledby="about-inquiry-title" data-module="inquiry">
+  <div class="about-wrap about-inquiry-grid">
+    <div><h2 id="about-inquiry-title">Start with the cars you need</h2><p>Tell us your requirements and the questions you would like answered.</p></div>
+    <form class="about-quick-form" action="/quote/" method="get" aria-label="Start a vehicle inquiry">
+      <div class="about-fields">
+        <label>Model<input name="model" required maxlength="300" placeholder="e.g. Toyota Camry" autocomplete="off" /></label>
+        <label>Quantity<input name="quantity" type="number" min="1" max="999999999" step="1" required placeholder="e.g. 5" inputmode="numeric" /></label>
+        <label>Destination country<input name="country" required maxlength="300" placeholder="e.g. Chile" autocomplete="country-name" /></label>
+      </div>
+      <div class="about-form-actions"><button class="about-button" type="submit">Request a Quote</button><a class="about-email" href={`mailto:${company.email}`}><Mail size={20} stroke-width={1.5} aria-hidden="true" />{company.email}</a></div>
+      <p class="about-form-note">Continue to the inquiry form to add details and review your request.</p>
+    </form>
+  </div>
+</section>

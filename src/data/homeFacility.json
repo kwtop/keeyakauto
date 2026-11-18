@@ -1,0 +1,27 @@
+{
+  "photo": {
+    "src": "/images/home-facility-20261021/keeyak-preparation-hall-1600.webp",
+    "width": 1600,
+    "height": 942,
+    "srcset": "/images/home-facility-20261021/keeyak-preparation-hall-480.webp 480w, /images/home-facility-20261021/keeyak-preparation-hall-800.webp 800w, /images/home-facility-20261021/keeyak-preparation-hall-1200.webp 1200w, /images/home-facility-20261021/keeyak-preparation-hall-1600.webp 1600w"
+  },
+  "facts": [
+    {"icon": "globe", "value": "80+", "label": "Countries exported to"},
+    {"icon": "history", "value": "Since 2009", "label": "Company established"},
+    {"icon": "warehouse", "value": "110K SQM", "label": "Warehouse area"}
+  ],
+  "factsProvenance": {
+    "companyMetrics": "User confirmed the 2009 establishment year on 2026-10-27 and supplied the updated export figure of 80+ for the homepage on 2026-11-04.",
+    "manufacturingSite": "User requested synchronization with the main KEEYAK site on 2026-11-02. Verified https://www.keeyak.com/: 110K SQM, Suizhou manufacturing site. This figure refers to the wider special-vehicle business.",
+    "warehouseLabel": "User requested the Warehouse area label on 2026-11-18. The existing 110K SQM figure was retained.",
+    "approvedLayout": "docs/facility-card-designs-20261027/option-a.png"
+  },
+  "provenance": {
+    "kind": "ai-generated-architectural-concept",
+    "date": "2026-10-21",
+    "userApprovedDesign": "facility-airy-20261021/option-a.png",
+    "branding": "User-requested KEEYAK sign, using the original project wordmark as reference",
+    "sourceGeneration": "exec-9c64eded-1052-44d5-9e40-1b7e02c40c18.png",
+    "evidenceBoundary": "Illustrative architecture, not verified property ownership or operational evidence"
+  }
+}

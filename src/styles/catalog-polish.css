@@ -1,0 +1,21 @@
+/* Set numeric features on the text itself: font shorthands reset inheritance. */
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer :is(.pagination>a,.pagination>button,.catalog-mobile-filters>span),
+#vehicle-results .vehicle-card :is(.vehicle-card-year,.vehicle-card-specs p,.vehicle-card-record dd) {
+ font-variant-numeric:lining-nums tabular-nums;
+}
+body.inner-editorial #main .catalog-showroom :is(h1,h2,h3) {text-wrap:balance}
+
+/* One brief entrance; filter updates and keyboard interaction settle immediately. */
+@media(prefers-reduced-motion:no-preference) {
+ .catalog-showroom-explorer[data-entering=true]>.catalog-filter-panel,
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer[data-entering=true]>.vehicle-grid>.vehicle-card {
+  animation:catalog-enter 280ms cubic-bezier(.16,1,.3,1) backwards;
+ }
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer[data-entering=true]>.vehicle-grid>.vehicle-card {animation-delay:160ms}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer[data-entering=true]>.vehicle-grid>.vehicle-card:nth-child(2) {animation-delay:200ms}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer[data-entering=true]>.vehicle-grid>.vehicle-card:nth-child(n+3) {animation-delay:240ms}
+}
+@keyframes catalog-enter {
+ from {opacity:.01;transform:translateY(6px)}
+ to {opacity:1;transform:translateY(0)}
+}

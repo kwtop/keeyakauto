@@ -1,0 +1,242 @@
+/* Selected catalog direction A. Scoped to the shared explorer, not detail galleries. */
+body.inner-editorial.site-nest.site-volta main:has(>.catalog-showroom) {padding-top:84px}
+body.inner-editorial.site-nest.site-volta .catalog-showroom {padding-top:28px}
+body.inner-editorial.site-nest.site-volta .catalog-showroom > .breadcrumbs {display:none}
+body.inner-editorial.site-nest.site-volta .catalog-showroom .catalog-heading--discovery {padding:0 0 18px}
+body.inner-editorial.site-nest.site-volta main .catalog-showroom .catalog-heading--discovery h1 {font:600 40px/1.12 var(--body);letter-spacing:-.04em;max-width:none;margin:0 0 8px}
+body.inner-editorial.site-nest.site-volta .catalog-showroom .catalog-heading--discovery p {font:400 15px/1.5 var(--body);color:#686865;margin:0}
+body.inner-editorial.site-nest.site-volta .catalog-results:has(>.catalog-showroom-explorer),
+body.inner-editorial.site-nest.site-volta .catalog-results:has(>astro-island>.catalog-showroom-explorer) {background:transparent;border-radius:0;padding:0 0 40px}
+body.inner-editorial.site-nest.site-volta .catalog-showroom > .catalog-results + .catalog-closing {margin-top:24px}
+
+.catalog-filter-panel {
+ min-width:0;
+ padding:clamp(16px,2vw,26px);
+ border-radius:var(--ed-panel-radius,20px);
+ background:var(--surface,#f5f4f0);
+}
+.catalog-brand-tabs {display:block;min-width:0;margin:0 0 18px}
+.catalog-brand-mobile-toggle {display:none}
+.catalog-brand-tabs-items>.catalog-brand-other{display:none}
+.catalog-brand-tabs-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:26px;margin-bottom:10px;color:#20221e;font:450 14px/1.4 var(--body)}
+.catalog-brand-tabs-items {display:grid;grid-template-columns:repeat(12,minmax(0,1fr));align-items:stretch;gap:8px;min-width:0;overflow:visible;padding:2px}
+body.inner-editorial.site-nest.site-volta .catalog-brand-tabs .catalog-brand-wordmark {font-size:13px;white-space:normal}
+.catalog-brand-tabs-items>button {position:relative;container-type:inline-size;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:0;min-height:80px;padding:18px 6px 6px;border:1px solid transparent;border-radius:10px;background:#fff;color:#20221e;cursor:pointer;font:450 12px/1.3 var(--body)}
+.catalog-brand-caption {display:block;max-width:100%;font:500 clamp(10px,17cqi,12px)/1.2 var(--body);text-align:center;text-wrap:balance;overflow-wrap:break-word}
+.catalog-brand-tabs-items>button[title="Fangchengbao"] .catalog-brand-caption {font-size:clamp(9px,14cqi,12px);letter-spacing:-.02em}
+.catalog-brand-tabs .brand-popular-badge {inset-block-start:3px;inset-inline-end:3px;min-width:16px;height:16px}
+.catalog-brand-tabs .brand-popular-badge--ranked {min-width:26px;height:18px;padding-inline:3px}
+.catalog-brand-tabs .brand-popular-badge-number {font-size:11px}
+.catalog-brand-tabs-items>button[aria-pressed=true] {border-color:#252723;box-shadow:inset 0 0 0 1px #252723}
+.catalog-brand-tabs-items>button:hover {background:#eeede8}
+.catalog-brand-tabs-items>.catalog-brand-all {gap:6px;padding:8px}
+.catalog-brand-tabs-items>.catalog-brand-all[aria-pressed=true] {background:#20221e;color:#fff}
+.catalog-brand-tabs-items>.catalog-brand-more {gap:6px;padding:8px;background:#eae9e3;color:#50534b}
+.catalog-brand-tabs-items>.catalog-brand-more:hover {background:#dfded5;color:#20221e}
+body.inner-editorial.site-nest.site-volta .catalog-brand-tabs-items>button .catalog-brand-check {top:6px;bottom:auto;left:6px;right:auto;color:#20221e}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row {display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;margin:0;padding:0 0 14px;border-bottom:1px solid var(--line);scrollbar-width:thin;scrollbar-color:#c5c0b4 transparent}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row>button {display:flex;flex-direction:row;align-items:center;justify-content:center;flex:0 0 auto;gap:10px;min-height:46px;padding:10px 18px;border:0;border-radius:999px;background:transparent;color:#62635f;font:450 16px/1.4 var(--body)}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row>button[aria-pressed=true] {background:#20221e;color:#fff}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row>button:hover:not([aria-pressed=true]) {background:#eae9e3;color:#20221e}
+/* Three aligned controls; native inputs retain filtering and keyboard behavior. */
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools {display:grid;grid-template-columns:minmax(240px,1fr) 270px 210px;gap:12px;align-items:stretch;padding:16px 0 0;margin:0;border:0}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools :is(.catalog-model-search,.catalog-power,.catalog-sort) {position:relative;display:flex;align-items:center;gap:12px;min-width:0;height:64px;min-height:64px;padding:0 18px;border:1px solid #deded7;background:#fff;border-radius:14px;color:#20221e;transition:border-color .15s,box-shadow .15s}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools :is(.catalog-power,.catalog-sort) {padding:0}
+.catalog-showroom-explorer .catalog-tools svg {flex-shrink:0}
+.catalog-showroom-explorer .catalog-tools label>span {position:absolute;left:18px;top:9px;pointer-events:none;font:400 12px/16px var(--body);color:#73746f}
+.catalog-showroom-explorer .catalog-tools .catalog-select-chevron {position:absolute;right:18px;top:50%;transform:translateY(-50%);pointer-events:none;color:#3f423b}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools select {appearance:none;font:500 16px/24px var(--body);color:#20221e;background:transparent;max-width:none;width:100%;min-width:0;height:62px;min-height:62px;padding:26px 44px 10px 18px;border:0;border-radius:14px;cursor:pointer}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-model-search input {min-width:0;width:100%;height:62px;font-size:16px;line-height:24px;padding:18px 0;border:0;background:transparent;box-shadow:none}
+.catalog-showroom-explorer .catalog-model-search input::placeholder {color:#696b64;opacity:1}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools label:hover {border-color:#b9bcb2}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools label:focus-within {border-color:#8b6b00;box-shadow:0 0 0 3px #e9ce6229}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools :is(input,select):focus-visible {outline:0}
+
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-grid {grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer {--catalog-card-radius:var(--ed-panel-radius,20px);--catalog-card-inset:6px;--catalog-card-shadow:var(--ed-panel-shadow)}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card {display:flex;flex-direction:column;align-items:stretch;gap:0;min-width:0;background:#fff;border:0;border-radius:var(--catalog-card-radius);padding:var(--catalog-card-inset);overflow:hidden;box-shadow:var(--catalog-card-shadow)}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card .vehicle-media {display:block;aspect-ratio:1.86;border:0;border-radius:calc(var(--catalog-card-radius) - var(--catalog-card-inset));margin:0;box-shadow:none;flex-shrink:0;overflow:hidden;background:#f4f4f2}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card .vehicle-media img {aspect-ratio:auto;height:100%;width:100%;object-fit:cover;padding:0;mix-blend-mode:normal}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card .vehicle-media--balanced img {height:auto;max-width:none}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-copy {display:flex;flex-direction:column;flex:1;min-width:0;max-width:none;padding:12px 16px 3px}
+.vehicle-card-heading {display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-height:76px;padding:4px 0 14px}
+.vehicle-card-identity {display:flex;align-items:flex-start;gap:12px;min-width:0}
+.vehicle-card-name {min-width:0}
+.catalog-showroom-explorer .vehicle-card-brand-logo {display:block;flex:0 0 46px;width:46px;height:32px;margin:1px 0 0;object-fit:contain;filter:grayscale(1)}
+.catalog-showroom-explorer .vehicle-card-brand-logo:is([src*="/catalog-brands/"],[src$="/roewe-official.png"]) {filter:brightness(0)}
+.catalog-showroom-explorer .vehicle-card-brand-logo[src$="/roewe-official.png"] {width:78px;max-width:78px;flex-basis:78px}
+.catalog-showroom-explorer .vehicle-card-heading .vehicle-card-year {flex-shrink:0;padding-top:5px}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-brand,
+.catalog-showroom-explorer .vehicle-card-year {font:400 14px/1.5 var(--body);color:#747471;margin:0}
+body.inner-editorial.site-nest.site-volta main .catalog-showroom-explorer .vehicle-copy h3 {font:550 28px/1.18 var(--body);letter-spacing:-.035em;margin:0;text-wrap:initial;overflow-wrap:anywhere}
+.vehicle-card-actions {display:flex;align-items:center;justify-content:flex-end;gap:12px;padding-top:5px;min-height:52px}
+.vehicle-card-actions>a {font:450 14px/1.3 var(--body);min-height:44px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card-inquiry {background:#1d1d1b;color:#fff;border-radius:999px;padding:10px 14px;white-space:nowrap}
+.vehicle-card-inquiry:hover {background:#3a3a36}
+.catalog-showroom-explorer :is(button,summary,a,input,select):focus-visible {outline:2px solid #8b6b00;outline-offset:4px}
+.catalog-showroom-explorer .single-model-intro {margin:16px 0 8px}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-grid--small {grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-grid--single {grid-template-columns:minmax(0,520px)}
+
+@media(max-width:1199px) {
+ .catalog-brand-tabs-items {grid-template-columns:repeat(10,minmax(0,1fr))}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools {grid-template-columns:minmax(200px,1fr) 240px 180px;gap:12px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-copy {padding-inline:12px}
+ .vehicle-card-actions {gap:8px}
+ .vehicle-card-actions>a {font-size:13px}
+ .vehicle-card-inquiry {padding-inline:11px}
+}
+@media(max-width:999px) {
+ .catalog-brand-tabs-items {grid-template-columns:repeat(8,minmax(0,1fr))}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools {grid-template-columns:minmax(180px,1fr) 220px 186px;gap:12px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools :is(.catalog-type,.catalog-model-search,.catalog-power,.catalog-sort) {gap:10px}
+}
+@media(max-width:767px) {
+ body.inner-editorial.site-nest.site-volta .catalog-showroom {padding-top:22px}
+ body.inner-editorial.site-nest.site-volta main .catalog-showroom .catalog-heading--discovery h1 {font-size:32px;line-height:1.12}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom .catalog-heading--discovery p {font-size:14px}
+ .catalog-brand-tabs {margin-bottom:18px}
+ .catalog-brand-tabs-items {grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row {gap:6px;padding-bottom:16px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row>button {min-height:46px;padding:10px 14px;gap:8px;font-size:14px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row svg {width:20px;height:20px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools {grid-template-columns:minmax(0,1fr) auto;gap:10px;margin-bottom:0;padding:14px 0 0}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools :is(.catalog-power,.catalog-sort) {display:none}
+ .catalog-showroom-explorer .catalog-model-search {grid-column:1;grid-row:1}
+ .catalog-showroom-explorer .catalog-mobile-filters {grid-column:2;grid-row:1}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools .catalog-model-search {height:52px;min-height:52px;padding-inline:14px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-model-search input {height:50px;font-size:14px;padding:12px 0}
+ .catalog-showroom-explorer .catalog-mobile-filters {min-height:52px;border-radius:14px;border-color:#deded7;background:#fff}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-grid,
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-grid--small,
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-grid--single {grid-template-columns:minmax(0,1fr);gap:20px;max-width:none}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card .vehicle-media {aspect-ratio:1.6}
+ body.inner-editorial.site-nest.site-volta main .catalog-showroom-explorer .vehicle-copy h3 {font-size:27px}
+ .vehicle-card-heading {gap:10px;min-height:70px}
+ .vehicle-card-identity {gap:10px}
+ .catalog-showroom-explorer .vehicle-card-brand-logo {width:40px;height:30px;flex-basis:40px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-copy {padding:12px 14px 4px}
+ .vehicle-card-actions>a {font-size:14px}
+ .vehicle-card-inquiry {padding-inline:14px}
+}
+/* Cards give long titles room at intermediate widths as well as on phones. */
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] {
+ container:catalog-card / inline-size;
+}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind=new] .vehicle-media {
+ aspect-ratio:3/2;
+}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-copy {
+ padding:18px 16px 16px;
+}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-heading {
+ min-height:0;padding:0;margin:0 0 20px;align-items:center;
+}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-identity {
+ align-items:center;gap:14px;
+}
+.catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-name {
+ display:flex;flex-direction:column;gap:3px;
+}
+.catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-brand-logo {
+ flex:0 0 44px;width:44px;height:36px;margin:0;
+}
+body.inner-editorial.site-nest.site-volta main .catalog-showroom-explorer .vehicle-card[data-kind] h3 {
+ font-size:28px;line-height:1.18;letter-spacing:-.025em;text-wrap:balance;overflow-wrap:break-word;
+}
+.catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-year {
+ align-self:flex-start;padding:8px 0 0;font-size:14px;line-height:20px;white-space:nowrap;text-align:right;color:#686865;
+}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind=new] .vehicle-card-specs {
+ display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+ gap:6px 10px;min-height:42px;margin:auto 0 16px;padding:8px 10px;
+ border-radius:8px;background:#f5f4f0;
+}
+body.inner-editorial.site-nest.site-volta main .catalog-showroom-explorer .vehicle-card[data-kind=new] .vehicle-card-specs p {
+ display:flex;align-items:center;gap:5px;margin:0;max-width:100%;
+ font:450 13px/18px var(--body);color:#51534e;
+}
+.catalog-showroom-explorer .vehicle-card[data-kind=new] .vehicle-card-specs svg {
+ flex:none;color:#373a34;
+}
+.vehicle-card-spec-caption {
+ position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+}
+.catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-actions {
+ padding:0;min-height:52px;
+}
+body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-inquiry {
+ position:relative;display:flex;justify-content:center;width:100%;min-height:52px;
+ padding:14px 42px;border-radius:12px;font-size:15px;line-height:22px;text-align:center;white-space:normal;
+}
+.catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-inquiry>svg {
+ position:absolute;right:16px;top:50%;transform:translateY(-50%);
+}
+@container catalog-card (max-width: 335px) {
+ body.inner-editorial.site-nest.site-volta main .catalog-showroom-explorer .vehicle-card[data-kind] h3 {font-size:24px;line-height:1.22}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-heading {
+  display:grid;grid-template-columns:minmax(0,1fr);gap:4px;
+ }
+ .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-year {
+  padding:0;margin-inline-start:58px;text-align:start;font-size:13px;line-height:18px;
+ }
+}
+@media(max-width:359px) {
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-copy {padding-inline:12px}
+ body.inner-editorial.site-nest.site-volta main .catalog-showroom-explorer .vehicle-card[data-kind] h3 {font-size:26px}
+}
+@media (min-width:768px) {
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools--used {
+  grid-template-columns:minmax(0,1.25fr) repeat(3,minmax(0,1fr));
+ }
+ .catalog-showroom-explorer .catalog-tools--used .catalog-model-search {grid-column:1/-1}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools--used select {padding-inline:12px 30px}
+ .catalog-showroom-explorer .catalog-tools--used label>span {left:12px}
+ .catalog-showroom-explorer .catalog-tools--used .catalog-select-chevron {right:9px;width:16px}
+}
+@media (min-width:1120px) {
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools--used {
+  grid-template-columns:minmax(0,1.5fr) minmax(0,1.15fr) repeat(3,minmax(0,1fr));
+ }
+ .catalog-showroom-explorer .catalog-tools--used .catalog-model-search {grid-column:auto}
+}
+
+/* Phone catalogue: keep discovery compact and every body category visible. */
+@media(max-width:767px){
+ .catalog-filter-panel{padding:12px}
+ .catalog-brand-tabs-heading{min-height:44px;margin-bottom:4px}
+ .catalog-brand-mobile-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 2px 8px 12px;border:0;background:none;color:inherit;font:500 13px/1.4 var(--body)}
+ .catalog-brand-mobile-toggle:focus-visible{outline:2px solid #8b6b00;outline-offset:2px}
+ .catalog-brand-tabs-items>button{min-height:72px;padding:16px 4px 6px}
+ .catalog-brand-tabs[data-expanded=false] .catalog-brand-more{display:none}
+ .catalog-brand-tabs-items{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .catalog-brand-tabs{scroll-margin-top:100px}
+ .catalog-brand-tabs[data-has-selection=true][data-expanded=false] .catalog-brand-tabs-items{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .catalog-brand-tabs[data-has-selection=true][data-expanded=false] .catalog-brand-tabs-items>button:not([aria-pressed=true]):not(.catalog-brand-other){display:none}
+ .catalog-brand-tabs[data-has-selection=true][data-expanded=false] .catalog-brand-other{display:flex;gap:6px;padding:8px;background:#eae9e3;color:#50534b}
+ .catalog-brand-tabs[data-has-selection=true][data-expanded=false] .catalog-brand-mobile-toggle{display:none}
+ .catalog-brand-tabs[data-has-selection=true][data-expanded=false] .catalog-brand-tabs-heading{min-height:28px;margin-bottom:8px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;overflow:visible;padding-bottom:14px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-category-row>button{flex-direction:column;gap:5px;min-width:0;min-height:62px;padding:9px 2px;border-radius:14px;font-size:12px;line-height:16px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-model-search input{font-size:16px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .catalog-tools .catalog-model-search{gap:8px;padding-inline:12px}
+ .catalog-showroom-explorer .catalog-model-search input::placeholder{font-size:14px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-copy{padding:16px 12px 12px}
+ body.inner-editorial.site-nest.site-volta main .catalog-showroom-explorer .vehicle-card[data-kind] h3{font-size:24px;line-height:1.2;overflow-wrap:anywhere}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:8px;margin-bottom:14px}
+ body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-identity{align-items:flex-start;gap:10px}
+ .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-name{padding-block-start:4px}
+ .catalog-showroom-explorer .vehicle-card[data-kind] .vehicle-card-year{display:grid;align-items:center;min-height:36px;padding:0;margin:0;text-align:end;font-size:13px;line-height:18px}
+ .catalog-dialog-content{padding-inline:16px}
+ .catalog-dialog-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px;margin-bottom:24px}
+ .catalog-dialog-controls .catalog-dialog-power{min-width:0;margin:0;gap:8px}
+ .catalog-dialog-controls select{border-radius:10px;border-color:#deded7;background:#f8f7f3}
+ .catalog-dialog-body input[type=search],.catalog-dialog-power select{font-size:16px}
+ .catalog-dialog-content>header{padding-top:max(12px,env(safe-area-inset-top));padding-bottom:12px}
+ .catalog-dialog-content>footer{gap:12px;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+ .catalog-dialog-content>footer .button{min-height:48px;flex:1;justify-content:center}
+}
+@media(width < 375px) {
+ .catalog-brand-tabs-items{grid-template-columns:repeat(3,minmax(0,1fr))}
+}

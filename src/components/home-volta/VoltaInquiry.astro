@@ -1,0 +1,13 @@
+---
+import {ArrowRight,ChevronDown} from '@lucide/astro';
+import {buyingFaqs} from '../../data/editorial';
+const faqs=[buyingFaqs[0],buyingFaqs[1],buyingFaqs[3],buyingFaqs[4]];
+---
+<section class="v-inquiry" data-v-section="inquiry" id="requirement" aria-labelledby="v-inquiry-title"><div class="v-container v-inquiry-grid">
+ <div><p class="v-eyebrow">For dealers, importers &amp; fleets</p><h2 id="v-inquiry-title">Let’s plan your<br/>next order.</h2><p>Share your model, quantity and destination.<br/>Review your brief, then choose email or WhatsApp.</p></div>
+ <form class="v-inquiry-form" action="/quote/" method="get" aria-label="Start your vehicle inquiry"><label><span>Model / requirement *</span><input name="model" required maxlength="200" placeholder="Brand, model and version"/></label><div class="v-inquiry-row"><label><span>Quantity *</span><input name="quantity" type="number" min="1" step="1" value="1" required/></label><label><span>Destination country *</span><input name="country" required maxlength="100" autocomplete="country-name" placeholder="Country"/></label></div><button type="submit" class="v-button v-button-white">Prepare inquiry <ArrowRight size={18}/></button></form>
+</div></section>
+<section class="v-section v-faq" data-v-section="faq" aria-labelledby="v-faq-title"><div class="v-faq-container">
+ <h2 id="v-faq-title">Frequently asked questions</h2><div class="v-faq-list">{faqs.map((faq,i)=><details><summary><span class="v-faq-number">0{i+1}</span><span>{faq.question}</span><ChevronDown size={20}/></summary><div class="v-faq-answer"><p>{faq.answer}</p></div></details>)}</div>
+ <a class="v-quiet-link" href="/export-services/faq/">Read all frequently asked questions <ArrowRight size={14}/></a>
+</div></section>

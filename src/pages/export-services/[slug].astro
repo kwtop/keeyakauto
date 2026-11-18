@@ -1,0 +1,15 @@
+---
+import LegacyRedirect from '../../components/LegacyRedirect.astro';
+import TrustContentPage from '../../components/trust/TrustContentPage.astro';
+import {consolidatedServicePages,legacyServiceRoutes} from '../../data/exportServices';
+export function getStaticPaths(){return [...consolidatedServicePages.filter(page=>page.slug!=='buying-guide').map(page=>({params:{slug:page.slug},props:{page:page.slug}})),...legacyServiceRoutes.map(route=>({params:{slug:route.slug},props:{redirectTo:route.to}}))];}
+interface Props {page?:string;redirectTo?:string;}
+const {page='overview',redirectTo}=Astro.props;
+---
+{redirectTo?<LegacyRedirect to={redirectTo}/>:<TrustContentPage {page}/>}
+<script>
+ const legacySections=['coverage','report','parts','diagnosis','follow-up'];
+ const redirectLegacySupport=()=>{if(location.pathname==='/export-services/shipping-support/'&&legacySections.includes(location.hash.slice(1)))location.replace('/export-services/after-sales/'+location.search+location.hash);};
+ redirectLegacySupport();
+ window.addEventListener('hashchange',redirectLegacySupport);
+</script>

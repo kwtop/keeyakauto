@@ -1,0 +1,15 @@
+---
+import {aboutLinks,company} from '../data/company';
+import { exportLinks } from '../data/exportServices';
+const columns=[
+  {title:'Cars',links:[['New Cars','/new-cars/'],['Used Cars','/used-cars/']]},
+  {title:'Export Services',links:[['Service Overview','/export-services/'],...exportLinks.map(({label,href})=>[label,href])]},
+  {title:'Buying Guide',links:[['Quotations','/export-services/buying-guide/compare-car-export-quotes/'],['Payment','/export-services/buying-guide/car-order-payment-and-changes/'],['Destination Checks','/export-services/buying-guide/check-car-import-eligibility/'],['Vehicle Documents','/export-services/buying-guide/car-import-documents-checklist/']]},
+  {title:'Company',links:[...aboutLinks.map(({label,href})=>[label,href]),['Contact Us','/contact/']]}
+];
+---
+<footer class="gallery-footer"><div class="home-wrap">
+  <div class="gallery-footer-main"><div class="gallery-footer-identity"><a href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" width="1200" height="219" alt=""/></a><p>{company.legalName}<br/>Hangzhou, Zhejiang, China</p><a href={'mailto:'+company.email}>{company.email}</a></div><nav aria-label="Footer navigation">{columns.map(column=><div><h3>{column.title}</h3>{column.links.map(([label,href])=><a href={href}>{label}</a>)}</div>)}</nav></div>
+  <div class="gallery-footer-bottom"><span>© {new Date().getFullYear()} {company.legalName}</span><div><a href="/privacy/">Privacy</a><a href="/terms/">Website Terms</a></div></div>
+</div></footer>
+

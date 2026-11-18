@@ -1,0 +1,8 @@
+---
+interface Props { src: string; alt: string; caption?: string; width?: number; height?: number; class?: string; href?: string; }
+const {src,alt,caption,width=2400,height=1800,class:className='',href}=Astro.props;
+---
+<figure class:list={['about-photo',className]}>
+  {href ? <a href={href}><img src={src} alt={alt} width={width} height={height} loading="lazy" /></a> : <img src={src} alt={alt} width={width} height={height} loading="lazy" />}
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

@@ -1,0 +1,5030 @@
+{
+  "schemaVersion": 1,
+  "rowLabels": {
+    "engine": "发动机",
+    "transmission": "变速箱",
+    "power": "最大功率(kW)",
+    "torque": "最大扭矩(N·m)",
+    "dimensions": "长*宽*高(mm)",
+    "body": "车身结构",
+    "cltcRange": "CLTC纯电续航里程(km)",
+    "wltcRange": "WLTC纯电续航里程(km)",
+    "nedcRange": "NEDC纯电续航里程(km)",
+    "fastHours": "电池快充时间(小时)",
+    "fastInterval": "电池快充电量范围(%)",
+    "slowHours": "电池慢充时间(小时)",
+    "slowInterval": "电池慢充电量范围(%)",
+    "motorPs": "电动机(Ps)",
+    "acceleration": "官方0-100km/h加速(s)",
+    "acceleration50": "官方0-50km/h加速(s)",
+    "maxSpeed": "最高车速(km/h)",
+    "wltcFuel": "WLTC综合油耗(L/100km)",
+    "nedcFuel": "NEDC综合油耗(L/100km)",
+    "depletedFuel": "最低荷电状态油耗(L/100km)",
+    "depletedWltcFuel": "最低荷电状态油耗(L/100km)WLTC",
+    "depletedNedcFuel": "最低荷电状态油耗(L/100km)NEDC",
+    "equivalentFuel": "电能当量燃料消耗量(L/100km)",
+    "oilElectricFuel": "油电综合燃料消耗量(L/100km)",
+    "emissions": "环保标准",
+    "driveDesignation": "版本标题(驱动形式)"
+  },
+  "reviewedAt": "2026-10-19",
+  "method": "Windows OCR assisted transcription, visually checked against each original screenshot. Blank and dash values are unavailable. Only complete visible columns are transcribed. Prices are deliberately excluded.",
+  "tables": [
+    {
+      "key": "toyota/camry",
+      "fields": {
+        "engine": "2.0L 152马力 L4",
+        "transmission": "E-CVT无级变速",
+        "power": "145",
+        "dimensions": "4915*1840*1450",
+        "body": "4门5座三厢车",
+        "wltcFuel": [
+          "4.2",
+          "4.2",
+          "4.5",
+          "4.5"
+        ],
+        "motorPs": "113",
+        "maxSpeed": "180",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/丰田/凯美瑞/微信图片_20261014142117_46_77.png",
+      "sha256": "8ef4b1b0ded1997ca2e191c14180e6fcdb5292fc3b6ba14b0bc36cc5c5aad13a",
+      "sourceWidth": 850,
+      "sourceHeight": 825,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 双擎 2.0HE 精英版",
+          "name": "2027 Hybrid 2.0HE Elite",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2027款 双擎 2.0HGVP 豪华版",
+          "name": "2027 Hybrid 2.0HGVP Luxury",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2027款 双擎 2.0HSE 运动Lite版",
+          "name": "2027 Hybrid 2.0HSE Sport Lite",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 4,
+          "title": "2027款 双擎 2.0HG 尊贵版",
+          "name": "2027 Hybrid 2.0HG Premium",
+          "powertrain": "Hybrid"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "toyota/corolla",
+      "fields": {
+        "engine": [
+          "1.8L 98马力 L4",
+          "1.8L 98马力 L4",
+          "1.8L 98马力 L4",
+          "1.2T 116马力 L4"
+        ],
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "CVT无级变速(模拟10挡)"
+        ],
+        "power": [
+          "101",
+          "101",
+          "101",
+          "85"
+        ],
+        "torque": [
+          null,
+          null,
+          null,
+          "185"
+        ],
+        "dimensions": [
+          "4710*1780*1435",
+          "4710*1780*1435",
+          "4710*1780*1435",
+          "4635*1780*1455"
+        ],
+        "body": "4门5座三厢车",
+        "wltcFuel": [
+          "4.13",
+          "4.17",
+          "4.45",
+          "6.09"
+        ],
+        "motorPs": [
+          "95",
+          "95",
+          "95",
+          null
+        ],
+        "maxSpeed": [
+          "160",
+          "160",
+          "160",
+          "180"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/丰田/卡罗拉/微信图片_20261014141958_45_77.png",
+      "sha256": "d7b2a7c35fe65e7bac7dc62491cc07379132136d02d5adbff2c378b76d08f97e",
+      "sourceWidth": 852,
+      "sourceHeight": 792,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 1.8L 双擎 先锋版",
+          "name": "2026 1.8L Hybrid Pioneer",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2026款 1.8L 双擎 精英版",
+          "name": "2026 1.8L Hybrid Elite",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2026款 1.8L 双擎 旗舰版",
+          "name": "2026 1.8L Hybrid Flagship",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 4,
+          "title": "2026款 1.2T 先锋版",
+          "name": "2026 1.2T Pioneer",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "wuling/xingguang",
+      "fields": {
+        "engine": [
+          "1.5L 106马力 L4",
+          "1.5L 106马力 L4",
+          "1.5L 106马力 L4",
+          null
+        ],
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "电动车单速变速箱"
+        ],
+        "wltcRange": [
+          "50",
+          "105",
+          "105",
+          null
+        ],
+        "cltcRange": [
+          "70",
+          "150",
+          "150",
+          "510"
+        ],
+        "fastHours": [
+          null,
+          "0.5",
+          "0.5",
+          "0.33"
+        ],
+        "fastInterval": [
+          null,
+          "30-80",
+          "30-80",
+          "30-80"
+        ],
+        "slowHours": [
+          "3.5",
+          "6.7",
+          "6.7",
+          "8.7"
+        ],
+        "slowInterval": "20-100",
+        "power": [
+          null,
+          null,
+          null,
+          "150"
+        ],
+        "torque": [
+          null,
+          null,
+          null,
+          "310"
+        ],
+        "body": "4门5座三厢车",
+        "motorPs": "204",
+        "dimensions": "4835*1860*1515",
+        "acceleration": [
+          null,
+          null,
+          null,
+          "7.3"
+        ],
+        "maxSpeed": [
+          "185",
+          "185",
+          "185",
+          "160"
+        ],
+        "wltcFuel": [
+          "1.84",
+          "1.02",
+          "1.02",
+          null
+        ],
+        "depletedWltcFuel": [
+          "3.98",
+          "4.09",
+          "4.09",
+          null
+        ],
+        "equivalentFuel": [
+          null,
+          null,
+          null,
+          "1.45"
+        ],
+        "emissions": [
+          "国VI",
+          "国VI",
+          "国VI",
+          null
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/五菱/星光/微信图片_20261014142817_48_77.png",
+      "sha256": "8863fbf6688164dbe2d702ee1bd8470ab199b0cf1a25f86531be2aa5ebbdf9c5",
+      "sourceWidth": 637,
+      "sourceHeight": 820,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 70km 智能标准型",
+          "name": "2025 70km Smart Standard",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2025款 150km 智能进阶型",
+          "name": "2025 150km Smart Advanced",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2025款 150km 智能领航型",
+          "name": "2025 150km Smart Navigator",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2025款 510km 智能进阶型",
+          "name": "2025 510km Smart Advanced",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "wuling/bingo",
+      "fields": {
+        "cltcRange": [
+          "203",
+          "333",
+          "333",
+          "333"
+        ],
+        "fastHours": "0.58",
+        "fastInterval": "30-80",
+        "slowHours": [
+          "5.5",
+          "9.5",
+          "9.5",
+          "9.5"
+        ],
+        "slowInterval": "20-100",
+        "power": [
+          "30",
+          "50",
+          "50",
+          "50"
+        ],
+        "torque": [
+          "85",
+          "125",
+          "125",
+          "125"
+        ],
+        "body": "5门4座两厢车",
+        "motorPs": [
+          "41",
+          "68",
+          "68",
+          "68"
+        ],
+        "dimensions": "3950*1708*1580",
+        "maxSpeed": [
+          "100",
+          "130",
+          "130",
+          "130"
+        ],
+        "equivalentFuel": [
+          "1.16",
+          "1.23",
+          "1.23",
+          "1.23"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/五菱/缤果/微信图片_20261014142950_49_77.png",
+      "sha256": "4639df2c343ceb4b3da3fda1325d803ca916b8fdd69d170c23f9da05d5c2c1c7",
+      "sourceWidth": 640,
+      "sourceHeight": 683,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 203km 轻享款",
+          "name": "2025 203km Light",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2025款 333km 悦享款",
+          "name": "2025 333km Enjoy",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2025款 333km 灵犀互联款",
+          "name": "2025 333km Smart Connected",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2025款 333km 灵犀尊享款",
+          "name": "2025 333km Smart Premium",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "mg/mg4",
+      "fields": {
+        "cltcRange": [
+          "437",
+          "437",
+          "437",
+          "530"
+        ],
+        "fastHours": [
+          "0.33",
+          "0.33",
+          "0.33",
+          "0.35"
+        ],
+        "fastInterval": "30-80",
+        "power": "120",
+        "torque": "250",
+        "body": "5门5座两厢车",
+        "motorPs": "163",
+        "dimensions": "4395*1842*1551",
+        "acceleration50": "3",
+        "maxSpeed": "160",
+        "equivalentFuel": [
+          "1.27",
+          "1.27",
+          "1.27",
+          "1.38"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/名爵/MG4/微信图片_20261014143051_50_77.png",
+      "sha256": "990c6e439a2b0bed0dd6e7c851679b276e80adeb93a84dfa7e16101ac60d1d35",
+      "sourceWidth": 625,
+      "sourceHeight": 617,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 改款 437 随心版",
+          "name": "2026 Revised 437 Free Choice",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2026款 改款 437 从容版",
+          "name": "2026 Revised 437 Comfort",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2026款 改款 437 自由版",
+          "name": "2026 Revised 437 Freedom",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2026款 530周年限量版",
+          "name": "2026 530 Anniversary Limited",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "mg/mg5",
+      "fields": {
+        "engine": [
+          "1.5L 129马力 L4",
+          "1.5L 129马力 L4",
+          "1.5L 129马力 L4",
+          "1.5T 181马力 L4"
+        ],
+        "transmission": [
+          "CVT无级变速(模拟8挡)",
+          "CVT无级变速(模拟8挡)",
+          "CVT无级变速(模拟8挡)",
+          "7挡湿式双离合"
+        ],
+        "power": [
+          "95",
+          "95",
+          "95",
+          "133"
+        ],
+        "torque": [
+          "158",
+          "158",
+          "158",
+          "285"
+        ],
+        "dimensions": [
+          "4715*1842*1473",
+          "4715*1842*1473",
+          "4715*1842*1473",
+          "4715*1842*1480"
+        ],
+        "body": "4门5座三厢车",
+        "wltcFuel": [
+          "6.38",
+          "6.38",
+          "6.38",
+          "6.45"
+        ],
+        "maxSpeed": [
+          "180",
+          "180",
+          "180",
+          "200"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/名爵/MG5/微信图片_20261014143218_51_77.png",
+      "sha256": "c1af14af6ee431ca685c0d7d81c46c2f4e5e1716a70a9be4b1ba0fb64201cea1",
+      "sourceWidth": 638,
+      "sourceHeight": 606,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 180DVVT 全球抢先版",
+          "name": "2026 180DVVT Global Pioneer",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 180DVVT 全球豪华版",
+          "name": "2026 180DVVT Global Luxury",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 180DVVT 怡享定制版",
+          "name": "2026 180DVVT Custom Enjoy",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 300DTGI 全球旗舰版",
+          "name": "2026 300DTGI Global Flagship",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "mg/mg7",
+      "fields": {
+        "engine": [
+          "1.5T 188马力 L4",
+          "2.0T 261马力 L4",
+          "2.0T 261马力 L4",
+          "2.0T 261马力 L4"
+        ],
+        "transmission": [
+          "7挡湿式双离合",
+          "9挡手自一体",
+          "9挡手自一体",
+          "9挡手自一体"
+        ],
+        "power": [
+          "138",
+          "192",
+          "192",
+          "192"
+        ],
+        "torque": [
+          "300",
+          "405",
+          "405",
+          "405"
+        ],
+        "dimensions": "4884*1889*1447",
+        "body": "5门5座掀背车",
+        "wltcFuel": [
+          "6.25",
+          "6.94",
+          "6.94",
+          "6.94"
+        ],
+        "nedcFuel": [
+          "5.6",
+          "6.2",
+          "6.2",
+          "6.2"
+        ],
+        "acceleration": [
+          null,
+          "6.5",
+          "6.5",
+          "6.5"
+        ],
+        "maxSpeed": [
+          "210",
+          "230",
+          "230",
+          "230"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/名爵/MG7/微信图片_20261014143254_52_77.png",
+      "sha256": "b7e6315900810b80b4e2b3d4490201d06ac772381ce6698da3407b9d1d18380f",
+      "sourceWidth": 630,
+      "sourceHeight": 640,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 1.5T 300 DCT优雅版",
+          "name": "2026 1.5T 300 DCT Elegant",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 2.0T 405 AT奢享版",
+          "name": "2026 2.0T 405 AT Luxury",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 2.0T Trophy+超燃运动版",
+          "name": "2026 2.0T Trophy+ Performance Sport",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 2.0T Trophy+超能智驾版",
+          "name": "2026 2.0T Trophy+ Smart Driving",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "aion/ut",
+      "fields": {
+        "cltcRange": [
+          "530",
+          "320",
+          "420",
+          "330"
+        ],
+        "fastHours": "0.4",
+        "fastInterval": "30-80",
+        "power": "100",
+        "torque": "145",
+        "body": "5门5座两厢车",
+        "motorPs": "136",
+        "dimensions": "4270*1850*1575",
+        "maxSpeed": "150",
+        "equivalentFuel": [
+          "1.36",
+          "1.32",
+          "1.32",
+          "1.32"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/埃安/UT/微信图片_20261014143444_53_77.png",
+      "sha256": "0e162f449a97fc62bc1c7ef1e3b4e303b6c14af5851aab619d0805260129c785",
+      "sourceWidth": 628,
+      "sourceHeight": 593,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 530 宁德版",
+          "name": "2027 530 Ningde Edition",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2026款 320 星辉版",
+          "name": "2026 320 Starlight Edition",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2026款 420 冲锋版",
+          "name": "2026 420 Vanguard",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2025款 330 星耀版",
+          "name": "2025 330 Starshine",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "volkswagen/id-3",
+      "fields": {
+        "cltcRange": "451",
+        "fastHours": "0.75",
+        "fastInterval": "0-80",
+        "slowHours": "9.5",
+        "slowInterval": "0-100",
+        "power": "125",
+        "torque": "310",
+        "body": "5门5座两厢车",
+        "motorPs": "170",
+        "dimensions": [
+          "4261*1778*1568",
+          "4261*1778*1568",
+          "4261*1778*1568",
+          "4266*1778*1568"
+        ],
+        "acceleration50": "3.1",
+        "maxSpeed": "160",
+        "equivalentFuel": "1.56"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/大众/ID.3/微信图片_20261014142254_47_77.png",
+      "sha256": "4012bc89d952f9638509853460e91821277fdee892d20f1406eb1349267909ff",
+      "sourceWidth": 761,
+      "sourceHeight": 809,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 聪明款 纯净智享版",
+          "name": "2026 Smart Edition Pure Enjoy",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2026款 聪明款 出众版",
+          "name": "2026 Smart Edition Outstanding",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2026款 聪明款 极智版",
+          "name": "2026 Smart Edition Ultimate",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2026款 聪明款 出众版GTX套件款",
+          "name": "2026 Smart Edition Outstanding GTX Package",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/han-l",
+      "fields": {
+        "wltcRange": [
+          "170",
+          "170",
+          "145",
+          null
+        ],
+        "cltcRange": [
+          "200",
+          "200",
+          "180",
+          "701"
+        ],
+        "fastHours": [
+          null,
+          null,
+          null,
+          "0.1"
+        ],
+        "fastInterval": [
+          null,
+          null,
+          null,
+          "10-70"
+        ],
+        "power": [
+          null,
+          null,
+          null,
+          "500"
+        ],
+        "torque": [
+          null,
+          null,
+          null,
+          "420"
+        ],
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "电动车单速变速箱"
+        ],
+        "engine": [
+          "1.5T 156马力 L4",
+          "1.5T 156马力 L4",
+          "1.5T 156马力 L4",
+          null
+        ],
+        "body": "4门5座三厢车",
+        "motorPs": [
+          "272",
+          "272",
+          "544",
+          "680"
+        ],
+        "dimensions": "5050*1960*1505",
+        "acceleration": [
+          "6.9",
+          "6.9",
+          "3.9",
+          "5.5"
+        ],
+        "maxSpeed": [
+          "200",
+          "200",
+          "200",
+          "240"
+        ],
+        "wltcFuel": [
+          "0.71",
+          "0.71",
+          "0.89",
+          null
+        ],
+        "depletedWltcFuel": [
+          "5",
+          "5",
+          "5.7",
+          null
+        ],
+        "depletedNedcFuel": [
+          "3.9",
+          "3.9",
+          "4.6",
+          null
+        ],
+        "equivalentFuel": [
+          null,
+          null,
+          null,
+          "1.59"
+        ],
+        "oilElectricFuel": [
+          "2.67",
+          "2.67",
+          "3.00",
+          null
+        ],
+        "emissions": [
+          "国VI",
+          "国VI",
+          "国VI",
+          null
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/汉L/微信图片_20261014144957_59_77.png",
+      "sha256": "a87452b91f949295f43d9ada6962aeb026e5191464ddc34febfbb091ac180056",
+      "sourceWidth": 640,
+      "sourceHeight": 877,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 DM-i 200KM激光雷达尊享型",
+          "name": "2025 DM-i 200KM LiDAR Premium",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2025款 DM-i 200KM激光雷达旗舰型",
+          "name": "2025 DM-i 200KM LiDAR Flagship",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2025款 DM-p 四驱激光雷达旗舰型",
+          "name": "2025 DM-p AWD LiDAR Flagship",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2025款 EV 701KM激光雷达尊享型",
+          "name": "2025 EV 701KM LiDAR Premium",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/seal-05-dm-i",
+      "fields": {
+        "wltcRange": [
+          "100",
+          "155",
+          "155",
+          "100"
+        ],
+        "cltcRange": [
+          "128",
+          "210",
+          "210",
+          "128"
+        ],
+        "fastHours": [
+          "0.5",
+          "0.33",
+          "0.33",
+          "0.5"
+        ],
+        "slowHours": [
+          "4.5",
+          "7.2",
+          "7.2",
+          "4.5"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 101马力 L4",
+        "body": "4门5座三厢车",
+        "motorPs": "163",
+        "dimensions": "4780*1837*1515",
+        "acceleration": "7.6",
+        "maxSpeed": "180",
+        "wltcFuel": [
+          "1.11",
+          "0.88",
+          "0.88",
+          "1.11"
+        ],
+        "depletedWltcFuel": "3.98",
+        "depletedNedcFuel": [
+          "3.08",
+          "2.79",
+          "2.79",
+          "3.08"
+        ],
+        "oilElectricFuel": [
+          "2.64",
+          "2.59",
+          "2.59",
+          "2.64"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/海豹05/微信图片_20261014143745_54_77.png",
+      "sha256": "f547508754631a6702f65bd1d8dd8f50c2c73f1d60ad9a0c2c35aaf906dd706c",
+      "sourceWidth": 643,
+      "sourceHeight": 800,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 DM-i 128KM豪华型",
+          "name": "2026 DM-i 128KM Luxury",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 DM-i 210KM尊贵型",
+          "name": "2026 DM-i 210KM Premium",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 DM-i 210KM旗舰型",
+          "name": "2026 DM-i 210KM Flagship",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 DM-i 128KM领航版",
+          "name": "2026 DM-i 128KM Navigator",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/seal-06-dm-i",
+      "fields": {
+        "cltcRange": [
+          "230",
+          "230",
+          "320",
+          "230"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 101马力 L4",
+        "body": "4门5座三厢车",
+        "motorPs": "238",
+        "dimensions": "4870*1890*1495",
+        "acceleration": "7.5",
+        "maxSpeed": "185",
+        "wltcFuel": [
+          "0.77",
+          "0.77",
+          "0.68",
+          "0.77"
+        ],
+        "depletedWltcFuel": [
+          "3.63",
+          "3.63",
+          "3.75",
+          "3.63"
+        ],
+        "depletedNedcFuel": [
+          "2.59",
+          "2.59",
+          "2.75",
+          "2.59"
+        ],
+        "oilElectricFuel": "2.36"
+      },
+      "reviewNote": "Screenshot starts at CLTC range after the price rows; no energy-type, emissions or earlier range row is visible. PHEV identity follows the explicit DM-i column title and engine/electric-motor rows.",
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/海豹06/微信图片_20261014144506_55_77.png",
+      "sha256": "265de5da6745d9a1406f474efe736d34d506d777c826d73a9698a84d040b80e0",
+      "sourceWidth": 618,
+      "sourceHeight": 742,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 DM-i 230KM舒享型",
+          "name": "2027 DM-i 230KM Comfort",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2027款 DM-i 230KM智享型",
+          "name": "2027 DM-i 230KM Smart Enjoy",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2027款 DM-i 320KM智享型",
+          "name": "2027 DM-i 320KM Smart Enjoy",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2027款 DM-i 230KM尊享型",
+          "name": "2027 DM-i 230KM Premium",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/seal-07-dm-i",
+      "fields": {
+        "wltcRange": [
+          "110",
+          "110",
+          "180",
+          "180"
+        ],
+        "cltcRange": [
+          "135",
+          "135",
+          "230",
+          "230"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": [
+          "1.5L 101马力 L4",
+          "1.5T 156马力 L4",
+          "1.5T 156马力 L4",
+          "1.5T 156马力 L4"
+        ],
+        "body": "4门5座三厢车",
+        "motorPs": [
+          "218",
+          "272",
+          "272",
+          "272"
+        ],
+        "dimensions": "4995*1900*1495",
+        "acceleration": [
+          "8.0",
+          "6.9",
+          "6.9",
+          "6.9"
+        ],
+        "maxSpeed": [
+          "185",
+          "200",
+          "200",
+          "200"
+        ],
+        "wltcFuel": [
+          "0.97",
+          "1.01",
+          "0.67",
+          "0.67"
+        ],
+        "depletedWltcFuel": [
+          "4.15",
+          "4.39",
+          "4.49",
+          "4.49"
+        ],
+        "depletedNedcFuel": [
+          "3.2",
+          "3.4",
+          "3.5",
+          "3.5"
+        ],
+        "oilElectricFuel": [
+          "2.54",
+          "2.59",
+          "2.45",
+          "2.45"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/海豹07/微信图片_20261014144549_56_77.png",
+      "sha256": "4659f2879c61174019a76f4a503ab17b3559bb760ccc1223679dff89d218fd4a",
+      "sourceWidth": 649,
+      "sourceHeight": 783,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 DM-i 1.5L 135km豪华型",
+          "name": "2026 DM-i 1.5L 135km Luxury",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 DM-i 1.5T 135km尊贵型",
+          "name": "2026 DM-i 1.5T 135km Premium",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 DM-i 1.5T 230km尊荣型",
+          "name": "2026 DM-i 1.5T 230km Prestige",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 DM-i 1.5T 230km旗舰型",
+          "name": "2026 DM-i 1.5T 230km Flagship",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/seagull",
+      "fields": {
+        "cltcRange": [
+          "305",
+          "305",
+          "405",
+          "405"
+        ],
+        "fastHours": "0.5",
+        "fastInterval": "30-80",
+        "power": "55",
+        "torque": "135",
+        "body": "5门4座两厢车",
+        "motorPs": "75",
+        "dimensions": "3780*1715*1540",
+        "acceleration50": "4.9",
+        "maxSpeed": "130",
+        "equivalentFuel": [
+          "1.15",
+          "1.15",
+          "1.17",
+          "1.17"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/海鸥/微信图片_20261014144644_57_77.png",
+      "sha256": "cef7faf5d1725b3fd6adf0e43d5adbbce77ec4802e98f83ab2940adb2fbc1094",
+      "sourceWidth": 625,
+      "sourceHeight": 626,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 305km 活力版",
+          "name": "2026 305km Active",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2026款 305km 自由版",
+          "name": "2026 305km Freedom",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2026款 405km 自在版",
+          "name": "2026 405km Comfort",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2026款 405km 飞翔版",
+          "name": "2026 405km Flying",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/qin-l-dm-i",
+      "fields": {
+        "wltcRange": [
+          "100",
+          "100",
+          "155",
+          "155"
+        ],
+        "cltcRange": [
+          "128",
+          "128",
+          "210",
+          "210"
+        ],
+        "fastHours": [
+          "0.42",
+          "0.42",
+          null,
+          null
+        ],
+        "fastInterval": [
+          "30-80",
+          "30-80",
+          null,
+          null
+        ],
+        "slowHours": [
+          "2.5",
+          "2.5",
+          null,
+          null
+        ],
+        "slowInterval": [
+          "15-100",
+          "15-100",
+          null,
+          null
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 101马力 L4",
+        "body": "4门5座三厢车",
+        "motorPs": [
+          "163",
+          "218",
+          "238",
+          "238"
+        ],
+        "dimensions": "4830*1900*1495",
+        "acceleration": [
+          "7.9",
+          "7.5",
+          "7.5",
+          "7.5"
+        ],
+        "maxSpeed": "180",
+        "wltcFuel": [
+          "1.07",
+          "1.11",
+          "0.88",
+          "0.88"
+        ],
+        "depletedWltcFuel": [
+          "3.8",
+          "3.98",
+          "3.98",
+          "3.98"
+        ],
+        "depletedNedcFuel": "2.79",
+        "equivalentFuel": [
+          "1.52",
+          "1.53",
+          "1.71",
+          "1.71"
+        ],
+        "oilElectricFuel": [
+          "2.59",
+          "2.64",
+          "2.59",
+          "2.59"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/秦L/微信图片_20261014145224_60_77.png",
+      "sha256": "942c9301e613f9ee6ed927d199081fe5949cae3a4f3580210b494bbfac500dfa",
+      "sourceWidth": 477,
+      "sourceHeight": 733,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 DM-i 128KM进取型",
+          "name": "2026 DM-i 128KM Entry",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 DM-i 128KM领先型",
+          "name": "2026 DM-i 128KM Leader",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 DM-i 210KM超越型",
+          "name": "2026 DM-i 210KM Beyond",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 DM-i 210KM云辇型",
+          "name": "2026 DM-i 210KM DiSus",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/qin-plus",
+      "fields": {
+        "wltcRange": [
+          "100",
+          "155",
+          "155",
+          null
+        ],
+        "cltcRange": [
+          "128",
+          "210",
+          "210",
+          "420"
+        ],
+        "fastHours": [
+          "0.5",
+          "0.33",
+          "0.33",
+          "0.5"
+        ],
+        "fastInterval": [
+          null,
+          null,
+          null,
+          "30-80"
+        ],
+        "slowHours": [
+          "4.8",
+          "7.7",
+          "7.7",
+          null
+        ],
+        "power": [
+          null,
+          null,
+          null,
+          "100"
+        ],
+        "torque": [
+          null,
+          null,
+          null,
+          "180"
+        ],
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "电动车单速变速箱"
+        ],
+        "engine": [
+          "1.5L 101马力 L4",
+          "1.5L 101马力 L4",
+          "1.5L 101马力 L4",
+          null
+        ],
+        "body": "4门5座三厢车",
+        "motorPs": [
+          "163",
+          "163",
+          "163",
+          "136"
+        ],
+        "dimensions": [
+          "4780*1837*1515",
+          "4780*1837*1515",
+          "4780*1837*1515",
+          "4795*1837*1515"
+        ],
+        "acceleration": [
+          "7.6",
+          "7.6",
+          "7.6",
+          null
+        ],
+        "acceleration50": [
+          null,
+          null,
+          null,
+          "5.5"
+        ],
+        "maxSpeed": [
+          "180",
+          "180",
+          "180",
+          "150"
+        ],
+        "wltcFuel": [
+          "1.11",
+          "0.88",
+          "0.88",
+          null
+        ],
+        "depletedWltcFuel": [
+          "3.98",
+          "3.98",
+          "3.98",
+          null
+        ],
+        "depletedNedcFuel": [
+          "3.08",
+          "2.79",
+          "2.79",
+          null
+        ],
+        "equivalentFuel": [
+          null,
+          null,
+          null,
+          "1.35"
+        ],
+        "oilElectricFuel": [
+          "2.64",
+          "2.59",
+          "2.59",
+          null
+        ],
+        "emissions": [
+          "国VI",
+          "国VI",
+          "国VI",
+          null
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/秦PLUS/微信图片_20261014145411_61_77.png",
+      "sha256": "50ff6385ffd9aa77204992b360e35d750fea4559a36fbf5bb1dcd766b4823010",
+      "sourceWidth": 479,
+      "sourceHeight": 713,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 DM-i 128KM进取型",
+          "name": "2026 DM-i 128KM Entry",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 DM-i 210KM进取型",
+          "name": "2026 DM-i 210KM Entry",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 DM-i 210KM超越型",
+          "name": "2026 DM-i 210KM Beyond",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2025款 EV 智驾版 420KM进取型",
+          "name": "2025 EV Smart Driving 420KM Entry",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/destroyer-05",
+      "fields": {
+        "nedcRange": [
+          "55",
+          "120",
+          "55",
+          "55"
+        ],
+        "wltcRange": [
+          "46",
+          "101",
+          "46",
+          "46"
+        ],
+        "fastHours": [
+          null,
+          "1.1",
+          null,
+          null
+        ],
+        "fastInterval": [
+          null,
+          "80",
+          null,
+          null
+        ],
+        "slowHours": [
+          "2.5",
+          "5.5",
+          "2.5",
+          "2.5"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 110马力 L4",
+        "body": "4门5座三厢车",
+        "motorPs": [
+          "180",
+          "197",
+          "180",
+          "180"
+        ],
+        "dimensions": "4780*1837*1495",
+        "acceleration": [
+          "7.9",
+          "7.3",
+          "7.9",
+          "7.9"
+        ],
+        "maxSpeed": "185",
+        "wltcFuel": [
+          null,
+          null,
+          "2.17",
+          "2.17"
+        ],
+        "depletedFuel": [
+          null,
+          null,
+          "4.6",
+          "4.6"
+        ],
+        "depletedNedcFuel": "3.8",
+        "equivalentFuel": [
+          null,
+          null,
+          "1.29",
+          "1.29"
+        ],
+        "emissions": "国VI"
+      },
+      "reviewNote": "Fast-charging range in column 2 is only 80%, without a starting percentage. Exclude that timing from public technical claims.",
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/比亚迪/驱逐舰05/微信图片_20261014144811_58_77.png",
+      "sha256": "b644deaa78a517e9e2e3339ead15766cca83271b0fd6b2b9bc75ecf4c8e82880",
+      "sourceWidth": 626,
+      "sourceHeight": 821,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 DM-i 55KM畅行版",
+          "name": "2025 DM-i 55KM Travel",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2025款 DM-i 120KM畅行版",
+          "name": "2025 DM-i 120KM Travel",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2024款 荣耀版 DM-i 55KM豪华型",
+          "name": "2024 Honor Edition DM-i 55KM Luxury",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2024款 荣耀版 DM-i 55KM尊贵型",
+          "name": "2024 Honor Edition DM-i 55KM Premium",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "livan/lanqiqiu",
+      "fields": {
+        "cltcRange": "210",
+        "fastHours": "0.5",
+        "fastInterval": "30-80",
+        "slowHours": "4.5",
+        "slowInterval": "20-100",
+        "power": "30",
+        "torque": "110",
+        "body": "3门4座两厢车",
+        "motorPs": "41",
+        "dimensions": "3100*1558*1610",
+        "maxSpeed": "100",
+        "equivalentFuel": "1.06"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/睿蓝/蓝气球/微信图片_20261014145536_62_77.png",
+      "sha256": "8f1a2a3e642987237941e47954e90707562a5f194d1c99d516b085138e7897f2",
+      "sourceWidth": 378,
+      "sourceHeight": 656,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 活力版",
+          "name": "2025 Active",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2025款 乐享版",
+          "name": "2025 Enjoy",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan/uni-v",
+      "fields": {
+        "power": [
+          null,
+          null,
+          "141",
+          "141"
+        ],
+        "torque": [
+          null,
+          null,
+          "310",
+          "310"
+        ],
+        "transmission": [
+          "1挡DHT",
+          "1挡DHT",
+          "7挡湿式双离合",
+          "7挡湿式双离合"
+        ],
+        "engine": [
+          null,
+          null,
+          "1.5T 192马力 L4",
+          "1.5T 192马力 L4"
+        ],
+        "body": "5门5座掀背车",
+        "motorPs": [
+          "245",
+          "245",
+          null,
+          null
+        ],
+        "dimensions": [
+          "4740*1838*1435",
+          "4740*1838*1435",
+          "4740*1838*1430",
+          "4740*1838*1430"
+        ],
+        "acceleration": [
+          "6.98",
+          "6.98",
+          "7.5",
+          "7.5"
+        ],
+        "maxSpeed": [
+          "185",
+          "185",
+          "205",
+          "205"
+        ],
+        "wltcFuel": [
+          "4.28",
+          "4.28",
+          "6.42",
+          "6.42"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/长安/UNI-V/微信图片_20261014145655_63_77.png",
+      "sha256": "099bd66e088f9c6eec63c64f5d6a2bcd07984e43a446ba2fe6fbd53e4e703f4e",
+      "sourceWidth": 635,
+      "sourceHeight": 599,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 1.5T 蓝鲸超擎混动 智悦型",
+          "name": "2026 1.5T New Blue Core Super Hybrid Smart Enjoy",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2026款 1.5T 蓝鲸超擎混动 智领型",
+          "name": "2026 1.5T New Blue Core Super Hybrid Smart Leader",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2025款 第三代 1.5T 500Bar尊贵型",
+          "name": "2025 Third Generation 1.5T 500Bar Premium",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2025款 第三代 1.5T 500Bar尊贵运动型",
+          "name": "2025 Third Generation 1.5T 500Bar Premium Sport",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan-qiyuan/a06",
+      "fields": {
+        "cltcRange": "630",
+        "fastHours": "0.15",
+        "fastInterval": "30-80",
+        "power": "210",
+        "torque": "290",
+        "transmission": "电动车单速变速箱",
+        "body": "5门5座掀背车",
+        "motorPs": "286",
+        "dimensions": "4885*1916*1496",
+        "acceleration": "6.2",
+        "maxSpeed": "188",
+        "equivalentFuel": "1.31"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/Sedan/长安启源/A06/微信图片_20261014145806_64_77.png",
+      "sha256": "b5e03ec0a56a4d081c5e1a37004e1d7deafdd209c23f4d7d463b918db7c4ac64",
+      "sourceWidth": 625,
+      "sourceHeight": 881,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 630舒享版",
+          "name": "2027 630 Comfort",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2027款 630尊享版",
+          "name": "2027 630 Premium",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2027款 630激光尊享版",
+          "name": "2027 630 LiDAR Premium",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2027款 630激光智享版",
+          "name": "2027 630 LiDAR Smart Enjoy",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "toyota/bz3x",
+      "fields": {
+        "cltcRange": [
+          "430",
+          "430",
+          "520",
+          "520"
+        ],
+        "fastHours": "0.4",
+        "fastInterval": "30-80",
+        "power": "150",
+        "torque": "200",
+        "body": "5门5座SUV",
+        "motorPs": "204",
+        "dimensions": "4600*1850*1660"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/丰田/BZ3X/BZ3X_参数配置.png",
+      "sha256": "1761abf9c810ea6b35ca3ad2acb8c3d435927e715784b89048bba7d68e884edc",
+      "sourceWidth": 942,
+      "sourceHeight": 793,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 430 Air",
+          "name": "2026 430 Air",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2026款 430 Air+",
+          "name": "2026 430 Air+",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2026款 520 Pro",
+          "name": "2026 520 Pro",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2026款 520 Pro 骑士版",
+          "name": "2026 520 Pro Knight Edition",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "toyota/rav4",
+      "fields": {
+        "engine": [
+          "2.0L 152马力 L4",
+          "2.0L 152马力 L4",
+          "2.0L 171马力 L4",
+          "2.0L 171马力 L4"
+        ],
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "CVT无级变速(模拟10挡)",
+          "CVT无级变速(模拟10挡)"
+        ],
+        "power": [
+          "144",
+          "144",
+          "126",
+          "126"
+        ],
+        "torque": [
+          null,
+          null,
+          "206",
+          "206"
+        ],
+        "body": "5门5座SUV",
+        "motorPs": [
+          "113",
+          "113",
+          null,
+          null
+        ],
+        "dimensions": "4620*1855*1680",
+        "emissions": "国VI",
+        "driveDesignation": [
+          "2WD",
+          "2WD",
+          "2WD",
+          "4WD"
+        ]
+      },
+      "reviewNote": "Only four complete columns are used; the fifth is clipped. The screenshot ends at the acceleration row and does not show fuel consumption.",
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/丰田/RAV4荣放/RAV4荣放_参数配置.png",
+      "sha256": "f59be17d52c80edf9ed13c3be02b665643f2e2d172d42c729ca860b8b0a6d932",
+      "sourceWidth": 990,
+      "sourceHeight": 848,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 双擎 2.0L 两驱精英版",
+          "name": "2026 Hybrid 2.0L 2WD Elite",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2026款 双擎 2.0L 两驱豪华版",
+          "name": "2026 Hybrid 2.0L 2WD Luxury",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2026款 2.0L 两驱豪华版",
+          "name": "2026 2.0L 2WD Luxury",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 2.0L 四驱豪华版",
+          "name": "2026 2.0L 4WD Luxury",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "toyota/corolla-cross",
+      "fields": {
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "CVT无级变速(模拟10挡)"
+        ],
+        "power": [
+          "144",
+          "144",
+          "144",
+          "126"
+        ],
+        "torque": [
+          null,
+          null,
+          null,
+          "205"
+        ],
+        "body": "5门5座SUV",
+        "emissions": "国VI"
+      },
+      "reviewNote": "Only four complete columns are used; the fifth is clipped. The screenshot ends at body structure. Engine details, dimensions and consumption are not supplied.",
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/丰田/卡罗拉锐放/卡罗拉锐放_参数配置.png",
+      "sha256": "6deaf9e9ff07fcdd155b4adab12ab17786205f0b58e4b04cba77738388462ef8",
+      "sourceWidth": 968,
+      "sourceHeight": 653,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 2.0L 智能电混双擎 先锋版",
+          "name": "2026 2.0L Smart Hybrid Pioneer",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2026款 2.0L 智能电混双擎 精英版",
+          "name": "2026 2.0L Smart Hybrid Elite",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2026款 2.0L 智能电混双擎 豪华版",
+          "name": "2026 2.0L Smart Hybrid Luxury",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 4,
+          "title": "2026款 2.0L 先锋版",
+          "name": "2026 2.0L Pioneer",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "geely/boyue",
+      "fields": {
+        "engine": "1.5T 181马力 L4",
+        "transmission": "7挡湿式双离合",
+        "power": "133",
+        "torque": "290",
+        "body": "5门5座SUV",
+        "dimensions": "4549*1865*1650",
+        "maxSpeed": "198",
+        "wltcFuel": "6.44",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/吉利/博越/微信图片_20261015094341_73_77.png",
+      "sha256": "bc3d4230edaed5346a4f901986119843a7bd31cafaf7cc1da32b583837dc6e02",
+      "sourceWidth": 759,
+      "sourceHeight": 768,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 1.5TD 欢乐",
+          "name": "2026 1.5TD Joy",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 1.5TD 向往",
+          "name": "2026 1.5TD Aspiration",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 1.5TD 十周年冠军版",
+          "name": "2026 1.5TD Tenth Anniversary Champion",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 1.5TD 美好",
+          "name": "2026 1.5TD Beautiful",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "geely/xingyue-l",
+      "fields": {
+        "engine": [
+          "1.5T 163马力 L4",
+          "1.5T 163马力 L4",
+          "1.5T 163马力 L4",
+          "2.0T 218马力 L4"
+        ],
+        "transmission": [
+          "1挡DHT",
+          "1挡DHT",
+          "1挡DHT",
+          "7挡湿式双离合"
+        ],
+        "power": [
+          null,
+          null,
+          null,
+          "160"
+        ],
+        "torque": [
+          null,
+          null,
+          null,
+          "325"
+        ],
+        "body": "5门5座SUV",
+        "motorPs": [
+          "238",
+          "238",
+          "238",
+          null
+        ],
+        "dimensions": [
+          "4795*1895*1689",
+          "4795*1895*1689",
+          "4795*1895*1689",
+          "4770*1895*1689"
+        ],
+        "acceleration": [
+          "8.3",
+          "8.3",
+          "8.3",
+          "7.9"
+        ],
+        "maxSpeed": [
+          "180",
+          "180",
+          "180",
+          "215"
+        ],
+        "wltcFuel": [
+          "4.75",
+          "4.75",
+          "4.75",
+          "7.55"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/吉利/星越L/微信图片_20261015094454_74_77.png",
+      "sha256": "92a2f1f740b39858003656ca38684b1066bfeee3d3c0d580cd1778dcef25a67e",
+      "sourceWidth": 761,
+      "sourceHeight": 796,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 i-HEV智擎混动 凌云版",
+          "name": "2026 i-HEV Smart Hybrid Lingyun",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2026款 i-HEV智擎混动 星汉版",
+          "name": "2026 i-HEV Smart Hybrid Star River",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2026款 i-HEV智擎混动 望舒版",
+          "name": "2026 i-HEV Smart Hybrid Wangshu",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 4,
+          "title": "2026款 2.0TD DCT 长风越山版",
+          "name": "2026 2.0TD DCT Changfeng Yueshan",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "geely/binyue",
+      "fields": {
+        "engine": [
+          "1.5L 126马力 L4",
+          "1.5L 126马力 L4",
+          "1.5L 126马力 L4",
+          "1.5T 181马力 L4"
+        ],
+        "transmission": [
+          "5挡手动",
+          "CVT无级变速",
+          "CVT无级变速",
+          "7挡湿式双离合"
+        ],
+        "power": [
+          "93",
+          "93",
+          "93",
+          "133"
+        ],
+        "torque": [
+          "152",
+          "152",
+          "152",
+          "290"
+        ],
+        "body": "5门5座SUV",
+        "dimensions": [
+          "4330*1800*1609",
+          "4330*1800*1609",
+          "4330*1800*1609",
+          "4357*1800*1609"
+        ],
+        "acceleration": [
+          null,
+          null,
+          null,
+          "7.6"
+        ],
+        "maxSpeed": [
+          "175",
+          "170",
+          "170",
+          "200"
+        ],
+        "wltcFuel": [
+          "6.46",
+          "6.89",
+          "6.89",
+          "6.35"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/吉利/缤越/微信图片_20261015094537_75_77.png",
+      "sha256": "e5c450532260dd79a63336f0e557938cb429fe12e968b0f636f32094c0129aea",
+      "sourceWidth": 760,
+      "sourceHeight": 712,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 1.5L 手动超能",
+          "name": "2025 1.5L Manual Super",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2025款 1.5L CVT超能",
+          "name": "2025 1.5L CVT Super",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2025款 1.5L CVT超能MAX",
+          "name": "2025 1.5L CVT Super MAX",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2025款 缤越L 1.5TD DCT超越",
+          "name": "2025 Binyue L 1.5TD DCT Beyond",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "volkswagen/tayron",
+      "fields": {
+        "engine": [
+          "1.5T 160马力 L4",
+          "1.5T 160马力 L4",
+          "2.0T 186马力 L4",
+          "2.0T 186马力 L4"
+        ],
+        "transmission": "7挡湿式双离合",
+        "power": [
+          "118",
+          "118",
+          "137",
+          "137"
+        ],
+        "torque": [
+          "250",
+          "250",
+          "320",
+          "320"
+        ],
+        "body": "5门5座SUV",
+        "dimensions": [
+          "4593*1860*1665",
+          "4684*1854*1685",
+          "4593*1860*1665",
+          "4684*1854*1685"
+        ],
+        "acceleration": [
+          "9.5",
+          "9.4",
+          "9.3",
+          "8.5"
+        ],
+        "maxSpeed": "200",
+        "wltcFuel": [
+          "6.7",
+          "6.42",
+          "7.07",
+          "6.84"
+        ],
+        "emissions": "国VI",
+        "driveDesignation": [
+          null,
+          "2WD",
+          null,
+          "2WD"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/大众/探岳/微信图片_20261015093647_68_77.png",
+      "sha256": "ce25fe0d0cf074c9da748db1fc9c430ce9389007a7f03cb0f37cb7d614ad4377",
+      "sourceWidth": 753,
+      "sourceHeight": 673,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 改款 3000万辆甄选款 300TSI",
+          "name": "2026 Revised 30 Million Edition 300TSI",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 探岳L 300TSI 两驱精英",
+          "name": "2026 Tayron L 300TSI 2WD Elite",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 改款 3000万辆甄选款 330TSI",
+          "name": "2026 Revised 30 Million Edition 330TSI",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 探岳L 330TSI 两驱精英",
+          "name": "2026 Tayron L 330TSI 2WD Elite",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "volkswagen/t-roc",
+      "fields": {
+        "engine": [
+          "1.4T 150马力 L4",
+          "1.5T 160马力 L4",
+          "1.5T 160马力 L4"
+        ],
+        "transmission": "7挡干式双离合",
+        "power": [
+          "110",
+          "118",
+          "118"
+        ],
+        "torque": "250",
+        "body": "5门5座SUV",
+        "dimensions": [
+          "4336*1819*1592",
+          "4319*1819*1592",
+          "4319*1819*1592"
+        ],
+        "acceleration": [
+          "9.5",
+          "9.4",
+          "9.4"
+        ],
+        "maxSpeed": "200",
+        "wltcFuel": [
+          "6.4",
+          "6.1",
+          "6.1"
+        ],
+        "emissions": "国VI",
+        "driveDesignation": "2WD"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/大众/探歌/微信图片_20261015093826_69_77.png",
+      "sha256": "979366e7c1aa0b7c0c1ff7a009c142cded58674b831ece61b0f20d7c948b6c6f",
+      "sourceWidth": 651,
+      "sourceHeight": 716,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 280TSI DSG两驱时光版",
+          "name": "2026 280TSI DSG 2WD Time",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 300TSI DSG两驱辰光版",
+          "name": "2026 300TSI DSG 2WD Morning Light",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 300TSI DSG两驱星光版",
+          "name": "2026 300TSI DSG 2WD Starlight",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "volkswagen/tharu",
+      "fields": {
+        "engine": [
+          "1.5L 110马力 L4",
+          "1.5L 110马力 L4",
+          "1.5L 110马力 L4",
+          "1.5T 160马力 L4"
+        ],
+        "transmission": [
+          "6挡手自一体",
+          "6挡手自一体",
+          "6挡手自一体",
+          "7挡干式双离合"
+        ],
+        "power": [
+          "81",
+          "81",
+          "81",
+          "118"
+        ],
+        "torque": [
+          "141",
+          "141",
+          "141",
+          "250"
+        ],
+        "body": "5门5座SUV",
+        "dimensions": "4355*1762*1605",
+        "maxSpeed": [
+          "182",
+          "182",
+          "182",
+          "190"
+        ],
+        "wltcFuel": [
+          "6.41",
+          "6.41",
+          "6.41",
+          "5.70"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/大众/途岳/微信图片_20261015094130_71_77.png",
+      "sha256": "58f95e74d78263b3ea89b60e6e53afe8b6edaeacefb8747e62a1c028ce9b30f6",
+      "sourceWidth": 751,
+      "sourceHeight": 719,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 新锐 1.5L 锐进版",
+          "name": "2026 New Edition 1.5L Entry",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 新锐 1.5L 锐意PLUS版",
+          "name": "2026 New Edition 1.5L Advance PLUS",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 新锐 1.5L 锐享版",
+          "name": "2026 New Edition 1.5L Enjoy",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 新锐 300TSI 锐意PLUS版",
+          "name": "2026 New Edition 300TSI Advance PLUS",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "gac-trumpchi/gs3",
+      "fields": {
+        "engine": "1.5T 177马力 L4",
+        "transmission": "7挡湿式双离合",
+        "power": "130",
+        "torque": "270",
+        "body": "5门5座SUV",
+        "dimensions": "4410*1850*1600",
+        "maxSpeed": "190",
+        "wltcFuel": "6.18",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/广汽传祺/GS3/微信图片_20261015094228_72_77.png",
+      "sha256": "aab67db53faaf7949acf89e8f8bf33a102585fd6e6f1b634ba6d8fbcb6de3ad9",
+      "sourceWidth": 758,
+      "sourceHeight": 679,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 影速 270T 劲取版",
+          "name": "2026 GS3 Emzoom 270T Entry",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 影速 270T 劲享版",
+          "name": "2026 GS3 Emzoom 270T Enjoy",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 影速 270T 劲享版 平步青云",
+          "name": "2026 GS3 Emzoom 270T Enjoy Pingbu Qingyun",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 影速 270T 劲智版",
+          "name": "2026 GS3 Emzoom 270T Smart",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "jetour/x70-plus",
+      "fields": {
+        "engine": "1.5T 156马力 L4",
+        "transmission": "6挡湿式双离合",
+        "power": "115",
+        "torque": "230",
+        "body": "5门5座SUV",
+        "dimensions": "4749*1900*1720",
+        "maxSpeed": "180",
+        "wltcFuel": "7.92",
+        "emissions": "国VI"
+      },
+      "excludedColumns": [
+        {
+          "column": 3,
+          "reason": "7-seat column title conflicts with the 5-seat body-structure row."
+        },
+        {
+          "column": 4,
+          "reason": "7-seat column title conflicts with the 5-seat body-structure row."
+        }
+      ],
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/捷途/X70 PLUS/微信图片_20261015094838_78_77.png",
+      "sha256": "6ec89bfa9f62ac560f336f48e849259bd392770e1d41ff0acc778215e4a67702",
+      "sourceWidth": 761,
+      "sourceHeight": 761,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 冠军版 1.5T DCT舒适 5座",
+          "name": "2026 Champion 1.5T DCT Comfort 5-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 1.5T DCT舒适型 5座",
+          "name": "2026 1.5T DCT Comfort 5-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 冠军版 1.5T DCT舒适 7座",
+          "name": "2026 Champion 1.5T DCT Comfort 7-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 1.5T DCT舒适型 7座",
+          "name": "2026 1.5T DCT Comfort 7-seat",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "jetour/x70l",
+      "fields": {
+        "engine": "1.5T 184马力 L4",
+        "transmission": "7挡湿式双离合",
+        "power": "135",
+        "torque": "290",
+        "body": "5门5座SUV",
+        "dimensions": "4810*1930*1705",
+        "maxSpeed": "180",
+        "wltcFuel": "7.41",
+        "emissions": "国VI"
+      },
+      "excludedColumns": [
+        {
+          "column": 3,
+          "reason": "7-seat column title conflicts with the 5-seat body-structure row."
+        }
+      ],
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/捷途/X70L/微信图片_20261015094739_77_77.png",
+      "sha256": "595249ef9600b92caffbbb1899922a15654eb86b8ab89a65af2eb7faf5207174",
+      "sourceWidth": 763,
+      "sourceHeight": 719,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 1.5TD 双离合标准 5座",
+          "name": "2026 1.5TD DCT Standard 5-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 1.5TD 双离合舒适 5座",
+          "name": "2026 1.5TD DCT Comfort 5-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 1.5TD 双离合舒适 7座",
+          "name": "2026 1.5TD DCT Comfort 7-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 1.5TD 双离合豪华 5座",
+          "name": "2026 1.5TD DCT Luxury 5-seat",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "volkswagen/teramont",
+      "fields": {
+        "engine": [
+          "2.0T 214马力 L4",
+          "2.0T 214马力 L4",
+          "2.0T 272马力 L4",
+          "2.0T 272马力 L4"
+        ],
+        "transmission": "7挡湿式双离合",
+        "power": [
+          "157",
+          "157",
+          "200",
+          "200"
+        ],
+        "torque": [
+          "340",
+          "340",
+          "400",
+          "400"
+        ],
+        "body": "5门7座SUV",
+        "dimensions": "5158*1991*1788",
+        "acceleration": [
+          "9.1",
+          "9.1",
+          "7.6",
+          "7.6"
+        ],
+        "maxSpeed": "200",
+        "wltcFuel": [
+          "7.57",
+          "7.57",
+          "8.35",
+          "8.35"
+        ],
+        "emissions": "国VI",
+        "driveDesignation": [
+          "2WD",
+          "2WD",
+          "4WD",
+          "4WD"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/大众/途昂/微信图片_20261015094050_70_77.png",
+      "sha256": "79a20d764d96ac212614cfe67466a2f54fb520bf730fe287eacfe1978a89f768",
+      "sourceWidth": 754,
+      "sourceHeight": 715,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 途昂Pro 380TSI 两驱越境版",
+          "name": "2026 Teramont Pro 380TSI 2WD Cross Country",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 途昂Pro 380TSI 两驱纵横版",
+          "name": "2026 Teramont Pro 380TSI 2WD Traverse",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 途昂Pro 450TSI 四驱越境版",
+          "name": "2026 Teramont Pro 450TSI 4WD Cross Country",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 途昂Pro 450TSI 四驱领航版",
+          "name": "2026 Teramont Pro 450TSI 4WD Navigator",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "jetour/x90-plus",
+      "fields": {
+        "engine": "1.6T 197马力 L4",
+        "transmission": [
+          "6挡手动",
+          "6挡手动",
+          "7挡湿式双离合",
+          "7挡湿式双离合"
+        ],
+        "power": "145",
+        "torque": "290",
+        "body": [
+          "5门5座SUV",
+          "5门7座SUV",
+          "5门5座SUV",
+          "5门7座SUV"
+        ],
+        "dimensions": "4858*1925*1780",
+        "maxSpeed": [
+          "190",
+          "190",
+          "185",
+          "185"
+        ],
+        "wltcFuel": [
+          "7.9",
+          "7.9",
+          "8.15",
+          "8.15"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/捷途/X90 PLUS/微信图片_20261015094925_79_77.png",
+      "sha256": "84d02af6e0020a29ffa520e4c331dc137dc32105e009144bd10292541a3f7e53",
+      "sourceWidth": 754,
+      "sourceHeight": 712,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 1.6TD 手动舒适版 5座",
+          "name": "2025 1.6TD Manual Comfort 5-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2025款 1.6TD 手动舒适版 7座",
+          "name": "2025 1.6TD Manual Comfort 7-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2025款 1.6TD DCT精英版 5座",
+          "name": "2025 1.6TD DCT Elite 5-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2025款 1.6TD DCT精英版 7座",
+          "name": "2025 1.6TD DCT Elite 7-seat",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "jetour/dashing",
+      "fields": {
+        "engine": "1.5T 156马力 L4",
+        "transmission": [
+          "6挡手动",
+          "6挡湿式双离合",
+          "6挡湿式双离合",
+          "6挡湿式双离合"
+        ],
+        "power": "115",
+        "torque": "230",
+        "body": "5门5座SUV",
+        "dimensions": "4590*1900*1685",
+        "maxSpeed": "180",
+        "wltcFuel": "7.8",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/捷途/大圣/微信图片_20261015095016_80_77.png",
+      "sha256": "b2b3fe0df200148ae8f10327950d9f4ebbce9f540245ea9bb1de941faf723391",
+      "sourceWidth": 757,
+      "sourceHeight": 708,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 青春版 1.5T 6MT舒适版",
+          "name": "2026 Youth 1.5T 6MT Comfort",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 青春版 1.5T 6DCT精英版",
+          "name": "2026 Youth 1.5T 6DCT Elite",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 青春版 1.5T 6DCT豪华版",
+          "name": "2026 Youth 1.5T 6DCT Luxury",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 青春版 1.5T 6DCT豪华+版",
+          "name": "2026 Youth 1.5T 6DCT Luxury+",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "jetour/traveler",
+      "fields": {
+        "engine": [
+          "1.5T 184马力 L4",
+          "1.5T 184马力 L4",
+          "2.0T 254马力 L4",
+          "2.0T 254马力 L4"
+        ],
+        "transmission": "7挡湿式双离合",
+        "power": [
+          "135",
+          "135",
+          "187",
+          "187"
+        ],
+        "torque": [
+          "290",
+          "290",
+          "390",
+          "390"
+        ],
+        "body": "5门5座SUV",
+        "dimensions": [
+          "4827*2006*1870",
+          "4827*2006*1870",
+          "4827*2006*1875",
+          "4827*2006*1875"
+        ],
+        "maxSpeed": [
+          "170",
+          "170",
+          "180",
+          "180"
+        ],
+        "wltcFuel": [
+          "8.35",
+          "8.35",
+          "8.78",
+          "8.78"
+        ],
+        "emissions": "国VI",
+        "driveDesignation": [
+          "2WD",
+          "2WD",
+          "XWD 4WD",
+          "XWD 4WD"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/捷途/旅行者/微信图片_20261015095136_82_77.png",
+      "sha256": "c38859f9060b579a5280889c416574f7181e33a1be169668a6247b90365aad2b",
+      "sourceWidth": 769,
+      "sourceHeight": 704,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 旅行者 1.5TD 两驱探索",
+          "name": "2027 Traveler 1.5TD 2WD Explorer",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2027款 旅行者 1.5TD 两驱探索+",
+          "name": "2027 Traveler 1.5TD 2WD Explorer+",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2027款 旅行者 2.0TD XWD四驱发现",
+          "name": "2027 Traveler 2.0TD XWD 4WD Discover",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2027款 旅行者 2.0TD XWD四驱穿越",
+          "name": "2027 Traveler 2.0TD XWD 4WD Traverse",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "jetour/ziyouzhe",
+      "fields": {
+        "engine": "1.5T 184马力 L4",
+        "transmission": "7挡湿式双离合",
+        "power": "135",
+        "torque": "290",
+        "body": "5门5座SUV",
+        "dimensions": "4706*1967*1845",
+        "maxSpeed": "180",
+        "wltcFuel": "8.15",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/捷途/自由者/微信图片_20261015095052_81_77.png",
+      "sha256": "7c9182a30fc42d6dfd2e6f897ba4df9540ac3a05a7ecb70ee67da61007cab24c",
+      "sourceWidth": 759,
+      "sourceHeight": 736,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 1.5TD DCT启程",
+          "name": "2026 1.5TD DCT Departure",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 骏马版 1.5TD DCT探索",
+          "name": "2026 Horse Edition 1.5TD DCT Explorer",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 骏马版 1.5TD DCT发现",
+          "name": "2026 Horse Edition 1.5TD DCT Discovery",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2025款 1.5TD DCT探索",
+          "name": "2025 1.5TD DCT Explorer",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "fangchengbao/bao-5",
+      "fields": {
+        "wltcRange": [
+          "160",
+          null,
+          "100",
+          "100"
+        ],
+        "cltcRange": [
+          "210",
+          null,
+          "125",
+          "125"
+        ],
+        "fastHours": [
+          "0.25",
+          "0.15",
+          "0.27",
+          "0.27"
+        ],
+        "fastInterval": [
+          "30-80",
+          "10-97",
+          "30-80",
+          "30-80"
+        ],
+        "power": "505",
+        "torque": "760",
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5T 194马力 L4",
+        "body": "5门5座SUV",
+        "motorPs": "660",
+        "dimensions": [
+          "4890*1970*1920",
+          "4880*1970*1920",
+          "4890*1970*1920",
+          "4890*1970*1920"
+        ],
+        "acceleration": "4.8",
+        "maxSpeed": [
+          "180",
+          null,
+          "180",
+          "180"
+        ],
+        "wltcFuel": [
+          "1.23",
+          null,
+          "1.79",
+          "1.79"
+        ],
+        "depletedWltcFuel": [
+          "8.43",
+          null,
+          "8.85",
+          "8.85"
+        ],
+        "oilElectricFuel": [
+          "4.14",
+          null,
+          "4.52",
+          "4.52"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/方程豹/豹5/微信图片_20261015095242_83_77.png",
+      "sha256": "8d9a7ffedf03e9fe8e2adb70dde8f985d8a56ea5307ddfdf859e717133fea906",
+      "sourceWidth": 642,
+      "sourceHeight": 789,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 210KM天神Max版",
+          "name": "2026 210KM God's Eye Max",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 云辇闪充版",
+          "name": "2026 DiSus Flash Charging",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2025款 125KM天神智驾Max版",
+          "name": "2025 125KM God's Eye Smart Driving Max",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2025款 125KM天神智驾Ultra版",
+          "name": "2025 125KM God's Eye Smart Driving Ultra",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "fangchengbao/bao-8",
+      "fields": {
+        "wltcRange": "150",
+        "fastHours": "0.15",
+        "fastInterval": "10-97",
+        "power": "550",
+        "torque": "760",
+        "transmission": "E-CVT无级变速",
+        "engine": "2.0T 245马力 L4",
+        "body": [
+          "5门5座SUV",
+          "5门7座SUV",
+          "5门6座SUV"
+        ],
+        "motorPs": "680",
+        "dimensions": "5195*1994*1905",
+        "acceleration": "4.8",
+        "maxSpeed": "180",
+        "wltcFuel": "1.45",
+        "depletedWltcFuel": "8.45",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/方程豹/豹8/微信图片_20261015095319_84_77.png",
+      "sha256": "bd46be0302ce38237d6b800b01a552dc80a91901250e8a7ba7dea95dceb84b88",
+      "sourceWidth": 532,
+      "sourceHeight": 756,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 闪充 五座版",
+          "name": "2026 Flash Charging 5-seat",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 闪充 七座版",
+          "name": "2026 Flash Charging 7-seat",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 闪充 六座版",
+          "name": "2026 Flash Charging 6-seat",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "fangchengbao/tai-3",
+      "fields": {
+        "cltcRange": [
+          "510",
+          "620",
+          "565"
+        ],
+        "fastHours": "0.15",
+        "fastInterval": "10-97",
+        "power": [
+          "240",
+          "240",
+          "375"
+        ],
+        "body": "5门5座SUV",
+        "motorPs": [
+          "326",
+          "326",
+          "510"
+        ],
+        "dimensions": "4605*1900*1720",
+        "acceleration": [
+          "6.9",
+          "7.3",
+          "4.7"
+        ],
+        "maxSpeed": "210",
+        "equivalentFuel": [
+          "1.64",
+          "1.58",
+          "1.74"
+        ],
+        "driveDesignation": [
+          "RWD",
+          "RWD",
+          "4WD"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/方程豹/钛3/微信图片_20261015095351_85_77.png",
+      "sha256": "1798bcd0170e2506781684d501014d1d56c9bb6cdd69c69e69fd265cc814012b",
+      "sourceWidth": 539,
+      "sourceHeight": 603,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 510KM 后驱闪充版",
+          "name": "2026 510KM RWD Flash Charging",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2026款 620KM 后驱闪充版",
+          "name": "2026 620KM RWD Flash Charging",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2026款 565KM 四驱闪充版",
+          "name": "2026 565KM 4WD Flash Charging",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "fangchengbao/tai-7",
+      "fields": {
+        "wltcRange": [
+          "230",
+          "210",
+          null,
+          null
+        ],
+        "cltcRange": [
+          "315",
+          "300",
+          "675",
+          "755"
+        ],
+        "fastHours": [
+          "0.23",
+          "0.23",
+          "0.15",
+          "0.15"
+        ],
+        "fastInterval": [
+          "30-80",
+          "30-80",
+          "10-97",
+          "10-97"
+        ],
+        "power": [
+          null,
+          null,
+          "300",
+          "300"
+        ],
+        "torque": [
+          null,
+          null,
+          "365",
+          "365"
+        ],
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "电动车单速变速箱",
+          "电动车单速变速箱"
+        ],
+        "engine": [
+          "1.5T 156马力 L4",
+          "1.5T 156马力 L4",
+          null,
+          null
+        ],
+        "body": "5门5座SUV",
+        "motorPs": [
+          "272",
+          "490",
+          "408",
+          "408"
+        ],
+        "dimensions": "4999*1995*1865",
+        "acceleration": [
+          "7.9",
+          "4.5",
+          "7.3",
+          "7.5"
+        ],
+        "maxSpeed": [
+          "190",
+          "190",
+          "240",
+          "240"
+        ],
+        "wltcFuel": [
+          "0.36",
+          "0.47",
+          null,
+          null
+        ],
+        "depletedWltcFuel": [
+          "5.98",
+          "6.3",
+          null,
+          null
+        ],
+        "equivalentFuel": [
+          null,
+          null,
+          "1.75",
+          "1.79"
+        ],
+        "oilElectricFuel": [
+          "3.02",
+          "3.26",
+          null,
+          null
+        ],
+        "emissions": [
+          "国VI",
+          "国VI",
+          null,
+          null
+        ],
+        "driveDesignation": [
+          "2WD",
+          "4WD",
+          "RWD",
+          "RWD"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/方程豹/钛7/微信图片_20261015095437_86_77.png",
+      "sha256": "b773eb6971e0070c7cca1632135428df6c9a9ab208697d3cec2603c6c31eed90",
+      "sourceWidth": 635,
+      "sourceHeight": 834,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 315KM 两驱Max版",
+          "name": "2026 315KM 2WD Max",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 300KM 四驱Ultra版",
+          "name": "2026 300KM 4WD Ultra",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 EV 675KM 后驱闪充版",
+          "name": "2026 EV 675KM RWD Flash Charging",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2026款 EV 755KM 后驱闪充版",
+          "name": "2026 EV 755KM RWD Flash Charging",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/yuan-plus",
+      "fields": {
+        "cltcRange": [
+          "540",
+          "540",
+          "630",
+          "630"
+        ],
+        "fastHours": "0.15",
+        "fastInterval": "10-97",
+        "power": [
+          "200",
+          "200",
+          "240",
+          "240"
+        ],
+        "body": "5门5座SUV",
+        "motorPs": [
+          "272",
+          "272",
+          "326",
+          "326"
+        ],
+        "dimensions": "4665*1895*1675",
+        "acceleration": [
+          "6.6",
+          "6.6",
+          "5.9",
+          "5.9"
+        ],
+        "maxSpeed": [
+          "190",
+          "190",
+          "200",
+          "200"
+        ],
+        "equivalentFuel": [
+          "1.37",
+          "1.37",
+          "1.40",
+          "1.40"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/元PLUS/微信图片_20261015095931_90_77.png",
+      "sha256": "72e09ab67e1bb3a25fd2117947b73e9b61a8b3bb3ade81ca826ec779ece1cc55",
+      "sourceWidth": 640,
+      "sourceHeight": 641,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 540KM领先型",
+          "name": "2026 540KM Leader",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2026款 540KM超越型",
+          "name": "2026 540KM Beyond",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2026款 630KM超越型",
+          "name": "2026 630KM Beyond",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2026款 630KM卓越型",
+          "name": "2026 630KM Excellence",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/yuan-up",
+      "fields": {
+        "cltcRange": [
+          "301",
+          "401",
+          "401",
+          "501"
+        ],
+        "fastHours": "0.5",
+        "fastInterval": "30-80",
+        "power": "70",
+        "torque": "180",
+        "body": "5门5座SUV",
+        "motorPs": "95",
+        "dimensions": "4310*1830*1675",
+        "acceleration": [
+          "12",
+          "12.9",
+          "12.9",
+          null
+        ],
+        "acceleration50": [
+          "4.3",
+          "4.6",
+          "4.6",
+          "4.6"
+        ],
+        "maxSpeed": "150",
+        "equivalentFuel": [
+          "1.39",
+          "1.38",
+          "1.38",
+          "1.32"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/元UP/微信图片_20261015100028_92_77.png",
+      "sha256": "fabe353e819ed2a3d69a1a8ba0a7d33c7e493aabb69234a50edd0d44a8304b2f",
+      "sourceWidth": 645,
+      "sourceHeight": 664,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 飞驰版 301KM领航型",
+          "name": "2027 Flying Edition 301KM Navigator",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2027款 飞驰版 401KM领航型",
+          "name": "2027 Flying Edition 401KM Navigator",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2027款 飞驰版 401KM活力型",
+          "name": "2027 Flying Edition 401KM Active",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2027款 飞驰版 501KM超越型",
+          "name": "2027 Flying Edition 501KM Beyond",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/tang-l",
+      "fields": {
+        "wltcRange": [
+          "165",
+          "150",
+          "135",
+          null
+        ],
+        "cltcRange": [
+          "215",
+          "200",
+          "175",
+          "670"
+        ],
+        "fastHours": [
+          null,
+          null,
+          null,
+          "0.1"
+        ],
+        "fastInterval": [
+          null,
+          null,
+          null,
+          "10-70"
+        ],
+        "power": [
+          null,
+          null,
+          null,
+          "500"
+        ],
+        "torque": [
+          null,
+          null,
+          null,
+          "420"
+        ],
+        "transmission": [
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "E-CVT无级变速",
+          "电动车单速变速箱"
+        ],
+        "engine": [
+          "1.5T 156马力 L4",
+          "1.5T 156马力 L4",
+          "1.5T 156马力 L4",
+          null
+        ],
+        "body": "5门7座SUV",
+        "motorPs": [
+          "272",
+          "544",
+          "544",
+          "680"
+        ],
+        "dimensions": [
+          "5040*1996*1760",
+          "5040*1996*1760",
+          "5040*1996*1970",
+          "5040*1996*1760"
+        ],
+        "acceleration": [
+          "7.9",
+          "4.3",
+          "4.5",
+          "6.9"
+        ],
+        "maxSpeed": [
+          "200",
+          "200",
+          "200",
+          "240"
+        ],
+        "wltcFuel": [
+          "0.77",
+          "0.95",
+          "1.17",
+          null
+        ],
+        "depletedWltcFuel": [
+          "5.7",
+          "6.3",
+          "6.7",
+          null
+        ],
+        "depletedNedcFuel": [
+          "4.9",
+          "5.6",
+          "6",
+          null
+        ],
+        "equivalentFuel": [
+          null,
+          null,
+          null,
+          "2.02"
+        ],
+        "oilElectricFuel": [
+          "2.95",
+          "3.28",
+          "3.61",
+          null
+        ],
+        "emissions": [
+          "国VI",
+          "国VI",
+          "国VI",
+          null
+        ],
+        "driveDesignation": [
+          null,
+          "4WD",
+          null,
+          null
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/唐L/微信图片_20261015100127_93_77.png",
+      "sha256": "f654be068bc329804ec064d97a26b62c4d54d5a00ac83abf87ddd35e9f4ed700",
+      "sourceWidth": 645,
+      "sourceHeight": 887,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 DM 215KM激光雷达旗舰型",
+          "name": "2025 DM 215KM LiDAR Flagship",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2025款 DM 200KM四驱激光雷达旗舰型",
+          "name": "2025 DM 200KM 4WD LiDAR Flagship",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2025款 DM 175KM无人机玩家版",
+          "name": "2025 DM 175KM Drone Edition",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2025款 EV 670KM激光雷达尊享型",
+          "name": "2025 EV 670KM LiDAR Premium",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/tang-dm-i",
+      "fields": {
+        "wltcRange": [
+          "120",
+          "95",
+          "95",
+          "120"
+        ],
+        "cltcRange": [
+          "175",
+          "115",
+          "115",
+          "175"
+        ],
+        "fastHours": [
+          "0.33",
+          null,
+          null,
+          "0.33"
+        ],
+        "fastInterval": [
+          "30-80",
+          null,
+          null,
+          "30-80"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5T 156马力 L4",
+        "body": "5门7座SUV",
+        "motorPs": "272",
+        "dimensions": [
+          "4905*1950*1725",
+          "4870*1950*1725",
+          "4870*1950*1725",
+          "4905*1950*1725"
+        ],
+        "acceleration": [
+          "7.9",
+          "7.5",
+          "7.5",
+          "7.9"
+        ],
+        "maxSpeed": [
+          "200",
+          null,
+          null,
+          "200"
+        ],
+        "wltcFuel": [
+          "1.00",
+          "1.25",
+          "1.25",
+          "1.00"
+        ],
+        "depletedWltcFuel": [
+          "5.45",
+          "5.75",
+          "5.75",
+          "5.45"
+        ],
+        "depletedNedcFuel": [
+          "4.7",
+          "4.95",
+          "4.95",
+          "4.7"
+        ],
+        "oilElectricFuel": [
+          "3.14",
+          "3.32",
+          "3.32",
+          "3.14"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/唐DM-i/微信图片_20261015100341_94_77.png",
+      "sha256": "2ec4e962c2a93ed60ce0c49336bee8fe3f27e07789077ac0caf092ef5eaf6172",
+      "sourceWidth": 632,
+      "sourceHeight": 800,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 智驾版 DM-i 175KM尊享型",
+          "name": "2025 Smart Driving DM-i 175KM Premium",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2025款 智驾版 DM-i 115KM尊贵型",
+          "name": "2025 Smart Driving DM-i 115KM Luxury",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2025款 智驾版 DM-i 115KM尊荣型",
+          "name": "2025 Smart Driving DM-i 115KM Prestige",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2025款 智驾版 DM-i 175KM尊荣型",
+          "name": "2025 Smart Driving DM-i 175KM Prestige",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/song-l",
+      "fields": {
+        "cltcRange": [
+          "550",
+          "662",
+          "662",
+          "602"
+        ],
+        "fastHours": "0.42",
+        "fastInterval": "30-80",
+        "power": [
+          "150",
+          "230",
+          "230",
+          "380"
+        ],
+        "torque": [
+          "310",
+          "360",
+          "360",
+          "670"
+        ],
+        "body": "5门5座SUV",
+        "motorPs": [
+          "204",
+          "313",
+          "313",
+          "517"
+        ],
+        "dimensions": "4840*1950*1560",
+        "acceleration": [
+          "8.5",
+          "6.9",
+          "6.9",
+          "4.3"
+        ],
+        "maxSpeed": [
+          "199",
+          "201",
+          "201",
+          "201"
+        ],
+        "equivalentFuel": [
+          "1.73",
+          "1.72",
+          "1.72",
+          "1.92"
+        ],
+        "driveDesignation": [
+          null,
+          null,
+          null,
+          "4WD"
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/宋L/微信图片_20261015100445_95_77.png",
+      "sha256": "82e0dd5961a98453917aed1ab1dd0db8f4db0c6f66ac91c3c2971a188bcb2fbf",
+      "sourceWidth": 651,
+      "sourceHeight": 634,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 智驾版 550km卓越型",
+          "name": "2025 Smart Driving 550km Excellence",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2025款 智驾版 662km超越型",
+          "name": "2025 Smart Driving 662km Beyond",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2025款 智驾版 662km激光雷达卓越型",
+          "name": "2025 Smart Driving 662km LiDAR Excellence",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2025款 智驾版 602km激光雷达四驱型",
+          "name": "2025 Smart Driving 602km LiDAR 4WD",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/song-pro-dm-i",
+      "fields": {
+        "wltcRange": [
+          "150",
+          "150",
+          "200",
+          "200"
+        ],
+        "cltcRange": [
+          "220",
+          "220",
+          "301",
+          "301"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 101马力 L4",
+        "body": "5门5座SUV",
+        "motorPs": "163",
+        "dimensions": "4735*1860*1690",
+        "acceleration": [
+          "8.5",
+          "8.5",
+          "8.6",
+          "8.6"
+        ],
+        "maxSpeed": "180",
+        "wltcFuel": [
+          "0.76",
+          "0.76",
+          "0.51",
+          "0.51"
+        ],
+        "depletedWltcFuel": [
+          "4.58",
+          "4.58",
+          "4.6",
+          "4.6"
+        ],
+        "depletedNedcFuel": "3.2",
+        "oilElectricFuel": [
+          "2.59",
+          "2.59",
+          "2.45",
+          "2.45"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/宋Pro/微信图片_20261015100614_96_77.png",
+      "sha256": "23da5368cd1d1ce76a1e09662b22ef0fc6cbb9449d49547a227f662a311dfa15",
+      "sourceWidth": 721,
+      "sourceHeight": 855,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 飞驰版 DM-i 220KM领先型",
+          "name": "2026 Flying Edition DM-i 220KM Leader",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 飞驰版 DM-i 220KM超越型",
+          "name": "2026 Flying Edition DM-i 220KM Beyond",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 飞驰版 DM-i 301KM超越型",
+          "name": "2026 Flying Edition DM-i 301KM Beyond",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 飞驰版 DM-i 301KM卓越型",
+          "name": "2026 Flying Edition DM-i 301KM Excellence",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/sea-lion-05-dm-i",
+      "fields": {
+        "wltcRange": [
+          "151",
+          "151",
+          "155",
+          "205"
+        ],
+        "cltcRange": [
+          "220",
+          "220",
+          "220",
+          "305"
+        ],
+        "fastHours": [
+          "0.27",
+          "0.27",
+          "0.27",
+          "0.31"
+        ],
+        "fastInterval": "30-80",
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 101马力 L4",
+        "body": "5门5座SUV",
+        "motorPs": "163",
+        "dimensions": "4620*1860*1630",
+        "acceleration": [
+          "8.4",
+          "8.4",
+          "8.4",
+          "8.6"
+        ],
+        "maxSpeed": "175",
+        "wltcFuel": [
+          "0.76",
+          "0.76",
+          "0.74",
+          "0.58"
+        ],
+        "depletedWltcFuel": [
+          "4.5",
+          "4.5",
+          "4.35",
+          "4.4"
+        ],
+        "depletedNedcFuel": [
+          "3.2",
+          "3.2",
+          "3.1",
+          "3.1"
+        ],
+        "oilElectricFuel": [
+          "2.52",
+          "2.52",
+          "2.47",
+          "2.44"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/海狮05DM-i/微信图片_20261015095537_87_77.png",
+      "sha256": "82390d391fdce8e12c17a3bc12f49985d57fbff1b3f3a280436ca1e514cb053f",
+      "sourceWidth": 641,
+      "sourceHeight": 825,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 DM-i 220启航版",
+          "name": "2026 DM-i 220 Departure",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 DM-i 220领航版",
+          "name": "2026 DM-i 220 Navigator",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 DM-i 220智航版",
+          "name": "2026 DM-i 220 Smart Navigation",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 DM-i 305领航版",
+          "name": "2026 DM-i 305 Navigator",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/sea-lion-06-dm-i",
+      "fields": {
+        "wltcRange": [
+          "140",
+          "140",
+          "205",
+          "205"
+        ],
+        "cltcRange": [
+          "205",
+          "205",
+          "310",
+          "310"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 101马力 L4",
+        "body": "5门5座SUV",
+        "motorPs": [
+          "218",
+          "218",
+          "238",
+          "238"
+        ],
+        "dimensions": "4810*1920*1675",
+        "acceleration": [
+          "7.8",
+          "7.8",
+          "7.9",
+          "7.9"
+        ],
+        "maxSpeed": "180",
+        "wltcFuel": [
+          "0.81",
+          "0.81",
+          "0.43",
+          "0.43"
+        ],
+        "depletedWltcFuel": [
+          "4.7",
+          "4.7",
+          "4.65",
+          "4.65"
+        ],
+        "depletedNedcFuel": [
+          "3.5",
+          "3.5",
+          "3.3",
+          "3.3"
+        ],
+        "oilElectricFuel": [
+          "2.71",
+          "2.71",
+          "2.50",
+          "2.50"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/海狮06DM-i/微信图片_20261015095745_89_77.png",
+      "sha256": "f241eed1b7b3992be3dd126aed83b37b9c51a597c14a5b315a0c304492144a7d",
+      "sourceWidth": 664,
+      "sourceHeight": 882,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 DM-i 205领航版",
+          "name": "2026 DM-i 205 Navigator",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 DM-i 205领航Pro版",
+          "name": "2026 DM-i 205 Navigator Pro",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 DM-i 310远航版",
+          "name": "2026 DM-i 310 Long Range",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 DM-i 310旗舰版",
+          "name": "2026 DM-i 310 Flagship",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "byd/sea-lion-07-dm-i",
+      "fields": {
+        "wltcRange": [
+          "120",
+          "120",
+          "110"
+        ],
+        "cltcRange": [
+          "150",
+          "150",
+          "135"
+        ],
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5T 156马力 L4",
+        "body": "5门5座SUV",
+        "motorPs": [
+          "272",
+          "272",
+          "476"
+        ],
+        "dimensions": "4880*1920*1750",
+        "acceleration": [
+          "7.9",
+          "7.9",
+          "4.7"
+        ],
+        "maxSpeed": "200",
+        "wltcFuel": [
+          "0.94",
+          "0.94",
+          "1.15"
+        ],
+        "depletedWltcFuel": [
+          "5.5",
+          "5.5",
+          "6.2"
+        ],
+        "depletedNedcFuel": [
+          "4.7",
+          "4.7",
+          "5.4"
+        ],
+        "oilElectricFuel": [
+          "3.06",
+          "3.06",
+          "3.46"
+        ],
+        "emissions": "国VI"
+      },
+      "reviewNote": "Vehicle remains unpublished under the existing image-identity restriction. Parameter availability does not lift that restriction.",
+      "publishable": false,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/比亚迪/海狮07DM-i/微信图片_20261015095629_88_77.png",
+      "sha256": "5c5f9c925c827211f476e565118834ab3afea261027b3e7bd873f7bafbf971cf",
+      "sourceWidth": 520,
+      "sourceHeight": 777,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 150领航版",
+          "name": "2025 150 Navigator",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2025款 150领航+版",
+          "name": "2025 150 Navigator+",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2025款 135高性能激光雷达版",
+          "name": "2025 135 High Performance LiDAR",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "deepal/s07",
+      "fields": {
+        "wltcRange": [
+          "170",
+          "170",
+          "216",
+          null
+        ],
+        "cltcRange": [
+          "230",
+          "230",
+          "300",
+          "630"
+        ],
+        "fastHours": "0.25",
+        "fastInterval": "30-80",
+        "power": [
+          "190",
+          "190",
+          "200",
+          "190"
+        ],
+        "torque": "290",
+        "transmission": "电动车单速变速箱",
+        "engine": [
+          "增程器 98马力",
+          "增程器 98马力",
+          "增程器 98马力",
+          null
+        ],
+        "body": "5门5座SUV",
+        "motorPs": [
+          "258",
+          "258",
+          "272",
+          "258"
+        ],
+        "dimensions": "4750*1930*1625",
+        "acceleration": [
+          "7.5",
+          "7.5",
+          "7.6",
+          "7.5"
+        ],
+        "maxSpeed": [
+          "180",
+          "180",
+          "180",
+          "185"
+        ],
+        "wltcFuel": [
+          "0.71",
+          "0.71",
+          "0.67",
+          null
+        ],
+        "depletedWltcFuel": [
+          "4.9",
+          "4.9",
+          "4.98",
+          null
+        ],
+        "depletedNedcFuel": [
+          "3.8",
+          "3.8",
+          "3.88",
+          null
+        ],
+        "equivalentFuel": [
+          "2.02",
+          "2.02",
+          "2.1",
+          "1.65"
+        ],
+        "oilElectricFuel": [
+          "2.73",
+          "2.73",
+          "2.85",
+          null
+        ],
+        "emissions": [
+          "国VI",
+          "国VI",
+          "国VI",
+          null
+        ]
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/深蓝/S07/微信图片_20261015102745_99_77.png",
+      "sha256": "eb6a871d624726b84fb205b941419e6e9daac00012f78d390d6403496e6dbd35",
+      "sourceWidth": 640,
+      "sourceHeight": 884,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 230Max+ 华为乾崑激光版",
+          "name": "2026 230 Max+ Huawei Qiankun LiDAR",
+          "powertrain": "EREV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 230Ultra 华为乾崑激光版",
+          "name": "2026 230 Ultra Huawei Qiankun LiDAR",
+          "powertrain": "EREV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 300Ultra 华为乾崑激光版",
+          "name": "2026 300 Ultra Huawei Qiankun LiDAR",
+          "powertrain": "EREV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 630Ultra 华为乾崑激光版",
+          "name": "2026 630 Ultra Huawei Qiankun LiDAR",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "deepal/g318",
+      "fields": {
+        "wltcRange": [
+          "144",
+          "144",
+          "144",
+          "138",
+          "138"
+        ],
+        "cltcRange": [
+          "200",
+          "200",
+          "200",
+          "186",
+          "174"
+        ],
+        "fastHours": "0.25",
+        "fastInterval": "30-80",
+        "slowHours": "5",
+        "slowInterval": "0-100",
+        "power": [
+          "331",
+          "331",
+          "331",
+          "316",
+          "316"
+        ],
+        "torque": [
+          "552",
+          "552",
+          "552",
+          "572",
+          "572"
+        ],
+        "transmission": "电动车单速变速箱",
+        "engine": "增程器 150马力",
+        "body": "5门5座SUV",
+        "motorPs": [
+          "450",
+          "450",
+          "450",
+          "430",
+          "430"
+        ],
+        "dimensions": [
+          "5085*1985*1895",
+          "5125*2025*1895",
+          "5125*2025*1895",
+          "5125*2025*1895",
+          "5125*2025*1950"
+        ],
+        "acceleration": "5.9",
+        "maxSpeed": "185",
+        "wltcFuel": [
+          "1.40",
+          "1.40",
+          "1.40",
+          "1.69",
+          "1.69"
+        ],
+        "depletedWltcFuel": [
+          "7.3",
+          "7.3",
+          "7.3",
+          "7.70",
+          "7.70"
+        ],
+        "equivalentFuel": [
+          "2.62",
+          "2.62",
+          "2.62",
+          "2.65",
+          "2.65"
+        ],
+        "oilElectricFuel": [
+          "4.02",
+          "4.02",
+          "4.02",
+          "4.34",
+          "4.34"
+        ],
+        "emissions": "国VI",
+        "driveDesignation": "4WD"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/深蓝/G318/微信图片_20261015102551_97_77.png",
+      "sha256": "5f9e5d58c7261a09d57862d2abe747619a86efa6737fdd00e16e6476ae05fa4e",
+      "sourceWidth": 575,
+      "sourceHeight": 682,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 四驱舒享天枢版",
+          "name": "2026 4WD Comfort Tianshu",
+          "powertrain": "EREV"
+        },
+        {
+          "column": 2,
+          "title": "2026款 四驱舒享乾崑版",
+          "name": "2026 4WD Comfort Qiankun",
+          "powertrain": "EREV"
+        },
+        {
+          "column": 3,
+          "title": "2026款 四驱空悬乾崑版",
+          "name": "2026 4WD Air Suspension Qiankun",
+          "powertrain": "EREV"
+        },
+        {
+          "column": 4,
+          "title": "2026款 无忧穿越版 四驱野趣版",
+          "name": "2026 Worry Free Traverse 4WD Outdoor",
+          "powertrain": "EREV"
+        },
+        {
+          "column": 5,
+          "title": "2025款 无忧穿越版 四驱远山版",
+          "name": "2025 Worry Free Traverse 4WD Yuanshan",
+          "powertrain": "EREV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "deepal/s05",
+      "fields": {
+        "cltcRange": [
+          "520",
+          "520",
+          "620",
+          "520"
+        ],
+        "fastHours": "0.25",
+        "fastInterval": "30-80",
+        "power": "200",
+        "transmission": "电动车单速变速箱",
+        "body": "5门5座SUV",
+        "motorPs": "272",
+        "dimensions": "4620*1900*1600",
+        "acceleration": [
+          "6.28",
+          "6.28",
+          "6.48",
+          "6.28"
+        ],
+        "maxSpeed": "185",
+        "equivalentFuel": "1.43"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/深蓝/S05/微信图片_20261015102647_98_77.png",
+      "sha256": "b85fad9bbccb2f573c8865a0f26d778722e86c7ddce9fd697b45536c817d93df",
+      "sourceWidth": 642,
+      "sourceHeight": 869,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 520智行版",
+          "name": "2027 520 Smart Drive",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2027款 520智豪版",
+          "name": "2027 520 Smart Luxury",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2027款 620智豪版",
+          "name": "2027 620 Smart Luxury",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2027款 520智豪激光版",
+          "name": "2027 520 Smart Luxury LiDAR",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "livan/x3-pro",
+      "fields": {
+        "engine": "1.5L 113马力 L4",
+        "transmission": [
+          "5挡手动",
+          "CVT无级变速"
+        ],
+        "power": "83",
+        "torque": "143",
+        "body": "5门5座SUV",
+        "dimensions": "4005*1760*1575",
+        "maxSpeed": [
+          "170",
+          "160"
+        ],
+        "wltcFuel": [
+          "6.8",
+          "6.92"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/睿蓝/X3 PRO/微信图片_20261015102835_100_77.png",
+      "sha256": "b179f72c4d4c99a9edf6bec2a875e37fd73a97ecd2e3986f2f3a07f03cd2ed2b",
+      "sourceWidth": 422,
+      "sourceHeight": 637,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2024款 1.5L 手动小萌",
+          "name": "2024 1.5L Manual Entry",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2024款 1.5L CVT小飒",
+          "name": "2024 1.5L CVT Xiao Sa",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "livan/7",
+      "fields": {
+        "cltcRange": [
+          "450",
+          "450",
+          "605",
+          "605"
+        ],
+        "fastHours": "0.5",
+        "fastInterval": "30-80",
+        "power": "120",
+        "torque": "240",
+        "body": "5门5座SUV",
+        "motorPs": "163",
+        "dimensions": "4690*1892*1650",
+        "maxSpeed": "150",
+        "equivalentFuel": "1.37"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/睿蓝/睿蓝7/微信图片_20261015102915_101_77.png",
+      "sha256": "455e42ed00211d4923ae1f71e1ac89786da8c181f2d1703c48a00c7f2d6305dd",
+      "sourceWidth": 641,
+      "sourceHeight": 641,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2024款 450km财富版",
+          "name": "2024 450km Business",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2024款 450km荣耀版",
+          "name": "2024 450km Honor",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2024款 605km财富版",
+          "name": "2024 605km Business",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2024款 605km荣耀版",
+          "name": "2024 605km Honor",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "livan/9",
+      "fields": {
+        "cltcRange": [
+          "380",
+          "470",
+          "470",
+          "470"
+        ],
+        "fastHours": [
+          "0.5",
+          "0.67",
+          "0.67",
+          "0.67"
+        ],
+        "fastInterval": "80",
+        "power": "150",
+        "torque": "310",
+        "body": "5门6座SUV",
+        "motorPs": "204",
+        "dimensions": "4845*1890*1778",
+        "maxSpeed": "163",
+        "equivalentFuel": [
+          null,
+          "1.76",
+          "1.76",
+          "1.76"
+        ]
+      },
+      "reviewNote": "Fast-charging range is only 80%, without a starting percentage. Timing is retained internally but excluded from public claims.",
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/睿蓝/睿蓝9/微信图片_20261015102952_102_77.png",
+      "sha256": "65fbdfbe462d25f23ad3001cbecb79b3db8d19762c3f173c6d32ac4afea8e15c",
+      "sourceWidth": 649,
+      "sourceHeight": 616,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2023款 380km风尚版",
+          "name": "2023 380km Style",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2023款 470km引领版",
+          "name": "2023 470km Leader",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2023款 470km创始版",
+          "name": "2023 470km Founders Edition",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2023款 470km旗舰版",
+          "name": "2023 470km Flagship",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan/cs55-plus",
+      "fields": {
+        "transmission": "1挡DHT",
+        "body": "5门5座SUV",
+        "motorPs": "245",
+        "dimensions": "4550*1868*1675",
+        "acceleration": "7.8",
+        "maxSpeed": "180",
+        "wltcFuel": "4.68",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安/CS55PLUS/微信图片_20261015103254_106_77.png",
+      "sha256": "e3f477498ad4b26fdcb10722dfea0ff3e798610fe8af7c9884553364663c0304",
+      "sourceWidth": 654,
+      "sourceHeight": 620,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 1.5T 蓝鲸超擎混动 启航型",
+          "name": "2027 1.5T New Blue Core Super Hybrid Departure",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2027款 1.5T 蓝鲸超擎混动 乐逸型",
+          "name": "2027 1.5T New Blue Core Super Hybrid Easy",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2027款 1.5T 蓝鲸超擎混动 自在型",
+          "name": "2027 1.5T New Blue Core Super Hybrid Comfort",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 4,
+          "title": "2027款 1.5T 蓝鲸超擎混动 天枢智享型",
+          "name": "2027 1.5T New Blue Core Super Hybrid Tianshu Smart",
+          "powertrain": "Hybrid"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan/cs75",
+      "fields": {
+        "engine": [
+          "1.5T 170马力 L4",
+          "1.5T 192马力 L4",
+          "1.5T 192马力 L4",
+          "1.5T 192马力 L4"
+        ],
+        "transmission": [
+          "6挡手动",
+          "7挡湿式双离合",
+          "7挡湿式双离合",
+          "7挡湿式双离合"
+        ],
+        "power": [
+          "125",
+          "141",
+          "141",
+          "141"
+        ],
+        "torque": [
+          "260",
+          "310",
+          "310",
+          "310"
+        ],
+        "body": [
+          "5门7座SUV",
+          "5门5座SUV",
+          "5门7座SUV",
+          "5门5座SUV"
+        ],
+        "dimensions": "4742*1870*1720",
+        "acceleration": [
+          "11.8",
+          "8.4",
+          "8.4",
+          "8.4"
+        ],
+        "maxSpeed": "190",
+        "wltcFuel": [
+          "7.1",
+          "7.5",
+          "7.75",
+          "7.5"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安/CS75/微信图片_20261015103432_108_77.png",
+      "sha256": "ad80cefb4fc1915ad95d342153e72116c565821098661d02c91b8c9e63ef7564",
+      "sourceWidth": 629,
+      "sourceHeight": 606,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 PRO 1.5T MT悦享型 7座",
+          "name": "2026 PRO 1.5T MT Enjoy 7-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 PRO 1.5T DCT舒享型 5座",
+          "name": "2026 PRO 1.5T DCT Comfort 5-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 PRO 1.5T DCT舒享型 7座",
+          "name": "2026 PRO 1.5T DCT Comfort 7-seat",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 PRO 1.5T DCT乐享型 5座",
+          "name": "2026 PRO 1.5T DCT Easy 5-seat",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan/cs75-plus",
+      "fields": {
+        "engine": "1.5T 150马力 L4",
+        "transmission": "1挡DHT",
+        "body": "5门5座SUV",
+        "motorPs": "245",
+        "dimensions": "4770*1910*1705",
+        "acceleration": "7.8",
+        "maxSpeed": "185",
+        "wltcFuel": "4.69",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安/CS75PLUS/微信图片_20261015103333_107_77.png",
+      "sha256": "7df1ceda91901b66d50523a9c2709fdfcbedd203ecbb4e483ea4ddd9a0f15ccf",
+      "sourceWidth": 652,
+      "sourceHeight": 634,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 第四代 1.5T 蓝鲸超擎混动 真享型",
+          "name": "2026 Fourth Generation 1.5T New Blue Core Super Hybrid Enjoy",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 2,
+          "title": "2026款 第四代 1.5T 蓝鲸超擎混动 尊享型",
+          "name": "2026 Fourth Generation 1.5T New Blue Core Super Hybrid Premium",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 3,
+          "title": "2026款 第四代 1.5T 蓝鲸超擎混动 悦观型",
+          "name": "2026 Fourth Generation 1.5T New Blue Core Super Hybrid Yueguan",
+          "powertrain": "Hybrid"
+        },
+        {
+          "column": 4,
+          "title": "2026款 第四代 1.5T 蓝鲸超擎混动 天枢领航型",
+          "name": "2026 Fourth Generation 1.5T New Blue Core Super Hybrid Tianshu Navigator",
+          "powertrain": "Hybrid"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan/uni-k",
+      "fields": {
+        "engine": "2.0T 233马力 L4",
+        "transmission": "8挡手自一体",
+        "power": "171",
+        "torque": "390",
+        "body": "5门5座SUV",
+        "dimensions": [
+          "4865*1948*1690",
+          "4865*1948*1690",
+          "4865*1948*1700",
+          "4865*1948*1690"
+        ],
+        "maxSpeed": "200",
+        "wltcFuel": "8.3",
+        "emissions": "国VI",
+        "driveDesignation": "2WD"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安/UNI-K/微信图片_20261015103139_104_77.png",
+      "sha256": "c96db52c087d252a2cf466895f4bdba191e66a433cff3be1a438c1b1871ee32b",
+      "sourceWidth": 631,
+      "sourceHeight": 584,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2024款 2.0T 两驱悦尚型",
+          "name": "2024 2.0T 2WD Comfort",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2024款 2.0T 两驱旅行升级版",
+          "name": "2024 2.0T 2WD Travel Upgrade",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2024款 2.0T 两驱全家行版",
+          "name": "2024 2.0T 2WD Family Travel",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2024款 2.0T 两驱悦享型",
+          "name": "2024 2.0T 2WD Enjoy",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan/uni-z",
+      "fields": {
+        "engine": "1.5T 192马力 L4",
+        "transmission": "7挡湿式双离合",
+        "power": "141",
+        "torque": "310",
+        "body": "5门5座SUV",
+        "dimensions": "4730*1890*1680",
+        "acceleration": "7.8",
+        "maxSpeed": "200",
+        "wltcFuel": "7.13",
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安/UNI-Z/微信图片_20261015103212_105_77.png",
+      "sha256": "f332120670c118ee4e51db56a2f9e42c1f74e657e47dfe5ee4e4ce78e0f6ffa4",
+      "sourceWidth": 639,
+      "sourceHeight": 595,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 智慧新蓝鲸 500Bar PRO",
+          "name": "2026 Smart New Blue Core 500Bar Pro",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 智慧新蓝鲸 500Bar MAX",
+          "name": "2026 Smart New Blue Core 500Bar Max",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2025款 500Bar PRO",
+          "name": "2025 500Bar Pro",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2025款 500Bar MAX",
+          "name": "2025 500Bar Max",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan/x5-plus",
+      "fields": {
+        "engine": [
+          "1.5L 110马力 L4",
+          "1.5T 192马力 L4",
+          "1.5T 192马力 L4",
+          "1.5T 192马力 L4"
+        ],
+        "transmission": [
+          "5挡手动",
+          "7挡湿式双离合",
+          "7挡湿式双离合",
+          "7挡湿式双离合"
+        ],
+        "power": [
+          "81",
+          "141",
+          "141",
+          "141"
+        ],
+        "torque": [
+          "152",
+          "310",
+          "310",
+          "310"
+        ],
+        "body": "5门5座SUV",
+        "dimensions": [
+          "4540*1860*1620",
+          "4540*1860*1620",
+          "4540*1860*1620",
+          "4540*1860*1590"
+        ],
+        "acceleration": [
+          "14.2",
+          "7.51",
+          "7.51",
+          "7.51"
+        ],
+        "maxSpeed": [
+          "160",
+          "205",
+          "205",
+          "205"
+        ],
+        "wltcFuel": [
+          "6.79",
+          "6.95",
+          "6.95",
+          "6.95"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安/X5 PLUS/微信图片_20261015103040_103_77.png",
+      "sha256": "053abc54a1eaa7aef97561770b7d21dcab6b58ddfa1b39d69fbafbfa5407379f",
+      "sourceWidth": 635,
+      "sourceHeight": 585,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2026款 第二代 1.5L MT豪华版",
+          "name": "2026 Second Generation 1.5L MT Luxury",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 2,
+          "title": "2026款 第二代 1.5T 高能PRO",
+          "name": "2026 Second Generation 1.5T High Energy PRO",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 3,
+          "title": "2026款 第二代 1.5T 先锋PRO",
+          "name": "2026 Second Generation 1.5T Pioneer PRO",
+          "powertrain": "Gasoline"
+        },
+        {
+          "column": 4,
+          "title": "2026款 第二代 1.5T 超越PRO",
+          "name": "2026 Second Generation 1.5T Beyond PRO",
+          "powertrain": "Gasoline"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan-qiyuan/q05",
+      "fields": {
+        "cltcRange": [
+          "506",
+          "506",
+          "506",
+          "405"
+        ],
+        "fastHours": "0.25",
+        "fastInterval": "30-80",
+        "power": "120",
+        "torque": "190",
+        "body": "5门5座SUV",
+        "motorPs": "163",
+        "dimensions": [
+          "4435*1855*1600",
+          "4435*1855*1600",
+          "4435*1855*1595",
+          "4435*1855*1600"
+        ],
+        "maxSpeed": "160",
+        "equivalentFuel": "1.31"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安启源/Q05/微信图片_20261015103517_109_77.png",
+      "sha256": "393fc37e9ad9e481c4038a6a1056670b195ebb8524c72c3c3c9e364b96e594f4",
+      "sourceWidth": 641,
+      "sourceHeight": 616,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2027款 506乐享版",
+          "name": "2027 506 Enjoy",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 2,
+          "title": "2027款 506舒享版",
+          "name": "2027 506 Comfort",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 3,
+          "title": "2027款 506尊享版",
+          "name": "2027 506 Premium",
+          "powertrain": "Pure Electric"
+        },
+        {
+          "column": 4,
+          "title": "2026款 405Air",
+          "name": "2026 405 Air",
+          "powertrain": "Pure Electric"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    },
+    {
+      "key": "changan-qiyuan/q07",
+      "fields": {
+        "wltcRange": [
+          "111",
+          "111",
+          "166",
+          "166"
+        ],
+        "cltcRange": [
+          "145",
+          "145",
+          "215",
+          "215"
+        ],
+        "fastHours": "0.25",
+        "fastInterval": "30-80",
+        "slowHours": [
+          "2.98",
+          "2.98",
+          "4.5",
+          "4.5"
+        ],
+        "power": "237",
+        "torque": "455",
+        "transmission": "E-CVT无级变速",
+        "engine": "1.5L 98马力 L4",
+        "body": "5门5座SUV",
+        "motorPs": "224",
+        "dimensions": "4837*1920*1690",
+        "acceleration": [
+          "7.36",
+          "7.36",
+          "7.58",
+          "7.58"
+        ],
+        "maxSpeed": "180",
+        "wltcFuel": [
+          "1.1",
+          "1.1",
+          "0.75",
+          "0.75"
+        ],
+        "depletedWltcFuel": [
+          "4.95",
+          "4.95",
+          "4.98",
+          "4.98"
+        ],
+        "depletedNedcFuel": [
+          "3.90",
+          "3.90",
+          "3.93",
+          "3.93"
+        ],
+        "equivalentFuel": [
+          "1.83",
+          "1.83",
+          "1.94",
+          "1.94"
+        ],
+        "oilElectricFuel": [
+          "2.93",
+          "2.93",
+          "2.69",
+          "2.69"
+        ],
+        "emissions": "国VI"
+      },
+      "publishable": true,
+      "sourceFile": "参考资料/参数/独立站新车详情参数/SUV/长安启源/Q07/微信图片_20261015103558_110_77.png",
+      "sha256": "11ef8d5eb67b5368649b94279629e7a725e0fe9b874c798b6f341fef10af6e0f",
+      "sourceWidth": 635,
+      "sourceHeight": 904,
+      "columns": [
+        {
+          "column": 1,
+          "title": "2025款 145尊悦型",
+          "name": "2025 145 Enjoy",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 2,
+          "title": "2025款 145尊荣型",
+          "name": "2025 145 Prestige",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 3,
+          "title": "2025款 215尊享型",
+          "name": "2025 215 Premium",
+          "powertrain": "PHEV"
+        },
+        {
+          "column": 4,
+          "title": "2025款 215尊荣型",
+          "name": "2025 215 Prestige",
+          "powertrain": "PHEV"
+        }
+      ],
+      "reviewStatus": "visually-reviewed"
+    }
+  ]
+}

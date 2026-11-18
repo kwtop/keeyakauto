@@ -1,0 +1,11 @@
+---
+import AboutFigure from './AboutFigure.astro';
+import { people } from '../../data/company';
+---
+<section class="au-section" aria-labelledby="team" data-core-module data-module="company-team">
+  <div class="au-wrap">
+    <div class="au-team-intro"><div><h2 id="team">Meet the KEEYAK team</h2><p>Meet colleagues from KEEYAK’s wider vehicle business. Your passenger-car contact is confirmed when you share your requirements.</p></div><AboutFigure src="/images/company/team-chongqing-2025.webp" alt="KEEYAK colleagues together during the September 2025 company trip to Chongqing" caption="Chongqing team trip · September 2025" href="/about/news/chongqing-team-day-2025/" sizes="(max-width: 900px) calc(100vw - 40px), 720px"/></div>
+    <div class="au-team-directory">{people.map(person=><article class="au-team-person"><AboutFigure src={person.image} alt={`Portrait of ${person.name}, KEEYAK vehicle category lead`} class="au-directory-portrait" sizes="120px"/><div><h3>{person.name}</h3><p class="au-directory-role">{person.role}</p></div></article>)}</div>
+    <p class="au-team-contact"><a href="/contact/">Contact us</a> before arranging a visit to the Hangzhou office.</p>
+  </div>
+</section>

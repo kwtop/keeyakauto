@@ -1,0 +1,98 @@
+/* Small spacing adjustments across the existing public layouts. No content or crop changes. */
+body.autohaus-home,
+body.inner-editorial {
+ --space-group:24px;
+ --space-grid:28px;
+ --space-reading:72px;
+}
+
+/* Keep the photographic hero; give its copy and the model rows a steadier cadence. */
+body.autohaus-home .ah-hero-copy{gap:20px}
+body.autohaus-home .ah-hero-copy>.ah-action{margin-top:12px}
+body.autohaus-home .ah-model-grid{gap:var(--space-grid)}
+body.autohaus-home .ah-featured{padding-bottom:clamp(76px,8vw,120px)}
+body.autohaus-home .ah-facility{padding-bottom:88px}
+body.autohaus-home :is(.ah-facility-heading,.ah-visits-heading){margin-bottom:44px}
+
+/* The catalog remains a compact working surface, with more separation between vehicles. */
+body.inner-editorial #main .catalog-showroom{padding-top:40px}
+body.inner-editorial #main .catalog-showroom .catalog-heading--discovery{padding-bottom:24px}
+body.inner-editorial #main .catalog-showroom .catalog-heading--discovery h1{
+ font-size:var(--heading-task);line-height:1.15;margin-bottom:12px;
+}
+body.inner-editorial #main .catalog-showroom-explorer .vehicle-grid{gap:36px var(--space-grid)}
+body.inner-editorial #main .catalog-showroom-explorer .catalog-tools{column-gap:16px}
+body.inner-editorial #main .catalog-showroom-explorer .pagination{margin-top:36px}
+
+/* Separate detailed comparison tasks; keep measurements and related labels together. */
+body.inner-editorial #main .vehicle-design .vd-section{margin-top:var(--space-reading)}
+body.inner-editorial #main .vehicle-design .vd-section-heading{margin-bottom:28px}
+body.inner-editorial #main .vehicle-design .vd-section-heading>p{margin-top:12px;max-width:var(--reading-measure)}
+body.inner-editorial #main .vehicle-design .vd-related-grid{gap:24px}
+body.inner-editorial #main .vehicle-design .vd-inquiry{margin-top:48px}
+
+/* Editorial openings feel quieter; the photo and the explanation read as distinct groups. */
+body.inner-autohaus #main,
+body.inner-autohaus #main .tc-site{
+ --tc-section-space:80px;
+}
+body.inner-autohaus #main :is(.tc-opening,.reading-intro,.tc-news-heading,.nest-inquiry-heading,.page-hero){padding-top:40px}
+body.inner-autohaus #main :is(.tc-opening,.reading-intro,.tc-news-heading,.nest-inquiry-heading,.page-hero) h1{letter-spacing:-.03em;line-height:1.14}
+body.inner-autohaus #main .tc-service-introduction{max-width:1080px;gap:56px}
+body.inner-autohaus #main :is(.overview-card-copy,.about-overview-copy){
+ display:grid;
+ align-content:start;
+ gap:8px;
+ padding:clamp(16px,1.6vw,24px) clamp(16px,1.7vw,26px) clamp(20px,2vw,28px);
+}
+body.inner-autohaus #main :is(.overview-card-copy,.about-overview-copy)>p{
+ max-width:42ch;
+ line-height:1.6;
+ text-wrap:pretty;
+}
+body.inner-autohaus #main .tc-block--wide-module .tc-block-grid{row-gap:56px}
+body.inner-autohaus #main .tc-module-item-copy{padding-top:28px}
+body.inner-autohaus #main .tc-news-app .tc-story-card-copy{padding-top:28px}
+body.inner-autohaus #main .reading-module{padding-block:72px}
+body.inner-autohaus #main .reading-module:first-child{padding-top:16px}
+body.inner-autohaus #main .policy-group p{max-width:var(--reading-measure);line-height:var(--reading-leading);text-wrap:pretty}
+body.inner-autohaus #main .nest-inquiry-content .quote-form,
+body.inner-autohaus #main .nest-inquiry-content .quote-fields{gap:32px}
+body.inner-autohaus #main .nest-inquiry-content .quote-form legend{margin-bottom:28px}
+
+@media(min-width:1200px){
+ body.inner-editorial.site-nest.site-volta #main .catalog-heading--brand{column-gap:64px}
+ body.inner-autohaus #main .tc-block--has-visual:not(.tc-block--proof) .tc-block-grid{column-gap:72px}
+}
+@media(min-width:810px){
+ body.inner-editorial .inner-footer-navigation nav{gap:12px}
+}
+@media(min-width:810px) and (max-width:1199px){
+ body.inner-editorial #main .vehicle-design .vd-section{margin-top:64px}
+ body.inner-autohaus #main .tc-site{--tc-section-space:72px}
+}
+@media(max-width:809px){
+ body.autohaus-home,body.inner-editorial{--space-grid:20px;--space-reading:48px}
+ body.autohaus-home .ah-hero-copy{gap:16px}
+ body.autohaus-home .ah-hero-copy>.ah-action{margin-top:12px}
+ body.autohaus-home .ah-featured{padding-bottom:64px}
+ body.autohaus-home .ah-facility{padding-bottom:64px}
+ body.autohaus-home :is(.ah-facility-heading,.ah-visits-heading){margin-bottom:32px}
+ body.inner-editorial #main .catalog-showroom{padding-top:28px}
+ body.inner-editorial #main .catalog-showroom .catalog-heading--discovery{padding-bottom:20px}
+ body.inner-editorial #main .catalog-showroom-explorer .vehicle-grid{gap:28px 20px}
+ body.inner-editorial #main .catalog-showroom-explorer .catalog-tools{column-gap:12px}
+ body.inner-editorial #main .vehicle-design .vd-section-heading{margin-bottom:24px}
+ body.inner-editorial #main .vehicle-design .vd-related-grid{gap:16px}
+ body.inner-editorial #main .vehicle-design .vd-inquiry{margin-top:36px}
+ body.inner-autohaus #main,body.inner-autohaus #main .tc-site{--tc-section-space:56px}
+ body.inner-autohaus #main :is(.tc-opening,.reading-intro,.tc-news-heading,.nest-inquiry-heading,.page-hero){padding-top:28px}
+ body.inner-autohaus #main .tc-service-introduction{gap:24px}
+ body.inner-autohaus #main .tc-block--wide-module .tc-block-grid{row-gap:36px}
+ body.inner-autohaus #main .tc-module-item-copy,
+ body.inner-autohaus #main .tc-news-app .tc-story-card-copy{padding-top:24px}
+ body.inner-autohaus #main .reading-module{padding-block:52px}
+ body.inner-autohaus #main .nest-inquiry-content .quote-form,
+ body.inner-autohaus #main .nest-inquiry-content .quote-fields{gap:28px}
+ body.inner-autohaus #main .nest-inquiry-content .quote-form legend{margin-bottom:24px}
+}

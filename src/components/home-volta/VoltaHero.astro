@@ -1,0 +1,25 @@
+---
+import {Search,ArrowRight} from '@lucide/astro';
+import {media} from '../../data/voltaHome';
+import {vehicleCategoryLabel} from '../../data/vehicleCategories';
+---
+<section class="v-hero" data-v-section="hero" aria-labelledby="v-home-title" id="nest-home-title">
+ <picture class="v-hero-media"><source media="(max-width:1023px)" srcset={`${media}camry-coast-mobile-v2-640.webp 640w, ${media}camry-coast-mobile-v2.webp 841w`} sizes="100vw"/><img src={media+'camry-coast-wide.webp'} srcset={`${media}camry-coast-wide-960.webp 960w, ${media}camry-coast-wide-1440.webp 1440w, ${media}camry-coast-wide.webp 1586w`} sizes="100vw" width="1586" height="992" alt="Toyota Camry model reference in an AI-edited coastal setting" fetchpriority="high"/></picture>
+ <div class="v-hero-shade" aria-hidden="true"></div>
+ <div class="v-container v-hero-inner"><div class="v-hero-copy">
+  <p class="v-eyebrow">New &amp; used passenger cars</p>
+  <h1 id="v-home-title"><span>Cars from China.</span>{' '}<span>For your next</span>{' '}<span>market.</span></h1>
+  <p class="v-hero-intro">Explore passenger-car models for dealers, importers and fleets. Confirm the version and prepare your next inquiry.</p>
+  <form class="v-search" action="/new-cars/" method="get" role="search" aria-label="Search vehicle models" data-v-search><Search size={19} aria-hidden="true"/><label class="v-sr-only" for="v-hero-search">Model or brand</label><input id="v-hero-search" name="q" type="search" placeholder="Cars, models, brands" required/><button type="submit"><span>Search</span><Search class="v-mobile-search-icon" size={20}/></button></form>
+  <nav class="v-hero-chips" aria-label="Popular vehicle searches"><a href="/new-cars/?body=Sedan"><span class="v-chip-wide">{vehicleCategoryLabel('Sedan')}</span><span class="v-chip-small">{vehicleCategoryLabel('Sedan')}</span></a><a href="/new-cars/?body=SUV"><span class="v-chip-wide">SUVs</span><span class="v-chip-small">SUV models</span></a><a href="/new-cars/?power=Pure+Electric"><span class="v-chip-wide">Electric</span><span class="v-chip-small">Electric cars</span></a><a href="/new-cars/?power=Hybrid"><span class="v-chip-wide">Hybrid</span><span class="v-chip-small">Hybrid cars</span></a><a href="/used-cars/">Used cars</a></nav>
+  <div class="v-hero-actions"><a class="v-button v-button-white" href="#models">Explore cars<span class="v-button-arrow"><ArrowRight size={19}/></span></a><a class="v-button v-button-glass" href="/export-services/buying-guide/">Start planning<span class="v-button-arrow"><ArrowRight size={19}/></span></a></div>
+ </div></div>
+ 
+</section>
+<script>
+document.querySelector<HTMLFormElement>('[data-v-search]')?.addEventListener('submit',event=>{
+ const input=document.querySelector<HTMLInputElement>('#v-hero-search'),target=document.querySelector<HTMLInputElement>('#car-search-input'),trigger=document.querySelector<HTMLButtonElement>('.car-search-trigger');
+ if(!input||!target||!trigger)return;
+ event.preventDefault();trigger.click();target.value=input.value;target.dispatchEvent(new Event('input',{bubbles:true}));
+});
+</script>

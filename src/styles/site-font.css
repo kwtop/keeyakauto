@@ -1,0 +1,19 @@
+@font-face{
+ font-family:"KEEYAK Display";
+ src:url("/fonts/InterDisplay-Medium.woff2") format("woff2");
+ font-style:normal;
+ font-weight:500;
+ font-display:swap;
+}
+
+:root{
+ --site-font:"KEEYAK Display",Arial,sans-serif;
+ --site-type-weight:500;
+ --site-body-size:16px;
+ --site-body-leading:1.65;
+ --site-body-tracking:-.01em;
+ --site-heading-tracking:-.04em;
+ --site-card-tracking:-.02em;
+ --site-nav-size:15px;
+ --site-font-features:"blwf","cv03","cv04","cv09","cv11";
+}

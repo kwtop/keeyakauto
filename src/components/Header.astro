@@ -1,0 +1,177 @@
+---
+import { ChevronDown, Menu, X } from '@lucide/astro';
+import CarSearch from './CarSearch.astro';
+import CatalogMenu from './CatalogMenu.astro';
+import { brands, brandHref } from '../data/catalog';
+import { aboutLinks } from '../data/company';
+import { exportLinks } from '../data/exportServices';
+interface Props { editorial?: boolean; }
+const { editorial = false } = Astro.props;
+const path = Astro.url.pathname;
+const menus = [
+  {label:'New Cars', href:'/new-cars/', brands:true, items:brands('new').map(b=>({label:b.name,href:brandHref('new',b.slug)}))},
+  {label:'Used Cars', href:'/used-cars/', brands:true, items:brands('used').map(b=>({label:b.name,href:brandHref('used',b.slug)}))},
+  {label:'Export Services',href:'/export-services/',brands:false,items:exportLinks},
+  {label:'About Us',href:'/about/',brands:false,items:aboutLinks}
+];
+---
+<header class="site-header primary-header" data-editorial={editorial?'true':undefined}>
+  {editorial && <div class="nest-information-bar">For importers, dealers &amp; fleets</div>}
+  <div class="header-inner shell">
+    <a class="header-brand" href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark-360.webp" alt="" width="1200" height="219" /></a>
+    {editorial && <p class="nest-header-context">New &amp; used cars from China</p>}
+    <nav class="header-navigation" id="primary-nav" aria-label="Main navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item navigation-home"><div class="navigation-row"><a class="navigation-link" href="/" aria-current={path==='/'?'page':undefined}>Home</a></div></li>
+        {menus.map((menu,i)=>(
+          <li class="navigation-item navigation-group">
+            <div class="navigation-row">
+              <a class="navigation-link" href={menu.href} aria-current={path.startsWith(menu.href)?'page':undefined}>{menu.label}</a>
+              <button class="header-disclosure" type="button" aria-expanded="false" aria-controls={`navigation-panel-${i}`} aria-label={`Show ${menu.label} menu`}>
+                <ChevronDown size={16} stroke-width={1.5} aria-hidden="true" />
+              </button>
+            </div>
+            <div class:list={['navigation-panel',{'navigation-panel-brands':menu.brands,'navigation-panel-many':menu.brands && menu.items.length>18}]} id={`navigation-panel-${i}`} hidden>
+              <div class="navigation-panel-inner">
+                {menu.brands ? <CatalogMenu kind={i === 0 ? 'new' : 'used'}/> : <div class="navigation-panel-links">{!menu.items.some(item=>item.href===menu.href)&&<a href={menu.href}>{menu.label} overview</a>}{menu.items.map(item=><a href={item.href} aria-current={path===item.href?'page':undefined}>{item.label}</a>)}</div>}
+              </div>
+            </div>
+          </li>
+        ))}
+        <li class="navigation-item"><div class="navigation-row"><a class="navigation-link" href="/contact/" aria-current={path==='/contact/'?'page':undefined}>Contact Us</a></div></li>
+      </ul>
+      <div class="navigation-actions"><a class="navigation-quote" href="/quote/">Prepare inquiry</a></div>
+    </nav>
+    <div class="header-actions">
+      <CarSearch/>
+      <a class="navigation-quote header-quote-link" href="/quote/">Prepare inquiry</a>
+      <button class="header-menu-control" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <Menu class="header-menu-open-icon" size={24} aria-hidden="true" /><X class="header-menu-close-icon" size={24} aria-hidden="true" />
+      </button>
+    </div>
+  </div>
+</header>
+<div class="navigation-placeholder" aria-hidden="true"></div>
+<script>
+  const header = document.querySelector<HTMLElement>('.primary-header');
+  const navigation = header?.querySelector<HTMLElement>('.header-navigation');
+  const menuControl = header?.querySelector<HTMLButtonElement>('.header-menu-control');
+  if (header && navigation && menuControl) {
+    const desktop = window.matchMedia(header.dataset.editorial ? '(min-width: 1024px)' : '(min-width: 1061px)');
+    const disclosures = Array.from(header.querySelectorAll<HTMLButtonElement>('.header-disclosure'));
+    let openingTimer: number | undefined;
+    let closingTimer: number | undefined;
+    let menuScroll: number | undefined;
+    const panelFor = (button: HTMLButtonElement) => document.getElementById(button.getAttribute('aria-controls') || '');
+    function cancelTimers() {
+      window.clearTimeout(openingTimer);
+      window.clearTimeout(closingTimer);
+    }
+    function updatePanelState() {
+      const expanded = disclosures.some(button => button.getAttribute('aria-expanded') === 'true');
+      header?.classList.toggle('panel-open', expanded);
+    }
+    function closePanels(except?: HTMLButtonElement) {
+      disclosures.forEach(button => {
+        if (button !== except) {
+          button.setAttribute('aria-expanded', 'false');
+          const panel = panelFor(button);
+          if (panel) panel.hidden = true;
+        }
+      });
+      updatePanelState();
+    }
+    function setPanel(button: HTMLButtonElement, open: boolean, focusFirst = false) {
+      cancelTimers();
+      closePanels(button);
+      button.setAttribute('aria-expanded', String(open));
+      const panel = panelFor(button);
+      if (panel) {
+        panel.hidden = !open;
+        if (open && focusFirst) panel.querySelector<HTMLAnchorElement>('a')?.focus();
+      }
+      updatePanelState();
+    }
+    function setMobileMenu(open: boolean, restoreFocus = false) {
+      cancelTimers();
+      const wasOpen = header?.classList.contains('menu-open');
+      if (open && !wasOpen && !desktop.matches) menuScroll = window.scrollY;
+      header?.classList.toggle('menu-open', open);
+      document.documentElement.classList.toggle('navigation-open', open && !desktop.matches);
+      menuControl?.setAttribute('aria-expanded', String(open));
+      menuControl?.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      if (!open) closePanels();
+      if (!open && wasOpen && menuScroll !== undefined) {
+        window.scrollTo({top:menuScroll,behavior:'instant'});
+        menuScroll = undefined;
+      }
+      if (restoreFocus) menuControl?.focus();
+    }
+    disclosures.forEach(button => {
+      const group = button.closest<HTMLElement>('.navigation-group');
+      const link = group?.querySelector<HTMLAnchorElement>('.navigation-link');
+      button.addEventListener('click', () => setPanel(button, button.getAttribute('aria-expanded') !== 'true'));
+      group?.addEventListener('pointerenter', event => {
+        if (!desktop.matches || event.pointerType !== 'mouse') return;
+        cancelTimers();
+        openingTimer = window.setTimeout(() => setPanel(button, true), 140);
+      });
+      group?.addEventListener('pointerleave', event => {
+        if (!desktop.matches || event.pointerType !== 'mouse') return;
+        cancelTimers();
+        closingTimer = window.setTimeout(() => {
+          if (!group.contains(document.activeElement)) closePanels();
+        }, 160);
+      });
+      group?.addEventListener('focusout', event => {
+        if (!(event.relatedTarget instanceof Node) || !group.contains(event.relatedTarget)) {
+          cancelTimers();
+          setPanel(button, false);
+        }
+      });
+      [button, link].forEach(control => control?.addEventListener('keydown', event => {
+        if (event instanceof KeyboardEvent && event.key === 'ArrowDown') {
+          event.preventDefault();
+          setPanel(button, true, true);
+        }
+      }));
+    });
+    menuControl.addEventListener('click', () => setMobileMenu(menuControl.getAttribute('aria-expanded') !== 'true'));
+    navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      cancelTimers();
+      closePanels();
+      if (header.classList.contains('menu-open')) setMobileMenu(false);
+    }));
+    document.addEventListener('click', event => {
+      if (event.target instanceof Node && !header.contains(event.target)) {
+        cancelTimers();
+        closePanels();
+        if (header.classList.contains('menu-open')) setMobileMenu(false);
+      }
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Tab' && header.classList.contains('menu-open') && !desktop.matches) {
+        const controls = Array.from(header.querySelectorAll<HTMLElement>('a,button')).filter(control => control.getClientRects().length > 0 && !control.closest('[hidden]'));
+        const first = controls[0];
+        const last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last?.focus({preventScroll:true});
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first?.focus({preventScroll:true});
+        }
+      }
+      if (event.key !== 'Escape') return;
+      const expanded = disclosures.find(button => button.getAttribute('aria-expanded') === 'true');
+      const mobileOpen = header.classList.contains('menu-open');
+      if (!expanded && !mobileOpen) return;
+      event.preventDefault();
+      cancelTimers();
+      closePanels();
+      if (mobileOpen) setMobileMenu(false, true);
+      else if (expanded?.closest('.navigation-group')?.contains(document.activeElement)) expanded.focus();
+    });
+    desktop.addEventListener('change', () => setMobileMenu(false));
+  }
+</script>

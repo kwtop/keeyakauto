@@ -1,0 +1,12 @@
+---
+import {aboutPhoto,type AboutPhotoId} from '../../data/aboutPhotographs';
+interface Props {photo:AboutPhotoId;priority?:boolean;caption?:boolean;sizes?:string;}
+const {photo,priority=false,caption=false,sizes='(max-width: 639px) calc(100vw - 48px), (max-width: 1023px) 48vw, 42vw'}=Astro.props;
+const asset=aboutPhoto(photo);
+---
+<figure class:list={['ap-photo',`ap-photo--${photo}`]} data-photo={photo}>
+ <a class="ap-photo-mat" href={asset.original} target="_blank" rel="noopener noreferrer" aria-label={`View original photograph: ${asset.caption}`}>
+  <img src={asset.src} srcset={asset.srcset} {sizes} width={asset.width} height={asset.height} alt={`${asset.alt}${asset.refined?' (AI-refined for display)':''}`} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async" data-asset-kind={asset.refined?'ai-refined':'original'}/>
+ </a>
+ {caption&&<figcaption>{asset.href?<a href={asset.href}>{asset.caption}</a>:asset.caption}</figcaption>}
+</figure>

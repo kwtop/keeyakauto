@@ -1,0 +1,20 @@
+---
+import { aboutLinks, company } from '../data/company';
+import { exportLinks } from '../data/exportServices';
+const compact = Astro.url.pathname === '/about/team/';
+---
+{compact ? <footer class="about-team-footer"><div class="about-wrap"><a href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" width="1200" height="219" alt="" /></a><nav aria-label="Footer company">{aboutLinks.map(link=><a href={link.href}>{link.label}</a>)}</nav><p>© {new Date().getFullYear()} {company.legalName}<br />All rights reserved.</p></div></footer> : <footer class="about-footer">
+  <div class="about-wrap">
+    <div class="about-footer-grid">
+      <div class="about-footer-identity">
+        <a href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" width="1200" height="219" alt="" /></a>
+        <p>{company.legalName}<br />Hangzhou, Zhejiang, China</p>
+      </div>
+      <nav aria-label="Footer cars"><h2>Cars</h2><a href="/new-cars/">New Cars</a><a href="/used-cars/">Used Cars</a></nav>
+      <nav aria-label="Footer export services"><h2>Export Services</h2>{exportLinks.map(link=><a href={link.href}>{link.label}</a>)}</nav>
+      <nav aria-label="Footer company"><h2>Company</h2>{aboutLinks.map(link=><a href={link.href}>{link.label}</a>)}</nav>
+      <div class="about-footer-contact"><a href={`mailto:${company.email}`}>{company.email}</a><a href="/contact/">Contact Us</a><span>Hangzhou, Zhejiang, China</span></div>
+    </div>
+    <div class="about-footer-bottom"><span>© {new Date().getFullYear()} {company.legalName}</span><div><a href="/privacy/">Privacy</a><a href="/terms/">Website Terms</a></div></div>
+  </div>
+</footer>}

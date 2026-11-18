@@ -1,0 +1,18 @@
+---
+import {ArrowRight,Car,ChevronRight} from '@lucide/astro';
+import {categories,newModels,usedModels,imageFor} from '../../data/voltaHome';
+import {vehicleHref} from '../../data/catalog';
+import {bodyGroupLabel} from '../../data/catalogLabels';
+const groups=[{kind:'new',title:'New cars to explore',models:newModels,href:'/new-cars/',note:'Model references, not live inventory. Confirm the exact version, availability and quotation.'},{kind:'used',title:'A starting point for your search',models:usedModels,href:'/used-cars/',note:'Historical third-party model references, not verified KEEYAK stock. Request dated photos, VIN, mileage and condition records for each car offered.'}];
+---
+<section class="v-section v-categories v-divider-green" data-v-section="categories" aria-labelledby="v-category-title"><div class="v-container">
+ <div class="v-section-head v-small-head"><h2 id="v-category-title">Find your kind of car</h2><a class="v-quiet-link" href="/new-cars/">All cars <ArrowRight size={14}/></a></div>
+ <div class="v-category-grid">{categories.map(c=><a class="v-category-card" href={c.href}><img src={imageFor(c.vehicle)} alt={`${c.vehicle.name} model reference`} width="640" height="480" loading="lazy"/><div><h3>{c.title}</h3><p>{c.detail}</p></div></a>)}</div>
+</div></section>
+{groups.map(g=><section class:list={['v-section','v-model-section',{'v-divider-green':g.kind==='new','v-used-section':g.kind==='used'}]} data-v-section={g.kind+'-models'} aria-labelledby={`v-model-${g.kind}`} id={g.kind==='new'?'models':'used-models'}><div class="v-container">
+ <div class:list={['v-section-head',{'v-small-head':g.kind==='new'}]}><div>{g.kind==='used'&&<p class="v-eyebrow">Used-car sourcing</p>}<h2 id={`v-model-${g.kind}`}>{g.title}</h2>{g.kind==='used'&&<p class="v-section-intro">{g.note}</p>}</div><a class="v-quiet-link" href={g.href}>View all <ArrowRight size={14}/></a></div>
+ <div class:list={['v-product-rail',`v-product-rail-${g.kind}`]} tabindex="0" role="region" aria-label={`${g.kind==='new'?'New':'Used'} car references; scroll horizontally for all models`}>
+  {g.models.map(v=><article class="v-product"><a class="v-product-photo" href={vehicleHref(v)} tabindex="-1" aria-hidden="true"><img src={imageFor(v)} alt="" width="640" height="480" loading="lazy"/></a><div class="v-product-copy"><p class="v-product-brand">{v.brand}</p><div class="v-product-title"><h3><a href={vehicleHref(v)} aria-label={`${v.name} details`}>{v.modelName||v.name.replace(v.brand+' ','')}</a></h3><span>{v.year}</span></div>{g.kind==='used'&&<p class="v-product-history">Historical model reference</p>}<p class="v-product-spec"><span><Car size={14}/>{bodyGroupLabel(v.body,v.kind)}</span><span>{v.powertrain==='Pure Electric'?'Electric':v.powertrain}</span></p></div></article>)}
+ </div>
+ {g.kind==='new'&&<div class="v-reference-bar"><p>{g.note}</p><a href="/quote/">Share your model <ChevronRight size={16}/></a></div>}
+</div></section>)}

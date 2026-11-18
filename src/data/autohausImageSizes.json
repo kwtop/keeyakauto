@@ -1,0 +1,207 @@
+{
+  "hero-desktop": {
+    "width": 1402,
+    "height": 1122,
+    "widths": [
+      480,
+      800,
+      1200,
+      1402
+    ]
+  },
+  "camry-card": {
+    "width": 1189,
+    "height": 1323,
+    "widths": [
+      480,
+      800,
+      1189
+    ]
+  },
+  "rav4-card": {
+    "width": 971,
+    "height": 1619,
+    "widths": [
+      480,
+      800,
+      971
+    ]
+  },
+  "yuan-card": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "id3-card": {
+    "width": 1189,
+    "height": 1323,
+    "widths": [
+      480,
+      800,
+      1189
+    ]
+  },
+  "traveler-card": {
+    "width": 1189,
+    "height": 1323,
+    "widths": [
+      480,
+      800,
+      1189
+    ]
+  },
+  "bingo-card": {
+    "width": 1189,
+    "height": 1323,
+    "widths": [
+      480,
+      800,
+      1189
+    ]
+  },
+  "hero-mobile": {
+    "width": 814,
+    "height": 1932,
+    "widths": [
+      480,
+      800,
+      814
+    ]
+  },
+  "inquiry-landscape": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      480,
+      800,
+      1200,
+      1672
+    ]
+  },
+  "used-q5l-card": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "used-x5-card": {
+    "width": 1183,
+    "height": 1330,
+    "widths": [
+      480,
+      800,
+      1183
+    ]
+  },
+  "used-vellfire-card": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "hero-desktop-v2": {
+    "width": 1402,
+    "height": 1122,
+    "widths": [
+      480,
+      800,
+      1200,
+      1402
+    ]
+  },
+  "team-isa": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      192,
+      480,
+      800,
+      1190
+    ]
+  },
+  "team-frank": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      192,
+      480,
+      800,
+      1190
+    ]
+  },
+  "team-alicia": {
+    "width": 1186,
+    "height": 1327,
+    "widths": [
+      192,
+      480,
+      800,
+      1186
+    ]
+  },
+  "story-camry-detail": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "story-car-pair": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "team-mia": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      192,
+      480,
+      800,
+      1190
+    ]
+  },
+  "camry-card-balanced": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "rav4-card-balanced": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  },
+  "yuan-card-balanced": {
+    "width": 1190,
+    "height": 1322,
+    "widths": [
+      480,
+      800,
+      1190
+    ]
+  }
+}

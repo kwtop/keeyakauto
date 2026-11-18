@@ -1,0 +1,53 @@
+---
+import ExportPage from '../../layouts/ExportPage.astro';
+import ExportHero from './ExportHero.astro';
+import ExportContents from './ExportContents.astro';
+import ExportTable from './ExportTable.astro';
+import ExportInquiry from './ExportInquiry.astro';
+import ExportFigure from './ExportFigure.astro';
+import { recordsScene, reviewScene } from './exportStoryMedia';
+import { vehicles } from '../../data/catalog';
+import { vehicleDisplayImage } from '../../data/imageDelivery';
+import { exportBuyingGuide as page } from '../../data/exportServices';
+import { exportMedia } from '../../data/exportServiceMedia';
+import { buyingGuide } from '../../data/editorial';
+const find=(id:string)=>page.sections.find(section=>section.id===id)!;
+const process=find('process'),destination=find('destination-check'),quotation=find('quotation'),payment=find('payment'),documents=find('documents');
+const hero=exportMedia.documents;
+const destinationVehicle=vehicles.find(vehicle=>vehicle.kind==='new'&&vehicle.slug==='camry')!;
+const destinationPhoto=destinationVehicle.gallery!.find(photo=>photo.src.endsWith('left-side-view.webp'))!;
+const fullWarranty=buyingGuide.sections.find(section=>section.id==='warranty')!;
+const contents=[{id:'process',label:'Process'},{id:'destination-check',label:'Destination'},{id:'quotation',label:'Quotation'},{id:'payment',label:'Payment'},{id:'documents',label:'Documents'},{id:'warranty',label:'Support'}];
+---
+<ExportPage title="How to buy cars from China — buying guide" description="A practical purchase guide for car importers, dealers and fleets: vehicle selection, destination checks, written quotations, payment, documents and support." page="buying-guide" image={hero.src}>
+  <ExportHero title="Your guide to buying cars from China" intro="Start with your vehicle brief. Work through the offer, inspection and handover with the parties named for your order." image={hero.src} alt={hero.alt} width={hero.width} height={hero.height} small={hero.small} variant="guide"><a class="ex-link ex-hero-action" href="/export-services/#responsibilities">KEEYAK’s role & service responsibilities</a></ExportHero>
+  <ExportContents items={contents}/>
+  <section class="ex-section ex-buy-process" id="process" data-core-module="process" data-module="process" aria-labelledby="ex-process-title"><div class="ex-wrap">
+    <header class="ex-process-opening"><div><h2 id="ex-process-title">Your car purchase in six steps</h2><p>KEEYAK coordinates the sourcing and export brief. At each stage, keep the vehicle details, responsible party and next decision together.</p><a class="ex-link" href="/downloads/vehicle-purchase-checklist.txt" download>Download the purchase checklist</a></div><aside class="ex-purchase-file"><h3>Keep your purchase records together</h3><p>Start with the brief. Add the written offer, agreed checks and order-specific handover records as the purchase progresses.</p><a class="ex-link" href="#documents">See the document checklist</a></aside></header>
+    <ol class="ex-purchase-steps">{process.rows!.map(([stage,check,record],index)=><li><span class="ex-step-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><div><h3>{stage}</h3><p>{check}</p><p class="ex-step-record"><strong>Keep</strong>{record}</p></div></li>)}</ol>
+  </div></section>
+  <section class="ex-section ex-soft" id="destination-check" data-core-module="destination-check" data-module="destination-check" aria-labelledby="ex-destination-title"><div class="ex-wrap">
+    <header class="ex-record-intro"><div><h2 id="ex-destination-title">Check the vehicle for your market</h2><p>{destination.body}</p></div><figure class="ex-photo ex-vehicle-reference"><a href={destinationPhoto.src} target="_blank" rel="noopener noreferrer" aria-label="Open the Toyota Camry side-view model reference"><img src={vehicleDisplayImage(destinationPhoto.src)} alt="Toyota Camry supplied side-view model reference" width="1448" height="1086" loading="lazy"/></a><figcaption>Toyota Camry model reference. Check destination approval and local-use compatibility separately.</figcaption></figure></header>
+    <ExportTable columns={destination.columns!} rows={destination.rows!} caption="Vehicle information to compare with destination requirements"/>
+    <p class="ex-after-table">{destination.paragraphs![0]}</p><a class="ex-link" href="/export-services/buying-guide/#country-guides">Prepare your destination checks</a>
+  </div></section>
+  <section class="ex-section" id="quotation" data-core-module="quotation-payment" data-module="quotation-payment" aria-labelledby="ex-commercial-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-commercial-title">Understand the full offer before you order</h2><p>{quotation.body}</p></header>
+    <div class="ex-commercial-scene"><ExportFigure {...reviewScene} class="ex-commercial-reference"/><div class="ex-commercial-grid"><article><h3>Compare the total purchase cost</h3><ul class="ex-check-list">{quotation.points!.map(point=><li>{point}</li>)}</ul>{quotation.paragraphs!.map(text=><p class="ex-note">{text}</p>)}</article>
+      <article id="payment"><h3>Agree the seller and payment terms</h3><p>{payment.body}</p>{payment.paragraphs!.map(text=><p>{text}</p>)}<a class="ex-link" href="/export-services/sourcing-inspection/#scope">Agree the inspection before acceptance</a></article>
+    </div></div>
+  </div></section>
+  <section class="ex-section ex-buy-documents" id="documents" data-core-module="documents" data-module="documents" aria-labelledby="ex-documents-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-documents-title">Documents to request for your purchase</h2><div><p>{documents.body}</p><p class="ex-note">Name each provider in the written offer. Agree what is included, what costs extra and when each record is due.</p></div></header>
+    <div class="ex-document-ledger"><dl class="ex-record-register" aria-label="Purchase record groups, their purpose and the provider to identify">{documents.rows!.map(([group,purpose,provider])=><div><dt>{group}</dt><dd><p>{purpose}</p><p><strong>Provider to identify</strong>{provider}</p></dd></div>)}</dl>
+    <aside><ExportFigure {...recordsScene}/><div class="ex-document-notes">{documents.paragraphs!.map(text=><p>{text}</p>)}</div></aside></div>
+    <div class="ex-related-links">{documents.links!.map(link=><a class="ex-link" href={link.href}>{link.label}</a>)}</div>
+  </div></section>
+  <section class="ex-section ex-soft" id="warranty" data-core-module="warranty" data-module="warranty" aria-labelledby="ex-buy-support-title"><div class="ex-wrap">
+    <header class="ex-section-heading"><h2 id="ex-buy-support-title">Confirm warranty and after-sales terms</h2><p>{fullWarranty.body}</p></header>
+    <dl class="ex-support-boundaries" aria-label="Support terms to agree before purchase">{fullWarranty.rows!.map(([question,agreement])=><div><dt>{question}</dt><dd>{agreement}</dd></div>)}</dl>
+    <div class="ex-support-agreement"><ExportFigure {...exportMedia.diagnosis}/><div>{fullWarranty.paragraphs!.map(text=><p>{text}</p>)}<div class="ex-related-links">{fullWarranty.links!.map(link=><a class="ex-link" href={link.href}>{link.label}</a>)}</div></div></div>
+  </div></section>
+  <div id="faq" class="ex-anchor" aria-hidden="true"></div>
+  <ExportInquiry service="buying" title="Start planning your car purchase" body="Start with the model, quantity and destination. Bring your quotation, document and support questions into the brief."/>
+</ExportPage>

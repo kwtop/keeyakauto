@@ -1,0 +1,31 @@
+---
+import Base from './Base.astro';
+import { exportLinks } from '../data/exportServices';
+import '../styles/export-redesign.css';
+interface Props { title: string; description: string; page: 'overview'|'buying-guide'|'sourcing-inspection'|'shipping-support'|'faq'; image?: string; }
+const {title,description,page,image='/images/export-services/overview-scene.webp'}=Astro.props;
+const links=[{label:'Overview',href:'/export-services/'},...exportLinks];
+const current=page==='overview'?'/export-services/':`/export-services/${page}/`;
+const schema={'@context':'https://schema.org','@type':'WebPage',name:title,description,inLanguage:'en',about:{'@type':'Thing',name:'Vehicle sourcing and export services'}};
+---
+<Base {title} {description} {image}>
+  <div class:list={['export-design',`export-design--${page}`]}>
+    <nav class="ex-navigation" aria-label="Export service pages"><div class="ex-wrap ex-navigation-inner">{links.map(link=><a href={link.href} aria-current={link.href===current?'page':undefined}>{link.label}</a>)}</div></nav>
+    <slot/>
+    <script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+  </div>
+</Base>
+<script>
+  const serviceNavigation=document.querySelector<HTMLElement>('.export-design .ex-navigation-inner');
+  const currentService=serviceNavigation?.querySelector<HTMLElement>('[aria-current="page"]');
+  if(serviceNavigation&&currentService){
+    const showCurrent=()=>{
+      if(serviceNavigation.scrollWidth>serviceNavigation.clientWidth){
+        serviceNavigation.scrollLeft=Math.max(0,currentService.offsetLeft-serviceNavigation.offsetLeft-(serviceNavigation.clientWidth-currentService.clientWidth)/2);
+      }else serviceNavigation.scrollLeft=0;
+    };
+    showCurrent();
+    document.fonts.ready.then(showCurrent);
+    window.addEventListener('resize',showCurrent,{passive:true});
+  }
+</script>

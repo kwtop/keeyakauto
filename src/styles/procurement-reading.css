@@ -1,0 +1,265 @@
+/* Resource selection, reference comparison, destination checks and the historical archive. */
+.procurement-reading .breadcrumbs{width:min(1248px,calc(100% - 128px));margin-inline:auto;font-family:var(--ex-body);font-size:14px}
+.procurement-reading .reading-intro{padding-block:44px 64px}
+.procurement-reading .reading-intro h1{max-width:23ch;margin-bottom:24px;font-size:56px}
+.procurement-reading .reading-intro p{max-width:66ch;font-size:20px}
+.procurement-reading .reading-body{padding-bottom:96px}
+.procurement-reading .reading-module{padding-block:64px}
+.procurement-reading .reading-module:first-child{padding-top:8px}
+.procurement-reading .reading-section-heading{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:40px}
+.procurement-reading .reading-section-heading h2{max-width:23ch}
+.procurement-reading .reading-media-row{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.procurement-reading .reading-media-row h2{max-width:22ch;margin-bottom:24px}
+.procurement-reading .reading-media-row p{max-width:48ch}
+.procurement-reading .reading-media-row p+p{margin-top:24px}
+.procurement-reading .reading-media-row--reverse>div{grid-column:2;grid-row:1}
+.procurement-reading .reading-media-row--reverse>figure{grid-column:1;grid-row:1}
+.procurement-reading .reading-next{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;padding:48px;background:var(--ex-sand);color:var(--ex-ink);border-radius:0;margin-top:32px}
+.procurement-reading .reading-next .ex-button{background:#fff;border-color:#fff}
+.procurement-reading .reading-next .ex-button:hover{background:#fff0e7;border-color:#fff0e7}
+.procurement-reading .reading-next h2{font-size:34px;margin-bottom:16px}
+.procurement-reading .reading-next p{max-width:60ch}
+.procurement-reading .reading-archive-photo>a{display:block}
+.procurement-reading .reading-archive-photo>a>img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.procurement-reading .reading-archive-photo figcaption a{text-decoration:underline;text-underline-offset:4px}
+.procurement-reading .reading-source-links{display:grid;gap:16px;list-style:none;padding:24px 0 0;margin-top:24px;border-top:1px solid var(--ex-line)}
+.procurement-reading .reading-source-links a{display:flex;width:fit-content;min-height:44px;padding-block:4px;line-height:1.6}
+.procurement-reading .reading-current-records{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:64px;align-items:center;padding:48px;background:var(--ex-soft);border:0;border-radius:0}
+.procurement-reading .reading-current-records h2{margin-bottom:24px}
+.procurement-reading .reading-current-records p{max-width:61ch}
+.reading-archive-guide .reading-module:nth-child(2){padding-block:56px}
+.reading-resource-hub .reading-intro{padding-bottom:48px}
+.reading-resource-hub .reading-resource-index{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:32px}
+.reading-resource-hub .reading-resource-index>article{display:flex;flex-direction:column;gap:20px;align-items:flex-start;min-width:0}
+.reading-resource-hub .reading-resource-index h2 a{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;text-decoration-color:var(--line-strong)}
+.reading-resource-hub .reading-resource-index h2{font-family:var(--ex-body);font-size:29px;font-weight:650;line-height:1.2;letter-spacing:-.04em;text-wrap:pretty}
+.reading-resource-hub .reading-resource-index p{font-size:17px}
+.reading-resource-hub .reading-resource-index .ex-photo{width:100%;order:0}
+.reading-resource-hub .reading-resource-index .ex-photo img{height:250px;aspect-ratio:auto;object-fit:cover}
+.reading-resource-hub .reading-resource-index .ex-vehicle-reference img{object-fit:contain}
+.reading-resource-hub .reading-resource-index .ex-photo figcaption{font-size:14px}
+.reading-resource-hub .reading-next{margin-top:48px;padding:32px 40px}
+.reading-destination-guide .reading-destination-start{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center;padding-block:32px 64px}
+.reading-destination-guide .reading-destination-start h2{max-width:17ch;margin-bottom:24px}
+.reading-destination-guide .reading-destination-documents{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:80px;align-items:center;padding-block:56px;border:0}
+.reading-destination-guide .reading-destination-documents h2{margin-bottom:24px}
+.reading-destination-guide .reading-destination-documents p{max-width:61ch}
+.reading-destination-guide .reading-destination-use{padding:48px;background:var(--ex-soft);border:0;border-radius:0}
+.reading-destination-guide .reading-destination-use>header{margin-bottom:32px}
+.reading-destination-guide .reading-destination-pair{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.reading-destination-guide .reading-destination-pair article{display:flex;flex-direction:column;gap:20px;align-items:start}
+.reading-destination-guide .reading-destination-pair p{font-size:17px}
+.reading-destination-guide .reading-destination-pair .ex-photo{width:100%;margin-top:4px}
+.reading-destination-guide .reading-destination-pair .ex-photo img{height:260px;object-fit:cover}
+.reading-destination-guide .reading-source-review{display:grid;grid-template-columns:1.4fr .6fr;gap:80px;align-items:start;border:0;padding-block:64px 32px}
+.reading-destination-guide .reading-source-review h2{max-width:25ch;margin-bottom:24px}
+.reading-destination-guide .reading-source-review p+p{margin-top:24px}
+.reading-destination-guide .reading-source-review .ex-link{margin-top:20px}
+.reading-destination-guide .reading-source-fields{padding-top:8px}
+.reading-destination-guide .reading-source-fields h3{font-size:22px;margin-bottom:20px}
+.reading-destination-guide .reading-source-fields ul{list-style:none;padding:0}
+.reading-destination-guide .reading-source-fields li{padding-block:12px;border-top:1px solid var(--ex-line)}
+.reading-comparison-guide .reading-reference-pair{display:grid;grid-template-columns:1.15fr 1fr;gap:40px}
+.reading-comparison-guide .reading-reference-pair h3{font-size:22px;margin-bottom:20px}
+.reading-comparison-guide .reading-reference-pair .ex-vehicle-reference>a>img{height:300px;aspect-ratio:auto;object-fit:contain}
+/* The Camry source has broad white margins; this crops only that blank canvas. */
+.reading-comparison-guide .reading-reference-pair>article:first-child .ex-vehicle-reference>a>img{object-fit:cover}
+.reading-comparison-guide .reading-reference-pair figcaption{max-width:48ch;margin-top:16px}
+.reading-comparison-guide .reading-comparison-method{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:64px;align-items:start}
+.reading-comparison-guide .reading-offer-checks{display:grid;grid-template-columns:1fr 1fr;gap:28px 48px}
+.reading-comparison-guide .reading-offer-checks>div{padding-top:20px;border-top:1px solid var(--ex-line)}
+.reading-comparison-guide .reading-offer-checks dt{font-size:22px;font-weight:650;color:var(--ex-ink);margin-bottom:12px}
+.reading-comparison-guide .reading-offer-checks dd{font-size:17px}
+.reading-comparison-guide .reading-units-evidence{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:80px;align-items:center}
+.reading-comparison-guide .reading-units-evidence h2{max-width:24ch;margin-bottom:24px}
+.reading-comparison-guide .reading-units-evidence p+p{margin-top:24px}
+.reading-comparison-guide .reading-units-evidence strong{color:var(--ex-ink);font-weight:600}
+@media(max-width:1100px){
+ .procurement-reading .breadcrumbs{width:calc(100% - 64px)}
+ .procurement-reading :is(.reading-section-heading,.reading-media-row,.reading-current-records){gap:40px}
+ .reading-resource-hub .reading-resource-index{gap:32px}
+ .reading-resource-hub .reading-resource-index h2{font-size:26px}
+ .reading-destination-guide .reading-destination-pair{gap:40px}
+ .reading-destination-guide .reading-destination-pair article{display:block}
+ .reading-destination-guide .reading-destination-pair h3{margin-bottom:20px}
+ .reading-destination-guide .reading-destination-pair .ex-photo{margin-top:24px}
+ .reading-comparison-guide :is(.reading-comparison-method,.reading-units-evidence){grid-template-columns:minmax(0,1fr) 220px;gap:40px}
+}
+@media(max-width:760px){
+ .procurement-reading .breadcrumbs{width:calc(100% - 40px);font-size:13px}
+ .procurement-reading .reading-intro{padding-block:28px 40px}
+ .procurement-reading .reading-intro h1{font-size:40px;margin-bottom:24px}
+ .procurement-reading .reading-intro p{font-size:18px}
+ .procurement-reading .reading-body{padding-bottom:64px}
+ .procurement-reading .reading-module{padding-block:48px}
+ .procurement-reading :is(.reading-section-heading,.reading-media-row,.reading-current-records){display:flex;flex-direction:column;gap:28px}
+ .procurement-reading .reading-section-heading{gap:24px;margin-bottom:32px}
+ .procurement-reading .reading-media-row>div,.procurement-reading .reading-media-row>figure{order:initial;width:100%}
+ .procurement-reading .reading-next{display:block;padding:28px 24px}
+ .procurement-reading .reading-next h2{font-size:31px}
+ .procurement-reading .reading-next .ex-button{margin-top:24px}
+ .procurement-reading .reading-current-records{padding:28px 24px}
+ .procurement-reading .reading-current-records>.ex-photo{max-width:240px;align-self:flex-start}
+ .reading-archive-guide .reading-module:nth-child(2){padding-block:48px}
+ .reading-resource-hub .reading-intro{padding-bottom:32px}
+ .reading-resource-hub .reading-resource-index{display:block}
+ .reading-resource-hub .reading-resource-index>article{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:12px 20px;align-items:start;padding-bottom:32px}
+ .reading-resource-hub .reading-resource-index h2{grid-column:1;font-size:25px}.reading-resource-hub .reading-resource-index p{grid-column:1;font-size:16px;margin:0}
+ .reading-resource-hub .reading-resource-index .ex-photo{width:120px;grid-column:2;grid-row:1/3;margin:0}
+ .reading-resource-hub .reading-resource-index .ex-photo img{height:110px;aspect-ratio:auto;object-fit:cover}
+ .reading-resource-hub .reading-resource-index .ex-vehicle-reference img{object-fit:contain}
+ .reading-resource-hub .reading-resource-index .ex-photo figcaption{font-size:14px;line-height:1.5;margin-top:8px}
+ .reading-resource-hub .reading-next{margin-top:24px;padding:28px 24px}
+ .reading-destination-guide :is(.reading-destination-start,.reading-destination-documents,.reading-source-review){display:flex;flex-direction:column;gap:28px}
+ .reading-destination-guide .reading-destination-start{padding-block:24px 40px}
+ .reading-destination-guide .reading-destination-start h2{max-width:20ch}
+ .reading-destination-guide .reading-destination-documents{padding-block:40px}
+ .reading-destination-guide .reading-destination-documents>.ex-photo{max-width:220px;align-self:flex-start}
+ .reading-destination-guide .reading-destination-use{padding:28px 24px}
+ .reading-destination-guide .reading-destination-pair{grid-template-columns:1fr;gap:36px}
+ .reading-destination-guide .reading-destination-pair article{display:block}
+ .reading-destination-guide .reading-destination-pair .ex-photo{width:100%;margin-top:20px}
+ .reading-destination-guide .reading-destination-pair .ex-photo img{height:auto;aspect-ratio:3/2;object-fit:cover}
+ .reading-destination-guide .reading-source-review{padding-block:48px 24px}
+ .reading-destination-guide .reading-source-fields{padding:0;width:100%}
+ .reading-destination-guide .reading-source-fields ul{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+ .reading-comparison-guide .reading-reference-pair{grid-template-columns:1fr;gap:36px}
+ .reading-comparison-guide .reading-reference-pair .ex-vehicle-reference>a>img{height:210px}
+ .reading-comparison-guide .reading-reference-pair h3{font-size:21px}
+ .reading-comparison-guide :is(.reading-comparison-method,.reading-units-evidence){display:flex;flex-direction:column;gap:28px}
+ .reading-comparison-guide .reading-comparison-method>.ex-photo,.reading-comparison-guide .reading-units-evidence>.ex-photo{max-width:220px;align-self:flex-start}
+ .reading-comparison-guide .reading-offer-checks{grid-template-columns:1fr;gap:24px}
+ .reading-comparison-guide .reading-offer-checks dt{font-size:22px}
+}
+@media(max-width:360px){.procurement-reading .breadcrumbs{width:calc(100% - 32px)}.procurement-reading .reading-intro h1{font-size:36px}.reading-resource-hub .reading-resource-index h2{font-size:23px}}
+
+/* Nest reading pages: a direct answer followed by open photographic chapters. */
+.procurement-reading .breadcrumbs{width:calc(100% - var(--ex-gutter)*2);font-size:14px}
+.procurement-reading .reading-intro{padding-block:40px 64px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.procurement-reading .reading-intro h1{font-size:clamp(50px,4.7vw,68px);max-width:20ch;margin:0;font-weight:700}
+.procurement-reading .reading-intro p{font-size:18px;line-height:1.5;max-width:56ch;margin-top:4px}
+.procurement-reading .reading-body{padding-bottom:80px}
+.procurement-reading .reading-module{padding-block:64px 80px}
+.procurement-reading .reading-section-heading{gap:80px}
+.procurement-reading .reading-section-heading p{font-size:18px}
+.procurement-reading .reading-media-row{gap:80px}
+.procurement-reading .reading-next{padding:48px;background:var(--ex-sand);border-radius:0;gap:48px}
+.procurement-reading .reading-next h2{font-size:40px;font-weight:400}
+.procurement-reading .reading-next .ex-button{background:var(--ex-ink);color:#fff;border-color:var(--ex-ink)}
+.procurement-reading .reading-next .ex-button:hover{background:#545454;border-color:#545454}
+.procurement-reading .reading-current-records{grid-template-columns:1fr 1fr;padding:48px 0;background:none;border-block:1px solid var(--ex-line)}
+.reading-archive-guide .reading-module:nth-child(2){padding-block:64px 80px}
+.reading-resource-hub .reading-resource-index{grid-template-columns:1fr 1fr;gap:64px 48px}
+.reading-resource-hub .reading-resource-index>article{display:flex;flex-direction:column;gap:24px}
+.reading-resource-hub .reading-resource-index>article:first-child{grid-column:1/-1;display:grid;grid-template-columns:1.12fr .88fr;gap:80px;align-items:center}
+.reading-resource-hub .reading-resource-index h2{font-family:var(--ex-display);font-size:40px;font-weight:400;line-height:1.12;letter-spacing:-.035em;margin:0 0 16px}
+.reading-resource-hub .reading-resource-index h2 a{text-decoration:none}
+.reading-resource-hub .reading-resource-index h2 a:hover{text-decoration:underline;text-decoration-thickness:1px}
+.reading-resource-hub .reading-resource-index p{font-size:18px;max-width:46ch}
+.reading-resource-hub .reading-resource-index .ex-link{margin-top:20px}
+.reading-resource-hub .reading-resource-index .ex-photo{margin:0;width:100%}
+.reading-resource-hub .reading-resource-index .ex-photo img{height:auto;aspect-ratio:4/3;object-fit:cover}
+.reading-resource-hub .reading-resource-index>article:first-child .ex-photo img{aspect-ratio:3/2;object-position:50% 46%}
+.reading-resource-hub .reading-resource-index .ex-vehicle-reference img{object-fit:contain}
+.reading-resource-hub .reading-resource-index .ex-photo figcaption{font-size:13px}
+.reading-resource-hub .reading-resource-index>article:last-child{padding-top:64px}
+.reading-resource-hub .reading-resource-index>article:last-child .ex-photo img{aspect-ratio:16/9;object-fit:contain}
+.reading-resource-hub .reading-next{margin-top:64px;padding:48px}
+.reading-destination-guide .reading-destination-start{grid-template-columns:1fr 1fr;gap:80px;padding-block:24px 64px}
+.reading-destination-guide .reading-destination-start h2{max-width:22ch}
+.reading-destination-guide .reading-destination-start h3{margin-block:28px 16px}
+.reading-destination-guide .reading-destination-use{padding:64px 0 80px;background:none;border-top:1px solid var(--ex-line)}
+.reading-destination-guide .reading-destination-use>header{margin-bottom:40px}
+.reading-destination-guide .reading-destination-pair{gap:48px}
+.reading-destination-guide .reading-destination-pair article{display:flex;flex-direction:column;gap:20px}
+.reading-destination-guide .reading-destination-pair .ex-photo{margin:0 0 4px;width:100%}
+.reading-destination-guide .reading-destination-pair .ex-photo img{height:auto;aspect-ratio:4/3;object-fit:cover}
+.reading-destination-guide .reading-destination-pair>article:last-child{padding-top:64px}
+.reading-destination-guide .reading-destination-pair>article:last-child .ex-photo img{aspect-ratio:16/9;object-fit:contain}
+.reading-destination-guide .reading-destination-pair p{font-size:17px}
+.reading-destination-guide .reading-source-review{grid-template-columns:1.12fr .88fr;gap:80px;align-items:center;padding-block:64px 48px;border-top:1px solid var(--ex-line)}
+.reading-destination-guide .reading-source-fields{padding:0}
+.reading-destination-guide .reading-source-fields .ex-photo img{aspect-ratio:4/3;object-fit:cover}
+.reading-destination-guide .reading-source-fields h3{margin-block:24px 16px}
+.reading-comparison-guide .reading-reference-pair{grid-template-columns:1fr 1fr;gap:48px}
+.reading-comparison-guide .reading-reference-pair .ex-vehicle-reference>a>img{height:auto;aspect-ratio:4/3;object-fit:contain}
+.reading-comparison-guide .reading-reference-pair>article:first-child .ex-vehicle-reference>a>img{object-fit:contain}
+.reading-comparison-guide .reading-comparison-method{grid-template-columns:1.2fr .8fr;gap:80px;align-items:center}
+.reading-comparison-guide .reading-comparison-method>.ex-photo img{aspect-ratio:4/5;object-fit:cover}
+.reading-comparison-guide .reading-offer-checks{gap:28px 40px}
+.reading-comparison-guide .reading-offer-checks dt{font-size:20px;font-weight:500}
+.reading-comparison-guide .reading-offer-checks dd{font-size:16px}
+.reading-comparison-guide .reading-units-evidence{grid-template-columns:1fr 1fr;gap:80px}
+.reading-comparison-guide .reading-units-evidence>.ex-photo img{aspect-ratio:4/3;object-fit:cover}
+@media(max-width:1100px){
+ .procurement-reading :is(.reading-intro,.reading-section-heading,.reading-media-row,.reading-current-records){gap:40px}
+ .reading-resource-hub .reading-resource-index>article:first-child,.reading-destination-guide .reading-destination-start,.reading-destination-guide .reading-source-review,.reading-comparison-guide .reading-comparison-method,.reading-comparison-guide .reading-units-evidence{gap:40px}
+}
+@media(max-width:1023px){
+ .procurement-reading .reading-intro{gap:36px;padding-block:36px 48px}
+ .procurement-reading .reading-intro h1{font-size:48px}
+ .procurement-reading .reading-module{padding-block:48px 64px}
+ .procurement-reading .reading-next h2{font-size:32px}
+ .reading-resource-hub .reading-resource-index h2{font-size:32px}
+ .reading-resource-hub .reading-resource-index{gap:48px 32px}
+ .reading-destination-guide .reading-destination-pair{gap:32px}
+ .reading-comparison-guide .reading-offer-checks{grid-template-columns:1fr;gap:24px}
+ .reading-comparison-guide .reading-comparison-method{grid-template-columns:1fr 1fr}
+}
+@media(max-width:767px){
+ .procurement-reading .breadcrumbs{width:calc(100% - 32px);font-size:13px}
+ .procurement-reading .reading-intro{display:block;padding-block:28px 40px}
+ .procurement-reading .reading-intro h1{font-size:40px;margin-bottom:24px}
+ .procurement-reading .reading-intro p{font-size:18px;margin:0}
+ .procurement-reading .reading-body{padding-bottom:56px}
+ .procurement-reading .reading-module{padding-block:48px 56px}
+ .procurement-reading :is(.reading-section-heading,.reading-media-row,.reading-current-records){display:flex;flex-direction:column;gap:28px}
+ .procurement-reading .reading-next{display:block;padding:32px 24px;margin-top:32px}
+ .procurement-reading .reading-next h2{font-size:32px}
+ .procurement-reading .reading-next .ex-button{width:100%}
+ .procurement-reading .reading-current-records{padding:32px 0}
+ .procurement-reading .reading-current-records>.ex-photo{max-width:none;width:100%}
+ .reading-resource-hub .reading-resource-index{display:flex;flex-direction:column;gap:40px}
+ .reading-resource-hub .reading-resource-index>article,.reading-resource-hub .reading-resource-index>article:first-child{display:flex;flex-direction:column;gap:20px;padding:0}
+ .reading-resource-hub .reading-resource-index>article:last-child{padding-top:0}
+ .reading-resource-hub .reading-resource-index h2{font-size:32px;margin-bottom:16px}
+ .reading-resource-hub .reading-resource-index p{font-size:17px}
+ .reading-resource-hub .reading-resource-index .ex-photo{width:100%;margin:0}
+ .reading-resource-hub .reading-resource-index .ex-photo img{height:auto;aspect-ratio:4/3}
+ .reading-resource-hub .reading-resource-index>article:last-child .ex-photo img{aspect-ratio:16/9;object-fit:contain}
+ .reading-resource-hub .reading-resource-index>article:first-child .ex-photo img{aspect-ratio:4/3}
+ .reading-resource-hub .reading-resource-index .ex-photo figcaption{font-size:13px}
+ .reading-resource-hub .reading-next{padding:32px 24px;margin-top:40px}
+ .reading-destination-guide .reading-destination-start,.reading-destination-guide .reading-source-review{display:flex;flex-direction:column;gap:28px;padding-block:24px 48px}
+ .reading-destination-guide .reading-destination-start>.ex-photo{order:-1;width:100%}
+ .reading-destination-guide .reading-destination-use{padding:48px 0}
+ .reading-destination-guide .reading-destination-use>header{margin-bottom:28px}
+ .reading-destination-guide .reading-destination-pair{grid-template-columns:1fr;gap:40px}
+ .reading-destination-guide .reading-destination-pair .ex-photo{margin:0}
+ .reading-destination-guide .reading-destination-pair .ex-photo img{aspect-ratio:4/3}
+ .reading-destination-guide .reading-destination-pair>article:last-child{padding-top:0}
+ .reading-destination-guide .reading-destination-pair>article:last-child .ex-photo img{aspect-ratio:16/9;object-fit:contain}
+ .reading-destination-guide .reading-source-review{padding-top:48px}
+ .reading-destination-guide .reading-source-fields{width:100%}
+ .reading-comparison-guide .reading-reference-pair{grid-template-columns:1fr;gap:36px}
+ .reading-comparison-guide .reading-reference-pair .ex-vehicle-reference>a>img{height:auto;aspect-ratio:4/3}
+ .reading-comparison-guide .reading-comparison-method,.reading-comparison-guide .reading-units-evidence{display:flex;flex-direction:column;gap:28px}
+ .reading-comparison-guide .reading-comparison-method>.ex-photo,.reading-comparison-guide .reading-units-evidence>.ex-photo{max-width:none;width:100%}
+ .reading-comparison-guide .reading-comparison-method>.ex-photo img{aspect-ratio:4/3}
+}
+@media(max-width:360px){.procurement-reading .reading-intro h1{font-size:40px}}
+
+body.inner-autohaus #main .reading-comparison-guide .reading-intro{display:block;padding-block:26px 36px}
+body.inner-autohaus #main .reading-comparison-guide .reading-intro h1{max-width:26ch;font-size:clamp(32px,4vw,50px)}
+.reading-comparison-guide .reading-section-heading{display:block;margin-bottom:24px}
+.reading-comparison-guide .reading-section-heading h2{max-width:none}
+.reading-comparison-guide .reading-reference-pair{gap:clamp(20px,3vw,40px)}
+.reading-comparison-guide .reading-reference-pair>article{padding:clamp(16px,2vw,24px);border-radius:var(--ed-panel-radius);background:var(--surface)}
+.reading-comparison-guide .reading-reference-pair figure{margin:0}
+.reading-comparison-guide .reading-reference-pair figcaption{max-width:none;margin-top:12px}
+.reading-comparison-guide .reading-offer-checks{gap:0 clamp(16px,3vw,36px)}
+.reading-comparison-guide .reading-offer-checks>div{padding-block:16px}
+.reading-comparison-guide .reading-offer-checks dt{margin-bottom:4px}
+body.inner-autohaus #main .reading-comparison-guide .reading-next{border-radius:var(--ed-panel-radius);background:var(--surface)}
+body.inner-autohaus #main .reading-comparison-guide .reading-next .ex-button{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+

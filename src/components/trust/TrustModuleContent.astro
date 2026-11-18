@@ -1,0 +1,73 @@
+---
+import {ArrowRight,ChevronDown} from '@lucide/astro';
+import TrustFigure from './TrustFigure.astro';
+import TrustIcon from './TrustIcon.astro';
+import type {TrustBlock,TrustItem} from '../../data/trustContent';
+interface Props {block:TrustBlock;illustrations?:string[];}
+const {block,illustrations}=Astro.props;
+const items=block.items||[];
+const cardKinds=['services','transport','gallery','contact-options'];
+const records:TrustItem[]=block.rows?block.rows.map(row=>({title:row[0],body:row[1],meta:row[2],icon:'document'})):items;
+const recordMeta=records.some(record=>record.meta);
+---
+{block.kind==='deliverables'?<div class="tc-deliverables">
+ {items.map((item,index)=><article class="tc-deliverable">
+  {illustrations?.[index]&&<TrustFigure media={illustrations[index]} compact/>}
+  <div class="tc-deliverable-heading"><TrustIcon name={item.icon} size={28}/><h3>{item.title}</h3></div>
+  <p class="tc-deliverable-description">{item.body}</p>
+  <details class="tc-service-output"><summary>You receive<ChevronDown size={17}/></summary><p>{item.output}</p></details>
+  {item.href&&<a class="tc-text-link" href={item.href}>{item.action||item.title}<ArrowRight size={17}/></a>}
+ </article>)}
+</div>:cardKinds.includes(block.kind||'')?<div class:list={['tc-module-grid',`tc-module-grid--${block.kind}`]} data-count={items.length}>
+ {items.map((item,index)=><article class="tc-module-item">
+  {(illustrations?.[index]||item.image)?<TrustFigure media={illustrations?.[index]||item.image!} compact/>:<div class="tc-module-icon"><TrustIcon name={item.icon} size={32}/></div>}
+  <div class="tc-module-item-copy">
+   <h3>{item.title}</h3>
+   {item.meta&&<p class="tc-module-meta">{item.meta}</p>}
+   <p>{item.body}</p>
+   {item.href&&<a class="tc-text-link" href={item.href}><span>{item.action||item.title}</span><ArrowRight size={17}/></a>}
+  </div>
+ </article>)}
+</div>:block.kind==='steps'?<ol class="tc-journey" data-count={items.length}>
+ {items.map((item,index)=><li>
+  <div class="tc-journey-marker"><span>{String(index+1).padStart(2,'0')}</span><TrustIcon name={item.icon} size={28}/></div>
+  <h3>{item.title}</h3>
+  {item.meta&&<p class="tc-module-meta">{item.meta.replace(/^\d+\s*·\s*/,'')}</p>}
+  <p>{item.body}</p>
+  {item.output&&<dl class="tc-step-output"><dt>You receive</dt><dd>{item.output}</dd></dl>}
+  {item.href&&<a class="tc-text-link" href={item.href}>{item.action||item.title}<ArrowRight size={16}/></a>}
+ </li>)}
+</ol>:block.kind==='comparison'?<div class="tc-comparison" role="group" aria-label={block.title}>
+ {block.columns?.map((column,index)=><div class="tc-comparison-column">
+  <h3><TrustIcon name={index===0?'car':'inspection'} size={25}/>{column}</h3>
+  <ul>{block.rows?.map(row=><li>{row[index]}</li>)}</ul>
+ </div>)}
+</div>:block.kind==='records'?<div class="tc-register" data-columns={recordMeta?3:2}>
+ <div class="tc-register-header" aria-hidden="true"><span>{block.columns?.[0]||'Record'}</span><span>{block.columns?.[1]||'What to keep'}</span>{recordMeta&&<span>{block.columns?.[2]||'Stage'}</span>}</div>
+ <ol>{records.map(record=><li>
+  <h3><TrustIcon name={record.icon} size={20}/>{record.title}</h3>
+  <p>{record.body}</p>
+  {recordMeta&&<p class="tc-register-owner">{record.meta}</p>}
+ </li>)}</ol>
+</div>:block.kind==='brief'?<dl class="tc-brief" data-count={items.length}>
+ {items.map(item=><div>
+  <TrustIcon name={item.icon} size={27}/>
+  <dt>{item.title}</dt><dd>{item.body}{item.href&&<a class="tc-text-link" href={item.href}>{item.action||item.title}<ArrowRight size={16}/></a>}</dd>
+ </div>)}
+</dl>:block.kind==='report'?<div class="tc-report-sheet">
+ <div class="tc-report-title"><TrustIcon name="document" size={30}/><span>Report outline</span></div>
+ <ol>{items.map((item,index)=><li>
+  <span class="tc-report-number">{String(index+1).padStart(2,'0')}</span>
+  <div><h3>{item.title}</h3><p>{item.body}</p></div>
+  <TrustIcon name={item.icon} size={23}/>
+ </li>)}</ol>
+</div>:block.kind==='identity'?<dl class="tc-identity">
+ {items.map(item=><div><dt><TrustIcon name={item.icon} size={19}/>{item.title}</dt><dd>{item.body}</dd></div>)}
+</dl>:block.kind==='office'?<div class="tc-office-record">
+ <div class="tc-office-address"><TrustIcon name="pin" size={34}/><div><p class="tc-module-meta">Hangzhou / China</p><address>{block.body}</address></div></div>
+ <dl>{items.map(item=><div><dt><TrustIcon name={item.icon} size={21}/>{item.title}</dt><dd>{item.body}</dd></div>)}</dl>
+</div>:block.kind==='table'?<div class="tc-table-wrap"><table><thead><tr>{block.columns?.map(column=><th scope="col">{column}</th>)}</tr></thead><tbody>{block.rows?.map(row=><tr>{row.map((cell,index)=>index===0?<th scope="row">{cell}</th>:<td>{cell}</td>)}</tr>)}</tbody></table></div>:block.kind==='faq'?<div class="tc-questions">
+ {items.map(item=><details><summary>{item.title}<ChevronDown size={19}/></summary><p>{item.body}</p></details>)}
+</div>:items.length>0&&<ol class="tc-checks" data-count={items.length}>
+ {items.map(item=><li><TrustIcon name={item.icon} size={25}/><div><h3>{item.title}</h3><p>{item.body}</p>{item.href&&<a class="tc-text-link" href={item.href}>{item.action||item.title}<ArrowRight size={16}/></a>}</div></li>)}
+</ol>}

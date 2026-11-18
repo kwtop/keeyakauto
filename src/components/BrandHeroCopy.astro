@@ -1,0 +1,16 @@
+---
+import {ArrowRight} from '@lucide/astro';
+import BrandLogo from './BrandLogo';
+import type {Vehicle} from '../data/catalog';
+import '../styles/brand-hero.css';
+
+interface Props {brand:string;slug:string;kind:Vehicle['kind'];items?:Vehicle[];quotation?:string;compact?:boolean;}
+const {brand,slug,kind,items=[],quotation,compact=false}=Astro.props;
+const isNew=kind==='new';
+const hasModels=items.length>0;
+---
+<div class:list={['catalog-heading-copy brand-hero-copy',{'brand-hero-copy--long':brand.length>12}]}>
+ <div class="brand-hero-mark"><BrandLogo slug={slug} name={brand} catalogSize/></div>
+ <h1><span>{isNew?'New':'Used'} {brand} cars</span></h1>
+ {!compact && <a class="brand-hero-action" href={hasModels?'#brand-models':quotation}><span>{hasModels?`Explore ${brand} models`:'Request a quote'}</span><ArrowRight size={20} aria-hidden="true"/></a>}
+</div>

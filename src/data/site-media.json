@@ -1,0 +1,239 @@
+[
+  {
+    "id": "P01",
+    "source": "D:/图库/KEEYAK/团队照片/2026年会.jpg",
+    "sourceSha256": "f57f07b6705cb80ac0069a3a476a11a1e215e7af03065b7c6ac0a7dec029e0f3",
+    "src": "/images/company/records/annual-gathering-2026.webp",
+    "width": 1800,
+    "height": 1350,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "P05",
+    "source": "D:/图库/KEEYAK/主管照片/Alicia.jpg",
+    "sourceSha256": "e9de258f5a2b788d52310f86ccb1eac350f5b2986e7359a8ca68970e2f5e3952",
+    "src": "/images/company/records/alicia-june.webp",
+    "width": 591,
+    "height": 827,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "P06",
+    "source": "D:/图库/KEEYAK/主管照片/Frank.jpg",
+    "sourceSha256": "5d670aa7b2334c313939b1f03130478f2679ec444bd3145995f9e489b59b2bf2",
+    "src": "/images/company/records/frank-pan.webp",
+    "width": 1800,
+    "height": 1800,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "P07",
+    "source": "D:/图库/KEEYAK/主管照片/Isa Tang.png",
+    "sourceSha256": "7dffb8a8aa59c0c269aa8a201e3201c460651ff456032efebfb5c6acc07f8cd5",
+    "src": "/images/company/records/isa.webp",
+    "width": 1800,
+    "height": 2699,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "P08",
+    "source": "D:/图库/KEEYAK/主管照片/mia.jpg",
+    "sourceSha256": "7c8015c4b340957e4cda4d6916e7439a33954076c53fc467bf57dd570e2912f8",
+    "src": "/images/company/records/mia-fu.webp",
+    "width": 770,
+    "height": 770,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E01",
+    "source": "D:/图库/KEEYAK/展会/26阿尔及利亚展会展会图片/26阿尔及利亚展会展会图片/35d05584ff4b326f8ac9f1ba1f2a2132.JPG",
+    "sourceSha256": "2ac7c21c18ba6c5080fa27960b88e8744808bfaec0ba96e6ba020fdf4d8aab9a",
+    "src": "/images/company/records/algeria-2026-01.webp",
+    "width": 1800,
+    "height": 2400,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E03",
+    "source": "D:/图库/KEEYAK/展会/26阿尔及利亚展会展会图片/26阿尔及利亚展会展会图片/IMG_0536.JPG",
+    "sourceSha256": "98877469d9aa5928a79bcdd01d5de42c464a2722ef9cdcdac4859b89b1abae63",
+    "src": "/images/company/records/algeria-2026-02.webp",
+    "width": 1800,
+    "height": 2400,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E10",
+    "source": "D:/图库/KEEYAK/展会/印尼展会/印尼展会/微信图片_20240515154527.jpg",
+    "sourceSha256": "86c9726bee23a63ea082310de561f5a501c3858321f2809390d2714499eb19f2",
+    "src": "/images/company/records/indonesia-2024-01.webp",
+    "width": 1800,
+    "height": 2400,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E11",
+    "source": "D:/图库/KEEYAK/展会/印尼展会/印尼展会/微信图片_20240515154532.jpg",
+    "sourceSha256": "d02e908c99ebb70069fa7553f21733a4823c45e5d4306e8f5d45813aaf475f9f",
+    "src": "/images/company/records/indonesia-2024-02.webp",
+    "width": 1800,
+    "height": 2400,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E12",
+    "source": "D:/图库/KEEYAK/展会/印尼展会/印尼展会/微信图片_20240515154536.jpg",
+    "sourceSha256": "b6401719c3c7bb34434c7f48fee3a8958bfc332a2cc952a0a3de56b286d78081",
+    "src": "/images/company/records/indonesia-2024-03.webp",
+    "width": 1800,
+    "height": 1350,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E19",
+    "source": "D:/图库/KEEYAK/展会/越南展会照片/越南展会照片/微信图片_20260521113650_240_117.jpg",
+    "sourceSha256": "56b1bce43f01152b041bdbfe772e2f2d0979484ca4a948877a5a0b2341bc2af9",
+    "src": "/images/company/records/vietnam-2026-01.webp",
+    "width": 1280,
+    "height": 1706,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E20",
+    "source": "D:/图库/KEEYAK/展会/越南展会照片/越南展会照片/微信图片_20260521113658_241_117.jpg",
+    "sourceSha256": "9822cfc5d3bb01af874fe5b7aeaf2961e5b87ff7eb9895277ba722a3e3dbc3db",
+    "src": "/images/company/records/vietnam-2026-02.webp",
+    "width": 1280,
+    "height": 1706,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "E21",
+    "source": "D:/图库/KEEYAK/展会/越南展会照片/越南展会照片/微信图片_20260521113756_246_117.jpg",
+    "sourceSha256": "aa00fc0b6296cd10383d1c0f2e8491d15711c6ce76f02d657c4479521b8b46f9",
+    "src": "/images/company/records/vietnam-2026-03.webp",
+    "width": 1280,
+    "height": 1706,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "C02",
+    "source": "D:/图库/KEEYAK/证书/旌岩证书/268e0be694aafd0b51d3b4266c1e2d9d_origin(1).jpg",
+    "sourceSha256": "0201204d54b557f6b54b043b98d1383359b10655090c28579e8b74e61c4e830b",
+    "src": "/images/company/records/peru-exhibition-2024.webp",
+    "original": "/images/company/records/peru-exhibition-2024-original.jpg",
+    "width": 1100,
+    "height": 764,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "C03",
+    "source": "D:/图库/KEEYAK/证书/旌岩证书/4c2367548cfdf5534eff077e14bd0d20_origin(1).jpg",
+    "sourceSha256": "9b2167c6e3712d3c67ed0877fc50c666c64eda0430ae1566874b960fab1a72bf",
+    "src": "/images/company/records/inapa-2024.webp",
+    "original": "/images/company/records/inapa-2024-original.jpg",
+    "width": 1100,
+    "height": 769,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "C04",
+    "source": "D:/图库/KEEYAK/证书/旌岩证书/680d34607a9c437e51ba157f3d2cdf21_origin(1).jpg",
+    "sourceSha256": "9876011633c0b1c1fe8d67ad4cdf232a41c47015e8d5a0c6a9d1b340a44f99bc",
+    "src": "/images/company/records/ashgabat-2024.webp",
+    "original": "/images/company/records/ashgabat-2024-original.jpg",
+    "width": 1100,
+    "height": 1758,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "C05",
+    "source": "D:/图库/KEEYAK/证书/旌岩证书/7eb51edad2deec456218b5c680f06075_origin(1).jpg",
+    "sourceSha256": "89c329277ef7ad74d337cdbaf0a94b4c4374cf73f31e5ca13a9c0f7a6e07e020",
+    "src": "/images/company/records/uztech-2023.webp",
+    "original": "/images/company/records/uztech-2023-original.jpg",
+    "width": 1100,
+    "height": 1550,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "C06",
+    "source": "D:/图库/KEEYAK/证书/旌岩证书/8b50582c4f7d176cd57bffc6263e7c34_origin(1).jpg",
+    "sourceSha256": "df819fddfa1e882f18e07390345f54122fa67480086a915a63dbe0a2e6149f99",
+    "src": "/images/company/records/alibaba-fy26-recognition.webp",
+    "original": "/images/company/records/alibaba-fy26-recognition-original.jpg",
+    "width": 1100,
+    "height": 1567,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "C07",
+    "source": "D:/图库/KEEYAK/证书/旌岩证书/a6a5a579d07dc7f5d71c9d42cd54a50d_origin(1).jpg",
+    "sourceSha256": "c5e8a971c26fd60fc1a74aa568ee58eb1ea566176850ee89e36a9bf5864d1543",
+    "src": "/images/company/records/astana-2023.webp",
+    "original": "/images/company/records/astana-2023-original.jpg",
+    "width": 1100,
+    "height": 1556,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "C08",
+    "source": "D:/图库/KEEYAK/证书/旌岩证书/fb2dd53f81c5d44e0fd57318d711c46f_origin(1).jpg",
+    "sourceSha256": "31d06f92981225347a1ef1b1ab88edfe2ce19faf24a4655226a8579b5692962a",
+    "src": "/images/company/records/supplier-certificate-2026.webp",
+    "original": "/images/company/records/supplier-certificate-2026-original.jpg",
+    "width": 1100,
+    "height": 1527,
+    "treatment": "original",
+    "note": "EXIF orientation and web encoding only; no generative retouching."
+  },
+  {
+    "id": "sourcing-model",
+    "source": "docs/content-blueprint-20261013/images/model-reference-background-refined.png",
+    "src": "/images/content/sourcing-model.webp",
+    "width": 1672,
+    "height": 941,
+    "treatment": "background-reconstructed",
+    "sourceSha256": "4bcc8ecf66ee7549b56eca6d71b66b36189fd6da3661cf8afa27078b97fc6289",
+    "note": "Imagegen source and prompt retained in docs/content-blueprint-20261013/imagegen-prompts.json."
+  },
+  {
+    "id": "inspection-concept",
+    "source": "docs/content-blueprint-20261013/images/inspection-concept.png",
+    "src": "/images/content/inspection-concept.webp",
+    "width": 1672,
+    "height": 941,
+    "treatment": "generated-concept",
+    "sourceSha256": "02c633cd0aac90cae5d1c9ad1bf6a6f4d3b8e6509cc137c8c22f57331a3a158e",
+    "note": "Imagegen source and prompt retained in docs/content-blueprint-20261013/imagegen-prompts.json."
+  },
+  {
+    "id": "shipping-concept",
+    "source": "docs/content-blueprint-20261013/images/shipping-concept.png",
+    "src": "/images/content/shipping-concept.webp",
+    "width": 1672,
+    "height": 941,
+    "treatment": "generated-concept",
+    "sourceSha256": "e3234e33e088438ca81bc48d343820fb8e92877e647674bad848628a969893ed",
+    "note": "Imagegen source and prompt retained in docs/content-blueprint-20261013/imagegen-prompts.json."
+  }
+]

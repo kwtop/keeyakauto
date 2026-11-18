@@ -1,0 +1,6 @@
+---
+import AboutLandingStudy from '../../../components/about-landing/AboutLandingStudy.astro';
+export function getStaticPaths(){return import.meta.env.DEV?['a','b'].map(direction=>({params:{direction}})):[];}
+const direction=Astro.params.direction as 'a'|'b';
+---
+<AboutLandingStudy {direction}/>

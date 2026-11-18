@@ -1,0 +1,28 @@
+---
+import Base from './Base.astro';
+import '../styles/trust-content.css';
+import '../styles/trust-modules.css';
+import '../styles/about-editorial.css';
+import '../styles/trust-autohaus-refined.css';
+interface Props { title:string; description:string; label:string; group:'export'|'about'|'contact'|'guides'; image?:string; pageType?:'CollectionPage'|'Article'|'FAQPage'; parents?:{name:string;url:string}[]; modified?:string; questions?:{question:string;answer:string}[]; collection?:{name:string;url:string}[]; article?:{eventMonth?:string;section:string;images?:string[];collectionUrl?:string;citations?:string[]; subject?:{'@type':'Country'|'Thing';name:string}}; }
+const {title,description,label,group,image,pageType,parents=[],modified,questions,collection,article}=Astro.props;
+const path=Astro.url.pathname;
+const origin=Astro.site||new URL(Astro.url.origin);
+const organizationId=new URL('/#organization',origin).href;
+const breadcrumbs=[{name:'Home',url:'/'},...(group==='export'&&path!=='/export-services/'?[{name:'Export Services',url:'/export-services/'}]:group==='about'&&path!=='/about/'?[{name:'About Us',url:'/about/'}]:[]),...parents,{name:label,url:path}];
+const schema={'@context':'https://schema.org','@graph':[
+
+ {'@type':pageType||(group==='about'?'AboutPage':group==='contact'?'ContactPage':'WebPage'),'@id':new URL(path,origin).href+'#webpage',name:title,description,inLanguage:'en',url:new URL(path,origin).href,about:article?.subject??{'@id':organizationId},...(modified?{dateModified:modified}:{}),...(image?{image:new URL(image,origin).href}:{}),
+ ...(questions?{mainEntity:questions.map(faq=>({'@type':'Question',name:faq.question,acceptedAnswer:{'@type':'Answer',text:faq.answer}}))}:{}),
+ ...(collection?{mainEntity:{'@type':'ItemList',itemListElement:collection.map((item,index)=>({'@type':'ListItem',position:index+1,name:item.name,url:new URL(item.url,origin).href}))}}:{}),
+ ...(pageType==='Article'?{headline:title,author:{'@id':organizationId},publisher:{'@id':organizationId},mainEntityOfPage:new URL(path,origin).href,isPartOf:{'@type':'CollectionPage',url:new URL(article?.collectionUrl??'/about/news/',origin).href},...(article?{temporalCoverage:article.eventMonth,articleSection:article.section,...(article.citations?.length?{citation:article.citations}:{}),...(article.images?.length?{image:article.images.map(src=>new URL(src,origin).href)}:{})}:{})}:{})},
+ {'@type':'BreadcrumbList',itemListElement:breadcrumbs.map((item,index)=>({'@type':'ListItem',position:index+1,name:item.name,item:new URL(item.url,origin).href}))}
+]};
+---
+<Base {title} {description} {image} socialType={pageType==='Article'?'article':'website'}>
+ <div class:list={['tc-site','tc-site--refined',`tc-site--${group}`]} data-route={path}>
+  {path!=='/about/'&&group!=='contact'&&<div class="tc-wrap tc-breadcrumb"><nav aria-label="Breadcrumb">{breadcrumbs.map((item,index)=><>{index>0&&<span aria-hidden="true">/</span>}{index===breadcrumbs.length-1?<span aria-current="page">{item.name}</span>:<a href={item.url}>{item.name}</a>}</>)}</nav></div>}
+  <slot/>
+ </div>
+ <script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+</Base>

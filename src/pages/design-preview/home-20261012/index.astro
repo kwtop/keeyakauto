@@ -1,0 +1,6 @@
+---
+import explorer from '../../../../design-exploration/homepage-20261012/style-explorer.html?raw';
+if (!import.meta.env.DEV) return new Response(null, {status:404});
+const html = explorer.replace('<head>', '<head><meta name="robots" content="noindex,nofollow">');
+---
+<Fragment set:html={html} />

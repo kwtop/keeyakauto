@@ -1,0 +1,98 @@
+---
+import {guideImageAlt, guideImageRoot, type GuideEditorial, type GuideLink} from '../../data/guideEditorial';
+import LandedCostCalculator from './LandedCostCalculator.astro';
+import '../../styles/procurement-guide.css';
+
+interface Props { guide: GuideEditorial; back: GuideLink; inquiry: string; country?: string; firstId?: string; }
+const {guide, back, inquiry, country, firstId} = Astro.props;
+const image = guideImageRoot + guide.image;
+const sources = guide.sources ?? [];
+const sourceIndex = new Map(sources.map((source, index) => [source.id, index + 1]));
+const reviewed = new Intl.DateTimeFormat('en', {dateStyle: 'long', timeZone: 'UTC'}).format(new Date(guide.reviewed));
+const sectionId = (index: number) => index === 0 && firstId ? firstId : `section-${index + 1}`;
+---
+<article class="tc-wrap procurement-guide">
+  <header class="procurement-guide-header">
+    <div class="procurement-guide-intro">
+      <h1>{guide.title}</h1>
+      <p>{guide.answer}</p>
+      {sources.length > 0 && <p class="procurement-guide-meta">
+        <a href="#sources">Sources</a><span aria-hidden="true">·</span>
+        <span>Reviewed <time datetime={guide.reviewed}>{reviewed}</time></span>
+      </p>}
+    </div>
+    <figure class="procurement-guide-cover">
+      <img src={image + '-960.webp'} srcset={`${image}-640.webp 640w, ${image}-960.webp 960w, ${image}-1440.webp 1440w`}
+        sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1440px) 46vw, 640px"
+        alt={guideImageAlt[guide.image]} width="1440" height="960" decoding="async" fetchpriority="high" data-asset-kind="illustration" data-sitemap-image={image + '-1440.webp'}/>
+    </figure>
+  </header>
+  <div class="procurement-guide-copy">
+      {guide.sections.map((section, index) => (
+        <section id={sectionId(index)} aria-labelledby={`section-heading-${index + 1}`}>
+          <h2 id={`section-heading-${index + 1}`}>{section.heading}</h2>
+          {section.paragraphs?.map(paragraph => <p>{paragraph}</p>)}
+          {section.table && (
+            <div class="procurement-table">
+              <table>
+                <caption>{section.table.caption}</caption>
+                <thead><tr>{section.table.headers.map(header => <th scope="col">{header}</th>)}</tr></thead>
+                <tbody>{section.table.rows.map(([label, ...cells]) =>
+                  <tr><th scope="row">{label}</th>{cells.map((cell, cellIndex) => <td data-label={section.table?.headers[cellIndex + 1]}>{cell}</td>)}</tr>
+                )}</tbody>
+              </table>
+            </div>
+          )}
+          {section.items?.length && <ul>{section.items.map(item => <li>{item}</li>)}</ul>}
+          {section.questions?.length && <div class="procurement-guide-questions">
+            {section.questions.map(question => <div><h3>{question.question}</h3><p>{question.answer}</p></div>)}
+          </div>}
+          {section.calculator && <LandedCostCalculator/>}
+          {section.template && <div class="procurement-guide-template">
+            <pre id="guide-rfq-template">{section.template}</pre>
+            <button type="button" class="tc-text-link" data-copy-guide-template hidden>Copy RFQ template</button>
+            <span role="status" data-copy-guide-status></span>
+          </div>}
+          {section.sources?.length && <p class="procurement-guide-references">Source{section.sources.length > 1 && 's'} {section.sources.map((id, sourcePosition) => (
+            <>{sourcePosition > 0 && ', '}<a href={`#source-${id}`}>{sourceIndex.get(id)}</a></>
+          ))}</p>}
+          {section.links?.length && <div class="procurement-guide-section-links">
+            {section.links.map(link => <a href={link.href}>{link.label}</a>)}
+          </div>}
+        </section>
+      ))}
+      {sources.length > 0 && <section id="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">Sources</h2>
+        <ol class="procurement-guide-sources">{sources.map(source =>
+          <li id={`source-${source.id}`}><a href={source.href}>{source.label}</a></li>
+        )}</ol>
+      </section>}
+  </div>
+  <section class="procurement-guide-next" aria-labelledby="procurement-next-title">
+    <div>
+      <h2 id="procurement-next-title">{country ? `Discuss a vehicle order for ${country}` : 'Discuss your vehicle order'}</h2>
+      <p>Share the model, quantity and destination so we can discuss sourcing and delivery options.</p>
+    </div>
+    <a class="tc-button" href={inquiry}>Start an inquiry</a>
+  </section>
+  <nav class="procurement-guide-related" aria-label="Related guides and vehicles">
+    {guide.links.map(link => <a class="tc-text-link" href={link.href}>{link.label}</a>)}
+    <a class="tc-text-link" href={back.href}>{back.label}</a>
+  </nav>
+</article>
+<script>
+  const template = document.getElementById('guide-rfq-template');
+  const copy = document.querySelector<HTMLButtonElement>('[data-copy-guide-template]');
+  const status = document.querySelector<HTMLElement>('[data-copy-guide-status]');
+  if (template && copy && status && navigator.clipboard) {
+    copy.hidden = false;
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(template.textContent ?? '');
+        status.textContent = 'Template copied.';
+      } catch {
+        status.textContent = 'Select the text to copy it.';
+      }
+    });
+  }
+</script>

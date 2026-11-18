@@ -1,0 +1,329 @@
+/* Autohaus inner-page refinement: scoped to the trust-page family. */
+body.inner-autohaus #main .tc-site.tc-site--refined{
+ --tc-ink:#212121;--tc-muted:#606060;--tc-paper:#f5f5f4;--tc-line:#e4e4e0;
+ --tc-section-space:88px;--tc-column-gap:72px;
+ --tc-photo-radius:20px;--tc-photo-frame:5px;
+ --tc-closing-gap:clamp(40px,5vw,72px);
+ --tc-photo-shadow:0 2px 5px #21212105,0 12px 32px #2121210c;
+ --tc-control-shadow:0 1px 2px #21212110,0 4px 9px #2121210d,0 12px 22px #21212108;
+}
+body.inner-autohaus #main .tc-site--refined :is(h1,h2,h3){text-wrap:balance;letter-spacing:-.035em}
+body.inner-autohaus #main .tc-site--refined :is(p,dd,li){text-wrap:pretty}
+body.inner-autohaus #main .tc-site--refined :is(time,input,.tc-register,.tc-opening-tasks,.tc-journey){font-variant-numeric:tabular-nums}
+body.inner-autohaus #main .tc-site--refined .tc-wrap{width:min(1320px,calc(100% - 96px))}
+body.inner-autohaus #main .tc-site--refined .tc-opening{padding-block:40px 56px}
+body.inner-autohaus #main .tc-site--refined .tc-opening-layout{gap:52px}
+body.inner-autohaus #main .tc-site--refined .tc-opening-copy{gap:20px;max-width:940px}
+body.inner-autohaus #main .tc-site--refined .tc-opening h1{max-width:22ch;line-height:1.1}
+body.inner-autohaus #main .tc-site--refined .tc-opening-intro{max-width:660px}
+body.inner-autohaus #main .tc-site--refined .tc-opening-intro p{font-size:clamp(16px,1.3vw,18px);line-height:var(--reading-leading)}
+body.inner-autohaus #main .tc-site--refined .tc-opening .tc-links{margin-top:26px}
+body.inner-autohaus #main .tc-site--refined .tc-button{
+ min-height:52px;padding:14px 25px;border:0;border-radius:999px;background:#212121;color:#fff;
+ box-shadow:var(--tc-control-shadow);transition:background-color 180ms ease,box-shadow 180ms ease;
+}
+body.inner-autohaus #main .tc-site--refined .tc-button:hover{background:#393939;box-shadow:0 3px 6px #21212112,0 8px 18px #21212112}
+body.inner-autohaus #main .tc-site--refined .tc-figure .tc-image-link{
+ padding:var(--tc-photo-frame);border-radius:calc(var(--tc-photo-radius) + var(--tc-photo-frame));
+ background:#fff;box-shadow:var(--tc-photo-shadow);overflow:hidden;
+}
+body.inner-autohaus #main .tc-site--refined .tc-figure img{border-radius:var(--tc-photo-radius)}
+body.inner-autohaus #main .tc-site--refined .tc-opening-layout>.tc-figure img{
+ aspect-ratio:2.15/1;object-fit:cover;object-position:center 55%;
+}
+body.inner-autohaus #main .tc-site--refined .tc-service-introduction{
+ max-width:1080px;gap:64px;padding-block:10px 16px;
+}
+body.inner-autohaus #main .tc-site--refined .tc-service-introduction p{font-size:17px;line-height:1.85}
+body.inner-autohaus #main .tc-site--refined .tc-block{padding-block:var(--tc-section-space)}
+body.inner-autohaus #main .tc-site--refined .tc-block-heading h2{line-height:1.16;max-width:24ch}
+body.inner-autohaus #main .tc-site--refined .tc-intro{max-width:64ch}
+body.inner-autohaus #main .tc-site--refined .tc-block--wide-module .tc-block-grid{gap:52px}
+body.inner-autohaus #main .tc-site--refined .tc-block--wide-module .tc-block-heading{max-width:800px}
+body.inner-autohaus #main .tc-site--refined .tc-block--wide-module .tc-block-heading>.tc-intro{max-width:660px;margin-top:20px!important}
+body.inner-autohaus #main .tc-site--refined .tc-block--information:not(.tc-block--wide-module) .tc-block-grid{
+ grid-template-columns:minmax(0,.85fr) minmax(0,1.3fr);gap:72px;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-grid{
+ grid-template-columns:repeat(2,minmax(0,1fr));column-gap:72px;row-gap:28px;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--has-visual .tc-block-visual{position:static;align-self:center}
+body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-visual .tc-figure img{
+ aspect-ratio:4/3;object-fit:cover;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--has-visual .tc-block-visual .tc-figure--natural img{aspect-ratio:auto;object-fit:contain}
+
+/* Records sit beside their image, so the document itself remains the focus. */
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-grid,
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature.tc-block--reverse:is(.tc-block--records,.tc-block--report) .tc-block-grid{
+ grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);
+ grid-template-areas:"heading heading" "content visual";gap:40px 64px;align-items:start;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-heading{
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-intro{margin-top:0!important}
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-visual{align-self:start}
+body.inner-autohaus #main .tc-site--refined .tc-register{border-color:var(--tc-line)}
+body.inner-autohaus #main .tc-site--refined .tc-register li{padding-block:24px;gap:24px}
+body.inner-autohaus #main .tc-site--refined .tc-register[data-columns="3"]{--tc-record-columns:1fr 1.6fr .8fr}
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature .tc-register[data-columns="3"] .tc-register-header{display:none}
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature .tc-register[data-columns="3"] li{
+ grid-template-columns:minmax(0,.85fr) minmax(0,1.3fr);gap:8px 24px;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--image-feature .tc-register[data-columns="3"] .tc-register-owner{grid-column:2}
+body.inner-autohaus #main .tc-site--refined .tc-register h3 svg{display:none}
+body.inner-autohaus #main .tc-site--refined .tc-register-header{font-size:13px}
+
+/* Actual sequences use a stable numbered reading grid, without repeated scene photos. */
+body.inner-autohaus #main .tc-site--refined .tc-block--steps .tc-journey,
+body.inner-autohaus #main .tc-site--refined .tc-block--steps .tc-journey[data-count="4"]{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 48px;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--steps .tc-journey[data-count="4"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+body.inner-autohaus #main .tc-site--refined .tc-journey li{padding-top:24px;border-color:var(--tc-line)}
+body.inner-autohaus #main .tc-site--refined .tc-journey-marker{margin-bottom:22px}
+body.inner-autohaus #main .tc-site--refined .tc-journey-marker>span{font-size:22px;line-height:1.2;letter-spacing:-.03em;color:#70706c}
+body.inner-autohaus #main .tc-site--refined .tc-journey-marker>svg{display:none}
+body.inner-autohaus #main .tc-site--refined .tc-step-output{margin-top:20px!important;border:0;padding-top:0}
+body.inner-autohaus #main .tc-site--refined .tc-step-output dt{font-size:12px;line-height:1.6;color:var(--tc-muted)}
+body.inner-autohaus #main .tc-site--refined .tc-step-output dd{margin-top:6px;font-size:14px;line-height:1.7}
+body.inner-autohaus #main .tc-site--refined .tc-comparison{gap:40px}
+body.inner-autohaus #main .tc-site--refined .tc-brief{gap:36px 48px}
+body.inner-autohaus #main .tc-site--refined .tc-brief>div{border-color:var(--tc-line)}
+
+/* The four services explain the work first; deliverables open on demand. */
+body.inner-autohaus #main .tc-site--refined .tc-deliverables{gap:56px 40px}
+body.inner-autohaus #main .tc-site--refined .tc-deliverable>.tc-figure{margin-bottom:26px}
+body.inner-autohaus #main .tc-site--refined .tc-deliverable .tc-figure img{aspect-ratio:3/2;object-fit:cover}
+body.inner-autohaus #main .tc-site--refined .tc-deliverable-heading{gap:14px;margin-bottom:14px}
+body.inner-autohaus #main .tc-site--refined .tc-deliverable-heading>svg{display:none}
+body.inner-autohaus #main .tc-site--refined .tc-deliverable-heading h3{font-size:28px;line-height:1.25}
+body.inner-autohaus #main .tc-site--refined .tc-deliverable-description{max-width:58ch}
+body.inner-autohaus #main .tc-site--refined .tc-service-output{margin-top:20px}
+body.inner-autohaus #main .tc-site--refined .tc-service-output summary{
+ display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:44px;
+ color:#212121;font-size:15px;cursor:pointer;list-style:none;
+}
+body.inner-autohaus #main .tc-site--refined .tc-service-output summary::-webkit-details-marker{display:none}
+body.inner-autohaus #main .tc-site--refined .tc-service-output summary svg{flex-shrink:0;transition:transform 180ms ease}
+body.inner-autohaus #main .tc-site--refined .tc-service-output[open] summary svg{transform:rotate(180deg)}
+body.inner-autohaus #main .tc-site--refined .tc-service-output p{padding:8px 0 18px;font-size:15px}
+body.inner-autohaus #main .tc-site--refined .tc-deliverable>.tc-text-link{margin-top:12px;min-height:56px}
+
+/* Company records remain original. The opening is a shallow photographic sequence. */
+body.inner-autohaus #main .tc-site--refined .tc-company-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;width:100%}
+body.inner-autohaus #main .tc-site--refined .tc-company-gallery>div{min-width:0}
+body.inner-autohaus #main .tc-site--refined .tc-company-gallery:focus-visible{outline:2px solid #967000;outline-offset:6px;border-radius:8px}
+body.inner-autohaus #main .tc-site--refined .tc-company-gallery img{aspect-ratio:4/3;object-fit:cover}
+body.inner-autohaus #main .tc-site--refined .tc-company-photo-label{font-size:13px;margin-top:14px;text-align:left}
+body.inner-autohaus #main .tc-site--refined .tc-opening-tasks{
+ display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;width:100%;max-width:none;margin:40px auto 0;padding:28px 0;border:0;
+}
+body.inner-autohaus #main .tc-site--refined .tc-opening-tasks>div+div{padding-left:28px;border-left:1px solid var(--tc-line)}
+body.inner-autohaus #main .tc-site--refined .tc-opening-tasks dt{font-size:13px}
+body.inner-autohaus #main .tc-site--refined .tc-opening-tasks dd{font-size:16px;line-height:1.65}
+body.inner-autohaus #main .tc-site--refined #company-services .tc-module-grid{gap:40px}
+body.inner-autohaus #main .tc-site--refined #company-services .tc-module-meta{display:none}
+body.inner-autohaus #main .tc-site--refined #company-services .tc-module-item:nth-child(2){flex-direction:column-reverse}
+body.inner-autohaus #main .tc-site--refined #company-services .tc-module-item:nth-child(2) .tc-module-item-copy{padding-top:0;padding-bottom:28px}
+body.inner-autohaus #main .tc-site--refined #company-services .tc-module-item-copy h3{font-size:27px}
+body.inner-autohaus #main .tc-site--refined #company-documents{background:var(--tc-paper);border:0}
+body.inner-autohaus #main .tc-site--refined .tc-proof{padding:12px;border:0;border-radius:25px;box-shadow:var(--tc-photo-shadow)}
+body.inner-autohaus #main .tc-site--refined .tc-proof img{border-radius:13px}
+body.inner-autohaus #main .tc-site--refined .tc-block--gallery .tc-block-heading{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;text-align:left;max-width:none;
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--gallery .tc-block-heading h2{margin-left:0}
+body.inner-autohaus #main .tc-site--refined .tc-block--gallery .tc-block-heading>.tc-intro{margin-top:0!important}
+body.inner-autohaus #main .tc-site--refined .tc-module-grid--gallery{gap:56px}
+body.inner-autohaus #main .tc-site--refined .tc-module-grid--gallery>.tc-module-item:nth-child(2){padding-top:96px}
+body.inner-autohaus #main .tc-site--refined .tc-module-grid--gallery .tc-module-item-copy h3{font-size:28px}
+body.inner-autohaus #main .tc-site--refined #team{padding-top:40px}
+body.inner-autohaus #main .tc-site--refined .tc-office-record{border:0;padding-left:0}
+
+/* Contact starts with action and channels; the office photo belongs with visiting. */
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening{padding-bottom:32px}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-layout{display:block}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-copy{
+ display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:100px;max-width:none;align-items:center;text-align:left;
+}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening h1{max-width:13ch;margin:0}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-intro{margin:24px 0 28px;max-width:48ch}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-intro p{font-size:17px}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-intro p+p{margin-top:6px!important}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-contact-channels{grid-template-columns:minmax(0,1fr);justify-content:stretch;justify-items:stretch;gap:20px;margin-top:0}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-contact-channel{
+ min-height:108px;padding:24px;border:0;border-radius:16px;background:#fff;box-shadow:var(--tc-photo-shadow);gap:18px;
+}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-contact-channel strong{font-size:clamp(18px,1.8vw,24px);letter-spacing:-.02em}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-channel-name{font-size:13px}
+body.inner-autohaus #main .tc-site--refined .tc-contact-phone{display:flex;align-items:center;gap:12px;min-height:48px;margin-top:18px;font-size:14px;text-decoration:none}
+body.inner-autohaus #main .tc-site--refined .tc-contact-phone:hover{text-decoration:underline}
+body.inner-autohaus #main .tc-site--refined .tc-contact-phone>svg:last-child{margin-left:auto}
+body.inner-autohaus #main .tc-site--refined .tc-module-grid--contact-options{gap:40px}
+body.inner-autohaus #main .tc-site--refined .tc-module-grid--contact-options .tc-module-icon{border:0;padding-top:0}
+body.inner-autohaus #main .tc-site--refined .tc-module-grid--contact-options .tc-module-item-copy h3{font-size:27px}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact #office{background:var(--tc-paper)}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact #office .tc-block-grid{align-items:start}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact #office .tc-office-address address{font-size:23px}
+body.inner-autohaus #main .tc-site--refined.tc-site--contact #office .tc-office-record dl{grid-template-columns:1fr;gap:24px}
+
+/* FAQ images support topic recognition, leaving questions in the primary reading path. */
+body.inner-autohaus #main .tc-site--refined .tc-faq-grid{grid-template-columns:minmax(0,.75fr) minmax(0,1.45fr);gap:80px}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:0 32px}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group>h3{grid-column:1;font-size:26px}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-faq-group-intro{grid-column:1;font-size:15px;margin:12px 0 24px}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-figure{grid-column:2;grid-row:1/3;margin:0 0 28px}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-figure img{aspect-ratio:3/2;object-fit:cover}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-figure .tc-image-link{--tc-photo-radius:12px;--tc-photo-frame:4px}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-questions,
+body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-text-link{grid-column:1/-1}
+body.inner-autohaus #main .tc-site--refined .tc-faq-group+.tc-faq-group{margin-top:72px}
+body.inner-autohaus #main .tc-site--refined .tc-search>div{border:0;box-shadow:inset 0 0 0 1px #2121210d}
+body.inner-autohaus #main .tc-site--refined .tc-questions summary{font-size:17px;line-height:1.6;min-height:76px;padding-block:22px}
+
+/* News keeps dated, original photography and a quiet reading width. */
+body.inner-autohaus #main .tc-site--refined .tc-news-heading{padding-block:40px 48px}
+body.inner-autohaus #main .tc-site--refined .tc-news-controls{margin-top:40px;gap:24px}
+body.inner-autohaus #main .tc-site--refined .tc-news-filters{padding:5px;border-radius:999px}
+body.inner-autohaus #main .tc-site--refined .tc-news-filters button{border-radius:999px}
+body.inner-autohaus #main .tc-site--refined .tc-story-feature{gap:64px}
+body.inner-autohaus #main .tc-site--refined .tc-story-feature h2{font-size:38px;line-height:1.2}
+body.inner-autohaus #main .tc-site--refined .tc-news-app .tc-story-grid{gap:64px 48px}
+body.inner-autohaus #main .tc-site--refined .tc-news-app .tc-story-card .tc-figure img{aspect-ratio:4/3;object-fit:cover;background:#f5f5f4}
+body.inner-autohaus #main .tc-site--refined .tc-story-card-copy h3{font-size:28px;line-height:1.25}
+body.inner-autohaus #main .tc-site--refined .tc-news-cover-pair .tc-image-link{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:minmax(0,1fr);gap:5px;aspect-ratio:4/3}
+body.inner-autohaus #main .tc-site--refined .tc-news-app .tc-story-card .tc-news-cover-pair img{width:100%;height:100%;min-height:0;aspect-ratio:auto;object-fit:cover;background:#f5f5f4}
+body.inner-autohaus #main .tc-site--refined .tc-event-lead{padding-block:40px 56px;gap:48px}
+body.inner-autohaus #main .tc-site--refined .tc-event-heading h1{font-size:clamp(40px,4.7vw,64px);line-height:1.12}
+body.inner-autohaus #main .tc-site--refined .tc-event-context{max-width:680px;margin-inline:auto;text-align:left}
+body.inner-autohaus #main .tc-site--refined .tc-story-copy{max-width:740px}
+body.inner-autohaus #main .tc-site--refined .tc-story-section+.tc-story-section{margin-top:56px}
+body.inner-autohaus #main .tc-site--refined .tc-related-records{padding-block:64px;border:0;background:var(--tc-paper)}
+body.inner-autohaus #main .tc-site--refined .tc-story-grid--related{gap:40px}
+body.inner-autohaus #main .tc-site--refined .tc-story-grid--related .tc-figure img{aspect-ratio:4/3;object-fit:cover;object-position:50% 30%}
+
+/* The last section puts the brief beside a single next step. */
+body.inner-autohaus #main .tc-site--refined .tc-block--closing{margin-top:40px}
+body.inner-autohaus #main .tc-site--refined :is(.tc-block--closing,.contact-message) {
+ background:transparent;
+ padding-block:0 var(--tc-closing-gap);
+}
+body.inner-autohaus #main .tc-site--refined :is(.tc-block--closing,.contact-message) > .tc-wrap {
+ background:var(--tc-paper);
+ border-radius:clamp(20px,2.5vw,32px);
+ padding:clamp(24px,4.5vw,64px) clamp(20px,3.5vw,48px);
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-areas:"heading content";gap:80px;align-items:center}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-heading{max-width:none;text-align:left}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing :is(h2,.tc-intro){margin-left:0;max-width:24ch}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing h2{font-size:42px}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-intro{max-width:48ch}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-links{justify-content:flex-start}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-block-content{width:auto;justify-self:end}
+body.inner-autohaus #main .tc-site--refined .tc-inquiry{gap:20px}
+body.inner-autohaus #main .tc-site--refined .tc-inquiry :is(input,select){min-height:52px;border:0;border-radius:10px;box-shadow:inset 0 0 0 1px #21212112}
+body.inner-autohaus #main .tc-site--refined .tc-inquiry button{justify-self:start;margin-top:4px}
+body.inner-autohaus #main .tc-site--refined .tc-source-note{margin-top:24px;padding-block:24px}
+
+/* A small, single opening sequence; the rest of the reading stays still. */
+@media(prefers-reduced-motion:no-preference){
+ .tc-site--refined .tc-opening-copy>div:first-child{animation:tc-opening-settle 520ms cubic-bezier(.16,1,.3,1) both}
+ .tc-site--refined .tc-opening-copy>div:last-child{animation:tc-opening-settle 520ms 70ms cubic-bezier(.16,1,.3,1) both}
+ .tc-site--refined .tc-opening-layout>:is(.tc-figure,.tc-company-gallery){animation:tc-opening-settle 620ms 140ms cubic-bezier(.16,1,.3,1) both}
+}
+@keyframes tc-opening-settle{from{opacity:.72;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1199px){
+ body.inner-autohaus #main .tc-site.tc-site--refined{--tc-section-space:72px;--tc-column-gap:40px}
+ body.inner-autohaus #main .tc-site--refined .tc-wrap{width:calc(100% - 64px)}
+ body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-grid{column-gap:40px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-grid{gap:32px 40px;grid-template-columns:1.2fr 1fr}
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-heading{gap:40px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--steps .tc-journey{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--information:not(.tc-block--wide-module) .tc-block-grid{gap:40px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-grid{gap:40px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group{grid-template-columns:minmax(0,1fr) 128px;gap:0 24px}
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-copy{gap:48px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-grid{gap:48px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--closing h2{font-size:36px}
+ body.inner-autohaus #main .tc-site--refined #company-services .tc-module-grid{gap:24px}
+ body.inner-autohaus #main .tc-site--refined .tc-story-feature{gap:40px}
+}
+@media(max-width:809px){
+ body.inner-autohaus #main .tc-site.tc-site--refined{--tc-section-space:56px;--tc-photo-radius:16px}
+ body.inner-autohaus #main .tc-site--refined .tc-wrap{width:calc(100% - 40px)}
+ body.inner-autohaus #main .tc-site--refined .tc-opening{padding-block:28px 40px}
+ body.inner-autohaus #main .tc-site--refined .tc-opening-layout{gap:32px}
+ body.inner-autohaus #main .tc-site--refined .tc-opening-copy{gap:18px}
+ body.inner-autohaus #main .tc-site--refined .tc-opening h1{max-width:20ch}
+ body.inner-autohaus #main .tc-site--refined .tc-opening-intro p{font-size:17px;line-height:1.75}
+ body.inner-autohaus #main .tc-site--refined .tc-opening .tc-links{margin-top:22px;gap:12px 20px}
+ body.inner-autohaus #main .tc-site--refined .tc-opening-layout>.tc-figure img{aspect-ratio:3/2;object-fit:cover}
+ body.inner-autohaus #main .tc-site--refined .tc-service-introduction{display:grid;grid-template-columns:1fr;gap:20px;padding-block:0}
+ body.inner-autohaus #main .tc-site--refined .tc-service-introduction p{font-size:16px;line-height:1.8}
+ body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-grid,
+ body.inner-autohaus #main .tc-site--refined .tc-block--has-visual.tc-block--reverse:not(.tc-block--proof) .tc-block-grid,
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-grid,
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature.tc-block--reverse:is(.tc-block--records,.tc-block--report) .tc-block-grid{
+  grid-template-columns:1fr;grid-template-areas:"heading" "visual" "content";gap:28px;
+ }
+ body.inner-autohaus #main .tc-site--refined .tc-block--information:not(.tc-block--wide-module) .tc-block-grid,
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-heading,
+ body.inner-autohaus #main .tc-site--refined .tc-block--gallery .tc-block-heading{grid-template-columns:1fr;gap:20px;text-align:left}
+ body.inner-autohaus #main .tc-site--refined .tc-block--information:not(.tc-block--wide-module) .tc-block-grid{grid-template-areas:"heading" "content";gap:28px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature:is(.tc-block--records,.tc-block--report) .tc-block-heading>.tc-intro{margin-top:0!important}
+ body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-visual .tc-figure img{aspect-ratio:3/2;object-fit:cover;object-position:50% 38%}
+ body.inner-autohaus #main .tc-site--refined .tc-block--wide-module .tc-block-grid{gap:36px}
+ body.inner-autohaus #main .tc-site--refined .tc-company-gallery{display:flex;overflow-x:auto;scroll-snap-type:x proximity;gap:20px;padding:4px 4px 16px}
+ body.inner-autohaus #main .tc-site--refined .tc-company-gallery>div{flex:0 0 88%;scroll-snap-align:start}
+ body.inner-autohaus #main .tc-site--refined .tc-company-photo-label{font-size:13px;margin-top:12px}
+ body.inner-autohaus #main .tc-site--refined .tc-opening-tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px;padding:20px 0}
+ body.inner-autohaus #main .tc-site--refined .tc-opening-tasks>div+div{padding-left:0;border-left:0}
+ body.inner-autohaus #main .tc-site--refined #company-services .tc-module-item:nth-child(2){flex-direction:column}
+ body.inner-autohaus #main .tc-site--refined #company-services .tc-module-item:nth-child(2) .tc-module-item-copy{padding-top:24px;padding-bottom:0}
+ body.inner-autohaus #main .tc-site--refined .tc-module-grid--gallery{gap:36px}
+ body.inner-autohaus #main .tc-site--refined .tc-module-grid--gallery>.tc-module-item:nth-child(2){padding-top:0}
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-copy{grid-template-columns:1fr;gap:36px;align-items:start}
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening h1{max-width:15ch}
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-opening-intro{margin-block:20px 26px}
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-contact-channel{min-height:96px;padding:20px}
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-contact-channel strong{font-size:22px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-grid{grid-template-columns:1fr;gap:32px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group{grid-template-columns:minmax(0,1fr) 140px;gap:0 24px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group>h3{font-size:25px}
+ body.inner-autohaus #main .tc-site--refined .tc-news-app .tc-story-grid{gap:44px 28px}
+ body.inner-autohaus #main .tc-site--refined .tc-story-feature{grid-template-columns:1fr;gap:28px}
+ body.inner-autohaus #main .tc-site--refined .tc-story-feature h2{font-size:32px}
+ body.inner-autohaus #main .tc-site--refined .tc-story-card-copy h3{font-size:25px}
+ body.inner-autohaus #main .tc-site--refined .tc-event-heading h1{font-size:40px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--closing{margin-top:24px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-grid{grid-template-columns:1fr;grid-template-areas:"heading" "content";gap:32px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--closing h2{font-size:36px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-block-content{justify-self:start}
+}
+@media(max-width:599px){
+ body.inner-autohaus #main .tc-site--refined .tc-deliverables,
+ body.inner-autohaus #main .tc-site--refined .tc-module-grid--services,
+ body.inner-autohaus #main .tc-site--refined #company-services .tc-module-grid,
+ body.inner-autohaus #main .tc-site--refined .tc-module-grid--gallery,
+ body.inner-autohaus #main .tc-site--refined .tc-news-app .tc-story-grid,
+ body.inner-autohaus #main .tc-site--refined .tc-block--steps .tc-journey,
+ body.inner-autohaus #main .tc-site--refined .tc-block--steps .tc-journey[data-count="4"]{grid-template-columns:1fr;gap:36px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group{grid-template-columns:minmax(0,1fr) 100px;gap:0 18px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-figure{align-self:start}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group>.tc-figure img{aspect-ratio:1/1;object-fit:cover}
+ body.inner-autohaus #main .tc-site--refined .tc-questions summary{font-size:16px;min-height:72px}
+ body.inner-autohaus #main .tc-site--refined .tc-register li{gap:10px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature .tc-register[data-columns="3"] li{grid-template-columns:1fr;gap:10px}
+ body.inner-autohaus #main .tc-site--refined .tc-block--image-feature .tc-register[data-columns="3"] .tc-register-owner{grid-column:1}
+ body.inner-autohaus #main .tc-site--refined .tc-deliverable-heading h3{font-size:27px}
+ body.inner-autohaus #main .tc-site--refined .tc-story-grid--related .tc-story-card{grid-template-columns:100px minmax(0,1fr);gap:20px}
+}
+@media(max-width:359px){
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-contact-channel{padding:16px;gap:12px}
+ body.inner-autohaus #main .tc-site--refined.tc-site--contact .tc-contact-channel strong{font-size:19px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group{grid-template-columns:minmax(0,1fr) 84px;gap:0 16px}
+ body.inner-autohaus #main .tc-site--refined .tc-faq-group>h3{font-size:23px}
+}
+@media(prefers-reduced-motion:reduce){.tc-site--refined *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

@@ -1,0 +1,7 @@
+---
+import CatalogPage from '../../../components/CatalogPage.astro';
+import {vehicles} from '../../../data/catalog';
+export function getStaticPaths(){const count=Math.ceil(vehicles.filter(v=>v.kind==='used').length/12);return Array.from({length:Math.max(0,count-1)},(_,i)=>({params:{page:String(i+2)},props:{page:i+2}}));}
+const {page}=Astro.props;
+---
+<CatalogPage kind="used" page={page}/>

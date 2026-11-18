@@ -1,0 +1,51 @@
+---
+import TrustLayout from '../../../layouts/TrustLayout.astro';
+import TrustModuleContent from '../../../components/trust/TrustModuleContent.astro';
+import TrustIcon from '../../../components/trust/TrustIcon.astro';
+import GuideEditorial from '../../../components/trust/GuideEditorial.astro';
+import {trustMedia} from '../../../data/trustMedia';
+import {exportIllustrations} from '../../../data/exportIllustrations';
+import {buyingGuideArticles, buyingGuideInquiry, buyingGuidePath, guideEntryHref} from '../../../data/buyingGuideLibrary';
+import {guideImageRoot} from '../../../data/guideEditorial';
+import '../../../styles/buying-guide-library.css';
+
+export function getStaticPaths() {
+  return buyingGuideArticles.map(entry => ({params: {article: entry.slug}, props: {entry}}));
+}
+
+interface Props { entry: typeof buyingGuideArticles[number]; }
+const {entry} = Astro.props;
+const {title, description, block, category, editorial} = entry;
+const related = category.entries.filter(item => item.slug !== entry.slug);
+const illustration = block ? exportIllustrations['buying-guide']?.[block.id]?.image ?? block.image : undefined;
+const image = editorial ? guideImageRoot + editorial.image + '-1440.webp' : trustMedia(illustration ?? 'buying-guide-multibrand').src;
+const article = {section: category.name, collectionUrl: buyingGuidePath, subject:{'@type':'Thing' as const,name:title}, citations: editorial?.sources?.map(source => source.href)};
+---
+<TrustLayout {title} {description} label={title} group="export" pageType="Article" modified={editorial?.reviewed ?? '2026-11-04'} {image}
+  parents={[{name: 'Buying Guide', url: buyingGuidePath}]} {article}>
+  {editorial ? <GuideEditorial guide={editorial} back={{label:'Back to Buying Guide',href:buyingGuidePath}} inquiry={buyingGuideInquiry} firstId={block?.id}/>
+  : block && <article class="tc-wrap guide-article">
+    <header class="guide-article-heading">
+      <h1>{title}</h1>
+      <p>{block.body}</p>
+    </header>
+    <section id={block.id} class="guide-article-body" aria-labelledby="guide-article-section-title">
+      <h2 id="guide-article-section-title">{block.title}</h2>
+      <TrustModuleContent {block}/>
+      {block.paragraphs?.map(paragraph => <p class="guide-article-paragraph">{paragraph}</p>)}
+      {block.takeaway && <aside class="tc-takeaway">
+        <TrustIcon name="shield" size={22}/>
+        <div><h3>{block.takeaway.title}</h3><p>{block.takeaway.body}</p></div>
+      </aside>}
+      {block.links?.length && <div class="guide-article-links">
+        {block.links.map(link => <a class="tc-text-link" href={link.href}>{link.label}</a>)}
+      </div>}
+    </section>
+    <nav class="guide-related" aria-label={'More on ' + category.name.toLowerCase()}>
+      <h2>Related guides</h2>
+      <ul>{related.map(item => <li><a href={guideEntryHref(item)}>{item.title}</a></li>)}</ul>
+      <a class="tc-text-link" href={buyingGuidePath + '#' + category.id}>Back to Buying Guide</a>
+    </nav>
+    <a class="tc-button" href={buyingGuideInquiry}>Discuss a purchase</a>
+  </article>}
+</TrustLayout>

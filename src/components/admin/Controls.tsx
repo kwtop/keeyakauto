@@ -1,0 +1,31 @@
+import {useEffect,useRef,useState,type ReactNode} from 'react';
+import {CalendarDays,ChevronLeft,ChevronRight,Inbox,RefreshCw,SlidersHorizontal,X} from 'lucide-react';
+import {activeDatePreset,datePresets,presetDates} from '../../data/adminDates';
+import {countryName,known,productName,type Filters,type Options} from './api';
+export function Empty({text='暂无数据'}:{text?:string}){return <div className="adm-empty"><Inbox size={32} strokeWidth={1.4}/><strong>{text}</strong></div>;}
+export function Pagination({total,page,size,onPage}:{total:number;page:number;size:number;onPage:(n:number)=>void}){
+ const pages=Math.max(1,Math.ceil(total/size));return <div className="adm-pagination"><span>共 {total.toLocaleString()} 条{total>0&&` · 第 ${page} / ${pages} 页`}</span><div><button aria-label="上一页" disabled={page<=1} onClick={()=>onPage(page-1)}><ChevronLeft size={17}/></button><button aria-label="下一页" disabled={page>=pages} onClick={()=>onPage(page+1)}><ChevronRight size={17}/></button></div></div>;
+}
+export function SelectFilter({label,value,onChange,values,display=known}:{label:string;value:string;onChange:(s:string)=>void;values:string[];display?:(s:string)=>string}){
+ return <label className="adm-field"><span>{label}</span><select aria-label={label} value={value} onChange={e=>onChange(e.target.value)}><option value="">全部</option>{[...new Set([...values,...(value?[value]:[])])].map(v=><option key={v} value={v}>{display(v)}</option>)}</select></label>;
+}
+export function DateToolbar({value,onApply,onRefresh,busy=false}:{value:Filters;onApply:(v:Filters)=>void;onRefresh:()=>void;busy?:boolean}){
+ const pop=useRef<HTMLDetailsElement>(null),[from,setFrom]=useState(value.from||''),[to,setTo]=useState(value.to||'');
+ useEffect(()=>{setFrom(value.from||'');setTo(value.to||'');},[value.from,value.to]);
+ return <div className="adm-date-toolbar"><div className="adm-preset-buttons" role="group" aria-label="快捷日期筛选">{datePresets.map(([key,label])=><button type="button" key={key} aria-pressed={activeDatePreset(value.from||'',value.to||'')===key} onClick={()=>onApply({...value,...presetDates(key),page:'1'})}>{label}</button>)}</div><details ref={pop} className="adm-popover adm-date-popover"><summary aria-label="自定义日期" title="自定义日期"><CalendarDays size={17}/><span className="adm-custom-date">{activeDatePreset(value.from||'',value.to||'')?'':`${value.from} — ${value.to}`}</span></summary><form onSubmit={e=>{e.preventDefault();onApply({...value,from,to,page:'1'});if(pop.current)pop.current.open=false;}}><label>开始日期<input type="date" required value={from} onChange={e=>setFrom(e.target.value)}/></label><label>结束日期<input type="date" required min={from} value={to} onChange={e=>setTo(e.target.value)}/></label><small>北京时间 · 最长 93 天</small><button className="adm-primary">应用日期</button></form></details><button className="adm-icon" aria-label="刷新数据" title="刷新数据" disabled={busy} onClick={onRefresh}><RefreshCw size={17}/></button></div>;
+}
+export function FiltersBar({value,onChange,onApply,options,analytics=false}:{value:Filters;onChange:(value:Filters)=>void;onApply:(value:Filters)=>void;options:Options|null;analytics?:boolean}){
+ const pop=useRef<HTMLDetailsElement>(null);
+ const defaultTraffic='all';
+ const change=(key:string,v:string)=>onChange({...value,[key]:v});
+ const count=['source','country','visitCountry','product','language'].filter(key=>value[key]).length+Number((value.traffic||'')!==defaultTraffic);
+ return <details ref={pop} className="adm-popover adm-filter-popover" onToggle={event=>{if(event.currentTarget.open&&!options)window.dispatchEvent(new Event('keeyak:admin-options'));}}><summary><SlidersHorizontal size={16}/>筛选{count>0&&<b>{count}</b>}</summary><form className="adm-advanced-filters" onSubmit={e=>{e.preventDefault();onApply({...value,page:'1'});if(pop.current)pop.current.open=false;}}>
+ <SelectFilter label="来源" value={value.source||''} onChange={v=>change('source',v)} values={options?.sources||[]}/><SelectFilter label={analytics?'访问国家':'目的国家'} value={value.country||''} onChange={v=>change('country',v)} values={(analytics?options?.countries:options?.destinations)||[]} display={analytics?countryName:known}/>{!analytics&&value.visitCountry&&<SelectFilter label="访问国家" value={value.visitCountry} onChange={v=>change('visitCountry',v)} values={options?.countries||[]} display={countryName}/>}<SelectFilter label="产品" value={value.product||''} onChange={v=>change('product',v)} values={options?.products||[]} display={productName}/><SelectFilter label="语言" value={value.language||''} onChange={v=>change('language',v)} values={options?.languages||[]}/><label className="adm-check"><input type="checkbox" checked={value.traffic==='all'} onChange={e=>change('traffic',e.target.checked?'all':'')}/>包含内部测试</label><div className="adm-filter-actions"><button type="button" onClick={()=>{const next={...value,source:'',country:'',visitCountry:'',product:'',language:'',traffic:defaultTraffic,page:'1'};onChange(next);onApply(next);if(pop.current)pop.current.open=false;}}>重置</button><button className="adm-primary" type="submit">应用筛选</button></div></form></details>;
+}
+export function DetailPanel({title,id,onClose,inline=false,children}:{title:string;id:string;onClose:()=>void;inline?:boolean;children:ReactNode}){
+ const dialog=useRef<HTMLDialogElement>(null),[wide,setWide]=useState(()=>typeof window!=='undefined'&&window.matchMedia('(min-width:1200px)').matches),modal=!inline||!wide;
+ useEffect(()=>{const mq=window.matchMedia('(min-width:1200px)'),change=()=>setWide(mq.matches);mq.addEventListener('change',change);return()=>mq.removeEventListener('change',change);},[]);
+ useEffect(()=>{if(!modal)return;const node=dialog.current;node?.showModal();return()=>node?.close();},[modal]);
+ const body=<><header><div><h2 id={id}>{title}</h2></div><button className="adm-icon" aria-label={'关闭'+title} onClick={onClose}><X size={18}/></button></header><div className="adm-drawer-body">{children}</div></>;
+ return modal?<dialog ref={dialog} className="adm-drawer" aria-labelledby={id} onCancel={e=>{e.preventDefault();onClose();}} onClick={e=>{if(e.target===e.currentTarget)onClose();}}>{body}</dialog>:<aside className="adm-inline-detail" aria-labelledby={id} onKeyDown={e=>{if(e.key==='Escape')onClose();}}>{body}</aside>;
+}

@@ -1,0 +1,65 @@
+---
+import {ChevronDown,Menu,X,ClipboardList,ArrowRight} from '@lucide/astro';
+import CarSearch from '../CarSearch.astro';
+import CatalogMenu from '../CatalogMenu.astro';
+import {brands,brandHref} from '../../data/catalog';
+import {aboutLinks} from '../../data/company';
+import {exportLinks} from '../../data/exportServices';
+import {siteImage} from '../../data/siteImagery';
+interface Props {solid?:boolean;}
+const {solid:alwaysSolid=false}=Astro.props;
+const currentPath=Astro.url.pathname;
+const menus=[
+ {label:'New Cars',href:'/new-cars/',items:brands('new').sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'})).map(b=>({label:b.name,href:brandHref('new',b.slug)})),image:'/images/volta-home-20261019/camry-coast-wide-640.webp'},
+ {label:'Used Cars',href:'/used-cars/',items:brands('used').sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'})).map(b=>({label:b.name,href:brandHref('used',b.slug)})),image:'/images/used-showroom-20261103/toyota-bz3x-960.webp'},
+ {label:'Export Services',href:'/export-services/',items:exportLinks,image:siteImage('port-overview').small},
+ {label:'About Us',href:'/about/',items:aboutLinks,image:'/images/keeyak-home-source-20261019/office-visitor-group-640.webp'}
+];
+---
+<header class="v-header" data-solid={String(alwaysSolid)} data-always-solid={alwaysSolid?'true':undefined}>
+ <div class="v-container v-header-row">
+  <a class="v-wordmark" href="/" aria-label="KEEYAK home"><img src="/images/brand/keeyak-wordmark.png" width="1200" height="219" alt=""/></a>
+  <nav class="v-navigation" id="volta-navigation" aria-label="Main navigation">
+   <ul class="v-nav-list"><li class="v-nav-home"><a href="/">Home</a></li>{menus.map((menu,index)=><li class="v-nav-group">
+    <div class="v-nav-top"><a href={menu.href} aria-current={currentPath.startsWith(menu.href)?'page':undefined}>{menu.label}</a><button type="button" aria-label={`Show ${menu.label} menu`} aria-expanded="false" aria-controls={`volta-menu-${index}`} data-v-disclosure><ChevronDown size={12}/></button></div>
+    <div class="v-mega" id={`volta-menu-${index}`} hidden><div class="v-container v-mega-inner">{index < 2 ? <CatalogMenu kind={index === 0 ? 'new' : 'used'} alphabetical/> : <><a class="v-mega-photo" href={menu.href}><img src={menu.image} alt="" width="640" height="426" loading="lazy"/><span>{menu.label}<ArrowRight size={22}/></span></a><div class="v-mega-links"><a class="v-mega-all" href={menu.href}>Explore {menu.label.toLowerCase()} <ArrowRight size={16}/></a>{menu.items.map(item=><a href={item.href}>{item.label}</a>)}</div></>}</div></div>
+   </li>)}<li class="v-nav-contact"><a href="/contact/" aria-current={currentPath==='/contact/'?'page':undefined}>Contact Us</a></li></ul>
+   <div class="v-mobile-contact"><a class="v-button v-button-blue" href="/quote/">Prepare inquiry<ArrowRight size={18}/></a></div>
+  </nav>
+  <div class="v-header-actions"><CarSearch/><a class="v-header-quote" href="/quote/"><span>Prepare inquiry</span><ClipboardList size={20}/></a><button class="v-menu-toggle" type="button" aria-label="Open navigation" aria-controls="volta-navigation" aria-expanded="false"><Menu class="v-open-icon" size={23}/><X class="v-close-icon" size={23}/></button></div>
+ </div>
+</header>
+<script>
+const header=document.querySelector<HTMLElement>('.v-header');
+if(header){
+ const desktop=matchMedia('(min-width:1024px)'),nav=header.querySelector<HTMLElement>('.v-navigation')!,toggle=header.querySelector<HTMLButtonElement>('.v-menu-toggle')!;
+ const disclosures=Array.from(header.querySelectorAll<HTMLButtonElement>('[data-v-disclosure]'));
+ let timer:number|undefined;
+ const solid=()=>header.dataset.solid=String(header.dataset.alwaysSolid==='true'||scrollY>100||header.classList.contains('v-menu-is-open')||disclosures.some(b=>b.getAttribute('aria-expanded')==='true'));
+ const closePanels=()=>{disclosures.forEach(b=>{b.setAttribute('aria-expanded','false');document.getElementById(b.getAttribute('aria-controls')!)!.hidden=true;});solid();};
+ const openPanel=(button:HTMLButtonElement,open=true)=>{closePanels();button.setAttribute('aria-expanded',String(open));document.getElementById(button.getAttribute('aria-controls')!)!.hidden=!open;solid();};
+ const setMobile=(open:boolean,focus=false)=>{
+  closePanels();header.classList.toggle('v-menu-is-open',open);document.documentElement.classList.toggle('v-nav-lock',open);
+  toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+  if(open){nav.setAttribute('role','dialog');nav.setAttribute('aria-modal','true');}else{nav.removeAttribute('role');nav.removeAttribute('aria-modal');}
+  document.querySelectorAll<HTMLElement>('main,footer').forEach(e=>e.inert=open);solid();if(focus)toggle.focus();
+ };
+ toggle.addEventListener('click',()=>setMobile(toggle.getAttribute('aria-expanded')!=='true'));
+ disclosures.forEach(button=>{
+  const group=button.closest<HTMLElement>('.v-nav-group')!;
+  button.addEventListener('click',()=>openPanel(button,button.getAttribute('aria-expanded')!=='true'));
+  group.addEventListener('pointerenter',e=>{if(desktop.matches&&e.pointerType==='mouse'){clearTimeout(timer);timer=window.setTimeout(()=>openPanel(button),120);}});
+  group.addEventListener('pointerleave',()=>{if(desktop.matches){clearTimeout(timer);timer=window.setTimeout(()=>{if(!group.contains(document.activeElement))closePanels();},170);}});
+  group.querySelector('a')?.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();openPanel(button);group.querySelector<HTMLAnchorElement>('.v-mega a')?.focus();}});
+  group.addEventListener('focusout',e=>{if(desktop.matches&&!group.contains(e.relatedTarget as Node))closePanels();});
+ });
+ document.addEventListener('click',e=>{if(!header.contains(e.target as Node)){clearTimeout(timer);closePanels();}});
+ document.addEventListener('keydown',e=>{
+  const mobile=header.classList.contains('v-menu-is-open'),expanded=disclosures.find(b=>b.getAttribute('aria-expanded')==='true');
+  if(e.key==='Escape'&&(mobile||expanded)){e.preventDefault();clearTimeout(timer);if(mobile)setMobile(false,true);else{closePanels();expanded?.focus();}}
+  if(e.key==='Tab'&&mobile){const items=Array.from(header.querySelectorAll<HTMLElement>('a,button,input')).filter(e=>e.getClientRects().length&&!e.closest('[hidden]')&&!e.closest('dialog:not([open])'));const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}}
+ });
+ desktop.addEventListener('change',()=>setMobile(false));
+ addEventListener('scroll',solid,{passive:true});solid();
+}
+</script>
