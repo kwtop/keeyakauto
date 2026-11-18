@@ -9,3 +9,4 @@ dist/
 .tmp/
 /backups/
 /checkpoints/
+.amp/portals/*

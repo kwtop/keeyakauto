@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Prepares a fresh Amp orb: npm dependencies, local admin secrets, and the local D1 database.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+export WRANGLER_SEND_METRICS=false
+
+step() {
+  local name=$1 start=$SECONDS
+  shift
+  echo "==> $name"
+  "$@"
+  echo "<== $name ($((SECONDS - start))s)"
+}
+
+# The base image ships Node; the scripts rely on --experimental-strip-types (Node >= 22.6).
+node -e 'const [major, minor] = process.versions.node.split(".").map(Number); if (major < 22 || (major === 22 && minor < 6)) { console.error(`Node ${process.version} is too old`); process.exit(1); }'
+
+# npm install keeps a restored node_modules and only fetches what the lockfile changed;
+# npm ci would delete and reinstall everything on every stale-snapshot run.
+step "npm install" npm install --no-audit --no-fund --prefer-offline
+
+# Generates .dev.vars and .local/ credentials once; keeps existing files unchanged.
+step "local admin secrets" npm run --silent admin:setup
+
+# Applies only migrations not yet recorded in the local D1 state under .wrangler/.
+step "local D1 migrations" npm run --silent admin:migrate
