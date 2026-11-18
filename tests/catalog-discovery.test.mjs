@@ -475,17 +475,17 @@ test('supplied used-car galleries preserve original bytes and do not inherit gen
   assert.doesNotMatch(JSON.stringify(suppliedUsedData),/chaboshi|开票金额|销售价格|车架号/);
 });
 
-test('Sedans labels are consistent without changing saved filters or inquiry values', () => {
+test('Sedan labels are consistent without changing saved filters or inquiry values', () => {
   const filters=readCatalogFilters('?category=Sedan');
   const result=newCars.filter(vehicle=>matchesCatalog(vehicle,filters));
-  assert.equal(vehicleCategoryLabel(filters.category),'Sedans');
+  assert.equal(vehicleCategoryLabel(filters.category),'Sedan');
   assert.ok(result.some(vehicle=>vehicle.slug==='bingo'));
   assert.equal(catalogParameters(filters).get('category'),'Sedan');
   assert.equal(categoryHref('new','Sedan'),'/new-cars/?category=Sedan');
-  assert.equal(bodyGroupLabel('Sedan','new'),'Sedans');
-  assert.equal(bodyGroupLabel('Sedan','used'),'Sedans');
+  assert.equal(bodyGroupLabel('Sedan','new'),'Sedan');
+  assert.equal(bodyGroupLabel('Sedan','used'),'Sedan');
   const draft=draftFromQuery('?category=Sedan&model=Wuling+Bingo',blankDraft());
-  assert.match(inquiryBrief(draft),/Category: Sedans/);
+  assert.match(inquiryBrief(draft),/Category: Sedan\b/);
   assert.equal(draft.vehicles[0].category,'Sedan');
   assert.equal(restoreDraft(draft).vehicles[0].category,'Sedan');
 });

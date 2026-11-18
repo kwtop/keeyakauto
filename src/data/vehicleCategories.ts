@@ -2,7 +2,7 @@ export const vehicleCategories = ['Sedan', 'SUV', 'MPV', 'Pickup'] as const;
 export type VehicleCategory = typeof vehicleCategories[number];
 
 export function vehicleCategoryLabel(category: VehicleCategory | ''): string {
-  return category === 'Sedan' ? 'Sedans' : category === 'MPV' ? 'Van' : category;
+  return category === 'MPV' ? 'Van' : category;
 }
 
 export function normalizeCategory(value: unknown): VehicleCategory | '' {

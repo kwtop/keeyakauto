@@ -10,7 +10,7 @@ export const model = (kind:Vehicle['kind'],key:string) => {
 export const newModels=['toyota/camry','byd/yuan-plus','jetour/traveler','toyota/rav4','volkswagen/id-3','geely/boyue','toyota/corolla','wuling/bingo'].map(key=>model('new',key));
 export const usedModels=['aion/s','byd/seagull','toyota/bz3x','wuling/starlight-730-ev','toyota/crown-vellfire-hybrid','jetour/traveler-c-dm','volkswagen/t-cross'].map(key=>model('used',key));
 export const categories=[
- {title:'Sedans',detail:`${vehicles.filter(v=>v.kind==='new'&&v.body==='Sedan').length} model references`,href:'/new-cars/?body=Sedan',vehicle:newModels[0]},
+ {title:'Sedan',detail:`${vehicles.filter(v=>v.kind==='new'&&v.body==='Sedan').length} model references`,href:'/new-cars/?body=Sedan',vehicle:newModels[0]},
  {title:'SUVs',detail:`${vehicles.filter(v=>v.kind==='new'&&v.body==='SUV').length} model references`,href:'/new-cars/?body=SUV',vehicle:newModels[2]},
  {title:'Electric cars',detail:`${vehicles.filter(v=>v.kind==='new'&&v.powertrain==='Pure Electric').length} model references`,href:'/new-cars/?power=Pure+Electric',vehicle:newModels[1]},
  {title:'Hybrid cars',detail:`${vehicles.filter(v=>v.kind==='new'&&v.powertrain==='Hybrid').length} model references`,href:'/new-cars/?power=Hybrid',vehicle:newModels[3]},
