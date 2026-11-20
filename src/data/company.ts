@@ -16,7 +16,7 @@ export const companyProfile = {
   paragraphs: [
     'Zhejiang Jingyan Technology Co., Ltd. (KEEYAK) has worked in passenger car exports and automotive trade since 2009. Headquartered in Zhejiang, China, we own a vehicle conversion plant in Suizhou, Hubei, covering approximately 110,000 square metres. Our work includes research and development, vehicle conversions and exports for passenger cars and special-purpose vehicles.',
     "We are registered with China's Ministry of Commerce (MOFCOM) for used vehicle exports. With more than a decade in overseas markets, we serve customers across Africa, the Middle East, Central and South America, and Russia.",
-    'Our service covers vehicle sourcing, inspection and conversions, customs clearance and sea freight. We work with customers worldwide to supply quality vehicles that suit their requirements and offer good value.'
+    'We handle the work between your order and the port: finding the cars, inspecting them, converting them where needed, customs clearance and sea freight. Most of our buyers are dealers, importers and fleet operators who need the right version at a fair price, delivered without surprises.'
   ]
 };
 

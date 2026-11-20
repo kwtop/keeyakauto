@@ -249,7 +249,7 @@ export const trustPages: Record<string, TrustPageContent> = {
           "href": "#process"
         },
         {
-          "label": "Discuss a purchase",
+          "label": "Request a quote",
           "href": "/quote/?service=buying-guide"
         }
       ]
@@ -539,11 +539,11 @@ export const trustPages: Record<string, TrustPageContent> = {
     "opening": {
       "id": "E3-01",
       "title": "Vehicle sourcing and inspection",
-      "body": "We search suppliers for cars that meet your requirements, review their offers and coordinate the inspection you request. You receive the proposed vehicle details before choosing which cars to inspect.\nThe inspection provider carries out the booked checks and issues the findings. KEEYAK follows up on questions with the supplier before you decide whether to accept the cars.",
+      "body": "We go through our suppliers to find cars that fit your brief, then send you the details. You choose which ones get inspected.\nThe inspector does the checks you booked and writes up what they find. If anything is unclear, we take it back to the supplier before you decide whether to accept the cars.",
       "image": "sourcing-branded",
       "links": [
         {
-          "label": "Share your sourcing brief",
+          "label": "Request a quote",
           "href": "/quote/?service=sourcing-inspection"
         },
         {
@@ -556,53 +556,53 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "sourcing-process",
         "title": "How we source and inspect cars",
-        "body": "We find cars that match your brief and arrange the inspection you request. You decide which cars to inspect and whether to proceed.",
+        "body": "We find the cars and set up the inspection. You make the calls: which cars get inspected, and whether to go ahead.",
         "kind": "steps",
         "items": [
           {
             "title": "Find cars that match your brief",
-            "body": "We check the model, version and availability with suppliers against your requirements.",
-            "output": "Vehicle options with specification, quantity and price",
+            "body": "We ask suppliers what they actually have in the model and version you want.",
+            "output": "A shortlist of cars with specs, quantities and prices",
             "icon": "search"
           },
           {
             "title": "Arrange the checks",
-            "body": "We coordinate the location, access, inspection date and requested tests with the provider.",
-            "output": "An inspection scope, provider and quoted cost",
+            "body": "We agree a date and place with the inspector, make sure they can get to the cars and confirm which tests you want.",
+            "output": "An agreed inspection plan and its cost",
             "icon": "inspection"
           },
           {
             "title": "Read the inspection report",
-            "body": "We pass on the provider's report and follow up on missing information, repairs or alternative cars.",
-            "output": "Vehicle-specific findings and responses to outstanding questions",
+            "body": "We send you the report. If something is missing or a car needs work, we go back to the supplier for answers or other options.",
+            "output": "Findings for each car, plus answers to your open questions",
             "icon": "document"
           }
         ]
       },
       {
         "id": "requirement",
-        "title": "Your vehicle requirements",
-        "body": "Tell us which features are essential and which alternatives you would consider. We use these details to narrow the search if your preferred version is unavailable.",
+        "title": "Define your requirements",
+        "body": "Tell us what you must have and what you could live without. If your first-choice version isn't available, that tells us where to look next.",
         "kind": "brief",
         "items": [
           {
             "title": "Model and essential equipment",
-            "body": "Give the brand, model, market version and powertrain. List the equipment you need; a trim name alone may not identify it.",
+            "body": "Brand, model, market version and powertrain. Spell out the equipment you need too: a trim name alone doesn't always tell us what's fitted.",
             "icon": "car"
           },
           {
             "title": "Quantity and destination",
-            "body": "Number of cars, destination country and port if known. Include whether you need one batch or separate deliveries.",
+            "body": "How many cars, which country, and the port if you know it. Let us know if they should go as one batch or in separate deliveries.",
             "icon": "globe"
           },
           {
             "title": "Condition and budget",
-            "body": "For used cars, state the year range, mileage limit and condition requirements. Explain whether your budget includes transport.",
+            "body": "For used cars, give us a year range, a mileage limit and the condition you'll accept. Tell us whether your budget has to cover transport too.",
             "icon": "inspection"
           },
           {
             "title": "Acceptable alternatives",
-            "body": "Colors, versions or models you would consider, and your preferred timing. Mark any requirement that is still being checked.",
+            "body": "Other colors, versions or models you'd take, and when you need the cars. If you're still confirming a requirement, say so.",
             "icon": "list"
           }
         ]
@@ -613,7 +613,7 @@ export const trustPages: Record<string, TrustPageContent> = {
           "review"
         ],
         "title": "New and used vehicle records",
-        "body": "We collect the proposed vehicle details from the supplier so you can compare the offer with your brief. New-car batches and individual used cars need different records.",
+        "body": "We get the details from the supplier so you can hold each offer up against your brief. What we ask for depends on whether it's a batch of new cars or a single used one.",
         "kind": "comparison",
         "columns": [
           "New-car batch",
@@ -622,19 +622,19 @@ export const trustPages: Record<string, TrustPageContent> = {
         "rows": [
           [
             "Exact market version, model year and equipment.",
-            "VIN or other vehicle identifier, year and registration details."
+            "The VIN, year and registration details."
           ],
           [
-            "Quantity, colors and available production information.",
-            "Mileage, dated photographs and visible condition."
+            "Quantities, colors and any production details the supplier can share.",
+            "Mileage, and dated photos showing the car's condition."
           ],
           [
-            "Current availability and a proposed release schedule.",
-            "Current availability and the history documents that can be supplied."
+            "What's available now and when it can be released.",
+            "Whether it's still available, and which history documents come with it."
           ],
           [
-            "Included documents and a batch or offer reference.",
-            "Known gaps, inspection findings and the individual offer reference."
+            "The documents included, and a reference for the batch or offer.",
+            "Anything missing from its records, any inspection findings, and the offer reference."
           ]
         ],
         "links": [
@@ -647,7 +647,7 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "scope",
         "title": "What the inspection covers",
-        "body": "Set the location, date and checks with the inspection provider before booking. Vehicle access, equipment and the seller's permission can limit testing. The inspector should list any tests they could not perform.",
+        "body": "We agree the place, date and checks with the inspector before booking. Some tests may not be possible if the car is hard to reach, the right equipment isn't there or the seller says no. The inspector should note anything they couldn't do.",
         "image": "vehicle-inspection-evidence",
         "kind": "comparison",
         "columns": [
@@ -656,24 +656,24 @@ export const trustPages: Record<string, TrustPageContent> = {
         ],
         "rows": [
           [
-            "Identity, version, equipment and quantity against the offer.",
-            "Identity and available registration, service and repair records."
+            "That the cars, version, equipment and quantity match the offer.",
+            "That it's the right car, plus whatever registration, service and repair records exist."
           ],
           [
-            "Exterior, interior, supplied keys and accessories.",
-            "Body, paintwork and signs that need further investigation."
+            "Exterior, interior, keys and accessories.",
+            "Bodywork and paint, and anything that needs a closer look."
           ],
           [
-            "Agreed functional checks and available system readings.",
-            "Agreed mechanical and functional checks, with available diagnostic data."
+            "The functional checks you asked for, and any system readings available.",
+            "The mechanical and functional checks you asked for, plus diagnostic data if it can be read."
           ],
           [
-            "Any transport or storage damage visible at inspection.",
-            "Mileage evidence and available battery data for electrified cars."
+            "Any visible damage from transport or storage.",
+            "Proof of mileage, and battery data for hybrids and EVs where it can be read."
           ]
         ],
         "paragraphs": [
-          "Paint-thickness readings need a location, unit and test method. An unusual reading can call for further checks, but cannot show the extent of a repair on its own. Fault codes and battery readings also need the test conditions and the inspector's explanation."
+          "A high paint reading tells you a panel may have been repainted, not why. When we see one, we ask the inspector to look closer and photograph the area. Fault codes and battery figures are the same: they mean little without the inspector's note on how they were taken."
         ]
       },
       {
@@ -682,59 +682,59 @@ export const trustPages: Record<string, TrustPageContent> = {
           "new-used"
         ],
         "title": "What to look for in an inspection report",
-        "body": "If we arrange the inspection, we share the provider’s findings for the cars inspected. Use the checklist below to agree what the report should include before you book.",
+        "body": "When we arrange the inspection, you get the inspector's findings for every car checked. Use this list to agree what the report should cover before anything is booked.",
         "kind": "report",
         "items": [
           {
             "title": "Vehicle and inspection details",
-            "body": "Vehicle identifier, inspection date and location, with the name of the inspector or provider.",
+            "body": "The VIN, when and where the inspection took place, and who did it.",
             "icon": "fingerprint"
           },
           {
             "title": "Findings and supporting images",
-            "body": "Item-by-item findings with photographs, readings or records tied to the car. Measurements include the method and test conditions.",
+            "body": "Findings item by item, each backed by a photo, reading or record from that car. Any measurement should say how it was taken.",
             "icon": "camera"
           },
           {
             "title": "Checks not completed",
-            "body": "Inaccessible areas, omitted tests and unavailable records, so you can see what remains unresolved.",
+            "body": "Anything the inspector couldn't reach, test or find records for. That way you know exactly what's still open.",
             "icon": "list"
           },
           {
             "title": "Follow-up and acceptance",
-            "body": "Questions for the supplier, proposed repairs and your decision on accepted exceptions or further work.",
+            "body": "Open questions for the supplier, any repairs they offer, and your decision: accept the issue as it is or ask for more work.",
             "icon": "document"
           }
         ],
         "takeaway": {
           "title": "For a used EV or plug-in hybrid",
-          "body": "Ask for the battery reading date, method and test conditions. The brochure's range or battery capacity does not establish the health of the battery in the car being offered."
+          "body": "The brochure range tells you nothing about the battery in this particular car. Ask for an actual battery reading, and when and how it was taken."
         }
       },
       {
         "id": "exceptions",
         "title": "Resolve findings before release",
-        "body": "If the findings differ from your requirements, we take the questions back to the supplier or inspector. You decide on further checks, a revised offer or acceptance before release.",
+        "body": "If the report shows something you didn't ask for, we take it back to the supplier or the inspector. Before the cars are released, you decide whether to check further, ask for a revised offer or accept them.",
         "kind": "steps",
         "items": [
           {
             "title": "Ask about the finding",
-            "body": "We ask the supplier or inspector to address the specific photo, reading or missing record you have flagged.",
+            "body": "Point us to the photo, reading or missing record that worries you. We put that exact question to the supplier or inspector.",
             "icon": "inspection"
           },
           {
             "title": "Decide whether to check again",
-            "body": "We request further evidence or arrange another inspection where access and testing are available.",
+            "body": "We can ask for more evidence or book a second inspection, as long as the car can be reached and tested.",
             "icon": "message"
           },
           {
             "title": "Record the resolution",
-            "body": "The seller records any proposed repairs, replacement vehicle or changes to price and timing for your review.",
+            "body": "If the seller offers a repair, a different car, or a new price or date, they put it in writing for you to review.",
             "icon": "document"
           },
           {
             "title": "Authorize release",
-            "body": "Follow the acceptance and release conditions in the order, with any unresolved issues recorded.",
+            "body": "You release the cars on the terms in your order. Anything still unresolved is written down first.",
             "icon": "check"
           }
         ],
@@ -748,7 +748,7 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "inquiry",
         "title": "Start a vehicle search",
-        "body": "Send the models, quantities and destination, along with essential equipment and inspection requirements. For used cars, add your year, mileage and condition limits.",
+        "body": "Tell us the models, how many and where they're going. Add the equipment you can't do without and what you want inspected. For used cars, include your year, mileage and condition limits.",
         "kind": "action",
         "form": true,
         "links": [
@@ -769,11 +769,11 @@ export const trustPages: Record<string, TrustPageContent> = {
     "opening": {
       "id": "E4-01",
       "title": "Car shipping from China",
-      "body": "KEEYAK coordinates your vehicle shipping requirements with the exporter and transport providers. We collect the route proposal, charges, document requirements and handover contacts.\nYou receive a cost proposal first. Booking references and departure updates follow once the transport is arranged.",
+      "body": "We work with the exporter and the transport companies to get your cars shipped. We pull together the route, the costs, the paperwork and who to contact at handover.\nYou see the cost first. Once transport is booked, we send you the booking references and keep you posted on departure.",
       "image": "shipping",
       "links": [
         {
-          "label": "Discuss a shipping plan",
+          "label": "Request a quote",
           "href": "/quote/?service=shipping-support"
         },
         {
@@ -786,24 +786,24 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "shipping-process",
         "title": "How we coordinate your shipment",
-        "body": "The vehicles, destination and available carrier services determine the plan. Your order sets the handover point and the work included.",
+        "body": "The plan depends on the cars, where they're going and which carriers serve that route. Your order decides where the handover happens and what's included.",
         "kind": "steps",
         "items": [
           {
             "title": "Find a route",
-            "body": "We request options from transport providers using the vehicle dimensions, quantity and destination.",
-            "output": "A route proposal with quoted charges and estimated dates",
+            "body": "We send the car sizes, quantity and destination to transport providers and ask what they can offer.",
+            "output": "A proposed route with quoted costs and estimated dates",
             "icon": "ship"
           },
           {
             "title": "Get the shipping documents ready",
-            "body": "We coordinate the required documents and vehicle details with the exporter and your receiving party.",
-            "output": "Document drafts to review and the applicable final records",
+            "body": "We work through the paperwork with the exporter and whoever is receiving the cars at your end.",
+            "output": "Drafts for you to check, then the final documents",
             "icon": "document"
           },
           {
             "title": "Track dispatch and delivery",
-            "body": "We pass on booking and dispatch updates from the provider and coordinate receiving instructions.",
+            "body": "We pass on booking and departure updates as they come in, and line up collection at the other end.",
             "output": "Transport references, collection instructions and a follow-up contact",
             "icon": "package"
           }
@@ -812,24 +812,24 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "route",
         "title": "Compare transport options",
-        "body": "Start with the destination, vehicle dimensions and quantity. Carrier acceptance, handling arrangements and available services determine which options can be quoted.",
+        "body": "It starts with where the cars are going, how big they are and how many. What we can quote then depends on which carriers will take them and what runs on that route.",
         "kind": "transport",
         "items": [
           {
             "title": "Roll-on / roll-off",
-            "body": "Cars are driven on and off a vehicle carrier. Check the carrier's acceptance rules, operating-condition requirements, ports and arrangements for loose items.",
+            "body": "Ro-Ro is usually the simplest way to ship running cars. They drive straight onto the ship, so loose items and spare parts need to be packed and listed separately.",
             "image": "transport-roro",
             "meta": "Drive-on vehicle transport"
           },
           {
             "title": "Container",
-            "body": "Cars travel in a container with an agreed loading and securing plan. Check usable space, vehicles per container and handling at both ends before comparing the price.",
+            "body": "Cars are loaded and secured in a container to an agreed plan. Before comparing prices, check how many cars fit in each container and what handling costs at both ends.",
             "image": "transport-container",
             "meta": "Loading plan required"
           },
           {
             "title": "Overland",
-            "body": "A road or other land route can be considered where a service is available. Check border transfers, documents and the final handover point for the proposed route.",
+            "body": "If a land route serves your destination, it's worth a look. Ask how the border crossings work, what paperwork travels with the cars and where they'll be handed over.",
             "image": "transport-overland",
             "meta": "Route and border checks"
           }
@@ -837,8 +837,8 @@ export const trustPages: Record<string, TrustPageContent> = {
       },
       {
         "id": "cost",
-        "title": "What shipping costs cover",
-        "body": "We ask the transport provider to list freight, handling and destination charges separately. The quote totals the costs up to your chosen handover point.",
+        "title": "What the shipping quote includes",
+        "body": "We ask the transport provider to break the charges out instead of giving one number. The total covers everything up to the handover point you chose.",
         "kind": "records",
         "columns": [
           "Cost group",
@@ -847,29 +847,29 @@ export const trustPages: Record<string, TrustPageContent> = {
         "rows": [
           [
             "Before departure",
-            "Domestic movement, storage, port handling, preparation and loading, with any charges that depend on actual handling identified."
+            "Getting the cars to the port, storing, preparing and loading them. Any charge that depends on the actual handling is flagged."
           ],
           [
             "Main transport",
-            "Proposed route and service, quoted rate, validity and booking conditions."
+            "The route and service, the rate, how long the quote holds and the booking terms."
           ],
           [
             "Insurance",
-            "Whether cover is included or separately arranged, the risks covered and the contact and evidence needed for a claim."
+            "Whether insurance is included or arranged separately, what it covers, and who to contact and what to send if you need to claim."
           ],
           [
             "At destination",
-            "The handover point and responsibility for terminal handling and onward transport. Your importer or agent supplies local clearance, tax and registration estimates."
+            "Where the handover happens, and who handles terminal charges and onward transport. Your importer or agent gives you the local figures for clearance, tax and registration."
           ]
         ],
         "paragraphs": [
-          "Dispatch, carrier departure, arrival and collection have separate dates. The schedule should distinguish estimates from confirmed dates and name the contact for transport or clearance updates."
+          "The cars leave the yard, the carrier departs, it arrives, you collect: each step has its own date. The schedule shows which dates are confirmed and which are still estimates, and who to ask for updates."
         ]
       },
       {
         "id": "documents",
         "title": "Shipping documents",
-        "body": "We coordinate the document list with the exporter and destination importer, then pass on the applicable records from the issuing parties. Review consignee and vehicle details on the drafts before they are finalized.",
+        "body": "We agree the document list with the exporter and your importer, then pass each document on to you as it's issued. Check the consignee and vehicle details on the drafts before anything is finalized.",
         "kind": "records",
         "columns": [
           "Record",
@@ -878,19 +878,19 @@ export const trustPages: Record<string, TrustPageContent> = {
         "rows": [
           [
             "Commercial invoice and packing list",
-            "Issued for the order by the relevant seller or exporter, identifying the parties, vehicles, quantities and supplied items."
+            "Issued by the seller or exporter for your order. They show who's buying and selling, which cars, how many and what comes with them."
           ],
           [
             "Transport document",
-            "Issued by the transport provider. Sea shipments normally use a bill of lading; the route determines the document and release method."
+            "Issued by the carrier. By sea this is usually a bill of lading. Other routes use different documents and release the cars differently."
           ],
           [
             "Origin or conformity records",
-            "Supplied where required and available for the exact vehicles. Your destination importer establishes which records are accepted locally."
+            "Provided for your exact cars if your market needs them and they can be issued. Your importer should confirm which ones are accepted locally."
           ],
           [
             "Departure and handover file",
-            "Vehicle identifiers, dated condition photos, supplied-item list and transport references from the parties handling dispatch."
+            "VINs, dated condition photos, a list of what goes with each car and the transport references, put together by whoever handles dispatch."
           ]
         ],
         "links": [
@@ -900,61 +900,61 @@ export const trustPages: Record<string, TrustPageContent> = {
           }
         ],
         "paragraphs": [
-          "This is a document checklist, not a record of a completed shipment. Order-specific documents and photographs identify the actual vehicles and transport movement."
+          "This is a checklist, not a real shipment. The documents and photos for your order will show your actual cars and how they were moved."
         ]
       },
       {
         "id": "pre-departure",
-        "title": "Before departure",
-        "body": "We coordinate the departure record with the party handling dispatch. It identifies each car and lists its condition photos, keys and supplied items for the receiving party to check on arrival.",
+        "title": "Pre-shipment checks",
+        "body": "Before the cars leave, we work with whoever handles dispatch on a departure record. It lists each car with its photos, keys and extras, so your team can check them off on arrival.",
         "kind": "checklist",
         "items": [
           {
             "title": "Vehicle identity",
-            "body": "Identifiers, market version and quantity should match the order and relevant transport documents.",
+            "body": "VINs, market version and quantity should match the order and the transport documents.",
             "icon": "fingerprint"
           },
           {
             "title": "Condition photographs",
-            "body": "Keep dated exterior and interior views. Record any existing marks with enough context to locate them on the car.",
+            "body": "Dated photos inside and out. Any existing mark is shot wide enough that you can find it on the car.",
             "icon": "camera"
           },
           {
             "title": "Keys and supplied items",
-            "body": "List the keys, accessories and accompanying documents. Agree how loose items will be packed and handed over.",
+            "body": "A list of the keys, accessories and papers going with each car. Agree how loose items will be packed and handed over.",
             "icon": "key"
           },
           {
             "title": "Release instructions",
-            "body": "Keep loading or securing evidence where provided, the transport reference and the named receiving contact.",
+            "body": "The transport reference, the name of the person receiving the cars, and loading photos if the carrier provides them.",
             "icon": "ship"
           }
         ]
       },
       {
         "id": "handover",
-        "title": "What to check at delivery",
-        "body": "Compare arrival condition with the departure file while the receiving records are being completed. If you find a difference, follow the shipment's reporting procedure and preserve the evidence.",
+        "title": "Delivery inspection",
+        "body": "When the cars arrive, check them against the departure file while the receiving paperwork is still being done. If something's different, report it the way your shipment requires and keep the evidence.",
         "kind": "steps",
         "items": [
           {
             "title": "Match the vehicles",
-            "body": "Check identifiers and quantity, then compare the visible condition, keys and other supplied items.",
+            "body": "Check the VINs and count the cars. Then compare condition, keys and extras with the departure file.",
             "icon": "inspection"
           },
           {
             "title": "Document any differences",
-            "body": "Take dated overview and detail photographs. Record missing items or document discrepancies in the receiving record.",
+            "body": "Photograph the whole car, then the problem close up, with dates. Note anything missing or wrong on the receiving record.",
             "icon": "camera"
           },
           {
             "title": "Contact the claims handler",
-            "body": "Contact the carrier, claims contact or order contact specified for the shipment. Check the applicable reporting deadlines.",
+            "body": "Get in touch with the carrier, the claims contact or the order contact named for your shipment. Claims have deadlines, so check them straight away.",
             "icon": "message"
           },
           {
             "title": "Keep your shipping records",
-            "body": "Retain transport references, condition photos and correspondence. A transport-damage claim and a warranty issue may follow different routes.",
+            "body": "Hold on to the transport references, photos and emails. Transport damage and a warranty problem may be handled by different people.",
             "icon": "document"
           }
         ],
@@ -968,7 +968,7 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "inquiry",
         "title": "Request a route and cost proposal",
-        "body": "Include the vehicles, quantity, destination country or port and preferred timing. Tell us where you expect the handover to take place and whether you need onward transport.",
+        "body": "Tell us which cars, how many, where they're going and when. Let us know where you'd like to take over the cars and whether you need transport onward from there.",
         "kind": "action",
         "form": true
       }
@@ -983,11 +983,11 @@ export const trustPages: Record<string, TrustPageContent> = {
     "opening": {
       "id": "E5-01",
       "title": "After-sales support for your order",
-      "body": "KEEYAK checks your order records and sends your request to the provider responsible for support. We pass on the issue, follow up on missing information and relay the provider's proposed action.\nContact your order representative, or email KEEYAK with the order reference, VIN and a description of the problem.",
+      "body": "We look up your order and send your request to whoever provides support for your car. We chase any missing details and come back to you with what they propose.\nContact your order representative, or email us with your order reference, the VIN and what's going wrong.",
       "image": "support-branded",
       "links": [
         {
-          "label": "Email KEEYAK",
+          "label": "Email the support team",
           "href": "mailto:contact@keeyak.com?subject=Existing%20order%20support"
         },
         {
@@ -1002,15 +1002,15 @@ export const trustPages: Record<string, TrustPageContent> = {
         },
         {
           "title": "Parts request",
-          "body": "VIN, part number and photographs."
+          "body": "VIN, part number and photos."
         },
         {
           "title": "Software",
-          "body": "Version, feature and country of use."
+          "body": "Software version, the feature affected and where the car is used."
         },
         {
           "title": "Arrival damage",
-          "body": "Departure and receiving records."
+          "body": "Your departure and arrival records."
         }
       ]
     },
@@ -1021,59 +1021,59 @@ export const trustPages: Record<string, TrustPageContent> = {
           "diagnosis"
         ],
         "title": "How we handle a support request",
-        "body": "Your KEEYAK contact passes the request to the provider named in your order. That provider reviews the findings, checks coverage and decides whether to approve the repair.",
+        "body": "Your KEEYAK contact sends the request to the support provider named in your order. They look at the evidence, check what's covered and decide whether to approve a repair.",
         "kind": "steps",
         "items": [
           {
             "title": "Locate your order",
-            "body": "We use your order reference and VIN to identify the vehicle, purchase terms and support contact.",
-            "output": "Your request sent to the responsible provider",
+            "body": "Your order reference and VIN tell us which car it is, the terms it was sold on and who supports it.",
+            "output": "Your request with the right support provider",
             "icon": "document"
           },
           {
             "title": "Review the issue",
-            "body": "We pass on your symptoms and evidence. The provider identifies any missing information or further checks.",
-            "output": "A response listing any information or checks still needed",
+            "body": "We send them your description and evidence. They tell us if they need anything else or want more checks done.",
+            "output": "A list of anything else they need",
             "icon": "inspection"
           },
           {
             "title": "Agree the next action",
-            "body": "We follow up on the provider's proposal for diagnosis, parts or repair. You review the approvals and costs before work starts.",
-            "output": "A proposed action and cost responsibility",
+            "body": "The provider proposes a diagnosis, parts or a repair, and we follow it up. You see what's approved and what it costs before any work starts.",
+            "output": "A plan, and who pays for what",
             "icon": "message"
           },
           {
             "title": "Follow up on the result",
-            "body": "We send the provider the work records and results, along with any issues still open.",
-            "output": "A record of the response and any remaining action",
+            "body": "Once the work is done, we send the provider the records and results, and flag anything still unresolved.",
+            "output": "A record of what was done and what's still open",
             "icon": "check"
           }
         ]
       },
       {
         "id": "coverage",
-        "title": "Coverage and repair approvals",
-        "body": "Support depends on the terms for your vehicle and destination. Original-market manufacturer coverage may not continue after export; the order identifies the provider and coverage that apply.",
+        "title": "Warranty coverage and repair approval",
+        "body": "What's covered depends on your car's terms and where it's going. The manufacturer's warranty from the original market may not carry over after export, so check your order: it names your support provider and what they cover.",
         "kind": "brief",
         "items": [
           {
             "title": "Provider and territory",
-            "body": "The named provider and the countries where the support applies.",
+            "body": "Who provides support, and in which countries.",
             "icon": "shield"
           },
           {
             "title": "Period and exclusions",
-            "body": "Coverage start, duration, covered components and excluded costs.",
+            "body": "When cover starts, how long it lasts, which parts it includes and what it doesn't pay for.",
             "icon": "calendar"
           },
           {
             "title": "Diagnosis and repair approval",
-            "body": "The checks that can be commissioned and the approval needed before a repair starts.",
+            "body": "Which checks can be ordered, and who has to approve a repair before it starts.",
             "icon": "wrench"
           },
           {
             "title": "Labor, parts and freight",
-            "body": "Approval for parts, workshop labor and freight, including the evidence needed for any reimbursement.",
+            "body": "Who approves parts, labor and freight, and what proof is needed if costs are to be reimbursed.",
             "icon": "wallet"
           }
         ]
@@ -1082,42 +1082,42 @@ export const trustPages: Record<string, TrustPageContent> = {
         "id": "report",
         "title": "What to send when you ask for help",
         "image": "support-issue-report",
-        "body": "Put the vehicle details and symptoms in one message under the order reference. Keep the original photos, readings and reports so the provider can examine the evidence.",
+        "body": "Send the car details and the problem in one message, quoting your order reference. Keep the original photos, readings and reports in case the provider asks for them.",
         "kind": "brief",
         "items": [
           {
             "title": "Order and delivery",
-            "body": "Order reference, delivery date and your named contact.",
+            "body": "Order reference, delivery date and who we should talk to.",
             "icon": "document"
           },
           {
             "title": "Vehicle identity",
-            "body": "VIN, model and exact version. Use photographs of the relevant labels where needed.",
+            "body": "VIN, model and exact version. A photo of the label helps if you're not sure.",
             "icon": "car"
           },
           {
             "title": "Location and mileage",
-            "body": "Country, current mileage and when the issue first appeared.",
+            "body": "Where the car is, its mileage today and when the problem started.",
             "icon": "pin"
           },
           {
             "title": "What happens",
-            "body": "Describe the symptom, when it occurs and any warning message or fault code.",
+            "body": "What the car does, when it happens, and any warning message or fault code.",
             "icon": "settings"
           },
           {
             "title": "Supporting evidence",
-            "body": "Clear photos, video, diagnostic readings or the workshop report. Include the date and context.",
+            "body": "Clear photos or video, diagnostic readings or the workshop report. Say when each was taken and what it shows.",
             "icon": "camera"
           },
           {
             "title": "Work already carried out",
-            "body": "Recent checks, software changes, replaced parts or repairs, including who performed them.",
+            "body": "Anything already checked, updated, replaced or repaired, and who did it.",
             "icon": "wrench"
           }
         ],
         "paragraphs": [
-          "For a charging problem, include the charger and connector used, any error message, when the problem began and whether another charging session worked. Photos of the connector and warning screen can help the provider investigate."
+          "Charging problem? Tell us which charger and connector you used, any error message, when it started and whether the car has charged normally since. Photos of the connector and the warning screen help a lot."
         ],
         "links": [
           {
@@ -1129,40 +1129,40 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "parts",
         "title": "Identify the part before you order it",
-        "body": "Parts that look similar can have different connectors, mounting points or software requirements. Use the vehicle identity and the part's own details to request a match.",
+        "body": "Two parts can look the same and still have different connectors, mounts or software. Send the car's details and the part's own markings so the supplier can match it.",
         "image": "vehicle-parts-identification",
         "kind": "checklist",
         "items": [
           {
             "title": "Parts",
-            "body": "Send the VIN, version, photos, part number if known, quantity and destination. The supplier needs these details to check fit, availability and cost.",
+            "body": "Send the VIN, version and photos, the part number if you have it, how many you need and where they're going. The supplier uses this to check fit, stock and price.",
             "icon": "package"
           },
           {
             "title": "Software",
-            "body": "Name the feature, current software version, error and country of use. Connected services, languages and updates can differ by market version.",
+            "body": "Tell us the feature, the current software version, the error and the country you're in. Connected services, languages and updates can differ from one market version to another.",
             "icon": "software"
           },
           {
             "title": "Local work",
-            "body": "Agree the workshop, evidence, approvals and costs before commissioning diagnosis or repair. Keep removed-part and work records where requested.",
+            "body": "Before a local workshop starts diagnosis or repairs, agree who does it, what evidence is needed, who approves it and what it costs. If asked, keep the removed parts and work records.",
             "icon": "wrench"
           }
         ]
       },
       {
         "id": "arrival",
-        "title": "Is it damage from transport or a vehicle issue?",
-        "body": "If the difference was found at collection, begin with the departure and receiving records. The shipment's claims process may be separate from the vehicle's warranty arrangements.",
+        "title": "Transport damage or vehicle fault?",
+        "body": "If you spotted the problem when you collected the car, start with the departure and receiving records. A shipping claim and a warranty claim may go through different channels.",
         "kind": "faq",
         "items": [
           {
             "title": "What should I send for arrival damage?",
-            "body": "Provide the order and transport references, receiving date, dated overview and detail photographs, and any damage noted on the receiving record. Keep packaging or other evidence where the claims procedure requires it."
+            "body": "Send your order and transport references, the date you received the car, dated photos (wide shots and close-ups) and any damage noted on the receiving record. If the claims process asks you to keep packaging or other evidence, keep it."
           },
           {
             "title": "Can I repair the car first and claim later?",
-            "body": "Check the applicable procedure before authorizing work. Ask the responsible party what evidence and approval are needed, and who pays for diagnosis, labor, parts and transport."
+            "body": "Check first. Before any work starts, ask whoever handles the claim what evidence and approval they need, and who pays for diagnosis, labor, parts and transport."
           }
         ],
         "links": [
@@ -1175,11 +1175,11 @@ export const trustPages: Record<string, TrustPageContent> = {
       {
         "id": "contact",
         "title": "Contact us about an existing order",
-        "body": "Email or message KEEYAK with your order reference and the details above. If you cannot reach your original contact, the team can help direct the request.",
+        "body": "Email or message us with your order reference and the details above. Can't reach your usual contact? The team can pass your request to the right person.",
         "kind": "contact",
         "links": [
           {
-            "label": "Email KEEYAK",
+            "label": "Email the support team",
             "href": "mailto:contact@keeyak.com?subject=Existing%20order%20support"
           },
           {
@@ -1399,7 +1399,7 @@ export const trustPages: Record<string, TrustPageContent> = {
         ],
         "links": [
           {
-            "label": "Start a vehicle inquiry",
+            "label": "Request a quote",
             "href": "/quote/"
           },
           {
@@ -1444,7 +1444,7 @@ export const trustPages: Record<string, TrustPageContent> = {
         { title: 'How do I know my inquiry was received?', body: 'After you choose Send inquiry, the form displays a reference only when it has saved your inquiry. Reviewing a draft or opening email or WhatsApp does not submit the website form.' },
         { title: 'Does an inquiry reserve a car?', body: 'No. Availability, pricing and any reservation are agreed separately in writing.' },
         { title: 'What if I have not chosen a version?', body: 'Tell us the type of car, quantity and destination. Include your priorities and any alternatives you would accept.' }
-      ], links: [{ label: 'Start an inquiry', href: '/quote/' }, { label: 'After-sales support', href: support }] }
+      ], links: [{ label: 'Request a quote', href: '/quote/' }, { label: 'After-sales support', href: support }] }
     ]
   }
 };

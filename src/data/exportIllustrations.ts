@@ -28,11 +28,3 @@ export const exportIllustrations:Record<string,Record<string,ExportIllustration>
   parts:{image:'parts-reference-match'}
  }
 };
-
-export const exportFaqIllustrations:Record<string,string>={
- choosing:'vehicle-search-brief',
- ordering:'guide-order-documents',
- inspection:'guide-inspection-follow-up',
- shipping:'guide-arrival-check',
- support:'guide-repair-approval'
-};

@@ -4,7 +4,8 @@ import {Battery,CalendarCheck,CalendarDays,CarFront,Cog,Cylinder,Fuel,Gauge,Plug
 import type {Vehicle} from '../../data/catalog';
 import {brandHref} from '../../data/catalogPaths';
 import type {DetailRecommendation} from '../../data/detailRecommendations';
-import {vehicleCategory} from '../../data/vehicleCategories';
+import {vehicleCategory,vehicleCategoryLabel} from '../../data/vehicleCategories';
+import {company} from '../../data/company';
 import {powertrainLabel} from '../../data/catalogLabels';
 import {manufacturerReferences} from '../../data/manufacturerReferences';
 import {resolveSelectableVariantId,resolveVariantId,selectableVehicleVariants} from '../../data/vehicleDefaultVariant';
@@ -17,10 +18,15 @@ import Inquiry from './Inquiry';
 import RelatedModels from './RelatedModels';
 import {summaryMetrics,usedSummaryMetrics,type NewMetricField} from './presentation';
 import VersionSelect from './VersionSelect';
+import SectionNav from './SectionNav';
 import '../../styles/vehicle-detail.css';
 
 interface Props{vehicle:Vehicle;sourcePath:string;related?:DetailRecommendation[];editorialFocus:string;}
 const noRelated:DetailRecommendation[]=[];
+const sectionLinks={
+ new:[{id:'specifications',label:'Specifications',short:'Specs'},{id:'buying-guide',label:'Buying guide',short:'Guide'},{id:'ordering',label:'Questions',short:'FAQ'}],
+ used:[{id:'specifications',label:'Specifications',short:'Specs'},{id:'buying-guide',label:'Buying guide',short:'Guide'},{id:'used-model-questions',label:'Questions',short:'FAQ'}],
+};
 const newMetricIcons: Record<NewMetricField,LucideIcon> = {
  engine: Cylinder,
  power: Zap,
@@ -94,12 +100,18 @@ export default function VehicleDetailPage({vehicle,sourcePath,related=noRelated,
  if(vehicleCategory(vehicle))quoteParams.set('category',vehicleCategory(vehicle));
  const quoteHref='/quote/?'+quoteParams.toString();
  const modelName=vehicle.modelName&&!/^[79]$/.test(vehicle.modelName)?vehicle.modelName:vehicle.name;
+ const category=vehicleCategory(vehicle),known=(value:string)=>value&&value!=='To confirm'?value:'';
+ const subtitle=(isNew||!vehicle.usedRecord?.trim?[known(year),category&&vehicleCategoryLabel(category),known(powertrain)&&powertrainLabel(powertrain)]:[vehicle.usedRecord.trim]).filter(Boolean).join(' · ');
+ const whatsappHref=company.whatsapp+'?text='+encodeURIComponent(`Hello KEEYAK, I'm interested in the ${vehicle.kind==='used'?'used ':''}${vehicle.name}${selected?.name?` (${selected.name})`:''}.`);
  function chooseVariant(id:string){setVariantId(id);const url=new URL(window.location.href);url.searchParams.set('variant',id);window.history.pushState({},'',url.pathname+url.search+url.hash);}
  return <div className={'vehicle-design vehicle-design--'+vehicle.kind}>
   <section id="model-overview" className="vd-overview" data-core-module="overview" aria-labelledby="vd-model-title">
-   <h1 id="vd-model-title" className="vd-title brand-title brand-title--page"><BrandLogo slug={vehicle.brandSlug} name={vehicle.brand}/><span>{vehicle.name}</span></h1>
    <Gallery vehicle={vehicle}/>
    <div className="vd-summary">
+    <div className="vd-heading">
+     <h1 id="vd-model-title" className="vd-title brand-title brand-title--page"><BrandLogo slug={vehicle.brandSlug} name={vehicle.brand}/><span>{vehicle.name}</span></h1>
+     {subtitle&&<p className="vd-subtitle">{subtitle}</p>}
+    </div>
     {isNew&&variants.length>0&&<label className="vd-version" htmlFor="vehicle-source-version">Select version<VersionSelect id="vehicle-source-version" value={variantId} onChange={chooseVariant} variants={variants} unlisted={unlisted}/></label>}
     <dl className="vd-metrics" aria-live="polite" aria-label="Selected model details">
      {metrics.map(metric=>{
@@ -114,10 +126,11 @@ export default function VehicleDetailPage({vehicle,sourcePath,related=noRelated,
      })}
     </dl>
     {unlisted&&<p className="vd-caution" role="status">This version is not listed. Choose a listed version or include the original version reference in your inquiry.</p>}
-    <div className="vd-summary-actions"><a className="vd-action" href={quoteHref}>{isNew?'Request a quote':'Start a sourcing inquiry'}</a></div>
+    <div className="vd-summary-actions"><a className="vd-action" href={quoteHref}>{'Request a quote'}</a><a className="vd-action vd-action--whatsapp" href={whatsappHref} target="_blank" rel="noopener noreferrer"><img src="/images/brand/whatsapp.svg" width={18} height={18} alt=""/>Ask on WhatsApp</a></div>
     {!isNew&&!vehicle.usedRecord&&<p className="vd-summary-footnote">This past third-party listing does not confirm KEEYAK stock. Ask for the VIN, current mileage and condition records for each car offered.</p>}
    </div>
   </section>
+  <SectionNav name={vehicle.name} links={sectionLinks[vehicle.kind]} quoteHref={quoteHref} quoteLabel="Request a quote"/>
   <Specifications vehicle={vehicle} selected={selected} other={isNew?other:undefined} options={compareOptions} onCompare={setComparisonId} unlisted={unlisted}/>
   <ProductGuide vehicle={vehicle} selected={selected} unlisted={unlisted} focus={editorialFocus}/>
   <BuyerChecks vehicle={vehicle} selected={selected} unlisted={unlisted}/>

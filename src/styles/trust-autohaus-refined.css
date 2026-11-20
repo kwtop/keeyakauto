@@ -9,7 +9,7 @@ body.inner-autohaus #main .tc-site.tc-site--refined{
 }
 body.inner-autohaus #main .tc-site--refined :is(h1,h2,h3){text-wrap:balance;letter-spacing:-.035em}
 body.inner-autohaus #main .tc-site--refined :is(p,dd,li){text-wrap:pretty}
-body.inner-autohaus #main .tc-site--refined :is(time,input,.tc-register,.tc-opening-tasks,.tc-journey){font-variant-numeric:tabular-nums}
+body.inner-autohaus #main .tc-site--refined :is(time,input){font-variant-numeric:tabular-nums}
 body.inner-autohaus #main .tc-site--refined .tc-wrap{width:min(1320px,calc(100% - 96px))}
 body.inner-autohaus #main .tc-site--refined .tc-opening{padding-block:40px 56px}
 body.inner-autohaus #main .tc-site--refined .tc-opening-layout{gap:52px}
@@ -327,3 +327,49 @@ body.inner-autohaus #main .tc-site--refined .tc-source-note{margin-top:24px;padd
  body.inner-autohaus #main .tc-site--refined .tc-faq-group>h3{font-size:23px}
 }
 @media(prefers-reduced-motion:reduce){.tc-site--refined *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Closing calls to action keep their short description beneath the heading. */
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-closing-body{max-width:46ch;margin:12px 0 0;color:#55554f;font-size:17px;line-height:1.6}
+
+/* One alignment rule for inner pages: openings and section headings start at the left edge, like the overview and news pages. */
+body.inner-autohaus #main .tc-site--refined :is(.tc-opening-layout,.tc-opening-copy){align-items:stretch;text-align:left}
+body.inner-autohaus #main .tc-site--refined .tc-opening-copy{max-width:none;margin-inline:0}
+body.inner-autohaus #main .tc-site--refined :is(.tc-opening h1,.tc-opening-intro){margin-inline:0}
+body.inner-autohaus #main .tc-site--refined .tc-opening .tc-links{justify-content:flex-start}
+body.inner-autohaus #main .tc-site--refined .tc-block--wide-module .tc-block-heading{text-align:left;max-width:none;margin-inline:0}
+body.inner-autohaus #main .tc-site--refined .tc-block--wide-module .tc-block-heading :is(h2,.tc-intro){margin-inline:0}
+body.inner-autohaus #main .tc-site--refined .tc-faq-app .tc-search{margin-inline:0}
+
+/* Image blocks start level with their heading instead of floating mid-column. */
+body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-visual{align-self:start}
+/* Closing inquiry form: heading sits at the top, the note has room before the fields, actions share one row. */
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-grid:has(.tc-inquiry){align-items:start}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-explanation{margin-bottom:24px}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-explanation p{margin:0;font-size:16px;line-height:1.65}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-content:has(.tc-inquiry){display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-content:has(.tc-inquiry)>:is(.tc-explanation,.tc-inquiry){flex:1 0 100%}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-inquiry button{justify-self:start}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing .tc-block-content:has(.tc-inquiry)>.tc-links{margin:0}
+
+/* Side images: every illustrated block uses equal text and image columns and the same 3:2 photo frame,
+   so pictures down a page share one width and height. !important outranks the per-section id rules in export-illustrated.css. */
+@media(min-width:810px){
+ body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;column-gap:clamp(40px,5vw,72px)!important}
+}
+body.inner-autohaus #main .tc-site--refined .tc-block--has-visual:not(.tc-block--proof) .tc-block-visual .tc-figure img{width:100%;height:auto;aspect-ratio:3/2!important;object-fit:cover!important;object-position:50% 45%}
+
+/* Autohaus closing call to action: a centred white card over a softened photograph. Closing blocks with a form keep the panel above. */
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)){position:relative;isolation:isolate;overflow:hidden;width:calc(100% - 2 * var(--tc-gutter,24px));max-width:1360px;margin:clamp(48px,6vw,80px) auto var(--tc-closing-gap);padding:clamp(64px,9vw,128px) 20px;border-radius:clamp(20px,2.5vw,32px)}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form))::before{content:"";position:absolute;inset:-24px;z-index:-1;background:#2a2a28 url("/images/editorial-refinement-20261030/handover-detail-1440.webp") center/cover no-repeat;filter:blur(6px) brightness(.82)}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form))>.tc-wrap{width:100%;max-width:620px;margin-inline:auto;padding:clamp(32px,4vw,48px) clamp(24px,4vw,48px);border-radius:24px;background:#fff;box-shadow:0 20px 60px #0000002e}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-block-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"heading" "content";gap:28px;justify-items:center}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-block-heading{text-align:center}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) h2{max-width:18ch;margin-inline:auto;font-size:clamp(30px,3.4vw,44px);line-height:1.15;letter-spacing:-.03em}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-closing-body{margin:14px auto 0;color:#606060;font-size:17px;line-height:1.8}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-block-content{justify-self:center}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-links{justify-content:center}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) :is(.tc-block-heading,.tc-block-content){width:100%;max-width:none}
+/* The wrap and grid are one element here; one column keeps the heading, text and buttons centred across the card. */
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-block-grid{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:"heading" "content"!important;justify-items:stretch}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-block-grid{gap:24px!important}
+body.inner-autohaus #main .tc-site--refined .tc-block--closing:not(:has(form)) .tc-links{margin:0}

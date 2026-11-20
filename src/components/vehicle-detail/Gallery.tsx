@@ -34,7 +34,7 @@ export default function Gallery({vehicle}:{vehicle:Vehicle}){
  return <div className="vd-gallery">
   {isUsed?<div className="vd-photo-stage">
    <button className={'vd-main-photo vd-main-photo--original'+(exteriorPreview?' vd-main-photo--focused':'')}
-    style={exteriorPreview?{'--vd-photo-position':exteriorPreview.position,'--vd-photo-width-scale':exteriorPreview.widthScale} as CSSProperties:undefined}
+    style={{'--vd-photo-backdrop':`url("${photos.length>1?galleryThumbnailPath(photo.src):photo.src}")`,...(exteriorPreview&&{'--vd-photo-position':exteriorPreview.position,'--vd-photo-width-scale':exteriorPreview.widthScale})} as CSSProperties}
     type="button" onClick={()=>openPhoto(index)} aria-label={'Enlarge '+vehicle.name+' photograph '+(index+1)}>
     <img className="vd-photo-original" src={photo.src} srcSet={photo.srcSet} sizes={galleryPhotoSizes} alt={photo.alt} width={photo.width} height={photo.height} fetchPriority="high" data-sitemap-image={photo.scene?undefined:''}/>
    </button>

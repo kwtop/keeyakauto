@@ -3,6 +3,7 @@ import AboutPhotograph from './AboutPhotograph.astro';
 import type {TrustBlock} from '../../data/trustContent';
 interface Props {opening:TrustBlock & {image:string};}
 const {opening}=Astro.props;
+const paragraphs=opening.paragraphs??[opening.body];
 ---
 <section class="ap-hero ap-wrap" data-core-module data-module={opening.id} aria-labelledby="tc-page-title">
  <div class="ap-hero-layout">
@@ -10,9 +11,9 @@ const {opening}=Astro.props;
   <AboutPhotograph photo="office" priority caption sizes="(max-width: 809px) calc(100vw - 40px), 50vw"/>
   <div class="ap-hero-copy">
    <div class="ap-company-introduction">
-    {(opening.paragraphs ?? [opening.body]).map(paragraph => <p>{paragraph}</p>)}
+    <p>{paragraphs[0]}</p>
    </div>
-   <a class="ap-button" href="#company-documents">View company credentials</a>
+   <div class="ap-hero-actions"><a class="ap-button" href="#company-documents">View company credentials</a><a class="ap-text-link" href="/contact/">Contact our team <span aria-hidden="true">↗</span></a></div>
   </div>
  </div>
  <dl class="ap-facts" data-ap-reveal>
@@ -20,4 +21,7 @@ const {opening}=Astro.props;
   <div><dt>Countries across the wider vehicle business</dt><dd>80+</dd></div>
   <div><dt>Our office</dt><dd>Hangzhou</dd></div>
  </dl>
+ <div class="ap-intro-details">
+  {paragraphs.slice(1).map((paragraph,index)=><div><h2>{index===0?'Export experience':'From sourcing to shipping'}</h2><p>{paragraph}</p></div>)}
+ </div>
 </section>

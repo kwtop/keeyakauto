@@ -1,11 +1,11 @@
 import { buyingGuide, servicePages, afterSalesPage, type EditorialPage, type EditorialSection } from './editorial';
 
 export const exportLinks = [
-  { label: 'Buying Guide', href: '/export-services/buying-guide/' },
-  { label: 'Sourcing & Inspection', href: '/export-services/sourcing-inspection/' },
-  { label: 'Shipping & Delivery', href: '/export-services/shipping-support/' },
-  { label: 'After-sales Support', href: '/export-services/after-sales/' },
-  { label: 'FAQ', href: '/export-services/faq/' }
+  { label: 'Buying Guide', href: '/export-services/buying-guide/', summary: 'Compare offers and see what to check before placing an order.' },
+  { label: 'Sourcing & Inspection', href: '/export-services/sourcing-inspection/', summary: 'See how we find cars and arrange inspections before release.' },
+  { label: 'Shipping & Delivery', href: '/export-services/shipping-support/', summary: 'Plan the route, shipping documents and vehicle handover.' },
+  { label: 'After-sales Support', href: '/export-services/after-sales/', summary: 'Get help with a vehicle issue or parts request after delivery.' },
+  { label: 'FAQ', href: '/export-services/faq/', summary: 'Get answers about stock, payment, inspections and shipping.' }
 ];
 
 export type ServiceSection = EditorialSection & { aliases?: string[] };
@@ -66,7 +66,7 @@ export const shippingSupport: ServicePage = {
     { ...section(afterSalesPage, 'report'), title: 'Report an issue and agree the next step', aliases: ['diagnosis', 'follow-up'],
       paragraphs: [
         'Describe any checks or repairs already carried out. Keep original photographs, readings and reports so the support contact can compare them with the inspection and handover records.',
-        'Agree any local diagnosis or repair before work begins: who will carry it out, what evidence is needed, who approves it and who pays. A local diagnosis does not by itself establish warranty coverage or reimbursement.',
+        'Agree any local diagnosis or repair before work begins: who will carry it out, what evidence is needed, who approves it and who pays. A local diagnosis on its own doesn’t mean the repair is covered or will be reimbursed.',
         'Keep the agreed action under the order reference. Ask who handles the next step and when to expect an update. Retain repair or replacement records and confirm any unresolved issues.'
       ] },
     section(afterSalesPage, 'parts')
@@ -94,27 +94,27 @@ export const exportFaqGroups: FaqGroup[] = [
     "questions": [
       {
         "question": "What can KEEYAK help me with when I buy a car?",
-        "answer": "Tell us which cars you need, how many and where they’re going. We can help find them and arrange inspection and export. The quote names the seller, who gets paid and who provides each service."
+        "answer": "Finding the cars, arranging inspection and getting them exported. Tell us which cars you need, how many and where they’re going. Your quote will show who sells the cars, who you pay and who handles each service."
       },
       {
         "question": "Are the cars in the catalog in stock?",
-        "answer": "We check stock and price when you ask. The catalog shows which models you can inquire about. Before you buy, ask for a dated quote for the version and quantity you need."
+        "answer": "Not necessarily. The catalog shows the models you can ask about, and we check stock and price when you do. Before you buy, ask us for a dated quote for the exact version and quantity you need."
       },
       {
         "question": "Can I include different models in one inquiry?",
-        "answer": "Yes. List the quantity and essential equipment for each model, plus any alternatives you would consider. Tell us whether your budget includes inspection, transport and destination costs or just the cars."
+        "answer": "Yes. List each model with the quantity and the equipment it must have, plus any alternatives you’d accept. Also tell us whether your budget is for the cars only or includes inspection, transport and destination costs."
       },
       {
         "question": "What if I have not chosen a model or version?",
-        "answer": "Tell us how the cars will be used, your preferred body type and powertrain, quantity, destination and budget. Include your timing. We can use those details to narrow the search, then review the exact version and equipment in the quotation."
+        "answer": "That’s fine. Tell us how the cars will be used, the body type and powertrain you prefer, how many you need, where they’re going, your budget and your timing. We’ll narrow the options from there, and the quote will spell out the exact version and equipment."
       },
       {
         "question": "Is there a minimum order quantity?",
-        "answer": "Minimum quantities vary by model, version and supplier. Tell us how many of each model you need and we’ll check what’s available."
+        "answer": "It depends on the model, version and supplier. Tell us how many of each model you need and we’ll check what’s available."
       },
       {
         "question": "Will a China-market EV work in my country?",
-        "answer": "Compatibility depends on the version and country. Review the charging connector and functions, languages, apps, maps and connected services before ordering. Your destination adviser also needs to check import and registration eligibility; a similar model sold locally can have different features."
+        "answer": "It depends on the version and your country. Before you order, check the charging connector and charging functions, plus languages, apps, maps and connected services. Your importer or adviser also needs to confirm the car can be imported and registered. Don’t assume it matches a similar model sold locally; features can differ."
       }
     ]
   },
@@ -127,23 +127,23 @@ export const exportFaqGroups: FaqGroup[] = [
     "questions": [
       {
         "question": "What should I send to get a quote?",
-        "answer": "Send the model and version if known, quantity, destination and preferred timing. For used cars, add your year, mileage and condition limits. Ask for a quotation that identifies the vehicles or batch, currency, validity, delivery point and included charges."
+        "answer": "The model and version if you know them, the quantity, destination and when you need the cars. For used cars, add your limits on year, mileage and condition. When the quote comes back, check it lists the vehicles or batch, the currency, how long it’s valid, the delivery point and what’s included."
       },
       {
         "question": "Why can two quotes for the same model differ?",
-        "answer": "The version, year, equipment, condition and included services can all affect the price. For example, one quote may cover only the car while another includes inspection or delivery to port. Compare the same specification and add any missing charges before comparing totals."
+        "answer": "Usually because they aren’t quoting the same thing. Version, year, equipment, condition and included services all move the price. One quote may cover only the car, while another includes inspection or delivery to port. Match the specification and add any missing charges before you compare totals."
       },
       {
         "question": "What deposit and payment schedule apply?",
-        "answer": "Your order sets the payment schedule. It should name the payment recipient and currency, deposit, later payments and vehicle-release conditions. Verify any changed payment instructions with your established contact through a known channel before sending funds."
+        "answer": "Payment terms are agreed for each order and written into it: who you pay, the currency, the deposit, when the balance is due and when the cars are released. If anyone sends you new bank details, call your KEEYAK contact before you pay."
       },
       {
         "question": "How long will sourcing and delivery take?",
-        "answer": "Timing depends on vehicle availability, inspection, release, transport and destination clearance. Request a schedule for your cars and route that distinguishes confirmed dates from estimates and explains when each stage starts."
+        "answer": "It depends on whether the cars are available, plus inspection, release, transport and clearance at your end. Ask us for a schedule for your cars and route. It should show which dates are confirmed, which are estimates and when each stage starts."
       },
       {
         "question": "What happens if a vehicle or the order changes?",
-        "answer": "The contract sets the change, cancellation and refund terms. Review any replacement vehicle's specification, condition, records, price and timing before accepting it, and keep the approved change with your order."
+        "answer": "Your contract covers changes, cancellations and refunds. If a replacement car is offered, check its specification, condition, records, price and timing before you say yes. Keep the approved change with your order."
       }
     ]
   },
@@ -156,23 +156,23 @@ export const exportFaqGroups: FaqGroup[] = [
     "questions": [
       {
         "question": "Can I request an independent inspection?",
-        "answer": "You can request one. Tell us the provider and checks you have in mind so we can review access, location and the seller's permission. Before booking, settle the date, cost and report requirements with the inspection provider."
+        "answer": "Yes, you can ask for one. Tell us which inspector you want and what they should check, and we’ll look at access, location and whether the seller agrees. Settle the date, cost and what the report must include with the inspector before you book."
       },
       {
         "question": "What should the inspection report contain?",
-        "answer": "Look for the vehicle identifier, inspection date and location, and inspector's name. Findings need photographs, readings or records that identify what was checked and how. The report should list any omitted tests, missing records and unresolved issues."
+        "answer": "At minimum, the VIN, where and when the car was inspected, and who inspected it. Each finding should come with photos, readings or records showing what was checked and how. The report should also say which tests weren’t done, which records are missing and what’s still open."
       },
       {
         "question": "Does a paint reading prove that a car had an accident?",
-        "answer": "No. A single paint-thickness reading cannot establish the cause or extent of a repair. Review the measurement location, unit, method and other evidence with the inspector, who can advise on further checks."
+        "answer": "No. A high reading tells you a panel may have been repainted, not why or how much. We ask the inspector to check the area and send photos before you decide."
       },
       {
         "question": "What if some of the car’s history is missing?",
-        "answer": "Review the remaining records and inspection findings before accepting the car. Missing history leaves accident and repair questions unresolved. You can request more evidence or further checks; record any exceptions you accept before release."
+        "answer": "Then some accident and repair questions can’t be answered. Look at the records you do have and the inspection findings before you accept the car, and ask for more evidence or checks if you need them. If you go ahead anyway, write down what you’re accepting before the car is released."
       },
       {
         "question": "What should I check in a used EV battery report?",
-        "answer": "Check the vehicle identifier, test date, method and conditions. Ask the inspector to explain what the figure measures and its limits. The model's advertised range or battery capacity does not tell you the condition of this particular battery."
+        "answer": "Start with the VIN, the test date, and how and in what conditions the test was run. Ask the inspector what the figure measures and what it doesn’t. The model’s advertised range or battery capacity tells you nothing about this particular battery."
       }
     ]
   },
@@ -185,23 +185,23 @@ export const exportFaqGroups: FaqGroup[] = [
     "questions": [
       {
         "question": "What are the shipping options?",
-        "answer": "Options include Ro-Ro, container and overland transport where available. The route, vehicle dimensions, quantity, carrier rules and handling requirements determine which suits your shipment. Review the route proposal and loading plan before booking."
+        "answer": "Ro-Ro, container, and overland transport where that route exists. Which one suits you depends on the route, the size and number of cars, and the carrier’s rules and handling needs. Check the route proposal and loading plan before you book."
       },
       {
         "question": "What is included in a shipping quote?",
-        "answer": "Each proposal should specify the handover point and which charges are included, excluded or estimated. Review domestic transport, handling, freight, insurance and destination costs separately, along with the rate's expiry and possible changes before booking."
+        "answer": "It varies, so read it line by line. It should show where the cars are handed over and which charges are included, excluded or only estimated. Check domestic transport, handling, freight, insurance and destination costs one by one, and ask when the rate expires and what could change it."
       },
       {
         "question": "Which documents will I need to collect the cars?",
-        "answer": "Your exporter, forwarder and destination importer establish the checklist for the cars and route. Documents may include a commercial invoice, packing list, transport document and applicable origin or conformity records. Review availability, drafts and the release method before dispatch."
+        "answer": "It depends on the cars and the route. Your exporter, forwarder and importer agree the list. It may include a commercial invoice, packing list, transport document, and origin or conformity records where needed. Before the cars ship, check the drafts, when each document will be ready and how the cars will be released."
       },
       {
         "question": "Who handles customs clearance and registration?",
-        "answer": "Your order and shipping plan name the responsible parties. Your destination importer or adviser can explain who handles clearance, taxes, collection, registration and onward transport. These services are not automatically included in the freight price."
+        "answer": "Check your order and shipping plan; they say who does each part. Your importer or adviser at destination can tell you who handles clearance, taxes, collection, registration and onward transport. None of this is automatically included in the freight price."
       },
       {
         "question": "What should I do if a car arrives damaged?",
-        "answer": "Record the damage on arrival and compare it with the departure photos. Keep dated wide shots and close-ups, transport references and the supplied-item list. Contact the named claims handler promptly and follow the shipment's reporting deadlines and evidence requirements."
+        "answer": "Record it on arrival and compare it with the departure photos. Take dated wide shots and close-ups, and keep the transport references and the list of supplied items. Contact the claims handler named for the shipment quickly: claims have deadlines and evidence rules."
       }
     ]
   },
@@ -214,23 +214,23 @@ export const exportFaqGroups: FaqGroup[] = [
     "questions": [
       {
         "question": "Does the manufacturer's warranty continue after export?",
-        "answer": "Not necessarily. Manufacturer coverage in the original market may end after export. Before ordering, review coverage for the vehicle and destination, including any separate seller support, its duration, exclusions and approval process."
+        "answer": "Not necessarily. Manufacturer coverage in the home market may end once the car is exported. Before you order, check what cover your car will have in your country. If separate seller support is offered, check how long it lasts, what it excludes and how claims are approved."
       },
       {
         "question": "What details should I send for a vehicle problem?",
-        "answer": "Send the order reference, VIN, version, delivery date, location and mileage. Describe the symptom, when it began and any warning message. Add photos, diagnostic readings or workshop reports, plus the checks, changes or repairs already carried out."
+        "answer": "Send the order reference, VIN, version, delivery date, location and mileage. Tell us what’s happening, when it started and any warning message. Add photos, diagnostic readings or workshop reports, and tell us what has already been checked, changed or repaired."
       },
       {
         "question": "Can I arrange a local repair and request reimbursement?",
-        "answer": "Get approval from the responsible support provider before authorizing paid work. Establish the workshop, diagnosis or repair, evidence required and who pays each cost. Completing a repair locally does not guarantee reimbursement."
+        "answer": "Only with approval first. Talk to your support contact before you authorize any paid work, and agree the workshop, the diagnosis or repair, the evidence needed and who pays for what. A local repair on its own doesn’t guarantee reimbursement."
       },
       {
         "question": "How do I request the correct replacement part?",
-        "answer": "Send the VIN, version, part photos, part number if known, quantity and destination. The supplier needs to check fit, availability, price and delivery; similar-looking parts can have different connectors or mounting points."
+        "answer": "Send us the VIN, version, photos of the part, the part number if you have it, quantity and destination. The supplier checks fit, availability, price and delivery. Parts that look alike can have different connectors or mounting points."
       },
       {
         "question": "Can you help with software or connected-service questions?",
-        "answer": "Send us the VIN, market version, country of use and details of the feature or error, including the current software version. The provider needs to check compatibility and access because apps, languages and updates vary by market."
+        "answer": "Yes. Send us the VIN, market version, country of use, current software version and what the feature or error is. The provider has to check compatibility and access, because apps, languages and updates vary by market."
       }
     ]
   }

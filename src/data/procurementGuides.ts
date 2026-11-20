@@ -5,7 +5,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "exw-fob-cif-car-shipping": {
     "title": "EXW, FOB and CIF Car Shipping: Costs and Responsibilities",
     "description": "Compare EXW, FOB and CIF car shipping from China: delivery and risk points, named ports, CIF insurance and a clearly qualified cost example.",
-    "answer": "EXW makes the buyer arrange collection and most transport work; FOB includes delivery on board at the named shipment port; CIF also includes the seller’s freight and insurance to the named destination port. Under both FOB and CIF, transit risk passes when the car is on board at origin. Compare the same endpoint and insurance scope before choosing a price.",
+    "answer": "Under EXW you arrange collection and most of the transport. Under FOB the seller delivers the car on board at the named shipment port. CIF adds the seller’s freight and insurance to the named destination port. With both FOB and CIF, transit risk passes to you once the car is on board at origin. Before you pick the lower price, make sure both quotes reach the same endpoint with the same insurance.",
     "image": "quote",
     "reviewed": "2026-11-16",
     "sources": [
@@ -19,9 +19,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Choose the handover before comparing the price",
         "paragraphs": [
-          "Write the rule, named place or port, and edition together. “FOB China” leaves the loading port unclear; “CIF destination” leaves the receiving port unclear. Identify the terminal or collection address separately where it affects handling charges.",
-          "For a buyer with an established forwarder, FOB may make freight control easier. CIF can suit a buyer who wants the seller to arrange the main sea carriage, provided the sailing, destination charges and insurance are acceptable. Neither rule sets payment terms, transfers ownership by itself or guarantees road registration.",
-          "For containerized cars handed to a carrier at a terminal before loading, discuss FCA at the actual handover point. A seller can arrange the main carriage under a suitable C rule without moving risk to arrival; choose the rule to match the physical handover rather than the name printed on an old quotation."
+          "Always write the term with a named port or place and the Incoterms edition, for example “FOB Shanghai, Incoterms 2020”. “FOB China” doesn’t say which port, and “CIF destination” doesn’t say where the cars arrive. If the terminal or collection address changes the handling charges, name it as well.",
+          "If you already work with a forwarder, FOB usually gives you more control over freight. CIF suits you if you’d rather the seller book the main sea carriage, as long as the sailing, destination charges and insurance work for you. Neither term sets payment terms, transfers ownership on its own or guarantees the car can be registered.",
+          "If the cars go into containers and are handed to a carrier at a terminal before loading, talk about FCA at that handover point. A seller can still arrange the main carriage under a suitable C rule without risk moving to arrival. Pick the rule that matches where the cars are physically handed over, not the term printed on an old quotation."
         ],
         "sources": [
           "icc"
@@ -30,7 +30,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Which quote works out cheaper?",
         "paragraphs": [
-          "Illustration only, in USD: the two offers below assume the same car, route, destination charges and hypothetical tax amount. This isolates the freight-and-insurance comparison. If the assessable value changes, duties and taxes may change too. Have the broker recalculate each actual offer."
+          "Illustration only, in USD. Both offers below assume the same car, route, destination charges and a hypothetical tax amount, so the only difference is freight and insurance. In practice, a different assessable value can change duties and taxes too, so have your broker recalculate each real offer."
         ],
         "table": {
           "caption": "Illustrative comparison per car, in USD",
@@ -83,8 +83,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           ]
         },
         "items": [
-          "The CIF price is $1,200 above FOB. That is the break-even amount for separately purchased freight and insurance, assuming the other charges and coverage match.",
-          "If your forwarder cannot match the route or your policy excludes the damage you want covered, price the difference before using the $125 saving."
+          "The CIF price is $1,200 above FOB. If you can buy freight and insurance yourself for less than that, with the same charges and cover, FOB comes out cheaper.",
+          "If your forwarder can’t match the route, or your policy excludes damage you want covered, price that gap before you count on the $125 saving."
         ]
       },
       {
@@ -100,7 +100,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "Which port do you name?",
               "Port of shipment.",
-              "Port of destination. Identify the port of shipment as well."
+              "Port of destination. Name the port of shipment too."
             ],
             [
               "Who arranges main carriage?",
@@ -109,13 +109,13 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Who obtains cargo insurance?",
-              "The term does not oblige either party to insure. The buyer can arrange cover.",
-              "Seller obtains the default minimum cover, Institute Cargo Clauses (C) or similar, unless different cover is agreed."
+              "Neither side has to insure under FOB. The buyer can arrange cover.",
+              "Seller buys the default minimum cover, Institute Cargo Clauses (C) or similar, unless you agree different cover."
             ],
             [
               "When does transit risk pass?",
               "When the vehicle is on board the vessel at the port of shipment.",
-              "Also when it is on board at the port of shipment, even though the seller pays carriage farther."
+              "Also once it is on board at the port of shipment, even though the seller pays carriage beyond that."
             ],
             [
               "Who handles import clearance and tax?",
@@ -131,8 +131,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "When the container goes to a terminal first",
         "paragraphs": [
-          "The named port and the actual handover point need to describe the same transaction. FOB shipping places delivery on board the vessel at the shipment port. Where a container is handed to a carrier at a terminal before vessel loading, discuss FCA for buyer-arranged carriage or CIP for seller-arranged carriage and insurance. Put the selected rule, precise place and Incoterms 2020 edition in the delivery terms.",
-          "CIF shipping pays freight charges to the named destination port while risk transfer occurs at the shipment port under the standard rule. Review the marine cargo insurance evidence separately: the insured journey, exclusions, deductible and claims contact. The quote should also identify export clearance, unloading charges and the import clearance costs left to the buyer."
+          "The named port and the real handover point have to match. FOB shipping means delivery on board the vessel at the shipment port. If the container is handed to a carrier at a terminal before it is loaded, use FCA when you arrange the carriage, or CIP when the seller arranges carriage and insurance. Write the chosen rule, the exact place and the Incoterms 2020 edition into the delivery terms.",
+          "With CIF shipping the seller pays freight charges to the named destination port, but under the standard rule the risk transfer still happens at the shipment port. Check the marine cargo insurance evidence on its own: which journey is insured, the exclusions, the deductible and who handles claims. The quote should also show export clearance, unloading charges and the import clearance costs you pay."
         ],
         "sources": [
           "icc"
@@ -141,8 +141,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "EXW vs FOB: what happens before the car reaches the ship?",
         "paragraphs": [
-          "An EXW vehicle price starts at the named premises. Ask your forwarder to price collection, loading, inland movement and the export work left to your side. An apparently cheaper showroom price can leave several unpriced steps before shipment. Confirm who can perform those steps for this order.",
-          "FOB names a port of shipment and places delivery on board the vessel. It is a sea or inland-waterway rule. For a container handed to a carrier at a yard or terminal, ask whether FCA describes the actual handover more accurately. Write the rule, named point and “Incoterms® 2020” together."
+          "An EXW vehicle price stops at the seller’s named premises. Ask your forwarder to price collection, loading, the inland move and the export work you are left with. A cheap showroom price can hide several unpriced steps before the car reaches the ship, so confirm who will actually do them for this order.",
+          "FOB names a port of shipment, and delivery happens on board the vessel. It is a rule for sea or inland-waterway transport. If a container is handed to a carrier at a yard or terminal, ask whether FCA fits that handover better. Write the rule, the named point and “Incoterms® 2020” together."
         ],
         "sources": [
           "icc"
@@ -157,8 +157,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Ask for the freight and insurance behind a CIF price",
         "paragraphs": [
-          "Send the seller the destination port you actually intend to use. Request the carrier or forwarding arrangement, routing assumptions, quote expiry and the charges payable on arrival. A CIF offer to one port cannot be compared with FOB plus freight to a different port without adding the remaining journey.",
-          "Keep the insurance evidence with the quote. Check the insured value, covered journey, deductible, exclusions and the person who handles a claim. If you need wider cover, obtain its price before accepting the offer. The party paying freight and the point where risk transfers are separate parts of the comparison."
+          "Give the seller the destination port you actually plan to use. Ask who the carrier or forwarder is, what routing they assume, when the quote expires and what you’ll pay on arrival. A CIF offer to one port can’t be compared with FOB plus freight to another port until you add the rest of the journey.",
+          "Keep the insurance evidence with the quote. Check the insured value, the covered journey, the deductible, the exclusions and who handles a claim. If you need wider cover, get it priced before you accept the offer. Remember that who pays freight and where risk transfers are two different questions."
         ],
         "links": [
           {
@@ -170,8 +170,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Write down the insurance and release terms",
         "paragraphs": [
-          "CIF under Incoterms® 2020 normally calls for minimum cargo cover comparable to Institute Cargo Clauses (C), unless broader cover is agreed. That is not a promise to cover every scratch, mechanical fault or pre-existing defect. Request the policy or certificate, insured value, excess, exclusions, claims contact and the party entitled to claim.",
-          "A usable quotation line might read: “CIF [named destination port], Incoterms® 2020; [specified vehicle and quantity]; freight and insurance included; destination terminal handling, customs clearance, duties and inland delivery [included/excluded].” Add the evidence and payment terms in the contract. The brackets must be completed for the actual shipment."
+          "CIF under Incoterms® 2020 normally calls for minimum cargo cover similar to Institute Cargo Clauses (C), unless you agree broader cover. That won’t cover every scratch, mechanical fault or existing defect. Ask for the policy or certificate and check the insured value, excess, exclusions, claims contact and who is entitled to claim.",
+          "A workable quotation line looks like this: “CIF [named destination port], Incoterms® 2020; [specified vehicle and quantity]; freight and insurance included; destination terminal handling, customs clearance, duties and inland delivery [included/excluded].” Fill in the brackets for your actual shipment, and put the evidence and payment terms in the contract."
         ],
         "sources": [
           "icc"
@@ -188,11 +188,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Does CIF include car import duty and registration?",
-            "answer": "Under the standard CIF allocation, the buyer handles import clearance and its costs. Ask for a separate destination estimate covering duties, taxes, terminal release, local delivery and registration where required. A seller’s extra service should be listed explicitly."
+            "answer": "No. Under standard CIF, you handle import clearance and pay for it. Get a separate destination estimate for duties, taxes, terminal release, local delivery and registration. If the seller offers any extra service, it should be listed in writing."
           },
           {
             "question": "Is FOB always cheaper than CIF?",
-            "answer": "No. Compare freight, insurance and handling for the same route and vehicle list. The worked example above shows one comparison, not a current shipping rate. A buyer with a different forwarder or insurance requirement can reach a different result."
+            "answer": "No. Compare freight, insurance and handling for the same route and the same cars. The example above is one comparison, not a current shipping rate. With a different forwarder or different insurance needs, your answer may come out the other way."
           }
         ],
         "sources": [
@@ -218,7 +218,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "calculate-car-landed-cost": {
     "title": "Car Import Cost Calculator: Landed Cost from China",
     "description": "Calculate car import landed cost per unit or batch, with freight, insurance, broker-supplied taxes, local delivery, allocation and currency assumptions.",
-    "answer": "Add the vehicle price and every cost needed to reach one named endpoint: origin work, freight, insurance, destination clearance, taxes and local preparation or delivery. Record each figure as confirmed, estimated or still missing. The calculator totals your inputs; it does not determine a country’s tax rate or confirm import eligibility.",
+    "answer": "Start with the vehicle price, then add every cost it takes to reach one named endpoint: origin work, freight, insurance, destination clearance, taxes and local preparation or delivery. Mark each figure as confirmed, estimated or still missing. The calculator only adds up what you enter. It won’t work out a country’s tax rate or tell you whether the car can be imported.",
     "image": "quote",
     "reviewed": "2026-11-16",
     "sources": [
@@ -232,9 +232,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Choose the endpoint and currency",
         "paragraphs": [
-          "Choose where the budget ends: customs release, delivery to your yard or completion of registration. Put the endpoint, quoted trade term and exchange rate date above the worksheet. A four-car batch delivered to a yard and a single registered vehicle need different cost lines.",
+          "First decide where your budget ends: customs release, delivery to your yard, or a registered car. Write that endpoint, the quoted trade term and the exchange rate date at the top of the worksheet. Four cars delivered to a yard need different cost lines from one registered vehicle.",
           "Landed cost per car = vehicle price + origin charges outside the quote + freight charges and marine cargo insurance outside the quote + applicable import duty and taxes + destination handling and customs broker fees + local work in scope.",
-          "Keep import VAT or any other applicable tax on the broker's calculation, with its valuation basis and date. Registration fees and inland transport belong in the purchasing budget when your endpoint includes them. A seller's port price leaves these amounts to be established; they should remain visible as missing until quoted."
+          "Take import VAT and any other tax from the broker's calculation, along with the valuation basis and date. If your endpoint includes them, registration fees and inland transport belong in the budget too. A seller's port price doesn't cover these, so leave them marked as missing until someone quotes them."
         ],
         "sources": [
           "icc"
@@ -243,8 +243,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Work through a four-car example",
         "paragraphs": [
-          "The following figures are hypothetical budgeting inputs, not a supplier offer or a tax schedule. The USD 1,540 duty-and-tax allowance is an assumed amount supplied to the example, not a percentage to copy for another car or country.",
-          "Assume four identical cars and equally shared freight and insurance. All figures are illustrative USD. The tax line represents an amount a broker would calculate under the destination’s rules. It is not derived by applying a universal rate to this subtotal."
+          "These figures are made-up budgeting inputs, not a supplier offer or a tax schedule. The USD 1,540 duty-and-tax allowance is an amount we assumed for this example. Don’t turn it into a percentage and apply it to another car or country.",
+          "Assume four identical cars sharing freight and insurance equally, with all figures in illustrative USD. The tax line stands for the amount a broker would calculate under the destination’s rules. It is not a standard rate applied to the subtotal."
         ],
         "table": {
           "caption": "Illustrative landed-cost worksheet",
@@ -295,25 +295,25 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Calculate your own estimate",
         "paragraphs": [
-          "Use one currency for all amounts. Freight and insurance are batch costs in this worksheet. Enter zero for an item already included in the unit price and use the duties and taxes your broker estimates."
+          "Enter every amount in one currency. In this worksheet, freight and insurance are costs for the whole batch. Put zero for anything already included in the unit price, and use your broker’s estimate for duties and taxes."
         ],
         "calculator": true
       },
       {
         "heading": "Audit the numbers before ordering",
         "items": [
-          "Attach the dated seller, carrier and broker offers. Mark each line confirmed, estimated or missing.",
-          "If a CIF quote already includes freight and insurance, remove those duplicate entries while retaining any agreed additional cover.",
-          "Ask the broker for the classification, valuation basis, currency conversion and tax assumptions. Verify registration and port charges separately.",
-          "For mixed cars, allocate shared charges by the cost driver quoted by the forwarder, such as units, space or handling.",
-          "Add a separate contingency line for items such as storage or currency movement. Keep it separate from the confirmed costs."
+          "Attach the dated offers from the seller, carrier and broker. Mark each line confirmed, estimated or missing.",
+          "If a CIF quote already includes freight and insurance, delete those lines so you don’t count them twice, but keep any extra cover you’ve agreed.",
+          "Ask the broker how they classified the car, what value and exchange rate they used, and what tax assumptions they made. Check registration and port charges separately.",
+          "For a mixed batch, split shared charges the way the forwarder prices them, for example by unit, space or handling.",
+          "Add a contingency line for things like storage or currency movement, and keep it apart from the confirmed costs."
         ]
       },
       {
         "heading": "What changes the car shipping cost from China?",
         "paragraphs": [
-          "Give the forwarder the departure point, destination, vehicle count, dimensions, powertrain and condition. Request a dated RoRo or container quote with the booking assumptions. Ask whether inland collection, loading, terminal handling, documents and destination release are included. A freight-only estimate leaves those lines open.",
-          "For a mixed batch, request the actual allocation method. Dividing every charge equally can hide a larger vehicle’s space or handling cost. Keep both a total shipment budget and a per-vehicle worksheet, and reconcile them before comparing the expected resale margin."
+          "Give the forwarder the departure point, destination, number of cars, dimensions, powertrain and condition. Ask for a dated RoRo or container quote that states its booking assumptions. Then ask whether inland collection, loading, terminal handling, documents and destination release are included. A freight-only figure leaves all of that open, so your car shipping cost from China will look lower than it is.",
+          "For a mixed batch, ask how the forwarder actually splits the charges. An equal split can hide the extra space or handling a larger vehicle needs. Keep a total shipment budget and a per-vehicle worksheet, and make sure they agree before you look at resale margins."
         ],
         "links": [
           {
@@ -325,9 +325,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Import duty and tax: what the calculator needs from your broker",
         "paragraphs": [
-          "This car import cost calculator adds the amounts you enter. It does not determine a tariff classification or calculate a country’s tax automatically. Ask the destination broker for the applicable classification, customs value, rates, fees and calculation date for the exact new or used vehicle.",
-          "Keep the broker’s tax worksheet beside the supplier’s quote. Record whether the broker has included freight and insurance in the valuation and which exchange rate it used. When a tariff, version, price or destination changes, obtain a revised calculation instead of carrying the old tax line into the new order.",
-          "Use the destination guides to organize the next conversation. They do not replace a shipment-specific clearance estimate. An exemption or personal import route described for one buyer may not apply to a dealer’s commercial batch."
+          "This car import cost calculator adds up the amounts you enter. It won’t classify the car or work out a country’s tax for you. Ask the destination broker for the classification, customs value, rates, fees and calculation date for the exact new or used vehicle you’re buying.",
+          "Keep the broker’s tax worksheet next to the supplier’s quote. Note whether the broker included freight and insurance in the valuation, and which exchange rate they used. If the tariff, version, price or destination changes, ask for a new calculation rather than copying the old tax line into the new order.",
+          "The destination guides help you prepare for that conversation, but they don’t replace a clearance estimate for your shipment. An exemption or personal import route that works for one buyer may not apply to a dealer’s commercial batch."
         ],
         "links": [
           {
@@ -343,16 +343,16 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Allocate shared costs without hiding expensive units",
         "paragraphs": [
-          "Keep charges that belong to one VIN on that vehicle: a particular repair, inspection or registration fee should not disappear into a batch average. For genuinely shared freight, document the agreed allocation basis, such as the forwarder’s chargeable space or a disclosed equal split.",
-          "Hypothetical mixed batch: shared freight is USD 2,400 for two sedans and one larger pickup. If the forwarder’s agreed chargeable-space weights are 1, 1 and 2, allocate USD 600, USD 600 and USD 1,200. An equal split would be USD 800 each. Both total USD 2,400, but they produce different unit margins. Use the basis that reflects your booking, and retain it when comparing resale costs."
+          "Charges that belong to one VIN stay on that car. A repair, inspection or registration fee for one vehicle shouldn’t disappear into a batch average. For freight that really is shared, write down how you agreed to split it, such as the forwarder’s chargeable space or an equal split you both know about.",
+          "Hypothetical mixed batch: shared freight is USD 2,400 for two sedans and one larger pickup. If the forwarder’s agreed chargeable-space weights are 1, 1 and 2, allocate USD 600, USD 600 and USD 1,200. An equal split would be USD 800 each. Both add up to USD 2,400, but the margin on each car comes out different. Use the split that matches your booking, and stick with it when you compare resale costs."
         ]
       },
       {
         "heading": "Test the budget against freight and exchange-rate changes",
         "paragraphs": [
-          "In the existing four-car example, an additional USD 300 freight per car increases the batch budget by USD 1,200, before any resulting tax change. If a hypothetical USD 58,000 payment is converted at 5.00 units of local currency per USD, it requires 290,000; at 5.20 it requires 301,600. The 11,600 difference excludes bank fees and changes to locally assessed taxes.",
-          "Keep a cash-payment total that includes tax payable at clearance. If a local accountant confirms that an amount can later be credited or recovered, show that separately in a margin analysis, with timing and conditions. A possible future recovery does not fund the port release today.",
-          "Before ordering, resolve the largest missing items and obtain the offer expiry, exchange-rate basis and quote owner for every estimate. Do not silently enter zero for an unquoted charge. Keep any contingency separate from confirmed supplier prices so it can be replaced as evidence arrives."
+          "In the four-car example above, an extra USD 300 freight per car adds USD 1,200 to the batch budget, before any knock-on tax change. If a hypothetical USD 58,000 payment is converted at 5.00 units of local currency per USD, it costs 290,000; at 5.20 it costs 301,600. That 11,600 difference doesn’t include bank fees or changes to locally assessed taxes.",
+          "Keep a cash total that includes the tax you pay at clearance. If a local accountant confirms you can credit or recover some of it later, show that separately in your margin analysis, with the timing and conditions. Money you might get back later doesn’t release the cars from the port today.",
+          "Before you order, close the biggest gaps. For every estimate, know when the offer expires, which exchange rate it uses and who quoted it. Never put zero for a charge nobody has quoted. Keep the contingency apart from confirmed supplier prices so you can replace it as real quotes come in."
         ],
         "links": [
           {
@@ -366,11 +366,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "What should I enter when a charge is still unknown?",
-            "answer": "Mark it as missing in your purchasing worksheet and request the quote. A zero in the calculator contributes nothing to the total; it does not mean the service is free. Treat a total with missing items as an incomplete budget."
+            "answer": "Mark it as missing in your purchasing worksheet and ask for the quote. A zero in the calculator adds nothing to the total, but that doesn’t make the service free. A total with missing items is an incomplete budget."
           },
           {
             "question": "Does a low vehicle price mean a better import margin?",
-            "answer": "Compare the cost at the same endpoint, including preparation, inspection and support you must arrange. Keep expected resale proceeds separate from confirmed costs, and test the margin again if the route, exchange rate or tax estimate changes."
+            "answer": "Not necessarily. Compare costs to the same endpoint, including any preparation, inspection and support you have to arrange yourself. Keep expected resale income apart from confirmed costs, and check the margin again if the route, exchange rate or tax estimate changes."
           }
         ]
       }
@@ -393,7 +393,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "inspect-a-used-car-from-china": {
     "title": "Used Car Inspection Checklist: Before Buying and Shipping",
     "description": "Inspect a used car from China before purchase or shipment. Define VIN-linked checks, report limitations, acceptance criteria, repair evidence and reinspection.",
-    "answer": "Agree a written inspection scope for the actual VIN before booking. The report should show identity, mileage, condition, operation, findings and checks not completed, with dated evidence. Use the findings to decide whether to accept, require repair and reinspection, or decline the unit before the relevant payment or release milestone.",
+    "answer": "Agree in writing what will be checked on the actual VIN before you book the inspection. The report should cover identity, mileage, condition and operation, list what was found and what couldn’t be checked, and back it up with dated evidence. Then use it to decide, before the next payment or release: accept the car, ask for repair and a re-check, or turn it down.",
     "image": "inspection",
     "reviewed": "2026-11-16",
     "sources": [
@@ -422,32 +422,32 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "Identity",
               "VIN at the vehicle, registration and offer, plus dated photos.",
-              "Resolve every mismatch with the seller and inspector."
+              "Sort out any mismatch with the seller and inspector."
             ],
             [
               "Odometer",
               "Dated reading and accessible maintenance, inspection or registration records.",
-              "Ask about gaps, resets and records that conflict."
+              "Ask about gaps, resets and records that don’t agree."
             ],
             [
               "Body and structure",
               "Walkaround, underbody access, repair observations and agreed paint readings.",
-              "Agree acceptable repairs and get a price or replacement if needed."
+              "Agree which repairs you’ll accept, and get a price or a replacement car if needed."
             ],
             [
               "Mechanical operation",
               "Cold start, warning lamps, leaks, brakes, tyres and road test where permitted.",
-              "Record what could not be checked and who will follow up."
+              "Note what couldn’t be checked and who will follow up."
             ],
             [
               "Cabin and equipment",
               "Keys, HVAC, locks, cameras, controls and the equipment in the offer.",
-              "Record missing items before approving handover."
+              "Note missing items before you approve handover."
             ],
             [
               "Electrified vehicle",
               "Battery report or agreed diagnostics, charge test where available, visible damage and faults.",
-              "Agree a further test or decline if material risks remain open."
+              "Agree a further test, or walk away if serious risks are still open."
             ]
           ]
         }
@@ -455,9 +455,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Agree on the inspection and release criteria",
         "paragraphs": [
-          "Name the inspector, vehicle location, checklist and evidence format before paying for the inspection. Confirm what access is available, especially for an underbody check, battery diagnostics or a road test. A report can distinguish a pass, a finding and a check the inspector could not perform.",
-          "China’s used vehicle export framework calls for a third-party product inspection report. Check the applicable export report with the exporter and agree any extra checks your own purchase needs. A report prepared for export does not decide whether the destination will register the car.",
-          "For a batch, a sample inspection does not establish the condition of uninspected cars. Decide which identity, damage and operation checks apply to every VIN, which deeper tests may be sampled, and who approves an exception. The inspection provider’s service scope and the statutory export inspection are separate matters; confirm what each actually covers."
+          "Before you pay for the inspection, agree who the inspector is, where the car is, the checklist and how the evidence will be presented. Confirm what access they’ll have, especially for an underbody check, battery diagnostics or a road test. A good report separates a pass, a finding and a check the inspector couldn’t do.",
+          "China’s used vehicle export framework calls for a third-party product inspection report. Ask the exporter which export report applies, and agree any extra checks your purchase needs. A report prepared for export doesn’t decide whether your country will register the car.",
+          "With a batch, inspecting a sample tells you nothing certain about the cars nobody looked at. Decide which identity, damage and operation checks every VIN gets, which deeper tests can be sampled, and who signs off an exception. The inspection company’s service and the statutory export inspection are two different things, so confirm what each one covers."
         ],
         "sources": [
           "used-export"
@@ -466,16 +466,16 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "What to save at handover",
         "items": [
-          "Keep the dated inspection, photos and written acceptance together by VIN.",
-          "If repairs are agreed, request the repair record and the specific re-check before release.",
-          "Ask for a fresh handover condition record if time passed between inspection and dispatch."
+          "File the dated inspection, photos and written acceptance together under each VIN.",
+          "If repairs were agreed, ask for the repair record and a re-check of that work before release.",
+          "If time has passed since the inspection, ask for a fresh condition record at handover."
         ]
       },
       {
         "heading": "Pre-purchase inspection or pre-shipment inspection?",
         "paragraphs": [
-          "A used car pre-purchase inspection helps you decide whether to accept a specific car and what repairs or price changes to request. A pre-shipment inspection checks the identified car against the agreed condition and release requirements near dispatch. State which decision the inspection must support when booking it.",
-          "If the same report will serve both purposes, record its date and what happens between inspection and loading. A car can be moved, repaired or substituted during that interval. Ask for updated identity and condition photos at handover and a targeted re-check for any agreed work."
+          "A used car pre-purchase inspection helps you decide whether to take a specific car and what repairs or price changes to ask for. A pre-shipment inspection, done close to dispatch, checks that car against the condition and release terms you agreed. When you book, say which of these decisions the inspection is for.",
+          "If one report has to do both jobs, note its date and what happens between inspection and loading. In that gap a car can be moved, repaired or swapped. Ask for new identity and condition photos at handover, and a re-check of any agreed work."
         ]
       },
       {
@@ -485,14 +485,14 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         ],
         "heading": "Ask for findings you can act on",
         "paragraphs": [
-          "Start with VIN verification and an odometer check against the records available for that car. Record the identifier photographed, the reading, the date and any inconsistency. The inspector should distinguish the observation from a conclusion about the car's history.",
-          "For paint thickness, request panel locations and measurements with photographs. Suspected accident damage needs an explanation of the physical evidence and access limits. An underbody inspection and OBD diagnostics should be included only when the provider has the equipment, permission and agreed scope; neither a clean scan nor one paint reading establishes a complete repair history.",
-          "Use the findings to make a decision: accept the recorded condition, agree repairs and a re-check, commission another test, or review a replacement. Keep the road test result and every unperformed check in that decision file."
+          "Start with VIN verification and an odometer check against whatever records exist for that car. The report should show the photographed VIN, the reading, the date and anything that doesn't add up. The inspector should keep what they saw separate from what they conclude about the car's history.",
+          "For paint thickness, ask for the panel, the measurement and a photo. If the inspector suspects accident damage, they should explain the physical evidence and what they couldn't reach. Only include an underbody inspection and OBD diagnostics if the provider has the equipment and permission and it's in the agreed scope. A clean scan or a single paint reading doesn't prove the car's full repair history.",
+          "Then decide: accept the car as recorded, agree repairs and a re-check, order another test, or look at a replacement. Keep the road test result and every check that wasn't done in the same decision file."
         ],
         "items": [
-          "For a road test, record whether it took place and any restrictions on route or speed.",
-          "For a used EV, specify the battery diagnostics and charging checks separately from the general walkaround.",
-          "For a batch, identify which checks apply to every VIN. A report for one sample car does not describe the condition of every unit."
+          "For a road test, note whether it happened and any limits on route or speed.",
+          "For a used EV, list the battery diagnostics and charging checks separately from the general walkaround.",
+          "For a batch, say which checks every VIN gets. A report on one sample car doesn’t tell you the condition of the rest."
         ],
         "links": [
           {
@@ -504,8 +504,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Turn each finding into an acceptance decision",
         "paragraphs": [
-          "These are workflow examples, not universal mechanical pass limits. Set the actual standards with the inspector for the model, age, use and budget. A report can describe accessible evidence without establishing every hidden defect or the complete accident history.",
-          "After rectification, keep the original finding, repair invoice or work record, new test result and buyer decision together. Before loading, compare the VIN, odometer and visible condition with that accepted file; explain additional mileage or damage rather than overwriting the earlier record."
+          "These are examples of how to handle findings, not universal pass limits. Set the real standards with the inspector for the model, age, use and budget. A report covers what the inspector could see and reach; it can’t rule out every hidden defect or confirm the full accident history.",
+          "After a repair, keep the original finding, the repair invoice or work record, the new test result and your decision together. Before loading, check the VIN, odometer and visible condition against that file. If there is extra mileage or damage, get it explained; don’t overwrite the earlier record."
         ],
         "table": {
           "caption": "Example decision record to agree before inspection",
@@ -516,23 +516,23 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Cosmetic damage within the agreed limit",
-              "Save a close-up, location and description; record the buyer’s acceptance or agreed price adjustment."
+              "Save a close-up, its location and a description, then note that you accepted it or the price adjustment you agreed."
             ],
             [
               "Repair promised before shipment",
-              "Name the repair, responsible party and completion date; request work evidence and an independent recheck of the affected function."
+              "Write down the repair, who does it and by when; ask for evidence of the work and an independent recheck of the affected function."
             ],
             [
               "Warning lamp, abnormal operation or suspected structural damage",
-              "Pause approval; ask the qualified inspector to explain the significance, further test and limits. Do not treat a reset warning as proof of repair."
+              "Hold approval. Ask the qualified inspector what it means, what further test is needed and what they couldn’t check. A cleared warning light is not proof of repair."
             ],
             [
               "Road test, lift inspection or diagnostic scan not completed",
-              "Mark the field “not tested” and state why; arrange the missing check or obtain the buyer’s explicit acceptance of the remaining uncertainty."
+              "Mark it “not tested” and say why. Either arrange the missing check or have the buyer accept the risk in writing."
             ],
             [
               "VIN or registration record mismatch",
-              "Stop the release decision until the identity and documents have been reconciled for the proposed unit."
+              "Don’t release the car until its identity and documents match."
             ]
           ]
         },
@@ -551,11 +551,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Can an inspection guarantee the mileage is genuine?",
-            "answer": "Ask for an odometer photo and the accessible dated records used to compare it. An inspector should identify gaps or conflicting entries. A current reading alone cannot prove the vehicle’s complete mileage history."
+            "answer": "No. Ask for an odometer photo and the dated records it was compared with. The inspector should point out gaps or entries that conflict. A current reading on its own can’t prove the car’s full mileage history."
           },
           {
             "question": "How much does a pre-shipment car inspection cost?",
-            "answer": "Request a quote for the location, vehicle count, access, tests, report language and any re-inspection. Compare those scopes before comparing fees. Battery diagnostics, a lift inspection and a road test should be named if they are needed."
+            "answer": "It depends on the job. Ask for a quote that covers the location, number of cars, access, tests, report language and any re-inspection, and compare what each quote includes before you compare fees. If you need battery diagnostics, a lift inspection or a road test, name them in the request."
           }
         ],
         "links": [
@@ -588,7 +588,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "container-vs-roro-car-shipping": {
     "title": "RoRo vs Container Car Shipping from China",
     "description": "Compare RoRo and container car shipping by route, vehicle condition, loading plan, EV acceptance, booking cutoffs and the costs due at arrival.",
-    "answer": "Choose between actual bookable services for the same route and endpoint. Compare vehicle acceptance, sailing options, loading and securing, destination handling and total cost. RoRo and container requirements vary by carrier and vehicle condition; obtain acceptance before treating a freight estimate as a confirmed shipment.",
+    "answer": "Compare real services you can actually book, on the same route to the same endpoint. Look at whether the carrier accepts your cars, the sailings, loading and securing, destination handling and the total cost. RoRo and container rules differ by carrier and by the car’s condition, so get the carrier’s acceptance before you treat a freight estimate as a booked shipment.",
     "image": "ports",
     "reviewed": "2026-11-16",
     "sources": [
@@ -621,23 +621,23 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Where do you hand them over?",
-              "Ask for the vehicle receiving terminal, cutoff and condition record.",
+              "Ask which terminal receives the cars, the cutoff and who records their condition.",
               "Ask who collects the cars, where they are packed and who provides the packing record."
             ],
             [
               "What is included in the rate?",
-              "Get terminal, document, transfer and vehicle release charges.",
-              "Get equipment, packing, securing, terminal and unpacking charges."
+              "Get the terminal, document, transfer and vehicle release charges.",
+              "Get the equipment, packing, securing, terminal and unpacking charges."
             ],
             [
               "What does the policy cover?",
               "Compare insured value, deductible, loading or unloading cover, and any exclusions.",
-              "Check the same points, and check cover for the agreed packing and transport route."
+              "Check the same points, plus cover for the agreed packing and transport route."
             ],
             [
               "Who collects and when?",
               "Confirm collection authority, deadline and storage terms.",
-              "Confirm release, free time, unpacking and empty equipment return responsibilities."
+              "Confirm who handles release, free time, unpacking and returning the empty equipment."
             ]
           ]
         },
@@ -649,16 +649,16 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Give each forwarder the same booking brief",
         "items": [
-          "Send the quantity, dimensions, weight, condition and powertrain for each vehicle. Disclose known battery damage, missing keys or non-running units.",
-          "Ask for named ports, transshipment stops, booking validity and which charges can change.",
-          "Ask whether a route carries your exact vehicle type and what the carrier needs on the booking date. A quote alone does not reserve space."
+          "Send the quantity, dimensions, weight, condition and powertrain for each vehicle. Say upfront if any car has battery damage, missing keys or doesn’t run.",
+          "Ask for the named ports, any transshipment stops, how long the booking holds and which charges can change.",
+          "Ask whether the route takes your exact vehicle type and what the carrier needs on the booking date. A quote on its own doesn’t reserve space."
         ]
       },
       {
         "heading": "Keep a condition record for both options",
         "paragraphs": [
-          "Keep dated departure photographs with the vehicle list and bill of lading or other transport reference. For a container, the loading plan should identify the assigned cars and vehicle lashing arrangements. Obtain the packing and securing records that the receiving team will need for unloading and comparison.",
-          "Price terminal handling charges, packing or unpacking, and any port storage outside the freight offer. Review the cargo insurance for the same handover points and route. Electric vehicle shipping also needs the carrier's current instructions for the car's battery status and condition; a quotation alone does not establish acceptance."
+          "Keep dated departure photos with the vehicle list and the bill of lading or other transport reference. For a container, the loading plan should show which cars are inside and the vehicle lashing arrangements. Get the packing and securing records too; the receiving team needs them to unload and compare condition.",
+          "Price terminal handling charges, packing or unpacking, and any port storage that sit outside the freight offer. Check that the cargo insurance covers the same handover points and route. Electric vehicle shipping also needs the carrier's current instructions on battery status and condition. A quotation alone doesn't mean the carrier has accepted the car."
         ],
         "sources": [
           "ctu",
@@ -668,8 +668,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "How many cars fit in a container?",
         "paragraphs": [
-          "Ask the loading provider for a plan using the actual length, width, height, weight and ground clearance of each model. Include the proposed container, securing equipment, access for loading and unloading, and any restrictions on stacking or racking. Do not price an order around a generic cars-per-container claim.",
-          "For a mix of SUVs, sedans or vans, confirm which VINs are assigned to each load. Ask for the loading photographs and the agreed securing record. The receiving party also needs an unloading plan and responsibility for returning the empty equipment."
+          "Ask the loading provider for a plan based on the real length, width, height, weight and ground clearance of each model. It should cover the container, securing equipment, access for loading and unloading, and any limits on stacking or racking. Don’t price an order on a generic cars-per-container figure.",
+          "For a mix of SUVs, sedans or vans, confirm which VINs go in each load. Ask for the loading photos and the agreed securing record. At the other end, someone needs an unloading plan and has to take charge of returning the empty equipment."
         ],
         "sources": [
           "ctu"
@@ -678,17 +678,17 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Shipping electric cars and non-running vehicles",
         "paragraphs": [
-          "Get written carrier acceptance for the precise powertrain and condition before committing to a route. Supply the battery and damage information requested at booking. Ask about the required state of charge, keys, isolation or other preparation instructions for that service; do not transfer a rule from another carrier or sailing.",
-          "A car that cannot be driven may need a different handling arrangement or may be refused by the proposed service. Disclose the condition when asking for a rate. Record any extra handling price and the acceptance decision, rather than assuming that a container or RoRo booking covers it."
+          "Get the carrier’s written acceptance for the exact powertrain and condition before you commit to a route. Supply the battery and damage information they ask for at booking. Ask what state of charge, keys, isolation or other preparation that service needs. Don’t assume a rule from another carrier or sailing applies.",
+          "A car that can’t be driven may need different handling, or the service may refuse it. Mention the condition when you ask for a rate. Get any extra handling price and the carrier’s acceptance in writing; don’t assume a container or RoRo booking covers it."
         ]
       },
       {
         "heading": "Move from a freight estimate to a confirmed booking",
         "items": [
-          "Send the forwarder the exact dimensions, weight, running condition, ground clearance and powertrain. Identify any battery damage, faults or modifications rather than describing every unit simply as a car.",
-          "Obtain the carrier’s acceptance for the specific condition and route, plus the documents and preparation it requires. Where battery test information is requested, confirm exactly which evidence applies. Do not apply one carrier’s battery charge limit to every EV shipment.",
-          "Confirm the booking reference, receiving location, vehicle and document cutoffs, planned vessel and who reports a rollover or route change. A planned departure is not a guaranteed arrival date.",
-          "For containers, have the competent loading provider approve the measured layout, access, securing points and equipment. The CTU and CSS guidance addresses safe packing and securing; it does not establish that a particular number of cars fits your container."
+          "Send the forwarder the exact dimensions, weight, running condition, ground clearance and powertrain. Point out any battery damage, faults or modifications instead of listing every unit simply as a car.",
+          "Get the carrier’s acceptance for that condition and route, plus the documents and preparation it needs. If they ask for battery test information, confirm exactly what evidence they want. One carrier’s battery charge limit doesn’t apply to every EV shipment.",
+          "Confirm the booking reference, receiving location, vehicle and document cutoffs, planned vessel, and who tells you about a rollover or route change. A planned departure is not a guaranteed arrival date.",
+          "For containers, have a competent loading provider approve the measured layout, access, securing points and equipment. The CTU and CSS guidance covers safe packing and securing; it doesn’t tell you how many cars will fit in your container."
         ],
         "sources": [
           "ctu",
@@ -698,9 +698,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Price the delay and receiving work before choosing",
         "paragraphs": [
-          "Ask the quotation owner to identify origin storage, destination terminal storage, container detention or other time-related charges, their charging triggers and any free period. Terminology and tariffs differ, so request the applicable schedule rather than relying on a label alone.",
-          "Allocate the cost of late documents, a missed receiving cutoff, an unaccepted vehicle and delayed customs release in the order and transport brief. For container delivery, confirm unloading equipment, safe access and empty-return arrangements. For RoRo, confirm collection authority, release conditions and the local movement from the terminal.",
-          "Keep the departure condition photos, keys and accessory inventory with the booking. They help the receiving team distinguish a recorded pre-existing mark from a discrepancy requiring investigation at arrival."
+          "Ask whoever quoted to list origin storage, destination terminal storage, container detention and any other time-based charges, what triggers them and any free period. Names and tariffs vary, so ask for the actual schedule rather than going by the label.",
+          "Decide in the order and transport brief who pays if documents are late, a receiving cutoff is missed, a car is refused or customs release is delayed. For container delivery, confirm unloading equipment, safe access and how the empty is returned. For RoRo, confirm who can collect, the release conditions and the move from the terminal.",
+          "Keep the departure condition photos, keys and accessory list with the booking. They let the receiving team tell a mark that was already recorded from new damage that needs looking into at arrival."
         ],
         "links": [
           {
@@ -718,15 +718,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Which option is cheaper for cars from China?",
-            "answer": "Compare complete quotes for the same vehicle list, handover points and dates. RoRo and container offers can include different terminal, packing, securing and unpacking costs. Use the landed-cost worksheet after filling those gaps."
+            "answer": "It depends on the shipment. Compare complete quotes for the same vehicle list, handover points and dates, because RoRo and container offers can include different terminal, packing, securing and unpacking costs. Once those gaps are filled, run both through the landed-cost worksheet."
           },
           {
             "question": "How long will car shipping from China take?",
-            "answer": "Ask for the proposed sailing, cutoffs, any transshipment and estimated arrival. Add preparation, inspection, release and collection time separately. Confirm which dates are bookings and which are estimates, and what happens if a sailing changes."
+            "answer": "Ask for the proposed sailing, cutoffs, any transshipment and the estimated arrival. Add preparation, inspection, release and collection time on top. Check which dates are booked and which are estimates, and what happens if a sailing changes."
           },
           {
             "question": "Can spare parts travel inside the car?",
-            "answer": "Ask the carrier and customs broker before including any items. Record the permitted inventory, packing and declaration requirements. Do not place unlisted goods in a car and assume the vehicle booking covers them."
+            "answer": "Only if the carrier and customs broker agree first. Write down what’s allowed, how it must be packed and how it’s declared. Don’t put unlisted goods in a car and assume the vehicle booking covers them."
           }
         ],
         "links": [
@@ -763,7 +763,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "car-import-documents-checklist": {
     "title": "Car Import Documents Checklist: China Export to Arrival",
     "description": "Prepare car import documents with a VIN register, invoice and bill of lading checks, export records, originals, release status and registration evidence.",
-    "answer": "Build one vehicle register and check every invoice, transport and approval document against it. Assign an issuer, reviewer and due date, then track whether each item is a draft, issued copy, original or accepted release. The China export file, destination customs file and road-registration file have different purposes.",
+    "answer": "Keep one vehicle register and check every invoice, transport and approval document against it. Give each document an issuer, a reviewer and a due date, then track whether it is a draft, an issued copy, an original or an accepted release. The China export file, the destination customs file and the road-registration file each do a different job.",
     "image": "documents",
     "reviewed": "2026-11-16",
     "sources": [
@@ -812,7 +812,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "Used vehicle registration and inspection file",
               "Exporter and inspection provider",
-              "VIN, registration and applicable export inspection records."
+              "VIN, registration and the export inspection records that apply."
             ],
             [
               "Export licence and customs declaration where required",
@@ -844,8 +844,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Check the Chinese export route early",
         "paragraphs": [
-          "Ask who is the exporter of record and which licence and inspection requirements apply. China’s published measures include used car licensing and third-party inspection requirements. For used vehicles applying for export within 180 days of registration, including day 180, the current notice calls for a manufacturer-issued after-sales maintenance service confirmation. China also applies export licensing to pure-electric passenger cars covered by Announcement No. 54.",
-          "Send the draft commercial and transport documents to the importer before issue. Agree where originals or authenticated copies are required and who handles corrections."
+          "Ask who the exporter of record is and which licence and inspection rules apply to your cars. China’s published measures include used car licensing and third-party inspection requirements. For used vehicles applying for export within 180 days of registration, including day 180, the current notice calls for a manufacturer-issued after-sales maintenance service confirmation. China also applies export licensing to pure-electric passenger cars covered by Announcement No. 54.",
+          "Send the draft commercial and transport documents to the importer before they are issued. Agree where originals or authenticated copies are needed and who fixes mistakes."
         ],
         "sources": [
           "used-export",
@@ -856,8 +856,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Control the file from one VIN register",
         "paragraphs": [
-          "Give every car a row containing the VIN, exact model and version, model year, first registration where applicable, powertrain, quantity, seller and consignee. Add document numbers and any approved alternative. For a new-car order without allocated VINs, mark allocation pending and set the point at which the final list must be accepted.",
-          "Check spelling and legal-entity names as carefully as the vehicle data. An invoice addressed to one importer, transport release to another and approval held by a third can require more than a typographical correction. Ask the responsible issuer and receiving broker to resolve the discrepancy before the next cutoff."
+          "Give every car its own row: VIN, exact model and version, model year, first registration for used cars, powertrain, quantity, seller and consignee. Add the document numbers and any approved alternative. For a new-car order where VINs aren’t allocated yet, mark them pending and agree when the final list must be accepted.",
+          "Check spelling and company names as carefully as the vehicle data. If the invoice names one importer, the transport release another and the approval a third, that is more than a typo to fix. Ask the issuer and the receiving broker to sort it out before the next cutoff."
         ],
         "table": {
           "caption": "Document status to keep in the shared register",
@@ -868,19 +868,19 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Draft",
-              "Review vehicle and party details; it is not proof that the final document has been issued."
+              "Check the vehicle and party details. A draft doesn’t prove the final document has been issued."
             ],
             [
               "Issued copy",
-              "Record number, date and issuer; confirm whether this copy is sufficient for the next procedure."
+              "Note the number, date and issuer, and check whether a copy is enough for the next step."
             ],
             [
               "Original or authenticated version required",
-              "Name the recipient, delivery method and due date; allow for translation or authentication where the receiving authority requires it."
+              "Note who receives it, how it is sent and by when. Allow time for translation or authentication if the receiving authority asks for it."
             ],
             [
               "Release or acceptance confirmed",
-              "Save the issuer, carrier or broker’s confirmation, including any remaining conditions."
+              "Save the confirmation from the issuer, carrier or broker, including any conditions still open."
             ]
           ]
         },
@@ -894,9 +894,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Commercial invoice, vehicle list and bill of lading",
         "paragraphs": [
-          "The commercial invoice records the sale, while the packing list or vehicle list identifies what is shipped. The bill of lading or sea waybill records the transport arrangement. Reconcile the legal party names, quantities, ports and vehicle identification number for each unit before approving the drafts. Keep consignee details consistent with the release arrangement.",
-          "A certificate of origin supports an origin claim where that evidence is required. It serves a different purpose from ownership documents, an export declaration or an import declaration. The exporter and destination broker should identify the issuer and accepted form of each record needed for this transaction.",
-          "If a car is replaced, update its order, inspection and shipment records together. Customs clearance and road registration can call for different technical evidence. Where a certificate of conformity is requested, establish exactly which document and vehicle version the authority will accept; an EU certificate is not a standard inclusion with every China-market car."
+          "The commercial invoice records the sale. The packing list or vehicle list shows what is shipped. The bill of lading or sea waybill records the transport. Before you approve the drafts, check that company names, quantities, ports and the vehicle identification number for each unit match across all of them, and that the consignee fits the release arrangement.",
+          "A certificate of origin backs up an origin claim when one is needed. It does a different job from ownership documents, an export declaration or an import declaration. The exporter and destination broker should tell you who issues each record this shipment needs and in what form it will be accepted.",
+          "If a car is swapped, update its order, inspection and shipment records together. Customs clearance and road registration can ask for different technical evidence. If the authority asks for a certificate of conformity, find out exactly which document and vehicle version it will accept. A China-market car doesn’t normally come with an EU certificate."
         ],
         "sources": [
           "export-documents"
@@ -911,8 +911,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Is an export certificate enough to register the car?",
         "paragraphs": [
-          "Ask the seller to name the document it calls an “export certificate,” its issuer and the purpose it serves. A translated label may refer to registration, a licence, inspection or another record. Match it to the requirement identified by the destination authority or broker.",
-          "Customs clearance and road registration can require different evidence. Obtain the destination checklist for the exact version and importer before paying for the car. If conformity or technical approval evidence is required, ask who can issue it and whether the quoted vehicle is covered. Do not assume every car has an EU Certificate of Conformity."
+          "Ask the seller exactly which document it means by “export certificate,” who issues it and what it is for. A translated label could mean a registration, a licence, an inspection or something else. Then match it against what your destination authority or broker actually asks for.",
+          "Customs clearance and road registration can need different evidence. Get the destination checklist for the exact version and importer before you pay for the car. If you need conformity or technical approval evidence, ask who can issue it and whether it covers the quoted vehicle. Don’t assume every car has an EU Certificate of Conformity."
         ],
         "links": [
           {
@@ -924,8 +924,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Check transport release separately from a document scan",
         "paragraphs": [
-          "Agree the bill of lading arrangement with the carrier or authorized agent. Where negotiable originals are used, establish how they will be controlled and surrendered; where a sea waybill or an authorized electronic release is used, confirm the applicable process. A PDF emailed by the seller is not, by itself, confirmation that the carrier has authorized delivery.",
-          "Review drafts before the carrier’s amendment cutoff. If a VIN, consignee or quantity changes, update all affected records and ask who bears amendment fees or delay costs. Do not alter an issued certificate yourself. Save the replacement or correction from its issuer and tell every party using the earlier version."
+          "Agree the bill of lading arrangement with the carrier or its authorized agent. With negotiable originals, settle who holds them and how they are surrendered. With a sea waybill or authorized electronic release, confirm how that process works. A PDF the seller emails you doesn’t prove the carrier has authorized delivery.",
+          "Check drafts before the carrier’s amendment cutoff. If a VIN, consignee or quantity changes, update every record it affects and ask who pays amendment fees or delay costs. Never edit an issued certificate yourself. Keep the corrected version from the issuer and tell everyone holding the old one."
         ],
         "sources": [
           "export-documents"
@@ -936,11 +936,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Do I need originals or are scans enough?",
-            "answer": "Have the broker, carrier and any payment provider confirm their requirements for each document. Record the accepted format, delivery method and deadline before shipment. A scan that helps check a draft may not satisfy the final release procedure."
+            "answer": "It depends on who receives the document. Have the broker, carrier and any payment provider confirm what they need for each one, and note the accepted format, delivery method and deadline before shipment. A scan is fine for checking a draft but may not be enough for final release."
           },
           {
             "question": "Who corrects a wrong VIN or consignee name?",
-            "answer": "Contact the issuer through the seller or forwarder and follow its amendment procedure. Tell the broker which related documents contain the same detail. Keep the corrected approved set together and confirm the effect on release before arrival."
+            "answer": "The issuer does, through the seller or forwarder, using its amendment procedure. Tell the broker which other documents carry the same detail. Keep the corrected, approved set together and check before arrival whether the change affects release."
           }
         ]
       }
@@ -963,7 +963,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "verify-chinese-used-car-before-payment": {
     "title": "Buying Used Cars from China: VIN, Mileage and Seller Checks",
     "description": "Verify a used car before paying: VIN and mileage evidence, ownership, seller and exporter identities, registration age and independently checked bank details.",
-    "answer": "Verify the same VIN through the offer, registration and ownership evidence, inspection and proposed export documents. Separately identify the legal seller, exporter and bank beneficiary. Resolve unexplained differences before payment; a VIN lookup, video call or business licence alone does not establish the complete transaction.",
+    "answer": "The same VIN should appear on the offer, the registration and ownership papers, the inspection and the proposed export documents. Separately, confirm who the legal seller, the exporter and the bank beneficiary are. Clear up anything that doesn’t match before you pay. A VIN lookup, a video call or a business licence on its own doesn’t prove the whole deal is sound.",
     "image": "inspection",
     "reviewed": "2026-11-16",
     "sources": [
@@ -987,8 +987,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Verify the exact car on offer",
         "paragraphs": [
-          "Ask for a dated vehicle file with a VIN photo at the car, registration details, an odometer reading and condition photos. Ask the seller to confirm whether the quoted car remains available and whether they may substitute another unit. If a car changes, repeat the identity and inspection checks on the new VIN.",
-          "Use records lawfully available to the seller and inspector. A matching VIN establishes which car the records refer to. Condition, mileage history and authority to sell still require their own evidence."
+          "Ask for a dated vehicle file: a photo of the VIN on the car, registration details, an odometer reading and condition photos. Ask the seller to confirm the quoted car is still available and whether they might swap in another one. If the car changes, run the identity and inspection checks again on the new VIN.",
+          "Work from records the seller and inspector can lawfully access. A matching VIN tells you which car the records are about. Condition, mileage history and the right to sell each still need their own evidence."
         ]
       },
       {
@@ -1003,18 +1003,18 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Seller identity",
-              "The legal entity on the offer and its business registration details.",
-              "Company details change or the offer comes from a different entity without explanation."
+              "The company named on the offer and its business registration details.",
+              "Company details change, or the offer comes from a different company with no explanation."
             ],
             [
               "Authority over the car",
-              "Registration or ownership evidence, or documented authority to sell.",
-              "The seller cannot link the VIN and the legal owner to the offer."
+              "Registration or ownership papers, or written authority to sell.",
+              "The seller can’t connect the VIN and the legal owner to the offer."
             ],
             [
               "Exporter of record",
-              "The exporting entity and the applicable licence or export file.",
-              "The exporter cannot explain how it will obtain the relevant records."
+              "The exporting company and the licence or export file that applies.",
+              "The exporter can’t explain how it will get the records it needs."
             ],
             [
               "Bank beneficiary",
@@ -1023,7 +1023,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Payment milestone",
-              "The evidence due before each instalment and cancellation terms.",
+              "What evidence is due before each instalment, and the cancellation terms.",
               "The requested payment falls outside the signed terms."
             ]
           ]
@@ -1036,7 +1036,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Connect the seller, owner, exporter and payee",
         "paragraphs": [
-          "China’s used-vehicle export framework links the export application to vehicle and transaction records, including third-party inspection and contractual after-sales content. Ask the named exporter which records it will provide for the proposed car. A company registration check does not replace those vehicle-specific requirements."
+          "China’s used-vehicle export framework ties the export application to vehicle and transaction records, including third-party inspection and contractual after-sales content. Ask the named exporter which records it will provide for this car. Checking the company’s registration doesn’t replace those vehicle-specific requirements."
         ],
         "table": {
           "caption": "Evidence chain for the proposed used-car purchase",
@@ -1047,19 +1047,19 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Contract seller",
-              "Legal name, registration details, contract authority and a reliable business contact. A trading name should be traceable to the legal entity."
+              "Legal name, registration details, authority to sign and a reliable business contact. You should be able to trace any trading name back to the legal company."
             ],
             [
               "Registered owner and vehicle",
-              "Ownership or transfer records linked to the VIN; explain how the seller is entitled to dispose of the unit."
+              "Ownership or transfer records linked to the VIN, and an explanation of why the seller is entitled to sell the car."
             ],
             [
               "Named exporter",
-              "Identity, applicable export qualification and responsibility for the vehicle’s export licence and paperwork. Establish any separate service arrangement."
+              "Who they are, their export qualification and who is responsible for the vehicle’s export licence and paperwork. Get any separate service arrangement in writing."
             ],
             [
               "Bank beneficiary",
-              "Match the approved contract instructions. If another entity collects payment, obtain the documented basis and independently verify it before the transfer."
+              "Must match the instructions in the contract. If another company collects payment, ask for the written reason and verify it yourself before you transfer."
             ]
           ]
         },
@@ -1071,7 +1071,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Resolve recently registered cars before payment",
         "paragraphs": [
-          "Ask the exporter for the registration date and planned export application date. For a used export application within 180 days of registration, including day 180, China’s current notice requires an additional confirmation from the vehicle manufacturer covering destination after-sales service. Check who will provide it before treating the order as ready for export."
+          "Ask the exporter for the registration date and the planned export application date. For a used export application within 180 days of registration, including day 180, China’s current notice requires an additional confirmation from the vehicle manufacturer covering destination after-sales service. Find out who will provide it before you treat the order as ready to export."
         ],
         "sources": [
           "recent-registration"
@@ -1080,16 +1080,16 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "What a VIN check can tell you",
         "paragraphs": [
-          "For a used car VIN check, start with a readable photograph of the identifier on the actual vehicle and compare it with the registration, inspection and written offer. Ask the seller to explain any inconsistency before using a model name or a decoder result as confirmation.",
-          "A VIN decoder describes encoded identity information. It does not, by itself, confirm ownership, current condition, accident history or mileage. Ask which history records are available for that specific car, who supplied them and the date range they cover. An empty history result is an evidence gap, not proof that nothing happened."
+          "For a used car VIN check, start with a clear photo of the VIN on the actual car and compare it with the registration, the inspection and the written offer. If anything doesn’t match, get the seller to explain it. A model name or a decoder result isn’t confirmation on its own.",
+          "A VIN decoder only reads the identity data coded into the number. It won’t confirm ownership, current condition, accident history or mileage. Ask which history records exist for that car, who supplied them and what dates they cover. A blank history result means missing evidence, not proof that nothing happened."
         ]
       },
       {
         "heading": "Build a mileage and condition timeline",
         "paragraphs": [
-          "A vehicle history report is useful only within the records and dates it covers. Put available service, registration, inspection and repair entries in order, keeping originals with any translation. Compare successive odometer readings with a current photograph. An inconsistency can justify further inquiry into odometer fraud. Keep unexplained gaps on the exception list until the records and inspection provide an explanation.",
-          "Review previous damage against an independent inspection and the seller's written description. The file should identify what evidence supports accident, flood or mileage claims and what remains unavailable. Ownership documents and the seller's business registration establish different parts of the transaction; retain both.",
-          "Confirm which export license and related vehicle records the named exporter will obtain under the actual export route. Bank account verification remains a separate finance check, especially if the beneficiary changes. Agree the next step for each unresolved item before money is due."
+          "A vehicle history report is only as good as the records and dates it covers. Put the service, registration, inspection and repair entries in date order, keeping originals next to any translation. Compare the odometer readings over time with a current photo. A reading that doesn’t fit is a reason to dig further for odometer fraud. Keep any unexplained gap on your open-issues list until the records or inspection explain it.",
+          "Compare any past damage with an independent inspection and the seller's written description. The file should show what evidence backs up accident, flood or mileage claims and what is still missing. Ownership documents and the seller's business registration prove different things, so keep both.",
+          "Confirm which export license and vehicle records the named exporter will get for the actual export route. Bank account verification is a separate finance check, and it matters most if the beneficiary changes. For every open item, agree the next step before any money is due."
         ],
         "links": [
           {
@@ -1101,7 +1101,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Verify bank instructions outside the payment message",
         "paragraphs": [
-          "Before the first transfer, reconcile the legal seller, contract reference and beneficiary. If instructions change, call an established contact using a number already held in your records. Ask that person to confirm the change and document the relationship if the payee differs from the seller. IC3 recommends verifying account changes through a separate channel."
+          "Before the first transfer, check that the legal seller, contract reference and beneficiary line up. If payment instructions change, call a contact you already know on a number you already have, not one in the new message. Ask them to confirm the change, and to document the relationship if the payee isn’t the seller. IC3 recommends verifying account changes through a separate channel."
         ],
         "sources": [
           "payment-verification"
@@ -1110,9 +1110,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Resolve a discrepancy without losing the earlier evidence",
         "paragraphs": [
-          "A later odometer reading higher than an earlier one may reflect vehicle movement; request dates, units and the reason for the increase. A lower later reading, unexplained VIN difference or missing ownership link needs investigation. Retain both records instead of accepting a replacement image that removes the contradiction.",
-          "Use three outcomes: accept an evidenced explanation and record it; require a specified document or independent check before proceeding; or decline the proposed unit. If the seller substitutes another car, repeat identity, condition and eligibility checks for its VIN rather than copying approval from the first car.",
-          "For a unit registered 180 days or less before the relevant export application, establish the manufacturer-issued after-sales confirmation required under the notice effective 1 January 2026. This is an additional export-document condition, not proof that a nearly unused car qualifies as new in the destination market."
+          "A later odometer reading that is higher than an earlier one may just mean the car was driven; ask for the dates, units and reason. A later reading that is lower, an unexplained VIN difference or a missing ownership link needs looking into. Keep both records. Don’t accept a new image that simply makes the contradiction disappear.",
+          "Each issue ends one of three ways: you accept an explanation backed by evidence and note it; you ask for a specific document or independent check before going further; or you turn the car down. If the seller swaps in another car, repeat the identity, condition and eligibility checks on its VIN. Don’t carry over the first car’s approval.",
+          "For a car registered 180 days or less before its export application, make sure the manufacturer-issued after-sales confirmation required under the notice effective 1 January 2026 is in place. That is an extra export-document condition. It doesn’t make a nearly unused car count as new in the destination market."
         ],
         "sources": [
           "recent-registration"
@@ -1133,11 +1133,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Is a zero-mileage used car the same as a new car?",
-            "answer": "Ask for the registration history and export route. The description refers to mileage; it does not settle the legal status or destination eligibility. Check the current recently registered vehicle requirements with the exporter and compare the car’s support terms with a new-car offer."
+            "answer": "Not necessarily. “Zero mileage” describes the odometer, not the car’s legal status or whether your country will accept it. Ask for the registration history and export route, check the current rules for recently registered vehicles with the exporter, and compare the car’s support terms with a new-car offer."
           },
           {
             "question": "What if the quoted car is sold before I pay?",
-            "answer": "Have the seller identify the replacement and issue a revised offer. Repeat the VIN, record and inspection checks for that unit. Approval of the original car should not automatically apply to a substitute."
+            "answer": "Have the seller name the replacement and send a revised offer. Run the VIN, record and inspection checks again on that car. Your approval of the first car doesn’t carry over to a substitute."
           }
         ],
         "links": [
@@ -1174,7 +1174,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "used-ev-battery-report": {
     "title": "Used EV Battery Health Check: How to Read the Report",
     "description": "Read a used EV battery report: SOH vs SOC, usable capacity, test conditions, pack identity, charging results and a worked interpretation example.",
-    "answer": "Read a used EV battery-health percentage only after identifying its method and reference. Match the report to the VIN and installed pack, then review usable capacity, faults, temperature and completed charging tests. A high charge level or dashboard range does not establish retained battery capacity, future life or warranty eligibility.",
+    "answer": "A used EV battery-health percentage means little until you know how it was measured and against what. Check that the report matches the VIN and the pack actually fitted, then look at usable capacity, faults, temperature and which charging tests were completed. A high charge level or a good dashboard range doesn’t prove how much capacity the battery has kept, how long it will last or whether the warranty applies.",
     "image": "battery",
     "reviewed": "2026-11-16",
     "sources": [
@@ -1210,19 +1210,19 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "SOH or capacity",
-              "Name of the metric, baseline, data source and method. Identify a diagnostic estimate or a measured capacity test."
+              "Name of the metric, baseline, data source and method. Is it a diagnostic estimate or a measured capacity test?"
             ],
             [
               "Test conditions",
-              "State of charge, relevant temperature, equipment and any limits on the check."
+              "State of charge, temperature, equipment and anything that limited the check."
             ],
             [
               "Warnings or damage",
-              "Diagnostic fault findings, visible underside or enclosure damage and areas outside the inspection."
+              "Diagnostic faults, visible underside or enclosure damage, and anything the inspection didn’t cover."
             ],
             [
               "Charging",
-              "AC and DC tests if agreed and available. Record the charger used and what actually completed."
+              "AC and DC tests if agreed and possible. Note which charger was used and what actually completed."
             ]
           ]
         },
@@ -1233,16 +1233,16 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Compare like with like",
         "paragraphs": [
-          "A state-of-health value is easier to interpret when you know its reference and method. Dashboard remaining range can change with use and conditions. Compare two used EVs using consistent diagnostics or ask the inspector to explain how different methods affect the comparison.",
-          "If a pack has been replaced, ask for the available service record and check that the report applies to the installed pack. For unresolved warnings, physical damage or a missing test, ask the provider what it can verify before you accept the unit."
+          "A state-of-health value only makes sense once you know its reference and method. Dashboard remaining range moves with driving and conditions. To compare two used EVs, use the same diagnostics on both, or ask the inspector how the different methods affect the comparison.",
+          "If the pack has been replaced, ask for the service record and check that the report covers the pack now fitted. If there are open warnings, physical damage or a missing test, ask the provider what it can still verify before you accept the car."
         ]
       },
       {
         "heading": "Read a capacity result with its reference attached",
         "paragraphs": [
-          "Hypothetical example: a qualified provider measures 55.2 kWh of usable energy and compares it with a 60.0 kWh usable-energy reference for the same pack and compatible test conditions. The ratio is 55.2 ÷ 60.0 × 100 = 92%. This explains that particular energy comparison; it does not establish 92% of the advertised driving range or a remaining service life.",
-          "Ask where both numbers came from. A gross nameplate capacity, a usable-energy reference and an estimate reported by the battery-management system may differ in scope. A report labelled “92% SOH” without a baseline cannot be reconstructed from a dashboard photo.",
-          "The government-hosted technical recommendations discuss a harmonized certified-energy metric under UN GTR No. 22. That context helps explain the importance of definitions. An individual seller’s diagnostic printout should still identify its own method and scope; a regulatory reference does not make it an independent certification of that used car."
+          "Hypothetical example: a qualified provider measures 55.2 kWh of usable energy and compares it with a 60.0 kWh usable-energy reference for the same pack and compatible test conditions. The ratio is 55.2 ÷ 60.0 × 100 = 92%. That figure describes this one energy comparison. It doesn’t mean the car will reach 92% of its advertised range, and it says nothing about remaining service life.",
+          "Ask where both numbers came from. A gross nameplate capacity, a usable-energy reference and an estimate from the battery-management system can measure different things. A report that just says “92% SOH” with no baseline can’t be checked from a dashboard photo.",
+          "The government-hosted technical recommendations discuss a harmonized certified-energy metric under UN GTR No. 22, which shows why definitions matter. A seller’s diagnostic printout should still state its own method and scope. Quoting a regulation doesn’t turn it into an independent certification of that used car."
         ],
         "sources": [
           "battery-metrics",
@@ -1253,17 +1253,17 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Separate battery condition from local charging",
         "items": [
-          "A successful test on one charger confirms operation in that test setup. Check the actual vehicle inlet against the chargers at your destination.",
-          "Ask the carrier what it accepts for the vehicle’s condition and battery status before booking.",
-          "Save the report and charging result by VIN alongside the other inspection evidence."
+          "A good test on one charger only proves the car charged on that setup. Check the car’s actual inlet against the chargers at your destination.",
+          "Before booking, ask the carrier what it accepts for the car’s condition and battery status.",
+          "File the report and charging result under the VIN with the rest of the inspection evidence."
         ]
       },
       {
         "heading": "State of charge, battery health and range are different readings",
         "paragraphs": [
-          "State of charge describes how much charge is available now. A battery state-of-health figure describes condition against a reference chosen by the reporting method. A nearly full charge does not establish that the battery retains nearly all its original usable capacity.",
-          "Ask whether the EV battery health check reports usable energy, another capacity measure or a diagnostic estimate. Request the baseline and units. If two reports use different definitions, have the testing provider explain whether the figures can be compared before ranking the cars by percentage.",
-          "Use dashboard remaining range as an observation recorded under its conditions. For your purchasing decision, separately request the evidence for battery condition and the operating range you need. A manufacturer’s range figure and the range displayed after a recent drive answer different questions."
+          "State of charge is how full the battery is right now. A battery state-of-health figure is its condition against whatever reference the report uses. A battery can be nearly full and still have lost a good part of its original usable capacity.",
+          "Ask whether the EV battery health check reports usable energy, some other capacity measure or a diagnostic estimate, and ask for the baseline and units. If two reports use different definitions, have the testing provider tell you whether the figures are comparable before you rank the cars by percentage.",
+          "Treat dashboard remaining range as a reading taken under particular conditions, nothing more. For the buying decision, ask separately for evidence of battery condition and of the range you need. A manufacturer’s range figure and the range shown after a recent drive answer different questions."
         ],
         "sources": [
           "battery-metrics"
@@ -1275,9 +1275,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         ],
         "heading": "Agree the next test before accepting an unexplained result",
         "paragraphs": [
-          "A battery diagnostic report should identify the installed pack and explain the measurements it provides. Where the method reports battery cycle count, battery temperature or cell voltage imbalance, retain the units and test conditions. The provider should explain which limits apply to that pack and method. Leave unavailable fields marked unavailable; a single diagnostic value does not predict remaining life.",
-          "To investigate battery degradation, compare usable battery capacity only against a stated reference and a compatible method. If a result is unexplained, the qualified testing provider should specify the next suitable check. A dashboard photograph and a measured capacity test have different scopes; obtain comparable evidence before choosing between cars.",
-          "Record the outcome of DC fast charging separately from the health estimate, including the charger and any limits observed. Battery warranty eligibility comes from the provider's written terms for that VIN and market. Keep the report, charging result and warranty response together when approving the purchase."
+          "A battery diagnostic report should name the pack fitted and explain each measurement. If it reports battery cycle count, battery temperature or cell voltage imbalance, keep the units and test conditions with them. The provider should tell you which limits apply to that pack and method. Leave missing fields marked as unavailable. No single diagnostic value predicts remaining life.",
+          "To judge battery degradation, compare usable battery capacity only against a stated reference, using a compatible method. If a result can’t be explained, the qualified testing provider should say what to check next. A dashboard photo and a measured capacity test tell you different things, so get comparable evidence before choosing between cars.",
+          "Record the DC fast charging result separately from the health estimate, with the charger used and any limits you saw. Battery warranty eligibility depends on the provider's written terms for that VIN and market. When you approve the purchase, keep the report, charging result and warranty answer together."
         ],
         "links": [
           {
@@ -1297,23 +1297,23 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Different reporting tools or metric names",
-              "Ask each provider for the metric definition and baseline; obtain a compatible method before ranking percentages."
+              "Ask each provider for the metric definition and baseline, and get results on a compatible method before ranking percentages."
             ],
             [
               "Unknown test temperature, SOC or date",
-              "Request the original test record and its conditions; record the limitation if it cannot be recovered."
+              "Ask for the original test record and its conditions. If they can’t be found, note that gap."
             ],
             [
               "Pack replacement or software change",
-              "Match the installed pack and available service history to a new report; explain which earlier results remain relevant."
+              "Get a new report that matches the fitted pack and its service history, and find out which earlier results still count."
             ],
             [
               "Fault, enclosure damage or unexplained cell readings",
-              "Have a qualified EV technician specify a safe further assessment. A buyer should not open or probe the high-voltage pack."
+              "Have a qualified EV technician set out a safe further assessment. Never open or probe the high-voltage pack yourself."
             ],
             [
               "Only a successful fast-charge session",
-              "Keep the charger, time, starting/ending SOC and any restrictions as an operation record; request separate capacity evidence if that is needed for acceptance."
+              "Keep the charger, time, starting/ending SOC and any restrictions as proof the car charges. If you need capacity evidence to accept the car, ask for it separately."
             ]
           ]
         },
@@ -1329,15 +1329,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "What battery SOH percentage is good enough to buy?",
-            "answer": "Set an acceptance requirement for your intended use and the agreed test method. Consider the result alongside faults, damage, repair history, charging operation and support. A single percentage is not a universal pass mark or a prediction of remaining life."
+            "answer": "There is no single answer. Set your own pass level for how you’ll use the car and the test method you’ve agreed, then weigh the result with faults, damage, repair history, charging and support. One percentage is not a universal pass mark or a forecast of remaining life."
           },
           {
             "question": "Does a battery health report prove that a warranty applies?",
-            "answer": "No. Ask the warranty provider to confirm coverage for the VIN, market, ownership, use and maintenance history. The report describes evidence about condition; warranty eligibility and any capacity threshold come from the applicable written terms."
+            "answer": "No. Ask the warranty provider to confirm cover for the VIN, market, ownership, use and maintenance history. The report is evidence of condition. Whether the warranty applies, and any capacity threshold, depends on the written warranty terms."
           },
           {
             "question": "Can a healthy used EV charge at my destination?",
-            "answer": "Check its actual AC and DC inlets against the equipment you intend to use. Battery condition and charging compatibility are separate purchasing checks. Save the verified charger pairing with the vehicle file."
+            "answer": "Only if its connectors match. Check the car’s actual AC and DC inlets against the chargers you plan to use; a healthy battery doesn’t tell you that. Save the confirmed charger pairing in the vehicle file."
           }
         ],
         "links": [
@@ -1374,7 +1374,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "request-wholesale-car-quote": {
     "title": "Wholesale Cars from China: RFQ and Quote Request Template",
     "description": "Copy a wholesale car RFQ template with exact trims, quantity, mandatory equipment, acceptable alternatives, destination, stock evidence and quote validity.",
-    "answer": "Send one version-specific brief with quantities, destination, required equipment, new or used status and the named delivery point. Separate mandatory requirements from acceptable alternatives. Ask the supplier to identify available units, items still being sourced, quote validity and every cost or approval left for you to arrange.",
+    "answer": "Send one brief per exact version, with quantities, destination, required equipment, new or used, and the named delivery point. Keep must-haves apart from alternatives you’d accept. Ask the supplier to say which units they have now and which they still need to source, how long the quote holds, and every cost or approval left for you.",
     "image": "quote",
     "reviewed": "2026-11-16",
     "sections": [
@@ -1385,9 +1385,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Separate fixed requirements from acceptable alternatives",
         "paragraphs": [
-          "State what would make a car unusable for the order: an unaccepted import route, the wrong steering position, a missing safety feature, unsuitable charging equipment or a different seating layout. Put these requirements ahead of preferences such as paint colour. For used units, set the required condition evidence as well as age and mileage limits.",
-          "Illustrative brief: “Three five-seat hybrid sedans in the specified trim and one gasoline four-wheel-drive SUV; left-hand drive required; two listed exterior colours acceptable; no drivetrain substitution; quote to the same named port.” This is a sample request, not a KEEYAK stock or minimum-order claim. The actual versions and quantities belong in your completed RFQ.",
-          "If the receiving broker has not checked the exact version, identify the review as pending and state which documents the supplier must return. A request for price can proceed alongside that review, but it should not be mistaken for approval to ship."
+          "Say what would make a car useless to you: an import route your country won’t accept, the wrong steering side, a missing safety feature, unsuitable charging equipment or a different seating layout. Put these ahead of preferences such as paint colour. For used cars, set the condition evidence you need as well as age and mileage limits.",
+          "Illustrative brief: “Three five-seat hybrid sedans in the specified trim and one gasoline four-wheel-drive SUV; left-hand drive required; two listed exterior colours acceptable; no drivetrain substitution; quote to the same named port.” This is only a sample request, not a statement of KEEYAK stock or minimum order. Your completed RFQ should carry your real versions and quantities.",
+          "If your broker hasn’t checked the exact version yet, say the review is pending and list the documents the supplier must send back. You can ask for prices while that review runs, but a price request is not approval to ship."
         ],
         "links": [
           {
@@ -1407,11 +1407,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Vehicle and quantity",
-              "Exact trim, model year, equipment and quantity by version. Ask which details remain subject to confirmation."
+              "Exact trim, model year, equipment and quantity by version. Ask which details are still to be confirmed."
             ],
             [
               "Delivery basis",
-              "Named place, included services, freight or insurance where applicable, and destination costs left to the buyer."
+              "Named place, included services, freight or insurance if quoted, and the destination costs you still pay."
             ],
             [
               "Used vehicle evidence",
@@ -1419,26 +1419,26 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Schedule and payment",
-              "Offer expiry, estimated handover, payee and the evidence due before each payment."
+              "When the offer expires, estimated handover, who gets paid and what evidence is due before each payment."
             ]
           ]
         },
         "paragraphs": [
-          "Request an evidence status beside each response: allocated VIN and location; proposed unit awaiting inspection; or model being sourced with no unit allocated. Ask who can confirm the current position and when it will next be checked. A catalogue image or general model price does not establish a reserved unit."
+          "Ask the supplier to mark each line with where it stands: VIN allocated and location known; car proposed but not yet inspected; or model still being sourced with no car allocated. Ask who can confirm that and when it will be checked again. A catalogue image or a general model price doesn’t mean a car is reserved for you."
         ]
       },
       {
         "heading": "Compare the same order before choosing",
         "paragraphs": [
-          "If one quote allows a substitution and the other names an exact trim, price them after agreeing an acceptable version. When a supplier quotes a cheaper port or route, ask for the cost to the original handover point before comparing the totals."
+          "If one quote allows a substitute and the other names an exact trim, agree which version you’ll accept before comparing prices. If a supplier quotes a cheaper port or route, ask for the cost to your original handover point before comparing totals."
         ]
       },
       {
         "heading": "Describe the batch a supplier can actually quote",
         "paragraphs": [
-          "When requesting wholesale cars from China, split the required quantity by exact model and version. State which colors, equipment and alternatives you will accept. Give each supplier the same destination and target handover window. If the quantity is provisional, say what your first order needs and what is only a later possibility.",
-          "Ask the China car exporter to identify the contracting seller, exporter of record and the role it will perform. Request a response that distinguishes units currently identified from cars still to be sourced. A showroom photograph or catalog entry does not establish stock for the quantity you need.",
-          "For used cars, provide limits for registration age, mileage and condition. Ask for a proposed VIN list and records for each unit. For EVs, include charging compatibility and the battery evidence required; “electric” by itself is not a complete purchasing specification."
+          "When requesting wholesale cars from China, break the quantity down by exact model and version. Say which colors, equipment and alternatives you’ll accept. Give every supplier the same destination and target handover window. If the quantity isn’t final, say what the first order needs and what might come later.",
+          "Ask the China car exporter who the contracting seller and exporter of record are, and what role it will play itself. Ask for a reply that separates cars already identified from cars still to be sourced. A showroom photo or catalog entry doesn’t prove there is stock for the quantity you need.",
+          "For used cars, set limits on registration age, mileage and condition, and ask for a proposed VIN list with records for each car. For EVs, include charging compatibility and the battery evidence you need. “Electric” alone is not a purchasing specification."
         ],
         "links": [
           {
@@ -1450,8 +1450,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Put the destination and delivery point in the first request",
         "paragraphs": [
-          "Name the importer and intended use, then include the destination port and any inland delivery. Set the inspection requirements and payment terms you want suppliers to respond to. A target price should state the currency and whether it covers the vehicle only or the full destination cost.",
-          "For EXW, FOB and CIF alternatives, request separate prices with their named places and quote validity. Keep the vehicle specification unchanged between options. Establish the minimum order quantity for that particular version and availability; a batch price does not automatically apply to one car."
+          "Name the importer and how the cars will be used, then add the destination port and any inland delivery. Set out the inspection requirements and payment terms you want suppliers to answer. If you give a target price, state the currency and whether it is for the car alone or the full cost at destination.",
+          "If you want EXW, FOB and CIF options, ask for a separate price for each, with its named place and quote validity, and keep the vehicle specification the same across them. Ask for the minimum order quantity for that version and availability. A batch price doesn’t automatically apply to one car."
         ],
         "sources": [
           "icc"
@@ -1470,10 +1470,10 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Make the next supplier reply easy to evaluate",
         "items": [
-          "Return a line for each requested trim and quantity, including any shortage or proposed alternative. Keep the original requirement beside the deviation.",
-          "State unit price, currency, validity, named Incoterm endpoint and separately priced extras. Identify freight estimates that can change before booking.",
-          "List the evidence available now and the evidence due before deposit, balance or release: version sheet, VIN allocation, inspection, ownership and export documents as applicable.",
-          "Ask for an estimated readiness window with its dependencies, such as allocation, inspection or document review. Record it separately from a confirmed carrier booking."
+          "One line for each requested trim and quantity, including any shortfall or proposed alternative, with the original requirement shown next to the change.",
+          "Unit price, currency, validity, named Incoterm endpoint and any extras priced separately. Freight estimates that may change before booking should be flagged.",
+          "The evidence available now, and what is due before deposit, balance or release: version sheet, VIN allocation, inspection, ownership and export documents, whichever apply.",
+          "An estimated readiness window and what it depends on, such as allocation, inspection or document review. Keep this apart from a confirmed carrier booking."
         ],
         "links": [
           {
@@ -1487,11 +1487,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Is there a standard minimum order quantity?",
-            "answer": "Request the minimum quantity and pricing basis for the particular model, availability and shipment. Do not assume that a price shown for a batch applies to one car. Separate a proposed first order from a possible future volume."
+            "answer": "No. Ask for the minimum quantity and how pricing works for that model, its availability and the shipment. Don’t assume a batch price applies to one car, and keep your first order separate from any possible future volume."
           },
           {
             "question": "Should I include a budget in the RFQ?",
-            "answer": "State the currency and whether the budget is for the vehicle only or the full cost at destination. Ask the supplier to quote the requested specification and identify alternatives separately. This keeps a lower price from silently changing the car or service scope."
+            "answer": "You can. State the currency and whether the budget covers the car only or the full cost at destination. Ask the supplier to quote the specification you asked for and list any alternatives separately. That way a lower price can’t quietly change the car or what’s included."
           }
         ]
       }
@@ -1525,7 +1525,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "chinese-ev-charging-standards": {
     "title": "Chinese EV Charging: GB/T, CCS2 and Adapter Checks",
     "description": "Check GB/T, Type 2 and CCS2 compatibility by exact EV, AC or DC mode, adapter direction, onboard-charger limits and a documented commissioning test.",
-    "answer": "Match the actual vehicle inlet, charging mode and supported communication with the chargers you will use. Type 2 AC and CCS2 DC answer different questions, and a China-market version can differ from a same-name export model. Any proposed GB/T adapter needs verified direction, electrical limits and compatibility for that specific car-and-charger pairing.",
+    "answer": "Check the car’s actual inlet, charging mode and supported communication against the chargers you’ll really use. Type 2 AC and CCS2 DC are separate checks, and a China-market version can differ from the export model with the same name. If someone proposes a GB/T adapter, confirm its direction, electrical limits and that it works with that exact car and charger.",
     "image": "charging",
     "reviewed": "2026-11-16",
     "sources": [
@@ -1563,7 +1563,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "AC inlet",
-              "Photo and manual for the actual trim, inlet standard and onboard charger limits.",
+              "Photo and manual for the actual trim, the inlet standard and the onboard charger limits.",
               "Plug, voltage, frequency, phases, available current and installation requirements."
             ],
             [
@@ -1574,12 +1574,12 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "Cable or adapter",
               "Part number and written compatibility for the car and charging mode.",
-              "Written confirmation from the equipment supplier or charger operator, including any restrictions."
+              "Written confirmation from the equipment supplier or charger operator, including any limits."
             ],
             [
               "Commissioning",
-              "Results from the agreed car and charger pairing.",
-              "Who can inspect the installation, test operation and support it after delivery."
+              "Test results from the agreed car and charger pairing.",
+              "Who can inspect the installation, test it and support it after delivery."
             ]
           ]
         },
@@ -1592,8 +1592,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Confirm the version from the actual vehicle",
         "paragraphs": [
-          "Ask for separate photos of the AC and DC inlet if both are fitted. The exported version of a model may differ from a domestic version, so confirm the equipment on the quoted trim and VIN when available. Type 2 AC and CCS Combo 2 DC are separate checks even when a vehicle uses a combined inlet.",
-          "A plug that fits does not establish that the car and charger will communicate. Before relying on an adapter, ask for written compatibility and a supervised test with the intended equipment. Do not plan a fleet order around an untested conversion."
+          "Ask for separate photos of the AC and DC inlets if the car has both. The export version of a model can differ from the domestic one, so confirm the equipment on the quoted trim, and on the VIN once you have it. Type 2 AC and CCS Combo 2 DC are separate checks even when the car has a combined inlet.",
+          "A plug that fits doesn’t mean the car and charger will talk to each other. Before you rely on an adapter, get written compatibility and a supervised test with the equipment you’ll use. Don’t plan a fleet order around a conversion nobody has tested."
         ],
         "sources": [
           "gb-ac",
@@ -1604,8 +1604,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Check the proposed charging pairing",
         "paragraphs": [
-          "For AC charging, the supply, installed equipment, cable and vehicle onboard charger can each limit power. For example, a higher-rated wallbox does not establish that a lower-rated onboard charger can draw the wallbox’s full output. Ask for the supported phases, voltage, current and local installation assessment.",
-          "The SAMR listing checked for this revision marks GB/T 20234.2-2015, the AC coupler standard, as current. MIIT’s 2023 publication covers the general and DC coupler parts. A standard number provides context; the installed inlet and vehicle documentation remain the evidence for the unit being purchased."
+          "For AC charging, the supply, the installed equipment, the cable and the car’s onboard charger can each limit power. A higher-rated wallbox won’t push more power through a lower-rated onboard charger. Ask for the supported phases, voltage and current, and get the local installation assessed.",
+          "The SAMR listing checked for this revision marks GB/T 20234.2-2015, the AC coupler standard, as current. MIIT’s 2023 publication covers the general and DC coupler parts. A standard number is useful background, but the evidence for the car you’re buying is its installed inlet and its own documentation."
         ],
         "table": {
           "caption": "Evidence needed for each charging arrangement",
@@ -1616,19 +1616,19 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "GB/T AC vehicle at a local AC installation",
-              "Identify the vehicle and equipment interfaces, supply characteristics, cable or adapter, protection requirements and onboard-charger rating. Obtain qualified installation advice."
+              "Check the car and equipment interfaces, the supply, the cable or adapter, protection requirements and the onboard-charger rating. Get advice from a qualified installer."
             ],
             [
               "GB/T DC vehicle at a CCS2 public charger",
-              "Identify charger-to-vehicle conversion direction, communication support, voltage/current range, operator acceptance and written compatibility for the exact equipment. A plug shape alone is insufficient."
+              "Check the conversion direction from charger to car, communication support, voltage/current range, whether the operator accepts it, and written compatibility for the exact equipment. A matching plug shape isn’t enough."
             ],
             [
               "China-market and export-market cars with the same name",
-              "Compare photos and manufacturer documents for both actual versions. Do not transfer a local model’s inlet specification to the quoted unit."
+              "Compare photos and manufacturer documents for both versions. Don’t assume the local model’s inlet applies to the car you’re quoted."
             ],
             [
               "Depot fleet with several charging sites",
-              "List each charger/operator and hardware version. Test the intended pairings and define how untested combinations will be handled."
+              "List each charger/operator and hardware version. Test the pairings you plan to use and decide how you’ll handle untested combinations."
             ]
           ]
         },
@@ -1642,16 +1642,16 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Put charging in the order brief",
         "items": [
-          "List the charging sites, operator names and AC or DC use expected for the cars.",
-          "Ask the supplier which vehicle documents, cable and local service information it can provide.",
-          "For a batch, agree how you will verify a sample of the exact version before accepting the remaining cars."
+          "List the charging sites, the operators and whether the cars will use AC or DC.",
+          "Ask the supplier which vehicle documents, cable and local service information they can provide.",
+          "For a batch, agree how you’ll test a sample of the exact version before accepting the rest."
         ]
       },
       {
         "heading": "GB/T vs CCS2, and Type 2 vs CCS2",
         "paragraphs": [
-          "List AC charging and DC fast charging separately in the order. GB/T charging has distinct AC and DC interfaces. Type 2 charging and CCS2 charging also describe different arrangements: specify the actual inlet, supported mode and equipment for the vehicle you are buying.",
-          "Connector compatibility includes the charging protocol and electrical interface. The onboard charger specification matters for AC use; the intended DC setup needs its own vehicle and station review. Have the charger operator or qualified equipment provider review the exact pairing before the order depends on it."
+          "List AC charging and DC fast charging separately in the order. GB/T charging uses different AC and DC interfaces. Type 2 charging and CCS2 charging are also different arrangements, so spell out the actual inlet, supported mode and equipment for the car you’re buying.",
+          "Connector compatibility covers the charging protocol and the electrical interface, not just the plug. The onboard charger specification matters for AC; your DC setup needs its own check of car and station. Have the charger operator or a qualified equipment provider review the exact pairing before the order depends on it."
         ],
         "sources": [
           "gb-ac",
@@ -1662,8 +1662,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Buying a GB/T to CCS2 adapter: what must be verified?",
         "paragraphs": [
-          "Describe the direction before ordering a GB/T to CCS2 adapter: the station connector on one side and the car's inlet on the other. Obtain the supported vehicle list, charging mode, voltage and current limits, approvals and operating instructions for the actual product.",
-          "A charging test should identify the car, station, any approved adapter and what completed. Retain the result and restrictions with the order. An online product listing or a test on another model leaves this pairing unverified; resolve it with the vehicle manufacturer and equipment provider before committing to a batch."
+          "Before ordering a GB/T to CCS2 adapter, be clear about the direction: which side takes the station connector and which side fits the car's inlet. Get the supported vehicle list, charging mode, voltage and current limits, approvals and operating instructions for that exact product.",
+          "A charging test record should name the car, the station, any approved adapter and what actually worked. Keep the result and any limits with the order. An online product listing or a test on another model doesn’t prove this pairing works. Settle it with the vehicle manufacturer and equipment provider before you commit to a batch."
         ],
         "sources": [
           "charging-compatibility"
@@ -1672,8 +1672,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Define a charging acceptance record",
         "paragraphs": [
-          "Before a fleet commitment, arrange a supervised test with the intended equipment where feasible. Record VIN and trim, charger operator and model, adapter model and firmware if used, date, starting SOC, duration, energy delivered, observed limits and faults. Note any pairing that has not been tested.",
-          "Have the responsible equipment provider and operator explain an unsuccessful session and any required correction. Preserve a successful result as evidence for that setup; it is not a guarantee for every public charger, future software release or battery condition. Confirm who provides support at destination and which modifications could affect warranty or approval."
+          "Before you commit to a fleet, run a supervised test with the equipment you’ll use if you can. Record VIN and trim, charger operator and model, adapter model and firmware if used, date, starting SOC, duration, energy delivered, any limits and faults. Note every pairing that hasn’t been tested.",
+          "If a session fails, have the equipment provider and operator explain why and what needs fixing. Keep a successful result as evidence for that setup only; it doesn’t guarantee every public charger, future software release or battery condition. Confirm who supports the cars at destination and which modifications could affect warranty or approval."
         ],
         "links": [
           {
@@ -1691,15 +1691,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Will a China-market EV work at every CCS2 station?",
-            "answer": "No such assumption is safe for purchasing. Check the inlet, communication, electrical limits and operator acceptance for the actual version. A single successful session establishes the result for that setup and test, not universal network compatibility."
+            "answer": "Don’t assume so when you buy. Check the inlet, communication, electrical limits and operator acceptance for the actual version. One successful session proves that setup worked once, not that the car works across the whole network."
           },
           {
             "question": "Will the car reach its advertised charging power?",
-            "answer": "Ask which conditions the quoted figure assumes and which limits apply to the vehicle, charger and any approved equipment. Request a test record relevant to your intended setup rather than treating a charger’s nameplate rating as the car’s charging result."
+            "answer": "Not necessarily. Ask what conditions the quoted figure assumes and what limits the car, the charger and any approved equipment add. Ask for a test record from a setup like yours; a charger’s nameplate rating is not what the car will actually draw."
           },
           {
             "question": "Can I change the charging inlet after delivery?",
-            "answer": "Do not budget on a simple connector replacement. Ask the manufacturer or an authorized technical provider about compatibility, approval, warranty and local requirements for the exact vehicle. Resolve the charging arrangement before choosing the version."
+            "answer": "Don’t budget on it being a simple connector swap. Ask the manufacturer or an authorized technical provider about compatibility, approval, warranty and local rules for that exact car. It’s far better to settle charging before you choose the version."
           }
         ],
         "links": [
@@ -1765,8 +1765,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Buying a car from China, step by step",
         "paragraphs": [
-          "A buyer sourcing wholesale cars for a dealership needs an agreed version and a way to identify every unit in the batch. A private buyer needs an identified car and a workable registration route. In both cases, settle the destination requirements before paying to reserve a model.",
-          "The six stages below give each decision a record. Keep the sourcing brief, quote revisions and approvals together so the person releasing payment can see what has actually been accepted."
+          "If you’re buying wholesale cars for a dealership, you need an agreed version and a way to tell every unit in the batch apart. If you’re a private buyer, you need a specific car and a realistic way to register it. Either way, sort out the destination rules before you pay to reserve a model.",
+          "Each of the six stages below ends with something in writing. Keep the sourcing brief, quote revisions and approvals in one place, so whoever releases payment can see exactly what was agreed."
         ],
         "table": {
           "caption": "From the first inquiry to collection",
@@ -1788,13 +1788,13 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "3. Order and preparation",
-              "Vehicle identification, payment milestones, changes and the applicable export route.",
+              "Which vehicles are yours, payment milestones, changes and the export route that applies.",
               "The written order, vehicle list and payment instructions."
             ],
             [
               "4. Inspection and release",
               "Inspection scope, findings, repairs and acceptance before release.",
-              "A dated report and photos linked to the VIN where available."
+              "A dated report and photos tied to the VIN wherever possible."
             ],
             [
               "5. Booking and departure",
@@ -1812,7 +1812,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Know what must be complete at each stage",
         "paragraphs": [
-          "Give each unresolved item an owner and a due point. If a substituted trim changes the battery inlet or conformity evidence, return it to the relevant review before accepting the change. A paid invoice, an inspection result and a carrier booking establish different parts of the purchase."
+          "Give every open item an owner and a deadline. If a substitute trim changes the battery inlet or the conformity paperwork, send it back through that check before you accept it. A paid invoice, an inspection result and a carrier booking each prove something different; none of them covers the whole purchase."
         ],
         "table": {
           "caption": "Purchase stages and the evidence handed to the next person",
@@ -1823,7 +1823,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Destination review",
-              "Importer and route identified; exact version and available technical evidence reviewed by the local specialist. Record unresolved approvals."
+              "Importer and route settled, and the exact version and its technical papers reviewed by a local specialist. Note any approvals still open."
             ],
             [
               "Vehicle and supplier selection",
@@ -1835,7 +1835,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Vehicle acceptance",
-              "VIN-linked inspection and the buyer’s decision on repairs, exceptions or unperformed checks."
+              "An inspection tied to each VIN, and your decision on repairs, exceptions and any checks that weren’t done."
             ],
             [
               "Shipment release",
@@ -1843,7 +1843,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Arrival and use",
-              "Release documents, receiving condition record, registration work and identified after-sales contacts."
+              "Release documents, receiving condition record, registration work and named after-sales contacts."
             ]
           ]
         }
@@ -1851,10 +1851,10 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Choose a car that fits your destination",
         "paragraphs": [
-          "Start with the car you can register and use. Ask your broker which rules apply to the exact vehicle category, model year, steering side, emissions or powertrain and importer. Keep the answer with the offer so a later substitution does not undo the check.",
-          "For new cars from China, compare the model year, trim, equipment, production timing and market version. For used cars from China, add the individual VIN, first registration, current mileage, condition and repair records. A familiar model name is not enough to establish the specification of the car being offered.",
-          "This matters for a Chinese-brand car and for a China-market Toyota, Volkswagen or another international brand. Request the actual version details and confirm local software, language, parts and service support. Use the country guides as a starting checklist, then verify the current route with your destination broker.",
-          "Separate the model’s general specification from the proposed unit and its current supply status. A website model page is a reference for discussion. The written offer should identify the market version and equipment, and the supplier should state whether units are allocated, awaiting inspection or still being sourced. Local sale of the same model name does not establish that a China-market trim has identical approval, software or support."
+          "Start with a car you can actually register and use. Ask your broker which rules apply to the exact vehicle category, model year, steering side, emissions or powertrain, and to you as importer. Keep the answer with the offer, so a later substitution doesn’t quietly undo the check.",
+          "For new cars from China, compare the model year, trim, equipment, production timing and market version. For used cars from China, add the individual VIN, first registration, current mileage, condition and repair records. A familiar model name doesn’t tell you the specification of the car on offer.",
+          "This applies to Chinese brands and equally to a China-market Toyota, Volkswagen or other international brand. Ask for the actual version details and check software, language, parts and service support in your market. The country guides are a good starting checklist; your destination broker confirms the current route.",
+          "Keep three things apart: the model’s general specification, the unit actually proposed, and whether it’s available. A model page on a website is a starting point for discussion. The written offer should name the market version and equipment, and say whether units are allocated, awaiting inspection or still being sourced. If the same model name is sold locally, that doesn’t mean a China-market trim has the same approval, software or support."
         ],
         "links": [
           {
@@ -1870,15 +1870,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Find and verify a car exporter in China",
         "paragraphs": [
-          "When choosing a car exporter in China, establish who will sell the vehicle, receive payment and handle export. Ask for the registered legal name and company details, then match them to the offer, contract and payment instructions. Have the seller explain any different beneficiary or third-party role in writing.",
-          "Ask which export licence and vehicle records apply to the order. China’s 2024 used vehicle export announcement sets out exporter, licensing and vehicle-document requirements. A company profile or exhibition certificate helps identify a business; ask separately for the evidence relevant to your car and export route.",
-          "Registration timing also matters. From January 1, 2026, China’s additional rules require a manufacturer-issued after-sales service confirmation for used vehicles applying for export within 180 days of registration, including day 180. If a recently registered car is offered as used, resolve the required documentation before payment."
+          "When choosing a car exporter in China, find out who sells the vehicle, who receives the money and who handles the export. Ask for the registered legal name and company details, and check they match the offer, contract and payment instructions. If payment goes to a different beneficiary or a third party is involved, get the seller to explain why in writing.",
+          "Ask which export licence and vehicle records your order needs. China’s 2024 used vehicle export announcement sets out the requirements for exporters, licensing and vehicle documents. A company profile or exhibition certificate shows the business exists, but says nothing about your car, so ask for the papers that cover your car and export route.",
+          "Registration timing also matters. From January 1, 2026, China’s additional rules require a manufacturer-issued after-sales service confirmation for used vehicles applying for export within 180 days of registration, including day 180. If a recently registered car is offered as used, get that paperwork sorted before you pay."
         ],
         "items": [
-          "Request a dated offer identifying the car or the agreed method for allocating vehicles to the order.",
-          "Verify an account change through an established contact using a number you already know.",
-          "Agree on access for an inspection and what happens if the car does not match the offer.",
-          "Keep the seller, exporter, inspector and forwarder contacts together with their responsibilities."
+          "Ask for a dated offer that names the car, or says how vehicles will be allocated to your order.",
+          "If the bank account changes, call a contact you already deal with, on a number you already have.",
+          "Agree on inspection access and on what happens if the car doesn’t match the offer.",
+          "Keep one list of the seller, exporter, inspector and forwarder, showing who is responsible for what."
         ],
         "sources": [
           "used-export",
@@ -1894,9 +1894,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "How much does it cost to import a car from China?",
         "paragraphs": [
-          "The cost example below is hypothetical and uses assumed freight, fees and taxes. It demonstrates addition to a common delivery endpoint, not a current offer or a country-specific tax rate. Obtain dated inputs for your vehicle and importer before using the estimate for a payment decision.",
+          "The cost example below is hypothetical, with assumed freight, fees and taxes. It shows how costs add up to one delivery endpoint; it isn’t a current offer or any country’s tax rate. Before you base a payment decision on an estimate, get dated figures for your own vehicle and importer.",
           "The cost to import a car from China is the vehicle price plus every charge needed to reach your chosen endpoint. That may be release at the destination port, delivery to your yard or a registered car ready for use. Compare offers using the same endpoint, currency, vehicle specification and quantity.",
-          "List origin handling, freight, insurance, import duties and taxes, destination handling, brokerage and any local delivery or registration. Enter a cost once. Ask the seller which items are already included in the quoted Incoterms® rule and named place; these rules allocate costs, risks and obligations between the parties.",
+          "List origin handling, freight, insurance, import duties and taxes, destination handling, brokerage and any local delivery or registration. Count each cost only once. Ask the seller what the quoted Incoterms® rule and named place already include: these rules split costs, risks and obligations between buyer and seller.",
           "The example below uses the same four-car assumptions as our landed-cost worksheet. These are illustrative USD amounts, not a vehicle offer, freight rate or tax calculation for a particular country."
         ],
         "table": {
@@ -1930,9 +1930,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           ]
         },
         "items": [
-          "When comparing cheap electric cars from China, check whether the advertised price covers the exact trim, quantity and export arrangement you need.",
-          "Keep your broker’s destination tax calculation separate and record the valuation basis, date and assumptions.",
-          "Ask who pays for storage, document amendments or a delayed collection. Leave unconfirmed costs visible in your budget."
+          "When comparing cheap electric cars from China, check that the advertised price is for the exact trim, quantity and export arrangement you need.",
+          "Keep your broker’s destination tax calculation separate, and note the valuation basis, date and assumptions behind it.",
+          "Ask who pays for storage, document amendments or a delayed collection. Keep any cost that isn’t confirmed as an open line in your budget."
         ],
         "sources": [
           "icc"
@@ -1951,10 +1951,10 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Chinese electric cars, hybrid SUVs and small city cars",
         "paragraphs": [
-          "Compare the powertrain against how the car will be used. For electric cars from China, ask for the battery and charging specification of the actual version. For Chinese hybrid cars, identify whether the offer is for a conventional hybrid, a plug-in hybrid or an extended-range vehicle, and confirm the equipment and maintenance support for that version.",
-          "A Chinese EV SUV needs the same version checks as a smaller electric car, plus the passenger space, payload and equipment your intended use requires. For a small city car or mini EV from China, request the manufacturer’s vehicle category and technical data. Check registration eligibility and suitability for the roads where you intend to use it.",
-          "For charging, obtain photos of the car’s actual AC and DC inlets where fitted, its manual and the onboard charging limits. Have the local equipment provider check the proposed car and charger pairing, including any adapter. For a used EV, request a dated battery report tied to the VIN, its test method and any unresolved faults.",
-          "China’s Announcement No. 54 of 2025 introduced export licensing from January 1, 2026 for the battery-electric passenger vehicles within its stated scope. Have the exporter confirm the classification and licensing path for the quoted car alongside your destination checks."
+          "Match the powertrain to how the car will be used. For electric cars from China, ask for the battery and charging specification of the exact version. For Chinese hybrid cars, check whether the offer is a conventional hybrid, a plug-in hybrid or an extended-range vehicle, then confirm the equipment and maintenance support for that version.",
+          "A Chinese EV SUV needs the same version checks as a smaller electric car, plus the passenger space, payload and equipment your use calls for. For a small city car or mini EV from China, ask for the manufacturer’s vehicle category and technical data. Then check that it can be registered and that it suits the roads it will drive on.",
+          "For charging, get photos of the car’s actual AC and DC inlets (where fitted), the manual and the onboard charging limits. Have your local equipment provider check that the car and charger work together, including any adapter. For a used EV, ask for a dated battery report tied to the VIN, with the test method and any open faults.",
+          "China’s Announcement No. 54 of 2025 introduced export licensing from January 1, 2026 for the battery-electric passenger vehicles within its stated scope. Ask the exporter to confirm how the quoted car is classified and which licence it needs, at the same time as your destination checks."
         ],
         "sources": [
           "electric-export"
@@ -1973,13 +1973,13 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Documents to confirm before shipment",
         "paragraphs": [
-          "Build the car import documents checklist with the exporter, forwarder and destination broker before placing the order. The required file depends on the vehicle, export route and destination. Give each document an owner and an agreed handover date.",
-          "Check the file again if the car, consignee, route or delivery point changes. A corrected invoice may also require changes elsewhere in the document pack."
+          "Build the car import documents checklist with the exporter, forwarder and destination broker before you place the order. Which papers you need depends on the vehicle, the export route and the destination. Give each document an owner and a handover date.",
+          "Go through the file again whenever the car, consignee, route or delivery point changes. One corrected invoice can mean corrections elsewhere in the pack."
         ],
         "items": [
           "Commercial invoice and order: match the parties, vehicle description, quantity, currency, price and agreed delivery term.",
           "Vehicle list and identity records: match the VINs, model details and any registration records for used cars.",
-          "Applicable export licence and inspection evidence: ask the exporter which records apply to the individual car or batch.",
+          "Export licence and inspection evidence: ask the exporter which records cover the individual car or batch.",
           "Transport record: check the shipper, receiving party, destination and vehicle or shipment identifiers before approving the draft.",
           "Destination documents: have the broker confirm any origin, conformity, technical, inspection or other evidence needed for clearance and registration."
         ],
@@ -1993,9 +1993,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Before you pay: verify the vehicle and the offer",
         "paragraphs": [
-          "For a used car inspection, agree on the VIN, location, access, checklist and report format. Request dated photos and findings for the checks in your order. A useful report records what was checked, what was found and what the inspector could not verify.",
-          "Review the odometer evidence, body and structural observations, mechanical operation, cabin equipment and supplied items. For an electrified vehicle, agree on the battery and charging checks available at that location. Record any repair and the re-check you expect before authorising release.",
-          "Put each payment milestone next to its amount, beneficiary and required evidence. Agree on the effect of a failed check, a substitute car or a revised dispatch date. Keep approved changes with the original order so the person authorising payment can see what was accepted."
+          "For a used car inspection, agree on the VIN, location, access, checklist and report format up front. Ask for dated photos and findings for every check in your order. A useful report says what was checked, what was found and what the inspector couldn’t verify.",
+          "Go through the odometer evidence, body and structure, how the car runs, cabin equipment and supplied items. For an electrified vehicle, agree which battery and charging checks can be done at that location. Write down any repair and the re-check you expect before you authorise release.",
+          "List each payment milestone with its amount, beneficiary and the evidence due first. Agree what happens after a failed check, a substitute car or a new dispatch date. Keep approved changes with the original order, so whoever authorises payment can see what was accepted."
         ],
         "links": [
           {
@@ -2007,15 +2007,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Shipping from China: RoRo, container and timing",
         "paragraphs": [
-          "Car shipping from China depends on the loading and destination ports, vehicle readiness, carrier acceptance, space and the import arrangements. Ask the forwarder to quote the same vehicle list and delivery point for each option. Include dimensions, running condition, powertrain and any loading restrictions.",
-          "For RoRo versus container car shipping, compare the service actually available on your route. Ask how the vehicle is received, secured and handed over, what items can travel with it and which charges are outside the freight quote. For an EV, confirm the carrier’s battery and acceptance requirements before relying on the booking.",
-          "A shipping-time estimate should distinguish preparation in China, the booked transport and destination release. Get the assumptions behind each date instead of treating the sailing time as the full order-to-arrival timeline."
+          "Car shipping from China depends on the loading and destination ports, whether the car is ready, whether the carrier accepts it, available space and the import arrangements. Ask the forwarder to quote every option on the same vehicle list and delivery point, and give them dimensions, running condition, powertrain and any loading restrictions.",
+          "For RoRo versus container car shipping, compare the services that actually run on your route. Ask how the car is received, secured and handed over, what can travel with it and which charges sit outside the freight quote. For an EV, check the carrier’s battery and acceptance rules before you count on the booking.",
+          "A shipping-time estimate should split out preparation in China, the booked transport and release at destination. Ask what each date assumes. The sailing time is only one part of the order-to-arrival timeline."
         ],
         "items": [
           "Before departure: allow for vehicle allocation, inspection, agreed repairs, export documents and the carrier’s booking cutoff.",
           "In transit: record the route, any transshipment, departure confirmation and the carrier’s current arrival estimate.",
           "At destination: confirm document availability, clearance, collection deadlines and onward delivery.",
-          "If a date changes: name the contact who updates the buyer and record responsibility for any additional charges."
+          "If a date changes: agree who tells you, and who pays any extra charges."
         ],
         "links": [
           {
@@ -2027,9 +2027,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Arrival checks and after-sales support",
         "paragraphs": [
-          "At collection, match the vehicle identity, condition and supplied items against the departure record and order. Photograph a discrepancy and notify the agreed contact within the relevant claims procedure. Keep receiving, transport and inspection records together by VIN.",
+          "At collection, check the car’s identity, condition and supplied items against the departure record and the order. Photograph any discrepancy and report it to the agreed contact under the claims procedure. File receiving, transport and inspection records together by VIN.",
           "Before buying, ask who handles warranty questions, diagnosis, parts and repair approvals in your market. Get the scope, exclusions, provider, procedure and any transport or labour costs in writing. For a used car, ask what coverage, if any, applies to that individual vehicle.",
-          "For software, apps, charging equipment and parts, name the actual version and destination when asking about support. Keep the written response with the offer so your purchasing decision includes what happens after handover."
+          "When you ask about support for software, apps, charging equipment or parts, give the exact version and destination. Keep the written answer with the offer, so you know what happens after handover before you decide to buy."
         ],
         "links": [
           {
@@ -2047,15 +2047,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Can I buy just one car from China?",
-            "answer": "Ask for a single-car quote and confirm whether the unit price, preparation and freight arrangement apply to one vehicle. An advertised batch price may have a different quantity basis. Confirm availability, the export route and destination requirements for the exact car before committing."
+            "answer": "Ask for a single-car quote and check that the unit price, preparation and freight are priced for one vehicle. An advertised batch price may assume a larger quantity. Before you commit, confirm availability, the export route and the destination rules for that exact car."
           },
           {
             "question": "Can I buy a car from China online?",
-            "answer": "Use the online listing to identify a model and request an offer. Before placing the order, verify the seller, vehicle details, payment instructions and document handover. Agree on how the car will be inspected and accepted, and keep the written contract and supporting records."
+            "answer": "Use the online listing to pick a model and ask for an offer. Before you order, verify the seller, the vehicle details, the payment instructions and how documents will be handed over. Agree how the car will be inspected and accepted, and keep the written contract and records."
           },
           {
             "question": "What should I send for an accurate car price?",
-            "answer": "Send the brand, model, model year, trim, new or used requirement, quantity and destination country and port. For used cars, add acceptable mileage and condition. For EVs and hybrids, include charging and equipment requirements. Name the delivery point so the quote has a clear scope."
+            "answer": "Send the brand, model, model year, trim, new or used requirement, quantity and destination country and port. For used cars, add acceptable mileage and condition. For EVs and hybrids, include charging and equipment requirements. Name the delivery point too, so everyone knows what the price covers."
           }
         ]
       }
@@ -2097,8 +2097,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Compare the two offers at the same destination",
         "paragraphs": [
-          "Start with the model, intended use, quantity and delivery point your business needs. Ask suppliers to quote both options on that basis. A new sedan for a fleet and a used SUV for resale solve different needs; their starting prices alone do not make a useful comparison.",
-          "Then identify the exact cars behind the prices. A new-car offer should name the model year, trim, market version and equipment. A used-car offer should identify the unit and its available records. Confirm which details remain provisional and when the seller will identify the vehicles for your order."
+          "Start with the model, intended use, quantity and delivery point your business needs, and ask suppliers to quote both options on that basis. A new sedan for a fleet and a used SUV for resale do different jobs, so comparing their starting prices tells you very little.",
+          "Then pin down the exact cars behind the prices. A new-car offer should name the model year, trim, market version and equipment. A used-car offer should name the specific unit and the records that come with it. Ask which details are still provisional and when the seller will name the vehicles for your order."
         ],
         "table": {
           "caption": "New vs used car import comparison",
@@ -2126,7 +2126,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "What support will you have?",
               "Confirm the written coverage for the version, destination and use.",
-              "Check the applicable coverage and the local repair and parts plan for the individual vehicle."
+              "Check what coverage this individual car has, and the local repair and parts plan."
             ]
           ]
         }
@@ -2134,7 +2134,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Match the choice to how the cars will earn their keep",
         "paragraphs": [
-          "Use your own operating assumptions: intended holding period, distance, utilization and acceptable time out of service. Without comparable local evidence, do not turn a new/used label into a claim about depreciation, reliability or resale value."
+          "Work from your own numbers: how long you’ll keep the cars, distance, utilization and how much time off the road you can accept. Without local evidence to compare, a new or used label tells you nothing reliable about depreciation, reliability or resale value."
         ],
         "table": {
           "caption": "Examples of buyer requirements to compare",
@@ -2145,7 +2145,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "Fleet starting on a fixed date",
-              "Required quantity in the same configuration, inspection and preparation completion, registration work, keys and service arrangements. Obtain evidence for readiness rather than assuming new means immediate."
+              "Required quantity in the same configuration, inspection and preparation completion, registration work, keys and service arrangements. Ask for proof the cars are ready; new doesn’t automatically mean available now."
             ],
             [
               "Dealer buying individually priced used cars",
@@ -2153,7 +2153,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Longer planned ownership",
-              "Maintenance plan, parts identification, qualified repair access and the written scope of any warranty. Request support for the exact market version."
+              "Maintenance plan, parts identification, qualified repair access and the written scope of any warranty. Ask for support that covers the exact market version."
             ],
             [
               "Electric or plug-in fleet",
@@ -2165,8 +2165,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Check registration status before choosing a zero-mileage offer",
         "paragraphs": [
-          "“Zero mileage” or “nearly new” does not establish the export category. China’s used-vehicle framework defines used cars by registration and transfer of ownership, rather than an odometer threshold. Ask for the registration history and the exporter’s proposed route.",
-          "A recently registered car can also need additional export evidence under the current Chinese requirements. Have the exporter confirm applicability and the documents it will obtain before treating a low-mileage offer as ready to ship."
+          "“Zero mileage” or “nearly new” doesn’t decide the export category. China’s used-vehicle framework defines a used car by registration and transfer of ownership, not by what the odometer shows. Ask for the registration history and the export route the exporter plans to use.",
+          "Under the current Chinese requirements, a recently registered car may also need extra export paperwork. Get the exporter to confirm whether that applies and which documents it will provide, before you treat a low-mileage offer as ready to ship."
         ],
         "sources": [
           "used-export",
@@ -2182,8 +2182,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "For a new or used electric car, check the charging plan",
         "paragraphs": [
-          "Compare the actual charging inlets, supported equipment and battery evidence. A model sold in your market may have different charging hardware or software from a China-market version with the same name. Obtain the specification for the quoted car.",
-          "For a used EV, add the installed battery’s report, repairs and charging test results to the comparison. Ask what the health metric measures and how it was obtained. Keep this condition assessment separate from the manufacturer’s published range figure or the percentage of charge shown on the dashboard."
+          "Compare the actual charging inlets, supported equipment and battery evidence. A model sold in your market may have different charging hardware or software from a China-market version with the same name. Ask for the specification of the car you’re actually being quoted.",
+          "For a used EV, add the fitted battery’s report, repairs and charging test results to the comparison. Ask what the health figure measures and how it was taken. Don’t confuse it with the manufacturer’s published range figure or the charge percentage on the dashboard."
         ],
         "links": [
           {
@@ -2199,9 +2199,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Compare the cost of getting each car ready for use",
         "paragraphs": [
-          "For a used car, price the work needed to reach your required condition: inspection, agreed repairs, preparation and any re-check. Add freight, destination charges and registration work on the same basis as the new-car offer. Keep confirmed amounts separate from estimates and missing charges.",
-          "Vehicle depreciation is one part of ownership cost, not a fixed saving to assume from a used-car price. For your intended holding period, compare the purchase cost, required work and the support you can actually obtain. Battery health and warranty coverage need their own evidence for a used EV.",
-          "For a fleet, specify which equipment must remain consistent across the batch. For resale, consider the records you can pass to the next owner. Document acceptable substitutions and recheck the affected destination requirements before accepting another version."
+          "For a used car, price the work to bring it up to the condition you need: inspection, agreed repairs, preparation and any re-check. Add freight, destination charges and registration work on the same basis as the new-car offer. Keep confirmed amounts apart from estimates and from charges nobody has quoted yet.",
+          "Depreciation is one part of ownership cost; don’t treat a lower used-car price as a guaranteed saving. Over the time you plan to keep the car, compare purchase cost, the work it needs and the support you can actually get. For a used EV, battery health and warranty coverage each need their own evidence.",
+          "For a fleet, say which equipment must be the same across the batch. For resale, think about the records you can hand to the next owner. Write down which substitutions you’ll accept, and recheck the destination rules a different version affects before you agree to it."
         ],
         "links": [
           {
@@ -2213,9 +2213,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Screen exclusions before building the cost comparison",
         "paragraphs": [
-          "First remove offers that fail a mandatory requirement: an unavailable import route, missing approval evidence, unsuitable seating or steering, unresolved structural damage, or charging that cannot be supported for the intended use. A price reduction does not solve these gaps.",
-          "For the remaining cars, compare the same model year or explain the difference, engine or battery version, drivetrain, safety equipment and delivery point. Add inspection, repairs, tyres or other preparation identified for the unit, plus registration and local setup. Keep uncertain costs visible.",
-          "For a recently registered used export from China, resolve the applicable manufacturer after-sales confirmation requirement. At destination, have the receiving specialist determine the car’s legal status from its records. “Zero-mileage” in an advertisement is not a substitute for that review."
+          "First, drop any offer that fails a must-have: an unavailable import route, missing approval evidence, unsuitable seating or steering, unresolved structural damage, or charging that can’t be supported for the intended use. A lower price doesn’t fix any of these.",
+          "For the cars left, compare model year (or note the difference), engine or battery version, drivetrain, safety equipment and delivery point. Add inspection, repairs, tyres or other preparation each unit needs, plus registration and local setup. Keep uncertain costs in plain sight.",
+          "For a recently registered used car exported from China, check whether the manufacturer after-sales confirmation is required and get it sorted. At destination, the local specialist decides the car’s legal status from its records. “Zero-mileage” in an advertisement doesn’t replace that review."
         ],
         "sources": [
           "recent-registration"
@@ -2236,15 +2236,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Are used cars from China always cheaper to import?",
-            "answer": "The quoted vehicle price may be lower, but compare the full destination cost and preparation for each car. Inspection findings, parts, transport and registration requirements can change the result. Use the same delivery endpoint for both calculations."
+            "answer": "The vehicle price may be lower, but compare the full cost at destination, including preparation, for each car. Inspection findings, parts, transport and registration rules can change the answer. Work both calculations to the same delivery endpoint."
           },
           {
             "question": "Can a low-mileage car be imported wherever new cars are allowed?",
-            "answer": "Check the destination’s definition and route for that vehicle. Low mileage does not establish eligibility, and approval of a new version does not automatically cover a registered used unit. Ask the broker to review its actual registration history."
+            "answer": "Not necessarily. Check how your destination defines that vehicle and which route it takes. Low mileage doesn’t make a car eligible, and approval of a new version doesn’t automatically cover a used unit that has been registered. Ask your broker to review its actual registration history."
           },
           {
             "question": "Which option is better for a first order?",
-            "answer": "Choose the offer for which you can verify eligibility, specification or condition, full costs and support. If either offer has unresolved requirements, ask for the missing evidence before selecting it. A smaller first order still needs those checks."
+            "answer": "Pick the offer where you can verify eligibility, specification or condition, full costs and support. If either one has gaps, ask for the missing evidence before you choose. A smaller first order still needs the same checks."
           }
         ],
         "links": [
@@ -2277,7 +2277,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "check-car-import-eligibility": {
     "title": "Car Import Requirements: Can You Import This China-Market Car?",
     "description": "Check car import eligibility through four separate gates: China export, importer and customs route, technical conformity and local road registration.",
-    "answer": "Confirm four separate gates for the exact vehicle and legal importer: China export, destination import clearance, technical conformity and road registration. Use the actual version and available documents, then record the evidence still needed before purchase or shipment. Success at one gate does not settle the others.",
+    "answer": "Your car has to pass four separate gates: China export, destination import clearance, technical conformity and road registration. Check each one for the exact vehicle and legal importer, using the actual version and its documents, and note what evidence is still missing before you buy or ship. Passing one gate doesn’t settle the others.",
     "image": "documents",
     "reviewed": "2026-11-16",
     "sources": [
@@ -2291,8 +2291,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Send the broker a vehicle file, not just a model name",
         "paragraphs": [
-          "Car import requirements follow the actual vehicle and importing route. Start with the model year, country of origin, registration history, powertrain and intended use. Include left-hand drive or other steering information and the technical evidence requested for applicable emissions standards.",
-          "The legal importer also matters. A dealer batch, private purchase and returning-resident scheme can have different conditions. The broker's review should identify any import license, approval or registration requirement that applies to this buyer and exact configuration."
+          "Car import requirements depend on the actual vehicle and how it is imported. Start with the model year, country of origin, registration history, powertrain and intended use. Add the steering side (left-hand drive or otherwise) and whatever technical evidence the emissions standards call for.",
+          "Who imports the car matters too. A dealer batch, a private purchase and a returning-resident scheme can each come with different conditions. The broker should tell you about any import license, approval or registration requirement for this buyer and this exact configuration."
         ],
         "table": {
           "caption": "Information for the destination eligibility check",
@@ -2305,7 +2305,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "Importer and use",
               "Legal importer, commercial or personal route, resale or fleet use.",
-              "Applicable importer registration, permits and limits for that route."
+              "Importer registration, permits and limits for that route."
             ],
             [
               "Vehicle identity",
@@ -2314,8 +2314,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Registration history",
-              "New or previously registered status, first registration and relevant records.",
-              "Applicable new/used classification and age or other vehicle restrictions."
+              "New or previously registered status, first registration and supporting records.",
+              "How the car is classed (new or used) and any age or other vehicle restrictions."
             ],
             [
               "Technical evidence",
@@ -2325,7 +2325,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "Arrival and registration",
               "Port or border, final use location and proposed timing.",
-              "Clearance, inspection and registration steps, with the responsible parties."
+              "Clearance, inspection and registration steps, and who handles each."
             ]
           ]
         }
@@ -2333,7 +2333,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Record a separate answer for each approval gate",
         "paragraphs": [
-          "Keep each answer with its source, date and scope. A freight forwarder’s willingness to carry the car is a transport decision. A customs estimate is a cost calculation. Neither replaces a technical or registration decision."
+          "Note who gave each answer, when, and what it covers. A forwarder agreeing to carry the car is a transport decision. A customs estimate is a cost calculation. Neither tells you the car will pass technical approval or registration."
         ],
         "table": {
           "caption": "Eligibility decisions to resolve for the proposed transaction",
@@ -2344,11 +2344,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "China export",
-              "Named exporter, vehicle status and applicable export documents or licence requirements. The exporter should identify its procedure for the actual unit."
+              "Named exporter, vehicle status and the export documents or licence it needs. The exporter should explain its procedure for the actual unit."
             ],
             [
               "Destination import",
-              "Importer of record, legal regime, new/used status, age, category and any licence or prior authorization. Obtain a country-specific review."
+              "Importer of record, legal regime, new/used status, age, category and any licence or prior authorization. Get a review for that specific country."
             ],
             [
               "Technical conformity",
@@ -2364,9 +2364,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Check import clearance and road registration separately",
         "paragraphs": [
-          "Vehicle homologation or type approval addresses a technical approval process. Customs entry and vehicle registration may require other records as well. Establish which authority reviews each part of the file and which decisions must be obtained before shipment.",
-          "Where a certificate of conformity is requested, match its issuer and scope to the offered version. Do not assume every China-market car has an EU certificate. Used car import rules can also depend on age, condition and registration history; a low odometer reading does not settle that review.",
-          "For an EV, add charging compatibility for the actual inlets and local equipment. Keep software, language and service requirements in the same purchasing brief so a substitution triggers a review of the affected checks."
+          "Vehicle homologation or type approval is about technical approval. Customs entry and vehicle registration can need other records on top of that. Find out which authority reviews each part of the file, and which decisions you need in hand before shipment.",
+          "If a certificate of conformity is asked for, check that its issuer and scope match the version on offer. Don’t assume every China-market car has an EU certificate. Used car import rules can also turn on age, condition and registration history; a low odometer reading doesn’t settle that.",
+          "For an EV, add charging compatibility for the actual inlets and local equipment. Keep software, language and service needs in the same purchasing brief, so any substitution sends you back to the checks it affects."
         ],
         "links": [
           {
@@ -2378,8 +2378,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Resolve the China export side with the named exporter",
         "paragraphs": [
-          "Ask who will be the exporter of record and which export category applies to the car. For a used vehicle, request the relevant registration, licensing and inspection file. Check that the exporter can connect those records to the individual VINs in your order.",
-          "Keep the China export check and destination approval in the same purchasing file, with a person responsible for each. If the vehicle’s registration status, model or exporter changes, have the affected party review the route again before payment or dispatch."
+          "Ask who the exporter of record will be and which export category the car falls into. For a used vehicle, ask for the registration, licensing and inspection file. Check that the exporter can tie those records to the individual VINs in your order.",
+          "Keep the China export check and the destination approval in one purchasing file, with a named person for each. If the car’s registration status, model or exporter changes, have the route checked again before payment or dispatch."
         ],
         "sources": [
           "used-export"
@@ -2388,8 +2388,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Importing an electric car from China: add local-use checks",
         "paragraphs": [
-          "Confirm the actual AC and DC charging arrangements, supported equipment and planned charging sites. Ask whether the local provider can support the exact version. Verify essential software, language, connected features and parts support that your use depends on.",
-          "Make the supplier identify what it has verified and what is awaiting confirmation. A feature working in China does not establish that its account, network or service will operate in your destination. If it is essential to the purchase, agree the acceptance evidence before the order."
+          "Confirm the car’s actual AC and DC charging setup, the equipment it supports and where it will charge. Ask whether the local provider can support the exact version. Check that the software, language, connected features and parts support you rely on will work.",
+          "Ask the supplier to say what it has verified and what is still unconfirmed. A feature that works in China may depend on an account, network or service that doesn’t operate in your destination. If a feature matters to the purchase, agree before you order what evidence you’ll accept that it works."
         ],
         "links": [
           {
@@ -2405,7 +2405,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Use country guidance for the route you actually need",
         "paragraphs": [
-          "Latin America and North Africa are not single import regimes. Start with the destination guide, then ask the local broker to check current requirements for your importer and vehicle. Keep the date, official reference and any remaining conditions in its written response."
+          "Latin America and North Africa aren’t single import regimes. Start with the destination guide, then ask the local broker to check current requirements for your importer and vehicle. Make sure the broker’s written answer includes the date, the official reference and any conditions still open."
         ],
         "links": [
           {
@@ -2429,9 +2429,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Check what the certificate actually covers",
         "paragraphs": [
-          "Read the document title, issuing organization, number, validity and vehicle identifiers. Determine whether it is a manufacturer technical sheet, a test report, an approval covering a vehicle type, a VIN-specific document or a destination authority’s acceptance. These documents can support different stages and are not interchangeable.",
-          "Match the engine or battery configuration, drivetrain, body type and relevant equipment to the quoted version. Ask the local reviewer to identify any gap and the accepted way to close it. Translation or authentication may be required, but translating a document does not expand its technical coverage.",
-          "Reopen the review if the importer, legal regime, VIN, model year, powertrain, steering, equipment affecting approval or shipment timing changes. Save the accepted revision before the order advances. For country examples, use the relevant guide to prepare the question, then obtain the case-specific decision."
+          "Read the document title, issuing organization, number, validity and vehicle identifiers. Work out what it actually is: a manufacturer technical sheet, a test report, an approval for a vehicle type, a VIN-specific document or a destination authority’s acceptance. Each supports a different stage, and one can’t stand in for another.",
+          "Check the engine or battery configuration, drivetrain, body type and key equipment against the quoted version. Ask the local reviewer to point out any gap and the accepted way to close it. You may need a translation or authentication, but translating a document doesn’t widen what it covers.",
+          "Reopen the review if any of these change: importer, legal regime, VIN, model year, powertrain, steering, equipment that affects approval, or shipment timing. Save the accepted version before the order moves on. Use the country guides to prepare your questions, then get a decision for your own case."
         ],
         "links": [
           {
@@ -2453,15 +2453,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Can I import any car advertised by an exporter?",
-            "answer": "An advertisement does not establish eligibility for your destination or importer. Ask for the exact vehicle file and have the local route checked before committing. Record any permits, conformity evidence or registration conditions still outstanding."
+            "answer": "Not automatically. An advertisement doesn’t make a car eligible for your destination or for you as importer. Ask for the exact vehicle file and have the local route checked before you commit. Note any permits, conformity evidence or registration conditions still outstanding."
           },
           {
             "question": "Does shipping from China prove the car was made in China?",
-            "answer": "Record manufacturing origin and shipment origin separately. Give the broker the relevant evidence for the actual vehicle, especially where tariff treatment or an import route depends on origin."
+            "answer": "Not on its own. Where the car was made and where it shipped from are separate facts, so record them separately. Give the broker origin evidence for the actual vehicle, especially if tariff treatment or the import route depends on origin."
           },
           {
             "question": "What should I do if eligibility is not yet confirmed?",
-            "answer": "Keep the quote provisional and identify the missing document or decision, its owner and the next review date. Do not treat an estimate of freight or tax as confirmation that the vehicle can be imported and registered."
+            "answer": "Keep the quote provisional and write down the missing document or decision, who owns it and when you’ll review it next. A freight or tax estimate doesn’t confirm that the car can be imported and registered."
           }
         ]
       }
@@ -2480,7 +2480,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "compare-car-export-quotes": {
     "title": "How to Compare Car Export Quotes from China",
     "description": "Compare car export quotations on the same vehicle, quantity and endpoint. Normalize excluded costs, examine conditions and request a revised written offer.",
-    "answer": "Compare the same vehicle specification, condition, quantity, currency and delivery endpoint first. Then add the work excluded from each offer, identify unpriced items and review payment, supply and validity conditions. The lowest headline price can only be evaluated once the scope and unresolved evidence are visible.",
+    "answer": "First make sure the quotes cover the same vehicle specification, condition, quantity, currency and delivery endpoint. Then add the work each offer leaves out, flag anything unpriced and read the payment, supply and validity conditions. Only then can you tell whether the lowest headline price is really the best deal.",
     "image": "quote",
     "reviewed": "2026-11-16",
     "sources": [
@@ -2494,8 +2494,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Make the vehicle and quantity comparable first",
         "paragraphs": [
-          "Give every supplier one specification brief. Compare model year, trim, powertrain and equipment, and record the quantity at the stated unit price. Vehicle availability should say which units are identified and which are still to be sourced.",
-          "Name the contracting seller and exporter of record. For a used car, compare the actual VIN, registration and condition file, including preparation and repairs in the offer. Price a proposed alternative as a separate option so a lower total cannot conceal a different car."
+          "Send every supplier the same specification brief. Compare model year, trim, powertrain and equipment, and note the quantity each unit price is based on. Each offer should say which units are already identified and which still have to be sourced.",
+          "Note who the contracting seller and exporter of record are. For a used car, compare the actual VIN, registration and condition file, and the preparation and repairs included in the offer. Have any alternative priced as a separate option, so a lower total can’t hide a different car."
         ],
         "table": {
           "caption": "Car export quotation comparison sheet",
@@ -2518,7 +2518,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             [
               "Delivery",
               "Trade rule, named place and included services.",
-              "Identify the same endpoint and services."
+              "Check it’s the same endpoint and services."
             ],
             [
               "Extra costs",
@@ -2546,8 +2546,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Bring EXW, FOB and CIF offers to the same endpoint",
         "paragraphs": [
-          "Write the selected trade rule, named place and edition beside each price. An FOB car price and a CIF car price cover different transport scopes. Add the freight and insurance outside the FOB offer and check both offers for destination handling before comparing totals.",
-          "Use the same port, yard or registration endpoint for the local estimate. The worked Incoterms example shows the arithmetic; actual freight, insurance and destination charges need current quotations for your vehicle list."
+          "Write the trade rule, named place and edition next to each price. An FOB car price and a CIF car price cover different parts of the journey. Add the freight and insurance the FOB offer leaves out, and check both offers for destination handling before you compare totals.",
+          "Use the same port, yard or registration endpoint for the local estimate. The worked Incoterms example shows the arithmetic; for real freight, insurance and destination charges you need current quotes for your vehicle list."
         ],
         "sources": [
           "icc"
@@ -2566,8 +2566,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Normalize two offers before ranking them",
         "paragraphs": [
-          "These numbers are invented only to demonstrate the comparison. The FOB and CIF offers refer to the same shipment and destination port, with comparable freight and cover. Offer A has a lower headline price but a USD 850 higher subtotal after the specified additions. Customs valuation, local taxes and other charges must still be checked for each actual offer.",
-          "If Offer B’s freight is only an estimate, retain that condition beside its price and obtain the validity date and booking basis. If either quote leaves terminal handling unpriced, keep it as missing rather than replacing it with zero or the other supplier’s number."
+          "These numbers are made up to show how the comparison works. The FOB and CIF offers are for the same shipment and destination port, with comparable freight and cover. Offer A looks cheaper, but once the listed costs are added its subtotal is USD 850 higher. You’d still need to check customs valuation, local taxes and other charges for each real offer.",
+          "If Offer B’s freight is only an estimate, note that next to its price and ask how long it’s valid and what booking it assumes. If either quote leaves terminal handling unpriced, mark it as missing. Don’t fill the gap with zero or with the other supplier’s number."
         ],
         "table": {
           "caption": "Hypothetical comparison per car in USD, before destination tax",
@@ -2604,8 +2604,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Duties, taxes, registration and inland work",
-              "Obtain case-specific figures",
-              "Obtain case-specific figures"
+              "Get figures for your case",
+              "Get figures for your case"
             ]
           ]
         },
@@ -2619,21 +2619,21 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Check the conditions behind a low car import quote",
         "paragraphs": [
-          "Record whether a lower offer requires another trim, colour, loading point, a mixed or larger batch, earlier payment or work the buyer must arrange. Ask for your original requirement and any alternative to be priced separately. A missing mandatory safety feature or approval record needs resolution before a price comparison can be useful.",
-          "Keep uncertainty visible. “Freight to follow,” “subject to inspection” and “documents to be confirmed” are open items, not zero-cost inclusions. Request the person responsible, expected evidence and the point at which the price or order can be revised."
+          "Check whether the lower offer depends on a different trim, colour or loading point, a mixed or larger batch, earlier payment, or work you have to arrange yourself. Ask for your original requirement and any alternative to be priced separately. If a mandatory safety feature or approval record is missing, comparing prices is pointless until that’s fixed.",
+          "Keep the unknowns visible. “Freight to follow,” “subject to inspection” and “documents to be confirmed” are open items, not free inclusions. For each, ask who is responsible, what evidence to expect and up to what point the price or order can still change."
         ],
         "items": [
           "Confirm the contracting seller and the entity that will export the cars.",
-          "Separate current availability from an estimated sourcing or production window.",
-          "Identify the inspection provider, scope and authority to approve release.",
+          "Separate cars available now from those with only an estimated sourcing or production window.",
+          "Find out who inspects, what they check and who can approve release.",
           "Check the exact support terms instead of comparing a general warranty headline."
         ]
       },
       {
         "heading": "Ask for a revised written offer before choosing",
         "paragraphs": [
-          "Send each seller the unresolved differences and ask for an updated version of its quotation. Keep the quote date, reference and validity with your comparison so your team does not approve an expired price or a superseded specification.",
-          "When a substitution, route or schedule changes, update the affected costs and destination check. Confirm payment milestones against the revised order. The comparison is complete when the selected offer describes the car and work you intend to buy, including what remains your responsibility."
+          "Send each seller the open differences and ask for an updated quotation. Keep the quote date, reference and validity with your comparison, so nobody on your team approves an expired price or an out-of-date specification.",
+          "When a substitution, route or schedule changes, update the costs and destination check it affects. Check the payment milestones against the revised order. You’re done when the chosen offer describes the car and work you mean to buy, including what stays your responsibility."
         ],
         "links": [
           {
@@ -2647,15 +2647,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "How many supplier quotes should I request?",
-            "answer": "Request enough comparable offers to understand the specification, service scope and unresolved costs. More offers help only when suppliers receive the same brief. Use the RFQ template to keep the responses comparable."
+            "answer": "Enough comparable offers to understand the specification, service scope and open costs. More offers only help if every supplier gets the same brief. The RFQ template keeps the responses comparable."
           },
           {
             "question": "Can I compare an online car price with a written export offer?",
-            "answer": "Check what the online price actually covers, including version, condition, quantity, currency and validity. Ask for a written offer to your named delivery point before treating it as a purchasing alternative."
+            "answer": "Only once you know what the online price covers: version, condition, quantity, currency and validity. Ask for a written offer to your named delivery point before you treat it as a real alternative."
           },
           {
             "question": "Should I choose the cheapest supplier?",
-            "answer": "Compare the confirmed total together with the vehicle evidence and services you need. Resolve material gaps before approval. A quote with missing inspection, preparation or destination costs is not yet a complete comparison."
+            "answer": "Not on price alone. Compare the confirmed total alongside the vehicle evidence and services you need, and close any significant gaps before you approve. A quote missing inspection, preparation or destination costs isn’t a complete comparison yet."
           }
         ]
       }
@@ -2674,7 +2674,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "car-order-payment-and-changes": {
     "title": "Car Export Payment Terms: Deposits, Transfers and Order Changes",
     "description": "Agree car export payment milestones with defined evidence, verify the bank beneficiary and document substitutions, delays, refunds and amended release conditions.",
-    "answer": "Agree what evidence is due before each deposit, balance or release milestone, then verify the payee through an independently established contact. Put vehicle substitutions, delays and refund conditions into written amendments. The payment method and the commercial contract should be reviewed together; neither a transfer receipt nor a document set establishes every aspect of vehicle condition.",
+    "answer": "Agree what evidence you’ll see before each deposit, balance or release milestone, and verify the payee through a contact you found yourself. Put vehicle substitutions, delays and refund conditions into written amendments. Review the payment method and the contract together: neither a transfer receipt nor a set of documents tells you everything about the car’s condition.",
     "image": "quote",
     "reviewed": "2026-11-16",
     "sources": [
@@ -2703,8 +2703,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Tie the car deposit and balance to agreed evidence",
         "paragraphs": [
-          "Set payment milestones against decisions your team can actually verify. For an identified used car, that may include the VIN and agreed inspection findings. For a batch being sourced, define when individual cars will be proposed, inspected and approved. There is no single deposit percentage to apply to every order.",
-          "Each milestone should show the amount, responsible approver and evidence still due. Keep the seller's acknowledgement and transfer reference with the order, then reconcile the remaining balance before the next request."
+          "Tie each payment milestone to something your team can actually check. For a specific used car, that might be the VIN and the agreed inspection findings. For a batch still being sourced, agree when individual cars will be proposed, inspected and approved. No single deposit percentage fits every order.",
+          "For each milestone, note the amount, who approves it and what evidence is still due. Keep the seller's acknowledgement and transfer reference with the order, and reconcile the remaining balance before the next request."
         ],
         "table": {
           "caption": "Details to complete for each payment milestone",
@@ -2723,7 +2723,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Evidence due first",
-              "Vehicle identification, inspection, preparation or shipping record specified for that stage."
+              "Vehicle identification, inspection, preparation or shipping record agreed for that stage."
             ],
             [
               "Approval",
@@ -2735,7 +2735,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Changes and cancellation",
-              "Written amendment, cost allocation and applicable refund procedure."
+              "Written amendment, who bears which costs, and the refund procedure."
             ]
           ]
         }
@@ -2743,7 +2743,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Define the evidence behind each payment milestone",
         "paragraphs": [
-          "These milestones are negotiation examples, not a KEEYAK standard deposit schedule. Banks assess documents under the selected instrument and its terms; physical inspection and vehicle acceptance need their own scope. Ask the bank or trade-finance specialist to explain discrepancies, fees and timing before committing to a letter of credit or documentary collection."
+          "These milestones are examples to negotiate from, not a standard KEEYAK deposit schedule. Banks check documents under the payment instrument you choose and its terms; they don’t inspect the car, so physical inspection and acceptance need their own agreed scope. Before you commit to a letter of credit or documentary collection, ask your bank or a trade-finance specialist to explain discrepancies, fees and timing."
         ],
         "table": {
           "caption": "Examples to negotiate for the actual order",
@@ -2758,11 +2758,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Vehicle acceptance",
-              "VIN list, agreed independent inspection and buyer decision on repairs or exceptions. Identify checks still pending."
+              "VIN list, agreed independent inspection and buyer decision on repairs or exceptions. Note any checks still pending."
             ],
             [
               "Shipment readiness",
-              "Applicable export documents, destination-file review and carrier acceptance/booking status. Distinguish an application or draft from an issued document."
+              "Export documents, destination-file review and carrier acceptance/booking status. An application or draft is not an issued document."
             ],
             [
               "Balance or document release",
@@ -2779,8 +2779,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Understand the proposed international payment method",
         "paragraphs": [
-          "A bank transfer, letter of credit, documentary collection or open-account arrangement creates different payment conditions. The seller and your bank should confirm what is available, the fees and the documents involved before those terms enter the order.",
-          "For a letter of credit, obtain the bank's review of the documentary requirements. A bank's examination of presented documents does not replace your agreed physical inspection and acceptance of the car. Keep both processes consistent with the contract."
+          "A bank transfer, letter of credit, documentary collection and open account each work differently. Before any of them goes into the order, get the seller and your bank to confirm what’s available, what it costs and which documents are involved.",
+          "For a letter of credit, have the bank review the documentary requirements. The bank checks the documents presented; that doesn’t replace your physical inspection and acceptance of the car. Make sure both line up with the contract."
         ],
         "sources": [
           "payments",
@@ -2790,8 +2790,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Verify a bank transfer and any changed payment instructions",
         "paragraphs": [
-          "Compare the beneficiary and account details with the signed instructions held by your finance team. For a new or changed account, contact the seller through an established channel, using a number obtained independently of the payment message. Keep a record of the verification.",
-          "IC3 warns that legitimate email accounts can be compromised. A familiar email thread is not sufficient confirmation of a bank change. If instructions conflict, pause the transfer until the seller and your finance team resolve them. If a suspicious transfer has already been made, contact the originating bank promptly."
+          "Before any bank transfer, check the beneficiary and account details against the signed instructions your finance team holds. If the account is new or has changed, call the seller through a channel you already use, on a number you didn’t get from the payment message. Write down that you checked.",
+          "IC3 warns that genuine email accounts can be compromised, so a familiar email thread isn’t enough to confirm a bank change. If instructions conflict, hold the transfer until the seller and your finance team sort it out. If a suspicious transfer has already gone, contact the bank you sent it from straight away."
         ],
         "sources": [
           "fraud"
@@ -2800,8 +2800,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Approve substitutions and delays as contract changes",
         "paragraphs": [
-          "Use a written contract amendment or revised offer for a substitute vehicle, revised price or changed dispatch date. Identify the old and proposed details. A replacement used car needs its own VIN and condition review; a different EV version can require another charging and destination check.",
-          "Record the buyer's decision and the effect on amounts already paid. Resolve the cancellation terms and refund terms in the actual agreement before the next transfer, including who acts and what evidence is needed."
+          "A substitute vehicle, revised price or changed dispatch date needs a written contract amendment or revised offer showing the old and new details. A replacement used car needs its own VIN and condition review; a different EV version may need its charging and destination checks redone.",
+          "Record the buyer's decision and what it means for money already paid. Settle the cancellation terms and refund terms in the agreement before the next transfer, including who does what and what evidence is needed."
         ],
         "links": [
           {
@@ -2817,11 +2817,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Amend the order before changing the money or the car",
         "items": [
-          "Identify the requested change against the original contract: VIN, trim, quantity, price, delivery point, payee or timing. Preserve the earlier version.",
-          "Assess the consequences for destination eligibility, charging, inspection, freight, tax estimate and support. A substitute vehicle may need a fresh review.",
+          "Set the requested change against the original contract: VIN, trim, quantity, price, delivery point, payee or timing. Keep the earlier version.",
+          "Work out what it changes for destination eligibility, charging, inspection, freight, the tax estimate and support. A substitute vehicle may need a fresh review.",
           "Record the agreed price difference, evidence, revised dates, costs and the buyer’s acceptance in a written amendment. State what happens if the replacement is not accepted.",
-          "Independently verify changed bank instructions using a known contact obtained before the change. IC3 identifies compromised email and payment redirection as business-email-compromise risks.",
-          "For a refund or cancellation, define the trigger, refundable amount, permitted deductions, deadline, currency and bank charges in the contract. Save payment and acknowledgment records; do not assume a payment product guarantees recovery."
+          "Check changed bank instructions with a contact you had before the change. IC3 lists compromised email and payment redirection as business-email-compromise risks.",
+          "For a refund or cancellation, define the trigger, refundable amount, permitted deductions, deadline, currency and bank charges in the contract. Keep payment and acknowledgment records, and don’t assume any payment product guarantees you’ll get the money back."
         ],
         "sources": [
           "fraud"
@@ -2845,11 +2845,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Is a car deposit refundable?",
-            "answer": "Check the written terms for your order, including what happens if the car is unavailable, fails an agreed inspection or cannot meet a condition. Ask the seller to resolve unclear wording before payment. Do not assume one refund policy applies to every supplier."
+            "answer": "It depends on the written terms for your order. Check what happens if the car is unavailable, fails an agreed inspection or can’t meet a condition, and get the seller to clear up any vague wording before you pay. Don’t assume every supplier has the same refund policy."
           },
           {
             "question": "Does a pro forma invoice prove the car is ready to ship?",
-            "answer": "Treat it as part of the proposed commercial terms. Request the vehicle identification, preparation, inspection and booking evidence required by your order before approving the relevant stage. Check the status of each item separately."
+            "answer": "No. It’s part of the proposed commercial terms. Before approving each stage, ask for the vehicle identification, preparation, inspection and booking evidence your order calls for, and check each item on its own."
           },
           {
             "question": "What should I retain after a transfer?",
@@ -2872,7 +2872,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "vehicle-arrival-checklist": {
     "title": "Car Delivery Checklist: Arrival Inspection After Import",
     "description": "Use a car arrival checklist for release, VIN matching, condition photos, keys and accessories, then route damage, shortages and technical faults with evidence.",
-    "answer": "Prepare the release file and departure condition record before collection. At receipt, match the VINs, document visible condition and count keys and agreed accessories before closing the handover record. Notify the responsible parties promptly under the actual contract, carrier and insurance terms, with a separate record for each discrepancy.",
+    "answer": "Have the release file and departure condition record ready before collection. When the cars arrive, match the VINs, record their visible condition and count keys and agreed accessories before you close the handover record. Report problems quickly under your contract, carrier and insurance terms, with a separate record for each discrepancy.",
     "image": "ports",
     "reviewed": "2026-11-16",
     "sources": [
@@ -2891,8 +2891,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Prepare the receiving file before the cars arrive",
         "paragraphs": [
-          "The receiving file should include the bill of lading or transport reference, VIN list, departure photographs, accepted findings and supplied-item inventory. Confirm customs release, collection authority and terminal access with the responsible parties before arranging the collection.",
-          "Set the collection window and identify outstanding charges, including possible port storage charges. A VIN check and a record of missing accessories should be completed at the earliest permitted handover. Note any access limits so the next inspector knows what remains unchecked."
+          "Your receiving file should hold the bill of lading or transport reference, VIN list, departure photographs, accepted findings and the list of supplied items. Before you arrange collection, confirm customs release, your authority to collect and terminal access.",
+          "Set the collection window and find out what charges are still outstanding, including any port storage charges. Do the VIN check and note any missing accessories at the first handover you’re allowed to attend. Write down any access limits, so the next inspector knows what hasn’t been checked."
         ],
         "sources": [
           "documents"
@@ -2914,7 +2914,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Mileage and indicators",
-              "Displayed odometer and warning messages where access and operation are permitted."
+              "Odometer reading and warning messages, if you’re allowed to access and switch on the car."
             ],
             [
               "Supplied items",
@@ -2934,8 +2934,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Match each car with its departure condition record",
         "paragraphs": [
-          "Photograph both the vehicle reference and the area being assessed. Compare the arrival views with the departure record, then retain the proof of delivery and any recorded exceptions. State if the underside, cabin or a test function could not be checked at that location.",
-          "For a container, have the responsible party record the container seal and reference as applicable, along with opening and unloading evidence. Follow the terminal and packing provider's instructions. Vehicle collection and return of empty equipment can involve separate deadlines and charges."
+          "Photograph the vehicle reference as well as the area you’re checking. Compare the arrival photos with the departure record, then keep the proof of delivery and any exceptions noted on it. Say so if the underside, cabin or a test function couldn’t be checked there.",
+          "For a container, have whoever opens it record the container seal and reference, and photograph the opening and unloading. Follow the terminal and packing provider's instructions. Collecting the cars and returning the empty equipment can have separate deadlines and charges."
         ],
         "links": [
           {
@@ -2948,17 +2948,17 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "heading": "Inspect in an order that preserves the receiving evidence",
         "items": [
           "Confirm collection authority, release status and safe access with the terminal or carrier. Bring the accepted VIN list, departure photos and accessory inventory.",
-          "Record the date, location and receiving parties. Match each VIN before comparing general exterior views and close-ups from equivalent angles.",
+          "Note the date, location and who is receiving. Match each VIN first, then compare overall exterior views and close-ups taken from the same angles.",
           "Count keys, charging cables and other items in the agreed inventory. Record missing or substituted items and any limits on access or testing.",
-          "Use the receiving party’s process to note visible discrepancies on the handover record. Keep your own photos and record if a comment cannot be added.",
-          "Where safe and permitted, complete the agreed operation checks. Refer suspected battery damage, leaks, severe damage or unsafe operation to the responsible qualified provider before driving, charging or moving the car further."
+          "Note visible discrepancies on the handover record using the receiving party’s process. Keep your own photos, and write down if you weren’t able to add a comment.",
+          "If it’s safe and allowed, run the agreed operation checks. If you suspect battery damage, leaks, severe damage or unsafe operation, get a qualified provider to look at it before the car is driven, charged or moved any further."
         ]
       },
       {
         "heading": "What to do about transport damage or a missing item",
         "paragraphs": [
-          "Send a notice of claim or initial damage notification through the procedure required by the actual carrier and marine cargo insurance policy. Include the VIN, shipment reference, discovery time and photographs, with the departure and receiving records. Establish whether a survey or further inspection is needed before repair or onward movement.",
-          "Höegh Autoliners publishes its own claims guidance; another carrier or insurer can require a different process. Use the instructions and deadlines for your shipment. Keep transport damage, a vehicle fault and missing sales-order items separately identified so each reaches the appropriate provider. Leave an unresolved cause recorded as unresolved."
+          "Send a notice of claim or initial damage notification the way your carrier and marine cargo insurance policy require. Include the VIN, shipment reference, when you found the damage and photographs, along with the departure and receiving records. Ask whether a survey or further inspection is needed before any repair or onward movement.",
+          "Höegh Autoliners publishes its own claims guidance; another carrier or insurer may use a different process. Follow the instructions and deadlines for your shipment. Keep transport damage, vehicle faults and items missing from the sales order as separate issues, so each goes to the right provider. If the cause isn’t clear yet, record it as unresolved."
         ],
         "sources": [
           "carrier"
@@ -2973,8 +2973,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Finish the local handover and registration work",
         "paragraphs": [
-          "Have the broker confirm the remaining clearance and registration steps. Keep the final invoice, vehicle list, transport documents and local records together by VIN. Clearance from a terminal does not, by itself, establish that the car is ready for road use.",
-          "For an EV, arrange the agreed commissioning and charging check with the appropriate provider. Give the next owner or fleet team the manuals, verified equipment information, maintenance records and support contact supplied for that vehicle. Record anything still outstanding before closing the purchase file."
+          "Have the broker confirm the clearance and registration steps still to do. Keep the final invoice, vehicle list, transport documents and local records together by VIN. A car cleared out of the terminal isn’t necessarily ready for the road.",
+          "For an EV, book the agreed commissioning and charging check with the right provider. Hand the next owner or fleet team the manuals, checked equipment details, maintenance records and the support contact for that vehicle. Note anything still outstanding before you close the purchase file."
         ],
         "links": [
           {
@@ -2990,8 +2990,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Send the issue to the right party with one evidence file",
         "paragraphs": [
-          "Retain invoice, transport reference, VIN, photos, the receiving record and correspondence under one issue number. Obtain instructions before a non-essential repair or disposal removes evidence. Take necessary safety action through the responsible local professionals and record what was done.",
-          "Carrier notice, insurance claim and seller-remedy procedures can have different recipients and deadlines. Read the actual terms and ask for written instructions promptly. No single claim period in a general checklist can replace those shipment-specific requirements."
+          "Keep the invoice, transport reference, VIN, photos, receiving record and correspondence under one issue number. Get instructions before a non-essential repair or disposal destroys evidence. Anything needed for safety should be done by qualified local professionals, and written down.",
+          "A carrier notice, an insurance claim and a claim against the seller can each go to different people, with different deadlines. Read your actual terms and ask for written instructions early. A general checklist can’t give you one claim period that fits every shipment."
         ],
         "table": {
           "caption": "Arrival discrepancy triage",
@@ -3002,11 +3002,11 @@ export const procurementGuides: Record<string, GuideEditorial> = {
           "rows": [
             [
               "New visible transport damage",
-              "Compare departure and arrival evidence; notify carrier, insurer and commercial contact as applicable. Ask for the required survey and claims procedure."
+              "Compare departure and arrival evidence; notify the carrier, insurer and commercial contact as needed. Ask which survey and claims procedure they require."
             ],
             [
               "Missing key, cable or other agreed item",
-              "Compare inventory and handover records; establish where the item was last recorded and request the agreed remedy."
+              "Compare inventory and handover records; find out where the item was last recorded and ask for the agreed remedy."
             ],
             [
               "Wrong VIN, trim or quantity",
@@ -3014,7 +3014,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Warning or fault discovered after receipt",
-              "Record mileage, symptoms and diagnostics through a qualified provider; review the inspection, transport evidence and applicable support terms without presuming the cause."
+              "Record mileage and symptoms and have a qualified provider diagnose; review the inspection, transport evidence and support terms without guessing the cause."
             ]
           ]
         },
@@ -3034,15 +3034,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Should I wait until the car reaches my showroom to check it?",
-            "answer": "Arrange the earliest permitted receiving inspection and record where the condition was checked. A later showroom inspection may still be needed, but preserve the evidence from each handover. Ask the carrier or insurer how to record an issue discovered later."
+            "answer": "No. Inspect at the earliest handover you’re allowed to and note where the car was checked. You may still need a showroom check later, but keep the evidence from every handover. Ask the carrier or insurer how to report an issue found later."
           },
           {
             "question": "What if the car cannot be started at collection?",
-            "answer": "Record the condition and notify the responsible party. Ask for handling and diagnostic instructions from the appropriate provider rather than assuming the cause. Confirm any additional movement or inspection before it is arranged."
+            "answer": "Record the condition and tell the responsible party. Get handling and diagnostic instructions from the right provider rather than guessing the cause, and agree any extra movement or inspection before it’s arranged."
           },
           {
             "question": "Is every arrival problem covered by shipping insurance?",
-            "answer": "Check the policy, exclusions, insured journey and evidence requirements. Report the facts and let the relevant provider review the issue. Keep any sales-order or warranty request distinct so it reaches the right contact."
+            "answer": "Not necessarily. Check the policy, exclusions, insured journey and evidence requirements. Report the facts and let the provider review the issue. Keep any sales-order or warranty request separate so it reaches the right contact."
           }
         ]
       }
@@ -3061,7 +3061,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
   "car-warranty-and-after-sales": {
     "title": "Imported Car Warranty and After-Sales Support: What to Confirm",
     "description": "Check imported-car warranty by VIN and market, identify who pays diagnosis and repair, verify parts fitment and agree a practical after-sales process.",
-    "answer": "Get written support terms for the actual VIN, market and use. Identify who diagnoses a fault, authorizes work, supplies parts and pays labour, freight and other costs. Manufacturer coverage, seller support and a local workshop arrangement can have different scopes, so confirm each separately before purchase.",
+    "answer": "Get written support terms for the actual VIN, market and use. Find out who diagnoses a fault, who approves the work, who supplies parts and who pays labour, freight and other costs. Manufacturer coverage, seller support and a local workshop can each cover different things, so confirm each one before you buy.",
     "image": "battery",
     "reviewed": "2026-11-16",
     "sources": [
@@ -3085,8 +3085,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Who will support the imported car in your market?",
         "paragraphs": [
-          "The support file should name the provider, applicable terms and contact for the version being supplied. Record coverage eligibility for its origin, registration history and intended use, along with the local workshop or diagnostic provider.",
-          "Parts availability is only one part of the arrangement. Establish access to suitable diagnostic software, the repair authorization process and who pays labour costs, testing and transport. A parts-only commitment needs a budget for the work your business will arrange locally."
+          "For the version you’re buying, the support file should name the provider, the terms and a contact. Note whether the car qualifies for coverage given its origin, registration history and intended use, and which local workshop or diagnostic provider you’ll use.",
+          "Parts availability is only one piece. Check access to the right diagnostic software, the repair authorization process and who pays labour costs, testing and transport. If the seller commits to parts only, budget for the work your business will have to arrange locally."
         ],
         "table": {
           "caption": "Imported car warranty and support checklist",
@@ -3125,7 +3125,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Allocate the cost of a repair before it is needed",
         "paragraphs": [
-          "A written response can identify a real service gap before it becomes a vehicle problem. If no provider confirms an item, keep it as a buyer cost or unresolved support requirement in the purchase comparison rather than describing it as included."
+          "Answers in writing show you the service gaps before a car breaks down. If no provider confirms an item, count it in your comparison as a buyer cost or an open support question, not as included."
         ],
         "table": {
           "caption": "Support questions for the written offer",
@@ -3140,7 +3140,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Repair authorization",
-              "Named contact, approval needed before work and treatment of urgent safety action."
+              "Named contact, approval needed before work and how urgent safety work is handled."
             ],
             [
               "Parts",
@@ -3148,15 +3148,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
             ],
             [
               "Labour, freight and import charges",
-              "Whether each item is included, capped or payable by the buyer; identify return-shipping requirements."
+              "Whether each item is included, capped or payable by the buyer, plus any return-shipping requirements."
             ],
             [
               "Vehicle downtime and local movement",
-              "Any agreed support or limits. Do not assume replacement transport or lost revenue is covered."
+              "Any agreed support or limits. Don’t assume replacement transport or lost revenue is covered."
             ],
             [
               "Battery and connected functions",
-              "Covered components, applicable terms and the availability of supported diagnostic, software or account services for this market version."
+              "Covered components, terms, and whether diagnostic, software or account services are available for this market version."
             ]
           ]
         }
@@ -3164,8 +3164,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Do Chinese car warranties apply overseas?",
         "paragraphs": [
-          "Check the terms for the actual car and market. Manufacturer distribution and warranty arrangements can be territorial. As one specific example, Toyota Ireland states that vehicles originating outside the Pan-European market do not have its manufacturer warranty cover in Ireland. That is an Ireland policy example, not a rule for every brand or destination.",
-          "Ask the relevant provider to confirm your own case in writing. Keep separate any manufacturer coverage, seller commitment and local support you arrange yourself. If the offer uses the word “warranty” without identifying the provider or scope, request those details before comparing it with another car."
+          "It depends on the terms for the actual car and market. Manufacturer distribution and warranty arrangements can be territorial. For example, Toyota Ireland states that vehicles originating outside the Pan-European market do not have its manufacturer warranty cover in Ireland. That is an Ireland policy example, not a rule for every brand or destination.",
+          "Ask the provider to confirm your case in writing. Keep manufacturer coverage, seller commitments and any local support you arrange yourself as separate items. If an offer says “warranty” without naming the provider or scope, ask for both before you compare it with another car."
         ],
         "sources": [
           "warranty"
@@ -3174,8 +3174,8 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "For an EV battery warranty, read the component terms",
         "paragraphs": [
-          "Ask whether the traction battery has separate coverage, a capacity condition, a test method or restrictions on use and maintenance. Confirm the start date and eligibility for the individual vehicle. Do not assume that a headline battery term quoted for a local-market new car transfers to a China-market used unit.",
-          "Keep the purchase-time battery report with the warranty evidence. If a later issue arises, the provider will need the vehicle reference, symptoms and the records it requests. A battery state-of-health estimate describes a measurement; it does not itself establish the provider’s coverage decision."
+          "Ask whether the traction battery has separate coverage, a capacity condition, a test method or restrictions on use and maintenance. Confirm the start date and whether this individual car qualifies. A headline battery term quoted for a new local-market car doesn’t automatically carry over to a used China-market unit.",
+          "File the battery report from purchase with the warranty evidence. If a problem comes up later, the provider will want the vehicle reference, the symptoms and whatever records it asks for. A battery state-of-health estimate is a measurement; the provider still makes its own coverage decision."
         ],
         "links": [
           {
@@ -3190,13 +3190,13 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         ],
         "heading": "Send a support request that can be assessed",
         "paragraphs": [
-          "Provide the VIN, order reference, mileage, location and a dated description of the symptoms. Include warning messages, photographs and the qualified diagnostic report available, plus any relevant repairs or modifications since delivery.",
-          "For a VIN lookup, recall check or service campaign inquiry, use the manufacturer or provider responsible for that vehicle's market version. Confirm whether the tool or provider covers international vehicles. An empty result in a database with a limited market scope does not establish a complete campaign history.",
-          "Obtain the provider's next instruction and repair authorization before committing to reimbursable work. For a parts quote, match the part number to the actual car and identify freight, duties and local fitting costs. Keep the battery warranty response separate where it has its own component terms."
+          "Send the VIN, order reference, mileage, location and a dated description of the symptoms. Add warning messages, photos and any diagnostic report from a qualified provider, plus repairs or modifications since delivery.",
+          "For a VIN lookup, recall check or service campaign inquiry, go to the manufacturer or provider responsible for that vehicle's market version, and check whether its tool covers international vehicles. An empty result from a database that only covers some markets doesn’t mean the car has no campaigns.",
+          "Wait for the provider's next instruction and repair authorization before you commit to work you want reimbursed. For a parts quote, match the part number to the actual car and find out the freight, duties and local fitting costs. If the battery warranty has its own component terms, keep that response separate."
         ],
         "items": [
           "Keep each request under one reference with the provider’s response and agreed next action.",
-          "Retain service and repair records, including work carried out at destination.",
+          "Keep service and repair records, including work done at destination.",
           "Confirm any return, freight or reimbursement conditions before authorizing the work."
         ],
         "links": [
@@ -3209,7 +3209,7 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Separate an arrival discrepancy from a vehicle warranty issue",
         "paragraphs": [
-          "If damage is found at collection, preserve the receiving and departure records and follow the applicable carrier and insurance process. A transport claim and a vehicle warranty request may have different contacts and conditions. Ask the relevant parties to assess the evidence rather than assuming one route covers everything."
+          "If you find damage at collection, keep the receiving and departure records and follow the carrier and insurance process. A transport claim and a vehicle warranty request can have different contacts and conditions. Let each party assess the evidence; don’t assume one route covers everything."
         ],
         "sources": [
           "carrier"
@@ -3224,9 +3224,9 @@ export const procurementGuides: Record<string, GuideEditorial> = {
       {
         "heading": "Match parts and service information to the actual vehicle",
         "paragraphs": [
-          "For a parts enquiry, provide the VIN, exact version, component location, clear photographs and any legible part number. Ask the supplying party to confirm fitment using the relevant parts information. A same-name model sold locally can use a different component or software version.",
-          "For the first fault, record the date, mileage, symptoms, warning messages and circumstances, then obtain the qualified diagnostic report requested by the support provider. Seek repair authorization and a written allocation of costs before ordering non-essential work. Keep replaced-part evidence where required by the claim process.",
-          "Ask the manufacturer or responsible market representative how to check recalls and service campaigns for this VIN. NHTSA’s US VIN lookup lists international vehicles among its coverage limitations. A no-result search in an unrelated market does not establish that the China-market unit has no outstanding campaign."
+          "For a parts enquiry, send the VIN, exact version, where the component sits, clear photos and any part number you can read. Ask the supplier to confirm fitment from the parts information for that car. A model sold locally under the same name can use a different component or software version.",
+          "When the first fault appears, note the date, mileage, symptoms, warning messages and circumstances, then get the qualified diagnostic report the support provider asks for. Before ordering non-essential work, get repair authorization and written agreement on who pays what. Keep replaced-part evidence if the claim process requires it.",
+          "Ask the manufacturer or its representative for that market how to check recalls and service campaigns for this VIN. NHTSA’s US VIN lookup lists international vehicles among its coverage limitations, so a blank result in another market’s database doesn’t prove the China-market car has no outstanding campaign."
         ],
         "sources": [
           "recall"
@@ -3243,15 +3243,15 @@ export const procurementGuides: Record<string, GuideEditorial> = {
         "questions": [
           {
             "question": "Can a dealer repair the car and claim the cost later?",
-            "answer": "Confirm the approval and reimbursement process with the provider before arranging work. Ask which evidence, workshop and cost authorization are required. Keep urgent handling or safety instructions from the qualified provider with the case record."
+            "answer": "Check with the provider first. Confirm the approval and reimbursement process before any work is arranged, including which evidence, workshop and cost authorization it needs. Keep any urgent or safety instructions from the qualified provider in the case record."
           },
           {
             "question": "What if the seller only offers spare parts?",
-            "answer": "Ask which parts, how they are identified, who pays freight and duties, and who handles local diagnosis and fitting. Record those boundaries and budget for the work left to your business."
+            "answer": "Ask which parts, how they are identified, who pays freight and duties, and who handles local diagnosis and fitting. Write those limits down and budget for the work that falls to your business."
           },
           {
             "question": "Does a used car keep its remaining original warranty?",
-            "answer": "Have the provider check the VIN, origin, ownership, destination, use and maintenance records. Transferability and territorial eligibility come from the applicable terms. Treat unconfirmed remaining coverage as an open purchasing question."
+            "answer": "It depends on the provider’s terms, which decide whether coverage transfers and where it applies. Have the provider check the VIN, origin, ownership, destination, use and maintenance records. Until it confirms, treat any remaining coverage as an open question."
           }
         ]
       }

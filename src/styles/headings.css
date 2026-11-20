@@ -1,7 +1,8 @@
 /* Public heading roles shared by the homepage and inner-page templates. */
 body.autohaus-home,
 body.inner-editorial{
- --heading-font:var(--site-font);
+ --heading-font:var(--site-display-font);
+ --subheading-font:var(--site-font);
  --heading-page:clamp(33px,calc(26px + 2.35vw),60px);
  --heading-article:clamp(31px,calc(26px + 2vw),55px);
  --heading-task:clamp(31px,calc(26px + 1.65vw),50px);
@@ -33,6 +34,11 @@ body.autohaus-home{--heading-page:clamp(46px,5.2vw,70px)}
  font-size:var(--heading-section);
  line-height:1.22;
  letter-spacing:var(--site-heading-tracking)!important;
+}
+/* Smaller headings switch to the text cut so a real semibold separates them from body copy. */
+:is(body.autohaus-home,body.inner-editorial) #main :is(h3,h4,h5,h6){
+ font-family:var(--subheading-font)!important;
+ font-weight:var(--site-subheading-weight)!important;
 }
 :is(body.autohaus-home,body.inner-editorial) #main h3{
  font-size:var(--heading-card);

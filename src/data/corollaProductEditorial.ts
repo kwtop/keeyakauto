@@ -22,26 +22,26 @@ export function corollaProductEditorial(base:ProductEditorial,vehicle:Vehicle,se
  const engineSummary=base.technical.split('\n\n')[0];
  const questions=base.questions.map(item=>({...item,paragraphs:[...item.paragraphs]}));
  questions[1]={q:'What should I confirm for a Toyota Corolla left hand drive order?',paragraphs:[
-  'The supplied version records mark steering as “To confirm”. State the steering position you need in the enquiry, and request photographs of the actual steering wheel and dashboard with identification evidence for that car.',
-  'Before payment, have the supplier confirm the steering position on the written equipment list. Your importer must check import and registration eligibility separately for the destination.',
+  'Our version records don’t say which side the steering wheel is on, so tell us the steering position you need when you enquire. We’ll ask for photos of the actual dashboard and steering wheel, matched to that car’s VIN.',
+  'Before you pay, the steering position should be written on the equipment list. Your importer still needs to confirm the car can be imported and registered in your country.',
  ]};
  questions[2]={q:'How do I compare a Toyota Corolla price in China?',paragraphs:[
-  'No fixed selling price is listed. When sourcing from China, send each supplier the same model year, full version name, colour, equipment list and quantity, together with your destination. Request an export quote with its currency and validity period.',
-  'Compare EXW, FOB or CIF offers at the same named collection point or port. Price preparation, inspection, inland transport, freight, insurance and destination charges separately to see the costs beyond the domestic vehicle price.',
+  'Prices change with stock, so we quote per order rather than listing one. Give every supplier the same model year, version, colour and quantity, and you’ll get offers you can actually compare. Check the currency and how long each quote is valid.',
+  'Make sure the offers use the same term, EXW, FOB or CIF, at the same port. Ask for inspection, inland transport, freight and insurance as separate lines; that’s where the real difference between two quotes usually hides.',
  ]};
  questions[5].paragraphs[0]+=' Obtain diagnostic support and the version-specific service schedule; for a hybrid, include hybrid battery diagnostics in the maintenance review.';
  return {
   ...base,
-  intro:'The 2026 Toyota Corolla specs here apply to the supplied China-market versions. Equipment and technical figures can differ in another market, so compare vehicle specifications by the full trim name.',
+  intro:'The 2026 Toyota Corolla specs on this page are for the China-market versions we can supply. Toyota Corolla specifications vary by market, so compare cars by their full trim name, not just the model.',
   selectionHeading:'Toyota Corolla dimensions',
-  selection:`The version shown is ${selected.name}.${dimensions?` Its listed dimensions are ${specificationText(dimensions)}.`:''} ${selected.seats?`Toyota Corolla seating capacity is ${selected.seats} seats in this reference.`:'Toyota Corolla seating capacity needs confirmation for the offered version.'} For a version comparison, keep the model year, seating layout, transmission and equipment list with that trim.`,
+  selection:`The version shown is ${selected.name}.${dimensions?` Its listed dimensions are ${specificationText(dimensions)}.`:''} ${selected.seats?`Toyota Corolla seating capacity is ${selected.seats} seats in this reference.`:'Toyota Corolla seating capacity needs confirmation for the offered version.'} When comparing versions, check the model year, transmission and equipment list as well.`,
   technicalHeading:'Toyota Corolla engine specifications',
   technicalNoteHeadings:['Engine options','Transmission','Fuel consumption'],
   technicalNoteIcons:['engine','transmission','fuel'],
   technical:[engineSummary,
-   `Toyota Corolla engine size is one difference between the two drivetrains. The Toyota Corolla 1.2 turbo reference lists ${gasEngine?.value??'an engine specification to confirm'}; the Toyota Corolla 1.8 hybrid reference lists ${hybridEngine?.value??'an engine specification to confirm'} for its engine. Compare the drive configuration and stated output basis as well as engine displacement.`,
-   `In Toyota Corolla hybrid specs, engine, motor and combined output figures need separate labels. The Toyota Corolla hybrid transmission is recorded as ${hybridTransmission?.value??'to confirm'}; the gasoline Toyota Corolla CVT transmission is listed as ${gasTransmission?.value??'to confirm'}. The hybrid system and gasoline drivetrain need their own service information, even when trim names look similar.`,
-   `Toyota Corolla fuel consumption figures need the same test cycle to be comparable. The recorded Toyota Corolla hybrid fuel consumption figures are ${hybridRange}, depending on trim${gasFuel?`; the gasoline reference lists ${specificationText(gasFuel)}`:''}. These test figures do not predict consumption in your driving conditions. Your importer also needs the offered car’s emissions documents for review.`,
+   `There are two engines to choose from. The Toyota Corolla 1.2 turbo uses ${gasEngine?.value??'an engine still to be confirmed'}, while the Toyota Corolla 1.8 hybrid pairs ${hybridEngine?.value??'an engine still to be confirmed'} with an electric motor. Toyota Corolla engine size alone doesn’t tell the whole story: the hybrid’s quoted output may include the motor.`,
+   `When reading Toyota Corolla hybrid specs, check whether a power figure is for the engine, the motor or both. The Toyota Corolla hybrid transmission is an ${hybridTransmission?.value??'unit still to be confirmed'}; the petrol car uses a Toyota Corolla CVT transmission, listed as ${gasTransmission?.value??'to be confirmed'}. The two drivetrains are serviced differently, so make sure your workshop can handle the one you buy.`,
+   `Toyota Corolla fuel consumption figures are only comparable on the same test cycle. Toyota Corolla hybrid fuel consumption is ${hybridRange}, depending on trim${gasFuel?`, against ${specificationText(gasFuel)} for the 1.2 turbo`:''}. Real-world use will differ with roads and climate. Your importer will also want the car’s emissions documents.`,
   ].join('\n\n'),
   questions,
  };

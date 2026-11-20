@@ -1,4 +1,5 @@
 ---
+import {ArrowUpRight} from '@lucide/astro';
 import TrustLayout from '../../layouts/TrustLayout.astro';
 import {aboutLinks} from '../../data/company';
 import {trustMedia} from '../../data/trustMedia';
@@ -12,15 +13,15 @@ const summaries = [
 <TrustLayout title="About KEEYAK Auto" description="Meet the team behind KEEYAK Auto, view company records and explore news and events." group="about" label="About Us" image={photos[0].src} pageType="CollectionPage" collection={aboutLinks.map(link => ({name: link.label, url: link.href}))}>
   <header class="tc-wrap tc-opening about-overview-heading">
     <h1>About KEEYAK</h1>
-
+    <div><p>Get to know the people behind your vehicle export. Explore our company, credentials and stories from the team.</p><a class="about-contact-link" href="/contact/">Talk to our team<ArrowUpRight size={18} aria-hidden="true"/></a></div>
   </header>
   <section class="tc-wrap about-overview-grid" aria-label="Explore KEEYAK">
     {aboutLinks.map((link, index) => {
       const photo = photos[index];
       return <a class="about-overview-card" href={link.href} aria-labelledby={`about-entry-${index}`}>
-        <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} decoding="async"/>
+        <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} decoding="async" fetchpriority={index===0?'high':'auto'}/>
         <div class="about-overview-copy">
-          <h2 id={`about-entry-${index}`}>{link.label}</h2>
+          <div class="about-card-title"><h2 id={`about-entry-${index}`}>{link.label}</h2><span class="about-card-arrow"><ArrowUpRight size={21} aria-hidden="true"/></span></div>
           <p>{summaries[index]}</p>
         </div>
       </a>;
@@ -36,36 +37,68 @@ const summaries = [
 </script>
 
 <style>
-  .about-overview-heading p { max-width: 58ch; }
+  /* Autohaus-style overview: centred title and intro, then framed photo cards with the title set over the photograph. */
+  :global(body.inner-autohaus #main) .about-overview-heading {
+    display: grid;
+    justify-items: center;
+    gap: 18px;
+    padding-block: clamp(40px, 6vw, 80px) clamp(36px, 5vw, 56px);
+    text-align: center;
+  }
+  :global(body.inner-autohaus #main) .about-overview-heading h1 { margin: 0 auto; }
+  :global(body.inner-autohaus #main) .about-overview-heading p { max-width: 52ch; margin: 0 auto; color: #606060; font-size: 18px; line-height: 1.8; }
+  .about-contact-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 6px; padding: 0 22px; border-radius: 999px; background: #212121; color: #fff !important; font-size: 14px; font-weight: 500; text-decoration: none !important; }
+  .about-contact-link:hover { background: #000; }
   .about-overview-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--space-grid);
-    padding-bottom: clamp(48px, 7vw, 88px);
+    gap: 28px;
+    padding-bottom: clamp(56px, 8vw, 104px);
   }
   .about-overview-card {
+    position: relative;
     display: block;
-    padding: var(--tc-photo-frame);
-    border-radius: calc(var(--tc-photo-radius) + var(--tc-photo-frame));
-    background: white;
-    box-shadow: var(--tc-photo-shadow);
-    text-decoration: none;
-    color: inherit;
+    overflow: hidden;
+    padding: 4px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 0 0 1px #2121210d, 0 10px 30px #2121211a;
+    color: #fff;
+    text-decoration: none !important;
+    transition: box-shadow 180ms ease, transform 180ms ease;
   }
-  .about-overview-card:hover { box-shadow: var(--tc-control-shadow); }
+  .about-overview-card:hover { box-shadow: 0 0 0 1px #2121210d, 0 16px 40px #21212126; transform: translateY(-2px); }
+  .about-overview-card:focus-visible { outline: 2px solid #212121; outline-offset: 4px; }
   .about-overview-card img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: var(--tc-photo-radius);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 44%;
+    border-radius: 20px;
   }
-  :global(body.inner-autohaus #main) .about-overview-copy h2 {
-    font-size: var(--heading-list-card);
-    line-height: 1.2;
-    margin: 0;
+  :global(body.inner-autohaus #main) .about-overview-copy {
+    position: absolute;
+    inset: auto 4px 4px;
+    display: grid;
+    gap: 8px;
+    padding: 96px 28px 26px;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(to top, #000000d6 0%, #00000080 55%, #0000 100%);
   }
-  :global(body.inner-autohaus #main) .about-overview-heading h1 { margin-inline: 0; }
-  @media (max-width: 599px) {
+  .about-card-title { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .about-card-arrow { display: grid; flex: none; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #f5c400; color: #212121; }
+  :global(body.inner-autohaus #main) .about-overview-copy h2 { margin: 0; color: #fff; font-size: clamp(24px, 2.2vw, 32px); line-height: 1.15; }
+  :global(body.inner-autohaus #main) .about-overview-copy p { max-width: 46ch; margin: 0; color: #ffffffd9; font-size: 16px; line-height: 1.6; }
+  @media (max-width: 809px) {
+    .about-overview-grid { gap: 20px; }
+    :global(body.inner-autohaus #main) .about-overview-copy { padding: 72px 20px 20px; }
+  }
+  @media (max-width: 639px) {
     .about-overview-grid { grid-template-columns: minmax(0, 1fr); }
+    .about-overview-card img { aspect-ratio: 4 / 5; }
+    :global(body.inner-autohaus #main) .about-overview-copy h2 { font-size: 24px; }
   }
+  @media (prefers-reduced-motion: reduce) { .about-overview-card { transition: none; } }
 </style>

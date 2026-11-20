@@ -1,7 +1,7 @@
 /* Set numeric features on the text itself: font shorthands reset inheritance. */
 body.inner-editorial.site-nest.site-volta .catalog-showroom-explorer :is(.pagination>a,.pagination>button,.catalog-mobile-filters>span),
 #vehicle-results .vehicle-card :is(.vehicle-card-year,.vehicle-card-specs p,.vehicle-card-record dd) {
- font-variant-numeric:lining-nums tabular-nums;
+ font-variant-numeric:lining-nums;
 }
 body.inner-editorial #main .catalog-showroom :is(h1,h2,h3) {text-wrap:balance}
 

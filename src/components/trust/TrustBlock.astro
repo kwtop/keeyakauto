@@ -17,7 +17,7 @@ const hasPracticalNote=['destination','documents','scope','handover','coverage',
 <section id={block.id} class:list={['tc-block',`tc-block--${block.kind||'text'}`,{'tc-block--reverse':index%2===1,'tc-block--soft':index%3===2,'tc-block--closing':isAction,'tc-block--information':!hasVisual,'tc-block--has-visual':hasVisual,'tc-block--proof':block.credentials,'tc-block--wide-module':wideModule,'tc-block--illustrated':Boolean(illustration),'tc-block--image-feature':illustration?.placement==='feature'}]} data-core-module data-module={block.id} data-presentation={block.kind||'text'} aria-labelledby={`${block.id}-title`}>
  {block.aliases?.map(alias=><span id={alias} class="tc-anchor" aria-hidden="true"/>)}
  <div class="tc-wrap tc-block-grid">
-   <header class="tc-block-heading"><h2 id={`${block.id}-title`}>{block.title}</h2></header>
+   <header class="tc-block-heading"><h2 id={`${block.id}-title`}>{block.title}</h2>{isAction&&!block.form&&block.body&&<p class="tc-closing-body">{block.body}</p>}</header>
   {hasVisual&&<div class="tc-block-visual">
    {block.credentials?<figure class="tc-proof"><a href="/images/company/jingyan-sgs-assessment-2026-original.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original SGS company assessment, record 489102251_T"><img src="/images/company/jingyan-sgs-assessment-2026-original.jpg" width="2566" height="1716" alt="Original SGS company assessment for Zhejiang Jingyan Technology Co., Ltd., record 489102251_T" loading="lazy" decoding="async"/></a><figcaption><span>Original company assessment</span><a href="/images/company/jingyan-sgs-assessment-2026-original.jpg" target="_blank" rel="noopener noreferrer">Open original</a></figcaption></figure>:image&&<TrustFigure media={image}/>}
   </div>}
@@ -30,7 +30,7 @@ const hasPracticalNote=['destination','documents','scope','handover','coverage',
      <label>Vehicle type<select name="kind"><option value="new">New cars</option><option value="used-sourcing">Used cars</option></select></label>
      <label>Model or type of car<input name="model" required maxlength="200" placeholder="Brand, model and version"/></label>
      <div class="tc-form-row"><label>Quantity<input name="quantity" type="number" min="1" max="999999999" step="1" inputmode="numeric" required placeholder="Number of cars"/></label><label>Destination<input name="country" autocomplete="country-name" required maxlength="100" placeholder="Country or region"/></label></div>
-     <button type="submit" class="tc-button">Start an inquiry</button>
+     <button type="submit" class="tc-button">Request a quote</button>
     </form>}
     {block.credentials&&<details class="tc-credentials"><summary>Exhibition and platform records<ChevronDown size={18}/></summary><ul>{companyDocuments.filter(document=>document.image!=='supplier-certificate-2026').map(document=><li><a class="tc-text-link" href={`/images/company/records/${document.image}-original.jpg`} target="_blank" rel="noopener noreferrer">{document.name}</a><p>{document.holder.replace(/\.$/,'')}. {document.description}</p></li>)}</ul></details>}
     {block.links&&<div class="tc-links">{block.links.map((link,i)=><a class={isAction&&!block.form&&i===0?'tc-button':'tc-text-link'} href={link.href} {...(link.href.match(/\.(jpg|png|pdf)$/)?{target:'_blank',rel:'noopener noreferrer'}:{})}>{link.label}</a>)}</div>}

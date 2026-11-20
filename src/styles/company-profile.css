@@ -2,7 +2,7 @@
 body.inner-editorial.site-nest.site-volta.about-profile{
  --ap-heading-3:500 36px/40px var(--body);--ap-heading-5:500 24px/32px var(--body);--ap-heading-6:500 20px/28px var(--body);
  --ap-body:500 16px/24px var(--body);--ap-caption:500 14px/20px var(--body);
- --ap-ink:#191a19;--ap-muted:#6a6c69;
+ --ap-ink:#191a19;--ap-muted:#555852;
  --ap-photo-shadow:0 1px 3px #2023200a,0 8px 24px #2023200a,0 20px 48px #20232005;
  background:#fff;color:var(--ap-ink);font:var(--ap-body);font-variant-numeric:tabular-nums;
 }
@@ -23,7 +23,7 @@ body.about-profile #main .ap-heading>p{margin-top:24px}
 body.about-profile #main .ap-hero{padding-top:40px}
 .about-page .ap-hero-layout{
  display:grid;
- grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);
+ grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
  grid-template-rows:1fr auto auto 1fr;
  grid-template-areas:". photo" "title photo" "copy photo" ". photo";
  column-gap:clamp(32px,4vw,64px);
@@ -41,6 +41,10 @@ body.about-profile #main .ap-hero{padding-top:40px}
 }
 .about-page .ap-company-introduction{display:grid;gap:14px;max-width:var(--reading-measure)}
 body.about-profile #main .about-page .ap-company-introduction p{line-height:var(--reading-leading)}
+.about-page .ap-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px}
+.about-page .ap-intro-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 64px;margin-top:36px;padding-top:32px;border-top:1px solid #e4e4e0}
+body.about-profile #main .about-page .ap-intro-details h2{margin-bottom:12px;font:var(--ap-heading-6);letter-spacing:-.025em}
+body.about-profile #main .about-page .ap-intro-details p{font-weight:400;line-height:1.75}
 body.about-profile #main .about-page .ap-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:52px;padding:12px 24px;border:0;border-radius:999px;background:#222422;color:#fff;font:500 16px/24px var(--body);box-shadow:0 1px 2px #20232014,0 4px 8px #2023200f,0 12px 24px #20232008;transition:background-color 180ms,box-shadow 180ms}
 .about-page .ap-button svg{flex:0 0 auto}
 body.about-profile #main .about-page :is(.ap-button,.ap-text-link,.ap-photo figcaption,.cp-document-viewer footer) svg{display:block}
@@ -50,14 +54,14 @@ body.about-profile #main .about-page :is(.ap-button,.ap-text-link,.ap-photo figc
 .about-page .ap-photo figcaption{padding:12px 8px 0;font:var(--ap-caption);color:var(--ap-muted)}
 .about-page .ap-photo figcaption a{display:inline-flex;align-items:center;gap:8px;min-height:24px}
 .about-page .ap-photo figcaption svg{flex:0 0 auto}
-body.about-profile #main .about-page .ap-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:1040px;margin:64px auto 0;gap:0}
+body.about-profile #main .about-page .ap-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:36px auto 0;padding:28px 16px;border-radius:20px;background:#f5f5f2;gap:0}
 .about-page .ap-facts>div{display:flex;flex-direction:column;align-items:center;text-align:center;padding-inline:24px;gap:12px;min-width:0}
-.about-page .ap-facts>div+div{box-shadow:-1px 0 0 #e8e9e6}
+.about-page .ap-facts>div+div{box-shadow:-1px 0 0 #dcded6}
 .about-page .ap-facts dt{font:var(--ap-caption);color:var(--ap-muted);max-width:240px}
 body.about-profile #main .about-page .ap-facts dd{order:-1;font:var(--ap-heading-3);letter-spacing:-.04em;white-space:nowrap}
 .about-page .ap-text-link{display:inline-flex;align-items:center;gap:12px;min-height:44px}
 .about-page .ap-people-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-.about-page .ap-people-photos .ap-photo img{aspect-ratio:4/3;object-position:center 60%}
+.about-page .ap-people-photos .ap-photo img{aspect-ratio:4/3;object-fit:cover;object-position:center 60%}
 .about-page .ap-news-link{display:flex;width:fit-content;margin:24px auto 0;font:var(--ap-caption)}
 body.about-profile #main .about-page .ap-faq{max-width:880px;padding-block:64px 96px}
 .about-page .ap-faq>details{box-shadow:0 1px 0 #e5e7e2}
@@ -111,7 +115,7 @@ body.about-profile #main .about-page .cp-document-viewer>header p{font:var(--ap-
  .about-page .ap-news-link{margin-left:0}
  .about-page .ap-photo-mat{padding:5px;border-radius:25px;box-shadow:var(--tc-photo-shadow)}
  .about-page .ap-photo img{border-radius:20px}
- .about-page .ap-people-photos .ap-photo img{aspect-ratio:auto}
+ .about-page .ap-people-photos .ap-photo img{aspect-ratio:4/3;object-fit:cover}
  body.about-profile #main .about-page .ap-facts{margin-top:36px}
  .about-page .cp-document-list{
   display:grid;
@@ -198,6 +202,7 @@ body.about-profile #main .about-page .cp-document-viewer>header p{font:var(--ap-
   gap:20px;
  }
  .about-page .ap-hero-copy{margin-top:0}
+ .about-page .ap-intro-details{gap:28px;margin-top:28px;padding-top:28px}
 }
 @media(min-width:810px) and (max-width:1100px){
  .about-page .ap-hero-layout{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -207,8 +212,9 @@ body.about-profile #main .about-page .cp-document-viewer>header p{font:var(--ap-
  body.about-profile #main .about-page .ap-wrap{width:calc(100% - 40px)}
  body.about-profile #main .ap-hero{padding-top:24px}
  .about-page .ap-hero-copy{gap:24px}
+ .about-page .ap-intro-details{grid-template-columns:minmax(0,1fr)}
  .about-page .ap-photo-mat{padding:8px}
- body.about-profile #main .about-page .ap-facts{grid-template-columns:1fr;margin-top:40px;gap:0}
+ body.about-profile #main .about-page .ap-facts{grid-template-columns:1fr;margin-top:28px;padding:8px 16px;gap:0}
  .about-page .ap-facts>div{display:grid;grid-template-columns:1fr 1.3fr;text-align:left;align-items:center;padding:16px 8px;gap:24px}
  .about-page .ap-facts>div+div{box-shadow:0 -1px 0 #e8e9e6}
  .about-page .ap-facts dt{grid-column:2}

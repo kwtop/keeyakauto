@@ -64,16 +64,22 @@ const aboutPhotos: Record<string, ReturnType<typeof trustMedia>> = {
               </div> : <div class="ah-panel-editorial">
                 {index === 2 && <a class="ah-panel-feature" href={menu.href} aria-label="Service overview" aria-current={currentPath === menu.href ? 'page' : undefined}>
                   <span class="ah-panel-feature-image"><img src="/images/menu-polish-20261028/export-dispatch-handover-480.webp" width="480" height="320" alt="AI-generated illustration of vehicle dispatch coordination and a road transporter" loading="lazy" decoding="async" data-ai-generated="true"/></span>
-                  <span class="ah-panel-overview">Service overview<ArrowRight size={17}/></span>
+                  <span class="ah-panel-overview ah-panel-overview--button">Service overview<ArrowRight size={17}/></span>
                 </a>}
-                <div class="ah-nav-cards">{menu.items.map(item => {
+                <div class="ah-nav-cards ah-export-cards">{menu.items.map(item => {
                   const Icon = menuIcons[item.href];
                   return <a class="ah-nav-card" href={item.href} aria-current={currentPath === item.href ? 'page' : undefined}>
                     <span class="ah-nav-card-icon"><Icon size={22} stroke-width={1.5}/></span>
-                    <span class="ah-nav-card-copy"><strong>{item.label}</strong></span>
+                    <span class="ah-nav-card-copy"><strong>{item.label}</strong>{'summary' in item && <span>{item.summary}</span>}</span>
                     <ArrowRight class="ah-nav-card-arrow" size={18}/>
                   </a>;
-                })}</div>
+                })}
+                  {index === 2 && <a class="ah-nav-card ah-nav-card--quote" href="/quote/?service=export-services">
+                    <span class="ah-nav-card-icon"><ClipboardList size={22} stroke-width={1.5}/></span>
+                    <span class="ah-nav-card-copy"><strong>Request a quote</strong><span>Send the models, quantity and destination.</span></span>
+                    <ArrowRight class="ah-nav-card-arrow" size={18}/>
+                  </a>}
+                </div>
               </div>}
             </div>
           </div>
@@ -81,12 +87,12 @@ const aboutPhotos: Record<string, ReturnType<typeof trustMedia>> = {
         <li class="ah-nav-contact"><a href="/contact/" data-current={currentPath === '/contact/' ? 'true' : undefined} aria-current={currentPath === '/contact/' ? 'page' : undefined}>Contact Us<ArrowRight size={20}/></a></li>
       </ul>
       <span class="ah-nav-indicator" aria-hidden="true"></span>
-      <div class="ah-mobile-contact"><a href="/quote/">Start an inquiry<span><ArrowRight size={20}/></span></a></div>
+      <div class="ah-mobile-contact"><a href="/quote/">Request a quote<span><ArrowRight size={20}/></span></a></div>
     </nav>
     <div class="ah-header-actions">
       <CarSearch/>
       <a class="ah-header-whatsapp" href={company.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Contact KEEYAK on WhatsApp" title="WhatsApp"><img src="/images/brand/whatsapp.svg" width="28" height="28" alt=""/></a>
-      <a class="ah-header-quote" href="/quote/" aria-current={currentPath === '/quote/' ? 'page' : undefined}><span>Start an inquiry</span><ArrowRight class="ah-quote-arrow" size={17}/><ClipboardList class="ah-quote-compact" size={20}/></a>
+      <a class="ah-header-quote" href="/quote/" aria-current={currentPath === '/quote/' ? 'page' : undefined}><span>Request a quote</span><ArrowRight class="ah-quote-arrow" size={17}/><ClipboardList class="ah-quote-compact" size={20}/></a>
       <button class="ah-menu-toggle" type="button" aria-label="Open navigation" aria-controls="autohaus-navigation" aria-expanded="false"><span></span><span></span></button>
     </div>
     <div class="ah-menu-surface" aria-hidden="true"></div>

@@ -70,7 +70,21 @@
 .ah-nav-card[aria-current=page]{border-color:#cfd6dc;background:#e9eef2}
 .ah-about-cards .ah-about-card{align-items:center;min-width:0}
 .ah-about-card img{display:block;width:clamp(64px,12vw,140px);height:auto;flex:none;border-radius:8px}
-@media(min-width:900px){#autohaus-menu-2 .ah-nav-card:last-child{grid-column:1/-1;min-height:56px;padding-block:8px}}
+/* Export menu: six equal cards, each with a one-line description. */
+.ah-nav-card-copy>span{display:block;margin-top:4px;color:#5f6a72;font-size:13px;line-height:1.45}
+.ah-export-cards .ah-nav-card{align-items:flex-start}
+.ah-export-cards .ah-nav-card-arrow{align-self:flex-start;margin-top:8px}
+.ah-nav-card--quote{border-color:#e8bd19;background:#fdf6d8}
+.ah-nav-card--quote .ah-nav-card-icon{background:#f5c400;color:#202420}
+.ah-export-cards .ah-nav-card--quote:is(:hover,:focus-visible){background:#fbefbb;border-color:#d9ad10}
+.ah-export-cards .ah-nav-card--quote:hover .ah-nav-card-icon{background:#f5c400}
+.ah-panel-feature .ah-panel-overview--button{justify-content:center;gap:10px;min-height:44px;margin-top:12px;border:1px solid #202420;border-radius:999px;background:#202420;color:#fff;font-size:14px}
+@media(min-width:900px){
+  .ah-export-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ah-export-cards .ah-nav-card{flex-direction:column;gap:12px;min-height:0;padding:18px 16px}
+  .ah-export-cards .ah-nav-card-arrow{position:absolute;top:18px;right:14px;margin:0}
+  .ah-export-cards .ah-nav-card{position:relative}
+}
 .ah-catalog-intro{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 0 16px}
 .ah-header .catalog-menu{grid-template-columns:minmax(0,1fr) 190px;gap:28px}
 .ah-header .catalog-menu h2{color:#6a726d;font-size:12px;font-weight:500}

@@ -6,8 +6,11 @@ export default function ProductGuide({vehicle,focus,selected,unlisted}:{vehicle:
  const content=productEditorial(vehicle,focus,{selected,unlisted});
  const [technicalSummary,...technicalNotes]=content.technical.split('\n\n');
  const structured=content.technicalNoteHeadings?.length===technicalNotes.length;
+ // A one-line summary does not earn its own card; it opens the first topic card instead.
+ const foldSummary=structured&&technicalNotes.length>0&&technicalSummary.length<80;
+ const cardCount=(foldSummary?1:2)+(structured?technicalNotes.length:0);
  const SelectionIcon=vehicle.kind==='used'?History:Layers;
- return <section className="vd-section vd-product-guide" data-core-module="product-guide" aria-labelledby="product-guide-title">
+ return <section id="buying-guide" className="vd-section vd-product-guide" data-core-module="product-guide" aria-labelledby="product-guide-title">
   <header className="vd-product-lead">
    <h2 id="product-guide-title">{content.heading}</h2>
    <p className="vd-product-intro">{content.focus}</p>
@@ -16,25 +19,26 @@ export default function ProductGuide({vehicle,focus,selected,unlisted}:{vehicle:
     <p>{content.intro}</p>
    </div>
   </header>
-  <article className="vd-product-version">
-   <div className="vd-product-subheading"><SelectionIcon size={21} strokeWidth={1.5} aria-hidden="true"/><h3>{content.selectionHeading}</h3></div>
-   <p>{content.selection}</p>
-  </article>
-  <article className="vd-product-technical">
-   <div className="vd-product-technical-intro">
+  <div className="vd-product-cards" data-count={cardCount}>
+   <article className="vd-product-card vd-product-version">
+    <div className="vd-product-subheading"><SelectionIcon size={21} strokeWidth={1.5} aria-hidden="true"/><h3>{content.selectionHeading}</h3></div>
+    <p>{content.selection}</p>
+   </article>
+   {!foldSummary&&<article className="vd-product-card vd-product-technical">
     <div className="vd-product-subheading"><BookOpen size={21} strokeWidth={1.5} aria-hidden="true"/><h3>{content.technicalHeading}</h3></div>
     <p>{technicalSummary}</p>
-   </div>
-   <div className="vd-product-notes">{technicalNotes.map((paragraph,index)=>{
+    {!structured&&technicalNotes.map(paragraph=><p key={paragraph}>{paragraph}</p>)}
+   </article>}
+   {structured&&technicalNotes.map((paragraph,index)=>{
     const icon=content.technicalNoteIcons?.[index];
     const TopicIcon=icon?topicIcons[icon]:undefined;
-    return structured?<section className="vd-product-topic" key={paragraph}>
+    return <section className="vd-product-card vd-product-topic" key={paragraph}>
      <div className="vd-product-topic-heading">
       {TopicIcon&&<span className="vd-product-topic-icon" aria-hidden="true"><TopicIcon size={20} strokeWidth={1.5}/></span>}
       <h4>{content.technicalNoteHeadings![index]}</h4>
-     </div><p>{paragraph}</p>
-    </section>:<p key={paragraph}>{paragraph}</p>;
-   })}</div>
-  </article>
+     </div>{foldSummary&&index===0&&<p>{technicalSummary}</p>}<p>{paragraph}</p>
+    </section>;
+   })}
+  </div>
  </section>;
 }

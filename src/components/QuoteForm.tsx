@@ -217,7 +217,7 @@ export default function QuoteForm({ initialModel = '' }: { initialModel?: string
         {draft.country.trim() && <dl><div><dt>Destination</dt><dd>{draft.country}</dd></div></dl>}
       </section>}
       <section className="quote-contact-card" aria-labelledby="quote-direct-heading">
-        <h2 id="quote-direct-heading">Contact us</h2>
+        <h2 id="quote-direct-heading">Prefer to talk first?</h2>
         <DirectContacts />
       </section>
     </aside>

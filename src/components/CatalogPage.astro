@@ -16,7 +16,7 @@ const pictureInquiry=true;
 <Base title={(isNew?'New cars from China':'Used cars from China')+(page>1?' · Page '+page:'')} description={isNew?'Browse new cars by brand, body type and powertrain. Compare models and request a quote for the version you need.':'Browse used-car photographs, supplied mileage and registration details. Compare vehicles and request current availability and condition records.'}>
  <div class:list={['catalog-refined','catalog-showroom',{'catalog-refined--used':!isNew}]}>
  <Breadcrumbs items={page>1?[{label:isNew?'New Cars':'Used Cars',href:isNew?'/new-cars/':'/used-cars/'},{label:'Page '+page}]:[{label:isNew?'New Cars':'Used Cars'}]}/>
- <header class="shell catalog-heading catalog-heading--discovery" data-core-module="scope"><h1>{isNew?'New cars from KEEYAK':'Used cars from KEEYAK'}</h1></header>
+ <header class="shell catalog-heading catalog-heading--discovery" data-core-module="scope"><h1>{isNew?'New cars for export':'Used cars for export'}</h1></header>
  <section class="shell catalog-results" data-module="catalog" data-core-module="results"><VehicleExplorer client:load items={items.map(catalogCardData)} initialPage={page} basePath={isNew?'/new-cars/':'/used-cars/'}/></section>
  <section class:list={['shell','catalog-closing',{'catalog-closing--illustrated':pictureInquiry}]} data-module="inquiry" data-core-module="inquiry">
  {pictureInquiry&&<ExportFigure {...reviewScene} class="catalog-brief-photo" caption=""/>}

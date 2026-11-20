@@ -45,7 +45,7 @@ export default function ContactForm() {
 
   if (review) return <div className="contact-form-card">
     {!saved && <>
-      <h2 id="contact-message-title" ref={heading} tabIndex={-1}>Review your message</h2>
+      <header className="contact-form-heading"><h2 id="contact-message-title" ref={heading} tabIndex={-1}>Review your message</h2><p>Check the details below before sending.</p></header>
       <dl className="contact-review">
         <div><dt>Full name</dt><dd>{draft.name}</dd></div>
         <div><dt>Country</dt><dd>{draft.country}</dd></div>
@@ -69,10 +69,10 @@ export default function ContactForm() {
   const error = (field: string) => errors[field] && <span id={`contact-${field}-error`} className="form-error" role="alert">{errors[field]}</span>;
 
   return <form className="contact-form-card quote-form" aria-labelledby="contact-message-title" onSubmit={reviewMessage} noValidate>
-    <h2 id="contact-message-title">Send us a message</h2>
+    <header className="contact-form-heading"><h2 id="contact-message-title">Send us a message</h2><p>Choose how we can reach you, then tell us what you need.</p></header>
     <div className="form-row">
-      <label>Full name<input id="contact-name" name="name" autoComplete="name" maxLength={300} required {...invalid('name')} value={draft.name} onChange={event => update('name', event.target.value)}/>{error('name')}</label>
-      <label>Country<input id="contact-country" name="country" autoComplete="country-name" maxLength={100} required {...invalid('country')} value={draft.country} onChange={event => update('country', event.target.value)}/>{error('country')}</label>
+      <label>Full name *<input id="contact-name" name="name" autoComplete="name" maxLength={300} required {...invalid('name')} value={draft.name} onChange={event => update('name', event.target.value)}/>{error('name')}</label>
+      <label>Country *<input id="contact-country" name="country" autoComplete="country-name" maxLength={100} required {...invalid('country')} value={draft.country} onChange={event => update('country', event.target.value)}/>{error('country')}</label>
     </div>
     <ContactMethodPicker value={draft.contactMethod==='email'?'email':'phone'} onChange={chooseContactMethod}/>
     <div className="contact-reply-field">

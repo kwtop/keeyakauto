@@ -1,7 +1,9 @@
 /* Keep the reference copy readable beside the process illustrations. */
+body.inner-autohaus #main .tc-site--refined.tc-site--export{--tc-muted:#4a4a47}
+
 body.inner-editorial.site-nest.site-volta main .tc-site--export{
- --tc-section-space:88px;
- --tc-column-gap:72px;
+ --tc-section-space:72px;
+ --tc-column-gap:64px;
 }
 .tc-site--export .tc-block--soft{background:#f7f8f5}
 .tc-site--export .tc-block--illustrated .tc-block-visual{top:128px}
@@ -76,14 +78,16 @@ body #main .tc-site--export .tc-faq-group>.tc-figure{margin-block:24px 32px}
 .tc-site--export .tc-faq-group>.tc-figure img{aspect-ratio:auto;object-fit:contain}
 .tc-site--export .tc-faq-group+.tc-faq-group{margin-top:72px}
 
-/* Keep the longer guide sections full width below their illustrated introductions. */
+/* Illustrated sections: heading across the top, then the image beside the full list so no heading sits alone. */
 body.inner-autohaus #main .tc-site--export :is(#process,#requirement,#documents,#handover,#coverage).tc-block--image-feature .tc-block-grid{
- grid-template-columns:repeat(2,minmax(0,1fr));
- grid-template-areas:"heading visual" "content content";
- align-items:center;
+ grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+ grid-template-areas:"heading heading" "visual content";
+ align-items:start;
+ row-gap:40px;
 }
 body.inner-autohaus #main .tc-site--export :is(#process,#requirement,#documents,#handover,#coverage).tc-block--image-feature.tc-block--reverse .tc-block-grid{
- grid-template-areas:"visual heading" "content content";
+ grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+ grid-template-areas:"heading heading" "content visual";
 }
 body.inner-autohaus #main .tc-site--export :is(#process,#requirement,#documents,#handover,#coverage).tc-block--image-feature .tc-block-heading{
  display:block;
@@ -91,11 +95,16 @@ body.inner-autohaus #main .tc-site--export :is(#process,#requirement,#documents,
 body.inner-autohaus #main .tc-site--export :is(#process,#requirement,#documents,#handover,#coverage).tc-block--image-feature .tc-block-heading>.tc-intro{
  margin-top:20px!important;
 }
+body.inner-autohaus #main .tc-site--export :is(#requirement,#documents,#handover,#coverage).tc-block--image-feature .tc-block-visual{
+ position:sticky;top:120px;align-self:start;justify-self:stretch;max-width:none;
+}
+body.inner-autohaus #main .tc-site--export :is(#requirement,#documents,#handover,#coverage) :is(.tc-brief,.tc-journey,.tc-journey[data-count="4"]){grid-template-columns:minmax(0,1fr);gap:28px}
 body.inner-autohaus #main .tc-site--export #process.tc-block--image-feature .tc-block-visual{position:static;align-self:center}
 body.inner-autohaus #main .tc-site--export .tc-block--has-visual .tc-block-visual .tc-figure img[src*="/export-guide-20261103/"]{
  aspect-ratio:4/3;object-fit:contain;
 }
 @media(max-width:809px){
+ body.inner-autohaus #main .tc-site--export :is(#requirement,#documents,#handover,#coverage).tc-block--image-feature .tc-block-visual{position:static}
  body.inner-autohaus #main .tc-site--export :is(#process,#requirement,#documents,#handover,#coverage).tc-block--image-feature .tc-block-grid,
  body.inner-autohaus #main .tc-site--export :is(#process,#requirement,#documents,#handover,#coverage).tc-block--image-feature.tc-block--reverse .tc-block-grid{
   grid-template-columns:minmax(0,1fr);
@@ -104,7 +113,7 @@ body.inner-autohaus #main .tc-site--export .tc-block--has-visual .tc-block-visua
 }
 
 @media(min-width:810px) and (max-width:1199px){
- body.inner-editorial.site-nest.site-volta main .tc-site--export{--tc-section-space:72px;--tc-column-gap:40px}
+ body.inner-editorial.site-nest.site-volta main .tc-site--export{--tc-section-space:60px;--tc-column-gap:40px}
  body #main .tc-site--export .tc-journey[data-count="4"]{grid-template-columns:repeat(2,minmax(0,1fr))}
  body #main .tc-site--export .tc-deliverables{gap:56px 40px}
 }
@@ -116,7 +125,7 @@ body.inner-autohaus #main .tc-site--export .tc-block--has-visual .tc-block-visua
  body #main .tc-site--export .tc-journey[data-count="4"]{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px}
 }
 @media(max-width:809px){
- body.inner-editorial.site-nest.site-volta main .tc-site--export{--tc-section-space:56px;--tc-column-gap:28px}
+ body.inner-editorial.site-nest.site-volta main .tc-site--export{--tc-section-space:48px;--tc-column-gap:28px}
  .tc-site--export .tc-block--image-feature .tc-block-grid,
  .tc-site--export .tc-block--image-feature.tc-block--reverse .tc-block-grid{
   grid-template-columns:minmax(0,1fr);

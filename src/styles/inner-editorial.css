@@ -7,7 +7,7 @@ body.inner-editorial.site-nest.site-volta{
  --v-blue:#212121;--v-ink:#212121;--v-text:#60605c;--v-soft:var(--ed-paper);--v-line:var(--ed-line);--v-green:var(--ed-yellow);
  --body:var(--site-font);--display:var(--body);--font-display:var(--body);--font-body:var(--body);
  color:var(--ed-ink);background:#fff;
- font:var(--site-type-weight) var(--site-body-size)/var(--site-body-leading) var(--body);
+ font:var(--site-body-weight) var(--site-body-size)/var(--site-body-leading) var(--body);
  font-synthesis:none;letter-spacing:var(--site-body-tracking);font-feature-settings:var(--site-font-features);
 }
 body.inner-editorial.site-nest.site-volta>main{padding-top:116px;min-height:65vh;padding-bottom:0}
@@ -124,3 +124,7 @@ body.inner-editorial.site-nest.site-volta .search-dialog{border-radius:25px}
  body.inner-editorial.site-nest.site-volta main h2{font-size:30px}
 }
 @media(prefers-reduced-motion:reduce){.inner-editorial :is(.button,.ex-button,.inner-footer-navigation summary>span){transition:none}}
+
+/* Readable floor for small supporting text: labels, meta lines and breadcrumbs stay at 14px or larger. */
+body.inner-editorial #main :is(.breadcrumbs,.tc-breadcrumb,.vd-metric-label,.vd-selected-label,.vd-compare-config label,.vd-inquiry-form>label,.vd-related-copy p,.tc-step-output dt,.tc-report-number,.tc-inquiry label,.tc-story-meta,.contact-directory dt,.contact-office-copy p,.vehicle-card-specs p){font-size:14px!important}
+body.inner-editorial #main .tc-story-meta :is(time,span){font-size:inherit!important}

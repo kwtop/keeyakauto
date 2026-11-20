@@ -6,14 +6,18 @@
  font-display:swap;
 }
 
+/* Inter Display is drawn for large titles; body copy and small labels use the text cut of Inter. */
 :root{
- --site-font:"KEEYAK Display",Arial,sans-serif;
+ --site-display-font:"KEEYAK Display",Arial,sans-serif;
+ --site-font:"KEEYAK Inter",Arial,sans-serif;
  --site-type-weight:500;
+ --site-body-weight:450;
+ --site-subheading-weight:600;
  --site-body-size:16px;
  --site-body-leading:1.65;
- --site-body-tracking:-.01em;
- --site-heading-tracking:-.04em;
- --site-card-tracking:-.02em;
+ --site-body-tracking:-.005em;
+ --site-heading-tracking:-.03em;
+ --site-card-tracking:-.015em;
  --site-nav-size:15px;
- --site-font-features:"blwf","cv03","cv04","cv09","cv11";
+ --site-font-features:"cv03","cv04","cv09","cv11";
 }
